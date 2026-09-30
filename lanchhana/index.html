@@ -21,6 +21,7 @@
   --copper:#E28A50; --verdigris:#5CB8A4; --disc:#1A2521; --disc-ring:#5CB8A4; color-scheme:dark}
 
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--body);margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:40px 64px}
 header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;border-bottom:1px solid var(--line);padding-bottom:28px}
@@ -105,11 +106,12 @@ footer a{color:var(--muted)}
 <div class="wrap">
   <header>
     <div>
-      <p class="eyebrow">Royal insignia of Indian polities · c. 322 BCE – 1040 CE</p>
+      <p class="eyebrow" id="hd-eyebrow">Royal insignia of Indian polities · c. 322 BCE – 1040 CE</p>
       <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
-      <p class="lede">The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Each emblem is painted by JavaScript in this page in the manner of early Indian mural and manuscript painting: flat mineral pigments, edge shading, brush contour and lotus-petal border. Where the dynasty's own region has surviving paintings, that tradition sets the palette; where none survive, the caption says so. Where no seal emblem survives, the dynasty's standard coin device is shown and labelled as a coin.</p>
+      <p class="lede" id="hd-lede">The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Each emblem is painted by JavaScript in this page in the manner of early Indian mural and manuscript painting: flat mineral pigments, edge shading, brush contour and lotus-petal border. Where the dynasty's own region has surviving paintings, that tradition sets the palette; where none survive, the caption says so. Where no seal emblem survives, the dynasty's standard coin device is shown and labelled as a coin.</p>
     </div>
-    <div class="stats"><div><b id="n-total">0</b>dynasties</div><div><b id="n-seal">0</b>seal-attested</div></div>
+    <div class="stats" id="stats-modern"><div><b id="n-total">0</b>dynasties</div><div><b id="n-seal">0</b>seal-attested</div></div>
+    <div class="stats" id="stats-itihasa" hidden><div><b id="n-epic">0</b>banners</div><div><b id="n-epic-done">0</b>painted</div></div>
   </header>
 
   <div class="tabs" role="tablist" aria-label="Sections">
@@ -148,10 +150,8 @@ footer a{color:var(--muted)}
   </div>
 
   <div role="tabpanel" id="panel-itihasa" aria-labelledby="tab-itihasa" hidden>
-  <section class="epic" aria-labelledby="epic-h">
+  <section class="epic">
     <p class="eyebrow">Literary tradition, not seal evidence</p>
-    <h2 id="epic-h">Bharatiya Itihasa traditions</h2>
-    <p class="lede">The Purāṇas list the royal lines of Magadha and the solar and lunar houses, but they describe genealogies, not emblems. The emblems of that world survive in the epics, as the devices on warriors' war banners (dhvaja). Each card quotes its verse from the Mahābhārata (critical edition) or the Rāmāyaṇa. The images are interpretive; cards still marked "in progress" await their painting.</p>
     <div class="grid" id="epic-grid"></div>
   </section>
   </div>
@@ -946,7 +946,7 @@ E.garudaFlying2 = {style:"ajanta", paint(P){ const {pal}=P;
 
 /* ---------------- Magadha: punch-marked silver kārṣāpaṇa ---------------- */
 (function(){ const E = window.LanchhanaPainter.E, TAU=Math.PI*2;
-E.punchCoin = {style:"pala", paint(P){ const {pal}=P, ag="#cfd2cf", agS="#5d625e", agH="#f7f8f4", die="#7d827d";
+E.punchCoin = {style:"ajanta", paint(P){ const {pal}=P, ag="#cfd2cf", agS="#5d625e", agH="#f7f8f4", die="#7d827d";
   // irregular, slightly bent silver bar
   P.shape("M150 196 C170 168 250 160 330 170 C360 174 376 186 372 206 L382 300 C384 330 364 346 330 346 C260 352 196 352 158 340 C132 332 126 312 132 290 L136 230 C136 214 140 204 150 196 Z", {fill:ag, shade:agS, depth:24, lw:3, hi:agH});
   P.brush("M150 196 C170 168 250 160 330 170", {w:2, color:agH, a:.6});
@@ -1502,7 +1502,7 @@ const MBH = {
 const EPIC = [
  {no:"1", n:"Ikṣvāku of Ayodhyā", who:"Bharata's chariot ensign", e:"Kovidāra tree", k:"text", img:"01-ikshvaku",
   san:"eṣa vai sumahān śrīmān viṭapī samprakāśate | virājaty udgataskandhaḥ kovidāradhvajo rathe", ref:"Rāmāyaṇa 2.96.18",
-  t:"Lakṣmaṇa sees Bharata's army approach and knows it by its banner: a very large, glorious kovidāra tree, trunk and branches raised high, on the chariot's ensign.", src:["ram"]},
+  t:"Lakṣmaṇa sees Bharata's army approach and knows it by its banner: a very large, glorious kovidāra tree, trunk and branches raised high, on the chariot's ensign. The verse names only the tree; the sun and Om on the 2025 Ram Mandir flag are later additions.", src:["ram"]},
  {no:"2a", n:"Magadha (Bṛhadratha to Nanda)", who:"Punch-marked silver coinage", e:"Sun and six-armed symbol", k:"coin", paint:"punchCoin",
   san:"", ref:"",
   t:"The Purāṇas list these kings but give no emblems. Their silver coins always carry a sun mark and a six-armed symbol, with three further marks drawn from a large repertoire; the three shown here are illustrative. Painted in JavaScript from the documented marks.", src:["kar"]},
@@ -1551,7 +1551,7 @@ const EPIC = [
 ];
 function epicCard(x){
   const links = x.src.map(k=>`<a href="${MBH[k][1]}" target="_blank" rel="noopener">${esc(MBH[k][0])}</a>`).join(" · ");
-  const art = x.img ? `<img class="epic-img" src="epic/${x.img}.webp?v=2" width="240" height="240" alt="${esc(x.e)}, interpretive painting" loading="lazy">`
+  const art = x.img ? `<img class="epic-img" src="epic/${x.img}.webp?v=3" width="240" height="240" alt="${esc(x.e)}, interpretive painting" loading="lazy">`
     : x.paint ? `<canvas class="seal paint" width="560" height="560" data-emb="${x.paint}" data-style="" role="img" aria-label="${esc(x.e)}"></canvas>`
     : `<div class="pending"><div><b>${x.no}</b>Painting in progress</div></div>`;
   return `<article class="card">${art}
@@ -1589,7 +1589,14 @@ render();
   const tabs=[...document.querySelectorAll('.tab')];
   document.getElementById('c-modern').textContent=D.length;
   document.getElementById('c-itihasa').textContent=EPIC.length;
+  document.getElementById('n-epic').textContent=EPIC.length;
+  document.getElementById('n-epic-done').textContent=EPIC.filter(x=>x.img||x.paint).length;
+  const hd={ modern:[document.getElementById('hd-eyebrow').textContent, document.getElementById('hd-lede').innerHTML],
+    itihasa:['War banners of the epics · Mahābhārata and Rāmāyaṇa','The Purāṇas list the royal lines of Magadha and the solar and lunar houses, but they record genealogies, not emblems. Those survive in the epics: a warrior was known at a distance by the device on his banner (dhvaja). Each card quotes the verse that describes it, from the critical edition of the Mahābhārata or the Rāmāyaṇa. The images are interpretive paintings made to follow the verse and nothing beyond it; cards marked “in progress” await theirs.'] };
   function show(id, focus){
+    const k = id==='tab-itihasa' ? 'itihasa' : 'modern';
+    document.getElementById('hd-eyebrow').textContent=hd[k][0]; document.getElementById('hd-lede').innerHTML=hd[k][1];
+    document.getElementById('stats-modern').hidden = k!=='modern'; document.getElementById('stats-itihasa').hidden = k!=='itihasa';
     tabs.forEach(t=>{const on=t.id===id; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
       document.getElementById(t.getAttribute('aria-controls')).hidden=!on; if(on&&focus) t.focus();});
     try{ history.replaceState(null,'', id==='tab-itihasa' ? '#itihasa' : location.pathname+location.search); }catch(e){}
