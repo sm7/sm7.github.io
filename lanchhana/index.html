@@ -108,7 +108,7 @@ footer a{color:var(--muted)}
     <div>
       <p class="eyebrow" id="hd-eyebrow">Royal insignia of Indian polities · c. 322 BCE – 1040 CE</p>
       <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
-      <p class="lede" id="hd-lede">The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Each emblem is painted by JavaScript in this page in the manner of early Indian mural and manuscript painting: flat mineral pigments, edge shading, brush contour and lotus-petal border. Where the dynasty's own region has surviving paintings, that tradition sets the palette; where none survive, the caption says so. Where no seal emblem survives, the dynasty's standard coin device is shown and labelled as a coin.</p>
+      <p class="lede" id="hd-lede">The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Each emblem is painted with an image model in the manner of early Indian mural painting, with flat mineral pigments, edge shading, brush contour and a lotus-petal border, and checked against the seal or coin description it follows. Where no seal emblem survives, the dynasty's standard coin device is shown and labelled as a coin.</p>
     </div>
     <div class="stats" id="stats-modern"><div><b id="n-total">0</b>dynasties</div><div><b id="n-seal">0</b>seal-attested</div></div>
     <div class="stats" id="stats-itihasa" hidden><div><b id="n-epic">0</b>banners</div><div><b id="n-epic-done">0</b>painted</div></div>
@@ -1370,7 +1370,7 @@ const S = {
 
 const D = [
  {n:"Maurya",d:"c. 322–185 BCE",r:"North",k:"monument",g:"lionCapital",e:"Lion Capital of Aśoka",nat:"सिंहशीर्ष",nc:"deva",
-  t:"The Maurya kings left no seal emblem. By convention they are represented by Aśoka's Sarnath capital: four lions set back to back on an abacus carved with wheels and animals, above a bell-shaped lotus. Here it is reduced to three lion heads over a wheel-studded abacus.",src:[]},
+  t:"The Maurya kings left no seal emblem. By convention they are represented by Aśoka's Sarnath capital: four lions set back to back on an abacus carved with wheels and animals, above a bell-shaped lotus. The painting shows three of the four lions, over the abacus wheel and horse.",src:[]},
  {n:"Sātavāhana",d:"c. 1st c. BCE – 3rd c. CE",r:"Deccan",k:"coin",g:"ujjain",e:"Ujjain symbol",nat:"",nc:"",
   t:"No single lāñchhana is known. The recurring reverse device on their coins is the 'Ujjain symbol', a cross with a ring at each arm. Their coin obverses vary: elephant, lion, horse, arched hill or ship.",src:[]},
  {n:"Kushan",d:"c. 30–375 CE",r:"Northwest",k:"coin",g:"tamgha",e:"Dynastic tamgha",nat:"",nc:"",
@@ -1413,7 +1413,7 @@ const D = [
   t:"The Buddhist Wheel of Law flanked by two deer, a reference to the Deer Park at Sarnath, set within a lotus above the king's name. It appears on the Jagjivanpur plate of Mahendrapāla.",src:["jagjivan"]},
  {n:"Rāṣṭrakūṭa",d:"753–982 CE",r:"Deccan",k:"seal",g:"garudaSeated",e:"Seated Garuḍa, añjali mudrā",nat:"गरुड",nc:"deva",
   t:"Garuda seated in padmāsana on a lotus with his palms joined, wings rising from the shoulders. It is on the grant seals from Dantidurga (742 CE) onward and on coins reading 'Śrī Śubhatuṅga'.",src:["rashtraMW","dantiSeal"]},
- {n:"Kalachuri of Tripurī",d:"c. 675–1212 CE",r:"North",k:"coin",g:"gajalakshmi",e:"Gajalakṣmī",nat:"गजलक्ष्मी",nc:"deva",
+ {n:"Kalachuri of Tripurī",d:"c. 675–1212 CE",r:"North",k:"coin",g:"gajalakshmi",e:"Seated Lakṣmī",nat:"लक्ष्मी",nc:"deva",
   t:"Seated Lakshmi is the obverse of Gāṅgeyadeva's gold coins. The kin branch at Ratnapura put a four-armed goddess on a lotus, holding a water-pot, on its plates.",src:["kalaMW","kalaIC"]},
  {n:"Hindu Śāhi",d:"c. 822–1026 CE",r:"Northwest",k:"coin",g:"horseman",e:"Bull & horseman",nat:"",nc:"",
   t:"Their silver jitals show a recumbent humped bull with the legend 'Śrī Sāmantadeva' on one side and a horseman with a lance on the other. Later Rajput and Ghurid mints kept copying the type long after the dynasty fell.",src:["shahiMW","shahiNum"]},
@@ -1480,10 +1480,11 @@ const PAINTED = {
   "Chera":["bowArrow","Painted after the Chola-period murals, the nearest surviving"],
   "Paramāra of Mālwa":["garudaFlying2","Painted in the Ajanta palette; no Paramāra painting survives"],
 };
+const MIMG=["01-maurya", "02-satavahana", "03-kushan", "04-kshatrapa", "05-gupta", "06-kadamba", "07-kamarupa", "08-western-ganga", "09-vishnukundina", "10-pallava", "11-maitraka", "12-sharabhapuriya", "13-maukhari", "14-chalukya", "15-pushyabhuti", "16-gauda", "17-panduvamshi", "18-eastern-ganga", "19-saindhava", "20-pratihara", "21-pala", "22-rashtrakuta", "23-kalachuri", "24-shahi", "25-chola", "26-pandya", "27-chera", "28-paramara"];
 function card(x){
   const links = x.src.map(k=>`<a href="${S[k][1]}" target="_blank" rel="noopener">${esc(S[k][0].split(" — ")[1]||S[k][0])}</a>`).join(" · ");
   return `<article class="card">
-    ${PAINTED[x.n] ? `<canvas class="seal paint" width="560" height="560" data-emb="${PAINTED[x.n][0]}" data-style="${PAINTED[x.n][2]||""}" role="img" aria-label="${esc(x.e)}"></canvas><div class="idiom">${PAINTED[x.n][1]}</div>` : svg(x)}
+    ${MIMG[D.indexOf(x)] ? `<img class="epic-img" loading="lazy" src="modern/m${MIMG[D.indexOf(x)]}.webp?v=1" alt="${esc(x.e)}"><div class="idiom">Painted from the ${x.k} ${x.k==="monument"?"itself":"description"}</div>` : PAINTED[x.n] ? `<canvas class="seal paint" width="560" height="560" data-emb="${PAINTED[x.n][0]}" data-style="${PAINTED[x.n][2]||""}" role="img" aria-label="${esc(x.e)}"></canvas><div class="idiom">${PAINTED[x.n][1]}</div>` : svg(x)}
     <div class="head"><h2>${esc(x.n)}</h2><span class="dates">${esc(x.d)}</span></div>
     <div style="display:grid;gap:8px"><div class="emblem"><strong>${esc(x.e)}</strong>${x.nat?`<span class="native ${x.nc}">${x.nat}</span>`:""}</div><p>${esc(x.t)}</p></div>
     <div class="meta"><span class="pill ${x.k}">${x.k}</span><span>${x.r}</span>${links?`<span>·</span>${links}`:""}</div>
@@ -1551,7 +1552,7 @@ const EPIC = [
 ];
 function epicCard(x){
   const links = x.src.map(k=>`<a href="${MBH[k][1]}" target="_blank" rel="noopener">${esc(MBH[k][0])}</a>`).join(" · ");
-  const art = x.img ? `<img class="epic-img" src="epic/${x.img}.webp?v=4" width="240" height="240" alt="${esc(x.e)}, interpretive painting" loading="lazy">`
+  const art = x.img ? `<img class="epic-img" src="epic/${x.img}.webp?v=5" width="240" height="240" alt="${esc(x.e)}, interpretive painting" loading="lazy">`
     : x.paint ? `<canvas class="seal paint" width="560" height="560" data-emb="${x.paint}" data-style="" role="img" aria-label="${esc(x.e)}"></canvas>`
     : `<div class="pending"><div><b>${x.no}</b>Painting in progress</div></div>`;
   return `<article class="card">${art}
