@@ -280,7 +280,7 @@ const srcTitle = k => SRC[k][0];
 function flagSvg(f){ return `<figure class="flag" title="${esc(f.cap)}"><svg viewBox="0 0 60 40" aria-hidden="true"><line x1="1" y1="0" x2="1" y2="40" stroke="#5a4632" stroke-width="2"/>${f.svg}</svg><figcaption><span class="conf ${f.conf}">flag · ${f.conf}</span></figcaption></figure>`; }
 function art(c, big){
   if (c.pending) return `<div class="pending"><div><b>${esc(c.e)}</b>Painting in progress</div></div>`;
-  return `<img class="medal" ${big?"":'loading="lazy"'} src="${c.img}?v=6" width="240" height="240" alt="${esc(c.e)}, interpretive painting">`;
+  return `<img class="medal" ${big?"":'loading="lazy"'} src="${c.img}?v=7" width="240" height="240" alt="${esc(c.e)}, interpretive painting">`;
 }
 function sub(c){ return c.tab==="itihasa" ? c.who : c.d; }
 
@@ -332,7 +332,7 @@ renderAll();
     const list=C.filter(c=>c.motifs.includes(k)).sort((a,b)=>order.indexOf(a.tab)-order.indexOf(b.tab));
     const counts=order.map(t=>[t,list.filter(c=>c.tab===t).length]).filter(x=>x[1]);
     return `<section class="motif" id="motif-${k}"><div><h3>${esc(label)}</h3><p class="count"><b>${list.length}</b> entries · ${counts.map(([t,n])=>`${n} ${tabShort[t].toLowerCase()}`).join(" · ")}</p></div>
-      <div class="strip">${list.map(c=>`<button class="mini t-${c.tab}" type="button" data-id="${c.id}">${c.pending?`<div class="ph"></div>`:`<img src="${c.img}?v=6" alt="" loading="lazy">`}<b>${esc(c.tab==="itihasa"?c.who:c.n.replace(/\s*\(.*?\)/,""))}</b><span>${tabShort[c.tab]}</span></button>`).join("")}</div></section>`;
+      <div class="strip">${list.map(c=>`<button class="mini t-${c.tab}" type="button" data-id="${c.id}">${c.pending?`<div class="ph"></div>`:`<img src="${c.img}?v=7" alt="" loading="lazy">`}<b>${esc(c.tab==="itihasa"?c.who:c.n.replace(/\s*\(.*?\)/,""))}</b><span>${tabShort[c.tab]}</span></button>`).join("")}</div></section>`;
   }).join("");
   Object.entries(MOTIFS).forEach(([k,label])=>{ const a=document.createElement("a"); a.className="chip"; a.href="#motif-"+k; a.textContent=label.split(/[ ,(]/)[0]; box.appendChild(a); });
 })();

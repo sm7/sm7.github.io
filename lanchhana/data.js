@@ -105,6 +105,10 @@ window.LR={
 "Mahābhārata, Droṇa Parva, Section XXIII, tr. K. M. Ganguli (vulgate) — sacred-texts.com",
 "https://www.sacred-texts.com/hin/m07/m07023.htm"
 ],
+"ganSarabha": [
+"Mahābhārata, Śānti Parva, Section CXVII, tr. K. M. Ganguli — sacred-texts.com",
+"https://sacred-texts.com/hin/m12/m12a116.htm"
+],
 "ganda": [
 "Gandabherunda — Wikipedia",
 "https://en.wikipedia.org/wiki/Gandabherunda"
@@ -865,14 +869,14 @@ window.LR={
 "san": "",
 "ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
 "quote": "A tall and fierce standard of Nakula, placed on his car bearing the device of a Sarabha with its back made of gold.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{mbs7022}{mbsIndex}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{mbs7022}{mbsIndex} The standard names only a śarabha with a golden back. The painting follows the epic's own description of the śarabha in the Śānti Parva: a beast that kills lions, with eight legs and eyes on the top of its head.{ganSarabha}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/nakula.webp",
 "motifs": [
 "mythic"
 ],
-"prompt": "Create an image. A war standard whose device is a śarabha, the mythical beast of Indian legend stronger than a lion: a powerful lion-like body with eight legs, its back made of gold. The device is a three-dimensional figure mounted on the very top of a tall flagstaff, seen against the sky — not painted on cloth, not a flag. Only the upper flagstaff, no chariot, no people. No finial, no parasol, no tassels. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no people, no modern elements."
+"prompt": "Create an image. A war standard whose device is a śarabha as the Mahābhārata describes it: a fearsome forest beast, stronger than a lion, with EIGHT legs and with its eyes set on the top of its head. Show it in side view standing on the flat top of the flagstaff, with all eight legs clearly separate and countable: four pairs in a row under a long, low, muscular body. It is NOT a lion: no mane, no lion face. A heavy-jawed, short-haired head with the two eyes placed high on top of the skull, looking upward. Its back is made of gold. The device is a three-dimensional figure mounted on the very top of a tall flagstaff, seen against the sky — not painted on cloth, not a flag. Only the upper flagstaff, no chariot, no people. No wings, no horns, no finial, no parasol, no tassels. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no people, no modern elements.\n\nFollow-up: keep everything the same, but the beast must have exactly EIGHT legs and EIGHT paws resting on the staff-top, all eight clearly visible and evenly spaced, none hidden behind another. Make the head a little more fearsome."
 },
 {
 "id": "sahadeva",

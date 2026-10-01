@@ -11,6 +11,7 @@ for o in outs.values(): S.update(o.get('sourcesNew',{}))
 pv=json.load(open(f'{SC}/pandava.json'))
 S.update({'mbs7022':pv['sourceUrls']['mbs7022'],'gan7023':["Mahābhārata, Droṇa Parva, Section XXIII, tr. K. M. Ganguli (vulgate) — sacred-texts.com","https://www.sacred-texts.com/hin/m07/m07023.htm"],
  'mbsIndex':["The Mahābhārata in Sanskrit: source note (BORI critical edition, Tokunaga/Smith) — sacred-texts.com","https://sacred-texts.com/hin/mbs/index.htm"],
+ 'ganSarabha':["Mahābhārata, Śānti Parva, Section CXVII, tr. K. M. Ganguli — sacred-texts.com","https://sacred-texts.com/hin/m12/m12a116.htm"],
  'sampathMysore':["Vikram Sampath, Splendours of Royal Mysore: The Untold Story of the Wodeyars (Rupa, 2008) — Internet Archive","https://archive.org/details/splendoursofroya0000vikr"]})
 # prompts
 modern=json.load(open(f'{ROOT}/prompts/modern.json'))
@@ -80,6 +81,10 @@ for idx,(i,who,lab,key) in enumerate(VUL):
     new.append(dict(id=i,no=str(18+idx),n='Pāṇḍava',who=who,e=lab,k='vulgate',san='',ref='Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition',
       quote=gq(key),t=f"Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{{gan7023}} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{{mbs7022}}{{mbsIndex}}",warn='Vulgate only, not in the critical edition'))
 new[-1]['t']+=" Ganguli renders the bird as a peacock; the vulgate Sanskrit has not been checked here.{gan7023}"
+for e in new:
+    if e['id']=='nakula':
+        e['t']+=" The standard names only a śarabha with a golden back. The painting follows the epic's own description of the śarabha in the Śānti Parva: a beast that kills lions, with eight legs and eyes on the top of its head.{ganSarabha}"
+
 for e in new:
     e.update(tab='itihasa',img=f"epic/{e['id']}.webp",motifs=motifs(e['id']))
     if not __import__('os').path.exists(f"{ROOT}/epic/{e['id']}.webp"): e['pending']=True
