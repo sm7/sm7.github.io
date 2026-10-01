@@ -1,7 +1,7 @@
 <title>Lāñchhana Register</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&family=Noto+Serif+Tamil:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&family=Noto+Serif+Tamil:wght@500&family=Noto+Sans+Bengali:wght@500&family=Noto+Nastaliq+Urdu:wght@500&display=swap">
 <style>
 /* Layout: a numismatic catalogue plate — emblems struck as copper roundels on patinated stone, filterable by region and by kind of evidence. */
 :root{
@@ -51,6 +51,18 @@ h1 .deva{font-family:var(--deva);font-weight:500;color:var(--copper);font-size:.
 .tab:hover{color:var(--ink)}
 .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--copper)}
 .tab:focus-visible{outline:2px solid var(--copper);outline-offset:-2px}
+.tabgroup{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:28px 0 -14px}
+.tabgroup span{margin:0 6px}
+.lhead{align-items:flex-start}
+.lhead .dates{display:block;text-align:left;max-width:none;margin-top:4px}
+.flag{margin:0;flex:none;display:grid;justify-items:center;gap:3px}
+.card .flag svg{width:54px;height:36px;margin:0;filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
+.conf{font:500 9px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.conf.low{color:var(--copper)}
+.pending b.pe{font-size:17px;line-height:1.2;display:block;max-width:170px;margin:0 auto 6px;text-wrap:balance}
+.warn{font:500 12px/1.4 var(--mono);color:var(--copper)}
+.card svg.seal.txt{width:240px;height:240px;max-width:100%;display:block;margin:0 auto;border-radius:50%;box-shadow:0 8px 18px rgba(0,0,0,.22)}
+.native.knda,.native.telu,.native.beng,.native.guru,.native.mlym{font-family:"Noto Serif",serif}
 .tab small{font:500 11px/1 var(--mono);color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums}
 .epic h2{font:800 clamp(28px,4vw,44px)/1.05 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
 .epic .lede{margin-top:12px}
@@ -106,16 +118,19 @@ footer a{color:var(--muted)}
 <div class="wrap">
   <header>
     <div>
-      <p class="eyebrow" id="hd-eyebrow">Royal insignia of Indian polities · c. 322 BCE – 1040 CE</p>
+      <p class="eyebrow" id="hd-eyebrow">Bharatiya historical record · c. 322 BCE – 1040 CE</p>
       <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
       <p class="lede" id="hd-lede">The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Each emblem is painted with an image model in the manner of early Indian mural painting, with flat mineral pigments, edge shading, brush contour and a lotus-petal border, and checked against the seal or coin description it follows. Where no seal emblem survives, the dynasty's standard coin device is shown and labelled as a coin.</p>
     </div>
     <div class="stats" id="stats-modern"><div><b id="n-total">0</b>dynasties</div><div><b id="n-seal">0</b>seal-attested</div></div>
+    <div class="stats" id="stats-later" hidden><div><b id="n-later">0</b>kingdoms</div><div><b id="n-flags">0</b>flags shown</div></div>
     <div class="stats" id="stats-itihasa" hidden><div><b id="n-epic">0</b>banners</div><div><b id="n-epic-done">0</b>painted</div></div>
   </header>
 
+  <p class="tabgroup">Bharatiya historical record <span>·</span> Bharatiya Itihasa traditions</p>
   <div class="tabs" role="tablist" aria-label="Sections">
-    <button class="tab" role="tab" id="tab-modern" aria-controls="panel-modern" aria-selected="true">Bharatiya modern history<small id="c-modern"></small></button>
+    <button class="tab" role="tab" id="tab-modern" aria-controls="panel-modern" aria-selected="true">Early dynasties<small id="c-modern"></small></button>
+    <button class="tab" role="tab" id="tab-later" aria-controls="panel-later" aria-selected="false" tabindex="-1">Later kingdoms<small id="c-later"></small></button>
     <button class="tab" role="tab" id="tab-itihasa" aria-controls="panel-itihasa" aria-selected="false" tabindex="-1">Bharatiya Itihasa traditions<small id="c-itihasa"></small></button>
   </div>
 
@@ -141,9 +156,33 @@ footer a{color:var(--muted)}
     <div>
       <h3>Left out, and why</h3>
       <ul>
-        <li><b>No verified emblem.</b> Shunga, Vakataka, Later Guptas of Magadha, Karkota and Utpala of Kashmir, Shailodbhava, Bhaumakara, Somavamshi, early Kalachuri of Mahishmati, Chaulukya of Gujarat, Chandela, Chahamana, Kalabhra. I found no sources that describe a fixed seal emblem for these dynasties, so I drew none. Some are reported elsewhere (for example Gajalakshmi for the Somavamshis), but I could not confirm them.</li>
-        <li><b>After 1040 CE.</b> The Sena (Sadāśiva), Gahadavala (Garuda and conch), Hoysala (Sala fighting a tiger), Kakatiya and Vijayanagara (varāha) emblems date from after 1040 CE.</li>
+        <li><b>No verified emblem.</b> Shunga, Vakataka, Later Guptas of Magadha, Utpala of Kashmir, Shailodbhava, Bhaumakara, Somavamshi, early Kalachuri of Mahishmati, Kalabhra. I found no sources that describe a fixed seal emblem for these dynasties, so I drew none. Some are reported elsewhere (for example Gajalakshmi for the Somavamshis), but I could not confirm them.</li>
+        <li><b>After 1040 CE.</b> The Sena, Gāhaḍavāla, Hoysala, Kākatīya, Vijayanagara, Chandela, Chaulukya and Chauhan devices are on the Later kingdoms tab, with the Rajput, Ahom, Maratha and Sikh states.</li>
         <li><b>Seal emblem uncertain.</b> The Gurjara-Pratihāra seals are described as showing the goddess Bhagavatī, but I found no reliable account of her iconography. The card shows the Ādivarāha from Mihira Bhoja's coins instead.</li>
+      </ul>
+    </div>
+  </section>
+  </div>
+
+  <div role="tabpanel" id="panel-later" aria-labelledby="tab-later" hidden>
+  <div class="controls" role="toolbar" aria-label="Filters">
+    <div class="group" id="l-region"><span>Region</span></div>
+    <div class="group" id="l-kind"><span>Evidence</span></div>
+  </div>
+  <div class="grid" id="later-grid"></div>
+  <section class="notes">
+    <div>
+      <h3>Flags, and when they date from</h3>
+      <p>A small flag beside a kingdom's name is drawn from the best description of that flag, and its tag says how well the flag itself is attested. Many flags of the Rajput states are known only from the princely era; the coats of arms with mottoes and supporters were created for the British Imperial Assemblage of 1877 and are not shown as royal insignia.</p>
+      <p style="margin-top:12px">Where a coin or seal carries only words, the medallion sets the actual legend in type instead of painting an imitation of it.</p>
+    </div>
+    <div>
+      <h3>Left out, and why</h3>
+      <ul>
+        <li><b>Gajapati of Odisha.</b> No coins are known and no seal emblem was found; the inscriptions give the title, not a device.</li>
+        <li><b>Kalachuri of Kalyāṇi.</b> A golden bull is named in secondary works, but no seal or coin showing it was found.</li>
+        <li><b>Manipur.</b> The Pakhangba flag is documented only from 1947–49.</li>
+        <li><b>Kārkoṭa flag.</b> None is attested for Lalitāditya or his dynasty. The Early dynasties tab shows the Kārkoṭa coin instead.</li>
       </ul>
     </div>
   </section>
@@ -1368,62 +1407,105 @@ const S = {
   harshaSeal:["Seal of Harshavardhana, Nalanda — Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Seal_of_Harshavardhana_found_in_Nalanda.jpg"],
 };
 
+Object.assign(S,{
+  karkota:["Karkota dynasty — Wikipedia","https://en.wikipedia.org/wiki/Karkota_dynasty"],
+  inhcrfVin:["Base gold coin of Vinayaditya — INHCRF","https://inhcrf.org/database_list/base-gold-coin-of-vinayaditya-67/"],
+  hoySala:["Sala (Hoysala emblem) — Wikipedia","https://en.wikipedia.org/wiki/Sala_(Hoysala_Dynasty)"],
+  hoyCoin:["Vinayaditya gold pagoda — Sarmaya","https://sarmaya.in/objects/numismatics/vinayaditya-hoysala-dynasty-gold-pagoda/"],
+  jackson:["Jackson, Emblems and Coins of the South Indian Dynasties, BNJ 9 (1912)","https://www.britnumsoc.org/publications/Digital%20BNJ/pdfs/1912_BNJ_9_13.pdf"],
+  kakGanapati:["Ganapati (Kakatiya) — Wikipedia","https://en.wikipedia.org/wiki/Ganapati_(Kakatiya_dynasty)"],
+  yadMahadeva:["Mahadeva of Devagiri — Wikipedia","https://en.wikipedia.org/wiki/Mahadeva_of_Devagiri"],
+  yadNumista:["Yadava dynasty coins — Numista","https://en.numista.com/catalogue/yadava_dynasty-1.html"],
+  senaBM:["Barrackpur plate of Vijayasena — British Museum","https://www.britishmuseum.org/collection/object/A_1957-1121-1"],
+  gahGovinda:["Govindachandra — Wikipedia","https://en.wikipedia.org/wiki/Govindachandra_(Gahadavala_dynasty)"],
+  gahMW:["Base gold masha of Gahadavala — Mintage World","https://www.mintageworld.com/media/detail/16322-base-gold-four-and-a-half-masha-of-gahadavala/"],
+  chaMadana:["Madanavarman — Wikipedia","https://en.wikipedia.org/wiki/Madanavarman"],
+  solMW:["Siddharaja Jayasimha silver masha — Mintage World","https://www.mintageworld.com/media/detail/16823-Chaulukya-Siddharaja-Jayasimha-Solanki/"],
+  chauPrithvi:["Prithviraj Chauhan — Wikipedia","https://en.wikipedia.org/wiki/Prithviraj_Chauhan"],
+  chauAjaya:["Ajayaraja II — Wikipedia","https://en.wikipedia.org/wiki/Ajayaraja_II"],
+  vijBlog:["Vijayanagara coins — South Indian Coins","https://southindiancoins.blogspot.com/2009/10/vijayanagara-coins.html"],
+  vijWiki:["Vijayanagara coinage — Wikipedia","https://en.wikipedia.org/wiki/Vijayanagara_coinage"],
+  mewFotw:["Udaipur (Mewar) — Flags of the World","https://www.fotw.info/flags/in-mewar.html"],
+  mewArms:["Mewar coat of arms — Arvind Singh Mewar","https://arvindsinghmewar.com/coatofarms.php"],
+  marFotw:["Jodhpur (Marwar) — Flags of the World","https://www.fotw.info/flags/in-marwa.html"],
+  marNag:["Nagnechiya Mata — Wikipedia","https://en.wikipedia.org/wiki/Nagnechiya_Mata"],
+  jaiFotw:["Jaipur — Flags of the World","https://www.crwflags.com/fotw/flags/in-jaipu.html"],
+  jaiJhar:["Coinage of Madho Singh II (jhar) — Mintage World","https://www.mintageworld.com/media/detail/6673-coinage-of-madho-singh-ii/"],
+  ahomCoin:["Ahom coinage — Wikipedia","https://en.wikipedia.org/wiki/Ahom_coinage"],
+  ahomLHI:["Ahom coins — LiveHistoryIndia","https://www.livehistoryindia.com/story/art-history/ahom-coins"],
+  ahomNgi:["The Tai-Ahom dragon Ngi Ngao Kham — IJRAR","https://ijrar.org/papers/IJRAR23A2031.pdf"],
+  triSpink:["Ratna Manikya tanka — Spink","https://www.spink.com/lot/16041000019"],
+  triMW:["Coinage of Tripura — Mintage World","https://www.mintageworld.com/blog/coinage-of-tripura-kingdom/"],
+  kochWiki:["Koch coinage — Wikipedia","https://en.wikipedia.org/wiki/Koch_coinage"],
+  kochNum:["Narayani rupee of Nara Narayan — Numista","https://en.numista.com/82839"],
+  marEmblem:["Emblem of Maharashtra — Wikipedia","https://en.wikipedia.org/wiki/Emblem_of_Maharashtra"],
+  histFlags:["Historical Indian flags — Wikipedia","https://en.wikipedia.org/wiki/Historical_Indian_flags"],
+  sikhCoin:["Sikh coinage — Wikipedia","https://en.wikipedia.org/wiki/Sikh_coinage"],
+  sikhFlag:["The Khalsa Army flag — SikhNet","https://www.sikhnet.com/news/khalsa-army-flag-anglo-sikh-wars-digitisation"],
+  ganda:["Gandabherunda — Wikipedia","https://en.wikipedia.org/wiki/Gandabherunda"],
+  mysFotw:["Mysore — Flags of the World","https://www.fotw.info/flags/in-mysor.html"],
+  travMW:["Conch on Travancore State — Mintage World","https://www.mintageworld.com/media/detail/14120-conch-on-travancore-state/"],
+  keralaEmb:["Emblem of Kerala — Wikipedia","https://en.wikipedia.org/wiki/Emblem_of_Kerala"],
+});
+
 const D = [
- {n:"Maurya",d:"c. 322–185 BCE",r:"North",k:"monument",g:"lionCapital",e:"Lion Capital of Aśoka",nat:"सिंहशीर्ष",nc:"deva",
+ {n:"Maurya",d:"c. 322–185 BCE",img:"01-maurya",r:"North",k:"monument",g:"lionCapital",e:"Lion Capital of Aśoka",nat:"सिंहशीर्ष",nc:"deva",
   t:"The Maurya kings left no seal emblem. By convention they are represented by Aśoka's Sarnath capital: four lions set back to back on an abacus carved with wheels and animals, above a bell-shaped lotus. The painting shows three of the four lions, over the abacus wheel and horse.",src:[]},
- {n:"Sātavāhana",d:"c. 1st c. BCE – 3rd c. CE",r:"Deccan",k:"coin",g:"ujjain",e:"Ujjain symbol",nat:"",nc:"",
+ {n:"Sātavāhana",d:"c. 1st c. BCE – 3rd c. CE",img:"02-satavahana",r:"Deccan",k:"coin",g:"ujjain",e:"Ujjain symbol",nat:"",nc:"",
   t:"No single lāñchhana is known. The recurring reverse device on their coins is the 'Ujjain symbol', a cross with a ring at each arm. Their coin obverses vary: elephant, lion, horse, arched hill or ship.",src:[]},
- {n:"Kushan",d:"c. 30–375 CE",r:"Northwest",k:"coin",g:"tamgha",e:"Dynastic tamgha",nat:"",nc:"",
+ {n:"Kushan",d:"c. 30–375 CE",img:"03-kushan",r:"Northwest",k:"coin",g:"tamgha",e:"Dynastic tamgha",nat:"",nc:"",
   t:"A pronged clan mark set on a ring base. It appears on Kushan coins from Vima Kadphises and Kanishka onward, usually in the field beside the king or deity. The drawing gives its general form, not any single ruler's variant.",src:["kushanPdf"]},
- {n:"Western Kshatrapas",d:"c. 35–415 CE",r:"West",k:"coin",g:"chaitya",e:"Arched hill with crescent",nat:"चैत्य",nc:"deva",
+ {n:"Western Kshatrapas",d:"c. 35–415 CE",img:"04-kshatrapa",r:"West",k:"coin",g:"chaitya",e:"Arched hill with crescent",nat:"चैत्य",nc:"deva",
   t:"The fixed reverse of their silver drachms: a three-arched hill topped by a crescent, a wavy river line below, and a rayed sun and crescent moon on either side. The Brahmi legend around it names the ruler and his father.",src:["wkTandon"]},
- {n:"Gupta",d:"c. 320–550 CE",r:"North",k:"seal",g:"garuda",e:"Garuḍa (Garuḍadhvaja)",nat:"गरुड",nc:"deva",
+ {n:"Gupta",d:"c. 320–550 CE",img:"05-gupta",r:"North",k:"seal",g:"garuda",e:"Garuḍa (Garuḍadhvaja)",nat:"गरुड",nc:"deva",
   t:"Garuda, Vishnu's eagle, stands frontally with spread wings on Gupta seals and on the standard (dhvaja) shown on their gold coins. The Bhitari seal of Kumaragupta II shows him holding a serpent.",src:["bhitari","guptaGaruda","ei27"]},
- {n:"Kadamba of Banavāsi",d:"c. 345–540 CE",r:"South",k:"coin",g:"lion",e:"Lion",nat:"सिंह",nc:"deva",
+ {n:"Kadamba of Banavāsi",d:"c. 345–540 CE",img:"06-kadamba",r:"South",k:"coin",g:"lion",e:"Lion",nat:"सिंह",nc:"deva",
   t:"A standing lion with its tail raised is the dynasty's royal emblem. Goa's Kadamba Transport Corporation uses it as its logo today, which makes it one of the few emblems on this sheet still in public use.",src:["kadamba"]},
- {n:"Kāmarūpa (Varman)",d:"c. 350–650 CE",r:"East",k:"seal",g:"elephantFront",e:"Elephant, frontal",nat:"गज",nc:"deva",
+ {n:"Kāmarūpa (Varman)",d:"c. 350–650 CE",img:"07-kamarupa",r:"East",k:"seal",g:"elephantFront",e:"Elephant, frontal",nat:"गज",nc:"deva",
   t:"A countersunk elephant seen from the front fills the top of every surviving Kamarupa grant seal, with the genealogy in Sanskrit below. The emblem continued under the Mlechchha and Pala houses of Kamarupa.",src:["dubi","bhaskara"]},
- {n:"Western Gaṅga",d:"c. 350–1000 CE",r:"South",k:"seal",g:"elephantSide",e:"Elephant (madagaja)",nat:"मदगज",nc:"deva",
+ {n:"Western Gaṅga",d:"c. 350–1000 CE",img:"08-western-ganga",r:"South",k:"seal",g:"elephantSide",e:"Elephant (madagaja)",nat:"मदगज",nc:"deva",
   t:"An elephant in profile is struck on the seal rings of Western Ganga copper-plate grants, which are written in Kannada characters.",src:["outlook","dc"]},
- {n:"Viṣṇukuṇḍina",d:"c. 420–624 CE",r:"Deccan",k:"coin",g:"lionRoar",e:"Roaring lion",nat:"सिंह",nc:"deva",
+ {n:"Viṣṇukuṇḍina",d:"c. 420–624 CE",img:"09-vishnukundina",r:"Deccan",k:"coin",g:"lionRoar",e:"Roaring lion",nat:"सिंह",nc:"deva",
   t:"The dynastic emblem: a lion walking right with one foreleg raised, mouth open and tail curled high. The reverse usually shows a conch between two lampstands. Their earliest coins show a humped bull instead.",src:["vishnuMW","vishnuHK"]},
- {n:"Pallava",d:"c. 275–897 CE",r:"South",k:"seal",g:"bullCouchant",e:"Couchant bull (Nandi)",nat:"वृषभ",nc:"deva",
+ {n:"Pallava",d:"c. 275–897 CE",img:"10-pallava",r:"South",k:"seal",g:"bullCouchant",e:"Couchant bull (Nandi)",nat:"वृषभ",nc:"deva",
   t:"A recumbent bull facing proper right, with the king's name beneath, as on the seal of Śivaskandavarman. Bull and lion are also the basic devices on Pallava coins.",src:["pallavaGM","pallavaCoin"]},
- {n:"Maitraka of Valabhī",d:"c. 475–776 CE",r:"West",k:"seal",g:"bullCouchant",e:"Seated Nandi",nat:"नन्दी",nc:"deva",
+ {n:"Maitraka of Valabhī",d:"c. 475–776 CE",img:"11-maitraka",r:"West",k:"seal",g:"bullCouchant",e:"Seated Nandi",nat:"नन्दी",nc:"deva",
   t:"A seated bull above the legend 'Śrī Bhaṭakkaḥ', named after the founder Bhaṭārka, on grants from the 6th century onward. Their silver drachms carry a trident (triśūla) on the reverse.",src:["dc","wikiMaitraka"]},
- {n:"Śarabhapurīya",d:"c. 475–590 CE",r:"East",k:"seal",g:"gajalakshmi",e:"Gajalakṣmī",nat:"गजलक्ष्मी",nc:"deva",
+ {n:"Śarabhapurīya",d:"c. 475–590 CE",img:"12-sharabhapuriya",r:"East",k:"seal",g:"gajalakshmi",e:"Gajalakṣmī",nat:"गजलक्ष्मी",nc:"deva",
   t:"Lakshmi seated on a lotus, bathed by two elephants holding water-pots, in the upper panel of the seal with a two-line legend below. Their coins instead show Garuda with a conch and a discus.",src:["sarabha"]},
- {n:"Maukhari",d:"c. 550–606 CE",r:"North",k:"seal",g:"maukhari",e:"Garlanded bull under a parasol",nat:"वृषभ",nc:"deva",
+ {n:"Maukhari",d:"c. 550–606 CE",img:"13-maukhari",r:"North",k:"seal",g:"maukhari",e:"Garlanded bull under a parasol",nat:"वृषभ",nc:"deva",
   t:"A garlanded bull walking right, with a royal parasol and streamers rising behind its hump. It appears on the Asirgarh and Nalanda seals of Śarvavarman, which also record the family's genealogy.",src:["ei27","sharva"]},
- {n:"Chalukya",d:"Bādāmi 543–753 · Vengi 624–1075 · Kalyāṇi 973–1189",r:"Deccan",k:"seal",g:"boar",e:"Varāha (boar)",nat:"वराह",nc:"deva",
+ {n:"Chalukya",d:"Bādāmi 543–753 · Vengi 624–1075 · Kalyāṇi 973–1189",img:"14-chalukya",r:"Deccan",k:"seal",g:"boar",e:"Varāha (boar)",nat:"वराह",nc:"deva",
   t:"The boar, Vishnu's Varāha form, is the lāñchhana shared by all three Chalukya houses. It appears on their grant seals and on Kalyani Chalukya gold coins. Vijayanagara later took up the same emblem.",src:["chalukyaMW","varahaNum","eChal"]},
- {n:"Puṣyabhūti (Vardhana)",d:"c. 500–647 CE",r:"North",k:"seal",g:"bullStanding",e:"Bull",nat:"वृषभ",nc:"deva",
+ {n:"Puṣyabhūti (Vardhana)",d:"c. 500–647 CE",img:"15-pushyabhuti",r:"North",k:"seal",g:"bullStanding",e:"Bull",nat:"वृषभ",nc:"deva",
   t:"A bull on Harsha's copper seal from Sonepat, which gives his genealogy from Rājyavardhana I. It matches the kings' Śaiva titles. Two of Harsha's clay seals were also found at Nalanda.",src:["ei27","harshaSeal"]},
- {n:"Gauḍa (Śaśāṅka)",d:"c. 600–637 CE",r:"East",k:"coin",g:"bullMoon",e:"Nandi beneath a moon disc",nat:"नन्दी · शशाङ्क",nc:"deva",
+ {n:"Gauḍa (Śaśāṅka)",d:"c. 600–637 CE",img:"16-gauda",r:"East",k:"coin",g:"bullMoon",e:"Nandi beneath a moon disc",nat:"नन्दी · शशाङ्क",nc:"deva",
   t:"Shashanka's gold coins show Shiva reclining on Nandi with a disc above; his name means 'the moon'. The Rohtasgarh seal matrix carries only the legend 'Mahāsāmanta Śaśāṅkadeva'. The drawing shows the bull and the disc without Shiva.",src:["shashanka","shashankaSeal"]},
- {n:"Pāṇḍuvaṃśī of Śrīpura",d:"c. 6th–8th c. CE",r:"East",k:"seal",g:"garudaSerpents",e:"Human-headed Garuḍa with serpents",nat:"गरुड",nc:"deva",
+ {n:"Kārkoṭa of Kashmir",d:"c. 625–855 CE",r:"North",k:"coin",img:"",g:"",pending:true,e:"Standing king and seated goddess",nat:"",nc:"",
+  t:"No Kārkoṭa flag, seal or emblem survives, Lalitāditya's included. What they did leave is a coin type inherited from the Kushans: a standing king at a fire altar, and a goddess enthroned on the other side, with short legends such as 'Śrī Pratāpa'.",src:["karkota","inhcrfVin"]},
+ {n:"Pāṇḍuvaṃśī of Śrīpura",d:"c. 6th–8th c. CE",img:"17-panduvamshi",r:"East",k:"seal",g:"garudaSerpents",e:"Human-headed Garuḍa with serpents",nat:"गरुड",nc:"deva",
   t:"Garuda with a human head and a bird's body with outstretched wings, holding a hooded serpent in each hand, on the seals of Tīvaradeva. The design follows the king's Vaishnava faith.",src:["sripura"]},
- {n:"Eastern Gaṅga",d:"c. 5th c. – 1078 CE (early line)",r:"East",k:"seal",g:"bullCouchant",e:"Couchant bull",nat:"वृषभ",nc:"deva",
+ {n:"Eastern Gaṅga",d:"c. 5th c. – 1078 CE (early line)",img:"18-eastern-ganga",r:"East",k:"seal",g:"bullCouchant",e:"Couchant bull",nat:"वृषभ",nc:"deva",
   t:"A recumbent bull on the ring-seal of Kalinga Ganga grants, as on the three-plate set of Indravarman.",src:["eganga"]},
- {n:"Saindhava",d:"c. 735–920 CE",r:"West",k:"seal",g:"fish",e:"Fish (matsya)",nat:"मत्स्य",nc:"deva",
+ {n:"Saindhava",d:"c. 735–920 CE",img:"19-saindhava",r:"West",k:"seal",g:"fish",e:"Fish (matsya)",nat:"मत्स्य",nc:"deva",
   t:"A fish, the sign of Varuna, on the grants of this coastal Saurashtra house based at Ghumli. It fits their reputation as a naval power.",src:["saindhava"]},
- {n:"Gurjara-Pratīhāra",d:"c. 730–1036 CE",r:"North",k:"coin",g:"varahaMan",e:"Ādivarāha",nat:"आदिवराह",nc:"deva",
+ {n:"Gurjara-Pratīhāra",d:"c. 730–1036 CE",img:"20-pratihara",r:"North",k:"coin",g:"varahaMan",e:"Ādivarāha",nat:"आदिवराह",nc:"deva",
   t:"Mihira Bhoja took the title Ādivarāha and put the boar-headed avatar, striding with a discus, on his silver and copper coins. The dynasty's seals are said to show their tutelary goddess Bhagavatī, but they are not drawn here.",src:["mihira","ei27"]},
- {n:"Pāla",d:"c. 750–1161 CE",r:"East",k:"seal",g:"wheelDeer",e:"Dharmacakra with deer",nat:"धर्मचक्र",nc:"deva",
+ {n:"Pāla",d:"c. 750–1161 CE",img:"21-pala",r:"East",k:"seal",g:"wheelDeer",e:"Dharmacakra with deer",nat:"धर्मचक्र",nc:"deva",
   t:"The Buddhist Wheel of Law flanked by two deer, a reference to the Deer Park at Sarnath, set within a lotus above the king's name. It appears on the Jagjivanpur plate of Mahendrapāla.",src:["jagjivan"]},
- {n:"Rāṣṭrakūṭa",d:"753–982 CE",r:"Deccan",k:"seal",g:"garudaSeated",e:"Seated Garuḍa, añjali mudrā",nat:"गरुड",nc:"deva",
+ {n:"Rāṣṭrakūṭa",d:"753–982 CE",img:"22-rashtrakuta",r:"Deccan",k:"seal",g:"garudaSeated",e:"Seated Garuḍa, añjali mudrā",nat:"गरुड",nc:"deva",
   t:"Garuda seated in padmāsana on a lotus with his palms joined, wings rising from the shoulders. It is on the grant seals from Dantidurga (742 CE) onward and on coins reading 'Śrī Śubhatuṅga'.",src:["rashtraMW","dantiSeal"]},
- {n:"Kalachuri of Tripurī",d:"c. 675–1212 CE",r:"North",k:"coin",g:"gajalakshmi",e:"Seated Lakṣmī",nat:"लक्ष्मी",nc:"deva",
+ {n:"Kalachuri of Tripurī",d:"c. 675–1212 CE",img:"23-kalachuri",r:"North",k:"coin",g:"gajalakshmi",e:"Seated Lakṣmī",nat:"लक्ष्मी",nc:"deva",
   t:"Seated Lakshmi is the obverse of Gāṅgeyadeva's gold coins. The kin branch at Ratnapura put a four-armed goddess on a lotus, holding a water-pot, on its plates.",src:["kalaMW","kalaIC"]},
- {n:"Hindu Śāhi",d:"c. 822–1026 CE",r:"Northwest",k:"coin",g:"horseman",e:"Bull & horseman",nat:"",nc:"",
+ {n:"Hindu Śāhi",d:"c. 822–1026 CE",img:"24-shahi",r:"Northwest",k:"coin",g:"horseman",e:"Bull & horseman",nat:"",nc:"",
   t:"Their silver jitals show a recumbent humped bull with the legend 'Śrī Sāmantadeva' on one side and a horseman with a lance on the other. Later Rajput and Ghurid mints kept copying the type long after the dynasty fell.",src:["shahiMW","shahiNum"]},
- {n:"Chola (Imperial)",d:"848–1279 CE",r:"South",k:"seal",g:"chola",e:"Seated tiger, twin fish & bow",nat:"புலி",nc:"taml",
+ {n:"Chola (Imperial)",d:"848–1279 CE",img:"25-chola",r:"South",k:"seal",g:"chola",e:"Seated tiger, twin fish & bow",nat:"புலி",nc:"taml",
   t:"The Chola tiger sits under one royal parasol, flanked by fly-whisks, with the Pandya twin fish in front of it and the Chera bow below. The composition claims rule over all three Tamil crowns. It appears on the seals of their copper plates and on Uttama Chola's coins.",src:["cholaSeal","cholaFlag","uttama"]},
- {n:"Pāṇḍya",d:"First Empire c. 590–920 CE",r:"South",k:"coin",g:"twinFish",e:"Twin fish (kayal)",nat:"கயல்",nc:"taml",
+ {n:"Pāṇḍya",d:"First Empire c. 590–920 CE",img:"26-pandya",r:"South",k:"coin",g:"twinFish",e:"Twin fish (kayal)",nat:"கயல்",nc:"taml",
   t:"A pair of carp facing each other, often with a goad or sceptre between them, on Pandya coins and banners. The Cholas later placed the same pair beneath their tiger as a sign of conquest.",src:["pandyaFlag","pandyaMW"]},
- {n:"Chera",d:"Chera Perumāḷs c. 800–1124 CE",r:"South",k:"coin",g:"bow",e:"Bow and arrow (vil)",nat:"வில்",nc:"taml",
+ {n:"Chera",d:"Chera Perumāḷs c. 800–1124 CE",img:"27-chera",r:"South",k:"coin",g:"bow",e:"Bow and arrow (vil)",nat:"வில்",nc:"taml",
   t:"The Chera emblem is the strung bow, carried on their coins and banners. It is the third element of the Chola seal composition.",src:["cholaFlag","uttama"]},
- {n:"Paramāra of Mālwa",d:"c. 9th c. – 1305 CE",r:"North",k:"seal",g:"garudaFlying",e:"Flying Garuḍa with cobra",nat:"गरुड",nc:"deva",
+ {n:"Paramāra of Mālwa",d:"c. 9th c. – 1305 CE",img:"28-paramara",r:"North",k:"seal",g:"garudaFlying",e:"Flying Garuḍa with cobra",nat:"गरुड",nc:"deva",
   t:"A bird-headed Garuda with a human body, flying, holding a cobra in one hand and raising the other to strike. It is incised on the plates of Siyaka II (949 CE) and on every one of Bhoja's own grants.",src:["harsola","bhoja"]},
 ];
 
@@ -1480,11 +1562,11 @@ const PAINTED = {
   "Chera":["bowArrow","Painted after the Chola-period murals, the nearest surviving"],
   "Paramāra of Mālwa":["garudaFlying2","Painted in the Ajanta palette; no Paramāra painting survives"],
 };
-const MIMG=["01-maurya", "02-satavahana", "03-kushan", "04-kshatrapa", "05-gupta", "06-kadamba", "07-kamarupa", "08-western-ganga", "09-vishnukundina", "10-pallava", "11-maitraka", "12-sharabhapuriya", "13-maukhari", "14-chalukya", "15-pushyabhuti", "16-gauda", "17-panduvamshi", "18-eastern-ganga", "19-saindhava", "20-pratihara", "21-pala", "22-rashtrakuta", "23-kalachuri", "24-shahi", "25-chola", "26-pandya", "27-chera", "28-paramara"];
+const MIMG_OLD=["01-maurya", "02-satavahana", "03-kushan", "04-kshatrapa", "05-gupta", "06-kadamba", "07-kamarupa", "08-western-ganga", "09-vishnukundina", "10-pallava", "11-maitraka", "12-sharabhapuriya", "13-maukhari", "14-chalukya", "15-pushyabhuti", "16-gauda", "17-panduvamshi", "18-eastern-ganga", "19-saindhava", "20-pratihara", "21-pala", "22-rashtrakuta", "23-kalachuri", "24-shahi", "25-chola", "26-pandya", "27-chera", "28-paramara"];
 function card(x){
   const links = x.src.map(k=>`<a href="${S[k][1]}" target="_blank" rel="noopener">${esc(S[k][0].split(" — ")[1]||S[k][0])}</a>`).join(" · ");
   return `<article class="card">
-    ${MIMG[D.indexOf(x)] ? `<img class="epic-img" loading="lazy" src="modern/m${MIMG[D.indexOf(x)]}.webp?v=1" alt="${esc(x.e)}"><div class="idiom">Painted from the ${x.k} ${x.k==="monument"?"itself":"description"}</div>` : PAINTED[x.n] ? `<canvas class="seal paint" width="560" height="560" data-emb="${PAINTED[x.n][0]}" data-style="${PAINTED[x.n][2]||""}" role="img" aria-label="${esc(x.e)}"></canvas><div class="idiom">${PAINTED[x.n][1]}</div>` : svg(x)}
+    ${x.pending ? `<div class="pending"><div><b class="pe">${esc(x.e)}</b>Painting in progress</div></div>` : x.img ? `<img class="epic-img" loading="lazy" src="modern/m${x.img}.webp?v=1" alt="${esc(x.e)}"><div class="idiom">Painted from the ${x.k} ${x.k==="monument"?"itself":"description"}</div>` : PAINTED[x.n] ? `<canvas class="seal paint" width="560" height="560" data-emb="${PAINTED[x.n][0]}" data-style="${PAINTED[x.n][2]||""}" role="img" aria-label="${esc(x.e)}"></canvas><div class="idiom">${PAINTED[x.n][1]}</div>` : svg(x)}
     <div class="head"><h2>${esc(x.n)}</h2><span class="dates">${esc(x.d)}</span></div>
     <div style="display:grid;gap:8px"><div class="emblem"><strong>${esc(x.e)}</strong>${x.nat?`<span class="native ${x.nc}">${x.nat}</span>`:""}</div><p>${esc(x.t)}</p></div>
     <div class="meta"><span class="pill ${x.k}">${x.k}</span><span>${x.r}</span>${links?`<span>·</span>${links}`:""}</div>
@@ -1585,25 +1667,119 @@ document.getElementById("n-total").textContent=D.length;
 document.getElementById("n-seal").textContent=D.filter(x=>x.k==="seal").length;
 document.getElementById("sources").innerHTML = "Sources — "+Object.values(S).map(([t,u])=>`<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")+". Sātavāhana and Maurya entries rest on standard numismatic and art-historical description.";
 render();
+/* ---------- Later kingdoms · 1040–1858 ---------- */
+
+/* flag insets: 60×40 drawings of documented flags; conf = how well the flag itself is attested */
+const FLAGS={
+  mewar:{svg:`<path d="M2 2 L58 20 L2 38 Z" fill="#9b1b1f"/><circle cx="20" cy="20" r="7" fill="#e3b23c"/><g stroke="#e3b23c" stroke-width="1.4">${[...Array(12)].map((_,i)=>{const a=i*Math.PI/6;return `<line x1="${20+Math.cos(a)*8.5}" y1="${20+Math.sin(a)*8.5}" x2="${20+Math.cos(a)*11}" y2="${20+Math.sin(a)*11}"/>`}).join("")}</g><path d="M34 16 L40 20 L34 24 Z" fill="#e3b23c"/>`,cap:"Maharana's nishān: gold sun on crimson. Described for the princely era; no pre-1800 flag survives.",conf:"low"},
+  marwar:{svg:`${["#f08a24","#ffffff","#c8102e","#f2c200","#2e8b3a"].map((c,i)=>`<rect x="2" y="${2+i*7.2}" width="56" height="7.2" fill="${c}"/>`).join("")}<path d="M30 16 C26 12 20 13 18 16 C22 16 26 17 28 20 C30 17 34 16 42 16 C40 13 34 12 30 16 Z" fill="#fff" stroke="#333" stroke-width=".7"/>`,cap:"Pacharangā with the clan goddess's kite. Princely-era use; Jaipur flew a different five-colour flag.",conf:"medium"},
+  jaipur:{svg:`${["#c8102e","#f2c200","#ffffff","#2e8b3a","#1f4fa0"].map((c,i)=>`<rect x="2" y="${10+i*5.6}" width="56" height="5.6" fill="${c}"/>`).join("")}${["#c8102e","#f2c200","#ffffff","#2e8b3a","#1f4fa0"].map((c,i)=>`<rect x="2" y="${0+i*1.8}" width="16" height="1.8" fill="${c}"/>`).join("")}`,cap:"Panchrangā with the quarter-size 'sawai' flag above. A 1630 account describes it as triangular.",conf:"medium"},
+  maratha:{svg:`<path d="M2 2 H58 L42 20 L58 38 H2 Z" fill="#e8761b"/>`,cap:"Bhagwā jhenḍā: plain saffron, swallow-tailed. Described in narrative sources; no 17th–18th c. flag survives.",conf:"medium"},
+  sikh:{svg:`<path d="M2 2 L58 20 L2 38 Z" fill="#b51f2a" stroke="#2e7a3a" stroke-width="2"/><circle cx="18" cy="20" r="6" fill="#e3b23c"/><g stroke="#e3b23c" stroke-width="1.2">${[...Array(10)].map((_,i)=>{const a=i*Math.PI/5;return `<line x1="${18+Math.cos(a)*7.5}" y1="${20+Math.sin(a)*7.5}" x2="${18+Math.cos(a)*10}" y2="${20+Math.sin(a)*10}"/>`}).join("")}</g>`,cap:"A captured Khalsa Army standard of the 1840s: triangular silk with a gilt sun. No single state flag is verified.",conf:"medium"},
+  mysore:{svg:`<rect x="2" y="2" width="56" height="18" fill="#c8102e"/><rect x="2" y="20" width="56" height="18" fill="#6b3a1e"/>`,cap:"Red over brown, princely era (shown here without the arms).",conf:"low"},
+  travancore:{svg:`<rect x="2" y="2" width="56" height="36" fill="#c8102e"/><path d="M30 9 C38 10 40 20 34 27 C31 30 27 31 25 28 C29 27 31 23 29 19 C27 15 24 15 22 17 C21 12 25 9 30 9 Z" fill="#f2efe6"/>`,cap:"Silver right-whorled conch on red. Princely-era state flag.",conf:"medium"},
+  ahom:{svg:`<rect x="2" y="2" width="56" height="36" fill="#fbfaf5" stroke="#999" stroke-dasharray="3 2"/><path d="M14 26 C18 14 30 12 38 16 C44 12 48 16 46 20 C42 18 40 22 44 26 C36 24 30 30 22 28 Z" fill="#b51f2a" opacity=".85"/>`,cap:"White flag with a red ngi-ngao-kham. A modern claim from oral tradition; no primary source.",conf:"low"},
+};
+/* legend-only coins and seals, set in type rather than painted */
+const TXT={
+  maratha:{font:"var(--deva)",size:15,lines:["प्रतिपच्चन्द्रलेखेव","वर्धिष्णुर्विश्ववन्दिता ।","शाहसूनोः शिवस्यैषा","मुद्रा भद्राय राजते ॥"],cap:"The rājamudrā legend, set in type; the seal's shape is not securely known"},
+  sikh:{font:"'Noto Nastaliq Urdu',serif",size:14,rtl:true,lines:["سکه زد بر هر دو عالم","تیغ نانک واهب است","فتح گوبند سنگه شاه شاهان","فضل سچا صاحب است"],leaf:true,cap:"The Nanakshahi couplet, set in type, with the leaf mark"},
+  ahom:{font:"'Noto Sans Bengali',sans-serif",size:17,oct:true,lines:["শ্ৰীশ্ৰীহৰি","হৰচৰণ","পৰায়ণস্য"],cap:"Obverse legend of an Ahom octagonal rupee, set in type"},
+  koch:{font:"'Noto Sans Bengali',sans-serif",size:16,lines:["শ্রীশ্রীশিব","চরণকমল","মধুকরস্য"],cap:"Reverse legend of the Narayani rupee, set in type"},
+};
+function txtMedal(k,label){ const t=TXT[k]; const c=120, n=t.lines.length, lh=t.size*1.9, y0=c-(n-1)*lh/2+t.size*.35;
+  const petals=[...Array(28)].map((_,i)=>{const a=i/28*Math.PI*2, ca=Math.cos(a), sa=Math.sin(a), px=-sa, py=ca; const b=[c+ca*92,c+sa*92], tp=[c+ca*110,c+sa*110], m=[c+ca*101,c+sa*101];
+    return `<path d="M${b[0]+px*5} ${b[1]+py*5} Q${m[0]+px*8} ${m[1]+py*8} ${tp[0]} ${tp[1]} Q${m[0]-px*8} ${m[1]-py*8} ${b[0]-px*5} ${b[1]-py*5} Z" fill="${i%2?'#d6a24c':'#a8402a'}" stroke="#3a1a0c" stroke-width=".8"/>`}).join("");
+  const pearls=[...Array(60)].map((_,i)=>{const a=i/60*Math.PI*2;return `<circle cx="${c+Math.cos(a)*114}" cy="${c+Math.sin(a)*114}" r="2.4" fill="#f1e4c3" stroke="#3a1a0c" stroke-width=".5"/>`}).join("");
+  const frame=t.oct? `<path d="${[...Array(8)].map((_,i)=>{const a=(i+.5)/8*Math.PI*2;return (i?'L':'M')+(c+Math.cos(a)*74)+' '+(c+Math.sin(a)*74)}).join('')}Z" fill="none" stroke="#e3c27a" stroke-width="2"/>` : `<circle cx="${c}" cy="${c}" r="76" fill="none" stroke="#e3c27a" stroke-width="1.6" stroke-dasharray="1 4" stroke-linecap="round"/>`;
+  const leaf=t.leaf? `<path d="M${c+44} ${c+44} c-6 -2 -9 -8 -7 -13 c5 1 9 6 7 13 z M${c+44} ${c+44} l4 4" fill="#e3c27a" stroke="#e3c27a" stroke-width="1"/>`:"";
+  return `<svg class="seal txt" viewBox="0 0 240 240" role="img" aria-label="${esc(label)}"><circle cx="${c}" cy="${c}" r="119" fill="#7a3b1c"/>${pearls}${petals}<circle cx="${c}" cy="${c}" r="90" fill="#34503d" stroke="#2e120a" stroke-width="2"/>${frame}${leaf}
+    ${t.lines.map((l,i)=>`<text x="${c}" y="${y0+i*lh}" text-anchor="middle" ${t.rtl?'direction="rtl"':''} style="font-family:${t.font};font-size:${t.size}px;fill:#f0d790">${l}</text>`).join("")}</svg>`; }
+
+const LATER=[
+ {n:"Hoysala",d:"c. 1026–1343 CE",r:"South",k:"monument",e:"Sala fighting the tiger",nat:"ಹೊಯ್ಸಳ",nc:"knda",
+  t:"The dynasty's emblem is the warrior Sala striking a tiger, carved as free-standing sculpture at Hoysala temples such as Belur. On their gold coins the device is a maned lion, with Kannada legends recording victories such as 'Śrī Talakāḍugoṇḍa'. No Hoysala flag is attested.",src:["hoySala","hoyCoin","jackson"]},
+ {n:"Kākatīya",d:"c. 1163–1323 CE",r:"Deccan",k:"coin",e:"Varāha (boar)",nat:"వరాహ",nc:"telu",
+  t:"The boar is the device most often tied to the Kākatīyas: their enemies' coins add a varāha when recording victories over them, and a 'boar type' gold coin is reported. Jackson (1912) instead gives a couchant bull, so the attribution is not settled.",src:["kakGanapati","yadMahadeva","jackson"],warn:"Sources disagree: boar or bull"},
+ {n:"Seuṇa (Yādava) of Devagiri",d:"c. 1187–1317 CE",r:"Deccan",k:"coin",e:"Lotus punch coin (padmaṭaṅka)",nat:"पद्मटंक",nc:"deva",
+  t:"Yādava gold padmaṭaṅkas are cupped coins struck with separate punches: a central lotus, two 'Śrī' marks, a conch, an elephant and the king's name. A golden Garuḍa crest is reported in older literature but could not be confirmed.",src:["yadMahadeva","yadNumista","jackson"]},
+ {n:"Sena of Bengal",d:"c. 1070–1230 CE",r:"East",k:"seal",e:"Ten-armed Śiva (Sadāśiva)",nat:"সদাশিব",nc:"beng",
+  t:"The cast seal at the head of Sena copper-plate grants shows a multi-armed Śiva seated on a lotus, as on the Barrackpur plate of Vijayasena in the British Museum. The Senas struck no known coins.",src:["senaBM"]},
+ {n:"Gāhaḍavāla",d:"c. 1089–1197 CE",r:"North",k:"coin",e:"Seated four-armed Lakṣmī",nat:"लक्ष्मी",nc:"deva",
+  t:"Govindacandra's base-gold coins show a four-armed seated goddess, with 'Śrīmad Govindacandradeva' and a trident on the reverse, a type borrowed from the Kalachuris and later copied by Muhammad of Ghor. A Garuḍa seal is often asserted but was not verified.",src:["gahGovinda","gahMW"]},
+ {n:"Chandela",d:"coinage 11th–12th c. CE",r:"North",k:"coin",e:"Hanumān (copper)",nat:"हनुमान",nc:"deva",
+  t:"Chandela kings struck gold and silver in the Kalachuri seated-goddess style; their copper coins show Hanumān striding with one arm raised, with a Nāgarī name such as 'Śrīman Madanavarmadeva'. No seal or flag is verified.",src:["chaMadana"]},
+ {n:"Chaulukya (Solaṅkī) of Gujarat",d:"c. 940–1244 CE",r:"West",k:"coin",e:"Charging elephant",nat:"",nc:"",
+  t:"Tiny silver coins of about half a gram, attributed to Jayasiṃha Siddharāja, show an elephant charging right. The attribution rests on dealer catalogues, so treat this as a coin type rather than a dynastic emblem.",src:["solMW"],warn:"Attribution uncertain"},
+ {n:"Cāhamāna (Chauhan) of Śākambharī",d:"c. 7th c. – 1192 CE",r:"Northwest",k:"coin",e:"Bull and horseman",nat:"श्री पृथ्वीराजदेव",nc:"deva",
+  t:"Pṛthvīrāja III's billon jitals pair a recumbent bull with a lancer on horseback, the Śāhi type, naming 'Śrī Pṛthvīrājadeva'. His grandfather Ajayarāja II had struck a seated goddess instead.",src:["chauPrithvi","chauAjaya"]},
+ {n:"Guhila–Sisodia of Mewar",d:"8th c. – 1949 CE",r:"Northwest",k:"flag",e:"The sun (Sūrya)",nat:"सूर्य",nc:"deva",flag:"mewar",
+  t:"The house claims solar descent, and a gold sun face is its long-standing device. The coat of arms with a Rajput and a Bhil as supporters and the motto 'Jo dṛḍh rākhe dharm ko' is a 19th-century creation of the British-era armorial tradition, not pre-colonial heraldry.",src:["mewFotw","mewArms"]},
+ {n:"Rāṭhoṛ of Marwar (Jodhpur)",d:"1459 – 1949 CE",r:"Northwest",k:"flag",e:"Kite of the clan goddess",nat:"पचरंगा",nc:"deva",flag:"marwar",
+  t:"Jodhpur's five-coloured pacharangā carries a kite or falcon, the bird of the Rathore goddess Nāgṇecī. The coat of arms with the motto 'Raṇbaṅkā Rāṭhoṛ' belongs to the 19th-century armorial tradition.",src:["marFotw","marNag"]},
+ {n:"Kachwāhā of Amber (Jaipur)",d:"c. 12th c. – 1949 CE",r:"Northwest",k:"flag",e:"Panchrangā flag",nat:"पचरंगा",nc:"deva",flag:"jaipur",
+  t:"Jaipur's five-coloured flag is traditionally credited to Mān Singh I; a 1630 description calls it triangular. Jaipur's own mint mark is the jhāṛ, a sprig on its coins. The sun added to the flag in 1877 and the heraldic arms are British-era.",src:["jaiFotw","jaiJhar"]},
+ {n:"Vijayanagara",d:"1336–1646 CE",r:"South",k:"seal",e:"Boar facing a sword, sun and moon",nat:"ವರಾಹ",nc:"knda",
+  t:"The royal seal on Vijayanagara copper plates is reported as a boar facing an upright sword under the sun and moon; the state's gold coin was even called the varāha. The coins themselves carry deities, and Acyutadevarāya's are the first to show the two-headed gaṇḍabheruṇḍa.",src:["vijBlog","vijWiki"]},
+ {n:"Ahom kingdom",d:"1228–1826 CE",r:"Northeast",k:"coin",e:"Octagonal rupee",nat:"",nc:"",flag:"ahom",txt:"ahom",
+  t:"From 1648 the Ahoms struck octagonal silver rupees bearing Sanskrit legends in Assamese script that name the king and his patron deity, such as 'Śrī Śrī Harihara-caraṇa-parāyaṇasya', devoted to the feet of Hari and Hara. A royal flag with the winged lion-dragon ngi-ngao-kham is a modern claim.",src:["ahomCoin","ahomLHI","ahomNgi"]},
+ {n:"Tripura (Māṇikya)",d:"coinage 1464 CE onward",r:"Northeast",k:"coin",e:"Lion",nat:"",nc:"",
+  t:"Tripura's coinage begins with Ratna Māṇikya in 1464, and its standard device is a walking lion within a border, with a Sanskrit legend in Bengali script.",src:["triSpink","triMW"]},
+ {n:"Koch (Cooch Behar)",d:"coinage 1555 – 1866 CE",r:"Northeast",k:"coin",e:"Narayani rupee",nat:"",nc:"",txt:"koch",
+  t:"Naranārāyaṇa's Narayani rupee of 1555 carries no image, only legends; the reverse calls the king 'a honey-bee at the lotus feet of Śiva'. The early Ahom coins copied it.",src:["kochWiki","kochNum"]},
+ {n:"Maratha state",d:"1674–1818 CE",r:"West",k:"seal",e:"Śivājī's rājamudrā",nat:"राजमुद्रा",nc:"deva",flag:"maratha",txt:"maratha",
+  t:"Śivājī's seal carries a Sanskrit couplet, not the usual Persian: 'This seal of Śiva, son of Śāhajī, waxing like the first crescent of the moon and honoured by the world, shines for the good of all.' It is first found on a letter of 1646.",src:["marEmblem","histFlags"]},
+ {n:"Sikh Empire",d:"1799–1849 CE",r:"Northwest",k:"coin",e:"Nanakshahi rupee",nat:"ਨਾਨਕਸ਼ਾਹੀ",nc:"guru",flag:"sikh",txt:"sikh",
+  t:"Ranjit Singh's coins name no ruler; they carry a Persian couplet honouring Guru Nānak and Guru Gobind Singh, with a leaf mark. The widely circulated saffron 'Sikh Empire flag' is a modern reconstruction; the standards captured in the Anglo-Sikh wars are triangular silk with a gilt sun.",src:["sikhCoin","sikhFlag"]},
+ {n:"Mysore (Woḍeyar)",d:"1399–1950 CE",r:"South",k:"coin",e:"Gaṇḍabheruṇḍa",nat:"ಗಂಡಭೇರುಂಡ",nc:"knda",flag:"mysore",
+  t:"The two-headed bird first appears on Vijayanagara coins of the 1530s; the Woḍeyars inherited it as their emblem. When they first used it is not securely dated, and its prominence in the state arms is 19th–20th century.",src:["ganda","mysFotw"]},
+ {n:"Travancore",d:"1729–1949 CE",r:"South",k:"coin",e:"Right-whorled conch",nat:"വലംപിരി ശംഖ്",nc:"mlym",flag:"travancore",
+  t:"The right-whorled conch, sacred to the state deity Śrī Padmanābha, runs through Travancore's coinage, often garlanded under a crescent, and stood in silver on the red state flag.",src:["travMW","keralaEmb","jackson"]},
+];
+const LKIND=[["all","All"],["seal","Seal"],["coin","Coin"],["flag","Flag"],["monument","Monument"]];
+const LREG=["All","North","Northwest","East","Northeast","West","Deccan","South"];
+let lr="All", lk="all";
+function flagInset(f){ const F=FLAGS[f]; return `<figure class="flag" title="${esc(F.cap)}"><svg viewBox="0 0 60 40" aria-hidden="true"><line x1="1" y1="0" x2="1" y2="40" stroke="#5a4632" stroke-width="2"/>${F.svg}</svg><figcaption><span class="conf ${F.conf}">flag · ${F.conf}</span></figcaption></figure>`; }
+function laterCard(x){
+  const links = x.src.map(k=>`<a href="${S[k][1]}" target="_blank" rel="noopener">${esc(S[k][0].split(" — ")[1]||S[k][0])}</a>`).join(" · ");
+  const art = x.img ? `<img class="epic-img" loading="lazy" src="later/${x.img}.webp?v=1" alt="${esc(x.e)}"><div class="idiom">Painted from the ${x.k} description</div>`
+    : x.txt ? `${txtMedal(x.txt,x.e)}<div class="idiom">${TXT[x.txt].cap}</div>`
+    : `<div class="pending"><div><b class="pe">${esc(x.e)}</b>Painting in progress</div></div>`;
+  return `<article class="card">${art}
+    <div class="head lhead"><div><h2>${esc(x.n)}</h2><span class="dates">${esc(x.d)}</span></div>${x.flag?flagInset(x.flag):""}</div>
+    <div style="display:grid;gap:8px"><div class="emblem"><strong>${esc(x.e)}</strong>${x.nat?`<span class="native ${x.nc}">${x.nat}</span>`:""}</div><p>${esc(x.t)}</p>${x.warn?`<p class="warn">${esc(x.warn)}</p>`:""}</div>
+    <div class="meta"><span class="pill ${x.k}">${x.k}</span><span>${x.r}</span>${links?`<span>·</span>${links}`:""}</div>
+  </article>`; }
+function renderLater(){ const list=LATER.filter(x=>(lr==="All"||x.r===lr)&&(lk==="all"||x.k===lk||(lk==="flag"&&x.flag)));
+  document.getElementById("later-grid").innerHTML = list.length? list.map(laterCard).join("") : `<div class="empty">No kingdoms match that region and evidence type.</div>`; }
+function chips2(el,items,get,set,cb){ const box=document.getElementById(el);
+  items.forEach(([v,l])=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=l;b.setAttribute("aria-pressed",get()===v);
+    b.onclick=()=>{set(v);box.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));cb();};box.appendChild(b);}); }
+chips2("l-region",LREG.map(r=>[r,r]),()=>lr,v=>lr=v,renderLater);
+chips2("l-kind",LKIND,()=>lk,v=>lk=v,renderLater);
+renderLater();
+
 /* tabs */
 (function(){
   const tabs=[...document.querySelectorAll('.tab')];
   document.getElementById('c-modern').textContent=D.length;
   document.getElementById('c-itihasa').textContent=EPIC.length;
+  document.getElementById('c-later').textContent=LATER.length; document.getElementById('n-later').textContent=LATER.length; document.getElementById('n-flags').textContent=LATER.filter(x=>x.flag).length;
   document.getElementById('n-epic').textContent=EPIC.length;
   document.getElementById('n-epic-done').textContent=EPIC.filter(x=>x.img||x.paint).length;
   const hd={ modern:[document.getElementById('hd-eyebrow').textContent, document.getElementById('hd-lede').innerHTML],
+    later:['Bharatiya historical record · 1040 – 1858 CE','The kingdoms that followed kept the old habit of a royal device, and added flags that European travellers and court painters recorded. Each card shows only what the evidence supports: a seal, a coin type, a monument or a documented flag. A flag that is known only from the princely era, or only from modern claims, says so.'],
     itihasa:['War banners of the epics · Mahābhārata and Rāmāyaṇa','The Purāṇas list the royal lines of Magadha and the solar and lunar houses, but they record genealogies, not emblems. Those survive in the epics: a warrior was known at a distance by the device on his banner (dhvaja). Each card quotes the verse that describes it, from the critical edition of the Mahābhārata or the Rāmāyaṇa. The images are interpretive paintings made to follow the verse and nothing beyond it; cards marked “in progress” await theirs.'] };
   function show(id, focus){
-    const k = id==='tab-itihasa' ? 'itihasa' : 'modern';
+    const k = id==='tab-itihasa' ? 'itihasa' : id==='tab-later' ? 'later' : 'modern';
     document.getElementById('hd-eyebrow').textContent=hd[k][0]; document.getElementById('hd-lede').innerHTML=hd[k][1];
-    document.getElementById('stats-modern').hidden = k!=='modern'; document.getElementById('stats-itihasa').hidden = k!=='itihasa';
+    document.getElementById('stats-modern').hidden = k!=='modern'; document.getElementById('stats-itihasa').hidden = k!=='itihasa'; document.getElementById('stats-later').hidden = k!=='later';
     tabs.forEach(t=>{const on=t.id===id; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
       document.getElementById(t.getAttribute('aria-controls')).hidden=!on; if(on&&focus) t.focus();});
-    try{ history.replaceState(null,'', id==='tab-itihasa' ? '#itihasa' : location.pathname+location.search); }catch(e){}
+    try{ history.replaceState(null,'', id==='tab-itihasa' ? '#itihasa' : id==='tab-later' ? '#later' : location.pathname+location.search); }catch(e){}
   }
   tabs.forEach((t,i)=>{ t.onclick=()=>show(t.id);
     t.onkeydown=e=>{ if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ e.preventDefault(); const n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length]; show(n.id,true);} }; });
-  if (location.hash==='#itihasa') show('tab-itihasa');
+  if (location.hash==='#itihasa') show('tab-itihasa'); if (location.hash==='#later') show('tab-later');
 })();
 </script>
