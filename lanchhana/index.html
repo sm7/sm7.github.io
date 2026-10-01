@@ -1,1785 +1,215 @@
 <title>Lāñchhana Register</title>
+<meta name="description" content="A register of the emblems by which Indian kingdoms marked their authority, from the war banners of the epics to the seals, coins and flags of historical dynasties.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&family=Noto+Serif+Tamil:wght@500&family=Noto+Sans+Bengali:wght@500&family=Noto+Nastaliq+Urdu:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&display=swap">
 <style>
-/* Layout: a numismatic catalogue plate — emblems struck as copper roundels on patinated stone, filterable by region and by kind of evidence. */
+/* Layout: the register's front matter. A tray of struck medallions opens the page; below it the purpose, the three registers, one symbol traced through time, and the method, set like a catalogue introduction. */
 :root{
   --paper:#EDF1EE; --panel:#F6F8F6; --ink:#16201D; --muted:#56655F; --line:#CAD4CF;
-  --copper:#A4531F; --verdigris:#2C7A6B; --disc:#DFE7E3; --disc-ring:#2C7A6B;
+  --copper:#A4531F; --verdigris:#2C7A6B; --wash:#E3EAE6; --tray:#D9E2DD;
   --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
   --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
   --deva:"Noto Serif Devanagari","Nirmala UI",serif;
-  --taml:"Noto Serif Tamil","Nirmala UI",serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --paper:#0E1513; --panel:#141D1A; --ink:#E4EBE8; --muted:#94A49E; --line:#283632;
-  --copper:#E28A50; --verdigris:#5CB8A4; --disc:#1A2521; --disc-ring:#5CB8A4; color-scheme:dark}}
+  --copper:#E28A50; --verdigris:#5CB8A4; --wash:#1A2521; --tray:#16211D; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0E1513; --panel:#141D1A; --ink:#E4EBE8; --muted:#94A49E; --line:#283632;
-  --copper:#E28A50; --verdigris:#5CB8A4; --disc:#1A2521; --disc-ring:#5CB8A4; color-scheme:dark}
-
+  --copper:#E28A50; --verdigris:#5CB8A4; --wash:#1A2521; --tray:#16211D; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--body);margin:0}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:40px 64px}
-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;border-bottom:1px solid var(--line);padding-bottom:28px}
-.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--verdigris);margin:0 0 14px}
-h1{font:800 clamp(38px,6.4vw,76px)/.95 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
-h1 .deva{font-family:var(--deva);font-weight:500;color:var(--copper);font-size:.52em;letter-spacing:0;display:block;margin-top:10px}
-.lede{max-width:62ch;text-align:justify;hyphens:auto;color:var(--muted);margin:18px 0 0;font-size:16px}
-.stats{display:flex;gap:28px;font-family:var(--mono);font-size:12px;color:var(--muted)}
-.stats b{display:block;font:700 34px/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:20px 72px}
+.top{display:flex;justify-content:space-between;gap:16px;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-bottom:20px;border-bottom:1px solid var(--line)}
+.top a{text-decoration:none} .top a:hover{color:var(--ink)}
+.eyebrow{font:500 12px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--verdigris);margin:0 0 14px}
 
-.controls{display:flex;flex-wrap:wrap;gap:18px 32px;padding-block:22px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--paper);z-index:2;border-bottom:1px solid var(--line)}
-.group{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.group span{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:6px}
-.chip{font:500 13px/1 var(--body);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 13px;cursor:pointer}
-.chip:hover{border-color:var(--verdigris)}
-.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.chip:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:48px 56px;border-bottom:1px solid var(--line)}
+h1{font:800 clamp(44px,7.4vw,96px)/.92 var(--display);letter-spacing:-.025em;margin:0;text-wrap:balance}
+h1 .deva{font-family:var(--deva);font-weight:500;color:var(--copper);font-size:.46em;letter-spacing:0;display:block;margin-top:14px}
+.thesis{font-size:19px;line-height:1.55;max-width:34em;margin:24px 0 0}
+.gloss{font:500 13px/1.6 var(--mono);color:var(--muted);margin:16px 0 0;max-width:46ch}
+.gloss i{font-family:var(--deva);font-style:normal;color:var(--copper)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{font:600 14px/1 var(--body);text-decoration:none;padding:13px 18px;border-radius:999px;border:1px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--copper)} .btn.primary:hover{background:var(--copper);border-color:var(--copper)}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:28px}
-.card{background:var(--panel);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 22px 22px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;min-width:0}
-.card canvas.seal{width:240px;height:240px;max-width:100%;display:block;margin:0 auto;border-radius:50%;box-shadow:0 8px 18px rgba(0,0,0,.22)}
-.card canvas.engr{width:100%;height:auto;aspect-ratio:900/520;display:block;border-radius:6px;background:#f2e4c6}
-.card canvas.engr.flip{transform:scaleX(-1)}
-.epic{padding-top:36px}
-.tabs{display:flex;gap:4px;margin-top:28px;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
-.tab{font:600 15px/1.2 var(--body);color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:14px 16px 12px;cursor:pointer;white-space:nowrap;margin-bottom:-1px}
-.tab:hover{color:var(--ink)}
-.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--copper)}
-.tab:focus-visible{outline:2px solid var(--copper);outline-offset:-2px}
-.tabgroup{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:28px 0 -14px}
-.tabgroup span{margin:0 6px}
-.lhead{align-items:flex-start}
-.lhead .dates{display:block;text-align:left;max-width:none;margin-top:4px}
-.flag{margin:0;flex:none;display:grid;justify-items:center;gap:3px}
-.card .flag svg{width:54px;height:36px;margin:0;filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
-.conf{font:500 9px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.conf.low{color:var(--copper)}
-.pending b.pe{font-size:17px;line-height:1.2;display:block;max-width:170px;margin:0 auto 6px;text-wrap:balance}
-.warn{font:500 12px/1.4 var(--mono);color:var(--copper)}
-.card svg.seal.txt{width:240px;height:240px;max-width:100%;display:block;margin:0 auto;border-radius:50%;box-shadow:0 8px 18px rgba(0,0,0,.22)}
-.native.knda,.native.telu,.native.beng,.native.guru,.native.mlym{font-family:"Noto Serif",serif}
-.tab small{font:500 11px/1 var(--mono);color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums}
-.epic h2{font:800 clamp(28px,4vw,44px)/1.05 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
-.epic .lede{margin-top:12px}
-.epic-img{width:240px;height:240px;max-width:100%;display:block;margin:0 auto;border-radius:50%;box-shadow:0 8px 18px rgba(0,0,0,.22);object-fit:cover}
-.pending{width:240px;height:240px;max-width:100%;margin:0 auto;border-radius:50%;border:2px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font:500 12px/1.5 var(--mono);padding:30px}
-.pending b{display:block;font:700 30px/1 var(--display);color:var(--copper);margin-bottom:6px}
-.verse{margin:0;padding:10px 12px;border-left:2px solid var(--copper);background:color-mix(in oklab, var(--paper) 70%, transparent);font:italic 13.5px/1.55 "Noto Serif Devanagari",Georgia,serif;color:var(--ink)}
-.verse cite{display:block;font:500 11px/1.4 var(--mono);font-style:normal;color:var(--muted);margin-top:6px}
-.pill.text{color:var(--copper)}
-.idiom{font:500 11px/1.4 var(--mono);color:var(--muted);text-align:center;margin-top:-4px}
-.card img.seal{width:220px;height:auto;max-width:100%;display:block;margin:0 auto 2px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))}
-.card svg{width:196px;height:196px;max-width:100%;display:block;margin:0 auto 2px}
-.s{fill:var(--copper)} .kd{fill:var(--disc)}
-.k{fill:none;stroke:var(--disc);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
-.o{fill:none;stroke:var(--copper);stroke-linecap:round;stroke-linejoin:round}
-.rt{font:500 10px/1 var(--mono);letter-spacing:.2em;fill:var(--muted)}
-.rt.top{fill:var(--ink);font-weight:500}
-.disc{fill:var(--disc)}
-.beads{fill:none;stroke:var(--disc-ring);stroke-width:3;stroke-linecap:round;stroke-dasharray:0.01 7}
-.rim{fill:none;stroke:var(--disc-ring);stroke-width:.8;opacity:.55}
-.gl{fill:none;stroke:var(--copper);stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round}
-.gl .f{fill:var(--copper);stroke:none}
-.gl .fs{fill:var(--copper)}
-.gl .thin{stroke-width:1.8}
-.head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;min-width:0}
-.card h2{font:700 21px/1.15 var(--display);margin:0;text-wrap:balance}
-.dates{font:500 12px/1.3 var(--mono);color:var(--muted);text-align:right;max-width:55%;font-variant-numeric:tabular-nums}
-.emblem{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
-.emblem strong{font:600 14px/1.3 var(--body);color:var(--copper)}
-.native{font-size:16px;color:var(--ink)}
-.native.deva{font-family:var(--deva)} .native.taml{font-family:var(--taml)}
-.card p{margin:0;color:var(--ink);font-size:14px}
-.meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font:500 11px/1 var(--mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
-.pill{border:1px solid currentColor;border-radius:3px;padding:4px 6px;letter-spacing:.06em;text-transform:uppercase}
-.pill.tradition{color:var(--copper);border-style:dashed}
-.pill.seal{color:var(--verdigris)} .pill.coin{color:var(--copper)} .pill.monument{color:var(--muted)}
-.meta a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
-.meta a:hover{color:var(--ink)}
-.empty{grid-column:1/-1;background:var(--panel);padding:40px;text-align:center;color:var(--muted)}
+/* the tray: seven medallions set like coins in a cabinet tray */
+.tray{position:relative;aspect-ratio:1;max-width:520px;width:100%;justify-self:center;border-radius:50%;background:radial-gradient(circle at 50% 45%,var(--panel),var(--tray) 70%);box-shadow:inset 0 2px 14px rgba(0,0,0,.12)}
+.tray a{position:absolute;width:31%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);display:block}
+.tray img{width:100%;height:100%;border-radius:50%;box-shadow:0 8px 18px rgba(0,0,0,.28);display:block}
+.tray a span{position:absolute;left:50%;bottom:-8px;transform:translate(-50%,100%);font:500 10px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity .15s}
+.tray a:hover span,.tray a:focus-visible span{opacity:1}
+@media (prefers-reduced-motion:no-preference){.tray a{transition:transform .2s}.tray a:hover{transform:translate(-50%,-50%) scale(1.05)}}
 
-section.notes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;margin-top:56px}
-section.notes h3{font:700 22px/1.2 var(--display);margin:0 0 12px}
-section.notes p,section.notes li{color:var(--muted);font-size:14px;max-width:62ch}
-section.notes ul{padding-left:18px;margin:0;display:grid;gap:8px}
-section.notes li b{color:var(--ink);font-weight:600}
-.key{display:grid;gap:10px;margin-top:14px}
-.key div{display:flex;gap:10px;align-items:baseline;font-size:14px;color:var(--muted)}
-footer{margin-top:48px;border-top:1px solid var(--line);padding-top:20px;font:12px/1.7 var(--mono);color:var(--muted)}
-footer a{color:var(--muted)}
-@media (max-width:760px){header{grid-template-columns:1fr} section.notes{grid-template-columns:1fr} .controls{position:static}}
-@media (max-width:380px){.grid{grid-template-columns:1fr}}
+section{padding-block:56px;border-bottom:1px solid var(--line)}
+h2{font:800 clamp(28px,4vw,44px)/1.05 var(--display);letter-spacing:-.01em;margin:0 0 18px;text-wrap:balance}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.prose p{margin:0 0 14px;max-width:62ch;text-align:justify;hyphens:auto}
+.prose p:last-child{margin-bottom:0}
+.kinds{display:grid;gap:0;border-top:1px solid var(--line)}
+.kinds div{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:16px;align-items:baseline;padding-block:12px;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+.kinds b{font:600 14px/1.2 var(--body);color:var(--ink)}
+.kinds .n{font:700 22px/1 var(--display);color:var(--copper);font-variant-numeric:tabular-nums}
+
+/* three registers */
+.regs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.reg{background:var(--panel);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 24px;display:grid;gap:14px;align-content:start;text-decoration:none}
+.reg:hover{background:var(--wash)}
+.reg .span{font:500 12px/1.3 var(--mono);color:var(--verdigris);letter-spacing:.08em;text-transform:uppercase}
+.reg h3{font:700 26px/1.1 var(--display);margin:0;text-wrap:balance}
+.reg p{margin:0;font-size:14.5px;color:var(--muted)}
+.reg .row{display:flex;gap:8px}
+.reg .row img{width:25%;max-width:72px;aspect-ratio:1;border-radius:50%;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+.reg .go{font:600 14px/1 var(--body);color:var(--ink)}
+.reg .go b{font:700 20px/1 var(--display);color:var(--copper);margin-right:6px;font-variant-numeric:tabular-nums}
+
+/* boar trail */
+.trail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:26px;position:relative}
+.trail::before{content:"";position:absolute;left:10%;right:10%;top:calc(min(16vw,150px)/2);border-top:2px dotted var(--line)}
+.step{display:grid;justify-items:center;text-align:center;gap:8px;text-decoration:none;position:relative;padding-inline:6px}
+.step img{width:min(16vw,150px);aspect-ratio:1;border-radius:50%;box-shadow:0 8px 16px rgba(0,0,0,.24)}
+.step .when{font:500 12px/1.2 var(--mono);color:var(--verdigris);font-variant-numeric:tabular-nums}
+.step b{font:700 16px/1.15 var(--display);text-wrap:balance}
+.step span{font-size:13px;color:var(--muted);max-width:22ch}
+.step:hover b{color:var(--copper)}
+
+/* method */
+ol.method{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;counter-reset:m}
+ol.method li{counter-increment:m;display:grid;gap:8px;align-content:start;font-size:14.5px;color:var(--muted)}
+ol.method li::before{content:counter(m);font:800 40px/1 var(--display);color:var(--copper)}
+ol.method b{font:700 18px/1.2 var(--display);color:var(--ink)}
+ul.rules{margin:0;padding:0;list-style:none;display:grid;gap:0;border-top:1px solid var(--line)}
+ul.rules li{padding-block:12px;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+ul.rules b{color:var(--ink);font-weight:600}
+footer{padding-top:24px;font:12px/1.7 var(--mono);color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px}
+
+@media (max-width:900px){.hero,.cols{grid-template-columns:1fr} .regs{grid-template-columns:1fr} ol.method{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.trail{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:24px}.trail::before{display:none}.step img{width:120px}.kinds div{grid-template-columns:1fr auto}.kinds div>span:nth-child(2){grid-column:1/-1;order:3}}
+@media (max-width:420px){ol.method{grid-template-columns:1fr}}
 </style>
 
 <div class="wrap">
-  <header>
+  <nav class="top"><span>sm7.github.io/lanchhana</span><a href="register.html">Open the register →</a></nav>
+
+  <div class="hero">
     <div>
-      <p class="eyebrow" id="hd-eyebrow">Bharatiya historical record · c. 322 BCE – 1040 CE</p>
+      <p class="eyebrow">Royal emblems of India, with their evidence</p>
       <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
-      <p class="lede" id="hd-lede">The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Each emblem is painted with an image model in the manner of early Indian mural painting, with flat mineral pigments, edge shading, brush contour and a lotus-petal border, and checked against the seal or coin description it follows. Where no seal emblem survives, the dynasty's standard coin device is shown and labelled as a coin.</p>
+      <p class="thesis">Indian kingdoms marked their authority with a device: a boar on a seal ring, a tiger on a copper plate, a lion on a coin, an ape at the top of a war banner. This register collects those devices, sets each one beside the evidence for it, and says plainly how strong that evidence is.</p>
+      <p class="gloss"><i>लाञ्छन</i> lāñchhana: a mark or sign; in inscriptions, the emblem a dynasty set on its seal. <i>ध्वज</i> dhvaja: the banner and the device that crowned it.</p>
+      <div class="cta"><a class="btn primary" href="register.html">Open the register</a><a class="btn" href="#method">How entries are made</a></div>
     </div>
-    <div class="stats" id="stats-modern"><div><b id="n-total">0</b>dynasties</div><div><b id="n-seal">0</b>seal-attested</div></div>
-    <div class="stats" id="stats-later" hidden><div><b id="n-later">0</b>kingdoms</div><div><b id="n-flags">0</b>flags shown</div></div>
-    <div class="stats" id="stats-itihasa" hidden><div><b id="n-epic">0</b>banners</div><div><b id="n-epic-done">0</b>painted</div></div>
-  </header>
-
-  <p class="tabgroup">Bharatiya Itihasa traditions <span>·</span> Bharatiya historical record</p>
-  <div class="tabs" role="tablist" aria-label="Sections">
-    <button class="tab" role="tab" id="tab-itihasa" aria-controls="panel-itihasa" aria-selected="true">Bharatiya Itihasa traditions<small id="c-itihasa"></small></button>
-    <button class="tab" role="tab" id="tab-modern" aria-controls="panel-modern" aria-selected="false" tabindex="-1">Early dynasties<small id="c-modern"></small></button>
-    <button class="tab" role="tab" id="tab-later" aria-controls="panel-later" aria-selected="false" tabindex="-1">Later kingdoms<small id="c-later"></small></button>
+    <div class="tray" id="tray" aria-label="Seven emblems from the register"></div>
   </div>
 
-  <div role="tabpanel" id="panel-modern" aria-labelledby="tab-modern" hidden>
-  <div class="controls" role="toolbar" aria-label="Filters">
-    <div class="group" id="f-region"><span>Region</span></div>
-    <div class="group" id="f-kind"><span>Evidence</span></div>
-  </div>
-
-  <div class="grid" id="grid"></div>
-
-
-  <section class="notes">
-    <div>
-      <h3>How to read the evidence tag</h3>
-      <div class="key">
-        <div><span class="pill seal">Seal</span>Emblem on the royal seal of copper-plate or clay-seal grants. This is the formal lāñchhana and the strongest evidence.</div>
-        <div><span class="pill coin">Coin</span>Recurring coin device. It shows what the dynasty put on its money, not a declared insignia.</div>
-        <div><span class="pill monument">Monument</span>No dynastic seal exists. The monument has become the dynasty's emblem by convention.</div>
+  <section>
+    <div class="cols">
+      <div class="prose">
+        <p class="eyebrow">Why this register exists</p>
+        <h2>The emblems are well known. The evidence for them is not.</h2>
+        <p>The evidence for India's royal emblems is scattered across epigraphy journals, museum catalogues, coin auctions and the verses of the epics. What circulates online mixes it with much later inventions: flags drawn in the last century, coats of arms made for British durbars, emblems assigned to dynasties that never used them.</p>
+        <p>This register puts each emblem next to its source. It quotes the verse, names the seal or coin, cites every sentence, and marks the difference between a seal that survives and a claim made later. Each emblem is also painted as a medallion in one consistent manner, after the palette of early Indian murals, so that devices two thousand years apart can be compared side by side.</p>
+        <p>The paintings are interpretations. The text is the evidence. Where the two could be confused, the entry says so.</p>
       </div>
-      <p style="margin-top:16px">The paintings follow the attested design: its figure, posture and attributes. The style is an interpretation, not a copy of any one seal. The Tamil dynasties show their emblem word in Tamil. The rest show the Sanskrit term used in the grants.</p>
+      <div>
+        <p class="eyebrow">What counts as evidence</p>
+        <div class="kinds" id="kinds"></div>
+      </div>
     </div>
-    <div>
-      <h3>Left out, and why</h3>
-      <ul>
-        <li><b>No verified emblem.</b> Shunga, Vakataka, Later Guptas of Magadha, Utpala of Kashmir, Shailodbhava, Bhaumakara, Somavamshi, early Kalachuri of Mahishmati, Kalabhra. I found no sources that describe a fixed seal emblem for these dynasties, so I drew none. Some are reported elsewhere (for example Gajalakshmi for the Somavamshis), but I could not confirm them.</li>
-        <li><b>After 1040 CE.</b> The Sena, Gāhaḍavāla, Hoysala, Kākatīya, Vijayanagara, Chandela, Chaulukya and Chauhan devices are on the Later kingdoms tab, with the Rajput, Ahom, Maratha and Sikh states.</li>
-        <li><b>Seal emblem uncertain.</b> The Gurjara-Pratihāra seals are described as showing the goddess Bhagavatī, but I found no reliable account of her iconography. The card shows the Ādivarāha from Mihira Bhoja's coins instead.</li>
+  </section>
+
+  <section>
+    <p class="eyebrow">Three registers</p>
+    <h2>From the epics to the princely states</h2>
+    <div class="regs" id="regs"></div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Follow one symbol</p>
+    <h2>The boar, from Kurukṣetra to Vijayanagara</h2>
+    <p style="max-width:62ch;color:var(--muted);margin:0">Jayadratha rides to war under a silver boar in the Mahābhārata. Centuries later the boar, now Viṣṇu's Varāha, is the seal of the Chalukyas, the coin of Mihira Bhoja, a disputed device of the Kākatīyas and the emblem of Vijayanagara, whose gold coin was simply called a varāha. The motif index traces seventeen such symbols.</p>
+    <div class="trail" id="trail"></div>
+    <p style="margin-top:28px"><a class="btn" href="register.html#motifs">Browse the motif index</a></p>
+  </section>
+
+  <section id="method">
+    <p class="eyebrow">How an entry is made</p>
+    <h2>Source first, painting second</h2>
+    <ol class="method">
+      <li><b>Find the evidence</b>The verse in the critical edition, the seal on a copper-plate grant, the coin type in a catalogue, or the earliest description of a flag.</li>
+      <li><b>Check every sentence</b>Each card was checked by a reviewer working only from the cited sources. Every sentence carries its own citation; claims that could not be supported were cut.</li>
+      <li><b>Paint to the source</b>An image model paints the device with only the details the source gives. The prompt is published with each entry.</li>
+      <li><b>Review and correct</b>Each painting is compared with its source and redone when it adds or loses something. Corrections from readers are welcome.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="cols">
+      <div class="prose">
+        <p class="eyebrow">Ground rules</p>
+        <h2>What the register will not do</h2>
+        <p>A register like this is only useful if a reader can trust what is left out as much as what is put in.</p>
+      </div>
+      <ul class="rules">
+        <li><b>No invented emblems.</b> A dynasty with no attested device is listed under "Left out, and why" rather than given one.</li>
+        <li><b>No silent upgrades.</b> A coin type is labelled a coin, not a royal emblem; a later tradition is labelled tradition.</li>
+        <li><b>Dates on flags.</b> A flag known only from the princely era, or a coat of arms made under the British, says so.</li>
+        <li><b>Edition stated.</b> Epic verses follow the critical edition; passages found only in the vulgate are marked.</li>
+        <li><b>Paintings are not photographs.</b> Where a photograph of the original seal or coin is available under an open licence, it is shown beside the painting.</li>
       </ul>
     </div>
   </section>
-  </div>
 
-  <div role="tabpanel" id="panel-later" aria-labelledby="tab-later" hidden>
-  <div class="controls" role="toolbar" aria-label="Filters">
-    <div class="group" id="l-region"><span>Region</span></div>
-    <div class="group" id="l-kind"><span>Evidence</span></div>
-  </div>
-  <div class="grid" id="later-grid"></div>
-  <section class="notes">
-    <div>
-      <h3>Flags, and when they date from</h3>
-      <p>A small flag beside a kingdom's name is drawn from the best description of that flag, and its tag says how well the flag itself is attested. Many flags of the Rajput states are known only from the princely era; the coats of arms with mottoes and supporters were created for the British Imperial Assemblage of 1877 and are not shown as royal insignia.</p>
-      
-    </div>
-    <div>
-      <h3>Left out, and why</h3>
-      <ul>
-        <li><b>Gajapati of Odisha.</b> No coins are known and no seal emblem was found; the inscriptions give the title, not a device.</li>
-        <li><b>Kalachuri of Kalyāṇi.</b> A golden bull is named in secondary works, but no seal or coin showing it was found.</li>
-        <li><b>Koch (Cooch Behar).</b> Their Narayani coins carry legends only, and no pictorial emblem, seal device or flag is known.</li>
-        <li><b>Manipur.</b> The Pakhangba flag is documented only from 1947–49.</li>
-        <li><b>Kārkoṭa flag.</b> None is attested for Lalitāditya or his dynasty. The Early dynasties tab shows the Kārkoṭa coin instead.</li>
-      </ul>
-    </div>
-  </section>
-  </div>
-
-  <div role="tabpanel" id="panel-itihasa" aria-labelledby="tab-itihasa">
-  <section class="epic">
-    <p class="eyebrow">Literary tradition, not seal evidence</p>
-    <div class="grid" id="epic-grid"></div>
-  </section>
-  </div>
-
-  <footer id="sources"></footer>
+  <footer>
+    <span id="foot"></span>
+    <a href="register.html">Open the register</a>
+    <a href="https://github.com/sm7/sm7.github.io/tree/master/lanchhana" target="_blank" rel="noopener">Source on GitHub</a>
+  </footer>
 </div>
 
+<script src="data.js"></script>
 <script>
-/* Lāñchhana painter — paints emblems in the idiom of early Indian mural / manuscript painting.
-   Canvas 2D only; deterministic (seeded) so every viewer sees the same painting. */
-(function(){
-const TAU = Math.PI*2;
-function rng(seed){ let a = seed>>>0; return ()=>{ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+/* old links to the single-page register (#early, #later, #<entry>) now live on register.html */
+(function(){ const h=location.hash.slice(1); if(h && h!=="method") location.replace("register.html#"+h); })();
+const {SRC, MOTIFS, cards:C} = window.LR;
+const BY=Object.fromEntries(C.map(c=>[c.id,c]));
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+const name=c=>c.tab==="itihasa"?c.who:c.n.replace(/\s*\(.*?\)/,"");
+const img=c=>`${c.img}?v=6`;
 
-/* ---------- palettes: nearest surviving painting tradition ---------- */
-const STYLES = {
-  ajanta:      {ground:"#6f2e1b", band:"#c48a3f", pearl:"#f1e4c3", petA:"#a8402a", petB:"#d6a24c", field:"#34503d", fieldDeep:"#1c2c22", ink:"#2e120a", fig:"#dca646", figShade:"#8b4a1e", hi:"#f7e9c2", acc:"#b33a22", acc2:"#3f6286", acc3:"#e9d8a8"},
-  badami:      {ground:"#7a3b1c", band:"#cf9a4f", pearl:"#f3e6c6", petA:"#9c3b22", petB:"#d8ae5e", field:"#445d3e", fieldDeep:"#26361f", ink:"#2c140a", fig:"#b9804a", figShade:"#5e3014", hi:"#f1dcb2", acc:"#a6361f", acc2:"#50708a", acc3:"#e8d4a4"},
-  sittanavasal:{ground:"#6a3219", band:"#caa058", pearl:"#f2e7cb", petA:"#b3563f", petB:"#dcb366", field:"#2e5c5e", fieldDeep:"#173638", ink:"#221008", fig:"#e0b659", figShade:"#8f5a22", hi:"#fbf0cf", acc:"#c86a78", acc2:"#86a86a", acc3:"#efe2b8"},
-  thanjavur:   {ground:"#5a2210", band:"#d39a45", pearl:"#f4e6c4", petA:"#9e2e1a", petB:"#d9a64f", field:"#b0582a", fieldDeep:"#6a2a12", ink:"#1f0c06", fig:"#e6b34a", figShade:"#8e4a16", hi:"#fff0c8", acc:"#8c1f14", acc2:"#2f5a4a", acc3:"#f0dcaa"},
-  kailasanatha:{ground:"#5e2412", band:"#cf9b4c", pearl:"#f3e5c3", petA:"#a83a22", petB:"#d8a650", field:"#8f3a1f", fieldDeep:"#4f1a0b", ink:"#1f0c06", fig:"#e7bb5c", figShade:"#8c4f18", hi:"#fff1c9", acc:"#2f6048", acc2:"#3c5c80", acc3:"#f0dcaa"},
-  ellora:      {ground:"#4c3524", band:"#c7a15c", pearl:"#efe4c8", petA:"#8e4a2a", petB:"#cfae68", field:"#5b6f78", fieldDeep:"#2f3d44", ink:"#1c120a", fig:"#d9ad62", figShade:"#7e5424", hi:"#fbecc6", acc:"#9b3a26", acc2:"#3b5f6e", acc3:"#ecdcb0"},
-  pala:        {ground:"#3f2a16", band:"#2f5a34", pearl:"#f2e8cc", petA:"#b3301f", petB:"#e0b640", field:"#ad2b1c", fieldDeep:"#6e160d", ink:"#150805", fig:"#e3b43c", figShade:"#8f5b12", hi:"#fff4cc", acc:"#2f6a3a", acc2:"#243f78", acc3:"#f5e6b8"},
-};
+/* tray: centre plus a ring of six */
+const trayIds=["arjuna","gupta","chola","bhishma","ahom","pala","vijayanagara"];
+document.getElementById("tray").innerHTML = trayIds.map((id,i)=>{ const c=BY[id];
+  const [x,y] = i===0 ? [50,50] : [50+33*Math.cos((i-1)/6*2*Math.PI-Math.PI/2), 50+33*Math.sin((i-1)/6*2*Math.PI-Math.PI/2)];
+  return `<a href="register.html#${id}" style="left:${x}%;top:${y}%"><img src="${img(c)}" alt="${esc(c.e)}, ${esc(name(c))}"><span>${esc(name(c))}</span></a>`; }).join("");
 
-/* ---------- texture helpers ---------- */
-function noiseCanvas(size, cell, seed){
-  const r = rng(seed), c = document.createElement("canvas"); c.width = c.height = size;
-  const small = document.createElement("canvas"); const n = Math.ceil(size/cell); small.width = small.height = n;
-  const sx = small.getContext("2d"), id = sx.createImageData(n,n);
-  for (let i=0;i<n*n;i++){ const v = r()*255; id.data[i*4]=id.data[i*4+1]=id.data[i*4+2]=v; id.data[i*4+3]=255; }
-  sx.putImageData(id,0,0);
-  const cx = c.getContext("2d"); cx.imageSmoothingEnabled = true; cx.imageSmoothingQuality = "high"; cx.drawImage(small,0,0,size,size);
-  return c;
-}
+/* evidence kinds with live counts */
+const K=[["epic","Epic verse","The Sanskrit verse that describes a banner, in the critical edition."],
+  ["seal","Seal","The emblem on the seal ring of a copper-plate or clay-seal grant: the formal lāñchhana."],
+  ["coin","Coin","A recurring coin device. What a dynasty put on its money, not a declared insignia."],
+  ["flag","Flag","A flag known from a description or a surviving example, dated as closely as the sources allow."],
+  ["monument","Monument","A carving that stands for the dynasty by convention."],
+  ["tradition","Tradition","An emblem named in later writing, not found on the dynasty's own seals or coins."],
+  ["vulgate","Vulgate only","A banner found in the vulgate text of the Mahābhārata but not in the critical edition."]];
+document.getElementById("kinds").innerHTML = K.map(([k,l,d])=>`<div><b>${l}</b><span>${d}</span><span class="n">${C.filter(c=>c.k===k).length}</span></div>`).join("");
 
-/* ---------- path sampling for brush strokes ---------- */
-let SVGNS = "http://www.w3.org/2000/svg", host = null;
-function sampler(){ if (!host){ host = document.createElementNS(SVGNS,"svg"); host.setAttribute("width","0"); host.setAttribute("height","0"); host.style.position="absolute"; host.style.left="-9999px"; document.body.appendChild(host);} return host; }
-function samplePath(d, step){
-  const out = [];
-  d.split(/(?=M)/).forEach(sub=>{
-    if (!sub.trim()) return;
-    const p = document.createElementNS(SVGNS,"path"); p.setAttribute("d", sub); sampler().appendChild(p);
-    const L = p.getTotalLength(), n = Math.max(4, Math.ceil(L/step)), pts = [];
-    for (let i=0;i<=n;i++){ const q = p.getPointAtLength(L*i/n); pts.push([q.x,q.y]); }
-    const closed = /[zZ]\s*$/.test(sub.trim());
-    out.push({pts, closed, L});
-    p.remove();
-  });
-  return out;
-}
+/* the three registers */
+const R=[["itihasa","Mahābhārata · Rāmāyaṇa","Bharatiya Itihasa traditions","War banners of the epics, quoted verse by verse.",["arjuna","bhishma","jayadratha","ikshvaku"]],
+  ["early","c. 322 BCE – 1040 CE","Early dynasties","Seal emblems and coin devices from the Mauryas to the Paramāras.",["gupta","chalukya","rashtrakuta","pala"]],
+  ["later","1040 – 1858 CE","Later kingdoms","Seals, coins and flags from the Hoysalas to the Sikh Empire.",["hoysala","mewar","ahom","mysore"]]];
+document.getElementById("regs").innerHTML = R.map(([t,span,h,p,ids])=>`<a class="reg" href="register.html#${t}"><span class="span">${span}</span><h3>${h}</h3><p>${p}</p><div class="row">${ids.map(i=>`<img src="${img(BY[i])}" alt="" loading="lazy">`).join("")}</div><span class="go"><b>${C.filter(c=>c.tab===t).length}</b>entries →</span></a>`).join("");
 
-/* ---------- Painter ---------- */
-function Painter(canvas, style, seed){
-  const ctx = canvas.getContext("2d"); const S = canvas.width/512; const pal = STYLES[style]; const R = rng(seed||7);
-  ctx.setTransform(S,0,0,S,0,0); ctx.lineCap = "round"; ctx.lineJoin = "round";
-  const P = {ctx, pal, R, S};
-
-  function applyT(T){ if (!T) return; ctx.translate(T.x||0, T.y||0); if (T.r) ctx.rotate(T.r); const s = T.s||1; ctx.scale(T.fx? -s : s, s); }
-
-  /* variable-width brush ribbon along a path (in current transform) */
-  P.brush = function(d, o){
-    o = o||{}; const w = o.w||3, col = o.color||pal.ink, taper = o.taper!==undefined ? o.taper : 0.18, jit = o.jit!==undefined? o.jit:0.35;
-    ctx.save(); applyT(o.T); ctx.fillStyle = col; ctx.globalAlpha = o.a!==undefined? o.a : 1;
-    samplePath(d, 1.6).forEach(({pts, closed})=>{
-      const n = pts.length, ph = R()*TAU, fr = 0.02 + R()*0.03;
-      const L = [], Rr = [];
-      for (let i=0;i<n;i++){
-        const a = pts[Math.max(0,i-1)], b = pts[Math.min(n-1,i+1)];
-        let nx = -(b[1]-a[1]), ny = b[0]-a[0]; const m = Math.hypot(nx,ny)||1; nx/=m; ny/=m;
-        const t = i/(n-1);
-        let tp = closed || taper===0 ? 1 : Math.min(1, t/taper, (1-t)/taper); tp = Math.pow(Math.max(tp,0.05), 0.7);
-        const wob = 1 + jit*Math.sin(i*fr*6+ph)*0.6 + jit*(R()-0.5)*0.25;
-        const hw = w*0.5*tp*wob;
-        L.push([pts[i][0]+nx*hw, pts[i][1]+ny*hw]); Rr.push([pts[i][0]-nx*hw, pts[i][1]-ny*hw]);
-      }
-      ctx.beginPath(); ctx.moveTo(L[0][0],L[0][1]);
-      for (const q of L) ctx.lineTo(q[0],q[1]);
-      for (let i=Rr.length-1;i>=0;i--) ctx.lineTo(Rr[i][0],Rr[i][1]);
-      ctx.closePath(); ctx.fill();
-    });
-    ctx.restore();
-  };
-
-  /* painted, modelled shape: flat pigment, vartana edge shading, highlight, brush contour */
-  P.shape = function(d, o){
-    o = o||{}; const path = new Path2D(d);
-    const fill = o.fill||pal.fig, shade = o.shade||pal.figShade, hi = o.hi===null ? null : (o.hi||pal.hi);
-    ctx.save(); applyT(o.T);
-    ctx.fillStyle = fill; ctx.fill(path);
-    // vartana: layered inner strokes darken toward the contour
-    ctx.save(); ctx.clip(path); ctx.strokeStyle = shade;
-    const depth = o.depth||18;
-    for (let i=0;i<8;i++){ ctx.globalAlpha = 0.09 + (o.shadeK||0)*0.02; ctx.lineWidth = depth*2*(1-i/8); ctx.stroke(path); }
-    // warm highlight along upper-left inner edge
-    if (hi){ ctx.translate(o.hx!==undefined?o.hx:3.5, o.hy!==undefined?o.hy:4.5); ctx.strokeStyle = hi;
-      for (let i=0;i<4;i++){ ctx.globalAlpha = 0.16; ctx.lineWidth = (o.hw||7)*(1-i/4); ctx.stroke(path); } }
-    ctx.restore();
-    ctx.restore();
-    if (o.ink!==false) P.brush(d, {T:o.T, w:o.lw||3.2, color:o.inkColor||pal.ink, taper:0, jit:0.45});
-  };
-
-  P.dots = function(pts, o){ o=o||{}; ctx.save(); applyT(o.T);
-    for (const [x,y] of pts){ const r = (o.r||2.4)*(0.85+R()*0.3);
-      ctx.fillStyle = o.color||pal.hi; ctx.beginPath(); ctx.arc(x,y,r,0,TAU); ctx.fill();
-      if (o.ring){ ctx.strokeStyle = pal.ink; ctx.lineWidth = 0.9; ctx.globalAlpha=.7; ctx.stroke(); ctx.globalAlpha=1; } }
-    ctx.restore(); };
-
-  /* outlined tube: ink edge, pigment core, soft highlight */
-  P.tube = function(d, w, fill, o){ o=o||{}; P.brush(d, {T:o.T, w:w+3.4, color:pal.ink, taper:o.taper!==undefined?o.taper:0, jit:.12});
-    P.brush(d, {T:o.T, w:w, color:fill||pal.fig, taper:o.taper!==undefined?o.taper:0, jit:.08});
-    if (o.hi!==false) P.brush(d, {T:{x:(o.T&&o.T.x||0)-w*.18, y:(o.T&&o.T.y||0)-w*.2, s:o.T&&o.T.s||1, r:o.T&&o.T.r, fx:o.T&&o.T.fx}, w:Math.max(1,w*.25), color:o.hiColor||pal.hi, taper:.3, a:.55}); };
-  P.scallop = function(cx, cy, r, n, b){ let d=""; for (let i=0;i<=n;i++){ const a=i/n*TAU-Math.PI/2, x=(cx+r*Math.cos(a)).toFixed(1), y=(cy+r*Math.sin(a)).toFixed(1); d += i? ` A${b} ${b} 0 0 1 ${x} ${y}` : `M${x} ${y}`; } return d+"Z"; };
-  /* almond eye with pupil and brow */
-  P.eye = function(x, y, s, o){ o=o||{}; s=s||1; const d=o.dir||0;
-    P.shape(`M${x-8*s} ${y} C${x-4*s} ${y-5*s} ${x+4*s} ${y-5*s} ${x+9*s} ${y-1*s} C${x+4*s} ${y+4*s} ${x-4*s} ${y+4*s} ${x-8*s} ${y} Z`, {fill:pal.pearl, shade:pal.figShade, depth:2, lw:1.4*s, hi:null});
-    P.dots([[x+d*2*s, y-.5*s]], {r:2.6*s, color:pal.ink});
-    if (o.brow!==false) P.brush(`M${x-10*s} ${y-7*s} C${x-4*s} ${y-12*s} ${x+5*s} ${y-12*s} ${x+11*s} ${y-6*s}`, {w:1.8*s, taper:.4}); };
-  /* bead string along a cubic, optional bells */
-  P.beads = function(p0,p1,p2,p3,n,r,col,bellEvery){ for (let i=0;i<=n;i++){ const t=i/n,u=1-t;
-      const x=u*u*u*p0[0]+3*u*u*t*p1[0]+3*u*t*t*p2[0]+t*t*t*p3[0], y=u*u*u*p0[1]+3*u*u*t*p1[1]+3*u*t*t*p2[1]+t*t*t*p3[1];
-      P.dots([[x,y]],{r, color:col||pal.fig, ring:true});
-      if (bellEvery && i%bellEvery===1) P.shape(`M${x-4} ${y+11} C${x-4} ${y+4} ${x-2} ${y+2} ${x} ${y+2} C${x+2} ${y+2} ${x+4} ${y+4} ${x+4} ${y+11} Z`, {fill:pal.fig, shade:pal.figShade, depth:2, lw:1, hi:null}); } };
-  P.mirror = function(fn){ fn({}); ctx.save(); ctx.translate(512,0); ctx.scale(-1,1); fn({mir:true}); ctx.restore(); };
-
-  /* ---------- the roundel: ground, pearl border, lotus-petal ring, field ---------- */
-  P.ground = function(){
-    const c = 256;
-    ctx.fillStyle = pal.ground; ctx.fillRect(0,0,512,512);
-    // outer disc band
-    ctx.fillStyle = pal.band; ctx.beginPath(); ctx.arc(c,c,244,0,TAU); ctx.fill();
-    // pearl border
-    for (let i=0;i<72;i++){ const a = i/72*TAU; const x = c+Math.cos(a)*234, y = c+Math.sin(a)*234;
-      ctx.fillStyle = pal.ink; ctx.globalAlpha=.55; ctx.beginPath(); ctx.arc(x+.8,y+1,5.4,0,TAU); ctx.fill(); ctx.globalAlpha=1;
-      ctx.fillStyle = pal.pearl; ctx.beginPath(); ctx.arc(x,y,4.9,0,TAU); ctx.fill();
-      ctx.fillStyle = "#fff"; ctx.globalAlpha=.55; ctx.beginPath(); ctx.arc(x-1.4,y-1.6,1.5,0,TAU); ctx.fill(); ctx.globalAlpha=1; }
-    // lotus petal ring (two layers)
-    const petal = (a, r0, r1, wA, col) => { const ca=Math.cos(a), sa=Math.sin(a), px=-sa, py=ca;
-      const bx=c+ca*r0, by=c+sa*r0, tx=c+ca*r1, ty=c+sa*r1, mx=c+ca*(r0+(r1-r0)*.45), my=c+sa*(r0+(r1-r0)*.45);
-      return `M${bx+px*wA*.35} ${by+py*wA*.35} Q${mx+px*wA} ${my+py*wA} ${tx} ${ty} Q${mx-px*wA} ${my-py*wA} ${bx-px*wA*.35} ${by-py*wA*.35} Z`; };
-    const N = 36;
-    for (let i=0;i<N;i++){ const a = (i+.5)/N*TAU; P.shape(petal(a,196,226,15), {fill:pal.petB, shade:pal.figShade, depth:5, lw:1.6, hi:null}); }
-    for (let i=0;i<N;i++){ const a = i/N*TAU; P.shape(petal(a,192,222,13), {fill:pal.petA, shade:pal.ink, depth:5, lw:1.6, hw:3}); }
-    // inner field with darkened rim (painted depth)
-    const g = ctx.createRadialGradient(c,c-30,40,c,c,196);
-    g.addColorStop(0, pal.field); g.addColorStop(.72, pal.field); g.addColorStop(1, pal.fieldDeep);
-    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(c,c,194,0,TAU); ctx.fill();
-    P.brush(`M${c+194} ${c} A194 194 0 1 1 ${c+194} ${c-0.01} Z`, {w:3.2, taper:0});
-    P.brush(`M${c+183} ${c} A183 183 0 1 1 ${c+183} ${c-0.01} Z`, {w:1.3, taper:0, color:pal.acc3, a:.55});
-  };
-
-  /* ---------- finishing: pigment grain, plaster, craquelure, wear ---------- */
-  P.finish = function(){
-    ctx.save(); ctx.setTransform(1,0,0,1,0,0);
-    const W = canvas.width;
-    const n1 = noiseCanvas(W, 3, (seed||7)*13+1), n2 = noiseCanvas(W, 26, (seed||7)*17+3);
-    ctx.globalCompositeOperation = "multiply"; ctx.globalAlpha = .16; ctx.drawImage(n2,0,0);
-    ctx.globalAlpha = .14; ctx.drawImage(n1,0,0);
-    ctx.globalCompositeOperation = "screen"; ctx.globalAlpha = .07; ctx.drawImage(n1,0,0);
-    ctx.globalCompositeOperation = "source-over"; ctx.globalAlpha = 1;
-    // craquelure
-    ctx.setTransform(S,0,0,S,0,0); ctx.strokeStyle = "rgba(30,12,6,.22)"; ctx.lineWidth = .6;
-    for (let k=0;k<26;k++){ let x = R()*512, y = R()*512, a = R()*TAU; ctx.beginPath(); ctx.moveTo(x,y);
-      const len = 12 + R()*40; for (let s=0;s<len;s++){ a += (R()-.5)*.9; x += Math.cos(a)*2.2; y += Math.sin(a)*2.2; ctx.lineTo(x,y); } ctx.stroke(); }
-    // flaking: small worn patches showing plaster
-    for (let k=0;k<14;k++){ const x = R()*512, y = R()*512, r = 1.5+R()*3.5; ctx.fillStyle = "rgba(236,222,190,.35)";
-      ctx.beginPath(); for (let j=0;j<7;j++){ const a=j/7*TAU, rr=r*(.6+R()*.7); j? ctx.lineTo(x+Math.cos(a)*rr,y+Math.sin(a)*rr) : ctx.moveTo(x+Math.cos(a)*rr,y+Math.sin(a)*rr); } ctx.fill(); }
-    // soft vignette
-    const v = ctx.createRadialGradient(256,256,180,256,256,380); v.addColorStop(0,"rgba(0,0,0,0)"); v.addColorStop(1,"rgba(20,8,4,.45)");
-    ctx.fillStyle = v; ctx.fillRect(0,0,512,512);
-    ctx.restore();
-  };
-  return P;
-}
-
-/* ================= EMBLEMS ================= */
-const E = {};
-
-/* ---- Chola: seated tiger under parasol, two fish, bow, fly-whisks (Thanjavur mural idiom) ---- */
-E.chola = {style:"thanjavur", paint(P){
-  const {pal} = P;
-  // parasol
-  P.shape("M176 140 C196 104 316 104 336 140 C318 134 298 136 286 142 C274 134 238 134 226 142 C214 136 194 134 176 140 Z", {fill:pal.acc3, shade:pal.figShade, depth:8, lw:2.6});
-  P.brush("M256 106 L256 96", {w:4}); P.dots([[256,92]],{r:4.5,color:pal.fig,ring:true});
-  P.brush("M256 140 L256 158", {w:5, color:pal.ink, taper:0});
-  for (let i=0;i<7;i++){ const x = 184+i*24; P.brush(`M${x} ${140+ (i%2?2:0)} L${x} ${152}`,{w:2.2}); P.dots([[x,156]],{r:3,color:pal.acc,ring:true}); }
-  // fly-whisks (chamara)
-  P.mirror(()=>{ P.brush("M118 196 L138 262", {w:6, color:pal.fig, taper:0}); P.brush("M118 196 L138 262", {w:1.6, color:pal.ink, taper:0});
-    P.shape("M118 198 C96 180 92 146 108 124 C112 146 124 150 128 170 C132 150 140 146 138 128 C150 150 142 184 118 198 Z", {fill:pal.pearl, shade:pal.figShade, depth:10, lw:2.4});
-    for (let i=0;i<5;i++) P.brush(`M${112+i*5} ${190} C${108+i*5} ${170} ${110+i*5} ${150} ${114+i*5} ${136}`, {w:1.1, color:pal.figShade, a:.7}); });
-  // tail (behind body)
-  P.brush("M176 356 C132 350 116 304 136 268 C152 240 146 214 126 206 C116 202 110 210 114 218", {w:14, color:pal.fig, taper:0.25, jit:.15});
-  P.brush("M176 356 C132 350 116 304 136 268 C152 240 146 214 126 206 C116 202 110 210 114 218", {w:2.4, taper:0.1});
-  for (const t of [[128,300],[134,272],[140,248],[126,226]]) P.brush(`M${t[0]-7} ${t[1]-3} L${t[0]+7} ${t[1]+3}`,{w:3.4});
-  // far foreleg
-  P.shape("M284 300 C288 330 290 352 288 380 L304 380 C306 350 304 326 300 300 Z", {fill:pal.figShade, shade:pal.ink, depth:6, hi:null});
-  // body
-  const body = "M172 382 C150 356 146 310 178 290 C206 274 232 254 248 222 C256 206 262 194 270 186 C262 172 270 160 282 166 C288 170 288 176 286 180 C296 176 312 176 320 180 C322 170 334 164 340 172 C344 180 338 186 334 190 C344 198 352 206 354 214 C356 222 350 228 342 228 C334 232 326 236 318 238 C312 246 306 252 298 268 C302 290 304 316 304 346 L306 372 C312 374 320 378 322 386 L284 386 L282 334 C272 348 258 356 244 360 C238 370 250 378 262 380 C270 382 270 390 260 390 L178 390 C170 390 168 386 172 382 Z";
-  P.shape(body, {fill:pal.fig, shade:pal.figShade, depth:22, lw:3.4});
-  // stripes: tapered flame strokes
-  const stripes = [
-    "M184 300 C194 312 196 326 190 340","M198 290 C210 304 212 322 206 338","M214 282 C226 296 228 312 222 328",
-    "M230 270 C240 282 242 296 238 310","M244 252 C256 262 258 276 254 288","M256 232 C266 240 270 252 266 262",
-    "M170 330 C182 340 184 356 178 370","M200 352 C212 358 218 368 216 380","M262 208 C272 212 278 222 276 230",
-    "M292 272 C300 280 302 292 300 302","M290 312 C298 320 300 332 298 342" ];
-  stripes.forEach(s=>P.brush(s,{w:5.2, taper:.35}));
-  // face: broad head, round ears, cheek ruff
-  P.brush("M272 176 C274 170 280 168 283 173 M324 178 C328 172 334 172 336 177", {w:3, color:pal.acc});
-  P.shape("M312 196 C318 190 328 192 332 198 C326 204 316 204 312 196 Z", {fill:pal.pearl, shade:pal.figShade, depth:3, lw:1.6, hi:null});
-  P.dots([[322,197]],{r:3,color:pal.ink});
-  P.brush("M306 186 C314 181 324 181 330 186", {w:2.4});
-  P.brush("M346 206 C352 210 355 216 352 221", {w:3.4});
-  P.brush("M346 226 C338 231 330 231 322 229", {w:2.2});
-  P.brush("M348 216 C362 212 374 214 382 220 M348 221 C362 223 372 229 378 237 M346 212 C358 204 370 202 378 204", {w:1.2, a:.85});
-  P.brush("M300 200 C296 212 296 222 300 230 M308 238 L298 248 M314 240 L308 252 M320 238 L318 250", {w:3.2, taper:.4});
-  P.brush("M288 190 C294 198 296 208 294 216", {w:4, taper:.4});
-  P.dots([[290,300],[296,316],[286,330]],{r:1.6,color:pal.hi});
-  // collar with bells (royal animal)
-  P.brush("M266 214 C280 226 296 232 312 234", {w:6, color:pal.acc, taper:0}); P.dots([[274,221],[286,228],[298,232]],{r:2.6,color:pal.hi,ring:true});
-  // two fish (Pandya), facing the tiger
-  const fish = (y)=>{ const d = `M392 ${y} C380 ${y-16} 356 ${y-18} 338 ${y-4} C334 ${y-1} 334 ${y+1} 338 ${y+4} C356 ${y+18} 380 ${y+16} 392 ${y} Z`;
-    P.brush(`M390 ${y} L408 ${y-14} L404 ${y} L408 ${y+14} Z`,{w:1.8, taper:0}); P.shape(`M390 ${y} L408 ${y-14} L404 ${y} L408 ${y+14} Z`,{fill:pal.acc2, shade:pal.ink, depth:3, lw:1.8, hi:null});
-    P.shape(d,{fill:pal.acc3, shade:pal.figShade, depth:7, lw:2.2});
-    for (let i=0;i<3;i++) P.brush(`M${356+i*10} ${y-8} C${360+i*10} ${y-3} ${360+i*10} ${y+3} ${356+i*10} ${y+8}`,{w:1.3, a:.8});
-    P.dots([[346,y-3]],{r:2.1,color:pal.ink}); };
-  fish(290); fish(330);
-  // bow (Chera) below, with string
-  P.brush("M150 420 C210 392 302 392 362 420", {w:9, color:pal.acc2, taper:.12});
-  P.brush("M150 420 C210 392 302 392 362 420", {w:2, taper:0});
-  P.brush("M152 420 L360 420", {w:1.4, taper:0});
-  P.dots([[150,420],[362,420]],{r:3.6,color:pal.fig,ring:true});
-}};
-
-/* ---- Gupta: Garuḍa, wings spread, holding a serpent (Ajanta idiom) ---- */
-E.garuda = {style:"ajanta", paint(P){
-  const {pal} = P;
-  const feather = (bx,by,ang,len,wd)=>{ const ca=Math.cos(ang), sa=Math.sin(ang), px=-sa, py=ca;
-    const tx=bx+ca*len, ty=by+sa*len;
-    return `M${bx+px*wd*.5} ${by+py*wd*.5} C${bx+ca*len*.5+px*wd} ${by+sa*len*.5+py*wd} ${tx+px*wd*.45} ${ty+py*wd*.45} ${tx} ${ty} C${tx-px*wd*.45} ${ty-py*wd*.45} ${bx+ca*len*.5-px*wd} ${by+sa*len*.5-py*wd} ${bx-px*wd*.5} ${by-py*wd*.5} Z`; };
-  P.mirror(()=>{
-    // primaries (long), then secondaries, then coverts
-    for (let i=0;i<8;i++){ const a = Math.PI + 0.10 + i*0.105; P.shape(feather(236,246,a,150-i*7,22), {fill: i%2? pal.acc2 : "#5a7ea0", shade:pal.ink, depth:6, lw:2, hw:3}); }
-    for (let i=0;i<7;i++){ const a = Math.PI + 0.22 + i*0.11; P.shape(feather(238,252,a,98-i*4,20), {fill: pal.acc, shade:pal.ink, depth:6, lw:1.9, hw:3}); }
-    P.shape("M244 232 C214 222 170 224 146 240 C164 252 190 262 214 268 C226 270 238 272 246 270 Z", {fill:pal.fig, shade:pal.figShade, depth:12, lw:2.4});
-    for (let r=0;r<3;r++) for (let i=0;i<6-r;i++){ const x = 170+i*12+r*6, y = 244+r*8; P.brush(`M${x-5} ${y} C${x-4} ${y+6} ${x+4} ${y+6} ${x+5} ${y}`,{w:1.4, color:pal.figShade}); }
-    // leg + talons
-    P.shape("M236 330 C232 346 230 356 226 366 L240 368 C244 356 246 344 248 332 Z", {fill:pal.fig, shade:pal.figShade, depth:4, lw:2});
-    P.brush("M226 366 C220 372 216 378 218 384 M232 368 C230 376 230 382 234 386 M238 368 C240 376 242 380 246 384", {w:2.6});
-  });
-  // tail fan
-  for (let i=0;i<5;i++){ const a = Math.PI/2 + (i-2)*0.22; P.shape(feather(256,340,a,72-Math.abs(i-2)*6,22), {fill: i%2? pal.acc : pal.acc2, shade:pal.ink, depth:6, lw:2}); }
-  // body with scale feathers
-  const body = "M256 222 C282 226 294 258 292 292 C290 318 276 340 256 348 C236 340 222 318 220 292 C218 258 230 226 256 222 Z";
-  P.shape(body, {fill:pal.fig, shade:pal.figShade, depth:16, lw:3});
-  for (let r=0;r<7;r++){ const y = 250+r*13, half = 26 - Math.abs(r-3)*2.5; for (let x = 256-half; x<=256+half; x+=11){ const xx = x + (r%2?5.5:0); if (xx>256+half) continue;
-    P.brush(`M${xx-5} ${y} C${xx-4} ${y+7} ${xx+4} ${y+7} ${xx+5} ${y}`,{w:1.4, color:pal.figShade}); } }
-  // serpent in talons
-  P.brush("M170 392 C200 372 226 400 256 388 C286 376 312 402 340 386 C352 380 360 372 360 364", {w:12, color:"#6c8a4e", taper:.08, jit:.1});
-  P.brush("M170 392 C200 372 226 400 256 388 C286 376 312 402 340 386 C352 380 360 372 360 364", {w:2.2, taper:.05});
-  for (let i=0;i<14;i++){ const x = 180+i*12; P.dots([[x, 386 + Math.sin(i*0.9)*6]],{r:1.3,color:pal.acc3}); }
-  P.shape("M170 392 C160 386 150 372 154 360 C160 348 176 350 180 362 C182 372 178 384 170 392 Z", {fill:"#6c8a4e", shade:pal.ink, depth:6, lw:2.2, hi:null});
-  P.shape("M162 362 C164 358 170 358 172 362 C170 366 164 366 162 362 Z", {fill:pal.acc3, shade:pal.figShade, depth:2, lw:1, hi:null});
-  P.brush("M156 376 L146 380 M146 380 L142 376 M146 380 L142 384", {w:1.3, color:pal.acc});
-  // necklace
-  P.brush("M232 236 C244 248 268 248 280 236", {w:7, color:pal.acc, taper:0}); P.dots([[238,242],[248,246],[256,247],[264,246],[274,242]],{r:2.6,color:pal.hi,ring:true});
-  // head
-  for (let i=0;i<3;i++) P.brush(`M${250+i*6} 184 C${244+i*8} 168 ${240+i*10} 156 ${236+i*14} 148`, {w:5, color:i==1?pal.acc:pal.acc2, taper:.3});
-  P.shape("M256 180 C274 180 282 194 280 208 C278 220 268 228 256 228 C244 228 234 220 232 208 C230 194 238 180 256 180 Z", {fill:pal.fig, shade:pal.figShade, depth:9, lw:2.8});
-  P.shape("M248 206 C245 221 249 234 260 241 C262 237 258 233 256 229 C263 226 265 217 264 206 Z", {fill:pal.acc3, shade:pal.figShade, depth:3, lw:1.8, hi:null});
-  P.shape("M240 200 C244 194 252 196 252 202 C250 208 242 208 240 200 Z M260 202 C260 196 268 194 272 200 C270 208 262 208 260 202 Z", {fill:pal.pearl, shade:pal.figShade, depth:2, lw:1.4, hi:null});
-  P.dots([[246,201],[266,201]],{r:2.2,color:pal.ink});
-  P.brush("M236 190 C244 186 250 188 254 192 M258 192 C262 188 268 186 276 190", {w:1.8});
-  P.dots([[256,184]],{r:3,color:pal.acc,ring:true});
-}};
-
-/* ---- Pāla: dharmacakra on a lotus pedestal, two deer (Pāla manuscript idiom) ---- */
-E.wheelDeer = {style:"pala", paint(P){
-  const {pal} = P;
-  // pillar and lotus pedestal
-  P.shape("M246 270 L266 270 L268 334 L244 334 Z", {fill:pal.fig, shade:pal.figShade, depth:6, lw:2.2});
-  P.brush("M244 292 L268 292 M244 312 L268 312", {w:3, color:pal.acc, taper:0});
-  for (let i=0;i<9;i++){ const x = 172+i*21; P.shape(`M${x-12} 364 C${x-12} 346 ${x-4} 336 ${x} 330 C${x+4} 336 ${x+12} 346 ${x+12} 364 Z`, {fill: i%2? pal.acc : pal.fig, shade:pal.figShade, depth:5, lw:1.8}); }
-  P.shape("M160 364 L352 364 L346 376 L166 376 Z", {fill:pal.acc, shade:pal.ink, depth:4, lw:2});
-  // wheel: rim, spokes as turned balusters, hub rosette, rim knobs
-  const cx=256, cy=196;
-  for (let i=0;i<8;i++){ const a = i/8*TAU; const ca=Math.cos(a), sa=Math.sin(a), px=-sa, py=ca;
-    const p0=[cx+ca*18,cy+sa*18], p1=[cx+ca*40,cy+sa*40], p2=[cx+ca*60,cy+sa*60];
-    const d = `M${p0[0]+px*3} ${p0[1]+py*3} C${p1[0]+px*9} ${p1[1]+py*9} ${p1[0]+px*2} ${p1[1]+py*2} ${p2[0]+px*4} ${p2[1]+py*4} L${p2[0]-px*4} ${p2[1]-py*4} C${p1[0]-px*2} ${p1[1]-py*2} ${p1[0]-px*9} ${p1[1]-py*9} ${p0[0]-px*3} ${p0[1]-py*3} Z`;
-    P.shape(d, {fill:pal.fig, shade:pal.figShade, depth:4, lw:1.8, hw:2}); }
-  const ring = (r1,r2)=>`M${cx+r2} ${cy} A${r2} ${r2} 0 1 0 ${cx-r2} ${cy} A${r2} ${r2} 0 1 0 ${cx+r2} ${cy} Z M${cx+r1} ${cy} A${r1} ${r1} 0 1 1 ${cx-r1} ${cy} A${r1} ${r1} 0 1 1 ${cx+r1} ${cy} Z`;
-  P.shape(ring(60,74), {fill:pal.fig, shade:pal.figShade, depth:6, lw:2.6});
-  P.brush(`M${cx+67} ${cy} A67 67 0 1 1 ${cx+67} ${cy-0.01} Z`, {w:1.4, color:pal.acc, taper:0});
-  for (let i=0;i<16;i++){ const a=i/16*TAU; P.dots([[cx+Math.cos(a)*67, cy+Math.sin(a)*67]],{r:2,color:pal.hi}); }
-  for (let i=0;i<8;i++){ const a=(i+.5)/8*TAU; P.dots([[cx+Math.cos(a)*82, cy+Math.sin(a)*82]],{r:5.2,color:pal.fig,ring:true}); }
-  for (let i=0;i<8;i++){ const a=i/8*TAU+.2; const x=cx+Math.cos(a)*11, y=cy+Math.sin(a)*11; P.shape(`M${cx} ${cy} Q${cx+Math.cos(a-.5)*14} ${cy+Math.sin(a-.5)*14} ${x+Math.cos(a)*6} ${y+Math.sin(a)*6} Q${cx+Math.cos(a+.5)*14} ${cy+Math.sin(a+.5)*14} ${cx} ${cy} Z`, {fill:pal.acc, shade:pal.ink, depth:2, lw:1, hi:null}); }
-  P.dots([[cx,cy]],{r:5,color:pal.hi,ring:true});
-  // flame-jewel finial
-  P.shape(`M${cx} 102 C${cx+12} 112 ${cx+10} 124 ${cx} 128 C${cx-10} 124 ${cx-12} 112 ${cx} 102 Z`, {fill:pal.acc3, shade:pal.acc, depth:4, lw:2});
-  // deer (couchant, looking up at the wheel), chital spots
-  const deer = "M10 150 C4 124 18 100 50 94 C80 90 108 94 122 100 C132 80 140 58 148 44 C152 34 162 28 172 30 C184 34 194 44 196 52 C197 58 192 60 186 58 C178 58 170 62 164 68 C156 80 150 96 148 112 C150 126 160 136 176 140 C184 142 186 150 178 150 Z";
-  P.mirror(()=>{
-    const T = {x:40, y:234, s:.9};
-    P.brush("M166 30 C164 14 170 2 182 -6 M167 18 C158 10 156 2 158 -6 M176 0 C186 -2 192 -8 196 -16 M172 30 C176 18 186 12 196 12", {T, w:3.2, taper:.3});
-    P.shape("M158 38 C150 24 138 18 128 20 C136 30 146 38 156 44 Z", {T, fill:pal.fig, shade:pal.figShade, depth:4, lw:2});
-    P.shape(deer, {T, fill:pal.fig, shade:pal.figShade, depth:16, lw:3});
-    P.brush("M40 150 C36 130 50 118 72 118 M150 118 C156 132 168 140 178 142", {T, w:2.2});
-    P.brush("M12 110 C2 104 0 96 4 92", {T, w:3});
-    P.shape("M172 42 C176 38 182 40 184 44 C180 48 174 48 172 42 Z", {T, fill:pal.pearl, shade:pal.figShade, depth:2, lw:1.2, hi:null});
-    P.dots([[178,44]],{T, r:1.8, color:pal.ink});
-    const sp = []; for (let i=0;i<14;i++){ sp.push([30+ (i*9)%100, 104 + ((i*37)%30)]); } P.dots(sp,{T, r:2.4, color:pal.hi});
-  });
-}};
-
-/* ---- Chalukya: varāha (Badami Cave 3 idiom) ---- */
-E.boar = {style:"badami", paint(P){
-  const {pal} = P;
-  const T = {x:82, y:160, s:1.08};
-  // far legs
-  P.shape("M204 150 L214 190 L228 190 L220 150 Z", {T, fill:pal.figShade, shade:pal.ink, depth:5, hi:null});
-  P.shape("M96 150 L94 190 L108 190 L112 150 Z", {T, fill:pal.figShade, shade:pal.ink, depth:5, hi:null});
-  // body
-  const body = "M30 120 C26 80 60 50 110 46 C150 42 190 40 220 50 C240 56 254 66 262 80 C272 92 290 104 306 116 C316 120 318 132 310 136 C300 140 290 138 282 140 C270 146 256 150 248 152 C244 160 240 168 238 176 L240 192 L222 192 L220 158 C200 162 170 162 140 160 C120 160 100 158 88 152 L84 192 L66 192 L64 156 C44 150 32 138 30 120 Z";
-  P.shape(body, {T, fill:pal.fig, shade:pal.figShade, depth:24, lw:3.4});
-  // bristling mane: flame tufts along the ridge
-  for (let i=0;i<16;i++){ const x = 92+i*10, y = 46 - Math.sin(i/15*Math.PI)*6 + (i>11? (i-11)*3:0);
-    P.brush(`M${x-4} ${y+4} C${x-2} ${y-8} ${x+4} ${y-14} ${x+8} ${y-18}`, {T, w:4.2, taper:.4, color:pal.figShade});
-    P.brush(`M${x-2} ${y+4} C${x} ${y-4} ${x+4} ${y-10} ${x+6} ${y-12}`, {T, w:1.2, taper:.4, color:pal.hi, a:.8}); }
-  // bristle hatching on flanks & belly
-  for (let i=0;i<22;i++){ const x = 60 + i*8, y = 136 + Math.sin(i)*4; P.brush(`M${x} ${y} L${x+3} ${y+10}`, {T, w:1.4, taper:.4, color:pal.figShade}); }
-  P.brush("M62 150 C58 128 70 110 94 108 M220 158 C218 136 226 118 244 112", {T, w:2.2});
-  // ear, eye, snout, tusk
-  P.shape("M244 64 C240 48 246 36 256 30 C258 44 256 56 252 68 Z", {T, fill:pal.fig, shade:pal.figShade, depth:5, lw:2.2});
-  P.shape("M256 84 C260 78 268 80 270 86 C266 90 260 90 256 84 Z", {T, fill:pal.pearl, shade:pal.figShade, depth:2, lw:1.4, hi:null});
-  P.dots([[263,85]],{T, r:2, color:pal.ink});
-  P.brush("M306 120 C312 124 312 132 308 134", {T, w:2.2});
-  P.dots([[308,124],[310,130]],{T, r:1.4, color:pal.ink});
-  P.shape("M284 136 C296 130 302 118 298 106 C294 116 288 124 280 128 Z", {T, fill:pal.pearl, shade:pal.figShade, depth:3, lw:1.8, hi:null});
-  // curled tail
-  P.brush("M32 96 C16 90 12 76 22 70 C30 66 32 76 26 80", {T, w:3.4, taper:.3});
-  // hooves
-  P.brush("M66 192 L84 192 M222 192 L240 192", {T, w:4, color:pal.ink, taper:0});
-  // jewelled harness (royal animal)
-  P.brush("M232 58 C226 90 230 120 244 150", {T, w:7, color:pal.acc, taper:0});
-  P.dots([[233,72],[231,90],[233,108],[237,126],[242,142]],{T, r:2.8, color:pal.hi, ring:true});
-  // ground: lotus-scroll strip
-  if (!P.noGround){ P.brush("M110 364 L402 364", {w:4, taper:0});
-  for (let i=0;i<7;i++){ const x = 128+i*42; P.brush(`M${x} 364 C${x+6} 350 ${x+22} 350 ${x+24} 364`,{w:2.2, color:pal.acc2}); P.dots([[x+12,354]],{r:2.4,color:pal.acc3}); } }
-}};
-
-/* ---- Pāṇḍya: twin fish with a goad (Sittanavasal idiom) ---- */
-E.twinFish = {style:"sittanavasal", paint(P){
-  const {pal} = P;
-  // lotus pond ripples behind
-  for (let i=0;i<5;i++) P.brush(`M${120+i*8} ${392-i*2} C${180} ${380-i*3} ${332} ${380-i*3} ${392-i*8} ${392-i*2}`,{w:1.4, color:pal.acc3, a:.35});
-  // goad / sceptre
-  P.shape("M250 118 L262 118 L262 408 L250 408 Z", {fill:pal.fig, shade:pal.figShade, depth:4, lw:2});
-  for (const y of [150,230,330]) { P.brush(`M246 ${y} L266 ${y}`, {w:5, color:pal.acc, taper:0}); P.dots([[256,y]],{r:2,color:pal.hi}); }
-  P.shape("M256 70 C268 88 266 108 256 120 C246 108 244 88 256 70 Z", {fill:pal.acc3, shade:pal.figShade, depth:4, lw:2});
-  P.brush("M262 110 C282 100 286 80 272 70", {w:6, color:pal.fig, taper:.2}); P.brush("M262 110 C282 100 286 80 272 70", {w:1.6, taper:.1});
-  // fish
-  const fishBody = "M40 0 C70 -40 150 -48 200 -20 C220 -10 236 -2 240 0 C236 4 220 12 200 20 C150 48 70 40 40 0 Z";
-  const tail = "M52 0 C36 -10 18 -32 6 -54 C28 -48 48 -32 62 -14 L62 14 C48 32 28 48 6 54 C18 32 36 10 52 0 Z";
-  P.mirror(()=>{
-    const T = {x:196, y:396, s:1.12, r:-Math.PI/2};
-    P.shape("M100 -38 C110 -64 144 -70 164 -42 Z", {T, fill:pal.acc, shade:pal.ink, depth:5, lw:2});
-    for (let i=0;i<5;i++) P.brush(`M${108+i*11} -40 L${112+i*10} -58`, {T, w:1.2, color:pal.ink, a:.7});
-    P.shape("M118 36 C126 56 150 60 162 40 Z", {T, fill:pal.acc, shade:pal.ink, depth:4, lw:2});
-    P.shape(tail, {T, fill:pal.acc, shade:pal.ink, depth:8, lw:2.4});
-    for (let i=0;i<6;i++) P.brush(`M54 0 C40 ${-8-i*7} 26 ${-18-i*6} 12 ${-26-i*5}`, {T, w:1, color:pal.ink, a:.6});
-    for (let i=0;i<6;i++) P.brush(`M54 0 C40 ${8+i*7} 26 ${18+i*6} 12 ${26+i*5}`, {T, w:1, color:pal.ink, a:.6});
-    P.shape(fishBody, {T, fill:pal.fig, shade:pal.figShade, depth:18, lw:3});
-    // scales: offset rows of arcs
-    for (let c=0;c<9;c++){ const x = 76 + c*13; const h = Math.min(28, 10 + c*4, (200-x)/2.2);
-      for (let y = -h; y <= h; y += 11){ const yy = y + (c%2?5.5:0); if (Math.abs(yy)>h) continue;
-        P.brush(`M${x} ${yy-6} C${x+8} ${yy-5} ${x+8} ${yy+5} ${x} ${yy+6}`, {T, w:1.5, color:pal.figShade}); } }
-    P.brush("M190 -24 C200 -10 200 10 190 24", {T, w:2.6});
-    P.shape("M206 -10 C212 -16 222 -14 224 -6 C220 0 210 0 206 -10 Z", {T, fill:pal.pearl, shade:pal.figShade, depth:2, lw:1.3, hi:null});
-    P.dots([[216,-8]],{T, r:2.4, color:pal.ink});
-    P.brush("M236 4 C244 14 246 26 240 36 M232 8 C236 20 234 30 228 38", {T, w:1.6, taper:.5});
-    P.brush("M60 -4 C110 -26 170 -26 210 -12", {T, w:1.4, color:pal.hi, a:.7, taper:.4});
-  });
-  // lotuses flanking at the base
-  P.mirror(()=>{ for (let i=0;i<5;i++){ const a = -Math.PI/2 + (i-2)*0.42; const bx=132, by=400;
-      P.shape(`M${bx} ${by} Q${bx+Math.cos(a-.3)*26} ${by+Math.sin(a-.3)*26} ${bx+Math.cos(a)*40} ${by+Math.sin(a)*40} Q${bx+Math.cos(a+.3)*26} ${by+Math.sin(a+.3)*26} ${bx} ${by} Z`, {fill:pal.acc, shade:pal.ink, depth:5, lw:1.6}); } });
-}};
-
-/* ---- Kāmarūpa: frontal elephant with caparison (eastern manuscript idiom) ---- */
-E.elephantFront = {style:"pala", paint(P){
-  const {pal} = P; const skin = "#8a8f86", skinShade = "#3f443e";
-  P.mirror(()=>{
-    // ear
-    P.shape("M206 176 C160 150 110 170 112 222 C114 262 150 286 196 270 C206 262 210 240 208 220 Z", {fill:skin, shade:skinShade, depth:18, lw:3, hi:"#d7dbd0"});
-    P.brush("M190 190 C160 184 136 200 134 226 M196 214 C170 210 150 222 148 244 M198 240 C180 240 166 250 162 262", {w:1.6, color:skinShade});
-    P.brush("M206 176 C160 150 110 170 112 222 C114 262 150 286 196 270", {w:5, color:pal.acc, taper:.1, a:.9});
-    // foreleg with anklet
-    P.shape("M206 272 C204 310 204 350 206 384 L240 384 C242 350 242 310 240 272 Z", {fill:skin, shade:skinShade, depth:12, lw:3, hi:"#d7dbd0"});
-    P.brush("M204 350 L242 350", {w:8, color:pal.fig, taper:0}); P.dots([[210,350],[218,350],[226,350],[234,350]],{r:2,color:pal.hi,ring:true});
-    P.brush("M210 384 C212 378 218 378 220 384 M222 384 C224 378 230 378 232 384", {w:2, color:pal.pearl});
-    // tusk
-    P.shape("M232 262 C214 290 206 318 212 340 C222 322 232 300 244 272 Z", {fill:pal.pearl, shade:pal.figShade, depth:5, lw:2.2});
-    P.brush("M212 340 L216 334", {w:6, color:pal.fig, taper:0});
-    // eye
-    P.shape("M222 224 C226 218 236 218 238 224 C234 230 226 230 222 224 Z", {fill:pal.pearl, shade:skinShade, depth:2, lw:1.4, hi:null});
-    P.dots([[230,224]],{r:2.4,color:pal.ink});
-  });
-  // head
-  P.shape("M256 146 C300 146 324 180 320 216 C318 240 306 256 292 266 L220 266 C206 256 194 240 192 216 C188 180 212 146 256 146 Z", {fill:skin, shade:skinShade, depth:22, lw:3.2, hi:"#d7dbd0"});
-  // trunk
-  const trunk = "M236 252 C234 296 230 332 236 360 C240 380 256 394 272 388 C286 382 286 364 274 358 C264 354 256 362 262 370 C252 366 250 350 252 330 C254 300 272 290 276 252 Z";
-  P.shape(trunk, {fill:skin, shade:skinShade, depth:10, lw:3, hi:"#d7dbd0"});
-  for (let i=0;i<9;i++){ const y = 272+i*11; P.brush(`M${238+i*.4} ${y} C${248} ${y+3} ${262} ${y+3} ${272-i*1.4} ${y-1}`, {w:1.2, color:skinShade, a:.8}); }
-  // caparison
-  P.shape("M218 150 C236 142 276 142 294 150 L288 212 L256 240 L224 212 Z", {fill:pal.acc, shade:pal.ink, depth:8, lw:2.6});
-  P.brush("M224 160 L288 160 M222 200 L256 228 L290 200", {w:2.4, color:pal.fig, taper:0});
-  P.dots([[232,170],[244,170],[256,170],[268,170],[280,170],[236,186],[276,186],[246,208],[266,208]],{r:2.4,color:pal.hi,ring:true});
-  P.shape("M256 176 C266 176 272 184 272 192 C272 202 264 208 256 208 C248 208 240 202 240 192 C240 184 246 176 256 176 Z", {fill:pal.fig, shade:pal.figShade, depth:5, lw:2});
-  P.dots([[256,192]],{r:4.5,color:pal.acc2,ring:true});
-  P.dots([[256,244],[256,256]],{r:3,color:pal.fig,ring:true});
-  // bells on a cord
-  P.brush("M204 268 C232 282 280 282 308 268", {w:4, color:pal.fig, taper:0});
-}};
-
-window.LanchhanaPainter = {STYLES, E, paint(canvas, key, seed, style){ const em = E[key]; const P = Painter(canvas, style||em.style, seed||11); P.ground(); em.paint(P); P.finish(); return canvas; }};
-})();
-
-/* Remaining 19 emblems in the painted idiom. Adds to LanchhanaPainter.E. 512×512 space, field r≈190 about (256,256). */
-(function(){
-const E = window.LanchhanaPainter.E, TAU = Math.PI*2;
-const SKIN = "#c98a52", SKINS = "#7a4318";
-const feather = (bx,by,ang,len,wd)=>{ const ca=Math.cos(ang), sa=Math.sin(ang), px=-sa, py=ca, tx=bx+ca*len, ty=by+sa*len;
-  return `M${bx+px*wd*.5} ${by+py*wd*.5} C${bx+ca*len*.5+px*wd} ${by+sa*len*.5+py*wd} ${tx+px*wd*.45} ${ty+py*wd*.45} ${tx} ${ty} C${tx-px*wd*.45} ${ty-py*wd*.45} ${bx+ca*len*.5-px*wd} ${by+sa*len*.5-py*wd} ${bx-px*wd*.5} ${by-py*wd*.5} Z`; };
-const petal = (cx,cy,a,r0,r1,w)=>{ const ca=Math.cos(a), sa=Math.sin(a), px=-sa, py=ca, bx=cx+ca*r0, by=cy+sa*r0, tx=cx+ca*r1, ty=cy+sa*r1, mx=cx+ca*(r0+(r1-r0)*.5), my=cy+sa*(r0+(r1-r0)*.5);
-  return `M${bx} ${by} Q${mx+px*w} ${my+py*w} ${tx} ${ty} Q${mx-px*w} ${my-py*w} ${bx} ${by} Z`; };
-function lotusSeat(P, cx, y, w, cols){ const {pal}=P; cols = cols||[pal.acc, pal.acc3];
-  for (let i=0;i<9;i++){ const x = cx - w/2 + (i+.5)*w/9; P.shape(`M${x-w/18-3} ${y} C${x-w/18} ${y-22} ${x-4} ${y-30} ${x} ${y-36} C${x+4} ${y-30} ${x+w/18} ${y-22} ${x+w/18+3} ${y} Z`, {fill:cols[i%2], shade:pal.figShade, depth:5, lw:1.6}); }
-  P.shape(`M${cx-w/2-6} ${y} L${cx+w/2+6} ${y} L${cx+w/2-4} ${y+12} L${cx-w/2+4} ${y+12} Z`, {fill:pal.fig, shade:pal.figShade, depth:4, lw:1.8}); }
-function groundStrip(P, x0, x1, y){ if (P.noGround) return; const {pal}=P; P.brush(`M${x0} ${y} L${x1} ${y}`, {w:3.2, taper:0});
-  for (let x=x0+14; x<x1-10; x+=34){ P.brush(`M${x} ${y} C${x+5} ${y-12} ${x+18} ${y-12} ${x+20} ${y}`, {w:2, color:pal.acc2}); P.dots([[x+10,y-8]],{r:2.2,color:pal.acc3}); } }
-function mane(P, cx, cy, r, col, dark){ const {pal}=P;
-  P.shape(P.scallop(cx,cy,r,18,r*.2), {fill:col, shade:dark, depth:r*.35, lw:2.4});
-  for (let i=0;i<18;i++){ const a=i/18*TAU; const x=cx+Math.cos(a)*r*.72, y=cy+Math.sin(a)*r*.72;
-    P.brush(`M${x} ${y} C${x+Math.cos(a+1)*6} ${y+Math.sin(a+1)*6} ${x+Math.cos(a)*10} ${y+Math.sin(a)*10} ${x+Math.cos(a-.6)*14} ${y+Math.sin(a-.6)*14}`, {w:2.6, color:dark, taper:.4}); } }
-
-/* ---------------- Maurya: lion capital ---------------- */
-E.lionCapital = {style:"ajanta", paint(P){ const {pal}=P, stone="#e3cfa2", stoneS="#8a6a3c";
-  // bell-shaped lotus
-  P.shape("M168 330 C170 400 342 400 344 330 Z", {fill:stone, shade:stoneS, depth:18, lw:3});
-  for (let i=0;i<11;i++){ const x=178+i*15.6; P.brush(`M${x} 336 C${x+(x-256)*.05} 360 ${x+(x-256)*.12} 380 ${x+(x-256)*.18} 392`, {w:1.8, color:stoneS, taper:.4}); }
-  P.shape("M176 318 L336 318 L344 332 L168 332 Z", {fill:stone, shade:stoneS, depth:4, lw:2});
-  // abacus with wheel and running animals suggested by dots
-  P.shape("M150 288 L362 288 L362 320 L150 320 Z", {fill:"#d9c08f", shade:stoneS, depth:6, lw:2.6});
-  const wheel=(x)=>{ P.dots([[x,304]],{r:11,color:pal.acc3,ring:true}); for (let k=0;k<8;k++){ const a=k/8*TAU; P.brush(`M${x} 304 L${x+Math.cos(a)*10} ${304+Math.sin(a)*10}`,{w:1.3}); } P.dots([[x,304]],{r:2.6,color:pal.acc}); };
-  wheel(256); wheel(176); wheel(336);
-  P.brush("M196 304 C204 296 214 296 222 304 C230 312 240 312 244 304 M268 304 C272 296 284 296 290 304 C298 312 308 312 316 304", {w:1.6, color:stoneS});
-  // side lions (profile), mirrored
-  P.mirror(()=>{
-    P.shape("M150 288 C144 250 152 222 176 210 C196 200 214 206 222 222 L230 288 Z", {fill:stone, shade:stoneS, depth:14, lw:2.6});
-    mane(P, 178, 196, 34, "#d8b67a", stoneS);
-    P.shape("M160 188 C170 178 188 180 194 192 C196 206 186 216 172 216 C160 216 146 212 144 204 C142 196 150 192 160 188 Z", {fill:"#ecd9ae", shade:stoneS, depth:6, lw:2});
-    P.shape("M144 204 C150 212 160 214 168 210 C164 220 150 222 142 214 Z", {fill:pal.acc, shade:pal.ink, depth:2, lw:1.4, hi:null});
-    P.eye(170, 196, .75, {dir:-1});
-    P.brush("M186 250 L186 286 M200 250 L202 286", {w:5, color:stoneS, taper:0});
-  });
-  // central lion, frontal
-  P.brush("M238 250 L238 288 M274 250 L274 288", {w:14, color:stone, taper:0}); P.brush("M238 250 L238 288 M274 250 L274 288", {w:2, taper:0});
-  mane(P, 256, 188, 50, "#dcbb7e", stoneS);
-  P.shape("M256 160 C276 160 288 176 288 196 C288 216 274 230 256 230 C238 230 224 216 224 196 C224 176 236 160 256 160 Z", {fill:"#efdcb2", shade:stoneS, depth:10, lw:2.4});
-  P.eye(244, 190, .8, {}); P.eye(268, 190, .8, {});
-  P.shape("M250 204 L262 204 L256 212 Z", {fill:pal.ink, shade:pal.ink, depth:1, lw:1, hi:null});
-  P.shape("M242 216 C250 222 262 222 270 216 C266 228 246 228 242 216 Z", {fill:pal.acc, shade:pal.ink, depth:2, lw:1.4, hi:null});
-  P.dots([[240,210],[236,214],[272,210],[276,214]],{r:1.2,color:pal.ink});
-}};
-
-/* ---------------- Sātavāhana: Ujjain symbol ---------------- */
-E.ujjain = {style:"ajanta", paint(P){ const {pal}=P;
-  P.tube("M256 150 L256 362 M150 256 L362 256", 16, pal.fig);
-  for (const [x,y] of [[256,206],[256,306],[206,256],[306,256]]) P.dots([[x,y]],{r:4,color:pal.acc,ring:true});
-  for (const [x,y] of [[256,112],[256,400],[112,256],[400,256]]){
-    P.shape(`M${x+40} ${y} A40 40 0 1 0 ${x-40} ${y} A40 40 0 1 0 ${x+40} ${y} Z`, {fill:pal.fig, shade:pal.figShade, depth:10, lw:2.8});
-    P.shape(`M${x+28} ${y} A28 28 0 1 0 ${x-28} ${y} A28 28 0 1 0 ${x+28} ${y} Z`, {fill:pal.acc2, shade:pal.ink, depth:8, lw:2, hi:null});
-    for (let k=0;k<8;k++) P.shape(petal(x,y,k/8*TAU,4,24,7), {fill:k%2?pal.acc:pal.acc3, shade:pal.figShade, depth:3, lw:1.2, hi:null});
-    P.dots([[x,y]],{r:5,color:pal.fig,ring:true});
-    for (let k=0;k<16;k++){ const a=k/16*TAU; P.dots([[x+Math.cos(a)*34, y+Math.sin(a)*34]],{r:1.6,color:pal.hi}); } }
-  P.shape("M256 234 L278 256 L256 278 L234 256 Z", {fill:pal.acc, shade:pal.ink, depth:5, lw:2}); P.dots([[256,256]],{r:5,color:pal.hi,ring:true});
-}};
-
-/* ---------------- Kushan: tamgha ---------------- */
-E.tamgha = {style:"ajanta", paint(P){ const {pal}=P;
-  P.tube("M256 350 L256 130", 18, pal.fig);
-  P.tube("M186 268 L326 268", 18, pal.fig);
-  P.tube("M186 268 L186 180 C186 164 176 154 162 148", 16, pal.fig);
-  P.tube("M326 268 L326 180 C326 164 336 154 350 148", 16, pal.fig);
-  P.tube("M232 150 L256 124 L280 150", 14, pal.fig);
-  P.shape("M256 330 A34 34 0 1 0 256.1 330 Z M256 390 A26 26 0 1 1 255.9 390 Z", {fill:pal.fig, shade:pal.figShade, depth:8, lw:3});
-  P.shape("M256 338 A26 26 0 1 0 256.1 338 Z", {fill:pal.acc2, shade:pal.ink, depth:10, lw:2, hi:null});
-  for (const [x,y] of [[256,268],[186,268],[326,268],[256,200]]) P.dots([[x,y]],{r:5,color:pal.acc,ring:true});
-  for (let k=0;k<12;k++){ const a=k/12*TAU; P.dots([[256+Math.cos(a)*30, 364+Math.sin(a)*30]],{r:1.8,color:pal.hi}); }
-  // ribbons flying from the crossbar (royal fillets)
-  P.mirror(()=>{ P.brush("M186 280 C168 300 150 300 136 316 C150 312 160 318 164 330", {w:7, color:pal.acc, taper:.3}); });
-}};
-
-/* ---------------- Western Kshatrapas: arched hill ---------------- */
-E.chaitya = {style:"ajanta", paint(P){ const {pal}=P;
-  // river
-  for (let k=0;k<3;k++) P.tube(`M156 ${372+k*14} C176 ${362+k*14} 196 ${382+k*14} 216 ${372+k*14} S256 ${362+k*14} 276 ${372+k*14} S316 ${382+k*14} 336 ${372+k*14} S356 ${362+k*14} 362 ${370+k*14}`, 5, pal.acc2, {hi:false});
-  const arch = (cx, by, r)=>{ P.shape(`M${cx-r} ${by} L${cx-r} ${by-r*.4} A${r} ${r} 0 0 1 ${cx+r} ${by-r*.4} L${cx+r} ${by} Z`, {fill:pal.fig, shade:pal.figShade, depth:12, lw:3});
-    const ri=r*.62; P.shape(`M${cx-ri} ${by} L${cx-ri} ${by-ri*.35} A${ri} ${ri} 0 0 1 ${cx+ri} ${by-ri*.35} L${cx+ri} ${by} Z`, {fill:pal.acc, shade:pal.ink, depth:8, lw:2, hi:null});
-    P.brush(`M${cx-r+6} ${by-r*.4} A${r-6} ${r-6} 0 0 1 ${cx+r-6} ${by-r*.4}`, {w:1.4, color:pal.hi, a:.7}); };
-  arch(212, 350, 40); arch(300, 350, 40); arch(256, 270, 40);
-  P.shape("M150 350 L362 350 L356 362 L156 362 Z", {fill:pal.acc3, shade:pal.figShade, depth:4, lw:2});
-  P.brush("M256 214 L256 196", {w:5, taper:0});
-  P.shape("M228 176 C232 196 280 196 284 176 C276 188 236 188 228 176 Z", {fill:pal.hi, shade:pal.figShade, depth:4, lw:2});
-  // sun (rayed) and crescent moon
-  for (let k=0;k<16;k++){ const a=k/16*TAU; P.brush(`M${160+Math.cos(a)*22} ${170+Math.sin(a)*22} L${160+Math.cos(a)*34} ${170+Math.sin(a)*34}`, {w:3.4, color:pal.acc, taper:.5}); }
-  P.dots([[160,170]],{r:18,color:pal.fig,ring:true}); P.dots([[160,170]],{r:7,color:pal.acc});
-  P.shape("M364 150 A26 26 0 1 0 382 196 A20 20 0 1 1 364 150 Z", {fill:pal.pearl, shade:pal.figShade, depth:6, lw:2.2});
-}};
-
-/* ---------------- lions: standing (Kadamba) and roaring with raised paw (Viṣṇukuṇḍina) ---------------- */
-function lion(P, roar){ const {pal}=P, col="#d7a24f", dark="#7a4a18", T={x:84, y:150, s:1};
-  groundStrip(P, 110, 410, 362);
-  P.tube("M42 104 C10 96 0 60 20 40 C32 28 28 14 16 12", 9, col, {T});
-  P.shape("M16 12 C4 0 10 -14 24 -10 C30 0 26 10 16 12 Z", {T, fill:dark, shade:pal.ink, depth:4, lw:1.8});
-  P.shape("M100 150 C98 170 100 190 98 208 L118 208 C118 190 120 172 124 152 Z M184 150 C184 170 186 190 184 208 L204 208 C204 190 204 170 206 150 Z", {T, fill:"#b98437", shade:dark, depth:6, lw:2.2, hi:null});
-  P.shape("M46 118 C40 96 56 82 84 82 C120 80 170 82 200 78 C222 74 240 84 246 104 C250 120 248 138 240 150 C232 158 222 160 214 156 C190 150 150 150 120 152 C100 154 80 158 66 152 C54 146 48 134 46 118 Z", {T, fill:col, shade:dark, depth:20, lw:3});
-  P.shape("M60 140 C54 118 70 104 90 106 C106 108 112 124 106 142 C102 160 100 180 102 200 C104 206 110 206 116 208 L84 210 C82 196 80 176 74 162 Z", {T, fill:col, shade:dark, depth:10, lw:2.4});
-  if (roar) P.shape("M206 140 C204 118 222 108 236 116 C250 124 260 136 272 142 C282 146 290 146 298 150 L296 166 C284 168 270 164 256 158 C240 152 222 152 212 150 Z", {T, fill:col, shade:dark, depth:8, lw:2.4});
-  else P.shape("M206 140 C204 118 222 108 236 116 C246 124 244 142 238 158 C234 174 234 190 238 204 C244 206 250 206 254 210 L220 210 C220 192 218 172 212 158 Z", {T, fill:col, shade:dark, depth:10, lw:2.4});
-  P.brush("M98 208 L120 208 M184 208 L206 208", {T, w:3, taper:0});
-  P.brush("M120 100 C150 94 180 94 200 98", {T, w:1.4, color:dark, a:.7});
-  mane({...P, shape:(d,o)=>P.shape(d,Object.assign({T},o)), brush:(d,o)=>P.brush(d,Object.assign({T},o))}, 244, 64, 50, "#b9772c", "#5a3208");
-  P.shape("M246 44 C264 36 286 44 292 62 C300 72 306 82 304 92 C300 100 290 102 282 100 C274 108 262 110 252 104 C240 96 234 80 236 64 C238 54 240 48 246 44 Z", {T, fill:"#e3b465", shade:dark, depth:10, lw:2.4});
-  P.eye(270, 64, .8, {T, dir:1});
-  P.dots([[302,84]],{T, r:3.6, color:pal.ink});
-  if (roar){ P.shape("M278 94 L304 90 L300 108 L282 106 Z", {T, fill:"#6e1c10", shade:pal.ink, depth:3, lw:1.6, hi:null});
-    P.brush("M284 94 L286 99 M292 93 L293 98 M298 92 L298 97 M286 106 L287 101 M294 106 L294 101", {T, w:1.6, color:pal.hi, taper:.6}); }
-  else P.brush("M284 100 C292 104 300 102 304 98", {T, w:1.8});
-  P.brush("M300 90 C312 88 322 90 328 94 M300 94 C312 96 320 100 324 106", {T, w:1, a:.8});
-  P.brush("M232 18 C238 8 250 6 256 14", {T, w:3, color:dark});
-}
-E.lionStand = {style:"badami", paint(P){ lion(P, false); }};
-E.lionRoar  = {style:"ajanta", paint(P){ lion(P, true); P.dots([[140,150],[150,142],[160,150],[150,158]],{r:3,color:P.pal.acc,ring:true}); }};
-
-/* ---------------- Western Gaṅga: elephant in profile, caparisoned ---------------- */
-E.elephantSide = {style:"badami", paint(P){ const {pal}=P, skin="#8f928a", skinS="#3e423d", T={x:76, y:146, s:1};
-  groundStrip(P, 100, 420, 376);
-  P.shape("M110 176 L110 228 L138 228 L140 176 Z M200 176 L200 228 L228 228 L230 176 Z", {T, fill:"#6f736b", shade:skinS, depth:8, lw:2.2, hi:null});
-  P.brush("M42 100 C30 120 28 150 34 170", {T, w:3.4});
-  P.shape("M40 110 C40 60 90 30 170 30 C232 30 264 52 274 80 L278 150 C278 170 264 180 242 180 L70 182 C50 182 40 160 40 110 Z", {T, fill:skin, shade:skinS, depth:26, lw:3.2, hi:"#d7dbd0"});
-  P.shape("M60 170 L58 228 L90 228 L92 176 Z M240 160 L244 228 L272 228 L270 150 Z", {T, fill:skin, shade:skinS, depth:10, lw:2.6, hi:"#d7dbd0"});
-  for (const x of [58,244]){ P.brush(`M${x} 214 L${x+32} 214`, {T, w:7, color:pal.fig, taper:0}); P.dots([[x+6,214],[x+16,214],[x+26,214]],{T, r:1.8, color:pal.hi, ring:true}); }
-  // caparison
-  P.shape("M108 40 C150 32 204 32 240 44 L244 122 C204 134 150 134 104 124 Z", {T, fill:pal.acc, shade:pal.ink, depth:10, lw:2.6});
-  P.brush("M112 50 C150 42 204 42 236 52 M110 114 C150 124 204 124 240 112", {T, w:4, color:pal.fig, taper:0});
-  P.dots([[130,80],[160,86],[190,86],[220,80],[145,100],[205,100]],{T, r:3, color:pal.hi, ring:true});
-  P.shape("M150 60 C166 52 184 52 196 62 C186 76 162 76 150 60 Z", {T, fill:pal.fig, shade:pal.figShade, depth:4, lw:1.8});
-  // head, ear, trunk, tusk
-  P.shape("M250 58 C270 38 312 38 328 68 C338 92 336 124 324 140 C316 150 302 152 292 148 L262 150 Z", {T, fill:skin, shade:skinS, depth:16, lw:3, hi:"#d7dbd0"});
-  P.shape("M318 126 C330 160 332 196 322 222 C316 232 304 230 302 222 C306 214 314 212 316 204 C318 184 310 164 300 146 Z", {T, fill:skin, shade:skinS, depth:8, lw:2.6, hi:"#d7dbd0"});
-  for (let i=0;i<8;i++) P.brush(`M${306+i*1.2} ${154+i*9} C${312} ${156+i*9} ${320} ${156+i*9} ${326-i*.8} ${152+i*9}`, {T, w:1.1, color:skinS, a:.8});
-  P.shape("M262 70 C240 66 224 86 226 112 C228 136 246 152 268 146 C278 130 280 96 262 70 Z", {T, fill:"#9da097", shade:skinS, depth:10, lw:2.4, hi:"#d7dbd0"});
-  P.brush("M258 84 C244 90 238 106 244 124", {T, w:1.4, color:skinS});
-  P.shape("M304 146 C318 158 338 162 352 152 C340 170 314 170 298 156 Z", {T, fill:pal.pearl, shade:pal.figShade, depth:4, lw:2});
-  P.eye(300, 90, .75, {T, dir:1});
-  P.brush("M256 52 C276 38 304 36 322 50", {T, w:7, color:pal.fig, taper:0}); P.dots([[268,46],[282,42],[296,42],[310,46]],{T, r:2.2, color:pal.hi, ring:true});
-  P.shape("M296 40 L306 26 L316 40 Z", {T, fill:pal.acc, shade:pal.ink, depth:2, lw:1.4, hi:null});
-}};
-
-/* ---------------- bulls ---------------- */
-function bullHead(P, T, cream, shade){ const {pal}=P;
-  P.tube("M352 232 C346 212 352 196 366 188", 8, pal.acc3, {T, taper:.6});
-  P.shape("M318 236 C336 224 356 226 368 238 C382 250 396 268 402 284 C406 294 400 302 390 302 C380 302 370 298 362 292 C352 288 344 282 336 276 C330 268 322 256 318 236 Z", {T, fill:cream, shade:shade, depth:12, lw:2.6});
-  P.tube("M362 234 C366 214 378 204 392 204", 8, pal.acc3, {T, taper:.6});
-  P.shape("M344 244 C330 236 316 238 306 246 C318 256 334 256 346 252 Z", {T, fill:cream, shade:shade, depth:5, lw:2});
-  P.shape("M386 280 C396 276 406 284 404 294 C398 302 388 302 382 296 Z", {T, fill:"#9c8272", shade:"#4d3a2c", depth:4, lw:1.6, hi:null});
-  P.eye(370, 256, .8, {T, dir:1});
-  P.brush("M382 300 C390 304 398 304 404 300", {T, w:1.4});
-  P.brush("M342 238 C356 234 370 236 380 244", {T, w:6, color:pal.acc, taper:0}); P.dots([[350,236],[362,236],[374,240]],{T, r:2,color:pal.hi,ring:true});
-}
-function bullCouch(P, o){ o=o||{}; const {pal}=P, cream="#f1e8d4", shade="#8b7a58", T=o.T;
-  P.tube("M150 350 C124 362 128 382 164 382 C204 382 234 384 250 380", 8, cream, {T});
-  P.shape("M140 372 C118 346 120 290 160 272 C196 256 236 254 270 250 C278 226 300 214 318 226 C328 234 332 246 334 256 C352 270 362 296 360 330 C358 352 350 364 340 372 Z", {T, fill:cream, shade:shade, depth:26, lw:3});
-  P.shape("M268 254 C270 226 292 206 314 212 C318 222 316 236 310 248 Z", {T, fill:cream, shade:shade, depth:10, lw:2.4});
-  P.shape("M150 372 C150 342 172 322 202 322 C232 322 250 344 250 372 Z", {T, fill:cream, shade:shade, depth:14, lw:2.4});
-  P.shape("M236 360 C250 352 272 356 278 368 L278 374 L236 374 Z M364 356 C378 352 392 358 394 370 L372 374 Z", {T, fill:"#4a3a2a", shade:"#1c140c", depth:3, lw:1.6, hi:null});
-  P.shape("M300 352 C320 344 352 346 372 356 C384 362 386 372 372 374 L300 374 Z", {T, fill:cream, shade:shade, depth:8, lw:2.4});
-  P.shape("M336 276 C338 300 330 322 314 338 C306 330 306 314 314 302 C320 290 326 282 336 276 Z", {T, fill:cream, shade:shade, depth:6, lw:2});
-  bullHead(P, T, cream, shade);
-  P.beads([322,252],[312,300],[320,330],[344,318], 11, 3.6, pal.fig, 3);
-  P.brush("M262 256 C258 290 262 330 272 366", {T, w:7, color:pal.acc, taper:0}); P.beads([262,262],[258,296],[262,330],[270,362], 9, 2.4, pal.hi);
-}
-E.bullCouchant = {style:"kailasanatha", paint(P){ groundStrip(P, 110, 410, 382); bullCouch(P); }};
-E.bullMoon = {style:"pala", paint(P){ groundStrip(P, 110, 410, 382); bullCouch(P); const {pal}=P;
-  P.shape("M190 150 A34 34 0 1 0 190.1 150 Z", {fill:pal.pearl, shade:pal.figShade, depth:10, lw:2.6});
-  P.dots([[178,176],[196,186],[184,196]],{r:3,color:"#d8cfb6"}); }};
-function bullStand(P, parasol){ const {pal}=P, cream="#f1e8d4", shade="#8b7a58", T={x:-6,y:0,s:1};
-  groundStrip(P, 110, 410, 380);
-  P.shape("M170 326 L168 378 L184 378 L188 326 Z M300 326 L300 378 L316 378 L318 326 Z", {T, fill:"#cdbf9f", shade:shade, depth:5, lw:2, hi:null});
-  P.tube("M132 262 C116 280 114 310 122 340", 6, cream, {T}); P.shape("M118 336 C112 352 118 366 126 368 C132 356 130 344 122 336 Z", {T, fill:"#5a4632", shade:pal.ink, depth:3, lw:1.4, hi:null});
-  P.shape("M130 270 C130 246 150 232 180 232 L270 230 C282 206 304 196 322 210 C330 218 334 230 336 240 C350 250 358 270 356 296 L352 316 C348 326 338 330 326 330 L150 332 C136 332 130 318 130 300 Z", {T, fill:cream, shade:shade, depth:24, lw:3});
-  P.shape("M146 320 C142 344 140 362 140 378 L158 378 C160 360 164 344 168 326 Z M322 320 C330 344 334 362 336 378 L354 378 C352 360 346 340 340 316 Z", {T, fill:cream, shade:shade, depth:6, lw:2.4});
-  P.brush("M138 378 L160 378 M300 378 L318 378 M334 378 L356 378 M166 378 L186 378", {T, w:4, taper:0});
-  P.shape("M268 234 C268 208 290 192 312 198 C318 210 316 224 308 236 Z", {T, fill:cream, shade:shade, depth:10, lw:2.4});
-  bullHead(P, {x:T.x-2, y:-2}, cream, shade);
-  P.shape("M334 280 C336 300 330 316 318 326 C312 318 312 306 318 296 Z", {T, fill:cream, shade:shade, depth:5, lw:2});
-  P.beads([318,250],[310,290],[318,320],[340,306], 10, 3.4, pal.fig, 3);
-  P.brush("M170 234 C160 262 160 300 170 330", {T, w:7, color:pal.acc, taper:0}); P.beads([164,240],[156,270],[158,300],[166,326], 8, 2.3, pal.hi);
-  if (parasol){ P.tube("M292 150 L292 200", 6, pal.fig);
-    P.shape("M226 152 C240 112 344 112 358 152 C338 146 312 148 292 156 C272 148 246 146 226 152 Z", {fill:pal.acc3, shade:pal.figShade, depth:8, lw:2.6});
-    for (let i=0;i<7;i++){ const x=232+i*20; P.brush(`M${x} 150 L${x} 160`,{w:1.8}); P.dots([[x,164]],{r:2.6,color:pal.acc,ring:true}); }
-    P.brush("M226 152 C214 166 200 164 190 176 M358 152 C370 166 384 164 394 176", {w:5, color:pal.acc, taper:.3});
-    P.dots([[292,108]],{r:5,color:pal.fig,ring:true}); }
-}
-E.bullStanding = {style:"ajanta", paint(P){ bullStand(P, false); }};
-E.bullParasol  = {style:"ajanta", paint(P){ bullStand(P, true); }};
-
-/* ---------------- Gajalakṣmī ---------------- */
-E.gajalakshmi = {style:"ajanta", paint(P){ const {pal}=P;
-  // water streams
-  P.mirror(()=>{ P.tube("M218 134 C232 142 238 156 240 172", 4, "#6d9ab6", {hi:false}); P.dots([[236,164],[242,178],[238,184]],{r:1.6,color:"#cfe3ee"}); });
-  // elephants lustrating
-  P.mirror(()=>{ const skin="#9aa097", s2="#43473f";
-    P.shape("M110 176 L110 196 L122 196 L122 176 Z M156 176 L156 196 L168 196 L168 176 Z", {fill:"#747a70", shade:s2, depth:4, lw:1.6, hi:null});
-    P.shape("M104 160 C104 138 124 126 150 128 C174 130 188 142 190 158 L188 180 L112 182 C106 178 104 170 104 160 Z", {fill:skin, shade:s2, depth:12, lw:2.4});
-    P.shape("M124 132 C140 124 170 124 184 134 L182 156 C166 162 140 162 122 156 Z", {fill:pal.acc, shade:pal.ink, depth:5, lw:1.8}); P.dots([[136,144],[152,146],[168,144]],{r:2,color:pal.hi,ring:true});
-    P.shape("M180 132 C198 124 216 134 216 152 C216 166 206 172 196 170 Z", {fill:skin, shade:s2, depth:8, lw:2.2});
-    P.tube("M212 144 C226 134 230 118 224 106", 7, skin);
-    P.shape("M214 96 C214 84 236 84 236 96 C236 108 214 108 214 96 Z", {fill:pal.fig, shade:pal.figShade, depth:4, lw:1.8}); P.brush("M232 96 L242 102", {w:3});
-    P.shape("M186 140 C178 142 172 154 176 164 C184 162 190 152 186 140 Z", {fill:"#b0b5aa", shade:s2, depth:3, lw:1.4});
-    P.eye(200, 146, .5, {dir:1, brow:false});
-    P.shape("M204 162 C212 166 220 166 226 162 C220 172 208 172 204 162 Z", {fill:pal.pearl, shade:pal.figShade, depth:2, lw:1.2, hi:null});
-    for (let k=0;k<5;k++) P.shape(petal(140,200,Math.PI+k*0.24-0.05*k,0,26,8), {fill:k%2?pal.acc:pal.acc3, shade:pal.figShade, depth:2, lw:1.2, hi:null});
-  });
-  // goddess
-  P.shape("M256 150 A48 48 0 1 0 256.1 150 Z", {fill:pal.acc3, shade:pal.figShade, depth:14, lw:1.6, hi:null});
-  lotusSeat(P, 256, 372, 150, [pal.acc, pal.acc3]);
-  P.shape("M204 346 C210 318 240 312 256 324 C272 312 302 318 308 346 C290 356 222 356 204 346 Z", {fill:pal.acc, shade:pal.ink, depth:10, lw:2.4});
-  P.brush("M214 340 C232 332 250 334 256 338 C262 334 280 332 298 340", {w:1.6, color:pal.fig});
-  P.shape("M236 222 C222 226 212 236 212 250 C214 266 224 276 230 290 C232 302 230 312 234 320 L278 320 C282 312 280 302 282 290 C288 276 298 266 300 250 C300 236 290 226 276 222 Z", {fill:SKIN, shade:SKINS, depth:12, lw:2.4});
-  P.shape("M222 258 C240 250 272 250 290 258 L286 272 C270 266 242 266 226 272 Z", {fill:pal.acc2, shade:pal.ink, depth:3, lw:1.6}); P.brush("M236 300 C248 304 264 304 276 300", {w:5, color:pal.fig, taper:0});
-  P.mirror(()=>{ P.tube("M218 238 C206 236 200 226 198 212", 10, SKIN, {hiColor:"#f0c895"}); P.brush("M204 220 L214 226", {w:4, color:pal.fig, taper:0});
-    for (let k=0;k<6;k++) P.shape(petal(198,202,-Math.PI/2+(k-2.5)*0.42,0,20,6), {fill:k%2?pal.acc:"#e7a0a8", shade:pal.figShade, depth:2, lw:1.1, hi:null});
-    P.dots([[198,202]],{r:3,color:pal.fig}); });
-  P.shape("M256 172 C272 172 280 186 278 202 C276 216 266 226 256 226 C246 226 236 216 234 202 C232 186 240 172 256 172 Z", {fill:SKIN, shade:SKINS, depth:8, lw:2.2});
-  P.shape("M236 190 C238 172 274 172 276 190 C268 182 244 182 236 190 Z", {fill:"#1c120a", shade:"#000", depth:2, lw:1.2, hi:null});
-  P.shape("M236 182 L240 154 L248 166 L256 146 L264 166 L272 154 L276 182 Z", {fill:pal.fig, shade:pal.figShade, depth:6, lw:2}); P.dots([[256,168]],{r:3,color:pal.acc,ring:true});
-  P.eye(247, 200, .55, {dir:0}); P.eye(265, 200, .55, {dir:0});
-  P.brush("M256 204 L254 212 L258 213", {w:1.1}); P.shape("M250 217 C254 220 258 220 262 217 C258 222 254 222 250 217 Z", {fill:pal.acc, shade:pal.ink, depth:1, lw:1, hi:null});
-  P.dots([[256,191]],{r:1.8,color:pal.acc});
-  P.beads([236,232],[244,248],[268,248],[276,232], 10, 2.4, pal.fig); P.dots([[232,208],[280,208]],{r:3,color:pal.fig,ring:true});
-}};
-
-/* ---------------- Garuḍa, human-headed, with serpents (Pāṇḍuvaṃśī) ---------------- */
-E.garudaSerpents = {style:"ajanta", paint(P){ const {pal}=P;
-  P.mirror(()=>{
-    for (let i=0;i<8;i++){ const a = Math.PI + 0.05 + i*0.1; P.shape(feather(232,248,a,138-i*6,20), {fill: i%2? pal.acc2 : "#5a7ea0", shade:pal.ink, depth:6, lw:1.9, hw:3}); }
-    for (let i=0;i<6;i++){ const a = Math.PI + 0.18 + i*0.11; P.shape(feather(234,254,a,88-i*4,18), {fill: pal.acc, shade:pal.ink, depth:6, lw:1.8, hw:3}); }
-    // arm and serpent
-    P.tube("M236 250 C222 262 204 268 186 272", 11, SKIN, {hiColor:"#f0c895"});
-    P.tube("M186 276 C176 300 190 320 180 344 C172 364 186 380 176 396", 9, "#6c8a4e");
-    P.shape("M176 236 C164 236 158 250 164 262 C168 270 184 272 190 262 C196 250 190 236 176 236 Z", {fill:"#6c8a4e", shade:pal.ink, depth:5, lw:2});
-    P.brush("M176 262 L184 280", {w:5, color:"#6c8a4e", taper:0});
-    P.shape("M172 246 C174 242 180 242 182 246 C180 250 174 250 172 246 Z", {fill:pal.acc3, shade:pal.figShade, depth:1, lw:.9, hi:null});
-    P.dots([[182,272]],{r:6,color:SKIN,ring:true});
-  });
-  P.shape("M256 234 C280 238 290 268 288 298 C286 322 274 340 256 346 C238 340 226 322 224 298 C222 268 232 238 256 234 Z", {fill:pal.fig, shade:pal.figShade, depth:14, lw:2.8});
-  for (let r=0;r<6;r++){ const y=262+r*13, half=22-Math.abs(r-2.5)*2.5; for (let x=256-half; x<=256+half; x+=11){ const xx=x+(r%2?5.5:0); if (xx>256+half) continue; P.brush(`M${xx-5} ${y} C${xx-4} ${y+7} ${xx+4} ${y+7} ${xx+5} ${y}`,{w:1.3,color:pal.figShade}); } }
-  for (let i=0;i<5;i++){ const a=Math.PI/2+(i-2)*0.22; P.shape(feather(256,338,a,58-Math.abs(i-2)*5,20), {fill:i%2?pal.acc:pal.acc2, shade:pal.ink, depth:6, lw:1.9}); }
-  // human head with crown
-  P.shape("M256 176 C274 176 282 190 280 206 C278 222 268 232 256 232 C244 232 234 222 232 206 C230 190 238 176 256 176 Z", {fill:SKIN, shade:SKINS, depth:8, lw:2.2});
-  P.shape("M234 186 L238 156 L247 170 L256 148 L265 170 L274 156 L278 186 Z", {fill:pal.fig, shade:pal.figShade, depth:6, lw:2}); P.dots([[256,172]],{r:3,color:pal.acc,ring:true});
-  P.eye(247, 202, .55, {}); P.eye(265, 202, .55, {});
-  P.brush("M256 206 L254 214 L258 215", {w:1.1}); P.brush("M250 221 C254 224 258 224 262 221", {w:1.4, color:pal.acc});
-  P.beads([236,236],[244,250],[268,250],[276,236], 10, 2.4, pal.fig);
-}};
-
-/* ---------------- Saindhava: fish on the sea ---------------- */
-E.fishSingle = {style:"ajanta", paint(P){ const {pal}=P;
-  for (let k=0;k<4;k++) P.tube(`M130 ${330+k*16} C160 ${318+k*16} 190 ${342+k*16} 220 ${330+k*16} S280 ${318+k*16} 310 ${330+k*16} S370 ${342+k*16} 384 ${328+k*16}`, 4, pal.acc2, {hi:false});
-  const T={x:120, y:240, s:1.15};
-  P.shape("M100 -38 C110 -64 144 -70 164 -42 Z", {T, fill:pal.acc, shade:pal.ink, depth:5, lw:2});
-  P.shape("M118 36 C126 56 150 60 162 40 Z", {T, fill:pal.acc, shade:pal.ink, depth:4, lw:2});
-  P.shape("M52 0 C36 -10 18 -32 6 -54 C28 -48 48 -32 62 -14 L62 14 C48 32 28 48 6 54 C18 32 36 10 52 0 Z", {T, fill:pal.acc, shade:pal.ink, depth:8, lw:2.4});
-  for (let i=0;i<6;i++) P.brush(`M54 0 C40 ${-8-i*7} 26 ${-18-i*6} 12 ${-26-i*5} M54 0 C40 ${8+i*7} 26 ${18+i*6} 12 ${26+i*5}`, {T, w:1, color:pal.ink, a:.6});
-  P.shape("M40 0 C70 -40 150 -48 200 -20 C220 -10 236 -2 240 0 C236 4 220 12 200 20 C150 48 70 40 40 0 Z", {T, fill:pal.fig, shade:pal.figShade, depth:18, lw:3});
-  for (let c=0;c<9;c++){ const x = 76 + c*13, h = Math.min(28, 10 + c*4, (200-x)/2.2);
-    for (let y = -h; y <= h; y += 11){ const yy = y + (c%2?5.5:0); if (Math.abs(yy)>h) continue; P.brush(`M${x} ${yy-6} C${x+8} ${yy-5} ${x+8} ${yy+5} ${x} ${yy+6}`, {T, w:1.5, color:pal.figShade}); } }
-  P.brush("M190 -24 C200 -10 200 10 190 24", {T, w:2.6});
-  P.eye(214, -6, .8, {T, dir:1, brow:false});
-  P.brush("M236 4 C244 14 246 26 240 36", {T, w:1.6, taper:.5});
-}};
-
-/* ---------------- Gurjara-Pratīhāra: Ādivarāha ---------------- */
-E.adivaraha = {style:"ajanta", paint(P){ const {pal}=P;
-  groundStrip(P, 130, 390, 392);
-  // solar wheel held aloft
-  P.tube("M292 200 L318 170 L332 142", 12, SKIN, {hiColor:"#f0c895"});
-  P.dots([[340,122]],{r:24,color:pal.fig,ring:true}); P.dots([[340,122]],{r:17,color:pal.acc2}); for (let k=0;k<8;k++){ const a=k/8*TAU; P.brush(`M340 122 L${340+Math.cos(a)*16} ${122+Math.sin(a)*16}`,{w:2,color:pal.fig}); } P.dots([[340,122]],{r:4,color:pal.hi,ring:true});
-  for (let k=0;k<12;k++){ const a=k/12*TAU; P.brush(`M${340+Math.cos(a)*26} ${122+Math.sin(a)*26} L${340+Math.cos(a)*34} ${122+Math.sin(a)*34}`,{w:3,color:pal.acc,taper:.5}); }
-  // legs striding, dhoti
-  P.tube("M246 312 L222 352 L212 390", 16, SKIN, {hiColor:"#f0c895"}); P.tube("M270 312 L292 350 L292 390", 16, SKIN, {hiColor:"#f0c895"});
-  P.brush("M200 390 L222 390 M284 390 L306 390", {w:5, taper:0});
-  P.shape("M232 268 L286 268 L296 320 C280 332 238 332 222 320 Z", {fill:pal.acc, shade:pal.ink, depth:8, lw:2.4}); P.brush("M236 282 C250 286 270 286 284 282 M244 300 L240 326 M272 300 L278 326", {w:1.6, color:pal.fig});
-  // torso and arm on hip
-  P.shape("M226 192 C244 182 278 182 296 192 C300 214 294 240 290 270 L230 270 C226 240 220 214 226 192 Z", {fill:SKIN, shade:SKINS, depth:12, lw:2.6});
-  P.tube("M228 204 L206 238 L230 264", 12, SKIN, {hiColor:"#f0c895"});
-  P.beads([238,196],[246,214],[270,214],[282,196], 9, 2.4, pal.fig); P.brush("M232 270 L290 270", {w:6, color:pal.fig, taper:0});
-  // boar head with crown
-  P.shape("M236 190 C228 170 236 144 256 138 C270 134 282 142 290 152 L322 172 C330 176 330 186 322 188 L296 190 C288 196 272 198 262 196 Z", {fill:"#6f5a48", shade:"#2a1c12", depth:10, lw:2.4});
-  P.shape("M318 174 C326 172 332 178 330 186 C324 190 316 186 318 174 Z", {fill:"#9c7c68", shade:"#3a2818", depth:2, lw:1.2, hi:null});
-  P.shape("M300 186 C312 184 318 174 316 164 C312 172 304 178 296 180 Z", {fill:pal.pearl, shade:pal.figShade, depth:2, lw:1.4, hi:null});
-  P.eye(276, 160, .55, {dir:1});
-  P.shape("M244 146 L250 118 L258 132 L266 112 L272 132 L280 120 L282 148 Z", {fill:pal.fig, shade:pal.figShade, depth:6, lw:2}); P.dots([[264,136]],{r:3,color:pal.acc,ring:true});
-  P.shape("M252 150 C246 144 236 144 232 152 C238 158 246 158 252 150 Z", {fill:"#6f5a48", shade:"#2a1c12", depth:3, lw:1.4});
-}};
-
-/* ---------------- Rāṣṭrakūṭa: seated Garuḍa, añjali ---------------- */
-E.garudaSeated2 = {style:"ellora", paint(P){ const {pal}=P;
-  P.mirror(()=>{ for (let i=0;i<8;i++){ const a = -Math.PI/2 - 0.45 - i*0.16; P.shape(feather(226,236,a,118-i*6,22), {fill: i%2? pal.acc : pal.acc2, shade:pal.ink, depth:6, lw:1.9, hw:3}); } });
-  lotusSeat(P, 256, 378, 170, [pal.acc, pal.acc3]);
-  P.shape("M196 346 C202 316 240 310 256 322 C272 310 310 316 316 346 C294 358 218 358 196 346 Z", {fill:SKIN, shade:SKINS, depth:10, lw:2.4});
-  P.shape("M222 330 C240 324 272 324 290 330 L286 344 C270 340 242 340 226 344 Z", {fill:pal.acc, shade:pal.ink, depth:4, lw:1.8});
-  P.shape("M232 214 C218 218 206 228 206 244 C208 262 220 274 226 290 C228 304 226 314 230 322 L282 322 C286 314 284 304 286 290 C292 274 304 262 306 244 C306 228 294 218 280 214 Z", {fill:SKIN, shade:SKINS, depth:12, lw:2.6});
-  P.mirror(()=>{ P.tube("M214 236 C206 258 222 276 250 278", 12, SKIN, {hiColor:"#f0c895"}); });
-  P.shape("M256 290 L249 266 L256 248 L263 266 Z", {fill:"#dca06a", shade:SKINS, depth:3, lw:1.8});
-  P.beads([236,218],[244,236],[268,236],[276,218], 10, 2.4, pal.fig); P.brush("M228 300 L284 300", {w:6, color:pal.fig, taper:0});
-  // bird head with crown
-  P.shape("M256 150 C274 150 284 164 282 180 C280 196 270 208 256 208 C242 208 232 196 230 180 C228 164 238 150 256 150 Z", {fill:"#c9a06a", shade:SKINS, depth:8, lw:2.2});
-  P.shape("M248 188 C246 204 252 218 262 224 C264 214 264 200 262 188 Z", {fill:pal.fig, shade:pal.figShade, depth:3, lw:1.8});
-  P.eye(245, 176, .55, {}); P.eye(267, 176, .55, {});
-  P.shape("M232 162 L236 128 L246 144 L256 120 L266 144 L276 128 L280 162 Z", {fill:pal.fig, shade:pal.figShade, depth:6, lw:2}); P.dots([[256,146]],{r:3.2,color:pal.acc,ring:true});
-}};
-
-/* ---------------- Hindu Śāhi: horseman ---------------- */
-E.horseman = {style:"ajanta", paint(P){ const {pal}=P, horse="#d8cfbd", hs="#6e6352";
-  groundStrip(P, 120, 410, 384);
-  P.shape("M300 320 L304 380 L316 380 L314 320 Z M214 322 L216 380 L228 380 L228 322 Z", {fill:"#b2a891", shade:hs, depth:4, lw:2, hi:null});
-  P.tube("M172 258 C150 262 140 290 146 324", 8, "#6f5d48"); for (let k=0;k<4;k++) P.brush(`M${146+k*2} 300 C${140+k*3} 316 ${142+k*3} 330 ${148+k*3} 340`, {w:1.4, color:"#3a2c1c"});
-  P.shape("M170 270 C170 248 190 238 214 238 L310 236 C330 236 344 246 348 262 L350 300 C350 314 340 322 326 322 L190 324 C176 324 170 312 170 298 Z", {fill:horse, shade:hs, depth:20, lw:3});
-  P.shape("M322 316 C328 340 332 362 330 380 L344 380 C346 360 344 340 338 314 Z M190 316 C182 340 176 360 176 380 L190 380 C192 362 198 342 206 322 Z", {fill:horse, shade:hs, depth:5, lw:2.2});
-  P.brush("M174 380 L192 380 M298 380 L318 380 M328 380 L346 380 M212 380 L230 380", {w:4, taper:0});
-  P.shape("M322 244 C330 220 342 196 360 180 C368 172 380 172 388 180 L404 204 C408 212 404 220 396 220 L382 216 C372 228 362 244 352 262 Z", {fill:horse, shade:hs, depth:10, lw:2.6});
-  P.shape("M364 180 L366 162 L376 176 Z", {fill:horse, shade:hs, depth:2, lw:1.6});
-  for (let k=0;k<6;k++) P.brush(`M${340+k*4} ${214-k*6} C${332+k*4} ${208-k*6} ${330+k*4} ${200-k*6} ${334+k*4} ${192-k*6}`, {w:2.4, color:"#6f5d48", taper:.4});
-  P.eye(380, 192, .5, {dir:1, brow:false});
-  P.brush("M384 206 L402 214 M392 198 L360 226", {w:2, color:pal.acc});
-  P.shape("M220 236 C240 232 280 232 298 236 L300 292 C280 298 240 298 220 292 Z", {fill:pal.acc, shade:pal.ink, depth:8, lw:2.4}); P.brush("M222 286 C244 292 278 292 298 286", {w:3.4, color:pal.fig, taper:0}); P.dots([[232,262],[258,266],[284,262]],{r:2.6,color:pal.hi,ring:true});
-  // rider
-  P.tube("M262 238 L272 280 L262 306", 10, pal.acc2);
-  P.shape("M244 236 C240 214 244 196 256 186 L272 186 C280 200 280 220 274 236 Z", {fill:pal.acc2, shade:pal.ink, depth:8, lw:2.4});
-  P.shape("M262 160 C274 160 280 170 278 180 C276 190 268 194 262 194 C254 194 248 188 248 178 C248 168 254 160 262 160 Z", {fill:SKIN, shade:SKINS, depth:5, lw:2});
-  P.shape("M248 170 C250 154 276 150 282 166 C276 164 256 164 248 170 Z", {fill:pal.pearl, shade:pal.figShade, depth:3, lw:1.8}); P.eye(270, 176, .45, {dir:1, brow:false});
-  P.tube("M160 132 L420 222", 4, "#8a6a40", {hi:false}); P.shape("M420 222 L400 210 L406 222 L398 232 Z", {fill:pal.fig, shade:pal.figShade, depth:2, lw:1.4});
-  P.shape("M164 134 L196 132 L188 146 L200 156 L170 150 Z", {fill:pal.acc, shade:pal.ink, depth:3, lw:1.6});
-  P.tube("M268 200 L292 206", 8, SKIN, {hi:false});
-}};
-
-/* ---------------- Chera: bow and arrow ---------------- */
-E.bowArrow = {style:"thanjavur", paint(P){ const {pal}=P;
-  P.brush("M214 112 L214 400", {w:1.6, taper:0});
-  P.tube("M214 110 C170 150 162 208 176 244 M176 268 C162 304 170 362 214 402", 14, pal.fig);
-  P.tube("M214 110 C224 104 232 108 230 118 M214 402 C224 408 232 404 230 394", 7, pal.fig);
-  P.shape("M164 236 L190 236 L190 276 L164 276 Z", {fill:pal.acc, shade:pal.ink, depth:5, lw:2}); P.brush("M166 244 L188 244 M166 256 L188 256 M166 268 L188 268", {w:2, color:pal.fig, taper:0});
-  for (const y of [170,340]){ P.brush(`M${y<256?182:182} ${y} l12 0`, {w:6, color:pal.acc, taper:0}); }
-  P.tube("M150 256 L384 256", 6, "#b5874a");
-  P.shape("M380 244 L420 256 L380 268 L388 256 Z", {fill:pal.fig, shade:pal.figShade, depth:4, lw:2});
-  for (let i=0;i<3;i++){ const x=150+i*14; P.shape(`M${x} 254 L${x+28} 254 L${x+18} 230 L${x+2} 232 Z`, {fill:pal.acc, shade:pal.ink, depth:3, lw:1.4}); P.shape(`M${x} 258 L${x+28} 258 L${x+18} 282 L${x+2} 280 Z`, {fill:pal.acc2, shade:pal.ink, depth:3, lw:1.4}); }
-  for (const [x,y] of [[300,190],[330,320],[360,190]]) P.shape(petal(x,y,0,0,0,0).replace(/.*/, `M${x} ${y-14} C${x+10} ${y-4} ${x+10} ${y+4} ${x} ${y+14} C${x-10} ${y+4} ${x-10} ${y-4} ${x} ${y-14} Z`), {fill:pal.acc3, shade:pal.figShade, depth:3, lw:1.4});
-}};
-
-/* ---------------- Paramāra: flying Garuḍa with cobra ---------------- */
-E.garudaFlying2 = {style:"ajanta", paint(P){ const {pal}=P;
-  for (let i=0;i<7;i++){ const a = -Math.PI/2 - 0.95 - i*0.14; P.shape(feather(236,250,a,112-i*7,20), {fill: i%2? "#5a7ea0" : pal.acc2, shade:pal.ink, depth:6, lw:1.8, hw:3}); }
-  for (let i=0;i<8;i++){ const a = -Math.PI/2 - 0.35 - i*0.13; P.shape(feather(262,236,a,128-i*7,22), {fill: i%2? pal.acc : pal.acc2, shade:pal.ink, depth:6, lw:1.9, hw:3}); }
-  P.tube("M214 294 L178 304 L150 338", 18, SKIN, {hiColor:"#f0c895"}); P.tube("M226 304 L198 330 L204 364", 18, SKIN, {hiColor:"#f0c895"});
-  P.shape("M190 290 L228 258 C246 246 270 252 276 270 L280 300 L222 322 Z", {fill:pal.acc, shade:pal.ink, depth:6, lw:2.2}); P.brush("M206 300 L262 280", {w:4, color:pal.fig, taper:0});
-  P.shape("M230 256 C250 236 278 216 300 206 C314 200 330 208 332 222 C334 236 324 246 312 252 C290 264 270 284 256 294 Z", {fill:SKIN, shade:SKINS, depth:14, lw:2.6});
-  P.tube("M312 222 L342 206 L352 176", 12, SKIN, {hiColor:"#f0c895"}); P.dots([[354,170]],{r:7,color:SKIN,ring:true});
-  P.tube("M286 244 L318 270", 11, SKIN, {hiColor:"#f0c895"});
-  P.tube("M318 272 C340 282 342 306 326 316 C310 326 316 348 338 350", 9, "#6c8a4e");
-  P.shape("M322 272 C320 252 336 240 350 248 C360 256 354 272 340 276 C334 278 326 276 322 272 Z", {fill:"#6c8a4e", shade:pal.ink, depth:5, lw:2}); P.dots([[340,258]],{r:1.6,color:pal.hi});
-  P.dots([[318,272]],{r:6,color:SKIN,ring:true});
-  P.shape("M318 190 C334 186 346 196 346 210 C346 222 336 230 324 230 C312 230 304 222 304 210 C304 198 310 192 318 190 Z", {fill:"#c9a06a", shade:SKINS, depth:6, lw:2.2});
-  P.shape("M342 204 L366 212 L344 220 Z", {fill:pal.fig, shade:pal.figShade, depth:2, lw:1.6});
-  P.shape("M306 196 L304 170 L314 182 L322 164 L328 184 L338 176 L338 196 Z", {fill:pal.fig, shade:pal.figShade, depth:4, lw:1.8});
-  P.eye(330, 206, .5, {dir:1});
-  P.beads([300,226],[298,240],[270,262],[262,270], 8, 2.2, pal.fig);
-  P.brush("M200 300 C170 290 150 300 130 290 M204 312 C176 310 160 322 138 318", {w:5, color:pal.acc, taper:.3});
-}};
-})();
-
-/* ---------------- Magadha: punch-marked silver kārṣāpaṇa ---------------- */
-(function(){ const E = window.LanchhanaPainter.E, TAU=Math.PI*2;
-E.punchCoin = {style:"ajanta", paint(P){ const {pal}=P, ag="#cfd2cf", agS="#5d625e", agH="#f7f8f4", die="#7d827d";
-  // irregular, slightly bent silver bar
-  P.shape("M150 196 C170 168 250 160 330 170 C360 174 376 186 372 206 L382 300 C384 330 364 346 330 346 C260 352 196 352 158 340 C132 332 126 312 132 290 L136 230 C136 214 140 204 150 196 Z", {fill:ag, shade:agS, depth:24, lw:3, hi:agH});
-  P.brush("M150 196 C170 168 250 160 330 170", {w:2, color:agH, a:.6});
-  const punch = (d, o)=>P.shape(d, Object.assign({fill:die, shade:"#2f332f", depth:5, lw:1.2, hi:"#e6e8e3", hx:-1.5, hy:-1.5}, o||{}));
-  // sun: disc with rays
-  punch("M218 218 A18 18 0 1 0 218.1 218 Z");
-  for (let k=0;k<12;k++){ const a=k/12*TAU; P.brush(`M${200+Math.cos(a)*22} ${236+Math.sin(a)*22} L${200+Math.cos(a)*30} ${236+Math.sin(a)*30}`, {w:3, color:die, taper:.4}); }
-  P.dots([[200,236]],{r:5,color:ag});
-  // six-armed symbol: central ring with six arms ending alternately in arrowheads and taurines
-  const cx=292, cy=258; P.dots([[cx,cy]],{r:11,color:die}); P.dots([[cx,cy]],{r:5,color:ag});
-  for (let k=0;k<6;k++){ const a=k/6*TAU-Math.PI/2, ex=cx+Math.cos(a)*38, ey=cy+Math.sin(a)*38;
-    P.brush(`M${cx+Math.cos(a)*12} ${cy+Math.sin(a)*12} L${ex} ${ey}`, {w:4, color:die, taper:0});
-    if (k%2===0){ const px=-Math.sin(a), py=Math.cos(a); P.shape(`M${ex+Math.cos(a)*10} ${ey+Math.sin(a)*10} L${ex+px*7} ${ey+py*7} L${ex-px*7} ${ey-py*7} Z`, {fill:die, shade:"#2f332f", depth:2, lw:1, hi:null}); }
-    else { P.dots([[ex+Math.cos(a)*6, ey+Math.sin(a)*6]],{r:5.5,color:die}); P.dots([[ex+Math.cos(a)*9, ey+Math.sin(a)*9]],{r:3,color:ag}); } }
-  // three further marks: three-arched hill, taurine, small tree-in-railing
-  punch("M176 316 L176 302 A8 8 0 0 1 192 302 L192 316 Z M192 316 L192 302 A8 8 0 0 1 208 302 L208 316 Z M184 296 L184 288 A8 8 0 0 1 200 288 L200 296 Z");
-  P.dots([[252,316]],{r:9,color:die}); P.dots([[252,316]],{r:4,color:ag}); P.brush("M242 304 C244 294 260 294 262 304", {w:3.4, color:die});
-  punch("M336 318 L360 318 L360 326 L336 326 Z"); P.brush("M348 318 L348 296 M348 304 L340 296 M348 300 L356 292", {w:2.6, color:die});
-  // wear and a small bankers' mark on the edge
-  P.dots([[160,300],[350,200],[330,336],[146,250]],{r:1.6,color:agH});
-}};
-})();
-
-</script>
-<script>
-/* ---------- glyphs: 120×120 space, monoline copper ---------- */
-const M = s => `<g transform="translate(120 0) scale(-1 1)">${s}</g>`; // mirror helper
-const G = {
-lionCapital:`
-  <rect x="30" y="70" width="60" height="9" rx="1.5"/>
-  <circle cx="60" cy="74.5" r="2.4" class="f"/><circle cx="45" cy="74.5" r="1.4" class="f"/><circle cx="75" cy="74.5" r="1.4" class="f"/>
-  <path d="M34 79 Q60 104 86 79"/><path d="M48 82 Q52 92 54 95 M72 82 Q68 92 66 95" class="thin"/>
-  <circle cx="37" cy="58" r="11" stroke-dasharray="2.4 2.3"/><circle cx="37" cy="58" r="5.5" class="f"/>
-  <circle cx="83" cy="58" r="11" stroke-dasharray="2.4 2.3"/><circle cx="83" cy="58" r="5.5" class="f"/>
-  <circle cx="60" cy="51" r="14" stroke-dasharray="2.6 2.4" class="bgcut"/><circle cx="60" cy="51" r="7" class="f"/>`,
-ujjain:`
-  <path d="M60 39 V81 M39 60 H81"/>
-  <circle cx="60" cy="30" r="9"/><circle cx="60" cy="90" r="9"/><circle cx="30" cy="60" r="9"/><circle cx="90" cy="60" r="9"/>
-  <circle cx="60" cy="30" r="3" class="f"/><circle cx="60" cy="90" r="3" class="f"/><circle cx="30" cy="60" r="3" class="f"/><circle cx="90" cy="60" r="3" class="f"/>`,
-tamgha:`
-  <circle cx="60" cy="86" r="8"/><path d="M60 78 V30 M40 64 H80"/>
-  <path d="M40 64 V40 L33 33 M80 64 V40 L87 33 M53 37 L60 30 L67 37"/>`,
-chaitya:`
-  <path d="M38 84 V74 A10 10 0 0 1 58 74 V84"/><path d="M62 84 V74 A10 10 0 0 1 82 74 V84"/>
-  <path d="M50 64 V58 A10 10 0 0 1 70 58 V64"/><path d="M34 84 H86 M60 48 V44"/>
-  <path d="M52.5 38 A7.5 7.5 0 0 0 67.5 38 A7.5 4.5 0 0 1 52.5 38 Z" class="f"/>
-  <path d="M32 95 q7 -5 14 0 t14 0 t14 0 t14 0"/>
-  <circle cx="27" cy="42" r="3.6" class="f"/><circle cx="27" cy="42" r="7.5" class="thin" stroke-dasharray="1.2 2.4"/>
-  <path d="M90 36 A7 7 0 1 0 97 47 A5.5 5.5 0 1 1 90 36 Z" class="f"/>`,
-garuda:`
-  <ellipse cx="60" cy="64" rx="8" ry="14"/><circle cx="60" cy="42" r="6.5"/>
-  <path d="M60 45 L56.5 52 L63.5 52 Z" class="f"/><path d="M60 35.5 V29"/>
-  ${[`<path d="M53 58 Q38 40 20 44 Q30 50 30 56 Q38 58 40 64 Q46 66 52 68"/><path d="M29 49 L41 56 M36 44 L47 54" class="thin"/><path d="M55 77 L51 88 M55 77 L57 88" class="thin"/>`].map(s=>s+M(s)).join('')}
-  <path d="M56 78 L60 96 L64 78"/>`,
-lion:`
-  <rect x="30" y="56" width="44" height="17" rx="8.5"/>
-  <path d="M36 72 V90 M45 72 V90 M64 72 V90 M72 70 V90"/>
-  <path d="M31 62 Q18 60 20 46 Q21 40 27 42"/><circle cx="27" cy="42" r="2.8" class="f"/>
-  <circle cx="80" cy="52" r="13" stroke-dasharray="2.6 2.4"/><circle cx="82" cy="52" r="7" class="f"/>
-  <path d="M26 93 H96" class="thin"/>`,
-lionRoar:`
-  <rect x="28" y="58" width="44" height="17" rx="8.5"/>
-  <path d="M34 74 V92 M43 74 V92 M62 74 V92"/><path d="M70 70 L80 80 L89 77"/>
-  <path d="M29 64 Q14 62 16 46 Q18 36 26 38 Q30 40 27 44"/>
-  <circle cx="77" cy="52" r="13" stroke-dasharray="2.6 2.4"/><circle cx="79" cy="52" r="6.5" class="f"/>
-  <path d="M85 50 L97 44 M85 55 L97 60"/>
-  <path d="M24 95 H98" class="thin"/>`,
-bullCouchant:`
-  <path d="M26 84 Q26 67 42 65 L58 63 Q63 50 72 58 L78 60 Q85 62 85 71 L85 84 Z"/>
-  <path d="M80 62 L88 55 L99 61 L95 72 L86 72"/>
-  <path d="M88 55 Q85 45 91 42 M94 58 Q99 49 104 51" /><circle cx="92" cy="62" r="1.6" class="f"/>
-  <path d="M35 84 Q40 77 51 79 M63 84 Q69 77 78 79" class="thin"/>
-  <path d="M26 76 Q18 80 23 90"/><path d="M18 90 H104"/>`,
-bullStanding:`
-  <path d="M28 64 Q28 54 40 54 L57 54 Q62 43 70 51 L78 53 Q85 55 85 63 L85 70 Q85 75 79 75 L34 75 Q28 75 28 69 Z"/>
-  <path d="M80 55 L88 49 L99 55 L95 65 L86 65"/>
-  <path d="M88 49 Q85 39 91 36 M94 52 Q99 43 104 45"/><circle cx="92" cy="56" r="1.6" class="f"/>
-  <path d="M35 75 V93 M43 75 V93 M71 75 V93 M79 75 V93"/>
-  <path d="M28 60 Q19 66 23 82"/><path d="M20 96 H102" class="thin"/>`,
-maukhari:`
-  <path d="M28 70 Q28 60 40 60 L57 60 Q62 49 70 57 L78 59 Q85 61 85 69 L85 76 Q85 81 79 81 L34 81 Q28 81 28 75 Z"/>
-  <path d="M80 61 L88 55 L99 61 L95 71 L86 71"/>
-  <path d="M88 55 Q85 46 91 43 M94 58 Q99 50 104 52"/>
-  <path d="M35 81 V96 M43 81 V96 M71 81 V96 M79 81 V96"/>
-  <path d="M28 66 Q19 72 23 88"/>
-  <path d="M44 33 Q58 20 72 33 Z"/><path d="M58 33 V52"/>
-  <path d="M44 33 Q38 40 31 37 M72 33 Q78 40 85 37" class="thin"/>
-  <path d="M46 62 Q56 68 66 62" class="thin" stroke-dasharray="1.5 2.5"/>`,
-elephantFront:`
-  ${[`<path d="M49 39 Q29 32 25 49 Q23 66 44 70"/><path d="M60 31 Q47 31 45 44 Q45 57 53 62"/><path d="M52 63 Q45 72 49 81"/><circle cx="52" cy="46" r="2" class="f"/><path d="M44 70 V94 H53 V74"/>`].map(s=>s+M(s)).join('')}
-  <path d="M55 60 Q53 80 57 90 Q60 95 64 92 Q61 82 65 60"/>
-  <path d="M52 22 L60 16 L68 22" class="thin"/>`,
-elephantSide:`
-  <ellipse cx="52" cy="62" rx="25" ry="15"/><circle cx="79" cy="53" r="12"/>
-  <path d="M75 45 Q66 50 69 64 Q76 66 80 61" class="thin"/>
-  <path d="M89 58 Q97 70 93 84 Q91 89 86 87"/><path d="M85 64 Q93 69 99 64"/>
-  <circle cx="83" cy="49" r="1.8" class="f"/>
-  <path d="M36 72 V92 M46 75 V92 M60 75 V92 M70 70 V92"/><path d="M27 58 Q21 64 23 73"/>
-  <path d="M22 95 H100" class="thin"/>`,
-boar:`
-  <path d="M28 66 Q28 50 48 48 L72 48 Q84 50 86 60 L86 70 Q86 76 78 76 L36 76 Q28 76 28 66 Z"/>
-  <path d="M84 52 L101 62 L101 68 L86 70"/><path d="M96 67 Q101 60 96 55"/>
-  <path d="M79 50 L77 41 L86 48"/><circle cx="89" cy="58" r="1.7" class="f"/>
-  <path d="M42 48 l3 -6 l3 6 l3 -6 l3 6 l3 -6 l3 6 l3 -6 l3 6" class="thin"/>
-  <path d="M36 76 V92 M46 76 V92 M70 76 V92 M80 76 V92"/>
-  <path d="M28 60 Q21 57 21 64 Q21 70 26 68"/><path d="M20 95 H104" class="thin"/>`,
-varahaMan:`
-  <path d="M51 34 Q52 25 60 27 L79 36 L78 42 L60 45 Q52 43 51 34 Z"/><path d="M74 41 Q79 35 75 32" class="thin"/>
-  <circle cx="61" cy="33" r="1.6" class="f"/>
-  <path d="M50 47 L65 47 L63 69 L51 69 Z"/>
-  <path d="M51 51 L42 60 L50 66"/><path d="M64 51 L76 57 L80 47"/>
-  <circle cx="82" cy="39" r="7"/><path d="M82 32 V46 M75 39 H89" class="thin"/>
-  <path d="M53 69 L44 93 M61 69 L71 81 L71 93"/><path d="M34 96 H90" class="thin"/>`,
-gajalakshmi:`
-  <path d="M36 92 Q44 77 52 92 Q60 72 68 92 Q76 77 84 92 Z"/>
-  <circle cx="60" cy="47" r="6"/><path d="M52 58 Q60 54 68 58 L70 75 Q60 79 50 75 Z"/>
-  <path d="M44 84 Q60 74 76 84"/>
-  ${[`<ellipse cx="27" cy="37" rx="10" ry="7"/><circle cx="37" cy="32" r="5"/><path d="M41 34 Q47 29 49 37"/><circle cx="50.5" cy="40.5" r="3" class="f"/><path d="M22 43 v6 M31 43 v6"/><path d="M52 60 L45 53" class="thin"/><circle cx="44" cy="51" r="2.4" class="f"/>`].map(s=>s+M(s)).join('')}`,
-garudaSerpents:`
-  <circle cx="60" cy="38" r="7"/><path d="M56 36 h1 M63 36 h1" class="thin"/>
-  <ellipse cx="60" cy="62" rx="9" ry="14"/><path d="M55 76 L60 91 L65 76"/>
-  ${[`<path d="M52 55 Q36 47 17 51 Q29 57 27 63 Q39 63 51 67"/><path d="M53 60 L42 72"/><path d="M42 72 Q36 80 40 88 Q44 94 38 99"/><path d="M42 72 V70"/><ellipse cx="42" cy="64" rx="4.5" ry="6" class="fs"/>`].map(s=>s+M(s)).join('')}`,
-garudaSeated:`
-  <circle cx="60" cy="34" r="7"/><path d="M60 38 L55 46 L63 42 Z" class="f"/>
-  <path d="M54 27 L57 21 L60 26 L63 21 L66 27" class="thin"/>
-  <path d="M52 44 L68 44 L66 66 L54 66 Z"/><path d="M58.5 60 L60 48 L61.5 60 Z" class="f"/>
-  ${[`<path d="M52 46 Q34 29 23 35 Q32 43 30 52 Q40 52 51 58"/><path d="M53 50 L59 58" class="thin"/>`].map(s=>s+M(s)).join('')}
-  <path d="M40 76 Q50 64 60 70 Q70 64 80 76 Q60 84 40 76 Z"/>
-  <path d="M34 84 Q47 94 60 86 Q73 94 86 84"/><path d="M32 92 H88" class="thin"/>`,
-garudaFlying:`
-  <circle cx="80" cy="39" r="6"/><path d="M85 40 L95 43 L85 46 Z" class="f"/>
-  <path d="M74 44 L81 50 L60 69 L53 62 Z"/>
-  <path d="M69 47 Q60 25 42 22 Q51 33 49 40 Q57 43 63 53"/>
-  <path d="M77 46 L86 33 L89 23"/>
-  <path d="M55 66 L39 70 L33 82 M58 69 L46 80 L48 92"/>
-  <path d="M65 59 L77 68"/>
-  <path d="M77 68 Q86 62 90 66"/><ellipse cx="93" cy="63" rx="4.5" ry="6" class="fs"/>
-  <path d="M77 68 Q71 80 79 88 Q86 94 79 99"/>`,
-wheelDeer:`
-  <circle cx="60" cy="48" r="16"/><circle cx="60" cy="48" r="4" class="f"/>
-  <path d="M44 48 H76 M60 32 V64 M48.7 36.7 L71.3 59.3 M71.3 36.7 L48.7 59.3" class="thin"/>
-  <path d="M60 64 V76"/>
-  ${[`<path d="M20 80 Q20 70 31 70 L41 70 Q45 72 45 80 Z"/><path d="M41 70 L45 60"/><ellipse cx="48.5" cy="60" rx="4.5" ry="3"/><path d="M45 57 L42 48 M43 52 L38 48 M43 52 L47 46" class="thin"/><path d="M25 80 H39" class="thin"/>`].map(s=>s+M(s)).join('')}
-  <path d="M22 88 Q41 81 60 88 Q79 81 98 88"/><path d="M20 94 H100" class="thin"/>`,
-chola:`
-  <path d="M40 30 Q60 15 80 30 Z"/><path d="M60 30 V38 M40 30 v4 M80 30 v4" class="thin"/>
-  ${[`<path d="M24 39 L29 58"/><ellipse cx="23" cy="34" rx="3.2" ry="6" class="fs"/>`].map(s=>s+M(s)).join('')}
-  <ellipse cx="42" cy="73" rx="10" ry="9"/><path d="M38 66 L48 50 L58 52 L54 72 Z"/>
-  <circle cx="58" cy="46" r="7"/><path d="M53 40 L54 35 L57 39 M60 39 L63 35 L64 40" class="thin"/>
-  <path d="M55 60 L58 82"/><path d="M32 77 Q21 66 29 56 Q33 52 31 47"/>
-  <path d="M37 69 l4 4 M42 64 l4 4 M47 57 l3 4" class="thin"/>
-  <path d="M68 58 Q77 52 87 58 Q77 64 68 58 Z M87 58 L94 53 L94 63 Z"/>
-  <path d="M68 72 Q77 66 87 72 Q77 78 68 72 Z M87 72 L94 67 L94 77 Z"/>
-  <path d="M34 95 Q60 83 86 95"/><path d="M34 95 H86" class="thin"/>`,
-fish:`
-  <path d="M22 60 Q48 34 80 60 Q48 86 22 60 Z"/><path d="M80 60 L99 45 L94 60 L99 75 Z"/>
-  <circle cx="34" cy="57" r="2.3" class="f"/><path d="M43 49 Q38 60 43 71" class="thin"/>
-  <path d="M53 45 L57 37 L64 46 M53 75 L57 83 L64 74" class="thin"/>
-  <path d="M52 56 q4 4 0 8 M60 55 q4 5 0 10 M68 56 q4 4 0 8" class="thin"/>`,
-twinFish:`
-  ${[`<path d="M44 26 Q29 55 44 84 Q59 55 44 26 Z"/><path d="M44 84 L35 98 L44 93 L53 98 Z"/><circle cx="48" cy="39" r="2" class="f"/><path d="M38 50 Q44 46 50 50 M37 60 Q44 56 51 60" class="thin"/>`].map(s=>s+M(s)).join('')}
-  <path d="M60 38 V94"/><path d="M60 38 Q67 35 65 44" /><path d="M56 94 H64" class="thin"/>`,
-bow:`
-  <path d="M46 22 Q84 60 46 98"/><path d="M46 22 V98" class="thin"/>
-  <path d="M28 60 H98"/><path d="M98 60 L89 54.5 M98 60 L89 65.5"/>
-  <path d="M33 60 L28 54 M33 60 L28 66 M38 60 L33 54 M38 60 L33 66" class="thin"/>`,
-horseman:`
-  <path d="M34 66 Q34 58 44 58 L70 58 Q77 58 79 64 L79 68 Q79 74 71 74 L40 74 Q34 74 34 66 Z"/>
-  <path d="M72 60 L82 44 L93 48 L91 53 L84 52 L79 64"/><path d="M82 44 L82 38 L86 44" class="thin"/>
-  <path d="M40 74 L36 93 M48 74 L48 93 M66 74 L70 93 M74 72 L80 90"/>
-  <path d="M34 62 Q23 64 25 80"/>
-  <path d="M56 58 L54 38"/><circle cx="54" cy="31" r="5"/><path d="M56 58 L63 68"/>
-  <path d="M55 45 L65 41"/><path d="M34 25 L99 46"/><path d="M35 25 L42 19 L41 28 Z" class="f"/>`,
-bullMoon:`
-  <circle cx="44" cy="34" r="8.5"/><path d="M39 30 A6 6 0 0 0 47 40" class="thin"/>
-  <path d="M26 84 Q26 67 42 65 L58 63 Q63 50 72 58 L78 60 Q85 62 85 71 L85 84 Z"/>
-  <path d="M80 62 L88 55 L99 61 L95 72 L86 72"/>
-  <path d="M88 55 Q85 45 91 42 M94 58 Q99 49 104 51"/><circle cx="92" cy="62" r="1.6" class="f"/>
-  <path d="M35 84 Q40 77 51 79 M63 84 Q69 77 78 79" class="thin"/>
-  <path d="M26 76 Q18 80 23 90"/><path d="M18 90 H104"/>`
-};
-
-/* Filled emblem illustrations, 200×200 space. .s = copper fill, .k = cut line (disc colour), .o = copper stroke */
-const mir = s => `<g transform="translate(200 0) scale(-1 1)">${s}</g>`;
-function scallop(cx, cy, r, n, bulge){
-  let d = "";
-  for (let i = 0; i <= n; i++){
-    const a = (i / n) * Math.PI * 2 - Math.PI/2;
-    const x = (cx + r*Math.cos(a)).toFixed(2), y = (cy + r*Math.sin(a)).toFixed(2);
-    d += i === 0 ? `M${x} ${y}` : ` A${bulge} ${bulge} 0 0 1 ${x} ${y}`;
-  }
-  return d + "Z";
-}
-const G2 = {
-/* ---- Pallava / Maitraka / Eastern Ganga: couchant bull ---- */
-bull:`
-  <rect x="30" y="146" width="140" height="7" rx="3.5" class="s"/>
-  <path class="s" d="M40 144 C38 122 52 110 74 108 C90 106 102 106 110 104 C114 88 128 80 138 90 C143 95 146 100 148 106
-    L158 101 C165 97 173 101 174 108 L172 121 C170 127 163 127 160 122 L153 120 C152 128 152 136 150 144 Z"/>
-  <path class="o" stroke-width="6" d="M157 101 C154 88 158 79 167 76 M164 101 C171 92 178 90 185 93"/>
-  <path class="s" d="M152 105 L140 99 L148 112 Z"/>
-  <path class="o" stroke-width="5" d="M42 128 C28 131 28 144 36 150"/><ellipse class="s" cx="36" cy="151" rx="4" ry="6"/>
-  <path class="k" d="M60 144 C62 128 78 121 94 127 M112 144 C118 134 132 132 146 137 M112 106 C116 116 116 126 112 132"/>
-  <path class="k" d="M118 111 C124 118 136 120 146 114" stroke-dasharray="1 6"/>
-  <circle cx="165" cy="108" r="2.6" class="kd"/>`,
-
-/* ---- Gauḍa: Nandi under a moon disc ---- */
-bullMoon:'',
-/* ---- Chalukya: varāha ---- */
-boar:`
-  <rect x="28" y="160" width="146" height="7" rx="3.5" class="s"/>
-  <path class="s" d="M44 120 C40 102 52 88 74 84 L80 72 L86 82 L92 70 L98 80 L104 68 L110 79 L116 68 L122 80 L128 72 L132 84
-    C144 86 152 92 156 100 L180 112 C185 115 185 122 180 124 L158 130 C154 134 148 136 142 136 L64 140 C52 140 46 132 44 120 Z"/>
-  <path class="s" d="M60 134 L56 158 L66 158 L72 136 Z M80 136 L80 158 L90 158 L92 136 Z M122 134 L124 158 L134 158 L134 134 Z M140 132 L146 158 L156 158 L150 130 Z"/>
-  <path class="s" d="M140 94 L134 74 L152 90 Z"/>
-  <path class="o" stroke-width="5" d="M46 110 C34 104 32 118 42 118"/>
-  <path class="k" stroke-width="4" d="M170 126 C178 120 178 110 170 106"/>
-  <circle cx="158" cy="106" r="3" class="kd"/>
-  <path class="k" d="M70 136 C68 120 80 110 96 114 M126 132 C126 118 136 110 146 112"/>`,
-
-/* ---- Kāmarūpa: frontal elephant ---- */
-elephantFront:`
-  ${[`<path class="s" d="M76 66 C52 54 32 70 34 96 C36 116 54 124 72 114 Z"/>
-      <path class="k" d="M58 76 C48 82 46 98 54 108"/>
-      <rect class="s" x="66" y="112" width="22" height="50" rx="5"/>
-      <path class="k" d="M70 156 h4 M78 156 h4"/>
-      <path class="o" stroke-width="6" d="M86 110 C76 122 76 136 84 144"/>`].map(s=>s+mir(s)).join("")}
-  <path class="s" d="M100 46 C123 46 134 62 134 80 C134 96 126 104 116 108 L84 108 C74 104 66 96 66 80 C66 62 77 46 100 46 Z"/>
-  <path class="s" d="M90 104 C88 126 88 146 95 158 C99 165 110 163 110 154 C107 142 107 124 110 104 Z"/>
-  <path class="k" d="M92 124 h16 M92 134 h16 M93 144 h15"/>
-  <circle cx="86" cy="84" r="3" class="kd"/><circle cx="114" cy="84" r="3" class="kd"/>
-  <path class="kd" d="M100 58 L108 68 L100 78 L92 68 Z"/>
-  <path class="o" stroke-width="3" d="M84 40 L100 30 L116 40"/>`,
-
-/* ---- Gupta: Garuḍa ---- */
-garuda:`
-  ${[`<path class="s" d="M88 96 C70 74 46 68 22 76 C32 82 36 88 34 96 C44 98 48 102 46 110 C56 110 60 114 58 120 C70 120 78 124 88 130 Z"/>
-      <path class="k" d="M36 84 L78 102 M44 98 L80 110 M56 110 L82 118"/>`].map(s=>s+mir(s)).join("")}
-  <ellipse class="s" cx="100" cy="112" rx="17" ry="28"/>
-  <path class="k" d="M92 104 C96 108 104 108 108 104 M92 116 C96 120 104 120 108 116 M93 128 C97 132 103 132 107 128"/>
-  <circle class="s" cx="100" cy="72" r="13"/>
-  <path class="s" d="M90 64 L93 48 L100 60 L107 48 L110 64 Z"/>
-  <path class="kd" d="M100 76 L95 90 L105 90 Z"/>
-  <circle cx="94" cy="70" r="2.4" class="kd"/><circle cx="106" cy="70" r="2.4" class="kd"/>
-  <path class="s" d="M88 134 L80 164 L94 154 L100 170 L106 154 L120 164 L112 134 Z"/>
-  <path class="k" d="M100 142 V162"/>`,
-
-/* ---- Rāṣṭrakūṭa: seated Garuḍa in añjali ---- */
-garudaSeated:`
-  ${[`<path class="s" d="M84 96 C64 82 54 60 60 36 C68 52 76 60 90 68 Z"/>
-      <path class="k" d="M66 50 L82 72 M62 62 L80 80"/>
-      <path class="s" d="M48 160 C54 142 72 140 82 156 Z"/>`].map(s=>s+mir(s)).join("")}
-  <path class="s" d="M86 160 C90 144 110 144 114 160 Z"/>
-  <rect class="s" x="42" y="160" width="116" height="7" rx="3.5"/>
-  <path class="s" d="M58 150 C62 130 88 126 100 134 C112 126 138 130 142 150 C120 158 80 158 58 150 Z"/>
-  <path class="s" d="M84 136 L80 98 C80 88 90 84 100 84 C110 84 120 88 120 98 L116 136 Z"/>
-  <path class="k" d="M84 100 L97 114 M116 100 L103 114"/>
-  <path class="kd" d="M100 122 L95 106 L100 94 L105 106 Z"/>
-  <circle class="s" cx="100" cy="68" r="12"/>
-  <path class="s" d="M88 60 L91 44 L96 54 L100 38 L104 54 L109 44 L112 60 Z"/>
-  <path class="kd" d="M100 72 L95 84 L105 84 Z"/>
-  <circle cx="94" cy="66" r="2.2" class="kd"/><circle cx="106" cy="66" r="2.2" class="kd"/>
-  <path class="k" d="M72 146 C84 140 94 142 100 146 C106 142 116 140 128 146"/>`,
-
-/* ---- Pāla: dharmacakra with deer ---- */
-wheelDeer:`
-  <circle class="o" stroke-width="7" cx="100" cy="80" r="30"/>
-  <circle class="s" cx="100" cy="80" r="8"/>
-  <g class="o" stroke-width="4">${[0,45,90,135].map(a=>{const r=a*Math.PI/180,dx=(26*Math.cos(r)).toFixed(1),dy=(26*Math.sin(r)).toFixed(1);return `<path d="M${100-dx} ${80-dy} L${100+ +dx} ${80+ +dy}"/>`}).join("")}</g>
-  ${[...Array(8)].map((_,i)=>{const r=i*Math.PI/4;return `<circle class="s" cx="${(100+37*Math.cos(r)).toFixed(1)}" cy="${(80+37*Math.sin(r)).toFixed(1)}" r="4"/>`}).join("")}
-  <rect class="s" x="95" y="114" width="10" height="20" rx="2"/>
-  <path class="s" d="M70 140 C78 124 92 126 100 136 C108 126 122 124 130 140 Z"/>
-  ${[`<path class="s" d="M28 150 C28 134 42 128 56 130 C64 130 70 134 70 142 L70 152 L28 152 Z"/>
-      <path class="s" d="M58 132 L64 112 L73 112 L69 134 Z"/>
-      <ellipse class="s" cx="74" cy="108" rx="9" ry="6" transform="rotate(18 74 108)"/>
-      <path class="o" stroke-width="3" d="M68 102 L62 84 M64 92 L56 86 M66 96 L74 84"/>
-      <path class="s" d="M64 104 L58 98 L66 100 Z"/>
-      <circle cx="75" cy="106" r="1.8" class="kd"/>
-      <path class="k" d="M36 152 C40 142 50 140 60 144"/>`].map(s=>s+mir(s)).join("")}
-  <rect class="s" x="22" y="152" width="156" height="7" rx="3.5"/>`,
-
-/* ---- Chola: seated tiger, twin fish, bow, parasol, chauris ---- */
-chola:`
-  <path class="s" d="M62 50 C72 32 128 32 138 50 Z"/>
-  <path class="k" d="M72 50 v-4 M86 50 v-6 M100 50 v-7 M114 50 v-6 M128 50 v-4"/>
-  <rect class="s" x="97" y="48" width="6" height="12" rx="2"/>
-  ${[`<path class="o" stroke-width="4" d="M40 64 L48 100"/><path class="s" d="M40 66 C28 56 30 40 38 34 C46 42 50 56 40 66 Z"/>`].map(s=>s+mir(s)).join("")}
-  <path class="o" stroke-width="7" d="M58 142 C40 134 38 110 50 100 C55 96 57 90 54 84"/>
-  <path class="s" d="M54 152 C46 136 52 118 68 112 C78 108 86 110 90 114 L100 94 C104 86 112 86 116 92 L114 104 L110 152 Z"/>
-  <path class="s" d="M100 104 L108 152 L98 152 L92 116 Z"/>
-  <circle class="s" cx="116" cy="82" r="14"/>
-  <path class="s" d="M104 74 L104 62 L113 70 Z M122 70 L129 62 L129 76 Z"/>
-  <ellipse class="s" cx="127" cy="89" rx="8" ry="6"/>
-  <circle cx="118" cy="78" r="2.6" class="kd"/>
-  <path class="k" stroke-width="3.2" d="M62 124 C66 130 66 136 64 142 M72 118 C76 124 76 132 74 138 M84 114 C86 120 86 126 84 130 M96 102 L104 108 M100 96 L108 100 M108 116 L110 124"/>
-  ${[0,22].map(dy=>`<path class="s" d="M128 ${108+dy} C138 ${98+dy} 152 ${100+dy} 158 ${108+dy} C152 ${116+dy} 138 ${118+dy} 128 ${108+dy} Z"/><path class="s" d="M156 ${108+dy} L168 ${100+dy} L165 ${108+dy} L168 ${116+dy} Z"/><circle cx="136" cy="${106+dy}" r="2" class="kd"/>`).join("")}
-  <path class="o" stroke-width="6" d="M52 166 Q100 146 148 166"/>
-  <path class="o" stroke-width="2" d="M52 166 L148 166"/>`,
-
-/* ---- Pāṇḍya: twin fish with goad ---- */
-twinFish:`
-  ${[`<path class="s" d="M76 38 C52 70 52 122 76 152 C98 122 98 70 76 38 Z"/>
-      <path class="s" d="M76 148 L60 174 L76 164 L92 174 Z"/>
-      <path class="s" d="M58 96 L44 104 L58 114 Z"/>
-      <circle cx="84" cy="62" r="3" class="kd"/>
-      <path class="k" d="M64 76 C72 70 84 70 90 76"/>
-      <path class="k" d="M66 92 l10 6 l10 -6 M64 106 l12 6 l12 -6 M65 120 l11 6 l11 -6 M68 134 l8 5 l8 -5"/>`].map(s=>s+mir(s)).join("")}
-  <path class="o" stroke-width="5" d="M100 48 V168"/>
-  <path class="o" stroke-width="5" d="M100 48 C114 42 118 58 108 66"/>
-  <path class="s" d="M100 36 L94 50 L106 50 Z"/>
-  <rect class="s" x="90" y="166" width="20" height="6" rx="3"/>`,
-
-/* ---- Paramāra: flying Garuḍa with cobra ---- */
-garudaFlying:`
-  <path class="s" d="M118 88 C104 58 80 42 50 40 C62 50 64 58 60 64 C72 66 76 72 74 80 C86 82 92 88 90 94 C100 96 106 100 106 106 Z"/>
-  <path class="k" d="M62 50 L106 88 M68 66 L104 94 M80 80 L104 100"/>
-  <path class="s" d="M66 128 L118 88 C124 82 134 84 136 92 C138 98 134 102 128 104 L82 138 C76 142 66 136 66 128 Z"/>
-  <circle class="s" cx="142" cy="76" r="12"/>
-  <path class="s" d="M151 72 L170 80 L151 86 Z"/>
-  <path class="s" d="M132 68 L132 54 L140 64 L146 52 L150 66 Z"/>
-  <circle cx="145" cy="73" r="2.4" class="kd"/>
-  <path class="o" stroke-width="9" d="M128 96 L152 102 L162 84"/>
-  <circle class="s" cx="163" cy="81" r="6"/>
-  <path class="o" stroke-width="10" d="M78 132 L52 136 L40 160"/>
-  <path class="o" stroke-width="10" d="M84 136 L66 150 L72 170"/>
-  <path class="o" stroke-width="8" d="M104 114 L124 128"/>
-  <path class="o" stroke-width="7" d="M124 128 C140 136 136 152 124 158 C112 164 118 174 134 172"/>
-  <path class="s" d="M126 126 C126 110 142 106 148 116 C150 124 140 130 126 126 Z"/>
-  <circle cx="140" cy="116" r="1.8" class="kd"/>`,
-
-/* ---- Maurya: lion capital ---- */
-lionCapital:`
-  <path class="s" d="M52 136 C58 176 142 176 148 136 Z"/>
-  <path class="k" d="M72 140 C74 154 78 164 82 168 M100 140 V172 M128 140 C126 154 122 164 118 168 M86 140 C87 156 90 166 92 170 M114 140 C113 156 110 166 108 170"/>
-  <rect class="s" x="42" y="118" width="116" height="16" rx="2"/>
-  ${[64,100,136].map(x=>`<circle cx="${x}" cy="126" r="5" class="k" stroke-width="2"/><path class="k" stroke-width="1.5" d="M${x-5} 126 h10 M${x} 121 v10"/>`).join("")}
-  <rect class="s" x="54" y="92" width="92" height="26" rx="4"/>
-  <path class="s" d="${scallop(56,76,22,16,4.6)}"/>
-  <path class="s" d="${scallop(144,76,22,16,4.6)}"/>
-  <circle cx="56" cy="76" r="12" class="k"/><circle cx="144" cy="76" r="12" class="k"/><circle cx="52" cy="72" r="2" class="kd"/><circle cx="148" cy="72" r="2" class="kd"/>
-  <path class="s" d="M50 76 L40 80 L50 86 Z M150 76 L160 80 L150 86 Z"/>
-  <path class="s" d="${scallop(100,66,27,18,5.4)}"/>
-  <circle cx="100" cy="68" r="15" class="k"/>
-  <circle cx="94" cy="63" r="2.4" class="kd"/><circle cx="106" cy="63" r="2.4" class="kd"/>
-  <path class="k" d="M100 66 v6 M94 76 q6 4 12 0"/>
-  <path class="k" d="M68 100 v14 M78 100 v14 M122 100 v14 M132 100 v14 M92 100 v14 M108 100 v14"/>`,
-
-/* ---- Kadamba: standing lion ---- */
-lion:`
-  <rect x="30" y="158" width="142" height="7" rx="3.5" class="s"/>
-  <path class="o" stroke-width="7" d="M52 110 C34 102 32 80 44 74"/><ellipse class="s" cx="44" cy="70" rx="7" ry="9"/>
-  <path class="s" d="M50 118 C48 104 58 96 72 96 L120 96 C126 96 130 100 130 106 L130 126 C130 132 126 134 120 134 L62 134 C54 134 50 128 50 118 Z"/>
-  <path class="s" d="M56 128 L56 158 L68 158 L70 132 Z M74 132 L76 158 L88 158 L86 132 Z M108 132 L108 158 L120 158 L120 132 Z M122 128 L124 158 L136 158 L132 128 Z"/>
-  <path class="s" d="${scallop(138,90,26,18,5.2)}"/>
-  <circle cx="142" cy="92" r="14" class="k"/>
-  <circle cx="146" cy="86" r="2.6" class="kd"/>
-  <path class="k" d="M146 99 q5 4 11 0 M152 92 l4 3"/>
-  <path class="k" d="M70 132 C70 118 80 110 92 112"/>`,
-
-/* ---- Viṣṇukuṇḍina: roaring lion, raised paw ---- */
-lionRoar:`
-  <rect x="26" y="158" width="146" height="7" rx="3.5" class="s"/>
-  <path class="o" stroke-width="7" d="M50 110 C30 104 26 80 38 70 C44 66 50 70 46 78"/>
-  <path class="s" d="M48 118 C46 104 56 96 70 96 L118 96 C124 96 128 100 128 106 L128 126 C128 132 124 134 118 134 L60 134 C52 134 48 128 48 118 Z"/>
-  <path class="s" d="M54 128 L52 158 L64 158 L68 132 Z M72 132 L74 158 L86 158 L84 132 Z M104 132 L106 158 L118 158 L118 132 Z"/>
-  <path class="s" d="M118 118 L140 138 L154 134 L152 126 L140 128 L126 110 Z"/>
-  <path class="s" d="${scallop(136,88,26,18,5.2)}"/>
-  <circle cx="140" cy="90" r="14" class="k"/>
-  <path class="s" d="M146 86 L172 76 L168 88 L150 92 Z M148 96 L170 104 L165 111 L146 101 Z"/>
-  <path class="kd" d="M150 91 L166 90 L164 98 L150 96 Z"/>
-  <circle cx="142" cy="84" r="2.6" class="kd"/>
-  <path class="k" d="M68 132 C68 118 78 110 90 112"/>`,
-};
-
-G2.bullMoon = G2.bull + `<circle class="s" cx="72" cy="70" r="14"/><circle class="kd" cx="78" cy="66" r="12"/>`;
-
-/* ---------- data (chronological by founding) ---------- */
-const S = {
-  wikiMaitraka:["Maitraka dynasty — Wikipedia","https://en.wikipedia.org/wiki/Maitraka_dynasty"],
-  dc:["ASI deciphers Maitraka & Western Ganga plates — Deccan Chronicle","https://www.deccanchronicle.com/southern-states/andhra-pradesh/asi-starts-deciphering-newly-found-two-copper-plates-1870276"],
-  outlook:["Maitraka bull, Western Ganga elephant seals — Outlook Traveller","https://www.outlooktraveller.com/amp/story/whats-new/copper-plates-from-vijayanagara-empire-unveiled-in-bengaluru"],
-  dubi:["Dubi copperplate inscription — Wikipedia","https://en.wikipedia.org/wiki/Dubi_copperplate_inscription"],
-  ei27:["Epigraphia Indica vol. 27 (seal symbolism)","https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/vatsmadhosarup2.html"],
-  sharva:["Sharvavarman — Wikipedia","https://en.wikipedia.org/wiki/Sharvavarman"],
-  vishnuMW:["Vishnukundin coinage — Mintage World","https://www.mintageworld.com/media/detail/11513-copper-alloy-unit-of-vishnukundin-dynasty/"],
-  vishnuHK:["Coins of the Vishnukundins — The Hobby of Kings","http://thehobbyofkings.blogspot.com/2016/03/coins-of-vishnukundins-empire.html"],
-  rashtraMW:["Garuda on Rashtrakuta coins & seals — Mintage World","https://www.mintageworld.com/media/detail/5406-garuda-rashtrakuta-coins/"],
-  dantiSeal:["Dantidurga Garuda seal, 742 CE — Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Rashtrakuta_Dantidurga_Garuda_Seal_742_AD.jpg"],
-  harsola:["Harsola copper plates — Wikipedia","https://en.wikipedia.org/wiki/Harsola_copper_plates"],
-  bhoja:["Inscriptions of Bhoja — Wikipedia","https://en.wikipedia.org/wiki/Inscriptions_of_Bhoja"],
-  jagjivan:["Jagjivanpur (Mahendrapala plate) — Wikipedia","https://en.wikipedia.org/wiki/Jagjivanpur"],
-  mihira:["Mihira Bhoja — Wikipedia","https://en.wikipedia.org/wiki/Mihira_Bhoja"],
-  saindhava:["Saindhava — Wikipedia","https://en.wikipedia.org/wiki/Saindhava"],
-  pallavaGM:["Pallava copper plates — Govt. Museum Chennai","https://govtmuseumchennai.org/museum-section/copper-plates/pallava"],
-  pallavaCoin:["Pallava coinage — Wikipedia","https://en.wikipedia.org/wiki/Pallava_coinage"],
-  cholaFlag:["Flag of Chola — Wikipedia","https://en.wikipedia.org/wiki/Flag_of_Chola"],
-  cholaSeal:["Chola copper-plate seal description — T.S. Krishnan","https://x.com/tskrishnan/status/2055925451311419410"],
-  pandyaFlag:["Flag of Pandya — Wikipedia","https://en.wikipedia.org/wiki/Flag_of_Pandya"],
-  pandyaMW:["The emblem of the Pandyas — Mintage World","https://www.mintageworld.com/media/detail/3838-emblem-of-the-pandyas/"],
-  uttama:["Uttama Chola coin (tiger, fish, bow) — Hobby of Kings","http://thehobbyofkings.blogspot.com/2014/09/uttama-chola-silver-kahavanu-coin.html"],
-  eganga:["Eastern Ganga copper plate, bull seal — Indian Culture","https://www.indianculture.gov.in/artefacts-museums/copper-plate-inscription-34"],
-  sarabha:["The Sarabhapuriyas — Puratattva","https://puratattva.in/the-sarabhapuriyas/"],
-  sripura:["Sripura copper plates: seals — Wisdom Library","https://www.wisdomlib.org/history/essay/sripura-archaeological-survey/d/doc1149485.html"],
-  kalaMW:["Kalachuri dynasty coins — Mintage World","https://www.mintageworld.com/blog/kalachuri-dynasty/"],
-  kalaIC:["Kalachuri copper plate with seated goddess — Indian Culture","https://indianculture.gov.in/artefacts-museums/copper-plate-kalachuri-dynasty"],
-  kadamba:["Kadamba dynasty — IAS Gyan","https://www.iasgyan.in/daily-current-affairs/kadamba-dynasty"],
-  chalukyaMW:["Varaha on Kalyani Chalukya coins — Mintage World","https://www.mintageworld.com/media/detail/1929-varaha-on-coins-of-kalyani-chalukya/"],
-  varahaNum:["Numismatics of the varāha — Hindu Aesthetic","https://hinduaesthetic.medium.com/numismatics-of-the-var%C4%81ha-fbf94c01f1a8"],
-  eChal:["Eastern Chalukyas — Wikipedia","https://en.wikipedia.org/wiki/Eastern_Chalukyas"],
-  shahiMW:["Bull and horseman coins — Mintage World","https://www.mintageworld.com/media/detail/7475-bull-and-horseman-coins/"],
-  shahiNum:["Jital of Samanta Deva — Numista","https://en.numista.com/catalogue/pieces19864.html"],
-  wkTandon:["Reading Western Kshatrapa coins — P. Tandon (BU)","https://people.bu.edu/ptandon/WK-Legends.pdf"],
-  kushanPdf:["The Kushana coins — IGNTU e-content","https://igntu.ac.in/eContent/MA-AIHC-04Sem-DrJitendraJain-%20Ancient%20Indian%20Coinage-Unit1-4.pdf"],
-  bhitari:["Bhitari Garuda seal of Kumaragupta II — Scribd","https://www.scribd.com/document/732861497/Later-Gupta-History-Inscriptions-Coins-a"],
-  guptaGaruda:["Garuda iconography on Gupta coins & seals — Monidipa","https://monidipa.net/2020/01/16/garuda-the-vahana-of-vishnu/comment-page-1/"],
-  shashanka:["Shashanka — Banglapedia","https://en.banglapedia.org/index.php?title=Shashanka"],
-  shashankaSeal:["Seal of Shashanka from Rohtasgarh — Sriti O Chetona","https://sritiochetona.org/seal-of-shashanka-from-rohtasgarh/"],
-  bhaskara:["Bhaskaravarman — Wikipedia","https://en.wikipedia.org/wiki/Bhaskaravarman"],
-  harshaSeal:["Seal of Harshavardhana, Nalanda — Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Seal_of_Harshavardhana_found_in_Nalanda.jpg"],
-};
-
-Object.assign(S,{
-  karkota:["Karkota dynasty — Wikipedia","https://en.wikipedia.org/wiki/Karkota_dynasty"],
-  inhcrfVin:["Base gold coin of Vinayaditya — INHCRF","https://inhcrf.org/database_list/base-gold-coin-of-vinayaditya-67/"],
-  hoySala:["Sala (Hoysala emblem) — Wikipedia","https://en.wikipedia.org/wiki/Sala_(Hoysala_Dynasty)"],
-  hoyCoin:["Vinayaditya gold pagoda — Sarmaya","https://sarmaya.in/objects/numismatics/vinayaditya-hoysala-dynasty-gold-pagoda/"],
-  jackson:["Jackson, Emblems and Coins of the South Indian Dynasties, BNJ 9 (1912)","https://www.britnumsoc.org/publications/Digital%20BNJ/pdfs/1912_BNJ_9_13.pdf"],
-  kakGanapati:["Ganapati (Kakatiya) — Wikipedia","https://en.wikipedia.org/wiki/Ganapati_(Kakatiya_dynasty)"],
-  yadMahadeva:["Mahadeva of Devagiri — Wikipedia","https://en.wikipedia.org/wiki/Mahadeva_of_Devagiri"],
-  yadNumista:["Yadava dynasty coins — Numista","https://en.numista.com/catalogue/yadava_dynasty-1.html"],
-  senaBM:["Barrackpur plate of Vijayasena — British Museum","https://www.britishmuseum.org/collection/object/A_1957-1121-1"],
-  gahGovinda:["Govindachandra — Wikipedia","https://en.wikipedia.org/wiki/Govindachandra_(Gahadavala_dynasty)"],
-  gahMW:["Base gold masha of Gahadavala — Mintage World","https://www.mintageworld.com/media/detail/16322-base-gold-four-and-a-half-masha-of-gahadavala/"],
-  chaMadana:["Madanavarman — Wikipedia","https://en.wikipedia.org/wiki/Madanavarman"],
-  solMW:["Siddharaja Jayasimha silver masha — Mintage World","https://www.mintageworld.com/media/detail/16823-Chaulukya-Siddharaja-Jayasimha-Solanki/"],
-  chauPrithvi:["Prithviraj Chauhan — Wikipedia","https://en.wikipedia.org/wiki/Prithviraj_Chauhan"],
-  chauAjaya:["Ajayaraja II — Wikipedia","https://en.wikipedia.org/wiki/Ajayaraja_II"],
-  vijBlog:["Vijayanagara coins — South Indian Coins","https://southindiancoins.blogspot.com/2009/10/vijayanagara-coins.html"],
-  vijWiki:["Vijayanagara coinage — Wikipedia","https://en.wikipedia.org/wiki/Vijayanagara_coinage"],
-  mewFotw:["Udaipur (Mewar) — Flags of the World","https://www.fotw.info/flags/in-mewar.html"],
-  mewArms:["Mewar coat of arms — Arvind Singh Mewar","https://arvindsinghmewar.com/coatofarms.php"],
-  marFotw:["Jodhpur (Marwar) — Flags of the World","https://www.fotw.info/flags/in-marwa.html"],
-  marNag:["Nagnechiya Mata — Wikipedia","https://en.wikipedia.org/wiki/Nagnechiya_Mata"],
-  jaiFotw:["Jaipur — Flags of the World","https://www.crwflags.com/fotw/flags/in-jaipu.html"],
-  jaiJhar:["Coinage of Madho Singh II (jhar) — Mintage World","https://www.mintageworld.com/media/detail/6673-coinage-of-madho-singh-ii/"],
-  ahomCoin:["Ahom coinage — Wikipedia","https://en.wikipedia.org/wiki/Ahom_coinage"],
-  ahomLHI:["Ahom coins — LiveHistoryIndia","https://www.livehistoryindia.com/story/art-history/ahom-coins"],
-  ahomNgi:["The Tai-Ahom dragon Ngi Ngao Kham — IJRAR","https://ijrar.org/papers/IJRAR23A2031.pdf"],
-  triSpink:["Ratna Manikya tanka — Spink","https://www.spink.com/lot/16041000019"],
-  triMW:["Coinage of Tripura — Mintage World","https://www.mintageworld.com/blog/coinage-of-tripura-kingdom/"],
-  kochWiki:["Koch coinage — Wikipedia","https://en.wikipedia.org/wiki/Koch_coinage"],
-  kochNum:["Narayani rupee of Nara Narayan — Numista","https://en.numista.com/82839"],
-  marEmblem:["Emblem of Maharashtra — Wikipedia","https://en.wikipedia.org/wiki/Emblem_of_Maharashtra"],
-  histFlags:["Historical Indian flags — Wikipedia","https://en.wikipedia.org/wiki/Historical_Indian_flags"],
-  sikhCoin:["Sikh coinage — Wikipedia","https://en.wikipedia.org/wiki/Sikh_coinage"],
-  sikhFlag:["The Khalsa Army flag — SikhNet","https://www.sikhnet.com/news/khalsa-army-flag-anglo-sikh-wars-digitisation"],
-  ganda:["Gandabherunda — Wikipedia","https://en.wikipedia.org/wiki/Gandabherunda"],
-  mysFotw:["Mysore — Flags of the World","https://www.fotw.info/flags/in-mysor.html"],
-  travMW:["Conch on Travancore State — Mintage World","https://www.mintageworld.com/media/detail/14120-conch-on-travancore-state/"],
-  keralaEmb:["Emblem of Kerala — Wikipedia","https://en.wikipedia.org/wiki/Emblem_of_Kerala"],
-});
-
-const D = [
- {n:"Maurya",d:"c. 322–185 BCE",img:"01-maurya",r:"North",k:"monument",g:"lionCapital",e:"Lion Capital of Aśoka",nat:"सिंहशीर्ष",nc:"deva",
-  t:"The Maurya kings left no seal emblem. By convention they are represented by Aśoka's Sarnath capital: four lions set back to back on an abacus carved with wheels and animals, above a bell-shaped lotus. The painting shows three of the four lions, over the abacus wheel and horse.",src:[]},
- {n:"Sātavāhana",d:"c. 1st c. BCE – 3rd c. CE",img:"02-satavahana",r:"Deccan",k:"coin",g:"ujjain",e:"Ujjain symbol",nat:"",nc:"",
-  t:"No single lāñchhana is known. The recurring reverse device on their coins is the 'Ujjain symbol', a cross with a ring at each arm. Their coin obverses vary: elephant, lion, horse, arched hill or ship.",src:[]},
- {n:"Kushan",d:"c. 30–375 CE",img:"03-kushan",r:"Northwest",k:"coin",g:"tamgha",e:"Dynastic tamgha",nat:"",nc:"",
-  t:"A pronged clan mark set on a ring base. It appears on Kushan coins from Vima Kadphises and Kanishka onward, usually in the field beside the king or deity. The drawing gives its general form, not any single ruler's variant.",src:["kushanPdf"]},
- {n:"Western Kshatrapas",d:"c. 35–415 CE",img:"04-kshatrapa",r:"West",k:"coin",g:"chaitya",e:"Arched hill with crescent",nat:"चैत्य",nc:"deva",
-  t:"The fixed reverse of their silver drachms: a three-arched hill topped by a crescent, a wavy river line below, and a rayed sun and crescent moon on either side. The Brahmi legend around it names the ruler and his father.",src:["wkTandon"]},
- {n:"Gupta",d:"c. 320–550 CE",img:"05-gupta",r:"North",k:"seal",g:"garuda",e:"Garuḍa (Garuḍadhvaja)",nat:"गरुड",nc:"deva",
-  t:"Garuda, Vishnu's eagle, stands frontally with spread wings on Gupta seals and on the standard (dhvaja) shown on their gold coins. The Bhitari seal of Kumaragupta II shows him holding a serpent.",src:["bhitari","guptaGaruda","ei27"]},
- {n:"Kadamba of Banavāsi",d:"c. 345–540 CE",img:"06-kadamba",r:"South",k:"coin",g:"lion",e:"Lion",nat:"सिंह",nc:"deva",
-  t:"A standing lion with its tail raised is the dynasty's royal emblem. Goa's Kadamba Transport Corporation uses it as its logo today, which makes it one of the few emblems on this sheet still in public use.",src:["kadamba"]},
- {n:"Kāmarūpa (Varman)",d:"c. 350–650 CE",img:"07-kamarupa",r:"East",k:"seal",g:"elephantFront",e:"Elephant, frontal",nat:"गज",nc:"deva",
-  t:"A countersunk elephant seen from the front fills the top of every surviving Kamarupa grant seal, with the genealogy in Sanskrit below. The emblem continued under the Mlechchha and Pala houses of Kamarupa.",src:["dubi","bhaskara"]},
- {n:"Western Gaṅga",d:"c. 350–1000 CE",img:"08-western-ganga",r:"South",k:"seal",g:"elephantSide",e:"Elephant (madagaja)",nat:"मदगज",nc:"deva",
-  t:"An elephant in profile is struck on the seal rings of Western Ganga copper-plate grants, which are written in Kannada characters.",src:["outlook","dc"]},
- {n:"Viṣṇukuṇḍina",d:"c. 420–624 CE",img:"09-vishnukundina",r:"Deccan",k:"coin",g:"lionRoar",e:"Roaring lion",nat:"सिंह",nc:"deva",
-  t:"The dynastic emblem: a lion walking right with one foreleg raised, mouth open and tail curled high. The reverse usually shows a conch between two lampstands. Their earliest coins show a humped bull instead.",src:["vishnuMW","vishnuHK"]},
- {n:"Pallava",d:"c. 275–897 CE",img:"10-pallava",r:"South",k:"seal",g:"bullCouchant",e:"Couchant bull (Nandi)",nat:"वृषभ",nc:"deva",
-  t:"A recumbent bull facing proper right, with the king's name beneath, as on the seal of Śivaskandavarman. Bull and lion are also the basic devices on Pallava coins.",src:["pallavaGM","pallavaCoin"]},
- {n:"Maitraka of Valabhī",d:"c. 475–776 CE",img:"11-maitraka",r:"West",k:"seal",g:"bullCouchant",e:"Seated Nandi",nat:"नन्दी",nc:"deva",
-  t:"A seated bull above the legend 'Śrī Bhaṭakkaḥ', named after the founder Bhaṭārka, on grants from the 6th century onward. Their silver drachms carry a trident (triśūla) on the reverse.",src:["dc","wikiMaitraka"]},
- {n:"Śarabhapurīya",d:"c. 475–590 CE",img:"12-sharabhapuriya",r:"East",k:"seal",g:"gajalakshmi",e:"Gajalakṣmī",nat:"गजलक्ष्मी",nc:"deva",
-  t:"Lakshmi seated on a lotus, bathed by two elephants holding water-pots, in the upper panel of the seal with a two-line legend below. Their coins instead show Garuda with a conch and a discus.",src:["sarabha"]},
- {n:"Maukhari",d:"c. 550–606 CE",img:"13-maukhari",r:"North",k:"seal",g:"maukhari",e:"Garlanded bull under a parasol",nat:"वृषभ",nc:"deva",
-  t:"A garlanded bull walking right, with a royal parasol and streamers rising behind its hump. It appears on the Asirgarh and Nalanda seals of Śarvavarman, which also record the family's genealogy.",src:["ei27","sharva"]},
- {n:"Chalukya",d:"Bādāmi 543–753 · Vengi 624–1075 · Kalyāṇi 973–1189",img:"14-chalukya",r:"Deccan",k:"seal",g:"boar",e:"Varāha (boar)",nat:"वराह",nc:"deva",
-  t:"The boar, Vishnu's Varāha form, is the lāñchhana shared by all three Chalukya houses. It appears on their grant seals and on Kalyani Chalukya gold coins. Vijayanagara later took up the same emblem.",src:["chalukyaMW","varahaNum","eChal"]},
- {n:"Puṣyabhūti (Vardhana)",d:"c. 500–647 CE",img:"15-pushyabhuti",r:"North",k:"seal",g:"bullStanding",e:"Bull",nat:"वृषभ",nc:"deva",
-  t:"A bull on Harsha's copper seal from Sonepat, which gives his genealogy from Rājyavardhana I. It matches the kings' Śaiva titles. Two of Harsha's clay seals were also found at Nalanda.",src:["ei27","harshaSeal"]},
- {n:"Gauḍa (Śaśāṅka)",d:"c. 600–637 CE",img:"16-gauda",r:"East",k:"coin",g:"bullMoon",e:"Nandi beneath a moon disc",nat:"नन्दी · शशाङ्क",nc:"deva",
-  t:"Shashanka's gold coins show Shiva reclining on Nandi with a disc above; his name means 'the moon'. The Rohtasgarh seal matrix carries only the legend 'Mahāsāmanta Śaśāṅkadeva'. The drawing shows the bull and the disc without Shiva.",src:["shashanka","shashankaSeal"]},
- {n:"Kārkoṭa of Kashmir",d:"c. 625–855 CE",r:"North",k:"coin",img:"29-karkota",g:"",e:"Standing king and seated goddess",nat:"",nc:"",
-  t:"No Kārkoṭa flag, seal or emblem survives, Lalitāditya's included. What they did leave is a coin type inherited from the Kushans: a standing king at a fire altar, and a goddess enthroned on the other side, with short legends such as 'Śrī Pratāpa'.",src:["karkota","inhcrfVin"]},
- {n:"Pāṇḍuvaṃśī of Śrīpura",d:"c. 6th–8th c. CE",img:"17-panduvamshi",r:"East",k:"seal",g:"garudaSerpents",e:"Human-headed Garuḍa with serpents",nat:"गरुड",nc:"deva",
-  t:"Garuda with a human head and a bird's body with outstretched wings, holding a hooded serpent in each hand, on the seals of Tīvaradeva. The design follows the king's Vaishnava faith.",src:["sripura"]},
- {n:"Eastern Gaṅga",d:"c. 5th c. – 1078 CE (early line)",img:"18-eastern-ganga",r:"East",k:"seal",g:"bullCouchant",e:"Couchant bull",nat:"वृषभ",nc:"deva",
-  t:"A recumbent bull on the ring-seal of Kalinga Ganga grants, as on the three-plate set of Indravarman.",src:["eganga"]},
- {n:"Saindhava",d:"c. 735–920 CE",img:"19-saindhava",r:"West",k:"seal",g:"fish",e:"Fish (matsya)",nat:"मत्स्य",nc:"deva",
-  t:"A fish, the sign of Varuna, on the grants of this coastal Saurashtra house based at Ghumli. It fits their reputation as a naval power.",src:["saindhava"]},
- {n:"Gurjara-Pratīhāra",d:"c. 730–1036 CE",img:"20-pratihara",r:"North",k:"coin",g:"varahaMan",e:"Ādivarāha",nat:"आदिवराह",nc:"deva",
-  t:"Mihira Bhoja took the title Ādivarāha and put the boar-headed avatar, striding with a discus, on his silver and copper coins. The dynasty's seals are said to show their tutelary goddess Bhagavatī, but they are not drawn here.",src:["mihira","ei27"]},
- {n:"Pāla",d:"c. 750–1161 CE",img:"21-pala",r:"East",k:"seal",g:"wheelDeer",e:"Dharmacakra with deer",nat:"धर्मचक्र",nc:"deva",
-  t:"The Buddhist Wheel of Law flanked by two deer, a reference to the Deer Park at Sarnath, set within a lotus above the king's name. It appears on the Jagjivanpur plate of Mahendrapāla.",src:["jagjivan"]},
- {n:"Rāṣṭrakūṭa",d:"753–982 CE",img:"22-rashtrakuta",r:"Deccan",k:"seal",g:"garudaSeated",e:"Seated Garuḍa, añjali mudrā",nat:"गरुड",nc:"deva",
-  t:"Garuda seated in padmāsana on a lotus with his palms joined, wings rising from the shoulders. It is on the grant seals from Dantidurga (742 CE) onward and on coins reading 'Śrī Śubhatuṅga'.",src:["rashtraMW","dantiSeal"]},
- {n:"Kalachuri of Tripurī",d:"c. 675–1212 CE",img:"23-kalachuri",r:"North",k:"coin",g:"gajalakshmi",e:"Seated Lakṣmī",nat:"लक्ष्मी",nc:"deva",
-  t:"Seated Lakshmi is the obverse of Gāṅgeyadeva's gold coins. The kin branch at Ratnapura put a four-armed goddess on a lotus, holding a water-pot, on its plates.",src:["kalaMW","kalaIC"]},
- {n:"Hindu Śāhi",d:"c. 822–1026 CE",img:"24-shahi",r:"Northwest",k:"coin",g:"horseman",e:"Bull & horseman",nat:"",nc:"",
-  t:"Their silver jitals show a recumbent humped bull with the legend 'Śrī Sāmantadeva' on one side and a horseman with a lance on the other. Later Rajput and Ghurid mints kept copying the type long after the dynasty fell.",src:["shahiMW","shahiNum"]},
- {n:"Chola (Imperial)",d:"848–1279 CE",img:"25-chola",r:"South",k:"seal",g:"chola",e:"Seated tiger, twin fish & bow",nat:"புலி",nc:"taml",
-  t:"The Chola tiger sits under one royal parasol, flanked by fly-whisks, with the Pandya twin fish in front of it and the Chera bow below. The composition claims rule over all three Tamil crowns. It appears on the seals of their copper plates and on Uttama Chola's coins.",src:["cholaSeal","cholaFlag","uttama"]},
- {n:"Pāṇḍya",d:"First Empire c. 590–920 CE",img:"26-pandya",r:"South",k:"coin",g:"twinFish",e:"Twin fish (kayal)",nat:"கயல்",nc:"taml",
-  t:"A pair of carp facing each other, often with a goad or sceptre between them, on Pandya coins and banners. The Cholas later placed the same pair beneath their tiger as a sign of conquest.",src:["pandyaFlag","pandyaMW"]},
- {n:"Chera",d:"Chera Perumāḷs c. 800–1124 CE",img:"27-chera",r:"South",k:"coin",g:"bow",e:"Bow and arrow (vil)",nat:"வில்",nc:"taml",
-  t:"The Chera emblem is the strung bow, carried on their coins and banners. It is the third element of the Chola seal composition.",src:["cholaFlag","uttama"]},
- {n:"Paramāra of Mālwa",d:"c. 9th c. – 1305 CE",img:"28-paramara",r:"North",k:"seal",g:"garudaFlying",e:"Flying Garuḍa with cobra",nat:"गरुड",nc:"deva",
-  t:"A bird-headed Garuda with a human body, flying, holding a cobra in one hand and raising the other to strike. It is incised on the plates of Siyaka II (949 CE) and on every one of Bhoja's own grants.",src:["harsola","bhoja"]},
-];
-
-/* ---------- render ---------- */
-const REG = ["All","North","Northwest","East","West","Deccan","South"];
-const KIND = [["all","All"],["seal","Seal"],["coin","Coin"],["monument","Monument"]];
-let fr="All", fk="all";
-const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
-
-const ALIAS={bullCouchant:"bull"};
-function svg(x){
-  const id=x.n.replace(/[^A-Za-z]/g,"");
-  const name=x.n.replace(/\s*\(.*?\)/g,"").toUpperCase();
-  const sub={seal:"SEAL EMBLEM",coin:"COIN DEVICE",monument:"MONUMENT"}[x.k];
-  const k2=ALIAS[x.g]||x.g;
-  const art=G2[k2]
-    ? `<g transform="translate(100 100) scale(.7) translate(-100 -100)">${G2[k2]}</g>`
-    : `<g class="gl" transform="translate(100 100) scale(1.12) translate(-60 -60)">${G[x.g]}</g>`;
-  return `<svg viewBox="0 0 200 200" role="img" aria-label="${esc(x.e)}">
-    <defs><path id="t${id}" d="M25 100 A75 75 0 0 1 175 100"/><path id="b${id}" d="M16 100 A84 84 0 0 0 184 100"/></defs>
-    <circle cx="100" cy="100" r="99" class="disc"/><circle cx="100" cy="100" r="95" class="rim"/>
-    <circle cx="100" cy="100" r="69" class="beads"/><circle cx="100" cy="100" r="65" class="rim"/>
-    <text class="rt top"><textPath href="#t${id}" startOffset="50%" text-anchor="middle">${esc(name)}</textPath></text>
-    <text class="rt"><textPath href="#b${id}" startOffset="50%" text-anchor="middle">✦ ${sub} ✦</textPath></text>
-    ${art}</svg>`;
-}
-const PAINTED = {
-  "Maurya":["lionCapital","Painted in the Ajanta palette; no Mauryan painting survives"],
-  "Sātavāhana":["ujjain","Painted after the early Ajanta paintings, Caves 9–10, Sātavāhana period"],
-  "Kushan":["tamgha","Painted in the Ajanta palette; no Kushan painting survives in India"],
-  "Western Kshatrapas":["chaitya","Painted in the Ajanta palette; no Kshatrapa painting survives"],
-  "Gupta":["garuda","Painted after the Ajanta murals, 5th c."],
-  "Kadamba of Banavāsi":["lionStand","Painted after the Badami Cave 3 paintings, the nearest surviving"],
-  "Kāmarūpa (Varman)":["elephantFront","Painted after eastern palm-leaf manuscripts; no Kāmarūpa painting survives"],
-  "Western Gaṅga":["elephantSide","Painted after the Badami Cave 3 paintings, the nearest surviving"],
-  "Viṣṇukuṇḍina":["lionRoar","Painted after the Ajanta murals, contemporary with the dynasty"],
-  "Pallava":["bullCouchant","Painted after the Kailāsanātha temple paintings, Kanchipuram, 8th c.","kailasanatha"],
-  "Maitraka of Valabhī":["bullCouchant","Painted in the Ajanta palette; no Maitraka painting survives","ajanta"],
-  "Śarabhapurīya":["gajalakshmi","Painted in the Ajanta palette; no Śarabhapurīya painting survives"],
-  "Maukhari":["bullParasol","Painted in the Ajanta palette; no Maukhari painting survives"],
-  "Chalukya":["boar","Painted after the Badami Cave 3 paintings, 578 CE"],
-  "Puṣyabhūti (Vardhana)":["bullStanding","Painted in the Ajanta palette; no painting from Harsha's court survives"],
-  "Gauḍa (Śaśāṅka)":["bullMoon","Painted after eastern palm-leaf manuscripts, the nearest surviving"],
-  "Pāṇḍuvaṃśī of Śrīpura":["garudaSerpents","Painted in the Ajanta palette; no Pāṇḍuvaṃśī painting survives"],
-  "Eastern Gaṅga":["bullCouchant","Painted after eastern palm-leaf manuscripts, the nearest surviving","pala"],
-  "Saindhava":["fishSingle","Painted in the Ajanta palette; no Saindhava painting survives"],
-  "Gurjara-Pratīhāra":["adivaraha","Painted in the Ajanta palette; no Pratīhāra painting survives"],
-  "Pāla":["wheelDeer","Painted after Pāla palm-leaf manuscripts, 11th c."],
-  "Rāṣṭrakūṭa":["garudaSeated2","Painted after the Kailāsa temple murals, Ellora, 8th c."],
-  "Kalachuri of Tripurī":["gajalakshmi","Painted in the Ellora palette, the nearest surviving","ellora"],
-  "Hindu Śāhi":["horseman","Painted in the Ajanta palette; no Śāhi painting survives"],
-  "Chola (Imperial)":["chola","Painted after the Bṛhadīśvara murals, Thanjavur, c. 1010"],
-  "Pāṇḍya":["twinFish","Painted after the Sittanavasal paintings, 9th c."],
-  "Chera":["bowArrow","Painted after the Chola-period murals, the nearest surviving"],
-  "Paramāra of Mālwa":["garudaFlying2","Painted in the Ajanta palette; no Paramāra painting survives"],
-};
-const MIMG_OLD=["01-maurya", "02-satavahana", "03-kushan", "04-kshatrapa", "05-gupta", "06-kadamba", "07-kamarupa", "08-western-ganga", "09-vishnukundina", "10-pallava", "11-maitraka", "12-sharabhapuriya", "13-maukhari", "14-chalukya", "15-pushyabhuti", "16-gauda", "17-panduvamshi", "18-eastern-ganga", "19-saindhava", "20-pratihara", "21-pala", "22-rashtrakuta", "23-kalachuri", "24-shahi", "25-chola", "26-pandya", "27-chera", "28-paramara"];
-function card(x){
-  const links = x.src.map(k=>`<a href="${S[k][1]}" target="_blank" rel="noopener">${esc(S[k][0].split(" — ")[1]||S[k][0])}</a>`).join(" · ");
-  return `<article class="card">
-    ${x.pending ? `<div class="pending"><div><b class="pe">${esc(x.e)}</b>Painting in progress</div></div>` : x.img ? `<img class="epic-img" loading="lazy" src="modern/m${x.img}.webp?v=1" alt="${esc(x.e)}"><div class="idiom">Painted from the ${x.k} ${x.k==="monument"?"itself":"description"}</div>` : PAINTED[x.n] ? `<canvas class="seal paint" width="560" height="560" data-emb="${PAINTED[x.n][0]}" data-style="${PAINTED[x.n][2]||""}" role="img" aria-label="${esc(x.e)}"></canvas><div class="idiom">${PAINTED[x.n][1]}</div>` : svg(x)}
-    <div class="head"><h2>${esc(x.n)}</h2><span class="dates">${esc(x.d)}</span></div>
-    <div style="display:grid;gap:8px"><div class="emblem"><strong>${esc(x.e)}</strong>${x.nat?`<span class="native ${x.nc}">${x.nat}</span>`:""}</div><p>${esc(x.t)}</p></div>
-    <div class="meta"><span class="pill ${x.k}">${x.k}</span><span>${x.r}</span>${links?`<span>·</span>${links}`:""}</div>
-  </article>`;
-}
-
-/* ---------- Bharatiya Itihasa traditions ---------- */
-const MBH = {
-  s1216:["Mahābhārata 1.216 (Sanskrit)","https://www.sacred-texts.com/hin/mbs/mbs01216.htm"],
-  s581:["Mahābhārata 5.81 (Sanskrit)","https://www.sacred-texts.com/hin/mbs/mbs05081.htm"],
-  s617:["Mahābhārata 6.17 (Sanskrit)","https://www.sacred-texts.com/hin/mbs/mbs06017.htm"],
-  s780:["Mahābhārata 7.80 (Sanskrit)","https://www.sacred-texts.com/hin/mbs/mbs07080.htm"],
-  ram:["Rāmāyaṇa 2.96 (Sanskrit + gloss)","https://www.valmikiramayan.net/utf8/ayodhya/sarga96/ayodhyaitrans96.htm"],
-  kar:["Kārṣāpaṇa — Wikipedia","https://en.wikipedia.org/wiki/Karshapana"],
-};
-const EPIC = [
- {no:"1", n:"Ikṣvāku of Ayodhyā", who:"Bharata's chariot ensign", e:"Kovidāra tree", k:"text", img:"01-ikshvaku",
-  san:"eṣa vai sumahān śrīmān viṭapī samprakāśate | virājaty udgataskandhaḥ kovidāradhvajo rathe", ref:"Rāmāyaṇa 2.96.18",
-  t:"Lakṣmaṇa sees Bharata's army approach and knows it by its banner: a very large, glorious kovidāra tree, trunk and branches raised high, on the chariot's ensign. The verse names only the tree; the sun and Om on the 2025 Ram Mandir flag are later additions.", src:["ram"]},
- {no:"2a", n:"Magadha (Bṛhadratha to Nanda)", who:"Punch-marked silver coinage", e:"Sun and six-armed symbol", k:"coin", paint:"punchCoin",
-  san:"", ref:"",
-  t:"The Purāṇas list these kings but give no emblems. Their silver coins always carry a sun mark and a six-armed symbol, with three further marks drawn from a large repertoire; the three shown here are illustrative. Painted in JavaScript from the documented marks.", src:["kar"]},
- {no:"2b", n:"Magadha", who:"The king of Magadha at Kurukṣetra", e:"Bull", k:"text", img:"02b-magadha",
-  san:"syandanena mahārheṇa ketunā vṛṣabheṇa ca | prakarṣann iva senāgraṃ māgadhaś ca nṛpo yayau", ref:"Mahābhārata 6.17.27",
-  t:"With a costly chariot and a banner bearing a bull, the king of Magadha went forward as if drawing the van of the army.", src:["s617"]},
- {no:"3", n:"Vṛṣṇi", who:"Kṛṣṇa's chariot", e:"Garuḍa", k:"text", img:"03-krishna",
-  san:"… sudhvajaṃ supatākinam … | sughoṣaḥ patagendreṇa dhvajena yuyuje rathaḥ", ref:"Mahābhārata 5.81.17, 20",
-  t:"Kṛṣṇa's chariot for the peace mission, with a fine flagstaff and fine pennons, is joined to its banner: the king of birds, Garuḍa.", src:["s581"]},
- {no:"4", n:"Pāṇḍava", who:"Arjuna", e:"Ape, lion-tailed", k:"text", img:"04-arjuna",
-  san:"siṃhalāṅgūlam ugrāsyaṃ dhvajaṃ vānaralakṣaṇam | dhanaṃjayasya saṃgrāme pratyapaśyāma bhairavam", ref:"Mahābhārata 7.80.8; 1.216.13",
-  t:"A fearsome banner (bhairava, 'striking terror') marked with an ape, fierce-faced and lion-tailed, adorned with pennants. At its origin the ape is divine, stationed at the top of a golden flagstaff and seeming to roar. The Gītā calls Arjuna kapidhvaja, 'ape-bannered'.", src:["s780","s1216"]},
- {no:"5", n:"Kuru", who:"Bhīṣma", e:"Great palm with five stars", k:"text", img:"05-bhishma",
-  san:"tālena mahatā bhīṣmaḥ pañcatāreṇa ketunā | vimalādityasaṃkāśas tasthau kurucamūpatiḥ", ref:"Mahābhārata 6.17.18",
-  t:"Bhīṣma, lord of the Kuru host, stood with his banner, a great palm bearing five stars, like the unclouded sun.", src:["s617"]},
- {no:"6", n:"Kaurava host", who:"Droṇa", e:"Golden altar, water-pot and bow", k:"text", img:"06-drona",
-  san:"jāmbūnadamayī vediḥ kamaṇḍaluvibhūṣitā | ketur ācāryamukhyasya droṇasya dhanuṣā saha", ref:"Mahābhārata 6.17.24",
-  t:"The banner of Droṇa, chief of teachers: an altar of Jāmbūnada gold adorned with a water-pot, together with a bow.", src:["s617"]},
- {no:"7", n:"Kuru", who:"Duryodhana", e:"Elephant made of gems", k:"text", img:"07-duryodhana",
-  san:"nāgo maṇimayo rājño dhvajaḥ kanakasaṃvṛtaḥ | kiṅkiṇīśatasaṃhrādo bhrājaṃś citre rathottame", ref:"Mahābhārata 7.80.26; 6.17.25",
-  t:"The king's banner: an elephant made of gems, covered with gold, ringing with a hundred small bells, gleaming on his splendid chariot.", src:["s780","s617"]},
- {no:"8", n:"Aṅga", who:"Karṇa", e:"Golden elephant-girth", k:"text", img:"08-karna",
-  san:"hastikakṣyā punar haimī babhūvādhirather dhvaje | āhave khaṃ mahārāja dadṛśe pūrayann iva", ref:"Mahābhārata 7.80.12–13",
-  t:"On Karṇa's banner a golden elephant-girth seemed to fill the sky; the banner, with its pennant and golden garland, seemed to dance on the chariot in the wind.", src:["s780"]},
- {no:"9", n:"Kaurava host", who:"Aśvatthāman", e:"Lion's tail", k:"text", img:"09-ashvatthaman",
-  san:"tathaiva siṃhalāṅgūlaṃ droṇaputrasya bhārata | dhvajāgraṃ samapaśyāma bālasūryasamaprabham", ref:"Mahābhārata 7.80.10–11",
-  t:"The banner-top of Droṇa's son, a lion's tail, radiant as the young sun: golden, tossed by the wind, bright as Indra's banner.", src:["s780"]},
- {no:"10", n:"Kaurava host", who:"Kṛpa", e:"Well-adorned bull", k:"text", img:"10-kripa",
-  san:"govṛṣo gautamasyāsīt kṛpasya supariṣkṛtaḥ | … tripuraghnaratho yadvad govṛṣeṇa virājate", ref:"Mahābhārata 7.80.14–15",
-  t:"Kṛpa Gautama's well-adorned bull made his chariot shine as the chariot of Śiva, slayer of Tripura, shines with its bull.", src:["s780"]},
- {no:"11", n:"Madra", who:"Śalya", e:"Golden furrow (sītā)", k:"text", img:"11-shalya",
-  san:"madrarājasya śalyasya dhvajāgre 'gniśikhām iva | sauvarṇīṃ pratipaśyāma sītām apratimāṃ śubhām", ref:"Mahābhārata 7.80.18–19",
-  t:"At Śalya's banner-top a golden sītā, the furrow and the share that cuts it, peerless and auspicious like a tongue of flame, shining like a furrow sprouting with every seed.", src:["s780"]},
- {no:"12", n:"Sindhu", who:"Jayadratha", e:"Silver boar", k:"text", img:"12-jayadratha",
-  san:"varāhaḥ sindhurājasya rājato 'bhivirājate | dhvajāgre 'lohitārkābho hemajālapariṣkṛtaḥ", ref:"Mahābhārata 7.80.20; 6.17.29",
-  t:"The Sindhu king's silver boar blazed at his banner-top, bright as a white sun, adorned with a net of gold.", src:["s780","s617"]},
- {no:"13", n:"Bāhlīka", who:"Bhūriśravas (Saumadatti)", e:"Golden sacrificial post", k:"text", img:"13-bhurishravas",
-  san:"saumadatteḥ punar yūpo yajñaśīlasya dhīmataḥ | dhvajaḥ sūrya ivābhāti somaś cātra pradṛśyate", ref:"Mahābhārata 7.80.22–23",
-  t:"The banner of Saumadatti, devoted to sacrifice, was a golden sacrificial post, shining like the sun, with the moon seen upon it, like the post raised at the Rājasūya.", src:["s780"]},
- {no:"14", n:"Aṅga", who:"Vṛṣasena", e:"Golden peacock", k:"text", img:"14-vrishasena",
-  san:"mayūro vṛṣasenasya kāñcano maṇiratnavān | vyāhariṣyann ivātiṣṭhat senāgram api śobhayan", ref:"Mahābhārata 7.80.16–17",
-  t:"Vṛṣasena's golden peacock, set with gems and jewels, stood as if about to cry out, as Skanda's chariot shines with his peacock.", src:["s780"]},
- {no:"15", n:"Kaurava host", who:"Śala", e:"Silver elephant with golden peacocks", k:"text", img:"15-shala",
-  san:"śalasya tu mahārāja rājato dvirado mahān | ketuḥ kāñcanacitrāṅgair mayūrair upaśobhitaḥ", ref:"Mahābhārata 7.80.24–25",
-  t:"Śala's banner was a huge silver elephant adorned with peacocks of variegated gold, gracing the army as the great white elephant graces the host of the king of gods. (Ganguli's translation gives this to Śalya; the Sanskrit reads Śala.)", src:["s780"]},
-];
-function epicCard(x){
-  const links = x.src.map(k=>`<a href="${MBH[k][1]}" target="_blank" rel="noopener">${esc(MBH[k][0])}</a>`).join(" · ");
-  const art = x.img ? `<img class="epic-img" src="epic/${x.img}.webp?v=5" width="240" height="240" alt="${esc(x.e)}, interpretive painting" loading="lazy">`
-    : x.paint ? `<canvas class="seal paint" width="560" height="560" data-emb="${x.paint}" data-style="" role="img" aria-label="${esc(x.e)}"></canvas>`
-    : `<div class="pending"><div><b>${x.no}</b>Painting in progress</div></div>`;
-  return `<article class="card">${art}
-    <div class="head"><h2>${esc(x.n)}</h2><span class="dates">${esc(x.who)}</span></div>
-    <div style="display:grid;gap:10px"><div class="emblem"><strong>${esc(x.e)}</strong></div>
-      ${x.san?`<blockquote class="verse">${esc(x.san)}<cite>${esc(x.ref)}</cite></blockquote>`:""}
-      <p>${esc(x.t)}</p></div>
-    <div class="meta"><span class="pill ${x.k==="coin"?"coin":"text"}">${x.k==="coin"?"coin":"epic text"}</span>${links?`<span>·</span>${links}`:""}</div>
-  </article>`;
-}
-document.getElementById("epic-grid").innerHTML = EPIC.map(epicCard).join("");
-
-function render(){
-  const list=D.filter(x=>(fr==="All"||x.r===fr)&&(fk==="all"||x.k===fk));
-  document.getElementById("grid").innerHTML = list.length? list.map(card).join("") : `<div class="empty">No emblems match that region and evidence type. Pick another filter.</div>`;
-  const q = []; let busy = false;
-  const pump = () => { if (busy || !q.length) return; busy = true; const c = q.shift();
-    setTimeout(()=>{ try{ if (!c.dataset.done){ LanchhanaPainter.paint(c, c.dataset.emb, 11, c.dataset.style||undefined); c.dataset.done="1"; } }catch(e){ console.error(e); } busy = false; pump(); }, 0); };
-  const io = ("IntersectionObserver" in window) ? new IntersectionObserver(es=>es.forEach(e=>{ if (e.isIntersecting){ io.unobserve(e.target); q.push(e.target); pump(); } }), {rootMargin:"600px"}) : null;
-  document.querySelectorAll("canvas.paint").forEach(c=>{ if (io) io.observe(c); else q.push(c); }); pump();
-}
-function chips(el,items,get,set){
-  const box=document.getElementById(el);
-  items.forEach(([v,l])=>{const b=document.createElement("button");b.className="chip";b.type="button";b.id=`${el}-${v}`;b.textContent=l;
-    b.setAttribute("aria-pressed",get()===v);b.onclick=()=>{set(v);box.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));render();};box.appendChild(b);});
-}
-chips("f-region",REG.map(r=>[r,r]),()=>fr,v=>fr=v);
-chips("f-kind",KIND,()=>fk,v=>fk=v);
-document.getElementById("n-total").textContent=D.length;
-document.getElementById("n-seal").textContent=D.filter(x=>x.k==="seal").length;
-document.getElementById("sources").innerHTML = "Sources — "+Object.values(S).map(([t,u])=>`<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")+". Sātavāhana and Maurya entries rest on standard numismatic and art-historical description.";
-render();
-/* ---------- Later kingdoms · 1040–1858 ---------- */
-
-/* flag insets: 60×40 drawings of documented flags; conf = how well the flag itself is attested */
-const FLAGS={
-  mewar:{svg:`<path d="M2 2 L58 20 L2 38 Z" fill="#9b1b1f"/><circle cx="20" cy="20" r="7" fill="#e3b23c"/><g stroke="#e3b23c" stroke-width="1.4">${[...Array(12)].map((_,i)=>{const a=i*Math.PI/6;return `<line x1="${20+Math.cos(a)*8.5}" y1="${20+Math.sin(a)*8.5}" x2="${20+Math.cos(a)*11}" y2="${20+Math.sin(a)*11}"/>`}).join("")}</g><path d="M34 16 L40 20 L34 24 Z" fill="#e3b23c"/>`,cap:"Maharana's nishān: gold sun on crimson. Described for the princely era; no pre-1800 flag survives.",conf:"low"},
-  marwar:{svg:`${["#f08a24","#ffffff","#c8102e","#f2c200","#2e8b3a"].map((c,i)=>`<rect x="2" y="${2+i*7.2}" width="56" height="7.2" fill="${c}"/>`).join("")}<path d="M30 16 C26 12 20 13 18 16 C22 16 26 17 28 20 C30 17 34 16 42 16 C40 13 34 12 30 16 Z" fill="#fff" stroke="#333" stroke-width=".7"/>`,cap:"Pacharangā with the clan goddess's kite. Princely-era use; Jaipur flew a different five-colour flag.",conf:"medium"},
-  jaipur:{svg:`${["#c8102e","#f2c200","#ffffff","#2e8b3a","#1f4fa0"].map((c,i)=>`<rect x="2" y="${10+i*5.6}" width="56" height="5.6" fill="${c}"/>`).join("")}${["#c8102e","#f2c200","#ffffff","#2e8b3a","#1f4fa0"].map((c,i)=>`<rect x="2" y="${0+i*1.8}" width="16" height="1.8" fill="${c}"/>`).join("")}`,cap:"Panchrangā with the quarter-size 'sawai' flag above. A 1630 account describes it as triangular.",conf:"medium"},
-  maratha:{svg:`<path d="M2 2 H58 L42 20 L58 38 H2 Z" fill="#e8761b"/>`,cap:"Bhagwā jhenḍā: plain saffron, swallow-tailed. Described in narrative sources; no 17th–18th c. flag survives.",conf:"medium"},
-  sikh:{svg:`<path d="M2 2 L58 20 L2 38 Z" fill="#2b4a8c" stroke="#2e7a3a" stroke-width="2"/><circle cx="18" cy="20" r="6" fill="#e3b23c"/><g stroke="#e3b23c" stroke-width="1.2">${[...Array(10)].map((_,i)=>{const a=i*Math.PI/5;return `<line x1="${18+Math.cos(a)*7.5}" y1="${20+Math.sin(a)*7.5}" x2="${18+Math.cos(a)*10}" y2="${20+Math.sin(a)*10}"/>`}).join("")}</g>`,cap:"A captured Khalsa Army standard of the 1840s: triangular silk with a gilt sun. No single state flag is verified.",conf:"medium"},
-  mysore:{svg:`<rect x="2" y="2" width="56" height="18" fill="#c8102e"/><rect x="2" y="20" width="56" height="18" fill="#6b3a1e"/>`,cap:"Red over brown, princely era (shown here without the arms).",conf:"low"},
-  travancore:{svg:`<rect x="2" y="2" width="56" height="36" fill="#c8102e"/><path d="M30 9 C38 10 40 20 34 27 C31 30 27 31 25 28 C29 27 31 23 29 19 C27 15 24 15 22 17 C21 12 25 9 30 9 Z" fill="#f2efe6"/>`,cap:"Silver right-whorled conch on red. Princely-era state flag.",conf:"medium"},
-  ahom:{svg:`<rect x="2" y="2" width="56" height="36" fill="#fbfaf5" stroke="#999" stroke-dasharray="3 2"/><path d="M14 26 C18 14 30 12 38 16 C44 12 48 16 46 20 C42 18 40 22 44 26 C36 24 30 30 22 28 Z" fill="#b51f2a" opacity=".85"/>`,cap:"Khring fra: white war flag with a red ngi-ngao-kham, as Tai-Ahom tradition describes it.",conf:"low"},
-};
-/* legend-only coins and seals, set in type rather than painted */
-const TXT={
-  maratha:{font:"var(--deva)",size:15,lines:["प्रतिपच्चन्द्रलेखेव","वर्धिष्णुर्विश्ववन्दिता ।","शाहसूनोः शिवस्यैषा","मुद्रा भद्राय राजते ॥"],cap:"The rājamudrā legend, set in type; the seal's shape is not securely known"},
-  sikh:{font:"'Noto Nastaliq Urdu',serif",size:14,rtl:true,lines:["سکه زد بر هر دو عالم","تیغ نانک واهب است","فتح گوبند سنگه شاه شاهان","فضل سچا صاحب است"],leaf:true,cap:"The Nanakshahi couplet, set in type, with the leaf mark"},
-  ahom:{font:"'Noto Sans Bengali',sans-serif",size:17,oct:true,lines:["শ্ৰীশ্ৰীহৰি","হৰচৰণ","পৰায়ণস্য"],cap:"Obverse legend of an Ahom octagonal rupee, set in type"},
-  koch:{font:"'Noto Sans Bengali',sans-serif",size:16,lines:["শ্রীশ্রীশিব","চরণকমল","মধুকরস্য"],cap:"Reverse legend of the Narayani rupee, set in type"},
-};
-function txtMedal(k,label){ const t=TXT[k]; const c=120, n=t.lines.length, lh=t.size*1.9, y0=c-(n-1)*lh/2+t.size*.35;
-  const petals=[...Array(28)].map((_,i)=>{const a=i/28*Math.PI*2, ca=Math.cos(a), sa=Math.sin(a), px=-sa, py=ca; const b=[c+ca*92,c+sa*92], tp=[c+ca*110,c+sa*110], m=[c+ca*101,c+sa*101];
-    return `<path d="M${b[0]+px*5} ${b[1]+py*5} Q${m[0]+px*8} ${m[1]+py*8} ${tp[0]} ${tp[1]} Q${m[0]-px*8} ${m[1]-py*8} ${b[0]-px*5} ${b[1]-py*5} Z" fill="${i%2?'#d6a24c':'#a8402a'}" stroke="#3a1a0c" stroke-width=".8"/>`}).join("");
-  const pearls=[...Array(60)].map((_,i)=>{const a=i/60*Math.PI*2;return `<circle cx="${c+Math.cos(a)*114}" cy="${c+Math.sin(a)*114}" r="2.4" fill="#f1e4c3" stroke="#3a1a0c" stroke-width=".5"/>`}).join("");
-  const frame=t.oct? `<path d="${[...Array(8)].map((_,i)=>{const a=(i+.5)/8*Math.PI*2;return (i?'L':'M')+(c+Math.cos(a)*74)+' '+(c+Math.sin(a)*74)}).join('')}Z" fill="none" stroke="#e3c27a" stroke-width="2"/>` : `<circle cx="${c}" cy="${c}" r="76" fill="none" stroke="#e3c27a" stroke-width="1.6" stroke-dasharray="1 4" stroke-linecap="round"/>`;
-  const leaf=t.leaf? `<path d="M${c+44} ${c+44} c-6 -2 -9 -8 -7 -13 c5 1 9 6 7 13 z M${c+44} ${c+44} l4 4" fill="#e3c27a" stroke="#e3c27a" stroke-width="1"/>`:"";
-  return `<svg class="seal txt" viewBox="0 0 240 240" role="img" aria-label="${esc(label)}"><circle cx="${c}" cy="${c}" r="119" fill="#7a3b1c"/>${pearls}${petals}<circle cx="${c}" cy="${c}" r="90" fill="#34503d" stroke="#2e120a" stroke-width="2"/>${frame}${leaf}
-    ${t.lines.map((l,i)=>`<text x="${c}" y="${y0+i*lh}" text-anchor="middle" ${t.rtl?'direction="rtl"':''} style="font-family:${t.font};font-size:${t.size}px;fill:#f0d790">${l}</text>`).join("")}</svg>`; }
-
-const LATER=[
- {n:"Hoysala",img:"l01-hoysala",d:"c. 1026–1343 CE",r:"South",k:"monument",e:"Sala fighting the tiger",nat:"ಹೊಯ್ಸಳ",nc:"knda",
-  t:"The dynasty's emblem is the warrior Sala striking a tiger, carved as free-standing sculpture at Hoysala temples such as Belur. On their gold coins the device is a maned lion, with Kannada legends recording victories such as 'Śrī Talakāḍugoṇḍa'. No Hoysala flag is attested.",src:["hoySala","hoyCoin","jackson"]},
- {n:"Kākatīya",img:"l02-kakatiya",d:"c. 1163–1323 CE",r:"Deccan",k:"coin",e:"Varāha (boar)",nat:"వరాహ",nc:"telu",
-  t:"The boar is the device most often tied to the Kākatīyas: their enemies' coins add a varāha when recording victories over them, and a 'boar type' gold coin is reported. Jackson (1912) instead gives a couchant bull, so the attribution is not settled.",src:["kakGanapati","yadMahadeva","jackson"],warn:"Sources disagree: boar or bull"},
- {n:"Seuṇa (Yādava) of Devagiri",img:"l03-yadava",d:"c. 1187–1317 CE",r:"Deccan",k:"coin",e:"Lotus punch coin (padmaṭaṅka)",nat:"पद्मटंक",nc:"deva",
-  t:"Yādava gold padmaṭaṅkas are cupped coins struck with separate punches: a central lotus, two 'Śrī' marks, a conch, an elephant and the king's name. A golden Garuḍa crest is reported in older literature but could not be confirmed.",src:["yadMahadeva","yadNumista","jackson"]},
- {n:"Sena of Bengal",img:"l04-sena",d:"c. 1070–1230 CE",r:"East",k:"seal",e:"Ten-armed Śiva (Sadāśiva)",nat:"সদাশিব",nc:"beng",
-  t:"The cast seal at the head of Sena copper-plate grants shows a multi-armed Śiva seated on a lotus, as on the Barrackpur plate of Vijayasena in the British Museum. The Senas struck no known coins.",src:["senaBM"]},
- {n:"Gāhaḍavāla",img:"l05-gahadavala",d:"c. 1089–1197 CE",r:"North",k:"coin",e:"Seated four-armed Lakṣmī",nat:"लक्ष्मी",nc:"deva",
-  t:"Govindacandra's base-gold coins show a four-armed seated goddess, with 'Śrīmad Govindacandradeva' and a trident on the reverse, a type borrowed from the Kalachuris and later copied by Muhammad of Ghor. A Garuḍa seal is often asserted but was not verified.",src:["gahGovinda","gahMW"]},
- {n:"Chandela",img:"l06-chandela",d:"coinage 11th–12th c. CE",r:"North",k:"coin",e:"Hanumān (copper)",nat:"हनुमान",nc:"deva",
-  t:"Chandela kings struck gold and silver in the Kalachuri seated-goddess style; their copper coins show Hanumān striding with one arm raised, with a Nāgarī name such as 'Śrīman Madanavarmadeva'. No seal or flag is verified.",src:["chaMadana"]},
- {n:"Chaulukya (Solaṅkī) of Gujarat",img:"l07-chaulukya",d:"c. 940–1244 CE",r:"West",k:"coin",e:"Charging elephant",nat:"",nc:"",
-  t:"Tiny silver coins of about half a gram, attributed to Jayasiṃha Siddharāja, show an elephant charging right. The attribution rests on dealer catalogues, so treat this as a coin type rather than a dynastic emblem.",src:["solMW"],warn:"Attribution uncertain"},
- {n:"Cāhamāna (Chauhan) of Śākambharī",img:"l08-chauhan",d:"c. 7th c. – 1192 CE",r:"Northwest",k:"coin",e:"Bull and horseman",nat:"श्री पृथ्वीराजदेव",nc:"deva",
-  t:"Pṛthvīrāja III's billon jitals pair a recumbent bull with a lancer on horseback, the Śāhi type, naming 'Śrī Pṛthvīrājadeva'. His grandfather Ajayarāja II had struck a seated goddess instead.",src:["chauPrithvi","chauAjaya"]},
- {n:"Guhila–Sisodia of Mewar",img:"l09-mewar",d:"8th c. – 1949 CE",r:"Northwest",k:"flag",e:"The sun (Sūrya)",nat:"सूर्य",nc:"deva",flag:"mewar",
-  t:"The house claims solar descent, and a gold sun face is its long-standing device. The coat of arms with a Rajput and a Bhil as supporters and the motto 'Jo dṛḍh rākhe dharm ko' is a 19th-century creation of the British-era armorial tradition, not pre-colonial heraldry.",src:["mewFotw","mewArms"]},
- {n:"Rāṭhoṛ of Marwar (Jodhpur)",img:"l10-marwar",d:"1459 – 1949 CE",r:"Northwest",k:"flag",e:"Kite of the clan goddess",nat:"पचरंगा",nc:"deva",flag:"marwar",
-  t:"Jodhpur's five-coloured pacharangā carries a kite or falcon, the bird of the Rathore goddess Nāgṇecī. The coat of arms with the motto 'Raṇbaṅkā Rāṭhoṛ' belongs to the 19th-century armorial tradition.",src:["marFotw","marNag"]},
- {n:"Kachwāhā of Amber (Jaipur)",img:"l11-jaipur",d:"c. 12th c. – 1949 CE",r:"Northwest",k:"flag",e:"Panchrangā flag",nat:"पचरंगा",nc:"deva",flag:"jaipur",
-  t:"Jaipur's five-coloured flag is traditionally credited to Mān Singh I; a 1630 description calls it triangular. Jaipur's own mint mark is the jhāṛ, a sprig on its coins. The sun added to the flag in 1877 and the heraldic arms are British-era.",src:["jaiFotw","jaiJhar"]},
- {n:"Vijayanagara",img:"l12-vijayanagara",d:"1336–1646 CE",r:"South",k:"seal",e:"Boar facing a sword, sun and moon",nat:"ವರಾಹ",nc:"knda",
-  t:"The royal seal on Vijayanagara copper plates is reported as a boar facing an upright sword under the sun and moon; the state's gold coin was even called the varāha. The coins themselves carry deities, and Acyutadevarāya's are the first to show the two-headed gaṇḍabheruṇḍa.",src:["vijBlog","vijWiki"]},
- {n:"Ahom kingdom",img:"l13-ahom",d:"1228–1826 CE",r:"Northeast",k:"tradition",e:"Ngi-ngao-kham (winged lion-dragon)",nat:"",nc:"",flag:"ahom",warn:"Attested in monument carvings and tradition; no dated written account cited",
-  t:"The Ahom royal emblem is the ngi-ngao-kham, a winged lion-dragon from Tai-Ahom myth. Carvings identified as it mark the 18th-century royal buildings at Rangpur and Garhgaon (Rang Ghar, Talatal Ghar, Kareng Ghar), and Tai-Ahom tradition paints it in red on the white war flag, the khring fra, hoisted before battle. Coinage began under Jayadhvaja Siṃha in 1648: octagonal silver rupees naming the king and his deity, at first in Sanskrit, such as 'Śrī Śrī Harihara-caraṇa-parāyaṇasya', devoted to the feet of Hari and Hara. Gadādhar Siṃha and Pramatta Siṃha also struck coins in Tai-Ahom script, and Queen Phuleśvarī in Persian.",src:["ahomCoin","ahomLHI","ahomNgi"]},
- {n:"Tripura (Māṇikya)",img:"l14-tripura",d:"coinage 1464 CE onward",r:"Northeast",k:"coin",e:"Lion",nat:"",nc:"",
-  t:"Tripura's coinage begins with Ratna Māṇikya in 1464, and its standard device is a walking lion within a border, with a Sanskrit legend in Bengali script.",src:["triSpink","triMW"]},
- {n:"Maratha state",img:"l15-maratha",d:"1674–1818 CE",r:"West",k:"flag",e:"Bhagwā jhenḍā",nat:"भगवा झेंडा",nc:"deva",flag:"maratha",
-  t:"The Maratha standard was the plain saffron, swallow-tailed bhagwā jhenḍā, known from narrative sources rather than a surviving flag. Śivājī's seal carried a Sanskrit couplet, not the usual Persian: 'This seal of Śiva, son of Śāhajī, waxing like the first crescent of the moon and honoured by the world, shines for the good of all.' It is first found on a letter of 1646.",src:["marEmblem","histFlags"]},
- {n:"Sikh Empire",img:"l16-sikh",d:"1799–1849 CE",r:"Northwest",k:"flag",e:"Khalsa standard with gilt sun",nat:"ਨਿਸ਼ਾਨ",nc:"guru",flag:"sikh",
-  t:"Ranjit Singh's coins name no ruler; they carry a Persian couplet honouring Guru Nānak and Guru Gobind Singh, with a leaf mark. The widely circulated saffron 'Sikh Empire flag' is a modern reconstruction; the standards captured in the Anglo-Sikh wars are triangular silk with a gilt sun.",src:["sikhCoin","sikhFlag"]},
- {n:"Mysore (Woḍeyar)",img:"l17-mysore",d:"1399–1950 CE",r:"South",k:"coin",e:"Gaṇḍabheruṇḍa",nat:"ಗಂಡಭೇರುಂಡ",nc:"knda",flag:"mysore",
-  t:"The two-headed bird first appears on Vijayanagara coins of the 1530s; the Woḍeyars inherited it as their emblem. When they first used it is not securely dated, and its prominence in the state arms is 19th–20th century.",src:["ganda","mysFotw"]},
- {n:"Travancore",img:"l18-travancore",d:"1729–1949 CE",r:"South",k:"coin",e:"Right-whorled conch",nat:"വലംപിരി ശംഖ്",nc:"mlym",flag:"travancore",
-  t:"The right-whorled conch, sacred to the state deity Śrī Padmanābha, runs through Travancore's coinage, often garlanded under a crescent, and stood in silver on the red state flag.",src:["travMW","keralaEmb","jackson"]},
-];
-const LKIND=[["all","All"],["seal","Seal"],["coin","Coin"],["flag","Flag"],["monument","Monument"],["tradition","Tradition"]];
-const LREG=["All","North","Northwest","East","Northeast","West","Deccan","South"];
-let lr="All", lk="all";
-function flagInset(f){ const F=FLAGS[f]; return `<figure class="flag" title="${esc(F.cap)}"><svg viewBox="0 0 60 40" aria-hidden="true"><line x1="1" y1="0" x2="1" y2="40" stroke="#5a4632" stroke-width="2"/>${F.svg}</svg><figcaption><span class="conf ${F.conf}">flag · ${F.conf}</span></figcaption></figure>`; }
-function laterCard(x){
-  const links = x.src.map(k=>`<a href="${S[k][1]}" target="_blank" rel="noopener">${esc(S[k][0].split(" — ")[1]||S[k][0])}</a>`).join(" · ");
-  const art = x.img ? `<img class="epic-img" loading="lazy" src="later/${x.img}.webp?v=1" alt="${esc(x.e)}"><div class="idiom">Painted from the ${x.k==="tradition"?"traditional":x.k} description</div>`
-    : `<div class="pending"><div><b class="pe">${esc(x.e)}</b>Painting in progress</div></div>`;
-  return `<article class="card">${art}
-    <div class="head lhead"><div><h2>${esc(x.n)}</h2><span class="dates">${esc(x.d)}</span></div>${x.flag?flagInset(x.flag):""}</div>
-    <div style="display:grid;gap:8px"><div class="emblem"><strong>${esc(x.e)}</strong>${x.nat?`<span class="native ${x.nc}">${x.nat}</span>`:""}</div><p>${esc(x.t)}</p>${x.warn?`<p class="warn">${esc(x.warn)}</p>`:""}</div>
-    <div class="meta"><span class="pill ${x.k}">${x.k}</span><span>${x.r}</span>${links?`<span>·</span>${links}`:""}</div>
-  </article>`; }
-function renderLater(){ const list=LATER.filter(x=>(lr==="All"||x.r===lr)&&(lk==="all"||x.k===lk||(lk==="flag"&&x.flag)));
-  document.getElementById("later-grid").innerHTML = list.length? list.map(laterCard).join("") : `<div class="empty">No kingdoms match that region and evidence type.</div>`; }
-function chips2(el,items,get,set,cb){ const box=document.getElementById(el);
-  items.forEach(([v,l])=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=l;b.setAttribute("aria-pressed",get()===v);
-    b.onclick=()=>{set(v);box.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));cb();};box.appendChild(b);}); }
-chips2("l-region",LREG.map(r=>[r,r]),()=>lr,v=>lr=v,renderLater);
-chips2("l-kind",LKIND,()=>lk,v=>lk=v,renderLater);
-renderLater();
-
-/* tabs */
-(function(){
-  const tabs=[...document.querySelectorAll('.tab')];
-  document.getElementById('c-modern').textContent=D.length;
-  document.getElementById('c-itihasa').textContent=EPIC.length;
-  document.getElementById('c-later').textContent=LATER.length; document.getElementById('n-later').textContent=LATER.length; document.getElementById('n-flags').textContent=LATER.filter(x=>x.flag).length;
-  document.getElementById('n-epic').textContent=EPIC.length;
-  document.getElementById('n-epic-done').textContent=EPIC.filter(x=>x.img||x.paint).length;
-  const hd={ modern:[document.getElementById('hd-eyebrow').textContent, document.getElementById('hd-lede').innerHTML],
-    later:['Bharatiya historical record · 1040 – 1858 CE','The kingdoms that followed kept the old habit of a royal device, and added flags that European travellers and court painters recorded. Each card shows only what the evidence supports: a seal, a coin type, a monument or a documented flag. A flag that is known only from the princely era, or only from modern claims, says so.'],
-    itihasa:['War banners of the epics · Mahābhārata and Rāmāyaṇa','The Purāṇas list the royal lines of Magadha and the solar and lunar houses, but they record genealogies, not emblems. Those survive in the epics: a warrior was known at a distance by the device on his banner (dhvaja). Each card quotes the verse that describes it, from the critical edition of the Mahābhārata or the Rāmāyaṇa. The images are interpretive paintings made to follow the verse and nothing beyond it; cards marked “in progress” await theirs.'] };
-  function show(id, focus){
-    const k = id==='tab-itihasa' ? 'itihasa' : id==='tab-later' ? 'later' : 'modern';
-    document.getElementById('hd-eyebrow').textContent=hd[k][0]; document.getElementById('hd-lede').innerHTML=hd[k][1];
-    document.getElementById('stats-modern').hidden = k!=='modern'; document.getElementById('stats-itihasa').hidden = k!=='itihasa'; document.getElementById('stats-later').hidden = k!=='later';
-    tabs.forEach(t=>{const on=t.id===id; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
-      document.getElementById(t.getAttribute('aria-controls')).hidden=!on; if(on&&focus) t.focus();});
-    try{ history.replaceState(null,'', id==='tab-modern' ? '#early' : id==='tab-later' ? '#later' : location.pathname+location.search); }catch(e){}
-  }
-  tabs.forEach((t,i)=>{ t.onclick=()=>show(t.id);
-    t.onkeydown=e=>{ if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ e.preventDefault(); const n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length]; show(n.id,true);} }; });
-  const route=()=>show(location.hash==='#early' ? 'tab-modern' : location.hash==='#later' ? 'tab-later' : 'tab-itihasa');
-  route(); window.addEventListener('hashchange',route);
-})();
+/* boar trail */
+const T=[["jayadratha","Mahābhārata 7.80","Silver boar on Jayadratha's banner"],["chalukya","from 543 CE","Varāha on Chalukya grant seals"],
+  ["pratihara","9th century","Ādivarāha on Mihira Bhoja's coins"],["kakatiya","12th–14th c.","Boar type gold, attribution disputed"],["vijayanagara","1336–1646","Boar facing a sword"]];
+document.getElementById("trail").innerHTML = T.map(([id,when,cap])=>{ const c=BY[id]; return `<a class="step" href="register.html#${id}"><img src="${img(c)}" alt="${esc(c.e)}" loading="lazy"><span class="when">${when}</span><b>${esc(name(c))}</b><span>${cap}</span></a>`; }).join("");
+document.getElementById("foot").textContent = `${C.length} entries · ${Object.keys(MOTIFS).length} motifs · ${Object.keys(SRC).length} sources cited`;
 </script>
