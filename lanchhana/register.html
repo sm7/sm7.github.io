@@ -146,6 +146,9 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 @media (max-width:860px){.dlg{grid-template-columns:1fr}.dlg-art{border-right:0;border-bottom:1px solid var(--line)}.dlg-art .medal,.dlg-art .pending{max-width:320px;margin:0 auto}}
 /* timeline */
 .tl-note{font-size:13.5px;color:var(--muted);max-width:70ch;margin:16px 0 0}
+.tl-epic{margin-top:22px;border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:16px 18px}
+.tl-epic h3{font:700 18px/1.2 var(--display);margin:0 0 14px}
+.tl-epic h3 small{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--copper);margin-left:10px}
 .tl-scroll{overflow-x:auto;margin-top:16px;border:1px solid var(--line);background:var(--panel);border-radius:6px}
 .tl{position:relative}
 .tl-grid{position:absolute;top:0;bottom:0;border-left:1px solid var(--line);pointer-events:none}
@@ -270,8 +273,12 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   </div>
 
   <div role="tabpanel" id="panel-timeline" aria-labelledby="tab-timeline" hidden>
-    <p class="tl-note">Each bar runs from the start to the end of the dynasty's rule or, where the entry gives only a coinage period, of that period. Dates are approximate and follow each entry's date line. The Bhāratīya Itihāsa banners are not placed here: the epics give no dates. Select a bar to open its entry.</p>
+    <p class="tl-note">Each bar runs from the start to the end of the dynasty's rule or, where the entry gives only a coinage period, of that period. Dates are approximate and follow each entry's date line. The Bhāratīya Itihāsa banners have no agreed date, so they sit in their own strip above the axis rather than at a year. Select a bar or a medallion to open its entry.</p>
     <div class="tl-key"><span><i class="e"></i>Early dynasties</span><span><i class="l"></i>Later kingdoms</span><span>Fading bar: no end date given</span></div>
+    <section class="tl-epic" aria-labelledby="tl-epic-h">
+      <h3 id="tl-epic-h">Bhāratīya Itihāsa banners <small>undated</small></h3>
+      <div class="strip" id="tl-epic"></div>
+    </section>
     <div class="tl-scroll" id="tl-scroll"><div class="tl" id="tl"></div></div>
   </div>
 
@@ -317,8 +324,8 @@ const TABS = {
     lede:"The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Where no seal emblem survives, the dynasty's standard coin type is shown and labelled as a coin. Each emblem is painted as a medallion in the manner of early Indian mural painting and checked against the description it follows."},
   later:{label:"Later kingdoms",eyebrow:"Bhāratīya historical record · 1040 – 1858 CE",
     lede:"The kingdoms that followed kept the habit of a royal emblem and added flags that travellers and court painters recorded. Each card shows only what the evidence supports: a seal, a coin type, a monument, a documented flag or a named tradition. A flag known only from the princely era, or an emblem known only from later writing, is marked as such."},
-  timeline:{label:"Timeline",eyebrow:"Across the early and later registers · c. 322 BCE – 1950 CE",
-    lede:"The dynasties of the register laid along one axis of years, so overlap and succession are visible: which houses ruled at the same time, and which emblems were in use together. Bars show approximate spans taken from each entry."},
+  timeline:{label:"Timeline",eyebrow:"Across all registers · dynasties c. 322 BCE – 1950 CE",
+    lede:"The dynasties of the register laid along one axis of years, so overlap and succession are visible: which houses ruled at the same time, and which emblems were in use together. The epic banners, which have no agreed date, are shown beside the axis rather than on it."},
   motifs:{label:"Motif index",eyebrow:"Across all three registers",
     lede:"The same animals and signs recur across two thousand years. The boar on Jayadratha's banner returns on Chalukya seals, Pratīhāra coins and Vijayanagara gold; the bull of Śiva runs from Magadha to the Chauhans. This index groups every entry by the motifs it shows, so a symbol can be followed from epic verse to coin."}
 };
@@ -406,7 +413,7 @@ function stats(k){
   if (k==="itihasa") return s(L.length,"banners")+s(L.filter(c=>c.k==="epic").length,"critical edition");
   if (k==="early") return s(L.length,"dynasties")+s(L.filter(c=>c.k==="seal").length,"seal-attested");
   if (k==="later") return s(L.length,"kingdoms")+s(L.filter(c=>c.flag).length,"flags shown");
-  if (k==="timeline") return s(Object.keys(window.LR.SPAN).length,"dynasties placed")+s("2,270","years spanned");
+  if (k==="timeline") return s(Object.keys(window.LR.SPAN).length,"dynasties dated")+s(inTab("itihasa").length,"epic banners, undated");
   return s(Object.keys(MOTIFS).length,"motifs")+s(C.length,"entries");
 }
 let current="itihasa";
@@ -491,6 +498,8 @@ function goMotif(m){ show("motifs"); setHash("motif-"+m); const el=document.getE
   let grid=""; for(let y=-300;y<=1900;y+=100){ grid+=`<div class="tl-grid${y===0?" zero":""}" style="left:${x(y)}px"><span>${y<0?-y+" BCE":y===0?"1 CE":y+" CE"}</span></div>`; }
   el.innerHTML=grid+items.map(it=>{ const c=it.c; return `<button class="tl-bar ${c.tab}${it.open?" open":""}" type="button" data-id="${c.id}" style="left:${it.left}px;top:${30+it.lane*38}px;width:${it.w}px" title="${esc(nm(c)+" · "+c.d+" · "+c.e)}">${c.pending?"":`<img src="${c.img}?v=8" alt="" loading="lazy">`}<span style="position:relative">${esc(nm(c))}</span></button>`; }).join("");
 })();
+
+document.getElementById("tl-epic").innerHTML=inTab("itihasa").map(c=>`<button class="mini t-itihasa" type="button" data-id="${c.id}">${c.pending?`<div class="ph"></div>`:`<img src="${c.img}?v=8" alt="" loading="lazy">`}<b>${esc(c.who)}</b><span>${esc(c.n)}</span></button>`).join("");
 
 /* report an error: opens a pre-filled GitHub issue */
 const rp=document.getElementById("report"); let rpEntry=null;
