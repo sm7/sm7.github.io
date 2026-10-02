@@ -309,7 +309,8 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js"></script>
+<script src="data.js?v=9"></script>
+<script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
 const LEFT = window.LR.LEFTOUT||{}, LEFTTAB={kadamba:'early',saindhava:'early',chaulukya:'later',marwar:'later'};
@@ -405,7 +406,7 @@ renderAll();
 
 /* tabs and header */
 const tabs=[...document.querySelectorAll(".tab")];
-const counts={itihasa:inTab("itihasa").length, early:inTab("early").length, later:inTab("later").length, timeline:Object.keys(window.LR.SPAN).length, motifs:Object.keys(MOTIFS).length};
+const counts={itihasa:inTab("itihasa").length, early:inTab("early").length, later:inTab("later").length, timeline:Object.keys(window.LR.SPAN||{}).length, motifs:Object.keys(MOTIFS).length};
 tabs.forEach(t=>t.querySelector("small").textContent=counts[t.id.slice(4)]);
 document.getElementById("foot-count").textContent = `${C.length} entries · ${Object.keys(SRC).length} sources cited`;
 function stats(k){
@@ -413,7 +414,7 @@ function stats(k){
   if (k==="itihasa") return s(L.length,"banners")+s(L.filter(c=>c.k==="epic").length,"critical edition");
   if (k==="early") return s(L.length,"dynasties")+s(L.filter(c=>c.k==="seal").length,"seal-attested");
   if (k==="later") return s(L.length,"kingdoms")+s(L.filter(c=>c.flag).length,"flags shown");
-  if (k==="timeline") return s(Object.keys(window.LR.SPAN).length,"dynasties dated")+s(inTab("itihasa").length,"epic banners, undated");
+  if (k==="timeline") return s(Object.keys(window.LR.SPAN||{}).length,"dynasties dated")+s(inTab("itihasa").length,"epic banners, undated");
   return s(Object.keys(MOTIFS).length,"motifs")+s(C.length,"entries");
 }
 let current="itihasa";
@@ -494,6 +495,7 @@ function goMotif(m){ show("motifs"); setHash("motif-"+m); const el=document.getE
   items.forEach(it=>{ const left=x(it.s), w=Math.max(x(it.e)-left,32); it.left=left; it.w=w;
     const need=Math.max(left+w,left+40+nm(it.c).length*7.4)+12;
     let l=lanes.findIndex(end=>end<=left); if(l<0){l=lanes.length;lanes.push(0);} lanes[l]=need; it.lane=l; });
+  if(!items.length){ document.getElementById('tl').innerHTML='<p style="padding:24px;color:var(--muted)">The timeline data did not load. Reload the page with a hard refresh (Ctrl/Cmd+Shift+R).</p>'; return; }
   const H=34+lanes.length*38, el=document.getElementById("tl"); el.style.width=x(Y1)+"px"; el.style.height=H+"px";
   let grid=""; for(let y=-300;y<=1900;y+=100){ grid+=`<div class="tl-grid${y===0?" zero":""}" style="left:${x(y)}px"><span>${y<0?-y+" BCE":y===0?"1 CE":y+" CE"}</span></div>`; }
   el.innerHTML=grid+items.map(it=>{ const c=it.c; return `<button class="tl-bar ${c.tab}${it.open?" open":""}" type="button" data-id="${c.id}" style="left:${it.left}px;top:${30+it.lane*38}px;width:${it.w}px" title="${esc(nm(c)+" · "+c.d+" · "+c.e)}">${c.pending?"":`<img src="${c.img}?v=8" alt="" loading="lazy">`}<span style="position:relative">${esc(nm(c))}</span></button>`; }).join("");

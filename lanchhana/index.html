@@ -192,7 +192,8 @@ footer{padding-top:24px;font:12px/1.7 var(--mono);color:var(--muted);display:fle
   </footer>
 </div>
 
-<script src="data.js"></script>
+<script src="data.js?v=9"></script>
+<script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 /* old links to the single-page register (#early, #later, #<entry>) now live on register.html */
 (function(){ const h=location.hash.slice(1); if(h && h!=="method") location.replace("register.html#"+h); })();
@@ -228,7 +229,7 @@ document.getElementById("regs").innerHTML = R.map(([t,span,h,p,ids])=>`<a class=
 const T=[["jayadratha","Mahābhārata 7.80","Silver boar on Jayadratha's banner"],["chalukya","from 543 CE","Varāha on Chalukya grant seals"],
   ["pratihara","9th century","Ādivarāha on Mihira Bhoja's coins"],["kakatiya","12th–14th c.","Boar type gold, attribution disputed"],["vijayanagara","1336–1646","Boar facing a sword"]];
 document.getElementById("trail").innerHTML = T.map(([id,when,cap])=>{ const c=BY[id]; return `<a class="step" href="register.html#${id}"><img src="${img(c)}" alt="${esc(c.e)}" loading="lazy"><span class="when">${when}</span><b>${esc(name(c))}</b><span>${cap}</span></a>`; }).join("");
-const VIEWS=[["itihasa","Bhāratīya Itihāsa traditions",C.filter(c=>c.tab==="itihasa").length],["early","Early dynasties",C.filter(c=>c.tab==="early").length],["later","Later kingdoms",C.filter(c=>c.tab==="later").length],["timeline","Timeline",Object.keys(window.LR.SPAN).length],["motifs","Motif index",Object.keys(MOTIFS).length]];
+const VIEWS=[["itihasa","Bhāratīya Itihāsa traditions",C.filter(c=>c.tab==="itihasa").length],["early","Early dynasties",C.filter(c=>c.tab==="early").length],["later","Later kingdoms",C.filter(c=>c.tab==="later").length],["timeline","Timeline",Object.keys(window.LR.SPAN||{}).length],["motifs","Motif index",Object.keys(MOTIFS).length]];
 document.getElementById("views").innerHTML=VIEWS.map(([h,l,n])=>`<a href="register.html#${h}"><b>${n}</b>${l}</a>`).join("");
 document.getElementById("nav-n").textContent="("+C.length+")"; document.getElementById("cta-n").textContent=C.length;
 document.getElementById("foot").textContent = `${C.length} entries · ${Object.keys(MOTIFS).length} motifs · ${Object.keys(SRC).length} sources cited`;
