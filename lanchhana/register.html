@@ -149,6 +149,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 .tl-epic{margin-top:22px;border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:16px 18px}
 .tl-epic h3{font:700 18px/1.2 var(--display);margin:0 0 14px}
 .tl-epic h3 small{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--copper);margin-left:10px}
+.tl-hint{font:500 12px/1.4 var(--mono);color:var(--copper);margin:8px 0 0}
 .tl-scroll{overflow-x:auto;margin-top:16px;border:1px solid var(--line);background:var(--panel);border-radius:6px}
 .tl{position:relative}
 .tl-grid{position:absolute;top:0;bottom:0;border-left:1px solid var(--line);pointer-events:none}
@@ -158,7 +159,8 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 .tl-bar img{width:30px;height:30px;border-radius:50%;flex:none;box-shadow:0 2px 6px rgba(0,0,0,.28)}
 .tl-bar.early{background:color-mix(in srgb,var(--verdigris) 24%,transparent);border:1px solid color-mix(in srgb,var(--verdigris) 60%,transparent)}
 .tl-bar.later{background:color-mix(in srgb,var(--copper) 24%,transparent);border:1px solid color-mix(in srgb,var(--copper) 60%,transparent)}
-.tl-bar.open{-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent);mask-image:linear-gradient(90deg,#000 55%,transparent)}
+.tl-bar.open.early{background:linear-gradient(90deg,color-mix(in srgb,var(--verdigris) 24%,transparent) 50%,transparent);border-right-color:transparent}
+.tl-bar.open.later{background:linear-gradient(90deg,color-mix(in srgb,var(--copper) 24%,transparent) 50%,transparent);border-right-color:transparent}
 .tl-bar:hover{background:var(--wash)} .tl-bar:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
 .tl-key{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font:500 11px/1 var(--mono);color:var(--muted)}
 .tl-key i{display:inline-block;width:22px;height:10px;border-radius:5px;vertical-align:-1px;margin-right:6px}
@@ -273,13 +275,15 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   </div>
 
   <div role="tabpanel" id="panel-timeline" aria-labelledby="tab-timeline" hidden>
-    <p class="tl-note">Each bar runs from the start to the end of the dynasty's rule or, where the entry gives only a coinage period, of that period. Dates are approximate and follow each entry's date line. The Bhāratīya Itihāsa banners have no agreed date, so they sit in their own strip above the axis rather than at a year. Select a bar or a medallion to open its entry.</p>
+    <p class="tl-note">Each bar runs from the start to the end of the dynasty's rule or, where the entry gives only a coinage period, of that period. Dates are approximate and follow each entry's date line. The Bhāratīya Itihāsa banners have no agreed date, so they sit in their own strip below the axis rather than at a year. Select a bar or a medallion to open its entry.</p>
     <div class="tl-key"><span><i class="e"></i>Early dynasties</span><span><i class="l"></i>Later kingdoms</span><span>Fading bar: no end date given</span></div>
-    <section class="tl-epic" aria-labelledby="tl-epic-h">
+    <div class="tl-scroll" id="tl-scroll"><div class="tl" id="tl"></div></div>
+    <p class="tl-hint" id="tl-hint" hidden>Scroll sideways to see later dates →</p>
+    <section class="tl-epic" style="margin-top:28px" aria-labelledby="tl-epic-h">
       <h3 id="tl-epic-h">Bhāratīya Itihāsa banners <small>undated</small></h3>
       <div class="strip" id="tl-epic"></div>
     </section>
-    <div class="tl-scroll" id="tl-scroll"><div class="tl" id="tl"></div></div>
+
   </div>
 
   <div role="tabpanel" id="panel-motifs" aria-labelledby="tab-motifs" hidden>
@@ -425,6 +429,7 @@ function show(k, focus){
   document.getElementById("stats").innerHTML=stats(k);
   tabs.forEach(t=>{ const on=t.id==="tab-"+k; t.setAttribute("aria-selected",on); t.tabIndex=on?0:-1;
     document.getElementById(t.getAttribute("aria-controls")).hidden=!on; if(on&&focus) t.focus(); });
+  if(k==="timeline") renderTimeline();
 }
 tabs.forEach((t,i)=>{ t.onclick=()=>{ show(t.id.slice(4)); setHash(t.id.slice(4)); };
   t.onkeydown=e=>{ if(e.key==="ArrowRight"||e.key==="ArrowLeft"){ e.preventDefault(); const n=tabs[(i+(e.key==="ArrowRight"?1:tabs.length-1))%tabs.length]; show(n.id.slice(4),true); setHash(n.id.slice(4)); } }; });
@@ -487,19 +492,23 @@ document.addEventListener("keydown",e=>{ const t=e.target.closest&&e.target.clos
 document.getElementById("f-motifs").addEventListener("click",e=>{ const a=e.target.closest("a"); if(!a) return; e.preventDefault(); goMotif(a.getAttribute("href").slice(7)); });
 function goMotif(m){ show("motifs"); setHash("motif-"+m); const el=document.getElementById("motif-"+m); if(el) el.scrollIntoView({block:"start"}); }
 
-/* timeline */
-(function(){
-  const SPAN=window.LR.SPAN, Y0=-350, Y1=1980, K=1.15, x=y=>(y-Y0)*K, nm=c=>c.n.replace(/\s*\(.*?\)/,"");
+/* timeline: scaled to fit the container; scrolls sideways only on narrow screens */
+function renderTimeline(){
+  const wrap=document.getElementById("tl-scroll"); const avail=wrap.clientWidth; if(!avail) return;
+  const SPAN=window.LR.SPAN||{}, Y0=-350, Y1=2060, K=Math.max(0.42,(avail-8)/(Y1-Y0)), x=y=>(y-Y0)*K, nm=c=>c.n.replace(/\s*\(.*?\)/,"");
   const items=C.filter(c=>SPAN[c.id]).map(c=>{const [s,e]=SPAN[c.id]; return {c,s,e:e==null?s+130:e,open:e==null};}).sort((a,b)=>a.s-b.s||b.e-a.e);
+  const el=document.getElementById("tl");
+  if(!items.length){ el.innerHTML='<p style="padding:24px;color:var(--muted)">The timeline data did not load. Reload the page with a hard refresh (Ctrl/Cmd+Shift+R).</p>'; return; }
   const lanes=[];
   items.forEach(it=>{ const left=x(it.s), w=Math.max(x(it.e)-left,32); it.left=left; it.w=w;
-    const need=Math.max(left+w,left+40+nm(it.c).length*7.4)+12;
+    const need=Math.max(left+w,left+40+nm(it.c).length*7.2)+10;
     let l=lanes.findIndex(end=>end<=left); if(l<0){l=lanes.length;lanes.push(0);} lanes[l]=need; it.lane=l; });
-  if(!items.length){ document.getElementById('tl').innerHTML='<p style="padding:24px;color:var(--muted)">The timeline data did not load. Reload the page with a hard refresh (Ctrl/Cmd+Shift+R).</p>'; return; }
-  const H=34+lanes.length*38, el=document.getElementById("tl"); el.style.width=x(Y1)+"px"; el.style.height=H+"px";
-  let grid=""; for(let y=-300;y<=1900;y+=100){ grid+=`<div class="tl-grid${y===0?" zero":""}" style="left:${x(y)}px"><span>${y<0?-y+" BCE":y===0?"1 CE":y+" CE"}</span></div>`; }
-  el.innerHTML=grid+items.map(it=>{ const c=it.c; return `<button class="tl-bar ${c.tab}${it.open?" open":""}" type="button" data-id="${c.id}" style="left:${it.left}px;top:${30+it.lane*38}px;width:${it.w}px" title="${esc(nm(c)+" · "+c.d+" · "+c.e)}">${c.pending?"":`<img src="${c.img}?v=8" alt="" loading="lazy">`}<span style="position:relative">${esc(nm(c))}</span></button>`; }).join("");
-})();
+  const H=34+lanes.length*36, W=Math.max(Math.ceil(x(Y1)),Math.ceil(Math.max(...lanes))); el.style.width=W+"px"; el.style.height=H+"px";
+  let grid=""; for(let y=-300;y<=1900;y+=(K<0.6?200:100)){ grid+=`<div class="tl-grid${y===0?" zero":""}" style="left:${x(y)}px"><span>${y<0?-y+" BCE":y===0?"1 CE":y+" CE"}</span></div>`; }
+  el.innerHTML=grid+items.map(it=>{ const c=it.c; return `<button class="tl-bar ${c.tab}${it.open?" open":""}" type="button" data-id="${c.id}" style="left:${it.left}px;top:${30+it.lane*36}px;width:${it.w}px" title="${esc(nm(c)+" · "+c.d+" · "+c.e)}">${c.pending?"":`<img src="${c.img}?v=8" alt="" loading="lazy">`}<span style="position:relative">${esc(nm(c))}</span></button>`; }).join("");
+  document.getElementById("tl-hint").hidden = W<=avail+2;
+}
+let tlTimer; window.addEventListener("resize",()=>{ clearTimeout(tlTimer); tlTimer=setTimeout(()=>{ if(current==="timeline") renderTimeline(); },150); });
 
 document.getElementById("tl-epic").innerHTML=inTab("itihasa").map(c=>`<button class="mini t-itihasa" type="button" data-id="${c.id}">${c.pending?`<div class="ph"></div>`:`<img src="${c.img}?v=8" alt="" loading="lazy">`}<b>${esc(c.who)}</b><span>${esc(c.n)}</span></button>`).join("");
 
