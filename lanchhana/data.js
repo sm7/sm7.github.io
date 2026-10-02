@@ -614,7 +614,7 @@ window.LR={
 "k": "epic",
 "san": "ekavarṇena sarveṇa dhvajena kavacena ca / aśvaiś ca dhanuṣā caiva śuklaiḥ śuklo nyavartata",
 "ref": "Mahābhārata 7.22.49; also 7.22.11, 36, 54–56, 62",
-"t": "In the critical edition, Droṇa Parva 7.22 describes the Pāṇḍava host mostly by its horses, and names banners only by colour.{mbs7022}{mbsIndex} The five Kekaya brothers have red banners, the Prabhadraka Pāñcālas banners worked with gold, Śukla a banner as white as his armour, horses and bow, and Nīla one all blue.{mbs7022} Citra's banner is set with gems, Citrāyudha's is variegated, and the troops around Bhīma carry golden banners.{mbs7022} No device is named for any of them, so the painting shows plain banners in these colours.{mbs7022}",
+"t": "In the critical edition, Droṇa Parva 7.22 describes the Pāṇḍava host mostly by its horses, and names banners only by colour.{mbs7022}{mbsIndex} The five Kekaya brothers have red banners, the Prabhadraka Pāñcālas banners worked with gold, Śukla a banner as white as his armour, horses and bow, and Nīla one all blue.{mbs7022} Citra's banner is set with gems, Citrāyudha's is variegated, and the troops around Bhīma carry golden banners.{mbs7022} No emblem is named for any of them, so the painting shows plain banners in these colours.{mbs7022}",
 "tab": "itihasa",
 "img": "epic/pandava-colours.webp",
 "motifs": [
@@ -632,7 +632,7 @@ window.LR={
 "san": "",
 "ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
 "quote": "The standard of Yudhishthira of great energy, bearing the device of a golden moon with planets around it, looked very beautiful. Two large and beautiful kettle-drums, called Nanda and Upananda, were tied to it.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{mbs7022}{mbsIndex}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/yudhishthira.webp",
@@ -651,7 +651,7 @@ window.LR={
 "san": "",
 "ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
 "quote": "Bhimasena's standard, bearing the device of a gigantic lion in silver with its eyes made of lapis lazuli, looked exceedingly resplendent.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{mbs7022}{mbsIndex}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/bhima.webp",
@@ -670,7 +670,7 @@ window.LR={
 "san": "",
 "ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
 "quote": "A tall and fierce standard of Nakula, placed on his car bearing the device of a Sarabha with its back made of gold.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{mbs7022}{mbsIndex} The standard names only a śarabha with a golden back. The painting follows the epic's own description of the śarabha in the Śānti Parva: a beast that kills lions, with eight legs and eyes on the top of its head.{ganSarabha}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} The standard names only a śarabha with a golden back. The painting follows the epic's own description of the śarabha in the Śānti Parva: a beast that kills lions, with eight legs and eyes on the top of its head.{ganSarabha}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/nakula.webp",
@@ -689,7 +689,7 @@ window.LR={
 "san": "",
 "ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
 "quote": "A beautiful silver swan with bells and banner terrible to look at and enhancing the grief of the foe, was seen on Sahadeva's standard.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{mbs7022}{mbsIndex}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/sahadeva.webp",
@@ -708,7 +708,7 @@ window.LR={
 "san": "",
 "ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
 "quote": "On the car, O king, of the youthful Abhimanyu was an excellent standard that bore a golden peacock, which was bright as heated gold.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such device.{mbs7022}{mbsIndex} Ganguli renders the bird as a peacock; the vulgate Sanskrit has not been checked here.{gan7023}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} Ganguli renders the bird as a peacock; the vulgate Sanskrit has not been checked here.{gan7023}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/abhimanyu.webp",
@@ -728,7 +728,7 @@ window.LR={
 "nat": "सिंहशीर्ष",
 "nc": "deva",
 "img": "modern/m01-maurya.webp",
-"t": "The Maurya kings are represented here by the lion capital of Aśoka's pillar at Sarnath, not by a seal device.{asherSarnath} It has four lions seated back to back on a round abacus.{asherSarnath} The abacus carries a bull, a lion, an elephant and a galloping horse, each separated by a wheel.{asherSarnath} The painting shows three of the four lions, over a wheel and the horse.",
+"t": "The Maurya kings are represented here by the lion capital of Aśoka's pillar at Sarnath, not by a seal emblem.{asherSarnath} It has four lions seated back to back on a round abacus.{asherSarnath} The abacus carries a bull, a lion, an elephant and a galloping horse, each separated by a wheel.{asherSarnath} The painting shows three of the four lions, over a wheel and the horse.",
 "motifs": [
 "lion"
 ],
@@ -752,7 +752,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "modern/m02-satavahana.webp",
-"t": "The Sātavāhanas are represented by the 'Ujjain symbol', a cross with a circle at the end of each arm.{bmGautamiputra}{singhUjjain} Gautamīputra Sātakarṇi struck it on the reverse of silver coins of Nahapāna that he restruck.{bmGautamiputra} On their copper and potin coins it often pairs with an elephant.{rathAnimal} Other devices include an arched hill, a horse, a lion and a ship.{rathAnimal} The symbol was not theirs alone; other dynasties also used it.{singhUjjain}",
+"t": "The Sātavāhanas are represented by the 'Ujjain symbol', a cross with a circle at the end of each arm.{bmGautamiputra}{singhUjjain} Gautamīputra Sātakarṇi struck it on the reverse of silver coins of Nahapāna that he restruck.{bmGautamiputra} On their copper and potin coins it often pairs with an elephant.{rathAnimal} Other types include an arched hill, a horse, a lion and a ship.{rathAnimal} The symbol was not theirs alone; other dynasties also used it.{singhUjjain}",
 "motifs": [
 "ritual"
 ],
@@ -845,7 +845,7 @@ window.LR={
 "nat": "गज",
 "nc": "deva",
 "img": "modern/m07-kamarupa.webp",
-"t": "An elephant is the device on the seal of Bhāskaravarman's Nidhanpur copper plates.{dasMatanga} The same elephant occurs on the seals of the later kings of Kāmarūpa.{dasMatanga} A broken clay seal of Bhāskaravarman found at Nālandā carries his genealogy in Sanskrit.{dasNalanda}",
+"t": "An elephant is the emblem on the seal of Bhāskaravarman's Nidhanpur copper plates.{dasMatanga} The same elephant occurs on the seals of the later kings of Kāmarūpa.{dasMatanga} A broken clay seal of Bhāskaravarman found at Nālandā carries his genealogy in Sanskrit.{dasNalanda}",
 "motifs": [
 "elephant"
 ],
@@ -1021,7 +1021,7 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m15-pushyabhuti.webp",
-"t": "A bull is the device on Harṣa's copper seal from Sonpat, and it fits his Śaiva royal titles.{vatsSohnag} A seal of Harṣa giving his lineage was also found at Nālandā.{dasNalanda}",
+"t": "A bull is the emblem on Harṣa's copper seal from Sonpat, and it fits his Śaiva royal titles.{vatsSohnag} A seal of Harṣa giving his lineage was also found at Nālandā.{dasNalanda}",
 "motifs": [
 "bull"
 ],
@@ -1109,7 +1109,7 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m18-eastern-ganga.webp",
-"t": "The seal of an Eastern Gaṅga copper-plate grant of Anantavarman, son of Devendravarman, bears a seated bull in relief.{arie1935} A couchant bull, with a crescent and a lotus, is the usual device on the records of the related Gaṅgas of Śvetaka.{maitra2015}",
+"t": "The seal of an Eastern Gaṅga copper-plate grant of Anantavarman, son of Devendravarman, bears a seated bull in relief.{arie1935} A couchant bull, with a crescent and a lotus, is the usual emblem on the records of the related Gaṅgas of Śvetaka.{maitra2015}",
 "motifs": [
 "bull"
 ],
@@ -1376,7 +1376,7 @@ window.LR={
 "nat": "पद्मटंक",
 "nc": "deva",
 "img": "later/l03-yadava.webp",
-"t": "Yādava gold padmaṭaṅkas are struck with several separate punches on one face, the reverse left blank.{prabhune} The central punch is an eight-petalled lotus, with others for the king's name in Nāgarī, 'Śrī' and a conch.{prabhune} Jackson (1912) gives a golden Garuḍa as the dynasty's device.{jackson} He attributes a kneeling-Garuḍa gold coin to them, but marks it doubtful.{jackson}",
+"t": "Yādava gold padmaṭaṅkas are struck with several separate punches on one face, the reverse left blank.{prabhune} The central punch is an eight-petalled lotus, with others for the king's name in Nāgarī, 'Śrī' and a conch.{prabhune} Jackson (1912) gives a golden Garuḍa as the dynasty's emblem.{jackson} He attributes a kneeling-Garuḍa gold coin to them, but marks it doubtful.{jackson}",
 "motifs": [
 "ritual"
 ],
@@ -1493,7 +1493,7 @@ window.LR={
 "nat": "सूर्य",
 "nc": "deva",
 "img": "later/l09-mewar.webp",
-"t": "Tod records that the audience hall of the Udaipur palace was called the Sūrya Mahal, the hall of the sun, after a sun medallion in relief on its wall.{tod1829_bk4ch18} A scholarly account of the sun as the Mewar royal device or on its standard has not yet been checked.",
+"t": "Tod records that the audience hall of the Udaipur palace was called the Sūrya Mahal, the hall of the sun, after a sun medallion in relief on its wall.{tod1829_bk4ch18} A scholarly account of the sun as the Mewar royal emblem or on its standard has not yet been checked.",
 "motifs": [
 "sky"
 ],
@@ -1579,7 +1579,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "later/l14-tripura.webp",
-"t": "Ratna Māṇikya (1464–1489) struck the first Tripura silver coins in his own name.{dutta2019} A lion is the usual device on Tripura coins, and later Krishna-type coins show the flute-playing god standing above the Tripura lion.{triSarma}{dutta2019}",
+"t": "Ratna Māṇikya (1464–1489) struck the first Tripura silver coins in his own name.{dutta2019} A lion is the usual emblem on Tripura coins, and later Krishna-type coins show the flute-playing god standing above the Tripura lion.{triSarma}{dutta2019}",
 "motifs": [
 "lion"
 ],
@@ -1591,7 +1591,7 @@ window.LR={
 "credit": "Classical Numismatic Group · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
 },
-"warn": "The lion as the standard device rests on Sarma's catalogue index"
+"warn": "The lion as the standard emblem rests on Sarma's catalogue index"
 },
 {
 "id": "maratha",
@@ -1695,3 +1695,6 @@ window.LR={
 "marwar": "<b>Rāṭhoṛ of Marwar.</b> Tod names the clan goddess as winged, but no scholarly or period source describing the Jodhpur flag or a bird on it was found."
 }
 };
+
+/* approximate reign or period, years CE (negative = BCE); null end = open-ended. Taken from each entry's own date line. */
+window.LR.SPAN = {"maurya": [-322, -185], "satavahana": [-100, 300], "kushan": [30, 375], "kshatrapa": [35, 415], "gupta": [320, 550], "kamarupa": [350, 650], "western-ganga": [350, 1000], "vishnukundina": [420, 624], "pallava": [275, 897], "maitraka": [475, 776], "sharabhapuriya": [475, 590], "maukhari": [550, 606], "chalukya": [543, 1189], "pushyabhuti": [500, 647], "gauda": [600, 637], "karkota": [625, 855], "panduvamshi": [501, 800], "eastern-ganga": [450, 1078], "pratihara": [730, 1036], "pala": [750, 1161], "rashtrakuta": [753, 982], "kalachuri": [675, 1212], "shahi": [822, 1026], "chola": [848, 1279], "pandya": [590, 920], "chera": [50, 1124], "paramara": [801, 1305], "hoysala": [1026, 1343], "kakatiya": [1163, 1323], "yadava": [1187, 1317], "sena": [1070, 1230], "gahadavala": [1089, 1197], "chandela": [1001, 1200], "chauhan": [601, 1192], "mewar": [750, 1949], "jaipur": [1101, 1949], "vijayanagara": [1336, 1646], "ahom": [1228, 1826], "tripura": [1464, null], "maratha": [1674, 1818], "sikh": [1799, 1849], "mysore": [1399, 1950], "travancore": [1729, 1949]};
