@@ -25,8 +25,19 @@
 body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);margin:0}
 a{color:inherit}
 .wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:20px 72px}
-.top{display:flex;justify-content:space-between;gap:16px;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-bottom:20px;border-bottom:1px solid var(--line)}
-.top a{text-decoration:none} .top a:hover{color:var(--ink)}
+.top{position:sticky;top:0;z-index:5;background:var(--paper);padding-top:14px;margin-top:-14px;align-items:center;display:flex;gap:6px 22px;flex-wrap:wrap;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-bottom:20px;border-bottom:1px solid var(--line)}
+.top a{text-decoration:none;padding:7px 0;border-bottom:2px solid transparent} .top a:hover{color:var(--ink)}
+.top a[aria-current]{color:var(--ink);border-bottom-color:var(--copper)}
+.top .grow{margin-left:auto}
+.top a.reg-link{background:var(--ink);color:var(--paper);border:0;border-radius:999px;padding:9px 14px}
+.top a.reg-link:hover{background:var(--copper);color:var(--paper)}
+.browse{margin-top:-1px;padding:22px 0 26px;border-bottom:1px solid var(--line);display:grid;gap:14px}
+.browse p{margin:0;font:500 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--verdigris)}
+.browse .views{display:flex;flex-wrap:wrap;gap:10px}
+.browse .views a{display:flex;align-items:baseline;gap:10px;text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 16px;font:600 15px/1.2 var(--body)}
+.browse .views a b{font:700 22px/1 var(--display);color:var(--copper);font-variant-numeric:tabular-nums}
+.browse .views a:hover{background:var(--wash);border-color:var(--copper)}
+.tray-cap{font:500 12px/1.5 var(--mono);color:var(--muted);text-align:center;margin:14px 0 0}
 .eyebrow{font:500 12px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--verdigris);margin:0 0 14px}
 
 /* hero */
@@ -98,17 +109,22 @@ footer{padding-top:24px;font:12px/1.7 var(--mono);color:var(--muted);display:fle
 </style>
 
 <div class="wrap">
-  <nav class="top"><span>sm7.github.io/lanchhana</span><a href="register.html">Open the register →</a></nav>
+  <nav class="top" aria-label="Site"><a href="index.html" aria-current="page">About</a><a class="reg-link" href="register.html">The register <span id="nav-n"></span> →</a><a href="register.html#timeline">Timeline</a><a href="register.html#motifs">Motif index</a><span class="grow">sm7.github.io/lanchhana</span></nav>
 
   <div class="hero">
     <div>
       <p class="eyebrow">Royal emblems of India, with their evidence</p>
       <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
       <p class="thesis">Indian kingdoms marked their authority with an emblem: a boar on a seal ring, a tiger on a copper plate, a lion on a coin, an ape at the top of a war banner. This register collects those emblems and sets each one beside the evidence for it, saying plainly how strong that evidence is. Where the evidence allows, it also reconstructs how the emblem would have looked, as a painting made only from what the sources describe.</p>
-      <p class="gloss"><i>लाञ्छन</i> lāñchhana: a mark or sign; in inscriptions, the emblem a dynasty set on its seal. <i>ध्वज</i> dhvaja: the banner and the device that crowned it.</p>
-      <div class="cta"><a class="btn primary" href="register.html">Open the register</a><a class="btn" href="#method">How entries are made</a></div>
+      <p class="gloss"><i>लाञ्छन</i> lāñchhana: a mark or sign; in inscriptions, the emblem a dynasty set on its seal. <i>ध्वज</i> dhvaja: the banner and the emblem that crowned it.</p>
+      <div class="cta"><a class="btn primary" href="register.html">Browse all <span id="cta-n"></span> entries →</a><a class="btn" href="#method">How entries are made</a></div>
     </div>
-    <div class="tray" id="tray" aria-label="Seven emblems from the register"></div>
+    <div><div class="tray" id="tray" aria-label="Seven emblems from the register"></div><p class="tray-cap">Seven of the entries. Select one to open it in the register.</p></div>
+  </div>
+
+  <div class="browse" id="browse">
+    <p>The register is on the next page. Start anywhere:</p>
+    <div class="views" id="views"></div>
   </div>
 
   <section>
@@ -212,5 +228,8 @@ document.getElementById("regs").innerHTML = R.map(([t,span,h,p,ids])=>`<a class=
 const T=[["jayadratha","Mahābhārata 7.80","Silver boar on Jayadratha's banner"],["chalukya","from 543 CE","Varāha on Chalukya grant seals"],
   ["pratihara","9th century","Ādivarāha on Mihira Bhoja's coins"],["kakatiya","12th–14th c.","Boar type gold, attribution disputed"],["vijayanagara","1336–1646","Boar facing a sword"]];
 document.getElementById("trail").innerHTML = T.map(([id,when,cap])=>{ const c=BY[id]; return `<a class="step" href="register.html#${id}"><img src="${img(c)}" alt="${esc(c.e)}" loading="lazy"><span class="when">${when}</span><b>${esc(name(c))}</b><span>${cap}</span></a>`; }).join("");
+const VIEWS=[["itihasa","Bhāratīya Itihāsa traditions",C.filter(c=>c.tab==="itihasa").length],["early","Early dynasties",C.filter(c=>c.tab==="early").length],["later","Later kingdoms",C.filter(c=>c.tab==="later").length],["timeline","Timeline",Object.keys(window.LR.SPAN).length],["motifs","Motif index",Object.keys(MOTIFS).length]];
+document.getElementById("views").innerHTML=VIEWS.map(([h,l,n])=>`<a href="register.html#${h}"><b>${n}</b>${l}</a>`).join("");
+document.getElementById("nav-n").textContent="("+C.length+")"; document.getElementById("cta-n").textContent=C.length;
 document.getElementById("foot").textContent = `${C.length} entries · ${Object.keys(MOTIFS).length} motifs · ${Object.keys(SRC).length} sources cited`;
 </script>
