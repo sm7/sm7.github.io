@@ -1,101 +1,113 @@
 /* Lāñchhana Register data. Text uses {key} after a sentence to cite SRC[key]. */
 window.LR={
 "SRC": {
-"ahomCoin": [
-"Ahom coinage — Wikipedia",
-"https://en.wikipedia.org/wiki/Ahom_coinage"
+"aioSiyaka": [
+"H. V. Trivedi, CII VII.2 (1978) pp. 8–9 no. 3 (after D. B. Diskalkar, EI 19), as described in Asia Inscriptions Online, 'The second plate of Ahmedabad grant of Sīyaka' (2024) — Zenodo",
+"https://zenodo.org/records/11501713"
 ],
-"ahomLHI": [
-"Ahom coins — LiveHistoryIndia",
-"https://www.livehistoryindia.com/story/art-history/ahom-coins"
+"aiyerEI27": [
+"K. V. Subrahmanya Aiyer, 'Seals of Tiruppuvanam plates', Epigraphia Indica 27 (1947-48) (note citing W. Elliot, Coins of Southern India, p. 124) — whatisindia.com",
+"https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/subrahmanyaaiyar.html"
 ],
-"ahomNgi": [
-"The Tai-Ahom dragon Ngi Ngao Kham — IJRAR",
+"arie1935": [
+"Annual Report on South Indian Epigraphy for the year ending 31 March 1935, Part II, 'Eastern Gangas' (copper-plate of Anantavarman, son of Devendravarman) — whatisindia.com transcription",
+"https://www.whatisindia.com/inscriptions/annualreports/31stmarch1935/easterngangas.html"
+],
+"asherSarnath": [
+"Frederick M. Asher, 'Lion capital, Sarnath Museum', Asher Collection, American Institute of Indian Studies — VMIS",
+"https://vmis.in/ArchiveCategories/collection_gallery_parent?id=1616&siteid=6135&minrange=0&maxrange=0&count=24"
+],
+"balogh2014": [
+"Dániel Balogh, 'A New Piece of the Early Rāṣṭrakūṭa Puzzle from Jamkhed', South Asian Studies 30(2) (2014), pp. 173-180",
+"https://www.academia.edu/9004566/A_New_Piece_of_the_Early_R%C4%81%E1%B9%A3%E1%B9%ADrak%C5%AB%E1%B9%ADa_Puzzle_from_Jamkhed"
+],
+"bhattacharya1998": [
+"G. Bhattacharya, 'The new Pāla ruler, Gopāla (II), son of Śūrapāla (I)', in C. P. Sinha (ed.), Facets of Indian Culture: Gustav Roth Felicitation Volume (1998), pp. 177–181 — Academia.edu",
+"https://www.academia.edu/11894657"
+],
+"bhattacharyya1979": [
+"P. K. Bhattacharyya, 'Two interesting coins of Śaśāṅka', JRAS 111.2 (1979), pp. 153–155 — Cambridge Core",
+"https://www.cambridge.org/core/services/aop-cambridge-core/content/view/15EBA58BF4D30B641AD0E7C803FD09C2/S0035869X00135579a.pdf/two_interesting_coins_of_sasanka1.pdf"
+],
+"bhattasali": [
+"N. K. Bhattasali, Iconography of Buddhist and Brahmanical Sculptures in the Dacca Museum (1929), 'Iconography of Śaiva images — Introduction', c. p. 236 — Wisdom Library transcription",
+"https://www.wisdomlib.org/hinduism/book/iconography-of-buddhist-and-brahmanical-sculptures/d/doc1473820.html"
+],
+"bmGautamiputra": [
+"British Museum, silver coin of Gautamiputra Satakarni overstruck on Nahapana, reg. no. 1907,0102.12 — museum record via Google Arts & Culture",
+"https://artsandculture.google.com/asset/silver-coin-of-gautamiputra-satakarni/tQEoF2ik43FHRg?hl=en"
+],
+"bmSamudragupta": [
+"British Museum, gold coin of Samudragupta, reg. no. 1894,0506.151 — collection record",
+"https://www.britishmuseum.org/collection/object/C_1894-0506-151"
+],
+"bmSasanka": [
+"British Museum, gold coin of Śaśāṅka, reg. 1894,0506.159 (= Allan, BMC Gupta Dynasties and Śaśāṅka, 1914, no. 608, p. 147) — museum record",
+"https://www.britishmuseum.org/collection/object/C_1894-0506-159"
+],
+"bmSena": [
+"British Museum, 'Plaque' (Barrackpur copper-plate of Vijayasena), reg. no. 1957,1121.1 (bibl. N. G. Majumdar, Inscriptions of Bengal III, 1929, p. 63) — British Museum collection",
+"https://www.britishmuseum.org/collection/object/A_1957-1121-1"
+],
+"bmSenaGAC": [
+"British Museum, 'Copper plate with inscription' (Vijayasena), museum-supplied description — Google Arts & Culture",
+"https://artsandculture.google.com/asset/copper-plate-with-inscription/JgHSwKWoCTVy2w"
+],
+"borgohain2023": [
+"T. Borgohain & K. Bhuyan, 'A Study on the Tai-Ahom Dragon Ngi Ngao Kham', IJRAR 10(1) (2023), pp. 461–463 (low-impact journal)",
 "https://ijrar.org/papers/IJRAR23A2031.pdf"
 ],
-"asirgarh": [
-"Inscription of King Sarvavarman (Asirgarh seal) — World History Encyclopedia",
-"https://www.worldhistory.org/image/10511/inscription-of-king-sarvavarman/"
+"brown": [
+"C. J. Brown, The Coins of India (1922), keys to Plates V–VI — Project Gutenberg",
+"https://www.gutenberg.org/ebooks/75542"
 ],
-"bhaskara": [
-"Bhaskaravarman — Wikipedia",
-"https://en.wikipedia.org/wiki/Bhaskaravarman"
+"brownCoins": [
+"C. J. Brown, The Coins of India (1922), keys to Plates V–VI — Project Gutenberg",
+"https://www.gutenberg.org/ebooks/75542"
 ],
-"bhoja": [
-"Inscriptions of Bhoja — Wikipedia",
-"https://en.wikipedia.org/wiki/Inscriptions_of_Bhoja"
+"chennaiChola": [
+"Government Museum, Chennai, Numismatics Gallery, 'Chola coins' (gallery catalogue page) — museum record",
+"https://www.chennaimuseum.org/draft/gallery/04/01/coin5.htm"
 ],
-"chaMadana": [
-"Madanavarman — Wikipedia",
-"https://en.wikipedia.org/wiki/Madanavarman"
+"chennaiIntro": [
+"Government Museum, Chennai, Numismatics Gallery, introductory text on South Indian coins — museum record",
+"https://www.chennaimuseum.org/draft/gallery/04/01/coin1.htm"
 ],
-"chaNetzone": [
-"Coins of Chandella Dynasty — Indianetzone",
-"https://www.indianetzone.com/51/coins_chandella_dynasty.htm"
+"cii3rev_no48": [
+"CII III (rev. ed., 1981), No. 48 'Nālandā Clay Seal of Viṣṇugupta', pp. 364-365 — whatisindia.com",
+"https://whatisindia.com/inscriptions/earlyguptakings/theguptainscriptions162.html"
 ],
-"chalWiki": [
-"Chalukya dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Chalukya_dynasty"
+"cii3rev_toc": [
+"J.F. Fleet, rev. D.R. Bhandarkar, ed. B.Ch. Chhabra & G.S. Gai, Corpus Inscriptionum Indicarum III: Inscriptions of the Early Gupta Kings (rev. ed., 1981), contents: No. 45 'Nālandā Clay Seals of Kumāragupta III' p. 355; No. 46 'Bhitarī Copper-Silver Seal of Kumāragupta III' p. 358 — whatisindia.com",
+"https://whatisindia.com/inscriptions/earlyguptakings/contents2.html"
 ],
-"chalukyaMW": [
-"Varaha on Kalyani Chalukya coins — Mintage World",
-"https://www.mintageworld.com/media/detail/1929-varaha-on-coins-of-kalyani-chalukya/"
+"dandekarVadnagar": [
+"A. Dandekar, S. Moin, Sukumaran, Ambekar & Jain, 'The numismatic assemblage of Vadnagar: discoveries', Heritage: Journal of Multidisciplinary Studies in Archaeology 12 (2024), pp. 340-439",
+"https://www.heritageuniversityofkerala.com/JournalPDF/Volume12/7.pdf"
 ],
-"chauAjaya": [
-"Ajayaraja II — Wikipedia",
-"https://en.wikipedia.org/wiki/Ajayaraja_II"
+"dasMatanga": [
+"Chandrima Das, Mātaṅgalīlā and Hastyāyurveda: a study (doctoral thesis, 2021), section 'Depiction of elephants on the royal seals and inscription-slabs/plates' — Wisdom Library",
+"https://www.wisdomlib.org/hinduism/essay/matangalila-and-hastyayurveda-study/d/doc1187547.html"
 ],
-"chauSomesh": [
-"Someshvara (Chahamana dynasty) — Wikipedia",
-"https://en.wikipedia.org/wiki/Someshvara_(Chahamana_dynasty)"
+"dasNalanda": [
+"Chirantani Das, Settlement in Early Historic Ganga Plain (thesis), section on Nalanda (citing Hirananda Sastri) — Wisdom Library",
+"https://www.wisdomlib.org/history/essay/settlement-in-early-historic-ganga-plain/d/doc370480.html"
 ],
-"chauVirasat": [
-"Chauhans of Ajmer, Prithvi Raja III, billon jital — Virasat Auctions",
-"https://virasatauctions.com/auction/lot/88-chauhans-of-ajmer-prithvi-raja-iii-billon-jital-2945"
+"dharmaMayidavolu": [
+"DHARMA project (ERC), 'Mayidavōlu plates, time of Śiva-Skandavarman, year 10', edition record INSPallava00002, after Hultzsch, EI 6",
+"https://dharmalekha.info/texts/INSPallava00002"
 ],
-"chera": [
-"Chera dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Chera_dynasty"
+"dutta2019": [
+"Debajit Dutta, 'Contextualising Numismatic with Religion: Focus on Medieval Northeast India', Indian Historical Review 46(1) (2019), pp. 1-21 — author PDF on academia.edu (page refs below are PDF pages)",
+"https://www.academia.edu/108557005/Contextualising_Numismatic_with_Religion_Focus_on_Medieval_Northeast_India"
 ],
-"cholaFlag": [
-"Flag of Chola — Wikipedia",
-"https://en.wikipedia.org/wiki/Flag_of_Chola"
+"epiTelanganica2": [
+"Epigraphia Telanganica, vol. II (MCR HRD Institute of Telangana), pp. 13-14 (Eastern Chalukya Mangallu grant, seal)",
+"https://www.mcrhrdi.gov.in/images/epigraphia/Vol-II.pdf"
 ],
-"dantiSeal": [
-"Dantidurga Garuda seal, 742 CE — Wikimedia Commons",
-"https://commons.wikimedia.org/wiki/File:Rashtrakuta_Dantidurga_Garuda_Seal_742_AD.jpg"
-],
-"dc": [
-"ASI deciphers Maitraka & Western Ganga plates — Deccan Chronicle",
-"https://www.deccanchronicle.com/southern-states/andhra-pradesh/asi-starts-deciphering-newly-found-two-copper-plates-1870276"
-],
-"dubi": [
-"Dubi copperplate inscription — Wikipedia",
-"https://en.wikipedia.org/wiki/Dubi_copperplate_inscription"
-],
-"eganga": [
-"Eastern Ganga copper plate, bull seal — Indian Culture",
-"https://www.indianculture.gov.in/artefacts-museums/copper-plate-inscription-34"
-],
-"ehistFotw": [
-"India before British rule — Flags of the World",
-"https://www.crwflags.com/fotw/flags/in-ehist.html"
-],
-"ei27": [
-"Epigraphia Indica vol. 27 (seal symbolism)",
-"https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/vatsmadhosarup2.html"
-],
-"gahGovinda": [
-"Govindachandra — Wikipedia",
-"https://en.wikipedia.org/wiki/Govindachandra_(Gahadavala_dynasty)"
-],
-"gahIndica": [
-"The historical assessment of King Jayachandra — Indica Today",
-"https://www.indica.today/long-reads/gahadavala-king-jayachandra/"
-],
-"gahMW": [
-"Base gold masha of Gahadavala — Mintage World",
-"https://www.mintageworld.com/media/detail/16322-base-gold-four-and-a-half-masha-of-gahadavala/"
+"falkKushan": [
+"Harry Falk, 'Kushan religion and politics', Bulletin of the Asia Institute 29 (2015 [2019]) — Academia.edu",
+"https://www.academia.edu/41296411/Kushan_religion_and_politics"
 ],
 "gan": [
 "Mahābhārata, Drona Parva, Section CIV, tr. K. M. Ganguli — sacred-texts.com",
@@ -109,145 +121,45 @@ window.LR={
 "Mahābhārata, Śānti Parva, Section CXVII, tr. K. M. Ganguli — sacred-texts.com",
 "https://sacred-texts.com/hin/m12/m12a116.htm"
 ],
-"ganda": [
-"Gandabherunda — Wikipedia",
-"https://en.wikipedia.org/wiki/Gandabherunda"
+"hultzschMayidavolu": [
+"E. Hultzsch, 'Mayidavolu plates of Sivaskandavarman', Epigraphia Indica 6 (1900-01), pp. 84-89 (seal at p. 86) — Wikisource page scan",
+"https://en.wikisource.org/wiki/Page:Epigraphia_Indica_vol_6.djvu/114"
 ],
-"guptaGaruda": [
-"Garuda iconography on Gupta coins & seals — Monidipa",
-"https://monidipa.net/2020/01/16/garuda-the-vahana-of-vishnu/comment-page-1/"
-],
-"harshaSeal": [
-"Seal of Harshavardhana, Nalanda — Wikimedia Commons",
-"https://commons.wikimedia.org/wiki/File:Seal_of_Harshavardhana_found_in_Nalanda.jpg"
-],
-"harsola": [
-"Harsola copper plates — Wikipedia",
-"https://en.wikipedia.org/wiki/Harsola_copper_plates"
-],
-"histFlags": [
-"Historical Indian flags — Wikipedia",
-"https://en.wikipedia.org/wiki/Historical_Indian_flags"
-],
-"hoyCoin": [
-"Vinayaditya gold pagoda — Sarmaya",
-"https://sarmaya.in/objects/numismatics/vinayaditya-hoysala-dynasty-gold-pagoda/"
-],
-"hoySala": [
-"Sala (Hoysala emblem) — Wikipedia",
-"https://en.wikipedia.org/wiki/Sala_(Hoysala_Dynasty)"
-],
-"hoyWiki": [
-"Hoysala Empire — Wikipedia",
-"https://en.wikipedia.org/wiki/Hoysala_Empire"
-],
-"inhcrfVin": [
-"Base gold coin of Vinayaditya — INHCRF",
-"https://inhcrf.org/database_list/base-gold-coin-of-vinayaditya-67/"
+"icomosHoy": [
+"ICOMOS, Evaluation of 'Sacred Ensembles of the Hoysalas' (India), WHC 2023 evaluations, pp. 342–343 — UNESCO WHC",
+"https://whc.unesco.org/document/205738"
 ],
 "jackson": [
-"Jackson, Emblems and Coins of the South Indian Dynasties, BNJ 9 (1912)",
+"R. P. Jackson, 'The Dominions, Emblems, and Coins of the South Indian Dynasties', British Numismatic Journal 9 (1912), pp. 296-339 (Pandya and Chera sections; exact page of each quote not reliably readable) — BNS digital BNJ",
 "https://www.britnumsoc.org/publications/Digital%20BNJ/pdfs/1912_BNJ_9_13.pdf"
 ],
-"jagjivan": [
-"Jagjivanpur (Mahendrapala plate) — Wikipedia",
-"https://en.wikipedia.org/wiki/Jagjivanpur"
-],
-"jaiFotw": [
-"Jaipur — Flags of the World",
-"https://www.crwflags.com/fotw/flags/in-jaipu.html"
+"jaiGolden": [
+"Roper Lethbridge, The Golden Book of India (1893), Introduction, p. viii — Google Books",
+"https://books.google.com/books/about/The_Golden_Book_of_India.html?id=bHiBAAAAIAAJ"
 ],
 "jaiJhar": [
-"Coinage of Madho Singh II (jhar) — Mintage World",
-"https://www.mintageworld.com/media/detail/6673-coinage-of-madho-singh-ii/"
+"Premlata Pokharna, 'Coins found from Jaipur Region', in J.N. Asopa (ed.), Cultural Heritage of Jaipur (1982), p. 10 — Internet Archive",
+"https://ia601502.us.archive.org/11/items/in.ernet.dli.2015.119128/2015.119128.Cultural-Heritage-Of-Jaipur_text.pdf"
 ],
-"jaiPalace": [
-"City Palace, Jaipur — Wikipedia",
-"https://en.wikipedia.org/wiki/City_Palace,_Jaipur"
-],
-"jital": [
-"Jital — Wikipedia",
-"https://en.wikipedia.org/wiki/Jital"
-],
-"kadBanMW": [
-"Coins of the Kadambas of Banavasi — Mintage World",
-"https://www.mintageworld.com/blog/coins-kadambas-banavasi/"
-],
-"kadGoaMW": [
-"Kadambas of Goa — Mintage World",
-"https://www.mintageworld.com/blog/kadambas-of-goa/"
-],
-"kadWiki": [
-"Kadamba dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Kadamba_dynasty"
-],
-"kadamba": [
-"Kadamba dynasty — IAS Gyan",
-"https://www.iasgyan.in/daily-current-affairs/kadamba-dynasty"
-],
-"kakGanapati": [
-"Ganapati (Kakatiya) — Wikipedia",
-"https://en.wikipedia.org/wiki/Ganapati_(Kakatiya_dynasty)"
-],
-"kakHans": [
-"Gold coins and more of the golden era of Kakatiyas — The Hans India",
-"https://www.thehansindia.com/featured/sunday-hans/gold-coins-and-more-of-the-golden-era-of-kakatiyas-791938"
-],
-"kakWiki": [
-"Kakatiya dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Kakatiya_dynasty"
-],
-"kalaLakshmiMW": [
-"Ancient Goddess Lakshmi coins — Mintage World",
-"https://www.mintageworld.com/blog/ancient-goddess-lakshmi-coins/"
-],
-"kalaMW": [
-"Kalachuri dynasty coins — Mintage World",
-"https://www.mintageworld.com/blog/kalachuri-dynasty/"
-],
-"kalaTripuri": [
-"Kalachuris of Tripuri — Wikipedia",
-"https://en.wikipedia.org/wiki/Kalachuris_of_Tripuri"
-],
-"kar": [
-"Kārṣāpaṇa — Wikipedia",
-"https://en.wikipedia.org/wiki/Karshapana"
-],
-"karkota": [
-"Karkota dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Karkota_dynasty"
-],
-"keralaEmb": [
-"Emblem of Kerala — Wikipedia",
-"https://en.wikipedia.org/wiki/Emblem_of_Kerala"
-],
-"kg3": [
-"Kumaragupta III — Wikipedia",
-"https://en.wikipedia.org/wiki/Kumaragupta_III"
-],
-"kushanPdf": [
-"The Kushana coins — IGNTU e-content",
-"https://igntu.ac.in/eContent/MA-AIHC-04Sem-DrJitendraJain-%20Ancient%20Indian%20Coinage-Unit1-4.pdf"
+"jhanjh2020": [
+"D. K. Jhanjh, 'Revisiting a tenth-century copper plate inscription: a Rāṣṭrakūṭa record restruck by the Paramāras', Journal of the Asiatic Society 62.3 (2020) — Academia.edu",
+"https://www.academia.edu/96524969/Revisiting_a_Tenth_Century_Copper_Plate_Inscription_A_Rastrakuta_Record_Restruck_by_the_Paramaras"
 ],
 "lacmaSeal": [
-"Seal of the Chola King Rajendra I (1012–1044) — LACMA",
+"LACMA, 'Seal of the Chola King Rajendra I (reigned 1012–1044)' — museum record (object evidence only)",
 "https://collections.lacma.org/node/170495"
 ],
-"lionCap": [
-"Lion Capital of Ashoka — Wikipedia",
-"https://en.wikipedia.org/wiki/Lion_Capital_of_Ashoka"
+"maitra2015": [
+"S. N. Maitra, Kingship in Early Medieval India: A Comparative Study of the Cholas and the Eastern Gangas (PhD thesis, 2015), ch. on the Mahanadi delta 600–900 CE — Wisdom Library reader",
+"https://www.wisdomlib.org/history/essay/kingship-in-early-medieval-india/d/doc626464.html"
 ],
-"manSingh": [
-"Man Singh I — Wikipedia",
-"https://en.wikipedia.org/wiki/Man_Singh_I"
+"marDuff1": [
+"James Grant Duff, A History of the Mahrattas (1826), vol. I, p. 267 n., p. 368 n., pp. 370–371 — ibiblio transcription",
+"https://www.ibiblio.org/britishraj/Duff1/chapter08.html"
 ],
-"marFotw": [
-"Jodhpur (Marwar) — Flags of the World",
-"https://www.fotw.info/flags/in-marwa.html"
-],
-"marNag": [
-"Nagnechiya Mata — Wikipedia",
-"https://en.wikipedia.org/wiki/Nagnechiya_Mata"
+"marDuff3": [
+"James Grant Duff, A History of the Mahrattas (1826), vol. III, p. 440 — ibiblio transcription",
+"https://ibiblio.org/britishraj/Duff3/chapter18.html"
 ],
 "mbs7022": [
 "Mahābhārata 7.22 (Sanskrit, BORI CE via Tokunaga/Smith)",
@@ -257,69 +169,49 @@ window.LR={
 "The Mahābhārata in Sanskrit: source note (BORI critical edition, Tokunaga/Smith) — sacred-texts.com",
 "https://sacred-texts.com/hin/mbs/index.htm"
 ],
-"mewArms": [
-"Mewar coat of arms — Arvind Singh Mewar",
-"https://arvindsinghmewar.com/coatofarms.php"
+"nagaswamyKolli": [
+"R. Nagaswamy, 'Kollip-purai: An Inscribed Tamil Coin' (first announced in Dinamani, 15 Nov 1987) — Tamil Arts Academy",
+"https://tamilartsacademy.com/articles/article48.xml"
 ],
-"mewFotw": [
-"Udaipur (Mewar) — Flags of the World",
-"https://www.fotw.info/flags/in-mewar.html"
+"nagaswamyVelanjeri": [
+"R. Nagaswamy, 'Thiruttani and Velanjeri Copper Plates' (Tamil Nadu State Dept of Archaeology edition of the Velanjeri plates of Parantaka I; article text by the editor) — Tamil Arts Academy",
+"https://tamilartsacademy.com/articles/article28.xml"
 ],
-"mihira": [
-"Mihira Bhoja — Wikipedia",
-"https://en.wikipedia.org/wiki/Mihira_Bhoja"
+"nmDelhiSangam": [
+"National Museum, New Delhi, gallery label 'Coins of Sangam age' (photo: Gabe Hiemstra, CC BY-NC-ND) — wisdomlib gallery",
+"https://www.wisdomlib.org/gallery/new-delhi-museum-coins/9806"
 ],
-"mysCoinindia": [
-"Mysore, Wodeyars, late period — CoinIndia",
-"https://coinindia.com/galleries-wodeyar.html"
-],
-"mysFotw": [
-"Mysore — Flags of the World",
-"https://www.fotw.info/flags/in-mysor.html"
-],
-"nahapana": [
-"Nahapana — Wikipedia",
-"https://en.wikipedia.org/wiki/Nahapana"
-],
-"outlook": [
-"Maitraka bull, Western Ganga elephant seals — Outlook Traveller",
-"https://www.outlooktraveller.com/amp/story/whats-new/copper-plates-from-vijayanagara-empire-unveiled-in-bengaluru"
-],
-"pallavaCoin": [
-"Pallava coinage — Wikipedia",
-"https://en.wikipedia.org/wiki/Pallava_coinage"
-],
-"pallavaGM": [
-"Pallava copper plates — Govt. Museum Chennai",
-"https://govtmuseumchennai.org/museum-section/copper-plates/pallava"
-],
-"pandyaCoins": [
-"Pandyan coins — My collection of South Indian Coins",
-"https://southindiancoins.blogspot.com/2009/10/pandyan-coins.html"
-],
-"pandyaFlag": [
-"Flag of Pandya — Wikipedia",
-"https://en.wikipedia.org/wiki/Flag_of_Pandya"
+"palladino2017": [
+"M. Palladino, The Sun-Worshipping Śākadvīpīya Brāhmaṇas (PhD thesis, 2017), §5 'King Bhoja and the Sun cult' — Wisdom Library reader",
+"https://www.wisdomlib.org/history/essay/the-sun-worshipping-sakadvipiya-brahmanas/d/doc1500669.html"
 ],
 "parg": [
 "F. E. Pargiter, The Purana Text of the Dynasties of the Kali Age (1913) — Internet Archive",
 "https://archive.org/details/in.ernet.dli.2015.22906"
 ],
+"ponniahJain": [
+"P. V. Radhakrishnan Ponniah Velliah & G. Chaganraj Jain, 'A note on caparisoned elephant motif gold coins of the Western Gangas', Studies in South Indian Coins 31 (2024), pp. 69-84 — Academia.edu",
+"https://www.academia.edu/120396494/A_NOTE_ON_CAPARISONED_ELEPHANT_MOTIF_GOLD_COINS_OF_THE_WESTERN_GANGAS"
+],
+"prabhune": [
+"P. P. Prabhune, 'Gold coin of Yadava Amana, a Yadava ruler of Devagiri', Edu Care (2020), pp. 39–41 — Academia.edu",
+"https://www.academia.edu/47736831/Gold_coin_of_Yadava_Amana_A_Yadava_ruler_of_Devagiri"
+],
+"pradhan2011": [
+"Bikash Chandra Pradhan, Sripura (Archaeological Survey) (2011), ch. 'Copper Plate Inscriptions: Salient Features' — wisdomlib.org",
+"https://www.wisdomlib.org/history/essay/sripura-archaeological-survey/d/doc1149485.html"
+],
+"rajaguru1958": [
+"S. N. Rajaguru, Inscriptions of Orissa, vol. I (1958), historical note on the Śailodbhavas (Rohtasgadh seal-matrix) — Wisdom Library reader",
+"https://www.wisdomlib.org/history/book/inscriptions-of-orissa-rajaguru/d/doc1883103.html"
+],
 "ram": [
 "Rāmāyaṇa 2.96 (Sanskrit + gloss)",
 "https://www.valmikiramayan.net/utf8/ayodhya/sarga96/ayodhyaitrans96.htm"
 ],
-"rashtraMW": [
-"Garuda on Rashtrakuta coins & seals — Mintage World",
-"https://www.mintageworld.com/media/detail/5406-garuda-rashtrakuta-coins/"
-],
-"rashtraWiki": [
-"Rashtrakuta dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Rashtrakuta_dynasty"
-],
-"rmd": [
-"Ram Mandir Dharma Dhwaj — Wikipedia",
-"https://en.wikipedia.org/wiki/Ram_Mandir_Dharma_Dhwaj"
+"rathAnimal": [
+"Jayanti Rath, 'The animal motifs on Indian coins (ancient and mediaeval period)', Orissa Historical Research Journal XLVII.1, pp. 57-65 — Govt. of Odisha",
+"https://magazines.odisha.gov.in/Journal/jounalvol1/pdf/orhj-8.pdf"
 ],
 "s1216": [
 "Mahābhārata 1.216 (Sanskrit)",
@@ -341,149 +233,57 @@ window.LR={
 "Mahābhārata 7.80 (Sanskrit)",
 "https://www.sacred-texts.com/hin/mbs/mbs07080.htm"
 ],
-"sadashiva": [
-"Sadashiva — Wikipedia",
-"https://en.wikipedia.org/wiki/Sadashiva"
-],
-"saindhava": [
-"Saindhava — Wikipedia",
-"https://en.wikipedia.org/wiki/Saindhava"
-],
 "sampathMysore": [
 "Vikram Sampath, Splendours of Royal Mysore: The Untold Story of the Wodeyars (Rupa, 2008) — Internet Archive",
 "https://archive.org/details/splendoursofroya0000vikr"
 ],
-"sarabha": [
-"The Sarabhapuriyas — Puratattva",
-"https://puratattva.in/the-sarabhapuriyas/"
+"sarkar2020": [
+"Abhick Sarkar, 'Revisiting the Repoussé Coins of Chhattisgarh and Bengal', Journal of Bengal Art (2020) — academia.edu",
+"https://www.academia.edu/62637171/Revisiting_The_Repouss%C3%A9_Coins_of_Chhattisgarh_and_Bengal"
 ],
-"satWiki": [
-"Satavahana dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Satavahana_dynasty"
+"schlosserTandon": [
+"Andrea Schlosser & Pankaj Tandon, 'The Channapatna plates' [Western Ganga grant], Studien zur Indologie und Iranistik 26 (2009), pp. 219-247 — BU",
+"https://people.bu.edu/ptandon/Channapatna-Plates.pdf"
 ],
-"senaBM": [
-"Barrackpur plate of Vijayasena — British Museum",
-"https://www.britishmuseum.org/collection/object/A_1957-1121-1"
+"sikhHerrli": [
+"Hans Herrli, The Coins of the Sikhs, 2nd rev. ed. (2004), pp. 19, 22, 26–29 — Internet Archive",
+"https://ia800407.us.archive.org/4/items/TheCoinsOfTheSikhs/TheCoinsOfTheSikhs.pdf"
 ],
-"senaGAC": [
-"Copper plate with inscription (British Museum) — Google Arts & Culture",
-"https://artsandculture.google.com/asset/copper-plate-with-inscription/JgHSwKWoCTVy2w"
+"singhUjjain": [
+"Mitresh Singh, '\"Cross-and-Balls\" Ujjain symbol on ancient Indian coins', Journal of the Numismatic Society of Calcutta (July 2023), pp. 1-10 — Academia.edu",
+"https://www.academia.edu/105150273/_Cross_and_Balls_Ujjain_symbol_on_Ancient_Indian_Coins_Introduction"
 ],
-"senaWiki": [
-"Sena dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Sena_dynasty"
+"sircarEI32": [
+"D. C. Sircar, [Pallava inscription], Epigraphia Indica 32 (1957-58) — text at whatisindia.com",
+"https://whatisindia.com/inscriptions/epigraphica_indica/vol32_1957-1958/sircar68.html"
 ],
-"shahiMW": [
-"Bull and horseman coins — Mintage World",
-"https://www.mintageworld.com/media/detail/7475-bull-and-horseman-coins/"
+"srikantaSastri": [
+"S. Srikanta Sastri, 'Evolution of the Gandabherunda', Quarterly Journal of the Mythic Society (Bangalore) — page 1 of 6 readable at srikanta-sastri.org",
+"https://www.srikanta-sastri.org/evolutionofthegandabherunda"
 ],
-"shahiNum": [
-"Jital of Samanta Deva — Numista",
-"https://en.numista.com/catalogue/pieces19864.html"
+"tod1829_bk4ch18": [
+"James Tod, Annals and Antiquities of Rajasthan, vol. 1 (1829), Bk IV ch. 18, p. 551 — ibiblio britishraj",
+"https://www.ibiblio.org/britishraj/Tod1/bk04ch18.html"
 ],
-"sharva": [
-"Sharvavarman — Wikipedia",
-"https://en.wikipedia.org/wiki/Sharvavarman"
+"triSarma": [
+"Ramanimohan Sarma, Coinage of Tripura (Numismatic Society of India, 1980) — Google Books",
+"https://books.google.com/books/about/Coinage_of_Tripura.html?id=szsfAAAAMAAJ"
 ],
-"shashankaMW": [
-"Gold Dinar of Sasanka, King of Gauda — Mintage World",
-"https://www.mintageworld.com/media/detail/12519-gold-dinar-of-sasanka-king-of-gauda/"
+"vatsEI27": [
+"M. S. Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947–48) — whatisindia.com transcription",
+"https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/vatsmadhosarup2.html"
 ],
-"shashankaSeal": [
-"Seal of Shashanka from Rohtasgarh — Sriti O Chetona",
-"https://sritiochetona.org/seal-of-shashanka-from-rohtasgarh/"
+"vatsSohnag": [
+"Madho Sarup Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947-48) — text at whatisindia.com",
+"https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/vatsmadhosarup2.html"
 ],
-"shashankaWiki": [
-"Shashanka — Wikipedia",
-"https://en.wikipedia.org/wiki/Shashanka"
+"vijEI": [
+"F. Kielhorn, 'British Museum Plates of Sadasivaraya: Saka-Samvat 1478', Epigraphia Indica IV (1896–97), no. 1, p. 1 — Internet Archive",
+"https://archive.org/stream/epigraphia-indica/epigraphia-indica-vol-04_djvu.txt"
 ],
-"shivRajmudra": [
-"Rajmudra — Braintor Digital Library",
-"https://braintordigitallibrary.wordpress.com/2012/10/13/rajmudra/"
-],
-"shivWiki": [
-"Shivaji — Wikipedia",
-"https://en.wikipedia.org/wiki/Shivaji"
-],
-"sikhCoin": [
-"Sikh coinage — Wikipedia",
-"https://en.wikipedia.org/wiki/Sikh_coinage"
-],
-"sikhFlag": [
-"The Khalsa Army flag — SikhNet",
-"https://www.sikhnet.com/news/khalsa-army-flag-anglo-sikh-wars-digitisation"
-],
-"solMW": [
-"Siddharaja Jayasimha silver masha — Mintage World",
-"https://www.mintageworld.com/media/detail/16823-Chaulukya-Siddharaja-Jayasimha-Solanki/"
-],
-"sripura": [
-"Sripura copper plates: seals — Wisdom Library",
-"https://www.wisdomlib.org/history/essay/sripura-archaeological-survey/d/doc1149485.html"
-],
-"tamilCP": [
-"Tamil copper-plate inscriptions — Wikipedia",
-"https://en.wikipedia.org/wiki/Tamil_copper-plate_inscriptions"
-],
-"travFotw": [
-"Travancore — Flags of the World",
-"https://www.fotw.info/flags/in-trava.html"
-],
-"travMW": [
-"Conch on Travancore State — Mintage World",
-"https://www.mintageworld.com/media/detail/14120-conch-on-travancore-state/"
-],
-"triMW": [
-"Coinage of Tripura — Mintage World",
-"https://www.mintageworld.com/blog/coinage-of-tripura-kingdom/"
-],
-"triSpink": [
-"Ratna Manikya tanka — Spink",
-"https://www.spink.com/lot/16041000019"
-],
-"uttama": [
-"Uttama Chola coin (tiger, fish, bow) — Hobby of Kings",
-"http://thehobbyofkings.blogspot.com/2014/09/uttama-chola-silver-kahavanu-coin.html"
-],
-"vijBlog": [
-"Vijayanagara coins — South Indian Coins",
-"https://southindiancoins.blogspot.com/2009/10/vijayanagara-coins.html"
-],
-"vijWiki": [
-"Vijayanagara Empire — Wikipedia",
-"https://en.wikipedia.org/wiki/Vijayanagara_Empire"
-],
-"vimaTakto": [
-"Vima Takto — Wikipedia",
-"https://en.wikipedia.org/wiki/Vima_Takto"
-],
-"vishnuHK": [
-"Coins of the Vishnukundins — The Hobby of Kings",
-"http://thehobbyofkings.blogspot.com/2016/03/coins-of-vishnukundins-empire.html"
-],
-"vishnuMW": [
-"Vishnukundin coinage — Mintage World",
-"https://www.mintageworld.com/media/detail/11513-copper-alloy-unit-of-vishnukundin-dynasty/"
-],
-"wgWiki": [
-"Western Ganga dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Western_Ganga_dynasty"
-],
-"wikiMaitraka": [
-"Maitraka dynasty — Wikipedia",
-"https://en.wikipedia.org/wiki/Maitraka_dynasty"
-],
-"wkTandon": [
-"Reading Western Kshatrapa coins — P. Tandon (BU)",
-"https://people.bu.edu/ptandon/WK-Legends.pdf"
-],
-"yadMahadeva": [
-"Mahadeva of Devagiri — Wikipedia",
-"https://en.wikipedia.org/wiki/Mahadeva_of_Devagiri"
-],
-"yadNumista": [
-"Yadava dynasty coins — Numista",
-"https://en.numista.com/catalogue/yadava_dynasty-1.html"
+"vijayakumar1987": [
+"M. Vijayakumar, M.C. Ganorkar, V. Pandit Rao & P. Gayathri, 'A study of Vishnukundin coins', Bulletin of Materials Science 9(2) (1987), pp. 137-147 — Indian Academy of Sciences",
+"https://www.ias.ac.in/public/Volumes/boms/009/02/0137-0147.pdf"
 ]
 },
 "MOTIFS": {
@@ -518,7 +318,7 @@ window.LR={
 "img": "epic/01-ikshvaku.webp",
 "san": "eṣa vai sumahān śrīmān viṭapī samprakāśate | virājaty udgataskandhaḥ kovidāradhvajo rathe",
 "ref": "Rāmāyaṇa 2.96.18 (southern vulgate numbering)",
-"t": "Lakṣmaṇa sees an army approach and concludes that Bharata is coming against them.{ram} He points to its ensign: a very large, glorious, branching kovidāra tree with raised trunk, shining on the chariot.{ram} The verse names only the tree; the sun and Om on the flag raised over the Ayodhyā Ram Mandir in November 2025 are later additions.{rmd}",
+"t": "Lakṣmaṇa sees an army approach and concludes that Bharata is coming against them.{ram} He points to its ensign: a very large, glorious, branching kovidāra tree with raised trunk, shining on the chariot.{ram} The verse names only the tree.{ram}",
 "motifs": [
 "plant"
 ]
@@ -534,7 +334,7 @@ window.LR={
 "img": "epic/02a-magadha-coin.webp",
 "san": "",
 "ref": "",
-"t": "The Purāṇic king-lists of Magadha name these kings but give no emblems.{parg} Silver punch-marked coins of Ajātaśatru's successors, the Śiśunāgas and the Nandas carry five marks: a sun, a six-armed symbol, and three more drawn from some 450 symbols.{kar} The three shown here are illustrative.",
+"t": "The Purāṇic king-lists of Magadha name these kings but give no emblems.{parg} Their silver punch-marked coins carry several separately punched marks; the five shown here, with a sun and a six-armed sign, are illustrative.",
 "motifs": [
 "sky"
 ],
@@ -545,7 +345,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Magadha_kingdom_coin_Circa_350_BC_AR_Karshapana.jpg",
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
+},
+"review": "The description of the punch marks has not yet been checked against a scholarly catalogue."
 },
 {
 "id": "magadha",
@@ -927,7 +728,7 @@ window.LR={
 "nat": "सिंहशीर्ष",
 "nc": "deva",
 "img": "modern/m01-maurya.webp",
-"t": "No dynastic seal emblem of the Maurya kings is known, so they are represented here by Aśoka's lion capital from Sarnath. It has four lions seated back to back on a round abacus carved with four wheels alternating with an elephant, a bull, a horse and a lion, set above a bell-shaped lotus.{lionCap} The painting shows three of the four lions, over the abacus wheel and horse.",
+"t": "The Maurya kings are represented here by the lion capital of Aśoka's pillar at Sarnath, not by a seal device.{asherSarnath} It has four lions seated back to back on a round abacus.{asherSarnath} The abacus carries a bull, a lion, an elephant and a galloping horse, each separated by a wheel.{asherSarnath} The painting shows three of the four lions, over a wheel and the horse.",
 "motifs": [
 "lion"
 ],
@@ -951,7 +752,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "modern/m02-satavahana.webp",
-"t": "No single dynastic lāñchhana is known. A recurring device on their coins is the 'Ujjain symbol', a cross with a circle at the end of each arm.{satWiki} Other devices vary from issue to issue: elephant, lion, horse, chaitya (arched hill) and ship, and some silver issues carry the king's portrait.{satWiki}",
+"t": "The Sātavāhanas are represented by the 'Ujjain symbol', a cross with a circle at the end of each arm.{bmGautamiputra}{singhUjjain} Gautamīputra Sātakarṇi struck it on the reverse of silver coins of Nahapāna that he restruck.{bmGautamiputra} On their copper and potin coins it often pairs with an elephant.{rathAnimal} Other devices include an arched hill, a horse, a lion and a ship.{rathAnimal} The symbol was not theirs alone; other dynasties also used it.{singhUjjain}",
 "motifs": [
 "ritual"
 ],
@@ -975,7 +776,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "modern/m03-kushan.webp",
-"t": "A pronged clan mark (tamgha) set on a ring base. A three-pronged form already appears on the Soter Megas coins of Vima Takto, and versions of it continue on the coins of Vima Kadphises, Kanishka and their successors, usually in the field beside the king or the deity.{vimaTakto}{kushanPdf} The drawing gives its general form, not any single ruler's variant.",
+"t": "The Kushan dynastic emblem is a pronged clan mark (tamgha) set on a ring.{falkKushan} The Sōtēr Megas coins of Vima Takto already carry it, in three- and four-pronged forms.{falkKushan} Later Kushan kings kept versions of it on their coins.{falkKushan} The drawing gives its general form, not any single ruler's variant.",
 "motifs": [
 "ritual"
 ],
@@ -995,15 +796,17 @@ window.LR={
 "d": "c. 35–415 CE",
 "r": "West",
 "k": "coin",
-"e": "Arched hill with crescent",
+"e": "Three-arched hill with sun and crescent",
 "nat": "चैत्य",
 "nc": "deva",
 "img": "modern/m04-kshatrapa.webp",
-"t": "The standard reverse of their silver drachms from Chashtana's line onward: a three-arched hill (chaitya) topped by a crescent, a wavy line, thought to be a river, below, and a sun and a crescent moon above on either side.{wkTandon} The circular Brahmi legend names the ruler and his father with their titles.{wkTandon} The earlier Kshaharata ruler Nahapana used a thunderbolt and arrow instead.{nahapana}",
+"t": "The usual reverse of their silver coins is a three-arched hill (chaitya) over a wavy line, with a crescent on the left and a sun on the right.{dandekarVadnagar} The circular Brāhmī legend names the ruler and his father, with their titles.{dandekarVadnagar} The earlier Kṣaharāta ruler Nahapāna used an arrow and a thunderbolt instead.{bmGautamiputra}",
 "motifs": [
-"sky"
+"sky",
+"ritual"
 ],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: the coin reverse of the Western Kshatrapas in gold relief: a hill of three arches stacked like a pyramid (one arch on top of two), a small crescent on the top arch, a wavy river line beneath, a small rayed sun to the left and a small crescent moon to the right. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
+"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: the coin reverse of the Western Kshatrapas in gold relief: a hill of three arches stacked like a pyramid (one arch on top of two), a small crescent on the top arch, a wavy river line beneath, a small rayed sun to the left and a small crescent moon to the right. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"repaint": "the Western Kṣatrapa coin reverse: a hill of three arches stacked like a pyramid (one arch on top of two), with a wavy line beneath it, a small crescent moon to the LEFT of the hill and a small rayed sun to the RIGHT, in silver relief. No crescent on top of the hill."
 },
 {
 "id": "gupta",
@@ -1016,9 +819,10 @@ window.LR={
 "nat": "गरुड",
 "nc": "deva",
 "img": "modern/m05-gupta.webp",
-"t": "Garuda, Vishnu's bird mount, is the emblem of the Gupta seals.{ei27} On gold coins from Samudragupta onward he appears with outstretched wings as the finial of the Garuda standard (Garuḍadhvaja), and on some later issues he holds snakes.{guptaGaruda} The silver-copper seal of Kumaragupta III from Bhitari and his clay sealing from Nalanda record the later Gupta genealogy.{kg3}",
+"t": "Garuḍa, Viṣṇu's bird mount, is the emblem of the Gupta seals, marking the kings as Vaiṣṇavas.{vatsSohnag} On gold coins of Samudragupta, Garuḍa tops a standard with ribbons beside the enthroned goddess.{bmSamudragupta} The revised Corpus of Gupta inscriptions lists a copper-silver seal of Kumāragupta III from Bhitarī.{cii3rev_toc} On the Nālandā clay seal of Viṣṇugupta, Garuḍa is flanked by the sun and the crescent.{cii3rev_no48}",
 "motifs": [
-"garuda"
+"garuda",
+"sky"
 ],
 "prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Garuḍa, the divine eagle of Viṣṇu, standing facing front with both wings spread wide, crowned, a bird's hooked beak, holding a serpent — the Garuḍa of Gupta royal seals. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
 "ev": {
@@ -1027,32 +831,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Narasimhagupta_Baladitya_Circa_495-530_CE.jpg",
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
 },
-{
-"id": "kadamba",
-"tab": "early",
-"n": "Kadamba of Banavāsi",
-"d": "c. 345–540 CE",
-"r": "South",
-"k": "tradition",
-"e": "Lion",
-"nat": "सिंह",
-"nc": "deva",
-"img": "modern/m06-kadamba.webp",
-"t": "The lion is described as the royal emblem of the Kadambas, and Goa's Kadamba Transport Corporation has used it as its logo since 1980.{kadamba}{kadWiki} The coins attributed to the Banavasi Kadambas themselves carry a chakra, a conch and lotus-like devices rather than a lion.{kadBanMW} The lion appears on coins of the later Kadambas of Goa, whose gold issues show a lion with its head turned back.{kadGoaMW}",
-"motifs": [
-"lion"
-],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a lion standing in profile facing right, all four feet on the ground, its tail raised high and curled, mane flowing, mouth slightly open. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"warn": "Emblem known from later tradition; not on Banavāsi coins",
-"ev": {
-"img": "evidence/kadamba.webp",
-"caption": "Gold pagoda of the Kadambas of Goa, c. 1240–1310, with a standing lion",
-"file": "https://commons.wikimedia.org/wiki/File:Kadambas_of_Goa._Anonymous._Circa_1240-1310._AV_Pagoda_(16mm,_3.12_g,_4h)._%E2%80%98Conqueror_of_the_Malavas%E2%80%99_issue._Lion_standing_left;_standard_to_left_%C5%9Bri_malaha_ramari_in_Devanagari.jpg",
-"credit": "Classical Numismatic Group · CC BY-SA 3.0",
-"licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
+"repaint": "Garuḍa, the divine eagle of Viṣṇu, facing front with both wings spread wide and a bird's hooked beak, flanked by a small sun on one side and a crescent moon on the other, as on a Gupta royal seal. No serpent, no crown."
 },
 {
 "id": "kamarupa",
@@ -1061,11 +841,11 @@ window.LR={
 "d": "c. 350–650 CE",
 "r": "East",
 "k": "seal",
-"e": "Elephant, frontal",
+"e": "Elephant",
 "nat": "गज",
 "nc": "deva",
 "img": "modern/m07-kamarupa.webp",
-"t": "A countersunk elephant seen from the front fills the top of the Kamarupa grant seals, with the royal genealogy in Sanskrit below, as on the oval seal of Bhaskaravarman's Dubi plates.{dubi} The elephant is described as present on all the available seals attached to the copper-plate grants of the Kamarupa kings.{dubi}",
+"t": "An elephant is the device on the seal of Bhāskaravarman's Nidhanpur copper plates.{dasMatanga} The same elephant occurs on the seals of the later kings of Kāmarūpa.{dasMatanga} A broken clay seal of Bhāskaravarman found at Nālandā carries his genealogy in Sanskrit.{dasNalanda}",
 "motifs": [
 "elephant"
 ],
@@ -1089,7 +869,7 @@ window.LR={
 "nat": "मदगज",
 "nc": "deva",
 "img": "modern/m08-western-ganga.webp",
-"t": "An elephant is the emblem on the seals of Western Ganga copper-plate grants.{outlook} The grants are mostly in Sanskrit written in Kannada characters, with the terms of the grant sometimes in Kannada.{dc}{wgWiki} An elephant is also the commonest obverse device on their coins.{wgWiki}",
+"t": "The elephant was the insignia of the Western Gaṅgas, and it appears on the seals of their grants.{dasMatanga} Their grants are mainly in Sanskrit prose, written in an early form of the Kannada script.{schlosserTandon} Gold coins attributed to them show a caparisoned elephant on the obverse.{ponniahJain}",
 "motifs": [
 "elephant"
 ],
@@ -1106,7 +886,7 @@ window.LR={
 "nat": "सिंह",
 "nc": "deva",
 "img": "modern/m09-vishnukundina.webp",
-"t": "The lion was the dynastic emblem: on the coins it stands right with one forepaw raised, mouth open and tail twisted upward.{vishnuMW} The reverse typically shows a conch flanked by two upright symbols, read as tridents or lampstands.{vishnuMW}{vishnuHK} Their earlier coins show a humped bull instead.{vishnuMW}",
+"t": "Viṣṇukuṇḍin coins show a lion in a circle on the obverse, and on the reverse a conch (śaṅkha) flanked by lampstands inside a rayed circle.{vijayakumar1987} Their coinage followed the motifs of Pallava coins, which carry a bull or a lion.{rathAnimal}",
 "motifs": [
 "lion"
 ],
@@ -1130,7 +910,7 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m10-pallava.webp",
-"t": "A couchant bull facing proper right, with the king's name as legend, as on the seal of Śivaskandavarman's Mayidavolu plates.{pallavaGM} Bull and lion are also the principal devices on Pallava coins.{pallavaCoin}",
+"t": "The seal of Śivaskandavarman's Mayidavolu plates shows a humped bull lying down, facing proper right, with the king's name below.{hultzschMayidavolu}{dharmaMayidavolu} Pallava coins and the seals of their copper-plate charters both carry this bull crest.{sircarEI32} Their copper coins show a bull or a lion.{rathAnimal}",
 "motifs": [
 "bull"
 ],
@@ -1147,7 +927,7 @@ window.LR={
 "nat": "नन्दी",
 "nc": "deva",
 "img": "modern/m11-maitraka.webp",
-"t": "A seated bull above the legend 'Śrī Bhaṭakkaḥ', after the founder Bhaṭārka, appears on the seals of Maitraka grants.{dc} Their silver drachms carry a trident (triśūla) on the reverse.{wikiMaitraka}",
+"t": "Maitraka grants carry the dynasty's seal, usually described with a seated bull above the legend 'Śrī-Bhaṭakkaḥ'. That description has not yet been checked against a readable edition.",
 "motifs": [
 "bull"
 ],
@@ -1158,7 +938,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Valabhi_(Saurashtra)_drachms._Late_5th-8th_century_Capped_head_right_in_Ksatrapa_style_Trident;_Brahmi_legend_around.jpg",
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
+},
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
 },
 {
 "id": "sharabhapuriya",
@@ -1171,7 +952,7 @@ window.LR={
 "nat": "गजलक्ष्मी",
 "nc": "deva",
 "img": "modern/m12-sharabhapuriya.webp",
-"t": "Gajalakshmi, the goddess Lakshmi bathed by two elephants, fills the upper panel of the seal, with a two-line legend below.{sarabha} Their gold coins instead show Garuda with spread wings between a conch and a discus.{sarabha}",
+"t": "Śarabhapurīya seals show the goddess Lakṣmī standing on a lotus, bathed with water poured from vessels held up by an elephant on either side, with a two-line verse legend naming the king below.{pradhan2011} Their gold repoussé coins show a standing Garuḍa with spread wings, flanked by a crescent and a wheel on one side and the sun and a conch on the other.{sarkar2020}",
 "motifs": [
 "elephant",
 "goddess"
@@ -1183,7 +964,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Sarabhapuriyas._%E2%80%9CMahendraditya%E2%80%9D._After_AD_550._Garuda_bird_flanked_by_discus_and_conch;_Brahmi_legend_below.jpg",
 "credit": "Classical Numismatic Group · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
+},
+"repaint": "the goddess Lakṣmī STANDING on a lotus, frontal, while an elephant on either side holds up a water-vessel in its trunk and pours water over her, as on Śarabhapurīya royal seals."
 },
 {
 "id": "maukhari",
@@ -1196,7 +978,7 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m13-maukhari.webp",
-"t": "A bull with a royal umbrella and attendant figures heads the Asirgarh seal of Śarvavarman, which records the family's genealogy from Harivarman.{asirgarh}{sharva} On the Sohnag seal of Avantivarman the bull is garlanded, and the umbrella has been read as a claim to sole sovereignty.{ei27}",
+"t": "The Sohnag seal of Avantivarman shows a garlanded bull facing proper right.{vatsSohnag} Behind its hump rises a royal umbrella with two streamers, held by an attendant.{vatsSohnag} Vats reads the bull as dharma and the umbrella as a claim to sole sovereignty of the earth.{vatsSohnag} On the Asīrgaḍh and Nālandā seals, two male figures accompany the bull.{vatsSohnag} The Nālandā seal of Śarvavarman gives the full Maukhari genealogy down to his time.{dasNalanda}",
 "motifs": [
 "bull"
 ],
@@ -1220,11 +1002,13 @@ window.LR={
 "nat": "वराह",
 "nc": "deva",
 "img": "modern/m14-chalukya.webp",
-"t": "The boar, Vishnu's Varāha form, is the royal emblem of the Chalukyas.{chalWiki}{chalukyaMW} It appears on their grant seals and on rare Kalyani Chalukya gold coins showing a boar standing right, with sun and moon above.{chalukyaMW} The Vijayanagara empire later used the same emblem.{vijWiki}",
+"t": "The boar is the emblem of the Chālukyas.{rathAnimal} On the seal of the Eastern Chālukya Mangallu grant, a running boar is flanked by the sun and the moon and two chauris.{epiTelanganica2} Below it are a lotus, an elephant goad and the legend Śrī-Tribhuvanāṅkuśa.{epiTelanganica2}",
 "motifs": [
-"boar"
+"boar",
+"sky"
 ],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a wild boar (varāha) standing in profile facing right, bristling mane along its back, tusks showing, sturdy and heraldic. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
+"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a wild boar (varāha) standing in profile facing right, bristling mane along its back, tusks showing, sturdy and heraldic. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"repaint": "a wild boar (varāha) running in profile, bristles along the back and tusks showing, with a small sun and a crescent moon above it on either side and two fly-whisks (chauris), as on a Chalukya grant seal."
 },
 {
 "id": "pushyabhuti",
@@ -1237,7 +1021,7 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m15-pushyabhuti.webp",
-"t": "A bull appears on Harsha's copper seal from Sonepat, which records his genealogy; the emblem fits the Śaiva titles of the kings.{ei27} Clay seals of Harsha were also found at Nalanda.{bhaskara}{harshaSeal}",
+"t": "A bull is the device on Harṣa's copper seal from Sonpat, and it fits his Śaiva royal titles.{vatsSohnag} A seal of Harṣa giving his lineage was also found at Nālandā.{dasNalanda}",
 "motifs": [
 "bull"
 ],
@@ -1261,7 +1045,7 @@ window.LR={
 "nat": "नन्दी · शशाङ्क",
 "nc": "deva",
 "img": "modern/m16-gauda.webp",
-"t": "Shashanka's gold dinars show Shiva reclining on a recumbent bull, Nandi, with the moon beside him, and Lakshmi with the legend 'Śrī Śaśāṅka' on the reverse.{shashankaMW} His name means 'the moon', echoing Shiva's epithet Śaśāṅkaśekhara, 'he who wears the moon'.{shashankaWiki} A seal matrix from Rohtasgarh bears the legend 'Mahāsāmanta Śaśāṅkadeva', naming him a great feudatory.{shashankaSeal} The drawing shows the bull and the moon without Shiva.",
+"t": "Śaśāṅka's gold coins show Śiva, haloed, reclining on the bull Nandi, with the moon above on the left.{brownCoins}{bmSasanka} The reverse shows Lakṣmī seated on a lotus, sprinkled by two elephants, with the legend 'Śrī Śaśāṅka'.{brownCoins}{bmSasanka} The Śiva type reflects the king's Śaiva faith.{bhattacharyya1979} A seal-matrix from Rohtasgarh fort in Bihar names him 'Mahāsāmanta Śaśāṅkadeva', a great feudatory.{rajaguru1958} The drawing shows the bull and the moon without Śiva.",
 "motifs": [
 "bull"
 ],
@@ -1285,7 +1069,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "modern/m29-karkota.webp",
-"t": "Kārkoṭa coins keep the Kushan-style type of a standing king on one side and a goddess seated on a throne on the other, as on a base-gold dinar of Vinayāditya.{inhcrfVin} Their reverses always carry the name Kidāra, the Kidarite ruler whose coinage they continued, beside the king's own name, as in 'Śrī Durlabha' with 'jayati Kidāra'.{karkota}",
+"t": "Kashmir's early medieval kings kept the Kushan coin type: a standing king on one side and a seated goddess on the other.{brownCoins} The name Kidāra is written under the king's left arm, with the issuing king's own name beside the goddess, as on a base-gold coin of Yaśovarman.{brownCoins}",
 "motifs": [
 "goddess"
 ],
@@ -1308,7 +1092,7 @@ window.LR={
 "nat": "गरुड",
 "nc": "deva",
 "img": "modern/m17-panduvamshi.webp",
-"t": "Garuda sits facing front on the seals of Tīvaradeva, with a human head and a bird's body with outstretched wings, holding a hooded serpent in each hand.{sripura} A wheel and a conch, attributes of Vishnu, flank him, matching the king's title Paramavaiṣṇava, 'devout worshipper of Vishnu'.{sripura}",
+"t": "The seals of Tīvaradeva's copper plates show Garuḍa seated facing front, with a human head and a bird's body with outstretched wings.{pradhan2011} He holds a hooded serpent in each hand.{pradhan2011} A wheel and a conch, attributes of Viṣṇu, flank him, matching the king's title Paramavaiṣṇava.{pradhan2011}",
 "motifs": [
 "garuda"
 ],
@@ -1325,28 +1109,11 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m18-eastern-ganga.webp",
-"t": "A recumbent bull appears on the ring-seal of an Eastern Ganga copper-plate grant of Indravarman.{eganga}",
+"t": "The seal of an Eastern Gaṅga copper-plate grant of Anantavarman, son of Devendravarman, bears a seated bull in relief.{arie1935} A couchant bull, with a crescent and a lotus, is the usual device on the records of the related Gaṅgas of Śvetaka.{maitra2015}",
 "motifs": [
 "bull"
 ],
 "prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Nandi, a humped bull, lying down in profile facing left with legs folded, a bell at his neck. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
-},
-{
-"id": "saindhava",
-"tab": "early",
-"n": "Saindhava",
-"d": "c. 735–920 CE",
-"r": "West",
-"k": "seal",
-"e": "Fish (matsya)",
-"nat": "मत्स्य",
-"nc": "deva",
-"img": "modern/m19-saindhava.webp",
-"t": "The emblem of this Saurashtra house was a fish, the sign of Varuna; their capital was Bhūtāmbilikā, now Ghumli, in the Barda hills.{saindhava} Wikipedia ties the emblem to their naval supremacy: Agguka I repelled Arab naval attacks and was styled 'Master of the Sea'.{saindhava}",
-"motifs": [
-"fish"
-],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a single large fish (matsya) swimming to the right above stylised curling waves, scales and fins clearly drawn. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
 },
 {
 "id": "pratihara",
@@ -1359,7 +1126,7 @@ window.LR={
 "nat": "आदिवराह",
 "nc": "deva",
 "img": "modern/m20-pratihara.webp",
-"t": "Mihira Bhoja took the title Ādivarāha and put the boar avatar on his coins, which are found only in silver and copper.{mihira} The god holds a spoked wheel in his right hand and emblems such as the mace, lotus and conch in his left.{mihira} The goddess Bhagavatī on Pratīhāra seals is said to be the dynasty's tutelary deity; she is not drawn here.{ei27}",
+"t": "Mihira Bhoja took the title Ādivarāha, 'the primordial boar', the boar avatar of Viṣṇu, and put the boar on his coins.{palladino2017} The goddess Bhagavatī on Pratīhāra seals has been read as the dynasty's tutelary deity; she is not drawn here.{vatsEI27}",
 "motifs": [
 "boar",
 "gods"
@@ -1377,7 +1144,7 @@ window.LR={
 "nat": "धर्मचक्र",
 "nc": "deva",
 "img": "modern/m21-pala.webp",
-"t": "A Buddhist Wheel of Law with a deer on either side, set within a lotus above the legend 'Śrī Mahendrapāladeva', forms the seal attached to the Jagjivanpur copper plate of Mahendrapāla.{jagjivan} The plate is dated to his seventh regnal year, 854 CE, and is in the Malda Museum.{jagjivan}",
+"t": "The Pāla royal seal shows the Buddhist wheel of the law, the dharmacakra, flanked by two deer, the symbol of the Buddha's first sermon at Sārnāth.{bhattacharya1998} The king's name is inscribed below it.{bhattacharya1998} The seal on the Jagjivanpur copper plate of Mahendrapāla, found in Malda district, follows this pattern.{bhattacharya1998}",
 "motifs": [
 "ritual"
 ],
@@ -1401,7 +1168,7 @@ window.LR={
 "nat": "गरुड",
 "nc": "deva",
 "img": "modern/m22-rashtrakuta.webp",
-"t": "On Rāṣṭrakūṭa seals Garuda sits in a yogic posture, padmāsana with palms joined in añjali mudrā, his wings rising at the shoulders.{rashtraMW} Their coins show Garuda seated on a lotus with the legend 'Śrī Śubhatuṅga', a Rāṣṭrakūṭa royal title.{rashtraMW} Garuda was the dynasty's royal emblem, and a seal attributed to Dantidurga is dated 742 CE.{rashtraWiki}{dantiSeal}",
+"t": "Garuḍa is usually given as the Rāṣṭrakūṭa seal emblem, but no edition describing it could yet be read. The seal of the early Rāṣṭrakūṭa plates from Jamkhed carries only a short inscription, with no recognisable picture.{balogh2014}",
 "motifs": [
 "garuda"
 ],
@@ -1412,7 +1179,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Rashtrakuta_Dantidurga_Garuda_Seal_742_AD.jpg",
 "credit": "Unknown author · Public domain",
 "licurl": null
-}
+},
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
 },
 {
 "id": "kalachuri",
@@ -1425,7 +1193,7 @@ window.LR={
 "nat": "लक्ष्मी",
 "nc": "deva",
 "img": "modern/m23-kalachuri.webp",
-"t": "Gāṅgeyadeva's gold coins show a four-armed Lakshmi seated cross-legged, holding lotuses in her two upper hands.{kalaLakshmiMW} The reverse reads 'Śrīmad Gāṅgeyadeva' in Nagari, and the coins were struck in base gold.{kalaMW}{kalaTripuri} The kin branch at Ratnapura used a different device on its coins: a lion attacking an elephant (gaja-śārdūla).{kalaMW}",
+"t": "Gāṅgeyadeva of Ḍāhala struck small gold coins with a four-armed goddess seated facing on one side.{brownCoins} The other side carries only his name, 'Śrīmad Gāṅgeya-deva'.{brownCoins} The Candella king Hallakṣaṇavarman of Mahoba issued gold coins of the same type with his own name.{brownCoins}",
 "motifs": [
 "goddess"
 ],
@@ -1449,7 +1217,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "modern/m24-shahi.webp",
-"t": "Their silver jitals show a recumbent humped bull with a trident on its rump and the legend 'Śrī Sāmantadeva' on one side, and a horseman with a lance on the other.{shahiNum}{jital} The type was copied after them: Ghaznavids, Tomaras and Chauhans struck bull-and-horseman coins in the 11th–12th centuries, and the Delhi Sultanate carried it on.{jital}{shahiMW}",
+"t": "Śāhi silver coins show a horseman riding to the right on one side and a recumbent bull with the king's name on the other, as on the coins of Spalapatideva.{brownCoins} Later kings copied the type: billon coins of Pṛthvīrāja of Delhi and Ajmer pair his horseman with the bull and the name 'Śrī Sāmantadeva'.{brownCoins} Cāhaḍadeva of Narwar also struck the horseman and the bull in copper.{brownCoins}",
 "motifs": [
 "bull"
 ],
@@ -1469,11 +1237,11 @@ window.LR={
 "d": "848–1279 CE",
 "r": "South",
 "k": "seal",
-"e": "Seated tiger, twin fish & bow",
+"e": "Seated tiger, two fish and bow",
 "nat": "புலி",
 "nc": "taml",
 "img": "modern/m25-chola.webp",
-"t": "On the seals of Chola copper plates a seated tiger faces two fish, the Pandya emblem, with a bow below, a parasol and two fly-whisks above and a lamp on each side.{tamilCP} A Sanskrit legend runs round the rim, naming the document as the king's edict.{tamilCP}{lacmaSeal} Uttama Chola's silver coins repeat the core group: the tiger seated before two upright fish, with a bow behind and an umbrella above.{uttama} The fish and bow are read as claims of supremacy over the Pandyas and Cheras.{uttama}{cholaFlag}",
+"t": "On the seal of the Velañjeri plates of Parāntaka I, two fish and a seated tiger rest on a bow, flanked by two lampstands and topped by a parasol and two fly-whisks, with a Sanskrit legend.{nagaswamyVelanjeri} The Los Angeles County Museum of Art holds the seal of a copper-plate charter of Rājendra I (1012–1044), with an inscribed band round the rim.{lacmaSeal} Coins of Uttama Chola show the tiger seated under a canopy facing a pair of fish; the bow joins the group on the coins of Rājendra I.{chennaiChola}",
 "motifs": [
 "fish",
 "tiger",
@@ -1499,7 +1267,7 @@ window.LR={
 "nat": "கயல்",
 "nc": "taml",
 "img": "modern/m26-pandya.webp",
-"t": "One or two fish were the main device on Pandya coins of the 7th–10th-century revival; a gold coin pairs two fish with the legend 'Śrī Varaguṇa'.{pandyaCoins} Later, 13th-century issues show two upright fish with a sceptre between them.{pandyaCoins} The fish also appears in Pandya reliefs, but no description of an actual Pandya flag survives.{pandyaFlag} The Cholas later set a pair of upright fish before their seated tiger as a sign of conquest.{uttama}",
+"t": "The special cognizance of the Pāṇḍyas was the fish, in various combinations.{jackson} Between the 7th and 10th centuries their coins bear the fish, sometimes single and sometimes in a pair.{chennaiIntro} Some coins show two fishes with a sceptre or an inscription between them.{jackson} Later Pāṇḍya copper-plate seals have the fish in the centre, flanked by the tiger and the bow.{aiyerEI27}",
 "motifs": [
 "fish"
 ],
@@ -1523,7 +1291,7 @@ window.LR={
 "nat": "வில்",
 "nc": "taml",
 "img": "modern/m27-chera.webp",
-"t": "The bow, or bow and arrow, was the traditional dynastic emblem of the Chera family.{chera} It appears on early-historic Chera copper and silver coins of about the 1st–3rd centuries CE, struck with dies found at Karur.{chera} It is the third element of the Chola seal group, set below the tiger and the fish.{tamilCP}{uttama}",
+"t": "The cognizance of the Cheras was a bow.{jackson} Chera coins of the early historic period carry a bow and arrow on the reverse.{nmDelhiSangam} On the Kollippurai copper coin from Karur, the prominence of the bow is what identifies it as Chera.{nagaswamyKolli}",
 "motifs": [
 "weapon"
 ],
@@ -1536,11 +1304,11 @@ window.LR={
 "d": "c. 9th c. – 1305 CE",
 "r": "North",
 "k": "seal",
-"e": "Flying Garuḍa with cobra",
+"e": "Flying Garuḍa in human form, with cobra",
 "nat": "गरुड",
 "nc": "deva",
 "img": "modern/m28-paramara.webp",
-"t": "A Garuda with a bird's head and a man's body, shown flying, holds a cobra in one hand and raises the other to strike it.{bhoja}{harsola} It is engraved on the Harsola plates of Sīyaka II (949 CE) and on all of Bhoja's own inscriptions.{harsola}{bhoja}",
+"t": "Paramāra copper-plate grants carry a flying Garuḍa facing right, in human form with wings at his shoulders.{aioSiyaka}{jhanjh2020} He holds a hooded snake in his left hand and raises his right hand to strike it.{aioSiyaka} The figure is engraved at the corner of the plate rather than on a separate seal, as on a grant of Sīyaka II.{aioSiyaka} It is the same size on other Paramāra charters from Mālwā.{aioSiyaka}",
 "motifs": [
 "garuda"
 ],
@@ -1551,7 +1319,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Harsola_Grant_A_of_Paramara_king_Siyaka,_949.jpg",
 "credit": "Unknown author · Public domain",
 "licurl": null
-}
+},
+"repaint": "Garuḍa flying to the right in HUMAN form: a crowned human figure with a beak-like nose, wings springing from the shoulders, holding a hooded cobra in his left hand and raising his right hand to strike it, as engraved on Paramāra copper plates."
 },
 {
 "id": "hoysala",
@@ -1564,7 +1333,7 @@ window.LR={
 "nat": "ಹೊಯ್ಸಳ",
 "nc": "knda",
 "img": "later/l01-hoysala.webp",
-"t": "The dynasty's emblem shows the warrior Sala striking a tiger (sometimes described as a lion), carved prominently at Hoysala temples such as the Chennakeshava at Belur.{hoySala} Jackson (1912) likewise gives a tiger as the Hoysala cognizance.{jackson} Their gold coins show a maned lion, and Vishnuvardhana's carry Kannada victory legends such as 'Śrī Talakāḍugoṇḍa', victor at Talakad.{jackson}{hoyWiki} An earlier gold pagoda of Vinayāditya already shows a maned lion.{hoyCoin} No Hoysala flag is described in the sources cited.{jackson}",
+"t": "Sculptures of the legend of Sala killing a tiger flank the entrances of the Chennakeshava temple at Belur.{icomosHoy} ICOMOS treats this Sala group as the emblem of Hoysala temple art.{icomosHoy} Jackson (1912) likewise gives a tiger as the Hoysala cognizance.{jackson} Gold coins attributed to Vishnuvardhana show a maned lion and the Kannada legend 'Śrī Talakāḍugoṇḍa'.{jackson}",
 "motifs": [
 "tiger"
 ],
@@ -1584,16 +1353,17 @@ window.LR={
 "d": "c. 1163–1323 CE",
 "r": "Deccan",
 "k": "coin",
-"e": "Varāha (boar)",
+"e": "Couchant bull between candelabra",
 "nat": "వరాహ",
 "nc": "telu",
 "img": "later/l02-kakatiya.webp",
-"t": "The Kākatīyas are said to have first used Garuḍa as their insignia and to have taken up the varāha (boar) of the Chalukyas of Kalyāṇi as their vassals.{kakWiki} Their enemies' coins add a varāha when recording victories over them: the Pāṇḍya Jaṭāvarman Sundara paired it with the Pāṇḍya fish, and a coin of the Yādava Mahādeva shows it beside Yādava symbols.{kakGanapati}{yadMahadeva} The Padmākṣi temple hoard found in 1982 held 272 gold coins of a boar type with the legend 'Ahitagajakesari'.{kakHans} Jackson (1912) instead gives a couchant bull as their cognizance and coin device, so the attribution is not settled.{jackson}",
+"t": "Jackson (1912) gives the Kākatīya cognizance as a couchant bull between two candelabra, with an umbrella above.{jackson} He lists their coins with the same couchant bull, and copper pieces naming Pratāparudra in Nāgarī.{jackson} The dynasty began as a feudatory of the Chālukyas of Kalyāṇi, whose gold 'varāha' was named after its boar.{jackson} Later writers link the Kākatīyas with Garuḍa and the boar, but those claims were not checked here.{jackson}",
 "motifs": [
-"boar"
+"bull"
 ],
-"warn": "Sources disagree: boar, bull or (earlier) Garuḍa",
-"brief": "a wild boar (varāha) standing in profile facing right, with a small rayed sun above it. No flag, no flagstaff, no parasol, no tassels. No human figures."
+"warn": "Jackson (1912) gives a couchant bull; the boar and Garuḍa named in later writing have not yet been checked",
+"brief": "a wild boar (varāha) standing in profile facing right, with a small rayed sun above it. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"repaint": "a humped bull couchant (lying down, legs folded) in profile, between two standing lamp-stands (candelabra), with a small royal umbrella above it."
 },
 {
 "id": "yadava",
@@ -1606,9 +1376,8 @@ window.LR={
 "nat": "पद्मटंक",
 "nc": "deva",
 "img": "later/l03-yadava.webp",
-"t": "Yādava gold padmaṭaṅkas are struck with separate punches; Mahādeva's show a central lotus, two 'Śrī' marks, an elephant, a conch and his name in Nāgarī above a sword.{yadMahadeva} Padmaṭaṅkas of several Yādava kings weigh about 3.8–4.1 g.{yadNumista} Jackson (1912) records a golden Garuḍa as the dynasty's device and coins with a kneeling Garuḍa, but this is not borne out by the modern catalogue types.{jackson}{yadNumista}",
+"t": "Yādava gold padmaṭaṅkas are struck with several separate punches on one face, the reverse left blank.{prabhune} The central punch is an eight-petalled lotus, with others for the king's name in Nāgarī, 'Śrī' and a conch.{prabhune} Jackson (1912) gives a golden Garuḍa as the dynasty's device.{jackson} He attributes a kneeling-Garuḍa gold coin to them, but marks it doubtful.{jackson}",
 "motifs": [
-"elephant",
 "ritual"
 ],
 "brief": "the Yādava gold padmaṭaṅka device: a large eight-petalled lotus at the centre, with a small conch and a small elephant beside it, all in gold. No flag, no flagstaff, no parasol, no tassels. No human figures.",
@@ -1618,7 +1387,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Yadavas_of_Devagiri._Mahadeva._1261-1270.jpg",
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
+},
+"repaint": "the Yādava gold padmaṭaṅka device: a large eight-petalled lotus at the centre of a cup-shaped gold disc, surrounded by small separate punch-marks: a conch and the syllable 'Śrī'. No elephant."
 },
 {
 "id": "sena",
@@ -1631,7 +1401,7 @@ window.LR={
 "nat": "সদাশিব",
 "nc": "beng",
 "img": "later/l04-sena.webp",
-"t": "The royal seal of the Senas, attached to the top of their copper-plate grants, is a ten-armed figure of Śiva, as on the Barrackpur plate of Vijayasena in the British Museum.{senaGAC} The museum's catalogue describes it as a multi-armed deity seated on a lotus.{senaBM} The ten-armed form fits Sadāśiva, whose cult is thought to have been widespread in Bengal under the Senas.{sadashiva} No Sena coinage is known; precious-metal coin was scarce and cowries circulated widely.{senaWiki}",
+"t": "The Barrackpur copper-plate of Vijayasena, dated 1129, carries a seal attached to its top.{bmSena} The British Museum describes the seal figure as a multi-armed deity seated on a lotus, in high relief.{bmSena} Its fuller description calls this royal seal of the Sena dynasty a ten-armed figure of Śiva.{bmSenaGAC} Bhattasali (1929) states that all Sena copper-plate grants are sealed with the Sadāśiva seal.{bhattasali}",
 "motifs": [
 "gods"
 ],
@@ -1648,7 +1418,7 @@ window.LR={
 "nat": "लक्ष्मी",
 "nc": "deva",
 "img": "later/l05-gahadavala.webp",
-"t": "Govindacandra's coins, of impure gold mixed with much silver, show a four-armed seated goddess identified with Lakṣmī; the other side reads 'Śrīmad Govindacandradeva' in three lines, usually followed by a trident.{gahGovinda}{gahMW} The type had been used by the Kalachuris of Tripuri and was probably adopted after Govindacandra's victory over them; Muhammad of Ghor in turn issued it after defeating Jayacandra.{gahGovinda} A seal of Govindacandra is known from the Badera find, but the Garuḍa device often claimed for Gāhaḍavāla seals was not verified.{gahIndica}",
+"t": "The seated four-armed goddess on gold coins was struck by the Kalachuri Gāṅgeyadeva and by the Chandela Hallakṣaṇavarman.{brownCoins} Govindacandra's coins of this type have not yet been checked against a scholarly catalogue.",
 "motifs": [
 "goddess"
 ],
@@ -1659,7 +1429,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Coinage_of_the_Gahadavalas_of_Kanauj._Govindachandra_and_later._Circa_1114-1154_CE.jpg",
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
+},
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
 },
 {
 "id": "chandela",
@@ -1668,13 +1439,13 @@ window.LR={
 "d": "coinage 11th–12th c. CE",
 "r": "North",
 "k": "coin",
-"e": "Hanumān (copper)",
+"e": "Seated four-armed goddess",
 "nat": "हनुमान",
 "nc": "deva",
 "img": "later/l06-chandela.webp",
-"t": "Chandela coinage copied the weight, design and legend layout of Kalachuri coins, and was struck mainly between about 1060 and 1163.{chaNetzone} Madanavarman issued gold, silver and copper with the seated goddess, and copper coins with Hanumān, naming him 'Śrīman Madanavarmadeva'.{chaMadana} No Chandela seal or flag is described in the sources cited.{chaMadana}",
+"t": "Chandela gold drammas of Hallakṣaṇavarman of Mahobā show a four-armed goddess seated facing.{brown} The same seated-goddess design appears on the gold of the Kalachuri Gāṅgeyadeva of Ḍāhala.{brown}",
 "motifs": [
-"ape"
+"goddess"
 ],
 "brief": "Hanumān striding to the left, one arm raised high, his tail curling up over his back, as on Chandela copper coins. No flag, no flagstaff, no parasol, no tassels. No crown, no mace. No other figures.",
 "ev": {
@@ -1683,25 +1454,9 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Chandelas_of_Jejakabhukti._Madanavarman._Circa_1128-1165_CE.jpg",
 "credit": "CNG coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
 },
-{
-"id": "chaulukya",
-"tab": "later",
-"n": "Chaulukya (Solaṅkī) of Gujarat",
-"d": "c. 940–1244 CE",
-"r": "West",
-"k": "coin",
-"e": "Charging elephant",
-"nat": "",
-"nc": "",
-"img": "later/l07-chaulukya.webp",
-"t": "Tiny silver coins of about 0.45 g, attributed to Jayasiṃha Siddharāja (c. 1092–1142), show an elephant charging right, with a Nāgarī legend on the reverse.{solMW} The attribution rests on dealer catalogues, so treat this as a coin type rather than a dynastic emblem.{solMW}",
-"motifs": [
-"elephant"
-],
-"warn": "Attribution uncertain",
-"brief": "an elephant charging to the right with its trunk raised. No flag, no flagstaff, no parasol, no tassels. No human figures."
+"warn": "The Hanumān copper coins often cited have not yet been checked",
+"repaint": "a four-armed goddess seated frontally, cross-legged, as on Chandela gold drammas, rendered in gold."
 },
 {
 "id": "chauhan",
@@ -1714,7 +1469,7 @@ window.LR={
 "nat": "श्री पृथ्वीराजदेव",
 "nc": "deva",
 "img": "later/l08-chauhan.webp",
-"t": "Pṛthvīrāja III's billon jitals show a horseman with 'Śrī Pṛthvīrājadeva' and a seated bull with 'Āsāvarī Śrī Sāmantadeva'.{chauVirasat} The bull-and-horseman design goes back to the Kabul Shāhis and reached the Cāhamānas through the Tomaras of Delhi, as on the coins of his father Someśvara.{jital}{chauSomesh} His great-grandfather Ajayarāja II had instead struck silver with a seated goddess and 'Śrī Ajayadeva'.{chauAjaya}",
+"t": "Pṛthvīrāja's billon coins show a horseman riding right with 'Śrī Pṛthvīrājadeva'.{brown} The other side shows a recumbent bull with 'Āsāvarī Śrī Sāmantadeva'.{brown} The same horseman-and-bull design was struck earlier by the Shāhis of Ohind, as on Spalapatideva's silver.{brown} Brown lists the type under 'Dehlī and Ajmer'.{brown}",
 "motifs": [
 "bull"
 ],
@@ -1733,44 +1488,17 @@ window.LR={
 "n": "Guhila–Sisodia of Mewar",
 "d": "8th c. – 1949 CE",
 "r": "Northwest",
-"k": "flag",
+"k": "tradition",
 "e": "The sun (Sūrya)",
 "nat": "सूर्य",
 "nc": "deva",
 "img": "later/l09-mewar.webp",
-"t": "The Mahārāṇās claim solar (Sūryavaṃśī) descent, and their nishān carries a gold sun with a human face, with a silver katār, on crimson or saffron.{mewFotw} The coat of arms, with a Rajput and a Bhil as supporters and the motto 'Jo dṛḍh rākhe dharm ko, tihi rākhe kartār', was made under Mahārāṇā Śambhu Singh (1861–1874), so it belongs to the British-era armorial tradition, not pre-colonial heraldry.{mewArms} Flags of the World notes that the nishān kept its simple form until the late 19th century.{mewFotw}",
+"t": "Tod records that the audience hall of the Udaipur palace was called the Sūrya Mahal, the hall of the sun, after a sun medallion in relief on its wall.{tod1829_bk4ch18} A scholarly account of the sun as the Mewar royal device or on its standard has not yet been checked.",
 "motifs": [
 "sky"
 ],
-"flag": {
-"svg": "<path d=\"M2 2 L58 20 L2 38 Z\" fill=\"#9b1b1f\"/><circle cx=\"20\" cy=\"20\" r=\"7\" fill=\"#e3b23c\"/><g stroke=\"#e3b23c\" stroke-width=\"1.4\"><line x1=\"28.5\" y1=\"20\" x2=\"31\" y2=\"20\"/><line x1=\"27.36121593216773\" y1=\"24.25\" x2=\"29.526279441628827\" y2=\"25.5\"/><line x1=\"24.25\" y1=\"27.361215932167728\" x2=\"25.5\" y2=\"29.526279441628823\"/><line x1=\"20\" y1=\"28.5\" x2=\"20\" y2=\"31\"/><line x1=\"15.750000000000002\" y1=\"27.36121593216773\" x2=\"14.500000000000004\" y2=\"29.526279441628827\"/><line x1=\"12.63878406783227\" y1=\"24.25\" x2=\"10.473720558371173\" y2=\"25.5\"/><line x1=\"11.5\" y1=\"20\" x2=\"9\" y2=\"20\"/><line x1=\"12.638784067832269\" y1=\"15.750000000000004\" x2=\"10.473720558371173\" y2=\"14.500000000000004\"/><line x1=\"15.749999999999996\" y1=\"12.638784067832272\" x2=\"14.499999999999995\" y2=\"10.473720558371177\"/><line x1=\"20\" y1=\"11.5\" x2=\"19.999999999999996\" y2=\"9\"/><line x1=\"24.25\" y1=\"12.638784067832272\" x2=\"25.5\" y2=\"10.473720558371175\"/><line x1=\"27.361215932167724\" y1=\"15.749999999999996\" x2=\"29.526279441628823\" y2=\"14.499999999999995\"/></g><path d=\"M34 16 L40 20 L34 24 Z\" fill=\"#e3b23c\"/>",
-"cap": "Mahārāṇā's nishān: gold sun on crimson (the original also bears a silver katār). Princely-era description; earliest surviving example not established.",
-"conf": "low"
-},
-"brief": "the Mewar royal sun: a golden rayed sun disc with a calm human face at its centre. No flag, no flagstaff, no parasol, no tassels. No human figures."
-},
-{
-"id": "marwar",
-"tab": "later",
-"n": "Rāṭhoṛ of Marwar (Jodhpur)",
-"d": "1459 – 1949 CE",
-"r": "Northwest",
-"k": "flag",
-"e": "Falcon of the clan goddess",
-"nat": "पचरंगा",
-"nc": "deva",
-"img": "later/l10-marwar.webp",
-"t": "Jodhpur's five-striped pacharangā carries a white falcon at its centre; Flags of the World gives the stripes as saffron, white, red, yellow and green, though accounts differ on the order.{marFotw} The falcon or eagle is the symbol of the Rāṭhoṛ clan goddess Nāgṇecī and also appears on the flags of Bikaner and Kishangarh.{marNag} The state coat of arms also puts the falcon on the shield, with two chained falcons as supporters.{marFotw}",
-"motifs": [
-"bird",
-"flag"
-],
-"flag": {
-"svg": "<rect x=\"2\" y=\"2\" width=\"56\" height=\"7.2\" fill=\"#f08a24\"/><rect x=\"2\" y=\"9.2\" width=\"56\" height=\"7.2\" fill=\"#ffffff\"/><rect x=\"2\" y=\"16.4\" width=\"56\" height=\"7.2\" fill=\"#c8102e\"/><rect x=\"2\" y=\"23.6\" width=\"56\" height=\"7.2\" fill=\"#f2c200\"/><rect x=\"2\" y=\"30.8\" width=\"56\" height=\"7.2\" fill=\"#2e8b3a\"/><path d=\"M30 16 C26 12 20 13 18 16 C22 16 26 17 28 20 C30 17 34 16 42 16 C40 13 34 12 30 16 Z\" fill=\"#fff\" stroke=\"#333\" stroke-width=\".7\"/>",
-"cap": "Pacharangā with the clan goddess's falcon. Princely-era use; Jaipur flew a different five-colour flag.",
-"conf": "medium"
-},
-"brief": "a kite (cheel), the bird of the Rathore clan goddess, with wings spread, perched upright, in white and brown. No flag, no flagstaff, no parasol, no tassels. No human figures."
+"brief": "the Mewar royal sun: a golden rayed sun disc with a calm human face at its centre. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
 },
 {
 "id": "jaipur",
@@ -1783,17 +1511,17 @@ window.LR={
 "nat": "पचरंगा",
 "nc": "deva",
 "img": "later/l11-jaipur.webp",
-"t": "Flags of the World, citing Ziggioto (1998), says Mān Singh had a triangular five-coloured flag (red, white, yellow, green, blue) 'in 1630', said to celebrate a victory over five Pathan chiefs; as Mān Singh I died in 1614, the date or ruler is doubtful.{jaiFotw}{manSingh} In 1877 Rām Singh II added a radiant yellow sun, alluding to the Kachwāhās' solar descent, for the assembly marking Victoria's new title.{jaiFotw} A quarter-size flag flown above the royal standard marks the 'Sawai' title.{jaiPalace} Jaipur's copper coins of Mādho Singh II carry the jhāṛ (sprig) symbol.{jaiJhar}",
+"t": "Lethbridge's Golden Book of India (1893) records that Amber flies the panchrangā, the five-coloured flag.{jaiGolden} Jaipur state's coins were called 'Jhāṛ Shāhī', after the six-branched jhāṛ (sprig) they bear.{jaiJhar}",
 "motifs": [
 "flag"
 ],
-"warn": "Origin date of the flag is uncertain",
 "flag": {
-"svg": "<rect x=\"2\" y=\"10\" width=\"56\" height=\"5.6\" fill=\"#c8102e\"/><rect x=\"2\" y=\"15.6\" width=\"56\" height=\"5.6\" fill=\"#f2c200\"/><rect x=\"2\" y=\"21.2\" width=\"56\" height=\"5.6\" fill=\"#ffffff\"/><rect x=\"2\" y=\"26.799999999999997\" width=\"56\" height=\"5.6\" fill=\"#2e8b3a\"/><rect x=\"2\" y=\"32.4\" width=\"56\" height=\"5.6\" fill=\"#1f4fa0\"/><rect x=\"2\" y=\"0\" width=\"16\" height=\"1.8\" fill=\"#c8102e\"/><rect x=\"2\" y=\"1.8\" width=\"16\" height=\"1.8\" fill=\"#f2c200\"/><rect x=\"2\" y=\"3.6\" width=\"16\" height=\"1.8\" fill=\"#ffffff\"/><rect x=\"2\" y=\"5.4\" width=\"16\" height=\"1.8\" fill=\"#2e8b3a\"/><rect x=\"2\" y=\"7.2\" width=\"16\" height=\"1.8\" fill=\"#1f4fa0\"/>",
-"cap": "Panchrangā with the quarter-size 'sawai' flag above. Early accounts describe a triangular flag.",
+"svg": "<rect x=\"2\" y=\"2.0\" width=\"56\" height=\"7.2\" fill=\"#c8102e\"/><rect x=\"2\" y=\"9.2\" width=\"56\" height=\"7.2\" fill=\"#f2c200\"/><rect x=\"2\" y=\"16.4\" width=\"56\" height=\"7.2\" fill=\"#ffffff\"/><rect x=\"2\" y=\"23.6\" width=\"56\" height=\"7.2\" fill=\"#2e8b3a\"/><rect x=\"2\" y=\"30.8\" width=\"56\" height=\"7.2\" fill=\"#1f4fa0\"/>",
+"cap": "Panchrangā, the five-coloured flag of Amber, recorded by Lethbridge (1893).",
 "conf": "medium"
 },
-"brief": "the Jaipur panchrangā flag on a short golden staff: five horizontal stripes of red, yellow, white, green and blue, with a small quarter-size flag of the same colours flying above it. No parasol, no tassels. No human figures."
+"brief": "the Jaipur panchrangā flag on a short golden staff: five horizontal stripes of red, yellow, white, green and blue, with a small quarter-size flag of the same colours flying above it. No parasol, no tassels. No human figures.",
+"repaint": "the Jaipur panchrangā: a single flag of five horizontal coloured stripes (red, yellow, white, green, blue) on a short golden staff, with no small second flag above it."
 },
 {
 "id": "vijayanagara",
@@ -1801,18 +1529,16 @@ window.LR={
 "n": "Vijayanagara",
 "d": "1336–1646 CE",
 "r": "South",
-"k": "tradition",
-"e": "Boar facing a sword, sun and moon",
+"k": "seal",
+"e": "Boar with sun and moon",
 "nat": "ವರಾಹ",
 "nc": "knda",
 "img": "later/l12-vijayanagara.webp",
-"t": "The Vijayanagara emblem is described as a boar facing a sword with the sun and moon above, also borne on the varāha-dhvaja flag; the state's chief gold coin was likewise called the varāha.{vijBlog} The coins themselves mostly carry deities such as Hanumān, Garuḍa, Śiva–Pārvatī and Lakṣmī–Nārāyaṇa.{vijBlog} Gold coins of Acyutadevarāya (1530s) are the first to show the two-headed gaṇḍabheruṇḍa.{vijBlog}{ganda}",
+"t": "The copper plates of Sadāśivarāya dated Śaka 1478 (1556 CE) hang on a ring with a seal showing a boar, the sun and the moon.{vijEI} The grant is signed 'Śrī-Virūpākṣa' in large Kannada letters.{vijEI} Vijayanagara took over the Chalukya boar, and its gold coin came to be called the varāha, the 'boar piece'.{jackson}",
 "motifs": [
 "boar",
-"sky",
-"weapon"
+"sky"
 ],
-"warn": "Emblem described in secondary sources; seal examples not verified",
 "brief": "the Vijayanagara royal seal device: a boar standing to the right facing an upright straight sword, with a crescent moon and a rayed sun above. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "ev": {
 "img": "evidence/vijayanagara.webp",
@@ -1820,7 +1546,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:15th_century_Bugga_Ramalingeswara_temple,_Tadipatri,_Andhra_Pradesh,_India_-_76.jpg",
 "credit": "Ms Sarah Welch · CC0",
 "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
-}
+},
+"repaint": "the Vijayanagara seal device: a wild boar standing in profile, with a crescent moon and a rayed sun above it. No sword."
 },
 {
 "id": "ahom",
@@ -1833,17 +1560,13 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "later/l13-ahom.webp",
-"t": "Tai-Ahom tradition holds that the Ahom kings used the ngi-ngao-kham, a dragon-lion figure, as their royal emblem.{ahomNgi} The same study says the Kareng Ghar, Rang Ghar and Talatal Ghar used the symbol, and that it was painted in red on the white khring fra, hoisted before going to war.{ahomNgi} Ahom coinage began under Jayadhvaja Siṃha (Sutyinpha) in 1648 with mostly octagonal coins invoking Hindu gods in Sanskrit, in Assamese script.{ahomLHI}{ahomCoin} Gadādhar Siṃha struck coins in Ahom script, Pramatta Siṃha reintroduced them for his coronation, and Queen Phuleśvarī was the first to issue coins in Persian script.{ahomCoin}",
+"t": "The earliest known Ahom coin is dated 1648 and was issued by Jayadhvaja Siṃha.{dutta2019} Ahom coins were struck on octagonal blanks, with legends generally in Assamese-Bengali characters.{dutta2019} The ngi-ngao-kham, a dragon-lion of Tai-Ahom belief, is described as the royal emblem, as carved on the Kareng Ghar, Rang Ghar and Talatal Ghar, and as painted on the war flag called the khring fra, only in short papers in low-impact journals that cite no earlier evidence.{borgohain2023}",
 "motifs": [
 "mythic"
 ],
-"warn": "Emblem and flag rest on Tai-Ahom tradition reported in one modern paper; no dated written account cited",
-"flag": {
-"svg": "<rect x=\"2\" y=\"2\" width=\"56\" height=\"36\" fill=\"#fbfaf5\" stroke=\"#999\" stroke-dasharray=\"3 2\"/><path d=\"M14 26 C18 14 30 12 38 16 C44 12 48 16 46 20 C42 18 40 22 44 26 C36 24 30 30 22 28 Z\" fill=\"#b51f2a\" opacity=\".85\"/>",
-"cap": "Khring fra: white war flag with a red ngi-ngao-kham, as Tai-Ahom tradition describes it.",
-"conf": "low"
-},
-"brief": "the Tai-Ahom ngi-ngao-kham: a winged lion-dragon with a lion's mane and body, small wings and a curling tail, in red, rampant. No flag, no flagstaff, no parasol, no tassels. No human figures."
+"warn": "Emblem and flag rest only on low-impact journal papers",
+"brief": "the Tai-Ahom ngi-ngao-kham: a winged lion-dragon with a lion's mane and body, small wings and a curling tail, in red, rampant. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
 },
 {
 "id": "tripura",
@@ -1856,7 +1579,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "later/l14-tripura.webp",
-"t": "Tripura's coinage begins with Ratna Māṇikya in Śaka 1386 (1464 CE); his silver tanka shows a lion within a circle, which became the standard device of most Tripura coins.{triSpink}{triMW} The lion faces left or right on different issues, and the legends are in Sanskrit written in Bengali script.{triMW} Ratna Māṇikya's reverse shows a human-faced winged animal, probably Narasiṃha.{triSpink}",
+"t": "Ratna Māṇikya (1464–1489) struck the first Tripura silver coins in his own name.{dutta2019} A lion is the usual device on Tripura coins, and later Krishna-type coins show the flute-playing god standing above the Tripura lion.{triSarma}{dutta2019}",
 "motifs": [
 "lion"
 ],
@@ -1867,7 +1590,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Tripura._Rajdhara_Manikya_1586-1599_CE_(AV).jpg",
 "credit": "Classical Numismatic Group · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
-}
+},
+"warn": "The lion as the standard device rests on Sarma's catalogue index"
 },
 {
 "id": "maratha",
@@ -1880,13 +1604,13 @@ window.LR={
 "nat": "भगवा झेंडा",
 "nc": "deva",
 "img": "later/l15-maratha.webp",
-"t": "The Maratha standard, the bhagwā jhenḍā, is described as a swallow-tailed, deep orange (saffron) pennant.{ehistFotw}{histFlags} Śivājī's seal was in Sanskrit, unlike the Persian seals of Śāhajī and Jijābāī: 'This seal of Śiva, son of Śāhajī, waxing like the first crescent of the moon and honoured by the world, shines for the good of all.'{shivWiki} Its oldest known use is on a letter of 28 January 1646 to the deśpāṇḍes and deśkulkarṇīs of Khedebāre.{shivRajmudra}",
+"t": "Grant Duff (1826) calls the Bhagwā Jhenḍā the standard of Śivājī and the national flag of the Marathas: swallow-tailed and deep orange.{marDuff1} He adds that its colour was sacred to Mahādeva, so the flag stirred religious as well as military feeling.{marDuff1} Senior commanders could also be granted the Jarī Paṭkā, or golden pennon.{marDuff1} When Satara fort fell in February 1818, the Bhagwā Jhenḍā was hoisted there in place of the British colours.{marDuff3}",
 "motifs": [
 "flag"
 ],
 "flag": {
 "svg": "<path d=\"M2 2 H58 L42 20 L58 38 H2 Z\" fill=\"#e8761b\"/>",
-"cap": "Bhagwā jhenḍā: saffron, swallow-tailed. Known from descriptions; no surviving 17th–18th c. example is cited here.",
+"cap": "Bhagwā jhenḍā: deep orange and swallow-tailed, as Grant Duff (1826) describes it.",
 "conf": "medium"
 },
 "brief": "the Maratha bhagwa jhenda: a plain deep-saffron swallow-tailed pennant flying from a short golden staff. No emblem on the flag, no parasol, no tassels. No human figures."
@@ -1897,22 +1621,17 @@ window.LR={
 "n": "Sikh Empire",
 "d": "1799–1849 CE",
 "r": "Northwest",
-"k": "flag",
-"e": "Khalsa standard with gilt sun",
+"k": "coin",
+"e": "Leaf mark of the Khalsa rupee",
 "nat": "ਨਿਸ਼ਾਨ",
 "nc": "guru",
 "img": "later/l16-sikh.webp",
-"t": "Ranjit Singh's coins name no ruler: struck in the names of the Gurus, they carry a Persian couplet honouring Guru Nānak and Guru Gobind Singh, with a leaf mark and later a peacock feather.{sikhCoin} Wikipedia labels a Nishān Sāhib as the Sikh Empire's flag but gives no contemporary description.{histFlags} One of ten Khalsa Army standards that Lord Dalhousie acquired from the Lahore Toshakhana after the Anglo-Sikh wars is triangular silk with a gilt sun on one face and Durgā on her tiger on the other.{sikhFlag}",
+"t": "Sikh rupees carry religious legends and never name the ruler who issued them.{sikhHerrli} Asked in whose name his coins were struck, Ranjit Singh answered that Guru Nānak was the true ruler and he the Guru's humble servant.{sikhHerrli} The Gobindshāhī couplet says that abundance, power, victory and swift help are the gift of Nānak and Guru Gobind Singh.{sikhHerrli} A leaf was added to mark the uniform Khalsa coinage, but why a leaf was chosen is not known.{sikhHerrli}",
 "motifs": [
-"sky"
+"plant"
 ],
-"warn": "No single state flag verified",
-"flag": {
-"svg": "<path d=\"M2 2 L58 20 L2 38 Z\" fill=\"#2b4a8c\" stroke=\"#2e7a3a\" stroke-width=\"2\"/><circle cx=\"18\" cy=\"20\" r=\"6\" fill=\"#e3b23c\"/><g stroke=\"#e3b23c\" stroke-width=\"1.2\"><line x1=\"25.5\" y1=\"20\" x2=\"28\" y2=\"20\"/><line x1=\"24.067627457812108\" y1=\"24.40838939219355\" x2=\"26.090169943749473\" y2=\"25.877852522924734\"/><line x1=\"20.317627457812105\" y1=\"27.132923872213652\" x2=\"21.090169943749473\" y2=\"29.510565162951536\"/><line x1=\"15.682372542187895\" y1=\"27.132923872213652\" x2=\"14.909830056250527\" y2=\"29.510565162951536\"/><line x1=\"11.932372542187895\" y1=\"24.40838939219355\" x2=\"9.909830056250527\" y2=\"25.877852522924734\"/><line x1=\"10.5\" y1=\"20\" x2=\"8\" y2=\"20\"/><line x1=\"11.932372542187894\" y1=\"15.591610607806452\" x2=\"9.909830056250525\" y2=\"14.12214747707527\"/><line x1=\"15.682372542187894\" y1=\"12.867076127786348\" x2=\"14.909830056250524\" y2=\"10.489434837048465\"/><line x1=\"20.317627457812105\" y1=\"12.867076127786348\" x2=\"21.090169943749473\" y2=\"10.489434837048464\"/><line x1=\"24.067627457812105\" y1=\"15.59161060780645\" x2=\"26.090169943749473\" y2=\"14.122147477075266\"/></g>",
-"cap": "A Khalsa Army standard of the 1840s, acquired by Lord Dalhousie: triangular silk with a gilt sun. No single state flag is verified.",
-"conf": "medium"
-},
-"brief": "a Khalsa Army standard of the 1840s: a triangular silk pennant on a short golden staff, with a gilt rayed sun in its centre and a green border. No parasol, no tassels, no text. No human figures."
+"brief": "a Khalsa Army standard of the 1840s: a triangular silk pennant on a short golden staff, with a gilt rayed sun in its centre and a green border. No parasol, no tassels, no text. No human figures.",
+"repaint": "a single stylised leaf with veins and a short stalk, as stamped on Sikh rupees of Ranjit Singh's reign, in silver."
 },
 {
 "id": "mysore",
@@ -1920,21 +1639,16 @@ window.LR={
 "n": "Mysore (Woḍeyar)",
 "d": "1399–1950 CE",
 "r": "South",
-"k": "flag",
+"k": "tradition",
 "e": "Gaṇḍabheruṇḍa",
 "nat": "ಗಂಡಭೇರುಂಡ",
 "nc": "knda",
 "img": "later/l17-mysore.webp",
-"t": "The two-headed gaṇḍabheruṇḍa first appears on gold coins of the Vijayanagara king Acyutadevarāya in the 1530s, and the Woḍeyars of Mysore, installed under Vijayanagara in 1399, used it as their royal emblem.{ganda}{vijBlog} When they adopted it is not securely dated, and the late Woḍeyar coins of Kṛṣṇarāja III show Śiva–Pārvatī, Narasiṃha or the śārdūla instead.{mysCoinindia} The princely state flag, brick red over brown, bore the arms with the gaṇḍabheruṇḍa at its centre.{mysFotw}",
+"t": "The gaṇḍabheruṇḍa, a two-headed bird, is described as the royal insignia of Mysore.{srikantaSastri} When the Woḍeyars adopted it has not yet been checked against a scholarly source.",
 "motifs": [
 "bird",
 "mythic"
 ],
-"flag": {
-"svg": "<rect x=\"2\" y=\"2\" width=\"56\" height=\"18\" fill=\"#c8102e\"/><rect x=\"2\" y=\"20\" width=\"56\" height=\"18\" fill=\"#6b3a1e\"/>",
-"cap": "Brick red over brown, princely era (shown here without the arms).",
-"conf": "low"
-},
 "brief": "the gaṇḍabheruṇḍa: a two-headed eagle facing front with spread wings, each head in profile facing outward, each talon gripping a small elephant, in gold. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "read": [
 "sampathMysore"
@@ -1945,7 +1659,8 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Gandaberunda_(Lalitha_Mahal_Palace_Hotel,_Mysore).jpg",
 "credit": "Prakashsubbarao at en.wikipedia · Public domain",
 "licurl": null
-}
+},
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
 },
 {
 "id": "travancore",
@@ -1954,19 +1669,14 @@ window.LR={
 "d": "1729–1949 CE",
 "r": "South",
 "k": "coin",
-"e": "Right-whorled conch",
+"e": "Conch (śaṅkha)",
 "nat": "വലംപിരി ശംഖ്",
 "nc": "mlym",
 "img": "later/l18-travancore.webp",
-"t": "The right-whorled conch, the family emblem since Venāḍ times and tied to the family deity Śrī Padmanābha, is Travancore's cognizance and runs through its coinage.{keralaEmb}{jackson} A silver double chakram of Rāṇī Gouri Lakṣmī Bāī, for example, shows a garlanded conch under a crescent.{travMW} The state flag bore a silver dextral conch, shown by Neubecker (1992) on a red field.{travMW}{travFotw}",
+"t": "Jackson (1912) states that the cognizance of the Travancore state is the śaṅkha, or conch shell.{jackson} His catalogue lists Travancore silver chakrams that bear the shell.{jackson}",
 "motifs": [
 "ritual"
 ],
-"flag": {
-"svg": "<rect x=\"2\" y=\"2\" width=\"56\" height=\"36\" fill=\"#c8102e\"/><path d=\"M30 9 C38 10 40 20 34 27 C31 30 27 31 25 28 C29 27 31 23 29 19 C27 15 24 15 22 17 C21 12 25 9 30 9 Z\" fill=\"#f2efe6\"/>",
-"cap": "Silver right-whorled conch on red. Princely-era state flag.",
-"conf": "medium"
-},
 "brief": "a single right-whorled conch shell (valampiri śaṅkha) in silver-white, mouth opening to the right, with a small garland around it and a crescent above. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "ev": {
 "img": "evidence/travancore.webp",
@@ -1974,7 +1684,14 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Stamp_of_Travancore_-_1894_-_Colnect_862736_-_1_-_State_Emblem_-_Conch_Shell.jpeg",
 "credit": "Post of Travancore · Public domain",
 "licurl": null
+},
+"repaint": "a single conch shell (śaṅkha) in silver-white, shown upright, as on Travancore silver chakrams. No garland and no crescent."
 }
+],
+"LEFTOUT": {
+"kadamba": "<b>Kadamba of Banavāsi.</b> The lion often given as their emblem is attested on the coins of the later Kadambas of Goa, not on those of Banavāsi.",
+"saindhava": "<b>Saindhava of Ghumli.</b> The fish emblem given in popular sources was not found in any scholarly edition of their grants.",
+"chaulukya": "<b>Chaulukya (Solaṅkī) of Gujarat.</b> The charging-elephant coins are attributed to Jayasiṃha Siddharāja only by dealers; no scholarly attribution of a coin type or seal was found.",
+"marwar": "<b>Rāṭhoṛ of Marwar.</b> Tod names the clan goddess as winged, but no scholarly or period source describing the Jodhpur flag or a bird on it was found."
 }
-]
 };

@@ -77,6 +77,7 @@ h1 .deva{font-family:var(--deva);font-weight:500;color:var(--copper);font-size:.
 .verse.en{font-family:var(--body)}
 sup.c{font:600 10px/1 var(--mono);color:var(--verdigris);margin-left:1px}
 sup.c a{text-decoration:none}
+.warn.review{border-left:3px solid var(--copper);padding-left:10px;margin-top:10px}
 .warn{font:500 12px/1.4 var(--mono);color:var(--copper)}
 .meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font:500 11px/1 var(--mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
 .pill{border:1px solid currentColor;border-radius:3px;padding:4px 6px;letter-spacing:.06em;text-transform:uppercase}
@@ -252,6 +253,10 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 <script src="data.js"></script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
+const LEFT = window.LR.LEFTOUT||{}, LEFTTAB={kadamba:'early',saindhava:'early',chaulukya:'later',marwar:'later'};
+for (const [id,note] of Object.entries(LEFT)){
+  const ul=document.querySelector('#panel-'+(LEFTTAB[id]||'later')+' section.notes ul'); if(ul){const li=document.createElement('li');li.innerHTML=note;ul.appendChild(li);}
+}
 const BY = Object.fromEntries(C.map(c=>[c.id,c]));
 const TABS = {
   itihasa:{label:"Bharatiya Itihasa traditions",eyebrow:"Bharatiya Itihasa traditions · Mahābhārata and Rāmāyaṇa",
@@ -388,6 +393,7 @@ function entryHtml(c){
       ${c.quote?`<blockquote class="verse en" style="font-size:15px">“${esc(c.quote)}”<cite>K. M. Ganguli, Droṇa Parva section 23 (vulgate)</cite></blockquote>`:""}
       <p class="t">${html}</p>
       ${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}
+      ${c.review?`<p class="warn review"><b>Awaiting scholarly confirmation.</b> ${esc(c.review)}</p>`:""}
       ${c.flag?`<div class="flagrow">${flagSvg(c.flag)}<span>${esc(c.flag.cap)}</span></div>`:""}
       ${c.motifs.length?`<h4>Motifs</h4><div class="mchips">${c.motifs.map(m=>`<a class="chip" href="#motif-${m}" data-motif="${m}">${esc(MOTIFS[m])} <small>${C.filter(x=>x.motifs.includes(m)).length}</small></a>`).join("")}</div>`:""}
       <h4>Sources</h4><ol class="srcs">${keys.map((k,n)=>`<li id="src-${c.id}-${n+1}"><a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(srcTitle(k))}</a></li>`).join("")}</ol>
