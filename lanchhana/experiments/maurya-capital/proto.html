@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lāñchhana Register</title>
+<meta name="description" content="Royal emblems of Indian dynasties and the war banners of the epics, each painted as a medallion and cited sentence by sentence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&family=Noto+Serif+Tamil:wght@500&family=Noto+Serif:wght@500&display=swap">
+<style>
+/* Layout: a catalogue plate. Painted medallions in a ruled grid, filterable by region and kind of evidence; every card opens a full entry. */
+:root{
+  --paper:#EDF1EE; --panel:#F6F8F6; --ink:#16201D; --muted:#56655F; --line:#CAD4CF;
+  --copper:#A4531F; --verdigris:#2C7A6B; --wash:#E3EAE6; --scrim:rgba(14,21,19,.55);
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --deva:"Noto Serif Devanagari","Nirmala UI",serif;
+  --taml:"Noto Serif Tamil","Nirmala UI",serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0E1513; --panel:#141D1A; --ink:#E4EBE8; --muted:#94A49E; --line:#283632;
+  --copper:#E28A50; --verdigris:#5CB8A4; --wash:#1A2521; --scrim:rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E1513; --panel:#141D1A; --ink:#E4EBE8; --muted:#94A49E; --line:#283632;
+  --copper:#E28A50; --verdigris:#5CB8A4; --wash:#1A2521; --scrim:rgba(0,0,0,.7); color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--body);margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:20px 64px}
+.top{display:flex;align-items:center;gap:6px 22px;flex-wrap:wrap;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-bottom:14px;margin-bottom:26px;border-bottom:1px solid var(--line)}
+.top a[aria-current]{color:var(--ink);border-bottom:2px solid var(--copper)} .top a{padding:7px 0;border-bottom:2px solid transparent} .top .grow{margin-left:auto}
+.top a{text-decoration:none} .top a:hover{color:var(--ink)}
+header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;border-bottom:1px solid var(--line);padding-bottom:28px}
+.eyebrow{font:500 12px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--verdigris);margin:0 0 14px}
+h1{font:800 clamp(38px,6.4vw,76px)/.95 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .deva{font-family:var(--deva);font-weight:500;color:var(--copper);font-size:.52em;letter-spacing:0;display:block;margin-top:10px}
+.lede{max-width:64ch;text-align:justify;hyphens:auto;color:var(--muted);margin:18px 0 0;font-size:16px}
+.stats{display:flex;gap:28px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.stats b{display:block;font:700 34px/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+
+.tabs{display:flex;gap:4px;margin-top:24px;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.tab{font:600 15px/1.2 var(--body);color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:14px 16px 12px;cursor:pointer;white-space:nowrap;margin-bottom:-1px}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--copper)}
+.tab:focus-visible{outline:2px solid var(--copper);outline-offset:-2px}
+.tab small{font:500 11px/1 var(--mono);color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums}
+
+.controls{display:flex;flex-wrap:wrap;gap:14px 32px;padding-block:18px;border-bottom:1px solid var(--line)}
+.group{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.group>span{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+.chip{font:500 13px/1 var(--body);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 13px;cursor:pointer;text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.chip:hover{border-color:var(--verdigris)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip:focus-visible,.card:focus-visible,button:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+.chip small{font:500 11px/1 var(--mono);opacity:.7}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:24px}
+.card{background:var(--panel);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 22px 20px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;min-width:0;cursor:pointer;position:relative}
+.card:hover{background:var(--wash)}
+.medal{width:240px;height:240px;max-width:100%;display:block;margin:0 auto;border-radius:50%;box-shadow:0 8px 18px rgba(0,0,0,.22);object-fit:cover;background:var(--wash)}
+.pending{width:240px;height:240px;max-width:100%;margin:0 auto;border-radius:50%;border:2px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font:500 12px/1.5 var(--mono);padding:30px}
+.pending b{display:block;font:700 17px/1.2 var(--display);color:var(--copper);margin-bottom:6px;text-wrap:balance}
+.idiom{font:500 11px/1.4 var(--mono);color:var(--muted);text-align:center;margin-top:-4px}
+.head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;min-width:0}
+.card h2{font:700 21px/1.15 var(--display);margin:0;text-wrap:balance}
+.dates{display:block;font:500 12px/1.3 var(--mono);color:var(--muted);margin-top:4px;font-variant-numeric:tabular-nums}
+.emblem{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.emblem strong{font:600 14px/1.3 var(--body);color:var(--copper)}
+.native{font-size:16px;color:var(--ink)}
+.native.deva{font-family:var(--deva)} .native.taml{font-family:var(--taml)}
+.native.knda,.native.telu,.native.beng,.native.guru,.native.mlym{font-family:"Noto Serif",serif}
+.card p{margin:0;font-size:14px}
+.verse{margin:0;padding:10px 12px;border-left:2px solid var(--copper);background:var(--wash);font:italic 13.5px/1.55 var(--deva);color:var(--ink)}
+.verse cite{display:block;font:500 11px/1.4 var(--mono);font-style:normal;color:var(--muted);margin-top:6px}
+.verse.en{font-family:var(--body)}
+sup.c{font:600 10px/1 var(--mono);color:var(--verdigris);margin-left:1px}
+sup.c a{text-decoration:none}
+.warn.review{border-left:3px solid var(--copper);padding-left:10px;margin-top:10px}
+.warn{font:500 12px/1.4 var(--mono);color:var(--copper)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font:500 11px/1 var(--mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+.pill{border:1px solid currentColor;border-radius:3px;padding:4px 6px;letter-spacing:.06em;text-transform:uppercase}
+.pill.seal{color:var(--verdigris)} .pill.coin{color:var(--copper)} .pill.monument,.pill.flag{color:var(--muted)}
+.pill.tradition,.pill.vulgate{color:var(--copper);border-style:dashed} .pill.epic{color:var(--verdigris)}
+.more{margin-left:auto;color:var(--ink)}
+.flag{margin:0;flex:none;display:grid;justify-items:center;gap:3px}
+.flag svg{width:54px;height:36px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
+.conf{font:500 9px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.conf.low{color:var(--copper)}
+.empty{grid-column:1/-1;background:var(--panel);padding:40px;text-align:center;color:var(--muted)}
+
+/* motif index */
+.motifs{display:grid;gap:0;margin-top:24px;border-top:1px solid var(--line)}
+.motif{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;padding-block:22px;border-bottom:1px solid var(--line);scroll-margin-top:12px}
+.motif h3{font:700 22px/1.15 var(--display);margin:0;text-wrap:balance}
+.motif .count{font:500 12px/1.4 var(--mono);color:var(--muted);margin-top:6px}
+.motif .count b{color:var(--ink)}
+.strip{display:flex;flex-wrap:wrap;gap:16px 14px}
+.mini{all:unset;cursor:pointer;display:grid;justify-items:center;gap:6px;width:104px;text-align:center}
+.mini img,.mini .ph{width:92px;height:92px;border-radius:50%;object-fit:cover;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+.mini .ph{border:2px dashed var(--line);box-shadow:none}
+.mini b{font:600 12.5px/1.2 var(--body);text-wrap:balance}
+.mini span{font:500 10px/1.2 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.mini:hover b{color:var(--copper)} .mini:focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:8px}
+.mini.t-itihasa span{color:var(--verdigris)}
+
+section.notes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;margin-top:56px}
+section.notes h3{font:700 22px/1.2 var(--display);margin:0 0 12px}
+section.notes p,section.notes li{color:var(--muted);font-size:14px;max-width:62ch}
+section.notes ul{padding-left:18px;margin:0;display:grid;gap:8px}
+section.notes li b{color:var(--ink);font-weight:600}
+.key{display:grid;gap:10px;margin-top:14px}
+.key div{display:flex;gap:10px;align-items:baseline;font-size:14px;color:var(--muted)}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:20px;font:12px/1.7 var(--mono);color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px}
+
+/* entry dialog */
+dialog{border:0;padding:0;overflow:auto;background:var(--panel);color:var(--ink);width:min(1040px,calc(100vw - 32px));max-height:calc(100dvh - 32px);border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+dialog::backdrop{background:var(--scrim)}
+.dlg{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:0}
+.dlg-art{background:var(--wash);padding:28px 24px;display:grid;gap:22px;align-content:start;border-right:1px solid var(--line)}
+.dlg-art .medal{width:100%;height:auto;aspect-ratio:1}
+.dlg-art .pending{width:100%;height:auto;aspect-ratio:1}
+.ev{margin:0;display:grid;gap:8px}
+.ev img{width:100%;max-height:300px;object-fit:contain;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.ev figcaption{font:500 12px/1.5 var(--body);color:var(--muted)}
+.ev figcaption b{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--verdigris);display:block;margin-bottom:4px}
+.noev{font:500 12px/1.5 var(--mono);color:var(--muted);border:1px dashed var(--line);border-radius:6px;padding:12px}
+.dlg-body{padding:24px 28px 28px;display:grid;gap:16px;align-content:start;min-width:0;overflow-wrap:anywhere}
+.dlg-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:1;background:var(--panel);border-bottom:1px solid var(--line);padding:12px 20px}
+.dlg-bar .where{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--verdigris);margin-right:auto}
+.ib{font:500 12px/1 var(--mono);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 12px;cursor:pointer}
+.ib:hover{border-color:var(--verdigris)}
+.dlg-body h2{font:800 clamp(28px,4vw,40px)/1.02 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.dlg-body .t{font-size:15.5px;line-height:1.65;margin:0;max-width:62ch}
+.dlg-body h4{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:6px 0 0}
+ol.srcs{margin:0;padding-left:22px;display:grid;gap:6px;font-size:13.5px;color:var(--muted)}
+ol.srcs a{color:var(--ink);text-decoration-color:var(--line);text-underline-offset:3px}
+ol.srcs li:target{background:var(--wash)}
+.mchips{display:flex;flex-wrap:wrap;gap:6px}
+details.prompt{border:1px solid var(--line);border-radius:6px;padding:10px 14px}
+details.prompt summary{cursor:pointer;font:600 13px/1.4 var(--body)}
+details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 0 0;white-space:pre-wrap}
+.flagrow{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted)}
+@media (max-width:860px){.dlg{grid-template-columns:1fr}.dlg-art{border-right:0;border-bottom:1px solid var(--line)}.dlg-art .medal,.dlg-art .pending{max-width:320px;margin:0 auto}}
+/* timeline */
+.tl-note{font-size:13.5px;color:var(--muted);max-width:70ch;margin:16px 0 0}
+.tl-epic{margin-top:22px;border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:16px 18px}
+.tl-epic h3{font:700 18px/1.2 var(--display);margin:0 0 14px}
+.tl-epic h3 small{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--copper);margin-left:10px}
+.tl-hint{font:500 12px/1.4 var(--mono);color:var(--copper);margin:8px 0 0}
+.tl-scroll{overflow-x:auto;margin-top:16px;border:1px solid var(--line);background:var(--panel);border-radius:6px}
+.tl{position:relative}
+.tl-grid{position:absolute;top:0;bottom:0;border-left:1px solid var(--line);pointer-events:none}
+.tl-grid span{position:absolute;top:6px;left:5px;font:500 10px/1 var(--mono);color:var(--muted);white-space:nowrap}
+.tl-grid.zero{border-left:2px solid var(--copper)} .tl-grid.zero span{color:var(--copper)}
+.tl-bar{all:unset;box-sizing:border-box;position:absolute;height:30px;border-radius:15px;cursor:pointer;display:flex;align-items:center;gap:7px;white-space:nowrap;font:600 12.5px/1 var(--body);color:var(--ink)}
+.tl-bar img{width:30px;height:30px;border-radius:50%;flex:none;box-shadow:0 2px 6px rgba(0,0,0,.28)}
+.tl-bar.early{background:color-mix(in srgb,var(--verdigris) 24%,transparent);border:1px solid color-mix(in srgb,var(--verdigris) 60%,transparent)}
+.tl-bar.later{background:color-mix(in srgb,var(--copper) 24%,transparent);border:1px solid color-mix(in srgb,var(--copper) 60%,transparent)}
+.tl-bar.open.early{background:linear-gradient(90deg,color-mix(in srgb,var(--verdigris) 24%,transparent) 50%,transparent);border-right-color:transparent}
+.tl-bar.open.later{background:linear-gradient(90deg,color-mix(in srgb,var(--copper) 24%,transparent) 50%,transparent);border-right-color:transparent}
+.tl-bar:hover{background:var(--wash)} .tl-bar:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+.tl-key{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font:500 11px/1 var(--mono);color:var(--muted)}
+.tl-key i{display:inline-block;width:22px;height:10px;border-radius:5px;vertical-align:-1px;margin-right:6px}
+.tl-key .e{background:color-mix(in srgb,var(--verdigris) 40%,transparent)} .tl-key .l{background:color-mix(in srgb,var(--copper) 40%,transparent)}
+/* report */
+#report{width:min(520px,calc(100vw - 32px))}
+.rp{padding:24px 26px 26px;display:grid;gap:14px}
+.rp h3{font:800 24px/1.1 var(--display);margin:0}
+.rp .about{font:500 12px/1.5 var(--mono);color:var(--verdigris);margin:0}
+.rp label{display:grid;gap:6px;font:600 13px/1.3 var(--body)}
+.rp select,.rp textarea,.rp input{font:400 14px/1.5 var(--body);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:9px 10px;width:100%}
+.rp textarea{resize:vertical}
+.rp select:focus-visible,.rp textarea:focus-visible,.rp input:focus-visible{outline:2px solid var(--copper);outline-offset:1px}
+.rp .note{font-size:12.5px;color:var(--muted);margin:0}
+.rp .btns{display:flex;gap:8px;flex-wrap:wrap}
+.ib.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.ib.primary:hover{background:var(--copper);border-color:var(--copper)}
+.linkbtn{all:unset;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.linkbtn:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+@media (max-width:760px){header{grid-template-columns:1fr} section.notes{grid-template-columns:1fr} .motif{grid-template-columns:1fr;gap:12px}}
+@media (max-width:380px){.grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){.card{transition:background .15s}}
+
+.pbar{position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#111;color:#fff;font:500 12px/1 monospace;padding:8px 12px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
+.pbar a{color:#fff;border:1px solid #888;border-radius:999px;padding:6px 10px;text-decoration:none}.pbar a.on{background:#fff;color:#111}
+.stabs{display:flex;gap:6px;padding:10px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.stabs button{font:500 13px/1 var(--body);border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:9px 14px;cursor:pointer}
+.stabs button[aria-selected=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.scene{margin:0;display:grid;gap:0}
+.scene img{width:100%;height:auto;display:block;aspect-ratio:3/2;object-fit:cover;background:var(--wash)}
+.scene .cap{padding:18px 24px 24px;display:grid;gap:10px}
+.scene h3{font:700 22px/1.2 var(--display);margin:0}
+.lab{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13.5px;line-height:1.5;margin:0}
+.lab dt{font:600 11px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:4px;height:fit-content;white-space:nowrap}
+.lab dt.T{background:var(--verdigris);color:#fff}.lab dt.A{background:var(--copper);color:#fff}.lab dt.C{background:var(--line);color:var(--ink)}
+.lab dd{margin:0;color:var(--muted)}
+.hyp{font:500 12px/1.5 var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin:0}
+.setting{border-top:1px solid var(--line);padding:20px 24px 24px;display:grid;gap:14px;background:var(--wash)}
+.setting h4{margin:0}
+.thumbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.thumbs button{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:0;cursor:pointer;text-align:left;overflow:hidden;color:var(--ink)}
+.thumbs img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.thumbs b{display:block;font:600 13px/1.3 var(--body);padding:8px 10px}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.88);overflow:auto;display:grid;place-items:center;padding:16px}
+.lb .scene{max-width:1100px;background:var(--panel);border-radius:8px;overflow:hidden}
+.lb .x{position:fixed;top:12px;right:16px;background:var(--panel);z-index:2}
+.car{display:grid;gap:10px}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scrollbar-width:thin}
+.track .scene{flex:0 0 100%;scroll-snap-align:start;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.dots{display:flex;gap:8px;justify-content:center;align-items:center}
+.dots button{width:10px;height:10px;border-radius:50%;border:1px solid var(--ink);background:transparent;padding:0;cursor:pointer}
+.dots button[aria-current=true]{background:var(--ink)}
+@media(max-width:700px){.thumbs{grid-template-columns:1fr}.scene .cap{padding:14px 16px 18px}.stabs{padding:10px 12px}}
+</style>
+
+<div class="wrap">
+  <nav class="top" aria-label="Site"><a href="index.html">About</a><a href="register.html" aria-current="page">The register</a><a href="#timeline">Timeline</a><a href="#motifs">Motif index</a><span class="grow">sm7.github.io/lanchhana</span></nav>
+  <header>
+    <div>
+      <p class="eyebrow" id="hd-eyebrow"></p>
+      <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
+      <p class="lede" id="hd-lede"></p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="tabs" role="tablist" aria-label="Registers">
+    <button class="tab" role="tab" id="tab-itihasa" aria-controls="panel-itihasa">Bhāratīya Itihāsa traditions<small></small></button>
+    <button class="tab" role="tab" id="tab-early" aria-controls="panel-early">Early dynasties<small></small></button>
+    <button class="tab" role="tab" id="tab-later" aria-controls="panel-later">Later kingdoms<small></small></button>
+    <button class="tab" role="tab" id="tab-timeline" aria-controls="panel-timeline">Timeline<small></small></button>
+    <button class="tab" role="tab" id="tab-motifs" aria-controls="panel-motifs">Motif index<small></small></button>
+  </div>
+
+  <div role="tabpanel" id="panel-itihasa" aria-labelledby="tab-itihasa">
+    <div class="controls" role="toolbar" aria-label="Filters"><div class="group" id="f-itihasa"><span>Text</span></div></div>
+    <div class="grid" id="grid-itihasa"></div>
+    <section class="notes">
+      <div>
+        <h3>Critical edition and vulgate</h3>
+        <p>Verse numbers follow the Bhandarkar Oriental Research Institute's critical edition of the Mahābhārata, in the electronic text by Muneo Tokunaga and John D. Smith. K. M. Ganguli's English translation follows the older vulgate, so its section numbers differ and it contains passages the critical edition sets aside.</p>
+        <p>The best-known list of Pāṇḍava banners, with Bhīma's silver lion and Yudhiṣṭhira's moon, is one of those passages. Those cards are tagged <span class="pill vulgate">vulgate</span> and quote Ganguli instead of the Sanskrit. The Rāmāyaṇa card uses the vulgate numbering of valmikiramayan.net.</p>
+      </div>
+      <div>
+        <h3>Left out, and why</h3>
+        <ul>
+          <li><b>The Draupadeyas.</b> Ganguli says their standards bore images of Dharma, Marut, Śakra and the Aśvins, but not which son carried which. The pairing would be a guess.</li>
+          <li><b>The Pāṇḍya king's standard.</b> Ganguli names him Sāraṅgadhvaja but describes no emblem.</li>
+          <li><b>Royal lines of the Purāṇas.</b> The Purāṇas list kings of Magadha and of the solar and lunar houses, but they give no emblems.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div role="tabpanel" id="panel-early" aria-labelledby="tab-early" hidden>
+    <div class="controls" role="toolbar" aria-label="Filters">
+      <div class="group" id="f-early-r"><span>Region</span></div>
+      <div class="group" id="f-early-k"><span>Evidence</span></div>
+    </div>
+    <div class="grid" id="grid-early"></div>
+    <section class="notes">
+      <div>
+        <h3>How to read the evidence tag</h3>
+        <div class="key">
+          <div><span class="pill seal">Seal</span>Emblem on the royal seal of copper-plate or clay-seal grants. This is the formal lāñchhana and the strongest evidence.</div>
+          <div><span class="pill coin">Coin</span>Recurring coin type. It shows what the dynasty put on its money, not a declared insignia.</div>
+          <div><span class="pill monument">Monument</span>No dynastic seal exists. A monument stands for the dynasty by convention.</div>
+          <div><span class="pill tradition">Tradition</span>Named as the emblem in later writing, but not found on the dynasty's own seals or coins.</div>
+        </div>
+      </div>
+      <div>
+        <h3>Left out, and why</h3>
+        <ul>
+          <li><b>No verified emblem.</b> Shunga, Vakataka, Later Guptas of Magadha, Utpala of Kashmir, Shailodbhava, Bhaumakara, Somavamshi, early Kalachuri of Mahishmati, Kalabhra. No source describes a fixed seal emblem for these dynasties, so none is drawn.</li>
+          <li><b>After 1040 CE.</b> The Sena, Gāhaḍavāla, Hoysala, Kākatīya, Vijayanagara, Chandela, Chaulukya and Chauhan emblems are on the Later kingdoms tab.</li>
+          <li><b>Seal emblem uncertain.</b> Gurjara-Pratīhāra seals are said to show the goddess Bhagavatī, but no reliable account of her iconography was found, so the card shows Mihira Bhoja's Ādivarāha coins.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div role="tabpanel" id="panel-later" aria-labelledby="tab-later" hidden>
+    <div class="controls" role="toolbar" aria-label="Filters">
+      <div class="group" id="f-later-r"><span>Region</span></div>
+      <div class="group" id="f-later-k"><span>Evidence</span></div>
+    </div>
+    <div class="grid" id="grid-later"></div>
+    <section class="notes">
+      <div>
+        <h3>Flags, and when they date from</h3>
+        <p>A small flag beside a kingdom's name is drawn from the best description of that flag, and its tag says how well the flag itself is attested. Many Rajput flags are known only from the princely era. The coats of arms with mottoes and supporters belong to the British-era armorial tradition of the late 19th century and are not shown as royal insignia.</p>
+      </div>
+      <div>
+        <h3>Left out, and why</h3>
+        <ul>
+          <li><b>Gajapati of Odisha.</b> No coins are known and no seal emblem was found; the inscriptions give the title, not an emblem.</li>
+          <li><b>Kalachuri of Kalyāṇi.</b> A golden bull is named in secondary works, but no seal or coin showing it was found.</li>
+          <li><b>Koch (Cooch Behar).</b> Their Narayani coins carry legends only, and no pictorial emblem, seal emblem or flag is known.</li>
+          <li><b>Manipur.</b> The Pakhangba flag is documented only from 1947–49.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div role="tabpanel" id="panel-timeline" aria-labelledby="tab-timeline" hidden>
+    <p class="tl-note">Each bar runs from the start to the end of the dynasty's rule or, where the entry gives only a coinage period, of that period. Dates are approximate and follow each entry's date line. The Bhāratīya Itihāsa banners have no agreed date, so they sit in their own strip below the axis rather than at a year. Select a bar or a medallion to open its entry.</p>
+    <div class="tl-key"><span><i class="e"></i>Early dynasties</span><span><i class="l"></i>Later kingdoms</span><span>Fading bar: no end date given</span></div>
+    <div class="tl-scroll" id="tl-scroll"><div class="tl" id="tl"></div></div>
+    <p class="tl-hint" id="tl-hint" hidden>Scroll sideways to see later dates →</p>
+    <section class="tl-epic" style="margin-top:28px" aria-labelledby="tl-epic-h">
+      <h3 id="tl-epic-h">Bhāratīya Itihāsa banners <small>undated</small></h3>
+      <div class="strip" id="tl-epic"></div>
+    </section>
+
+  </div>
+
+  <div role="tabpanel" id="panel-motifs" aria-labelledby="tab-motifs" hidden>
+    <div class="controls" role="toolbar" aria-label="Jump to motif"><div class="group" id="f-motifs"><span>Jump to</span></div></div>
+    <div class="motifs" id="motif-list"></div>
+  </div>
+
+  <footer>
+    <span id="foot-count"></span>
+    <a href="index.html">About the register and how entries are made</a>
+    <button class="linkbtn" type="button" id="foot-report">Report an error</button>
+    <a href="https://github.com/sm7/sm7.github.io/tree/master/lanchhana" target="_blank" rel="noopener">Source on GitHub</a>
+  </footer>
+</div>
+
+<dialog id="entry" aria-labelledby="dlg-title"></dialog>
+<dialog id="report" aria-labelledby="rp-title"><div class="rp">
+  <h3 id="rp-title">Report an error</h3>
+  <p class="about" id="rp-about"></p>
+  <label for="rp-type">What is wrong
+    <select id="rp-type"><option>A claim in the text</option><option>The painting does not match the source</option><option>A source link is broken or wrong</option><option>A date, name or spelling</option><option>Something else</option></select></label>
+  <label for="rp-what">What the entry says, and what it should say
+    <textarea id="rp-what" rows="5" maxlength="2500" required></textarea></label>
+  <label for="rp-src">A source for the correction (optional)
+    <input id="rp-src" type="text" maxlength="400" placeholder="Author, title, page or link"></label>
+  <p class="note">This opens a pre-filled issue on GitHub, where you need an account to submit it. If you have none, copy the text and send it another way. Corrections with a scholarly source are acted on first.</p>
+  <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
+</div></dialog>
+
+<script src="../../data.js?v=9"></script>
+<script>for(const c of window.LR.cards){c.img="../../"+c.img;if(c.ev)c.ev.img="../../"+c.ev.img;}</script>
+<script>window.LR.SPAN = window.LR.SPAN || {};</script>
+<script>
+const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
+const LEFT = window.LR.LEFTOUT||{}, LEFTTAB={kadamba:'early',saindhava:'early',chaulukya:'later',marwar:'later'};
+for (const [id,note] of Object.entries(LEFT)){
+  const ul=document.querySelector('#panel-'+(LEFTTAB[id]||'later')+' section.notes ul'); if(ul){const li=document.createElement('li');li.innerHTML=note;ul.appendChild(li);}
+}
+const BY = Object.fromEntries(C.map(c=>[c.id,c]));
+const TABS = {
+  itihasa:{label:"Bhāratīya Itihāsa traditions",eyebrow:"Bhāratīya Itihāsa traditions · Mahābhārata and Rāmāyaṇa",
+    lede:"Long before seals and coins, the epics describe how a warrior was recognised across a battlefield: by the emblem on top of his banner, the dhvaja. This register collects those emblems verse by verse. Each card quotes the Sanskrit, gives the chapter and verse, and translates only what the verse says. The paintings interpret that verse and add nothing it does not state. Where a well-known banner survives only in the vulgate text and not in the critical edition, the card says so."},
+  early:{label:"Early dynasties",eyebrow:"Bhāratīya historical record · c. 322 BCE – 1040 CE",
+    lede:"The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Where no seal emblem survives, the dynasty's standard coin type is shown and labelled as a coin. Each emblem is painted as a medallion in the manner of early Indian mural painting and checked against the description it follows."},
+  later:{label:"Later kingdoms",eyebrow:"Bhāratīya historical record · 1040 – 1858 CE",
+    lede:"The kingdoms that followed kept the habit of a royal emblem and added flags that travellers and court painters recorded. Each card shows only what the evidence supports: a seal, a coin type, a monument, a documented flag or a named tradition. A flag known only from the princely era, or an emblem known only from later writing, is marked as such."},
+  timeline:{label:"Timeline",eyebrow:"Across all registers · dynasties c. 322 BCE – 1950 CE",
+    lede:"The dynasties of the register laid along one axis of years, so overlap and succession are visible: which houses ruled at the same time, and which emblems were in use together. The epic banners, which have no agreed date, are shown beside the axis rather than on it."},
+  motifs:{label:"Motif index",eyebrow:"Across all three registers",
+    lede:"The same animals and signs recur across two thousand years. The boar on Jayadratha's banner returns on Chalukya seals, Pratīhāra coins and Vijayanagara gold; the bull of Śiva runs from Magadha to the Chauhans. This index groups every entry by the motifs it shows, so a symbol can be followed from epic verse to coin."}
+};
+const KLABEL = {epic:"critical edition",vulgate:"vulgate",coin:"coin",seal:"seal",monument:"monument",flag:"flag",tradition:"tradition"};
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+const inTab = t => C.filter(c=>c.tab===t);
+
+/* text with {key} citations -> {html, keys} ; numbering is per entry */
+function cite(c, linkable){
+  const keys=[]; const num=k=>{let i=keys.indexOf(k); if(i<0){keys.push(k); i=keys.length-1;} return i+1;};
+  const html = esc(c.t).replace(/((?:\{\w+\})+)/g, m => {
+    const ns=[...m.matchAll(/\{(\w+)\}/g)].map(x=>num(x[1]));
+    return `<sup class="c">${ns.map(n=>linkable?`<a href="#src-${c.id}-${n}" onclick="event.preventDefault();document.getElementById('src-${c.id}-${n}').scrollIntoView({block:'nearest'})">${n}</a>`:n).join(",")}</sup>`;
+  });
+  return {html, keys};
+}
+const srcTitle = k => SRC[k][0];
+function flagSvg(f){ return `<figure class="flag" title="${esc(f.cap)}"><svg viewBox="0 0 60 40" aria-hidden="true"><line x1="1" y1="0" x2="1" y2="40" stroke="#5a4632" stroke-width="2"/>${f.svg}</svg><figcaption><span class="conf ${f.conf}">flag · ${f.conf}</span></figcaption></figure>`; }
+function art(c, big){
+  if (c.pending) return `<div class="pending"><div><b>${esc(c.e)}</b>Painting in progress</div></div>`;
+  return `<img class="medal" ${big?"":'loading="lazy"'} src="${c.img}?v=8" width="240" height="240" alt="${esc(c.e)}, interpretive painting">`;
+}
+function sub(c){ return c.tab==="itihasa" ? c.who : c.d; }
+
+function card(c){
+  const {html, keys} = cite(c,false);
+  const idiom = c.tab==="itihasa" ? (c.k==="coin" ? "Drawn from the documented punch marks" : c.k==="vulgate" ? "Painted from Ganguli's description" : "Painted from the verse")
+    : `Painted from the ${c.k==="tradition"?"traditional":c.k} ${c.k==="monument"?"itself":"description"}`;
+  return `<article class="card" tabindex="0" role="button" data-id="${c.id}" aria-label="${esc(c.n+", "+c.e+": open entry")}">
+    <div>${art(c)}<div class="idiom" style="margin-top:10px">${idiom}</div></div>
+    <div class="head"><div><h2>${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates">${esc(c.tab==="itihasa"?c.n:c.d)}</span></div>${c.flag?flagSvg(c.flag):""}</div>
+    <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong>${c.nat?`<span class="native ${c.nc}">${c.nat}</span>`:""}</div>
+      ${c.san?`<blockquote class="verse">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
+      ${c.quote?`<blockquote class="verse en">“${esc(c.quote)}”<cite>Ganguli, Droṇa Parva §23</cite></blockquote>`:""}
+      <p>${html}</p>${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}</div>
+    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span><span class="more">Open entry →</span></div>
+  </article>`;
+}
+
+/* filters */
+const F = {itihasa:"all", early:{r:"All",k:"all"}, later:{r:"All",k:"all"}};
+function chips(boxId, items, get, set){
+  const box=document.getElementById(boxId);
+  items.forEach(([v,l])=>{ const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=l; b.setAttribute("aria-pressed", get()===v);
+    b.onclick=()=>{ set(v); box.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed", x===b)); renderAll(); }; box.appendChild(b); });
+}
+chips("f-itihasa",[["all","All"],["epic","Critical edition"],["vulgate","Vulgate only"],["coin","Coin"]],()=>F.itihasa,v=>F.itihasa=v);
+for (const t of ["early","later"]){
+  const regs=["All",...new Set(inTab(t).map(c=>c.r))];
+  const order=["seal","coin","monument","flag","tradition"]; const kinds=order.filter(k=>inTab(t).some(c=>c.k===k||(k==="flag"&&c.flag)));
+  chips(`f-${t}-r`, regs.map(r=>[r,r]), ()=>F[t].r, v=>F[t].r=v);
+  chips(`f-${t}-k`, [["all","All"],...kinds.map(k=>[k,k[0].toUpperCase()+k.slice(1)])], ()=>F[t].k, v=>F[t].k=v);
+}
+function renderAll(){
+  const it=inTab("itihasa").filter(c=>F.itihasa==="all"||c.k===F.itihasa);
+  document.getElementById("grid-itihasa").innerHTML = it.map(card).join("") || `<div class="empty">No banners match that filter.</div>`;
+  for (const t of ["early","later"]){
+    const f=F[t]; const list=inTab(t).filter(c=>(f.r==="All"||c.r===f.r)&&(f.k==="all"||c.k===f.k||(f.k==="flag"&&c.flag)));
+    document.getElementById(`grid-${t}`).innerHTML = list.map(card).join("") || `<div class="empty">Nothing matches that region and evidence type. Pick another filter.</div>`;
+  }
+}
+renderAll();
+
+/* motif index */
+(function(){
+  const box=document.getElementById("f-motifs");
+  const tabShort={itihasa:"Epic",early:"Early",later:"Later"};
+  const order=["itihasa","early","later"];
+  document.getElementById("motif-list").innerHTML = Object.entries(MOTIFS).map(([k,label])=>{
+    const list=C.filter(c=>c.motifs.includes(k)).sort((a,b)=>order.indexOf(a.tab)-order.indexOf(b.tab));
+    const counts=order.map(t=>[t,list.filter(c=>c.tab===t).length]).filter(x=>x[1]);
+    return `<section class="motif" id="motif-${k}"><div><h3>${esc(label)}</h3><p class="count"><b>${list.length}</b> entries · ${counts.map(([t,n])=>`${n} ${tabShort[t].toLowerCase()}`).join(" · ")}</p></div>
+      <div class="strip">${list.map(c=>`<button class="mini t-${c.tab}" type="button" data-id="${c.id}">${c.pending?`<div class="ph"></div>`:`<img src="${c.img}?v=8" alt="" loading="lazy">`}<b>${esc(c.tab==="itihasa"?c.who:c.n.replace(/\s*\(.*?\)/,""))}</b><span>${tabShort[c.tab]}</span></button>`).join("")}</div></section>`;
+  }).join("");
+  Object.entries(MOTIFS).forEach(([k,label])=>{ const a=document.createElement("a"); a.className="chip"; a.href="#motif-"+k; a.textContent=label.split(/[ ,(]/)[0]; box.appendChild(a); });
+})();
+
+/* tabs and header */
+const tabs=[...document.querySelectorAll(".tab")];
+const counts={itihasa:inTab("itihasa").length, early:inTab("early").length, later:inTab("later").length, timeline:Object.keys(window.LR.SPAN||{}).length, motifs:Object.keys(MOTIFS).length};
+tabs.forEach(t=>t.querySelector("small").textContent=counts[t.id.slice(4)]);
+document.getElementById("foot-count").textContent = `${C.length} entries · ${Object.keys(SRC).length} sources cited`;
+function stats(k){
+  const L=inTab(k), s=(a,b)=>`<div><b>${a}</b>${b}</div>`;
+  if (k==="itihasa") return s(L.length,"banners")+s(L.filter(c=>c.k==="epic").length,"critical edition");
+  if (k==="early") return s(L.length,"dynasties")+s(L.filter(c=>c.k==="seal").length,"seal-attested");
+  if (k==="later") return s(L.length,"kingdoms")+s(L.filter(c=>c.flag).length,"flags shown");
+  if (k==="timeline") return s(Object.keys(window.LR.SPAN||{}).length,"dynasties dated")+s(inTab("itihasa").length,"epic banners, undated");
+  return s(Object.keys(MOTIFS).length,"motifs")+s(C.length,"entries");
+}
+let current="itihasa";
+function show(k, focus){
+  current=k;
+  document.getElementById("hd-eyebrow").textContent=TABS[k].eyebrow;
+  document.getElementById("hd-lede").textContent=TABS[k].lede;
+  document.getElementById("stats").innerHTML=stats(k);
+  tabs.forEach(t=>{ const on=t.id==="tab-"+k; t.setAttribute("aria-selected",on); t.tabIndex=on?0:-1;
+    document.getElementById(t.getAttribute("aria-controls")).hidden=!on; if(on&&focus) t.focus(); });
+  if(k==="timeline") renderTimeline();
+}
+tabs.forEach((t,i)=>{ t.onclick=()=>{ show(t.id.slice(4)); setHash(t.id.slice(4)); };
+  t.onkeydown=e=>{ if(e.key==="ArrowRight"||e.key==="ArrowLeft"){ e.preventDefault(); const n=tabs[(i+(e.key==="ArrowRight"?1:tabs.length-1))%tabs.length]; show(n.id.slice(4),true); setHash(n.id.slice(4)); } }; });
+function setHash(h){ try{ history.replaceState(null,"","#"+h); }catch(e){} }
+
+/* entry dialog */
+const dlg=document.getElementById("entry");
+let openId=null;
+function entryHtml(c){
+  const {html, keys} = cite(c,true);
+  const sib=inTab(c.tab), i=sib.indexOf(c), prev=sib[(i-1+sib.length)%sib.length], next=sib[(i+1)%sib.length];
+  const ev = c.ev ? `<figure class="ev"><img src="${esc(c.ev.img)}?v=1" alt="${esc(c.ev.caption)}" loading="lazy" onerror="this.closest('figure').outerHTML='<p class=noev>The evidence photo could not be loaded here. <a href=\\'${esc(c.ev.file)}\\' target=_blank rel=noopener>Open it on Wikimedia Commons</a>.</p>'"><figcaption><b>The evidence</b>${esc(c.ev.caption)}. Photo: ${esc(c.ev.credit)}${c.ev.licurl?` (<a href="${esc(c.ev.licurl)}" target="_blank" rel="noopener">licence</a>)`:""}, resized; <a href="${esc(c.ev.file)}" target="_blank" rel="noopener">file on Wikimedia Commons</a>.</figcaption></figure>`
+    : `<p class="noev">${c.tab==="itihasa" ? (c.k==="coin"?"No coin photograph has been added yet.":"The evidence for a banner is the verse itself, quoted beside the painting.") : "No openly licensed photograph of the original has been found yet."}</p>`;
+  const how = c.prompt || c.brief
+    ? `<details class="prompt"><summary>How this painting was made</summary><p>${esc(c.model||"OpenAI image model (ChatGPT)")}, from ${c.prompt?"this prompt":"this subject brief, combined with the shared style instruction below"}:</p><p>${esc(c.prompt||c.brief)}</p>${c.prompt?"":`<p>${esc(STYLE)}</p>`}<p>The result was checked against the source and regenerated where it added or missed details.</p></details>`
+    : c.model ? `<details class="prompt"><summary>How this image was made</summary><p>${esc(c.model)}.</p></details>`
+    : c.pending ? "" : `<details class="prompt"><summary>How this painting was made</summary><p>OpenAI image model (ChatGPT). The prompt for this early painting was not recorded.</p></details>`;
+  return `<div class="dlg-bar"><span class="where">${esc(TABS[c.tab].label)}</span>
+        <button class="ib" type="button" data-go="${prev.id}" aria-label="Previous entry: ${esc(prev.n)}">←</button>
+        <button class="ib" type="button" data-go="${next.id}" aria-label="Next entry: ${esc(next.n)}">→</button>
+        <button class="ib" type="button" id="copylink">Copy link</button>
+        <button class="ib" type="button" id="reportbtn">Report an error</button>
+        <button class="ib" type="button" id="closedlg" autofocus aria-label="Close entry">Close</button></div>
+  <div class="dlg">
+    <div class="dlg-art">${art(c,true)}${ev}</div>
+    <div class="dlg-body">
+      <div><h2 id="dlg-title">${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates" style="font-size:13px">${esc(c.tab==="itihasa"?c.n:c.d)}${c.r?" · "+esc(c.r):""}</span></div>
+      <div class="emblem"><strong style="font-size:17px">${esc(c.e)}</strong>${c.nat?`<span class="native ${c.nc}" style="font-size:19px">${c.nat}</span>`:""}<span class="pill ${c.k}" style="font:500 11px/1 var(--mono)">${KLABEL[c.k]}</span></div>
+      ${c.san?`<blockquote class="verse" style="font-size:15px">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
+      ${c.quote?`<blockquote class="verse en" style="font-size:15px">“${esc(c.quote)}”<cite>K. M. Ganguli, Droṇa Parva section 23 (vulgate)</cite></blockquote>`:""}
+      <p class="t">${html}</p>
+      ${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}
+      ${c.review?`<p class="warn review"><b>Awaiting scholarly confirmation.</b> ${esc(c.review)}</p>`:""}
+      ${c.flag?`<div class="flagrow">${flagSvg(c.flag)}<span>${esc(c.flag.cap)}</span></div>`:""}
+      ${c.motifs.length?`<h4>Motifs</h4><div class="mchips">${c.motifs.map(m=>`<a class="chip" href="#motif-${m}" data-motif="${m}">${esc(MOTIFS[m])} <small>${C.filter(x=>x.motifs.includes(m)).length}</small></a>`).join("")}</div>`:""}
+      <h4>Sources</h4><ol class="srcs">${keys.map((k,n)=>`<li id="src-${c.id}-${n+1}"><a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(srcTitle(k))}</a></li>`).join("")}</ol>
+      ${c.read?`<h4>Further reading</h4><ul class="srcs" style="list-style:none;padding:0">${c.read.map(k=>`<li><a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(SRC[k][0])}</a></li>`).join("")}</ul>`:""}
+      ${how}
+    </div></div>`;
+}
+function openEntry(id){
+  const c=BY[id]; if(!c) return;
+  if (current!==c.tab && current!=="timeline") show(c.tab);
+  openId=id; dlg.innerHTML=entryHtml(c);
+  if (!dlg.open) dlg.showModal();
+  dlg.scrollTop=0; setHash(id);
+  dlg.querySelector("#closedlg").onclick=()=>dlg.close();
+  dlg.querySelector("#reportbtn").onclick=()=>openReport(c);
+  dlg.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>openEntry(b.dataset.go));
+  dlg.querySelectorAll("[data-motif]").forEach(a=>a.onclick=e=>{ e.preventDefault(); dlg.close(); goMotif(a.dataset.motif); });
+  const cl=dlg.querySelector("#copylink"); cl.onclick=()=>{ const u=location.href.split("#")[0]+"#"+id;
+    const done=()=>{cl.textContent="Link copied";setTimeout(()=>cl.textContent="Copy link",1600);};
+    try{ navigator.clipboard.writeText(u).then(done,()=>{cl.textContent=u;}); }catch(e){ cl.textContent=u; } };
+}
+dlg.addEventListener("close",()=>{ const c=BY[openId]; openId=null; if(c) setHash(current); const el=document.querySelector(`.card[data-id="${c&&c.id}"]`); if(el&&current===c.tab) el.focus({preventScroll:true}); });
+dlg.addEventListener("click",e=>{ if(e.target===dlg) dlg.close(); });
+document.addEventListener("keydown",e=>{ if(!dlg.open||rp.open||e.target.closest("input,textarea,select")) return; if(e.key==="ArrowRight"&&!e.target.closest("input")) dlg.querySelector('[data-go]:nth-of-type(2)')?.click(); if(e.key==="ArrowLeft") dlg.querySelector('[data-go]')?.click(); });
+document.addEventListener("click",e=>{ const t=e.target.closest(".card[data-id],.mini[data-id],.tl-bar[data-id]"); if(t&&!e.target.closest("a")) openEntry(t.dataset.id); });
+document.addEventListener("keydown",e=>{ const t=e.target.closest&&e.target.closest(".card[data-id]"); if(t&&(e.key==="Enter"||e.key===" ")){ e.preventDefault(); openEntry(t.dataset.id);} });
+document.getElementById("f-motifs").addEventListener("click",e=>{ const a=e.target.closest("a"); if(!a) return; e.preventDefault(); goMotif(a.getAttribute("href").slice(7)); });
+function goMotif(m){ show("motifs"); setHash("motif-"+m); const el=document.getElementById("motif-"+m); if(el) el.scrollIntoView({block:"start"}); }
+
+/* timeline: scaled to fit the container; scrolls sideways only on narrow screens */
+function renderTimeline(){
+  const wrap=document.getElementById("tl-scroll"); const avail=wrap.clientWidth; if(!avail) return;
+  const SPAN=window.LR.SPAN||{}, Y0=-350, Y1=2060, K=Math.max(0.42,(avail-8)/(Y1-Y0)), x=y=>(y-Y0)*K, nm=c=>c.n.replace(/\s*\(.*?\)/,"");
+  const items=C.filter(c=>SPAN[c.id]).map(c=>{const [s,e]=SPAN[c.id]; return {c,s,e:e==null?s+130:e,open:e==null};}).sort((a,b)=>a.s-b.s||b.e-a.e);
+  const el=document.getElementById("tl");
+  if(!items.length){ el.innerHTML='<p style="padding:24px;color:var(--muted)">The timeline data did not load. Reload the page with a hard refresh (Ctrl/Cmd+Shift+R).</p>'; return; }
+  const lanes=[];
+  items.forEach(it=>{ const left=x(it.s), w=Math.max(x(it.e)-left,32); it.left=left; it.w=w;
+    const need=Math.max(left+w,left+40+nm(it.c).length*7.2)+10;
+    let l=lanes.findIndex(end=>end<=left); if(l<0){l=lanes.length;lanes.push(0);} lanes[l]=need; it.lane=l; });
+  const H=34+lanes.length*36, W=Math.max(Math.ceil(x(Y1)),Math.ceil(Math.max(...lanes))); el.style.width=W+"px"; el.style.height=H+"px";
+  let grid=""; for(let y=-300;y<=1900;y+=(K<0.6?200:100)){ grid+=`<div class="tl-grid${y===0?" zero":""}" style="left:${x(y)}px"><span>${y<0?-y+" BCE":y===0?"1 CE":y+" CE"}</span></div>`; }
+  el.innerHTML=grid+items.map(it=>{ const c=it.c; return `<button class="tl-bar ${c.tab}${it.open?" open":""}" type="button" data-id="${c.id}" style="left:${it.left}px;top:${30+it.lane*36}px;width:${it.w}px" title="${esc(nm(c)+" · "+c.d+" · "+c.e)}">${c.pending?"":`<img src="${c.img}?v=8" alt="" loading="lazy">`}<span style="position:relative">${esc(nm(c))}</span></button>`; }).join("");
+  document.getElementById("tl-hint").hidden = W<=avail+2;
+}
+let tlTimer; window.addEventListener("resize",()=>{ clearTimeout(tlTimer); tlTimer=setTimeout(()=>{ if(current==="timeline") renderTimeline(); },150); });
+
+document.getElementById("tl-epic").innerHTML=inTab("itihasa").map(c=>`<button class="mini t-itihasa" type="button" data-id="${c.id}">${c.pending?`<div class="ph"></div>`:`<img src="${c.img}?v=8" alt="" loading="lazy">`}<b>${esc(c.who)}</b><span>${esc(c.n)}</span></button>`).join("");
+
+/* report an error: opens a pre-filled GitHub issue */
+const rp=document.getElementById("report"); let rpEntry=null;
+function openReport(c){
+  rpEntry=c||null; document.getElementById("rp-about").textContent = c ? `Entry: ${c.tab==="itihasa"?c.who:c.n} (${c.id})` : "About: the register as a whole";
+  document.getElementById("rp-what").value=""; document.getElementById("rp-src").value="";
+  rp.showModal(); document.getElementById("rp-what").focus();
+}
+function rpText(){
+  const g=id=>document.getElementById(id).value.trim(), c=rpEntry;
+  const name=c?(c.tab==="itihasa"?c.who:c.n):"Whole register", link="https://sm7.github.io/lanchhana/register.html"+(c?"#"+c.id:"");
+  const title=`Correction: ${name}${c?` [${c.id}]`:""}: ${g("rp-type")}`;
+  const body=[`**Entry:** ${name}${c?` (${c.id})`:""}`,`**Link:** ${link}`,`**Kind of error:** ${g("rp-type")}`,"",`**What is wrong, and what it should say**`,g("rp-what")||"(not filled in)","",`**Source for the correction:** ${g("rp-src")||"none given"}`].join("\n");
+  return {title,body};
+}
+document.getElementById("rp-open").onclick=()=>{ if(!document.getElementById("rp-what").value.trim()){ document.getElementById("rp-what").focus(); return; }
+  const {title,body}=rpText(); const u="https://github.com/sm7/sm7.github.io/issues/new?labels=correction&title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body);
+  window.open(u,"_blank","noopener"); };
+document.getElementById("rp-copy").onclick=e=>{ const {title,body}=rpText(), b=e.currentTarget, t=title+"\n\n"+body;
+  const done=()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy report text",1600);};
+  try{ navigator.clipboard.writeText(t).then(done,()=>{b.textContent="Copy failed";}); }catch(err){ b.textContent="Copy failed"; } };
+document.getElementById("rp-cancel").onclick=()=>rp.close();
+rp.addEventListener("click",e=>{ if(e.target===rp) rp.close(); });
+document.getElementById("foot-report").onclick=()=>openReport(null);
+
+/* routing: #itihasa #early #later #motifs #motif-<k> #<entry-id> */
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1));
+  if (TABS[h]) { if(dlg.open) dlg.close(); show(h); }
+  else if (h.startsWith("motif-") && MOTIFS[h.slice(6)]) { if(dlg.open) dlg.close(); goMotif(h.slice(6)); }
+  else if (BY[h]) openEntry(h);
+  else show("itihasa");
+}
+route(); window.addEventListener("hashchange",route);
+
+const LAYOUT=new URLSearchParams(location.search).get("layout")||"a";
+const SCENES=[
+ {k:"city",label:"City",img:"img/city_v3.webp",title:"The city: Pāṭaliputra at the river confluence, c. 300 BCE",
+  alt:"Hypothetical reconstruction of Pāṭaliputra: a long narrow riverside city behind a timber palisade and a lotus-filled ditch",
+  T:"A long narrow city, about 80 stades by 15, at the meeting of two rivers, behind a timber palisade pierced for archers, with a ditch for defence and drainage (Megasthenes, in Strabo 15.1.35–36).",
+  A:"Wide ditches with lotus and crocodiles, square towers, an arched gateway (Arthaśāstra 2.3, a prescription attributed to Kauṭilya; its date is debated).",
+  C:"Roof forms, the palace hall, boats, vegetation, the light."},
+ {k:"street",label:"Street",img:"img/street_v3.webp",title:"The street: a royal road in the morning market",
+  alt:"Hypothetical reconstruction of a Pāṭaliputra royal road with market stalls, bullock carts and officials at a weighing scale",
+  T:"City commissioners supervised the markets, in boards of five (Megasthenes, in Strabo 15.1.50–51).",
+  A:"Royal roads four daṇḍas (about 24 ft) wide; sellers of scents, garlands and grain on the east side; a well for every ten houses (Arthaśāstra 2.4).",
+  C:"House fronts, dress, carts, the individual figures."},
+ {k:"temple",label:"Temple",img:"img/shiva_temple_ne.webp",title:"The temple: a grand Śiva shrine, entrance facing north-east",
+  alt:"Hypothetical reconstruction of a grand brick and timber Śiva temple at Pāṭaliputra with worshippers at the steps",
+  T:"Temples (hiera) were under the commissioners' care (Megasthenes, in Strabo 15.1.51). No eyewitness describes one.",
+  A:"At the centre of the city, the apartments of the gods, Śiva among them (Arthaśāstra 2.4).",
+  C:"Everything visible: the brick plinth, timber hall, tiered tiled roof, the figure in the sanctum, its size, and its north-east facing."}
+];
+const HYP="Hypothetical reconstruction, painted with an AI image model from the texts above. Nothing here is an archaeological finding. Figures follow early Indian relief and sculpture idiom; ornament is illustrative.";
+const sceneFig=(s,lazy)=>`<figure class="scene"><img src="${s.img}" alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''}><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.T)}</dd><dt class="A">Prescribed</dt><dd>${esc(s.A)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.C)}</dd></dl><p class="hyp">${esc(HYP)}</p></figcaption></figure>`;
+const entryHtml0=entryHtml;
+entryHtml=function(c){
+  const h=entryHtml0(c); if(c.id!=="maurya") return h;
+  const i=h.indexOf('<div class="dlg">'), pre=h.slice(0,i), rest=h.slice(i);
+  if(LAYOUT==="a"){
+    return pre+`<div class="stabs" role="tablist"><button role="tab" aria-selected="true" data-st="emblem">Emblem</button>${SCENES.map(s=>`<button role="tab" aria-selected="false" data-st="${s.k}">${s.label}</button>`).join("")}</div>
+    <div data-pane="emblem">${rest}</div>`+SCENES.map(s=>`<div data-pane="${s.k}" hidden>${sceneFig(s,true)}</div>`).join("");
+  }
+  if(LAYOUT==="b"){
+    return pre+rest+`<section class="setting"><h4>Setting · Pāṭaliputra under Candragupta, c. 321–297 BCE</h4><div class="thumbs">${SCENES.map(s=>`<button type="button" data-lb="${s.k}"><img src="${s.img}" alt="${esc(s.alt)}" loading="lazy"><b>${esc(s.label)}</b></button>`).join("")}</div></section>`;
+  }
+  return pre+rest+`<section class="setting"><h4>Setting · Pāṭaliputra under Candragupta, c. 321–297 BCE</h4><div class="car"><div class="track" id="track">${SCENES.map(s=>sceneFig(s,true)).join("")}</div><div class="dots" id="dots">${SCENES.map((s,n)=>`<button type="button" aria-label="${esc(s.label)}" data-dot="${n}" ${n?'':'aria-current="true"'}></button>`).join("")}</div></div></section>`;
+};
+dlg.addEventListener("click",e=>{
+  const st=e.target.closest("[data-st]"); if(st){ dlg.querySelectorAll("[data-st]").forEach(b=>b.setAttribute("aria-selected",b===st)); dlg.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==st.dataset.st); dlg.scrollTop=0; return; }
+  const lb=e.target.closest("[data-lb]"); if(lb){ const s=SCENES.find(x=>x.k===lb.dataset.lb); const d=document.createElement("div"); d.className="lb"; d.innerHTML=`<button class="ib x" type="button">Close</button>`+sceneFig(s); d.onclick=ev=>{ if(ev.target===d||ev.target.classList.contains("x")) d.remove(); }; dlg.appendChild(d); d.querySelector(".x").focus(); return; }
+  const dt=e.target.closest("[data-dot]"); if(dt){ const t=dlg.querySelector("#track"); t.scrollTo({left:t.clientWidth*+dt.dataset.dot+ +dt.dataset.dot*14,behavior:"smooth"}); }
+});
+dlg.addEventListener("scroll",e=>{ if(e.target.id!=="track") return; const t=e.target, n=Math.round(t.scrollLeft/(t.clientWidth+14)); dlg.querySelectorAll("[data-dot]").forEach((b,k)=>b.toggleAttribute("aria-current",k===n)); },true);
+dlg.addEventListener("keydown",e=>{ if(e.key==="Escape"){ const l=dlg.querySelector(".lb"); if(l){ e.preventDefault(); l.remove(); } } });
+const pb=document.createElement("div"); pb.className="pbar"; pb.innerHTML="Modal layout prototype (open Maurya): "+["a","b","c"].map(x=>`<a class="${x===LAYOUT?"on":""}" href="?layout=${x}#maurya">${x.toUpperCase()}</a>`).join("")+"<span>A tabs · B thumbnails+viewer · C swipe gallery</span>"; document.body.appendChild(pb);
+if(location.hash==="#maurya"){ if(dlg.open) dlg.close(); openEntry("maurya"); }
+</script>
