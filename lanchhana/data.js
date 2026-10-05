@@ -1574,10 +1574,10 @@ window.LR={
 "boar",
 "sky"
 ],
-"brief": "the Vijayanagara royal seal device: a boar standing to the right facing an upright straight sword, with a crescent moon and a rayed sun above. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"brief": "the Vijayanagara royal seal device: a wild boar standing in profile, with a crescent moon and a rayed sun above it, as on the copper-plate seal. No sword, no flag, no parasol. No human figures.",
 "ev": {
 "img": "evidence/vijayanagara.webp",
-"caption": "Boar facing an upright sword under the sun and moon, carved at the Bugga Rāmaliṅgeśvara temple, Tadipatri, 15th century",
+"caption": "Vijayanagara boar relief with sun, moon and an upright sword, Bugga Rāmaliṅgeśvara temple, Tadipatri, 15th century. This carving adds a sword; the medallion above follows the copper-plate seal described in the text (boar, sun and moon only) and has no sword.",
 "file": "https://commons.wikimedia.org/wiki/File:15th_century_Bugga_Ramalingeswara_temple,_Tadipatri,_Andhra_Pradesh,_India_-_76.jpg",
 "credit": "Ms Sarah Welch · CC0",
 "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
