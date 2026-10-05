@@ -144,6 +144,7 @@ details.prompt summary{cursor:pointer;font:600 13px/1.4 var(--body)}
 details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 0 0;white-space:pre-wrap}
 .flagrow{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted)}
 @media (max-width:860px){.dlg{grid-template-columns:1fr}.dlg-art{border-right:0;border-bottom:1px solid var(--line)}.dlg-art .medal,.dlg-art .pending{max-width:320px;margin:0 auto}}
+.hasscenes{font:600 11px/1 var(--mono);color:var(--verdigris);border:1px solid var(--verdigris);border-radius:999px;padding:4px 8px;white-space:nowrap}
 /* scenes gallery */
 .gal{display:grid;gap:10px;min-width:0}
 .gal h4{margin:0}
@@ -251,6 +252,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
     <div class="controls" role="toolbar" aria-label="Filters">
       <div class="group" id="f-early-r"><span>Region</span></div>
       <div class="group" id="f-early-k"><span>Evidence</span></div>
+      <div class="group" id="f-early-s"><span>Setting</span></div>
     </div>
     <div class="grid" id="grid-early"></div>
     <section class="notes">
@@ -278,6 +280,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
     <div class="controls" role="toolbar" aria-label="Filters">
       <div class="group" id="f-later-r"><span>Region</span></div>
       <div class="group" id="f-later-k"><span>Evidence</span></div>
+      <div class="group" id="f-later-s"><span>Setting</span></div>
     </div>
     <div class="grid" id="grid-later"></div>
     <section class="notes">
@@ -389,12 +392,12 @@ function card(c){
       ${c.san?`<blockquote class="verse">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
       ${c.quote?`<blockquote class="verse en">“${esc(c.quote)}”<cite>Ganguli, Droṇa Parva §23</cite></blockquote>`:""}
       <p>${html}</p>${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}</div>
-    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span><span class="more">Open entry →</span></div>
+    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span>${c.scenes?`<span class="hasscenes" title="Reconstructed city, street and temple scenes in the entry">${c.scenes.items.length} scenes</span>`:""}<span class="more">Open entry →</span></div>
   </article>`;
 }
 
 /* filters */
-const F = {itihasa:"all", early:{r:"All",k:"all"}, later:{r:"All",k:"all"}};
+const F = {itihasa:"all", early:{r:"All",k:"all",s:"all"}, later:{r:"All",k:"all",s:"all"}};
 function chips(boxId, items, get, set){
   const box=document.getElementById(boxId);
   items.forEach(([v,l])=>{ const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=l; b.setAttribute("aria-pressed", get()===v);
@@ -406,12 +409,14 @@ for (const t of ["early","later"]){
   const order=["seal","coin","monument","flag","tradition"]; const kinds=order.filter(k=>inTab(t).some(c=>c.k===k||(k==="flag"&&c.flag)));
   chips(`f-${t}-r`, regs.map(r=>[r,r]), ()=>F[t].r, v=>F[t].r=v);
   chips(`f-${t}-k`, [["all","All"],...kinds.map(k=>[k,k[0].toUpperCase()+k.slice(1)])], ()=>F[t].k, v=>F[t].k=v);
+  if (inTab(t).some(c=>c.scenes)) chips(`f-${t}-s`, [["all","All"],["scenes","With scenes"]], ()=>F[t].s, v=>F[t].s=v);
+  else document.getElementById(`f-${t}-s`).remove();
 }
 function renderAll(){
   const it=inTab("itihasa").filter(c=>F.itihasa==="all"||c.k===F.itihasa);
   document.getElementById("grid-itihasa").innerHTML = it.map(card).join("") || `<div class="empty">No banners match that filter.</div>`;
   for (const t of ["early","later"]){
-    const f=F[t]; const list=inTab(t).filter(c=>(f.r==="All"||c.r===f.r)&&(f.k==="all"||c.k===f.k||(f.k==="flag"&&c.flag)));
+    const f=F[t]; const list=inTab(t).filter(c=>(f.r==="All"||c.r===f.r)&&(f.k==="all"||c.k===f.k||(f.k==="flag"&&c.flag))&&(f.s==="all"||c.scenes));
     document.getElementById(`grid-${t}`).innerHTML = list.map(card).join("") || `<div class="empty">Nothing matches that region and evidence type. Pick another filter.</div>`;
   }
 }
