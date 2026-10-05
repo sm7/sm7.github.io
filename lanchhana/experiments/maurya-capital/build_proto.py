@@ -32,6 +32,23 @@ css='''
 .dots button{width:10px;height:10px;border-radius:50%;border:1px solid var(--ink);background:transparent;padding:0;cursor:pointer}
 .dots button[aria-current=true]{background:var(--ink)}
 @media(max-width:700px){.thumbs{grid-template-columns:1fr}.scene .cap{padding:14px 16px 18px}.stabs{padding:10px 12px}}
+
+.gal{display:grid;gap:10px;min-width:0}
+.gal-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.gal-h h4{margin:0 auto 0 0}
+.gal .track{gap:12px;padding-bottom:4px}
+.gal .track .scene{flex:0 0 88%;position:relative}
+.gal .scene img{cursor:zoom-in}
+.gal .scene h3{font-size:17px}
+.gal .cap{padding:12px 14px 14px;gap:8px}
+.gal .lab{font-size:12.5px}
+.badge{position:absolute;top:8px;left:8px;font:600 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;background:rgba(14,21,19,.78);color:#fff;border-radius:4px;padding:5px 7px;pointer-events:none}
+.gnav{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.gnav button{font:500 12.5px/1 var(--body);border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:8px 12px;cursor:pointer}
+.gnav button[aria-current=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.gnav .ct{font:500 11px/1 var(--mono);color:var(--muted);margin-left:auto}
+.gal .hyp{font-size:11.5px}
+.lb .scene{position:relative}
 '''
 js=r'''
 const LAYOUT=new URLSearchParams(location.search).get("layout")||"a";
@@ -55,26 +72,22 @@ const SCENES=[
 const HYP="Hypothetical reconstruction, painted with an AI image model from the texts above. Nothing here is an archaeological finding. Figures follow early Indian relief and sculpture idiom; ornament is illustrative.";
 const sceneFig=(s,lazy)=>`<figure class="scene"><img src="${s.img}" alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''}><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.T)}</dd><dt class="A">Prescribed</dt><dd>${esc(s.A)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.C)}</dd></dl><p class="hyp">${esc(HYP)}</p></figcaption></figure>`;
 const entryHtml0=entryHtml;
+const HYP2="Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Figures follow early Indian relief idiom; ornament is illustrative.";
+const slide=(s,n,lazy)=>`<figure class="scene" ${n!=null?`data-slide="${n}"`:""}><img src="${s.img}" alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''} data-zoom="${s.k}"><span class="badge">Reconstruction</span><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.T)}</dd><dt class="A">Prescribed</dt><dd>${esc(s.A)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.C)}</dd></dl><p class="hyp">${esc(HYP2)}</p></figcaption></figure>`;
 entryHtml=function(c){
   const h=entryHtml0(c); if(c.id!=="maurya") return h;
-  const i=h.indexOf('<div class="dlg">'), pre=h.slice(0,i), rest=h.slice(i);
-  if(LAYOUT==="a"){
-    return pre+`<div class="stabs" role="tablist"><button role="tab" aria-selected="true" data-st="emblem">Emblem</button>${SCENES.map(s=>`<button role="tab" aria-selected="false" data-st="${s.k}">${s.label}</button>`).join("")}</div>
-    <div data-pane="emblem">${rest}</div>`+SCENES.map(s=>`<div data-pane="${s.k}" hidden>${sceneFig(s,true)}</div>`).join("");
-  }
-  if(LAYOUT==="b"){
-    return pre+rest+`<section class="setting"><h4>Setting · Pāṭaliputra under Candragupta, c. 321–297 BCE</h4><div class="thumbs">${SCENES.map(s=>`<button type="button" data-lb="${s.k}"><img src="${s.img}" alt="${esc(s.alt)}" loading="lazy"><b>${esc(s.label)}</b></button>`).join("")}</div></section>`;
-  }
-  return pre+rest+`<section class="setting"><h4>Setting · Pāṭaliputra under Candragupta, c. 321–297 BCE</h4><div class="car"><div class="track" id="track">${SCENES.map(s=>sceneFig(s,true)).join("")}</div><div class="dots" id="dots">${SCENES.map((s,n)=>`<button type="button" aria-label="${esc(s.label)}" data-dot="${n}" ${n?'':'aria-current="true"'}></button>`).join("")}</div></div></section>`;
+  const g=`<section class="gal" aria-label="Pāṭaliputra under Candragupta, c. 321–297 BCE, reconstructions"><div class="gal-h"><h4>Setting · Pāṭaliputra, c. 321–297 BCE</h4></div>
+   <div class="gnav" id="gnav">${SCENES.map((s,n)=>`<button type="button" data-dot="${n}" ${n?'':'aria-current="true"'}>${esc(s.label)}</button>`).join("")}<span class="ct" id="gct" aria-live="polite">1 / ${SCENES.length}</span></div>
+   <div class="track" id="track" tabindex="0" aria-label="Scene gallery">${SCENES.map((s,n)=>slide(s,n,n>0)).join("")}</div></section>`;
+  return h.replace('<p class="t">',g+'<p class="t">');
 };
+function gscroll(n){ const t=dlg.querySelector("#track"); const sl=t.children[n]; if(sl) t.scrollTo({left:sl.offsetLeft-t.offsetLeft,behavior:"smooth"}); }
 dlg.addEventListener("click",e=>{
-  const st=e.target.closest("[data-st]"); if(st){ dlg.querySelectorAll("[data-st]").forEach(b=>b.setAttribute("aria-selected",b===st)); dlg.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==st.dataset.st); dlg.scrollTop=0; return; }
-  const lb=e.target.closest("[data-lb]"); if(lb){ const s=SCENES.find(x=>x.k===lb.dataset.lb); const d=document.createElement("div"); d.className="lb"; d.innerHTML=`<button class="ib x" type="button">Close</button>`+sceneFig(s); d.onclick=ev=>{ if(ev.target===d||ev.target.classList.contains("x")) d.remove(); }; dlg.appendChild(d); d.querySelector(".x").focus(); return; }
-  const dt=e.target.closest("[data-dot]"); if(dt){ const t=dlg.querySelector("#track"); t.scrollTo({left:t.clientWidth*+dt.dataset.dot+ +dt.dataset.dot*14,behavior:"smooth"}); }
+  const z=e.target.closest("[data-zoom]"); if(z){ const s=SCENES.find(x=>x.k===z.dataset.zoom); const d=document.createElement("div"); d.className="lb"; d.innerHTML=`<button class="ib x" type="button">Close</button>`+slide(s,null,false); d.onclick=ev=>{ if(ev.target===d||ev.target.classList.contains("x")) d.remove(); }; dlg.appendChild(d); d.querySelector(".x").focus(); return; }
+  const dt=e.target.closest("[data-dot]"); if(dt) gscroll(+dt.dataset.dot);
 });
-dlg.addEventListener("scroll",e=>{ if(e.target.id!=="track") return; const t=e.target, n=Math.round(t.scrollLeft/(t.clientWidth+14)); dlg.querySelectorAll("[data-dot]").forEach((b,k)=>b.toggleAttribute("aria-current",k===n)); },true);
-dlg.addEventListener("keydown",e=>{ if(e.key==="Escape"){ const l=dlg.querySelector(".lb"); if(l){ e.preventDefault(); l.remove(); } } });
-const pb=document.createElement("div"); pb.className="pbar"; pb.innerHTML="Modal layout prototype (open Maurya): "+["a","b","c"].map(x=>`<a class="${x===LAYOUT?"on":""}" href="?layout=${x}#maurya">${x.toUpperCase()}</a>`).join("")+"<span>A tabs · B thumbnails+viewer · C swipe gallery</span>"; document.body.appendChild(pb);
+dlg.addEventListener("scroll",e=>{ if(e.target.id!=="track") return; const t=e.target; let n=0,best=1e9; [...t.children].forEach((c,k)=>{ const d=Math.abs(c.offsetLeft-t.offsetLeft-t.scrollLeft); if(d<best){best=d;n=k;} }); dlg.querySelectorAll("[data-dot]").forEach((b,k)=>b.toggleAttribute("aria-current",k===n)); const ct=dlg.querySelector("#gct"); if(ct) ct.textContent=`${n+1} / ${SCENES.length}`; },true);
+dlg.addEventListener("keydown",e=>{ if(e.key==="Escape"){ const l=dlg.querySelector(".lb"); if(l){ e.preventDefault(); l.remove(); } } if(e.target.id==="track"&&(e.key==="ArrowRight"||e.key==="ArrowLeft")){ e.stopPropagation(); } });
 if(location.hash==="#maurya"){ if(dlg.open) dlg.close(); openEntry("maurya"); }
 '''
 # insert css and js
