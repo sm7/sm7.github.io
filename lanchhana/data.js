@@ -1582,7 +1582,48 @@ window.LR={
 "credit": "Ms Sarah Welch · CC0",
 "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
 },
-"repaint": "the Vijayanagara seal device: a wild boar standing in profile, with a crescent moon and a rayed sun above it. No sword."
+"repaint": "the Vijayanagara seal device: a wild boar standing in profile, with a crescent moon and a rayed sun above it. No sword.",
+"scenes": {
+"heading": "Setting · Vijayanagara under Kṛṣṇadevarāya, c. 1509–29",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/vijayanagara/city.webp",
+"title": "The city: Vijayanagara inside its ring of hills, c. 1520",
+"alt": "Hypothetical reconstruction of Vijayanagara: a walled stone city among piled granite boulder hills, with a moat, a bent gateway, lakes and a tall temple gateway tower",
+"attested": "The city lies inside rings of hills of piled white boulders; a stone wall with a water-filled moat where it crosses low ground and a row of upright pointed stones before it; a gate with a tower on each side; fields, gardens and two lakes inside the first wall; a palace enclosure larger than the castle of Lisbon; a great river on the north with round basket-boats (Domingos Paes, c. 1520–22, in Sewell, A Forgotten Empire, pp. 243, 253–9).",
+"secondLabel": "Other sources",
+"prescribed": "Abdur Razzaq (1443, a century earlier) counts seven walls and notes the same upright stones and the fields and gardens between the walls. Sewell reads his seven as successive defences on the approach (Sewell pp. 88–90).",
+"conjecture": "Roof colours, the layout of the streets, the boats' shapes, the light, the number and look of the towers.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "street",
+"label": "Street",
+"img": "scenes/vijayanagara/street.webp",
+"title": "The street: the bazaar at the evening fair",
+"alt": "Hypothetical reconstruction of a Vijayanagara bazaar street at evening, with jewellers, fruit sellers, horses, laden oxen, an elephant and a festival chariot",
+"attested": "A broad street of rich houses where merchants sell rubies, diamonds, pearls and cloth; an evening fair of horses, citrons, limes and oranges; a temple in every street; a car dragged through once a year; laden oxen and elephants crowding the streets; sacred bulls loose; men of every nation; most people barefoot (Paes, pp. 238, 253–7).",
+"secondLabel": "Other sources",
+"prescribed": "Abdur Razzaq (1443): long, broad bazaars with arcades and galleries, roses on sale everywhere, jewellers selling pearls and rubies openly (Sewell pp. 90–91).",
+"conjecture": "Facade forms, the arch of the distant gate, individual figures, colours of cloth and goods.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/vijayanagara/temple.webp",
+"title": "The temple: the east gate of the great Hampi temple at dusk",
+"alt": "Hypothetical reconstruction of the east gateway of the great temple at Vijayanagara at dusk, with a tall tiered tower, gilded columns, pilgrims and oil lamps",
+"attested": "Paes's great pagoda, held in most veneration (his 'Adperadianar', which Sewell identifies as the Virūpākṣa temple): a street of arcaded pilgrims' houses before its east gate; a lofty gate tower covered in rows of men, women and hunting scenes, the figures shrinking toward the top; a second smaller gate and a pillared court; four columns before the temple, two gilded and two of copper; the gate and shrine clad in gilded copper with gilt tiger-like animals on the roof; 2,500–3,000 oil lamps lit nightly (Paes, pp. 260–1).",
+"secondLabel": "Other sources",
+"prescribed": "Sewell, citing the temple inscription, says Kṛṣṇadevarāya built a gopura and an assembly hall there at his coronation festival in 1509–10 and repaired another gopura (Sewell pp. 120, 161). The inscription itself was not read.",
+"conjecture": "The tower's proportions and bright colours, the sculpture style, the dress, the dusk light and the composition.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "ahom",
