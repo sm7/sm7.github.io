@@ -1,0 +1,22 @@
+# Vijayanagara scenes: the capital Vijayanagara (Portuguese "Bisnaga") under Kṛṣṇadevarāya, c. 1509–29
+
+Era: Kṛṣṇadevarāya, the dynasty's most renowned king. Domingos Paes wrote c. 1520–22 and describes this king as then reigning, so the witness is contemporary. His chronicle is "Of the things which I saw and contrived to learn concerning the kingdom of Narsimga" (R. Sewell, *A Forgotten Empire*, London 1900, pp. 236 ff.; read on archive.org, full-text file forgottenempire00robe).
+
+## Read this session
+Paes, pp. 236–274 (country, Bisnaga's hills, walls and gates, the palace, streets, bazaar, markets, the big pagoda, the Mahānavamī-type festival at the palace). Footnotes by Sewell are editorial and are labelled as such.
+
+## Not read, so not used
+Fernão Nuniz (written c. 1535–37, after Kṛṣṇadevarāya; also partly hearsay); Abdur Razzaq (1443, Devarāya II's reign, a different king); Nikitin; Varthema; Kṛṣṇadevarāya's own *Āmuktamālyada*; the inscriptions (e.g. on Virūpākṣa and Vitṭhala). The temple identification below rests on Sewell's gloss.
+
+## Scene 1: CITY (Paes)
+[T] The city lies inside rings of hills of "white stone piled one block over another … as if they stood in the air" (p. 243). [T] A first wall of massive stone enclosing fields, rice, gardens, orchards and a palm grove, with houses; water from two lakes through the wall (p. 253). [T] A moat of water where the wall crosses low ground; a second line of pointed stones set upright, breast-high, between moat and wall (p. 253). [T] City gate with a tower on each side, a bend in the wall before the gate, two small temples inside; a second gate and wall; a third fortress; the palace enclosure "greater than all the castle of Lisbon" (pp. 254–6). [T] Streets and rows of houses of captains and rich men; many groves, water conduits and lakes inside the city; "as large as Rome"; a great river on the north, round basket-boats of cane covered with leather (pp. 256, 259). [T] Houses one-storeyed, flat-roofed, with towers (corucheos), pillars, verandahs (p. 246). [T] Streets crowded with people, elephants and laden oxen (p. 257). [C] Roof colours, exact layout, boats' sizes, light and haze, tank shapes. Not shown: Sewell's identification of specific ruins.
+
+## Scene 2: STREET (Paes)
+[T] A broad street of fine houses; merchants selling rubies, diamonds, emeralds, pearls, cloth; every evening a fair of horses, nags, citrons, limes, oranges, grapes, garden stuff and wood (p. 255). [T] A street lined with shops and houses, "as wide as a place of tourney", planted with shade trees by the king, with a stone temple (p. 253). [T] Temples in every street, belonging to guilds of craftsmen and merchants (p. 256). [T] A triumphal car covered with carved work, dragged once a year (p. 255). [T] Sacred bulls loose in the city (p. 238). [T] Laden oxen everywhere (p. 257). [T] Dancing-women live in the best streets, richly dressed; people mostly barefoot; shoes with pointed toes or soles with straps; men in white cloths, tunics (cadayas) and caps (pp. 242, 251–2). [C] Exact facade forms, individual figures, goods on display, colours of cloth.
+
+## Scene 3: TEMPLE (Paes; identification by Sewell)
+Paes's "Adperadianar", the pagoda "held in most veneration", north of the city, is identified by Sewell (note, p. 260) as the principal temple at Hampi, dedicated to Virūpākṣa. This is an editor's identification, not Paes's. Paes says the temple is the "principal one and the oldest".
+[T] A street of fine houses with balconies and arcades before its east gate, lodging pilgrims, with a palace of the king in the same street (p. 260). [T] A first gate with a very lofty tower "all covered with rows of men and women and hunting scenes and many other representations", the figures diminishing in size as the tower narrows; a second, smaller gate; a large court with pillared verandahs, the house of the idol in the middle (pp. 260–1). [T] Four columns before the temple door, two gilded and two of copper; the temple gate covered with gilded copper, gilt tiger-like animals on the roof; pillared hall with 2,500–3,000 oil lamps lit nightly; a vaulted dark inner shrine lit by lamps; the main idol a shapeless round stone; Brahmans guard the door (p. 261). [T] A white alabaster six-armed female image killing a buffalo behind the temple (p. 262). [T] Festival cars with dancing-girls (p. 262). [C] Gopura proportions and colours, sculpture style, dress, composition, time of day.
+
+## Style
+Same naturalistic archaeological-illustrator block as the Maurya set (user's choice).
