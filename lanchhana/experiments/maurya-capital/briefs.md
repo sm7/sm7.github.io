@@ -1,4 +1,6 @@
-# Maurya capital experiment: Pāṭaliputra (Palibothra), c. 300–232 BCE (Candragupta to Aśoka)
+# Maurya capital experiment: Pāṭaliputra (Palibothra) in the reign of Candragupta Maurya, c. 321–297 BCE
+
+Era fixed by the user: Candragupta, not Aśoka. Megasthenes, Seleucus I's ambassador at this court, is the contemporary witness behind Strabo and Diodorus here. Aśokan edicts, Faxian and the Kukkuṭārāma monastery are later than this era and are out of scope.
 
 Status: source gathering. No images generated yet.
 
@@ -14,3 +16,7 @@ Status: source gathering. No images generated yet.
 City view: ATTESTED timber palisade with loopholes, water-filled ditch, long narrow riverside plan, confluence of two rivers. INFERRED wood and brick building, thatch and tile roofs. CONJECTURAL everything else.
 Street: ATTESTED officials supervising markets, foreigners looked after. No physical description survives in the read sources: street fabric is CONJECTURAL.
 Religious site: NO read source describes the appearance of any Pāṭaliputra shrine or vihāra. "Temple" is anachronistic for the Mauryan city; the Buddhist foundation traditionally tied to Aśoka there (Kukkuṭārāma) is known from later texts not yet read. Any image would be wholly conjectural.
+
+## Revised religious-site plan (Candragupta era)
+No Buddhist monastery of this reign is attested. Candidate: the city-centre deity shrines prescribed in Arthaśāstra 2.4 (attributed to Candragupta's minister Kauṭilya; text dating is debated, so these are PRESCRIBED, not observed). Needs the Arthaśāstra text from the user. Megasthenes on Brahmans and Śramaṇas (Strabo 15.1.58-60) covers religious life, not buildings.
+Palace (Megasthenes via Strabo/Aelian): gilded pillars, parks, tame peacocks. Aelian not yet read.
