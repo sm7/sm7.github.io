@@ -1,0 +1,18 @@
+{
+ "id": "chera",
+ "heading": "Setting · Muziris under the Cheras, c. 60 CE",
+ "items": [
+  {
+   "k": "city",
+   "label": "Harbour",
+   "img": "scenes/chera/city.webp",
+   "title": "The port: Muziris on its river, c. 60 CE",
+   "alt": "Hypothetical reconstruction of Muziris: Greek merchant ships in a river, local boats ferrying pepper, ivory and pearls to a thatched waterfront market",
+   "attested": "Muziris, in the kingdom of Cerobothra, 'abounds in ships' from Arabia and from the Greeks; it lies on a river, 20 stadia up from the shore; the river is full of shoals so ships anchor at the roadstead of Bacare and cargo is brought down; large ships come for pepper and malabathrum; imports of coin, topaz, linens, coral, glass, copper, tin, lead, wine and wheat; exports of pepper, fine pearls, ivory, silk cloth, spikenard, transparent stones, diamonds, sapphires and tortoise-shell; the kings live in the interior (Periplus of the Erythraean Sea §§53–56, tr. Schoff 1912, pp. 44–45).",
+   "prescribed": "None: no second source read (the Sangam poems and Pliny not yet read).",
+   "secondLabel": "Other sources",
+   "conjecture": "The town's buildings (thatched sheds here), ship and boat forms, dress, the elephant, the crowd. The text describes only the trade, so this is the only scene.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}

@@ -1424,7 +1424,24 @@ window.LR={
 "motifs": [
 "weapon"
 ],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a strung bow held vertically with an arrow notched on the string, pointing right. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
+"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a strung bow held vertically with an arrow notched on the string, pointing right. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"scenes": {
+"heading": "Setting · Muziris under the Cheras, c. 60 CE",
+"items": [
+{
+"k": "city",
+"label": "Harbour",
+"img": "scenes/chera/city.webp",
+"title": "The port: Muziris on its river, c. 60 CE",
+"alt": "Hypothetical reconstruction of Muziris: Greek merchant ships in a river, local boats ferrying pepper, ivory and pearls to a thatched waterfront market",
+"attested": "Muziris, in the kingdom of Cerobothra, 'abounds in ships' from Arabia and from the Greeks; it lies on a river, 20 stadia up from the shore; the river is full of shoals so ships anchor at the roadstead of Bacare and cargo is brought down; large ships come for pepper and malabathrum; imports of coin, topaz, linens, coral, glass, copper, tin, lead, wine and wheat; exports of pepper, fine pearls, ivory, silk cloth, spikenard, transparent stones, diamonds, sapphires and tortoise-shell; the kings live in the interior (Periplus of the Erythraean Sea §§53–56, tr. Schoff 1912, pp. 44–45).",
+"prescribed": "None: no second source read (the Sangam poems and Pliny not yet read).",
+"secondLabel": "Other sources",
+"conjecture": "The town's buildings (thatched sheds here), ship and boat forms, dress, the elephant, the crowd. The text describes only the trade, so this is the only scene.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "paramara",
@@ -1830,7 +1847,36 @@ window.LR={
 "credit": "Prakashsubbarao at en.wikipedia · Public domain",
 "licurl": null
 },
-"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check.",
+"scenes": {
+"heading": "Setting · Seringapatam under Hyder Ali and Tipu Sultan, as seen in 1800",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/mysore/city.webp",
+"title": "The city: Seringapatam, the island fort on the Cauvery",
+"alt": "Hypothetical reconstruction of Seringapatam: a fort of long straight walls and bastions on a rocky Cauvery island, with a granite-pillar bridge and a temple tower inside",
+"attested": "An island about 3 miles by 1 in the Cauvery, a large rapid river with a wide rocky bed; the fort at its upper end, long straight walls and square bastions, cavaliers heaped one above another, ditches cut through the granite, a high steep glacis, an inner rampart and wide inner ditch; a bridge of square granite pillars with long stones laid across them and an aqueduct beside the road; streets narrow and confused, houses mostly mean; the Śrī Raṅga temple of great antiquity (Francis Buchanan, A Journey from Madras through the Countries of Mysore, Canara and Malabar, 1807, vol. 1 pp. 58–66).",
+"prescribed": "Buchanan saw the town in May 1800, a year after Tipu's fall and the siege, and describes it as he found it.",
+"secondLabel": "Later witness",
+"conjecture": "The regularity of the walls (Buchanan calls the work 'unsightly'), the houses, the gateway tower's form, boats, dress.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Palace and tomb",
+"img": "scenes/mysore/temple.webp",
+"title": "The Lal Bagh palace and Hyder's mausoleum",
+"alt": "Hypothetical reconstruction of the Lal Bagh palace and the mausoleum of Hyder Ali with black polished columns, canals and a formal garden",
+"attested": "At the lower end of the island, outside the walls, the Laul Bagh palace 'though built of mud, possesses a considerable degree of elegance' and is 'the handsomest native building' he had seen; the garden laid out with canals from the river; near it the mausoleum of Hyder, where Tipu also lies, ornamented with columns of black hornblende that takes a splendid polish; the tombs covered with rich cloths, mullahs praying and musicians playing the nobat; nearby the Dariya Daulat Bagh with painted walls (Buchanan, vol. 1 pp. 73–74).",
+"prescribed": "Buchanan saw these buildings in 1800 and describes them as he found them.",
+"secondLabel": "Later witness",
+"conjecture": "The palace reads as carved white stone here though Buchanan says mud; the dome, cypresses, planting layout and dress are conjecture.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "travancore",

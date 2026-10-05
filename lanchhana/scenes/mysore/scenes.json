@@ -1,0 +1,30 @@
+{
+ "id": "mysore",
+ "heading": "Setting · Seringapatam under Hyder Ali and Tipu Sultan, as seen in 1800",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "img": "scenes/mysore/city.webp",
+   "title": "The city: Seringapatam, the island fort on the Cauvery",
+   "alt": "Hypothetical reconstruction of Seringapatam: a fort of long straight walls and bastions on a rocky Cauvery island, with a granite-pillar bridge and a temple tower inside",
+   "attested": "An island about 3 miles by 1 in the Cauvery, a large rapid river with a wide rocky bed; the fort at its upper end, long straight walls and square bastions, cavaliers heaped one above another, ditches cut through the granite, a high steep glacis, an inner rampart and wide inner ditch; a bridge of square granite pillars with long stones laid across them and an aqueduct beside the road; streets narrow and confused, houses mostly mean; the Śrī Raṅga temple of great antiquity (Francis Buchanan, A Journey from Madras through the Countries of Mysore, Canara and Malabar, 1807, vol. 1 pp. 58–66).",
+   "prescribed": "Buchanan saw the town in May 1800, a year after Tipu's fall and the siege, and describes it as he found it.",
+   "secondLabel": "Later witness",
+   "conjecture": "The regularity of the walls (Buchanan calls the work 'unsightly'), the houses, the gateway tower's form, boats, dress.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "temple",
+   "label": "Palace and tomb",
+   "img": "scenes/mysore/temple.webp",
+   "title": "The Lal Bagh palace and Hyder's mausoleum",
+   "alt": "Hypothetical reconstruction of the Lal Bagh palace and the mausoleum of Hyder Ali with black polished columns, canals and a formal garden",
+   "attested": "At the lower end of the island, outside the walls, the Laul Bagh palace 'though built of mud, possesses a considerable degree of elegance' and is 'the handsomest native building' he had seen; the garden laid out with canals from the river; near it the mausoleum of Hyder, where Tipu also lies, ornamented with columns of black hornblende that takes a splendid polish; the tombs covered with rich cloths, mullahs praying and musicians playing the nobat; nearby the Dariya Daulat Bagh with painted walls (Buchanan, vol. 1 pp. 73–74).",
+   "prescribed": "Buchanan saw these buildings in 1800 and describes them as he found them.",
+   "secondLabel": "Later witness",
+   "conjecture": "The palace reads as carved white stone here though Buchanan says mud; the dome, cypresses, planting layout and dress are conjecture.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}
