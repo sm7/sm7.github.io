@@ -1208,6 +1208,35 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Vajraditya_(Vigraha_Deva)_of_the_Karkota_dynasty_Circa_763-770.jpg",
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
+},
+"scenes": {
+"heading": "Setting · Lalitāditya's foundations in Kashmir, c. 725–760 CE",
+"items": [
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/karkota/temple.webp",
+"title": "The Mārtāṇḍa temple on the plateau of Mattan",
+"alt": "Hypothetical reconstruction of the Mārtāṇḍa sun temple: a lofty central stone shrine with a small shrine on either side of the entrance, in a large colonnaded courtyard on a plateau",
+"attested": "Kalhaṇa describes the Mārtāṇḍa shrine 'with its massive walls of stone within a lofty enclosure' (Rājataraṅgiṇī IV.192, tr. Stein 1900, vol. 1 pp. 141–42). Stein's note records the surviving ruins: a lofty central edifice, a small detached shrine on either side of the entrance, and a quadrangular courtyard of imposing dimensions surrounded by colonnades, on the arid plateau (udar) of Mattan.",
+"prescribed": "Kalhaṇa wrote c. 1148, about four centuries after Lalitāditya, from tradition. The ruins are the check on his account.",
+"secondLabel": "Later witness",
+"conjecture": "Roof form and ornament, the colonnade's design, the lamps, colours, season, the people. The temple is shown intact; today it is a ruin.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "city",
+"label": "Royal town",
+"img": "scenes/karkota/parihasapura.webp",
+"title": "Parihāsapura: pillar, shrines and the great Buddha",
+"alt": "Hypothetical reconstruction of Parihāsapura: a tall stone pillar topped by a golden Garuḍa, stone Viṣṇu shrines, a monastery quadrangle with a caitya, and a very tall Buddha above the roofs, with the Kashmir valley and snow mountains behind",
+"attested": "Lalitāditya built the town Parihāsapura, with a silver Parihāsakeśava, a golden Muktākeśava, a golden-armoured Mahāvarāha, a silver Govardhanadhara, a stone pillar 54 hands high topped by a Garuḍa, and the Rājavihāra with a large quadrangle, a large caitya and a large Jina image. A 'Great Buddha' of copper reaches up to the sky (Rājataraṅgiṇī IV.194–203, tr. Stein 1900). Only Kalhaṇa describes it; no remains are described in the text read.",
+"prescribed": "Kalhaṇa, c. 1148, a later witness. No contemporary description of the town was read.",
+"secondLabel": "Later witness",
+"conjecture": "All architecture and layout, the scale of the Buddha (Kalhaṇa's phrase is poetic), and its material, which is painted stone-coloured here although the text says copper. Dress, colours and the valley view are also conjecture. No street scene is made, as the source gives none.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
 }
 },
 {
