@@ -1842,7 +1842,7 @@ window.LR={
 ],
 "ev": {
 "img": "evidence/mysore.webp",
-"caption": "Gaṇḍabheruṇḍa at the Lalitha Mahal Palace, Mysore, 20th century",
+"caption": "Gaṇḍabheruṇḍa at the Lalitha Mahal Palace, Mysore, 20th century. This example shows the two-headed bird alone; the medallion above adds the elephants in its talons, as the bird is usually described, and I have not yet found a source or photo that confirms the elephants.",
 "file": "https://commons.wikimedia.org/wiki/File:Gandaberunda_(Lalitha_Mahal_Palace_Hotel,_Mysore).jpg",
 "credit": "Prakashsubbarao at en.wikipedia · Public domain",
 "licurl": null
