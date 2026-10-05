@@ -1,0 +1,40 @@
+{
+ "id": "pushyabhuti",
+ "heading": "Setting · Kanyakubja (Kanauj) under Harṣa, c. 643 CE",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "img": "scenes/pushyabhuti/city.webp",
+   "title": "The city: Kanyakubja on the Ganges, c. 643",
+   "alt": "Hypothetical reconstruction of Kanauj: a long walled city on the west bank of the Ganges with a dry ditch, facing towers, lakes and flowering woods",
+   "attested": "Capital on the west, bordering the Ganges, about 20 li long and 4–5 li broad; a dry ditch round it and strong lofty towers facing one another; flowers, woods, lakes and ponds shining like mirrors on every side; rich houses and valuable merchandise; about 100 monasteries and 200 Deva temples (Xuanzang, Records, Book V, tr. Beal 1884, vol. 1 p. 206).",
+   "prescribed": "Beal's note, after Cunningham: the surviving citadel site is triangular with a ditch or dry channel on each side (vol. 1 p. 206 n.).",
+   "conjecture": "Wall material and crenellation, tower and house forms, boats and sails, the domed building and other temples, dress.",
+   "secondLabel": "Other sources",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "street",
+   "label": "Street",
+   "img": "scenes/pushyabhuti/street.webp",
+   "title": "The street: Harṣa's procession with the golden Buddha",
+   "alt": "Hypothetical reconstruction of the procession: a golden Buddha on a caparisoned elephant between two kings, armoured elephants with drummers, decorated pavilions",
+   "attested": "A golden Buddha about three feet high on a gorgeously caparisoned elephant; on its left Harṣa dressed as Śakra holding a precious canopy, on its right Kumāra-rāja as Brahmā with a white chāmara; 500 armoured elephants as escort to each; 100 elephants carrying drummers before and behind; highly decorated pavilions and stationed musicians along the way; pearls and gold and silver flowers scattered (Xuanzang, Book V, vol. 1 pp. 218–19).",
+   "prescribed": "None: no second source read.",
+   "conjecture": "The street buildings (the tall spires and domes in the background are later styles), dress cuts, elephant trappings, the crowd, the kings riding on the elephant instead of walking beside it.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "temple",
+   "label": "Temple",
+   "img": "scenes/pushyabhuti/temple.webp",
+   "title": "The monastery and tower at Kanyakubja",
+   "alt": "Hypothetical reconstruction of the great monastery and a tall tower with a golden Buddha beside the Ganges at Kanauj",
+   "attested": "A great sanghārāma on the west bank of the Ganges; to its east a 'precious tower' about 100 feet high with a golden statue of Buddha as tall as the king in the middle; a precious altar for washing the image on its south; a pavilion over the monastery gate; the assembly held among flowers (Xuanzang, Book V, vol. 1 pp. 218–19).",
+   "prescribed": "None: no second source read.",
+   "conjecture": "The tower's form (a carved brick spire here), the statue standing in an outside niche (the text says only 'in the middle'), the monastery plan, colours.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}

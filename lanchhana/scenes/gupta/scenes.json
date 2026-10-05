@@ -1,0 +1,39 @@
+{
+ "id": "gupta",
+ "heading": "Setting · Pāṭaliputra under Candragupta II, c. 405–411 CE",
+ "items": [
+  {
+   "k": "street",
+   "label": "Street",
+   "img": "scenes/gupta/street.webp",
+   "title": "The street: the yearly procession of image cars",
+   "alt": "Hypothetical reconstruction of Faxian's image procession at Pāṭaliputra: a tall tope-shaped car with Buddhas in niches, musicians and lamplit crowds",
+   "attested": "Every year on the 8th of the 2nd month, a four-wheeled car bearing a five-storeyed bamboo structure, a little over 20 cubits high and tope-shaped, wrapped in white cloth painted in colours, with devas in gold, silver and lapis lazuli, streamers and canopies, and a seated Buddha with a standing Bodhisattva in niches on its four sides; about twenty different cars; singers, musicians, flowers and incense; Brahmans invite the Buddhas into the city; lamps burn all night (Faxian, ch. XXVII, tr. Legge 1886, p. 79).",
+   "prescribed": "None: no second source read.",
+   "conjecture": "The bullock team, the street architecture, the exact tier count, dress, the colours painted on the cloth.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "temple",
+   "label": "Temple",
+   "img": "scenes/gupta/temple.webp",
+   "title": "The monastery beside Aśoka's tope",
+   "alt": "Hypothetical reconstruction of the Mahāyāna and Hīnayāna monasteries beside Aśoka's tope at Pāṭaliputra with a stone palace hall behind",
+   "attested": "By the side of the tope of Aśoka a very grand and beautiful Mahāyāna monastery, and a Hīnayāna one, with 600–700 monks together; the great tope more than 3 li south of the city with a Buddha footprint and a vihāra before it; the palace halls with carved and inlaid stone, standing 'now as of old' (Faxian, ch. XXVII, pp. 77–80).",
+   "prescribed": "None: no second source read.",
+   "conjecture": "The tope's size and dome, monastery plans and materials, the lions, the vihāra's form.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "charity",
+   "label": "Charity house",
+   "img": "scenes/gupta/charity.webp",
+   "title": "The house of charity and medicine",
+   "alt": "Hypothetical reconstruction of a charity house in Magadha: physicians and attendants caring for the poor and sick in a brick courtyard",
+   "attested": "Heads of Vaiśya families set up in the cities houses for charity and medicine; the poor, orphans, widowers, childless men, the maimed, cripples and the diseased go there and are given every help; doctors examine them and give food and medicine; they leave when better (Faxian, ch. XXVII, p. 79).",
+   "prescribed": "None: no second source read.",
+   "conjecture": "The building's form, furnishing, dress and number of people.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}

@@ -822,6 +822,23 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Gold_coin_of_Kanishka_I.jpg",
 "credit": "LouisAragon · CC BY-SA 2.5",
 "licurl": "https://creativecommons.org/licenses/by-sa/2.5"
+},
+"scenes": {
+"heading": "Setting · Kanishka's stūpa at Puruṣapura (Peshawar)",
+"items": [
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/kushan/temple.webp",
+"title": "Kanishka's great stūpa at Peshawar",
+"alt": "Hypothetical reconstruction of Kanishka's five-storey stone stūpa at Peshawar with a stack of gilded rings on its mast and a small stūpa at the base corner",
+"attested": "A stone stūpa of five storeys on a vast base (circumference 1½ li) with 25 gilded copper rings on a staff at the top, and a small stūpa at the south-east of the base; Faxian calls it the finest tope in India, 'more than four hundred cubits high, adorned with layers of all the precious substances' (Faxian, ch. XII, p. 34; Xuanzang, Book II, vol. 1 pp. 99–101).",
+"prescribed": "Both pilgrims wrote 3–5 centuries after Kanishka and tell the legend of its building.",
+"conjecture": "The carved niches and Buddhas, the dome, the surrounding buildings and dress; the heights are legendary and scaled down. Both pilgrims saw the monument 3–5 centuries after Kanishka; no source describes a Kushan city or street, so only this scene is given.",
+"secondLabel": "Later witnesses",
+"note": "Hypothetical reconstruction of a monument as later pilgrims described it, painted with an AI image model; not an archaeological finding. Heights are scaled down from the legendary figures."
+}
+]
 }
 },
 {
@@ -867,7 +884,45 @@ window.LR={
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
 },
-"repaint": "Garuḍa, the divine eagle of Viṣṇu, facing front with both wings spread wide and a bird's hooked beak, flanked by a small sun on one side and a crescent moon on the other, as on a Gupta royal seal. No serpent, no crown."
+"repaint": "Garuḍa, the divine eagle of Viṣṇu, facing front with both wings spread wide and a bird's hooked beak, flanked by a small sun on one side and a crescent moon on the other, as on a Gupta royal seal. No serpent, no crown.",
+"scenes": {
+"heading": "Setting · Pāṭaliputra under Candragupta II, c. 405–411 CE",
+"items": [
+{
+"k": "street",
+"label": "Street",
+"img": "scenes/gupta/street.webp",
+"title": "The street: the yearly procession of image cars",
+"alt": "Hypothetical reconstruction of Faxian's image procession at Pāṭaliputra: a tall tope-shaped car with Buddhas in niches, musicians and lamplit crowds",
+"attested": "Every year on the 8th of the 2nd month, a four-wheeled car bearing a five-storeyed bamboo structure, a little over 20 cubits high and tope-shaped, wrapped in white cloth painted in colours, with devas in gold, silver and lapis lazuli, streamers and canopies, and a seated Buddha with a standing Bodhisattva in niches on its four sides; about twenty different cars; singers, musicians, flowers and incense; Brahmans invite the Buddhas into the city; lamps burn all night (Faxian, ch. XXVII, tr. Legge 1886, p. 79).",
+"prescribed": "None: no second source read.",
+"conjecture": "The bullock team, the street architecture, the exact tier count, dress, the colours painted on the cloth.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/gupta/temple.webp",
+"title": "The monastery beside Aśoka's tope",
+"alt": "Hypothetical reconstruction of the Mahāyāna and Hīnayāna monasteries beside Aśoka's tope at Pāṭaliputra with a stone palace hall behind",
+"attested": "By the side of the tope of Aśoka a very grand and beautiful Mahāyāna monastery, and a Hīnayāna one, with 600–700 monks together; the great tope more than 3 li south of the city with a Buddha footprint and a vihāra before it; the palace halls with carved and inlaid stone, standing 'now as of old' (Faxian, ch. XXVII, pp. 77–80).",
+"prescribed": "None: no second source read.",
+"conjecture": "The tope's size and dome, monastery plans and materials, the lions, the vihāra's form.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "charity",
+"label": "Charity house",
+"img": "scenes/gupta/charity.webp",
+"title": "The house of charity and medicine",
+"alt": "Hypothetical reconstruction of a charity house in Magadha: physicians and attendants caring for the poor and sick in a brick courtyard",
+"attested": "Heads of Vaiśya families set up in the cities houses for charity and medicine; the poor, orphans, widowers, childless men, the maimed, cripples and the diseased go there and are given every help; doctors examine them and give food and medicine; they leave when better (Faxian, ch. XXVII, p. 79).",
+"prescribed": "None: no second source read.",
+"conjecture": "The building's form, furnishing, dress and number of people.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "kamarupa",
@@ -1067,6 +1122,45 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Seal_of_Harshavardhana_found_in_Nalanda.jpg",
 "credit": "Hiranand Sastri (1878–1946), published in 1918 · Public domain",
 "licurl": null
+},
+"scenes": {
+"heading": "Setting · Kanyakubja (Kanauj) under Harṣa, c. 643 CE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/pushyabhuti/city.webp",
+"title": "The city: Kanyakubja on the Ganges, c. 643",
+"alt": "Hypothetical reconstruction of Kanauj: a long walled city on the west bank of the Ganges with a dry ditch, facing towers, lakes and flowering woods",
+"attested": "Capital on the west, bordering the Ganges, about 20 li long and 4–5 li broad; a dry ditch round it and strong lofty towers facing one another; flowers, woods, lakes and ponds shining like mirrors on every side; rich houses and valuable merchandise; about 100 monasteries and 200 Deva temples (Xuanzang, Records, Book V, tr. Beal 1884, vol. 1 p. 206).",
+"prescribed": "Beal's note, after Cunningham: the surviving citadel site is triangular with a ditch or dry channel on each side (vol. 1 p. 206 n.).",
+"conjecture": "Wall material and crenellation, tower and house forms, boats and sails, the domed building and other temples, dress.",
+"secondLabel": "Other sources",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "street",
+"label": "Street",
+"img": "scenes/pushyabhuti/street.webp",
+"title": "The street: Harṣa's procession with the golden Buddha",
+"alt": "Hypothetical reconstruction of the procession: a golden Buddha on a caparisoned elephant between two kings, armoured elephants with drummers, decorated pavilions",
+"attested": "A golden Buddha about three feet high on a gorgeously caparisoned elephant; on its left Harṣa dressed as Śakra holding a precious canopy, on its right Kumāra-rāja as Brahmā with a white chāmara; 500 armoured elephants as escort to each; 100 elephants carrying drummers before and behind; highly decorated pavilions and stationed musicians along the way; pearls and gold and silver flowers scattered (Xuanzang, Book V, vol. 1 pp. 218–19).",
+"prescribed": "None: no second source read.",
+"conjecture": "The street buildings (the tall spires and domes in the background are later styles), dress cuts, elephant trappings, the crowd, the kings riding on the elephant instead of walking beside it.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/pushyabhuti/temple.webp",
+"title": "The monastery and tower at Kanyakubja",
+"alt": "Hypothetical reconstruction of the great monastery and a tall tower with a golden Buddha beside the Ganges at Kanauj",
+"attested": "A great sanghārāma on the west bank of the Ganges; to its east a 'precious tower' about 100 feet high with a golden statue of Buddha as tall as the king in the middle; a precious altar for washing the image on its south; a pavilion over the monastery gate; the assembly held among flowers (Xuanzang, Book V, vol. 1 pp. 218–19).",
+"prescribed": "None: no second source read.",
+"conjecture": "The tower's form (a carved brick spire here), the statue standing in an outside niche (the text says only 'in the middle'), the monastery plan, colours.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
 }
 },
 {
@@ -1574,15 +1668,15 @@ window.LR={
 "boar",
 "sky"
 ],
-"brief": "the Vijayanagara royal seal device: a wild boar standing in profile, with a crescent moon and a rayed sun above it, as on the copper-plate seal. No sword, no flag, no parasol. No human figures.",
+"brief": "the Vijayanagara royal seal device: a boar standing to the right facing an upright straight sword, with a crescent moon and a rayed sun above. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "ev": {
 "img": "evidence/vijayanagara.webp",
-"caption": "Vijayanagara boar relief with sun, moon and an upright sword, Bugga Rāmaliṅgeśvara temple, Tadipatri, 15th century. This carving adds a sword; the medallion above follows the copper-plate seal described in the text (boar, sun and moon only) and has no sword.",
+"caption": "Boar facing an upright sword under the sun and moon, carved at the Bugga Rāmaliṅgeśvara temple, Tadipatri, 15th century",
 "file": "https://commons.wikimedia.org/wiki/File:15th_century_Bugga_Ramalingeswara_temple,_Tadipatri,_Andhra_Pradesh,_India_-_76.jpg",
 "credit": "Ms Sarah Welch · CC0",
 "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
 },
-"repaint": "the Vijayanagara seal device: a wild boar standing in profile, with a crescent moon and a rayed sun above it. No sword.",
+"repaint": "the Vijayanagara seal device: a wild boar standing in profile facing an upright sword, with a crescent moon and a rayed sun above it.",
 "scenes": {
 "heading": "Setting · Vijayanagara under Kṛṣṇadevarāya, c. 1509–29",
 "items": [
