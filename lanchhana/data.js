@@ -1865,18 +1865,18 @@ window.LR={
 "bird",
 "mythic"
 ],
-"brief": "the gaṇḍabheruṇḍa: a two-headed eagle facing front with spread wings, each head in profile facing outward, each talon gripping a small elephant, in gold. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"brief": "the gaṇḍabheruṇḍa: a two-headed eagle facing front with spread wings, each head in profile facing outward, fanned tail, the talons gripping nothing, no elephants, in gold. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "read": [
 "sampathMysore"
 ],
 "ev": {
 "img": "evidence/mysore.webp",
-"caption": "Gaṇḍabheruṇḍa at the Lalitha Mahal Palace, Mysore, 20th century. This example shows the two-headed bird alone; the medallion above adds the elephants in its talons, as the bird is usually described, and I have not yet found a source or photo that confirms the elephants.",
+"caption": "Gaṇḍabheruṇḍa at the Lalitha Mahal Palace, Mysore, 20th century. The bird is shown alone, and the medallion above follows it. Some descriptions of the gaṇḍabheruṇḍa give it elephants in its talons; I have not found a source or photo that confirms that for the Woḍeyar emblem, so it is not shown.",
 "file": "https://commons.wikimedia.org/wiki/File:Gandaberunda_(Lalitha_Mahal_Palace_Hotel,_Mysore).jpg",
 "credit": "Prakashsubbarao at en.wikipedia · Public domain",
 "licurl": null
 },
-"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check.",
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as in the Lalitha Mahal photo, without elephants, pending that check.",
 "scenes": {
 "heading": "Setting · Seringapatam under Hyder Ali and Tipu Sultan, as seen in 1800",
 "items": [
