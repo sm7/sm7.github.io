@@ -739,6 +739,41 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Lion_capital_of_Ashoka,_Sarnath.jpg",
 "credit": "lisa bat · CC BY 2.0",
 "licurl": "https://creativecommons.org/licenses/by/2.0"
+},
+"scenes": {
+"heading": "Setting · Pāṭaliputra under Candragupta, c. 321–297 BCE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/maurya/city.webp",
+"title": "The city: Pāṭaliputra at the river confluence, c. 300 BCE",
+"alt": "Hypothetical reconstruction of Pāṭaliputra: a long narrow riverside city behind a timber palisade and a lotus-filled ditch",
+"attested": "A long narrow city, about 80 stades by 15, at the meeting of two rivers, behind a timber palisade pierced for archers, with a ditch for defence and drainage (Megasthenes, in Strabo 15.1.35–36).",
+"prescribed": "Wide ditches with lotus and crocodiles, square towers, an arched gateway (Arthaśāstra 2.3, a prescription attributed to Kauṭilya; its date is debated).",
+"conjecture": "Roof forms, the palace hall, boats, vegetation, the light."
+},
+{
+"k": "street",
+"label": "Street",
+"img": "scenes/maurya/street.webp",
+"title": "The street: a royal road in the morning market",
+"alt": "Hypothetical reconstruction of a Pāṭaliputra royal road with market stalls, bullock carts and officials at a weighing scale",
+"attested": "City commissioners supervised the markets, in boards of five (Megasthenes, in Strabo 15.1.50–51).",
+"prescribed": "Royal roads four daṇḍas (about 24 ft) wide; sellers of scents, garlands and grain on the east side; a well for every ten houses (Arthaśāstra 2.4).",
+"conjecture": "House fronts, dress, carts, the individual figures."
+},
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/maurya/temple.webp",
+"title": "The temple: a grand Śiva shrine, entrance facing north-east",
+"alt": "Hypothetical reconstruction of a grand brick and timber Śiva temple at Pāṭaliputra with worshippers at the steps",
+"attested": "Temples (hiera) were under the commissioners' care (Megasthenes, in Strabo 15.1.51). No eyewitness describes one.",
+"prescribed": "At the centre of the city, the apartments of the gods, Śiva among them (Arthaśāstra 2.4).",
+"conjecture": "Everything visible: the brick plinth, timber hall, tiered tiled roof, the figure in the sanctum, its size, and its north-east facing."
+}
+]
 }
 },
 {
@@ -1693,6 +1728,180 @@ window.LR={
 "saindhava": "<b>Saindhava of Ghumli.</b> The fish emblem given in popular sources was not found in any scholarly edition of their grants.",
 "chaulukya": "<b>Chaulukya (Solaṅkī) of Gujarat.</b> The charging-elephant coins are attributed to Jayasiṃha Siddharāja only by dealers; no scholarly attribution of a coin type or seal was found.",
 "marwar": "<b>Rāṭhoṛ of Marwar.</b> Tod names the clan goddess as winged, but no scholarly or period source describing the Jodhpur flag or a bird on it was found."
+},
+"SPAN": {
+"maurya": [
+-322,
+-185
+],
+"satavahana": [
+-100,
+300
+],
+"kushan": [
+30,
+375
+],
+"kshatrapa": [
+35,
+415
+],
+"gupta": [
+320,
+550
+],
+"kamarupa": [
+350,
+650
+],
+"western-ganga": [
+350,
+1000
+],
+"vishnukundina": [
+420,
+624
+],
+"pallava": [
+275,
+897
+],
+"maitraka": [
+475,
+776
+],
+"sharabhapuriya": [
+475,
+590
+],
+"maukhari": [
+550,
+606
+],
+"chalukya": [
+543,
+1189
+],
+"pushyabhuti": [
+500,
+647
+],
+"gauda": [
+600,
+637
+],
+"karkota": [
+625,
+855
+],
+"panduvamshi": [
+501,
+800
+],
+"eastern-ganga": [
+450,
+1078
+],
+"pratihara": [
+730,
+1036
+],
+"pala": [
+750,
+1161
+],
+"rashtrakuta": [
+753,
+982
+],
+"kalachuri": [
+675,
+1212
+],
+"shahi": [
+822,
+1026
+],
+"chola": [
+848,
+1279
+],
+"pandya": [
+590,
+920
+],
+"chera": [
+50,
+1124
+],
+"paramara": [
+801,
+1305
+],
+"hoysala": [
+1026,
+1343
+],
+"kakatiya": [
+1163,
+1323
+],
+"yadava": [
+1187,
+1317
+],
+"sena": [
+1070,
+1230
+],
+"gahadavala": [
+1089,
+1197
+],
+"chandela": [
+1001,
+1200
+],
+"chauhan": [
+601,
+1192
+],
+"mewar": [
+750,
+1949
+],
+"jaipur": [
+1101,
+1949
+],
+"vijayanagara": [
+1336,
+1646
+],
+"ahom": [
+1228,
+1826
+],
+"tripura": [
+1464,
+null
+],
+"maratha": [
+1674,
+1818
+],
+"sikh": [
+1799,
+1849
+],
+"mysore": [
+1399,
+1950
+],
+"travancore": [
+1729,
+1949
+]
 }
 };
 
