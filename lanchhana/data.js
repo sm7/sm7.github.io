@@ -122,8 +122,8 @@ window.LR={
 "https://sacred-texts.com/hin/m12/m12a116.htm"
 ],
 "hultzschMayidavolu": [
-"E. Hultzsch, 'Mayidavolu plates of Sivaskandavarman', Epigraphia Indica 6 (1900-01), pp. 84-89 (seal at p. 86) — Wikisource page scan",
-"https://en.wikisource.org/wiki/Page:Epigraphia_Indica_vol_6.djvu/114"
+"E. Hultzsch, 'Mayidavolu plates of Sivaskandavarman', Epigraphia Indica 6 (1900-01), pp. 84-89 (seal at p. 86) — Internet Archive scan of the volume",
+"https://archive.org/details/EpigraphiaIndicaVol6"
 ],
 "icomosHoy": [
 "ICOMOS, Evaluation of 'Sacred Ensembles of the Hoysalas' (India), WHC 2023 evaluations, pp. 342–343 — UNESCO WHC",
