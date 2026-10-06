@@ -1004,7 +1004,36 @@ window.LR={
 "motifs": [
 "bull"
 ],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Nandi, a humped bull, lying down in profile facing right with legs folded beneath him, head raised, calm and dignified. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
+"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Nandi, a humped bull, lying down in profile facing right with legs folded beneath him, head raised, calm and dignified. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"scenes": {
+"heading": "Setting · Kāñcīpuram and Māmallapuram under Narasimhavarman I, c. 640–650 CE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/pallava/city.webp",
+"title": "Kāñcīpuram, the capital, as a Chinese pilgrim saw it c. 640 CE",
+"alt": "Hypothetical reconstruction of Kanchipuram: white plastered stupas, brick monastery courtyards, small tiled shrines, a stepped tank, scholars with palm-leaf manuscripts, rice fields beyond",
+"attested": "The capital, Kāñcīpura, was about 30 li round; the soil fertile and regularly cultivated, with much grain and many flowers and fruits; hot climate; the people courageous, honest and fond of learning; some hundred monasteries with 10,000 monks of the Sthavira school of the Great Vehicle; some eighty temples of the gods; many Nirgranthas (naked Jain ascetics); stūpas built by Aśoka at places the Buddha had visited (Hiuen Tsiang, Si-yu-ki, Book X, tr. S. Beal, 1884, vol. 2 pp. 228–229).",
+"prescribed": "None: no second source read for the city's buildings.",
+"secondLabel": "Other sources",
+"conjecture": "All architecture (brick, timber and stucco, little of it surviving), layout, dress, and the mix of Buddhist and other buildings. The Nirgranthas are attested but not shown. The first painting had tall tapering temple towers, which belong to later centuries; this one shows only low buildings. No street, wall or palace is described in the text.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Rock temples",
+"img": "scenes/pallava/mamallapuram.webp",
+"title": "Māmallapuram: a granite outcrop carved into a temple",
+"alt": "Hypothetical reconstruction of Mamallapuram: carvers on bamboo scaffolds working on a tiered stone temple beside the sea, with other carved boulders and a beached boat",
+"attested": "Seventeen inscriptions on the first, second and third storeys of the Dharmarāja Ratha record birudas (titles) of a Pallava king Narasimha, and a later king, Atyantakāma, took the ratha over and named it Atyantakāma-Pallaveśvara-gṛha; other temples at the site are called after the same king (E. Hultzsch, South-Indian Inscriptions vol. I, 1890, Nos. 1–23).",
+"prescribed": "The monuments survive: the Dharmarāja Ratha is a monolithic, three-storeyed temple cut from a granite outcrop (from the surviving monument; not read in a source here).",
+"secondLabel": "Surviving monument",
+"conjecture": "The carvers, scaffolds, tools and surrounding site; the sea, boat and palms. The painted tower looks built of blocks rather than cut from the outcrop, shows four tiers where the ratha has three storeys, and shows no visible inscription. The Shore Temple is later (under Rājasiṃha, c. 700) and is not shown.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "maitraka",
