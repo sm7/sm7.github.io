@@ -83,6 +83,9 @@ sup.c a{text-decoration:none}
 .meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font:500 11px/1 var(--mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
 .pill{border:1px solid currentColor;border-radius:3px;padding:4px 6px;letter-spacing:.06em;text-transform:uppercase}
 .pill.seal{color:var(--verdigris)} .pill.coin{color:var(--copper)} .pill.monument,.pill.flag{color:var(--muted)}
+.pill.place{color:var(--verdigris)}
+.pcover{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:var(--wash);display:block}
+.pstrip{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:6px}.pstrip img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px;border:1px solid var(--line)}
 .pill.tradition,.pill.vulgate{color:var(--copper);border-style:dashed} .pill.epic{color:var(--verdigris)}
 .more{margin-left:auto;color:var(--ink)}
 .flag{margin:0;flex:none;display:grid;justify-items:center;gap:3px}
@@ -236,6 +239,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 
   <div class="tabs" role="tablist" aria-label="Registers">
     <button class="tab" role="tab" id="tab-itihasa" aria-controls="panel-itihasa">Bhāratīya Itihāsa traditions<small></small></button>
+    <button class="tab" role="tab" id="tab-places" aria-controls="panel-places">Places<small></small></button>
     <button class="tab" role="tab" id="tab-early" aria-controls="panel-early">Early dynasties<small></small></button>
     <button class="tab" role="tab" id="tab-later" aria-controls="panel-later">Later kingdoms<small></small></button>
     <button class="tab" role="tab" id="tab-timeline" aria-controls="panel-timeline">Timeline<small></small></button>
@@ -258,6 +262,20 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
           <li><b>The Pāṇḍya king's standard.</b> Ganguli names him Sāraṅgadhvaja but describes no emblem.</li>
           <li><b>Royal lines of the Purāṇas.</b> The Purāṇas list kings of Magadha and of the solar and lunar houses, but they give no emblems.</li>
         </ul>
+      </div>
+    </section>
+  </div>
+
+  <div role="tabpanel" id="panel-places" aria-labelledby="tab-places" hidden>
+    <div class="grid" id="grid-places"></div>
+    <section class="notes">
+      <div>
+        <h3>How a place is reconstructed</h3>
+        <p>A place scene is built only from what the text says. Each scene lists, in three parts, what the verses state (Attested), what a later or secondary text adds (Second source) and what the painter had to invent to make a picture (Conjecture). Where a text gives no honest scene, none is painted.</p>
+      </div>
+      <div>
+        <h3>What this is not</h3>
+        <p>The Rāmāyaṇa is a poem, and its Ayodhyā is a poet's city. Nothing here claims to match the excavated mound at Ayodhyā or any other site. The paintings show what the verses describe and nothing more is asserted.</p>
       </div>
     </section>
   </div>
@@ -354,7 +372,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js?v=9"></script>
+<script src="data.js?v=10"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
@@ -366,6 +384,8 @@ const BY = Object.fromEntries(C.map(c=>[c.id,c]));
 const TABS = {
   itihasa:{label:"Bhāratīya Itihāsa traditions",eyebrow:"Bhāratīya Itihāsa traditions · Mahābhārata and Rāmāyaṇa",
     lede:"Long before seals and coins, the epics describe how a warrior was recognised across a battlefield: by the emblem on top of his banner, the dhvaja. This register collects those emblems verse by verse. Each card quotes the Sanskrit, gives the chapter and verse, and translates only what the verse says. The paintings interpret that verse and add nothing it does not state. Where a well-known banner survives only in the vulgate text and not in the critical edition, the card says so."},
+  places:{label:"Places",eyebrow:"Places in the tradition · reconstructed from the text",
+    lede:"Cities and streets as the poems describe them. Each place is painted scene by scene from the verses, and every scene says which words are in the text, which come from a later source and which the painter had to invent. Ayodhyā comes first, from the Vālmīki Rāmāyaṇa."},
   early:{label:"Early dynasties",eyebrow:"Bhāratīya historical record · c. 322 BCE – 1040 CE",
     lede:"The emblem a dynasty struck onto the seal ring of its copper-plate land grants was its lāñchhana, its official mark. Where no seal emblem survives, the dynasty's standard coin type is shown and labelled as a coin. Each emblem is painted as a medallion in the manner of early Indian mural painting and checked against the description it follows."},
   later:{label:"Later kingdoms",eyebrow:"Bhāratīya historical record · 1040 – 1858 CE",
@@ -375,7 +395,7 @@ const TABS = {
   motifs:{label:"Motif index",eyebrow:"Across all three registers",
     lede:"The same animals and signs recur across two thousand years. The boar on Jayadratha's banner returns on Chalukya seals, Pratīhāra coins and Vijayanagara gold; the bull of Śiva runs from Magadha to the Chauhans. This index groups every entry by the motifs it shows, so a symbol can be followed from epic verse to coin."}
 };
-const KLABEL = {epic:"critical edition",vulgate:"vulgate",coin:"coin",seal:"seal",monument:"monument",flag:"flag",tradition:"tradition"};
+const KLABEL = {place:"place",epic:"critical edition",vulgate:"vulgate",coin:"coin",seal:"seal",monument:"monument",flag:"flag",tradition:"tradition"};
 const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
 const inTab = t => C.filter(c=>c.tab===t);
 
@@ -396,7 +416,17 @@ function art(c, big){
 }
 function sub(c){ return c.tab==="itihasa" ? c.who : c.d; }
 
+function placeCard(c){
+  const {html, keys} = cite(c,false), L=c.scenes.items, pick=[3,9,13].map(i=>L[Math.min(i,L.length-1)]);
+  return `<article class="card place" tabindex="0" role="button" data-id="${c.id}" aria-label="${esc(c.n+": open place")}">
+    <div><img class="pcover" loading="lazy" src="${esc(L[0].img)}?v=1" alt="${esc(L[0].alt)}"><div class="pstrip">${pick.map(s=>`<img loading="lazy" src="${esc(s.img)}?v=1" alt="">`).join("")}</div></div>
+    <div class="head"><div><h2>${esc(c.n)}</h2><span class="dates">${esc(c.who)}</span></div></div>
+    <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong></div><p>${html}</p></div>
+    <div class="meta"><span class="pill place">${KLABEL[c.k]}</span><span class="hasscenes">${L.length} scenes</span><span>${keys.length} source${keys.length===1?"":"s"}</span><span class="more">Open place →</span></div>
+  </article>`;
+}
 function card(c){
+  if (c.tab==="places") return placeCard(c);
   const {html, keys} = cite(c,false);
   const idiom = c.tab==="itihasa" ? (c.k==="coin" ? "Drawn from the documented punch marks" : c.k==="vulgate" ? "Painted from Ganguli's description" : "Painted from the verse")
     : `Painted from the ${c.k==="tradition"?"traditional":c.k} ${c.k==="monument"?"itself":"description"}`;
@@ -430,6 +460,7 @@ for (const t of ["early","later"]){
 function renderAll(){
   const it=inTab("itihasa").filter(c=>F.itihasa==="all"||c.k===F.itihasa);
   document.getElementById("grid-itihasa").innerHTML = it.map(card).join("") || `<div class="empty">No banners match that filter.</div>`;
+  document.getElementById("grid-places").innerHTML = inTab("places").map(card).join("");
   for (const t of ["early","later"]){
     const f=F[t]; const list=inTab(t).filter(c=>(f.r==="All"||c.r===f.r)&&(f.k==="all"||c.k===f.k||(f.k==="flag"&&c.flag))&&(f.s==="all"||c.scenes));
     document.getElementById(`grid-${t}`).innerHTML = list.map(card).join("") || `<div class="empty">Nothing matches that region and evidence type. Pick another filter.</div>`;
@@ -453,12 +484,13 @@ renderAll();
 
 /* tabs and header */
 const tabs=[...document.querySelectorAll(".tab")];
-const counts={itihasa:inTab("itihasa").length, early:inTab("early").length, later:inTab("later").length, timeline:Object.keys(window.LR.SPAN||{}).length, motifs:Object.keys(MOTIFS).length};
+const counts={itihasa:inTab("itihasa").length, places:inTab("places").length, early:inTab("early").length, later:inTab("later").length, timeline:Object.keys(window.LR.SPAN||{}).length, motifs:Object.keys(MOTIFS).length};
 tabs.forEach(t=>t.querySelector("small").textContent=counts[t.id.slice(4)]);
 document.getElementById("foot-count").textContent = `${C.length} entries · ${Object.keys(SRC).length} sources cited`;
 function stats(k){
   const L=inTab(k), s=(a,b)=>`<div><b>${a}</b>${b}</div>`;
   if (k==="itihasa") return s(L.length,"banners")+s(L.filter(c=>c.k==="epic").length,"critical edition");
+  if (k==="places") return s(L.length,"place")+s(L.reduce((n,c)=>n+c.scenes.items.length,0),"scenes")
   if (k==="early") return s(L.length,"dynasties")+s(L.filter(c=>c.k==="seal").length,"seal-attested");
   if (k==="later") return s(L.length,"kingdoms")+s(L.filter(c=>c.flag).length,"flags shown");
   if (k==="timeline") return s(Object.keys(window.LR.SPAN||{}).length,"dynasties dated")+s(inTab("itihasa").length,"epic banners, undated");
@@ -511,7 +543,11 @@ function entryHtml(c){
         <button class="ib" type="button" id="copylink">Copy link</button>
         <button class="ib" type="button" id="reportbtn">Report an error</button>
         <button class="ib" type="button" id="closedlg" autofocus aria-label="Close entry">Close</button></div>
-  ${c.scenes?`<div class="dlg-head"><div><h2 id="dlg-title" style="font:800 clamp(26px,4vw,38px)/1.05 var(--display);margin:0">${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates" style="font-size:13px">${esc(c.tab==="itihasa"?c.n:c.d)}${c.r?" · "+esc(c.r):""}</span></div></div>
+  ${c.tab==="places"?`<div class="dlg-head"><div><h2 id="dlg-title" style="font:800 clamp(26px,4vw,38px)/1.05 var(--display);margin:0">${esc(c.n)}</h2><span class="dates" style="font-size:13px">${esc(c.who)}</span></div></div>
+  <div class="mtabs" role="tablist"><button type="button" role="tab" data-pane="scenes" aria-selected="true">Scenes · ${c.scenes.items.length}</button><button type="button" role="tab" data-pane="srcs" aria-selected="false">About &amp; sources</button></div>
+  <div class="pane scenes" data-p="scenes">${galleryHtml(c.scenes)}</div>
+  <div class="pane" data-p="srcs" hidden><div class="dlg-body"><p class="t">${html}</p>${srcBody}</div></div>`
+  : c.scenes?`<div class="dlg-head"><div><h2 id="dlg-title" style="font:800 clamp(26px,4vw,38px)/1.05 var(--display);margin:0">${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates" style="font-size:13px">${esc(c.tab==="itihasa"?c.n:c.d)}${c.r?" · "+esc(c.r):""}</span></div></div>
   <div class="mtabs" role="tablist"><button type="button" role="tab" data-pane="scenes" aria-selected="true">Scenes · ${c.scenes.items.length}</button><button type="button" role="tab" data-pane="emblem" aria-selected="false">Emblem &amp; text</button><button type="button" role="tab" data-pane="srcs" aria-selected="false">Sources</button></div>
   <div class="pane scenes" data-p="scenes">${galleryHtml(c.scenes)}</div>
   <div class="pane" data-p="emblem" hidden><div class="dlg"><div class="dlg-art">${art(c,true)}${ev}</div><div class="dlg-body">${emblemHead}${emblemBody}</div></div></div>
