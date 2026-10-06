@@ -946,6 +946,35 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Copper_Plate_Seal_of_Kamarupa_Kings.jpg",
 "credit": "Bhaskarbhagawati · CC BY-SA 3.0",
 "licurl": "https://creativecommons.org/licenses/by-sa/3.0"
+},
+"scenes": {
+"heading": "Setting · Bhāskaravarman Kumāra's Kāmarūpa, c. 643 CE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/kamarupa/city.webp",
+"title": "A town of Kāmarūpa: water channels, jackfruit and coconut",
+"alt": "Hypothetical reconstruction of a seventh-century Assam town: timber and thatch houses on stilts, a water channel with footbridges and a boat, a small brick shrine, jackfruit and coconut trees, rice fields and blue hills",
+"attested": "The capital was about 30 li round; the land low but rich and regularly cultivated; jackfruit and coconut trees numerous and valued; water led from the river or banked-up lakes flowed round the towns; the climate soft and temperate; the people small in stature, dark yellow in complexion, honest, and earnest in study. They worshipped the Devas, with about 100 Deva temples, and had built no Buddhist monastery (Xuanzang, Si-yu-ki, Book X, tr. S. Beal, 1884, vol. 2 pp. 195–198).",
+"prescribed": "None: no second source read for the town's buildings.",
+"secondLabel": "Other sources",
+"conjecture": "The buildings, their materials and stilts, the footbridges, boat and buffalo, dress, and the rice fields and hills. The Deva temples are attested but their form is not described; the brick shrine with its tiered roof is the model's invention.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "court",
+"label": "Court",
+"img": "scenes/kamarupa/court.webp",
+"title": "King Kumāra receives the Chinese pilgrim",
+"alt": "Hypothetical reconstruction of a seventh-century Assam royal hall: a Brahman king in white and gold rising to greet a Chinese Buddhist monk with a bundle of manuscripts, courtiers seated on mats, open sides looking to palms and a river",
+"attested": "Bhāskaravarman, titled Kumāra, was a Brahman of the old line of Nārāyaṇa-deva, fond of learning, and honoured learned śramaṇas though no Buddhist himself; he invited Xuanzang three times, received him, said he had long loved men of conspicuous learning, and spoke of songs sung in India about the king of China (Xuanzang, Si-yu-ki, Book X, tr. S. Beal, 1884, vol. 2 pp. 195–198).",
+"prescribed": "None: no second source read for the hall or the king's dress.",
+"secondLabel": "Other sources",
+"conjecture": "The hall, its carving and furnishings, dress, crown and faces; the text records the exchange, not the setting. The small tiered tower seen in the distance is not supported by the text, and the manuscript bundle is not described.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
 }
 },
 {
