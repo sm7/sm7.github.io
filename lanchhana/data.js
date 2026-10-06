@@ -121,6 +121,10 @@ window.LR={
 "Mahābhārata, Śānti Parva, Section CXVII, tr. K. M. Ganguli — sacred-texts.com",
 "https://sacred-texts.com/hin/m12/m12a116.htm"
 ],
+"majumdarHCIP4": [
+"R. C. Majumdar (ed.), The History and Culture of the Indian People, vol. 4, The Age of Imperial Kanauj (Bombay: Bharatiya Vidya Bhavan, 1955) — Internet Archive scan",
+"https://archive.org/details/ageofimperialkan04bhar"
+],
 "kielhornJunagadh": [
 "F. Kielhorn, 'Junagadh rock inscription of Rudradaman; the year 72', Epigraphia Indica 8 (1905-06), no. 6 — Internet Archive scan of the volume",
 "https://archive.org/details/in.ernet.dli.2015.56654"
