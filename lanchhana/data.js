@@ -1132,6 +1132,18 @@ window.LR={
 "heading": "Setting · Pulakeśin II's Deccan, c. 610–642 CE",
 "items": [
 {
+"k": "city",
+"label": "City",
+"img": "scenes/chalukya/city.webp",
+"title": "Vātāpi (Bādāmi), the capital, under its red cliffs",
+"alt": "Hypothetical reconstruction of Vatapi: a town of tiled and thatched houses and a market around a green stepped tank, between two red sandstone hills crowned by a fort wall",
+"attested": "The Aihole inscription says the king, having conquered all quarters, entered the city of Vātāpi and rules the earth \"like one city\" with the sea for its moat (verse 33; Epigraphia Indica vol. VI no. 1, tr. F. Kielhorn, 1902). It describes nothing of the city itself.",
+"prescribed": "The site survives at Bādāmi: a valley between two red sandstone hills, a fort on the heights, a large tank, and cave temples cut in the cliff (from the surviving site; not read in a source here).",
+"secondLabel": "Surviving site",
+"conjecture": "Nearly everything: the layout, houses, market, palace compound, people and procession. The fort walls are drawn with regular bastions and the cliffs taller and sheerer than the real site; the fortification's date and form are not established here.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
 "k": "army",
 "label": "Army",
 "img": "scenes/chalukya/army.webp",
