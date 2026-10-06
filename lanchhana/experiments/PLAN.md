@@ -25,3 +25,8 @@
 
 ## Notes on reading scans
 archive.org full text (`/download/<id>/<id>_djvu.txt`) is usable but OCR is noisy; take quotations only from a verified page image or a clean edition. Periplus, Schoff 1912: archive.org id `periplusoferythr00schouoft`; §§38–56 (Barygaza to Nelcynda) located.
+
+## Sourcing tiers (user, Oct 6)
+- Primary: inscriptions, copper plates, coins, contemporary texts by the court/people themselves.
+- Semi-primary (accepted, labelled "Second source"): travellers' logs and literature of the same era - Periplus, Faxian, Xuanzang, Sulaymān, al-Masʿūdī, Nuniz/Paes, Abdur Razzaq, Marco Polo, Ibn Battuta, Sangam poems, Kalidasa/Banabhatta/Kalhana etc. Always cite edition and translator; never Wikipedia.
+- Kṣatrapa: Junagadh inscription read (EI 8 no.6); breach + repair scenes drafted, images rendering. Śātavāhana: Nasik cave inscription gives no scene; Periplus 51-52 (Paithan/Tagara goods) is the only candidate.
