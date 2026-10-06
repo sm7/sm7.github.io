@@ -2189,6 +2189,7 @@ window.LR={
 },
 {
 "id": "ayodhya",
+"epic": "Rāmāyaṇa",
 "tab": "places",
 "no": "P1",
 "n": "Ayodhyā",

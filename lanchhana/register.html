@@ -109,6 +109,10 @@ sup.c a{text-decoration:none}
 .mini:hover b{color:var(--copper)} .mini:focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:8px}
 .mini.t-itihasa span{color:var(--verdigris)}
 
+nav.jump{display:flex;gap:18px;margin:20px 0 4px;font:600 13px var(--mono,monospace);letter-spacing:.04em;text-transform:uppercase}
+nav.jump a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+nav.jump a:hover{color:var(--ink);border-color:var(--ink)}
+h3.epic-h{font:700 20px/1.2 var(--display);margin:28px 0 0}
 section.subsec{margin-top:64px}
 section.subsec h2{font:800 clamp(26px,3.4vw,36px)/1.1 var(--display);margin:0 0 8px}
 .subsec-lede{color:var(--muted);font-size:15px;max-width:68ch;margin:0}
@@ -249,12 +253,13 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   </div>
 
   <div role="tabpanel" id="panel-itihasa" aria-labelledby="tab-itihasa">
+    <nav class="jump" aria-label="On this tab"><a href="#itihasa" id="j-ban">Banners</a><a href="#places" id="j-pl">Places</a></nav>
     <div class="controls" role="toolbar" aria-label="Filters"><div class="group" id="f-itihasa"><span>Text</span></div></div>
     <div class="grid" id="grid-itihasa"></div>
     <section class="subsec" id="places-sec" aria-labelledby="places-h">
       <h2 id="places-h">Places in the tradition</h2>
-      <p class="subsec-lede">Cities and settings as the poems describe them, painted scene by scene from the verses. Ayodhyā is the first, from the Vālmīki Rāmāyaṇa. Ayodhyā is also a living city; the painted place here is the poet's.</p>
-      <div class="grid" id="grid-places"></div>
+      <p class="subsec-lede">Cities and settings as the poems describe them, painted scene by scene from the verses. Grouped by epic, because the two poems describe different ages. Ayodhyā is also a living city; the place painted here is the poet's.</p>
+      <div id="places-body"></div>
     </section>
     <section class="notes">
       <div>
@@ -373,7 +378,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js?v=11"></script>
+<script src="data.js?v=12"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
@@ -384,7 +389,7 @@ for (const [id,note] of Object.entries(LEFT)){
 const BY = Object.fromEntries(C.map(c=>[c.id,c]));
 const TABS = {
   itihasa:{label:"Bhāratīya Itihāsa traditions",eyebrow:"Bhāratīya Itihāsa traditions · Mahābhārata and Rāmāyaṇa",
-    lede:"Long before seals and coins, the epics describe how a warrior was recognised across a battlefield: by the emblem on top of his banner, the dhvaja. This register collects those emblems verse by verse. Each card quotes the Sanskrit, gives the chapter and verse, and translates only what the verse says. The paintings interpret that verse and add nothing it does not state. Where a well-known banner survives only in the vulgate text and not in the critical edition, the card says so. Below the banners, the places the poems describe are reconstructed the same way, from the verses alone."},
+    lede:"Long before seals and coins, the epics describe how a warrior was recognised across a battlefield: by the emblem on top of his banner, the dhvaja. This register collects those emblems verse by verse. Each card quotes the Sanskrit, gives the chapter and verse, and translates only what the verse says. The paintings interpret that verse and add nothing it does not state. Where a well-known banner survives only in the vulgate text and not in the critical edition, the card says so. Below the banners, the places the poems describe are reconstructed from the verses alone, grouped by epic."},
   places:{label:"Bhāratīya Itihāsa traditions · Places",eyebrow:"Bhāratīya Itihāsa traditions · Places",
     lede:"Cities and streets as the poems describe them. Each place is painted scene by scene from the verses, and every scene says which words are in the text, which come from a later source and which the painter had to invent. Ayodhyā comes first, from the Vālmīki Rāmāyaṇa."},
   early:{label:"Early dynasties",eyebrow:"Bhāratīya historical record · c. 322 BCE – 1040 CE",
@@ -449,7 +454,7 @@ function chips(boxId, items, get, set){
   items.forEach(([v,l])=>{ const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=l; b.setAttribute("aria-pressed", get()===v);
     b.onclick=()=>{ set(v); box.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed", x===b)); renderAll(); }; box.appendChild(b); });
 }
-chips("f-itihasa",[["all","All"],["epic","Critical edition"],["vulgate","Vulgate only"],["coin","Coin"],["place","Places"]],()=>F.itihasa,v=>F.itihasa=v);
+chips("f-itihasa",[["all","All"],["epic","Critical edition"],["vulgate","Vulgate only"],["coin","Coin"]],()=>F.itihasa,v=>F.itihasa=v);
 for (const t of ["early","later"]){
   const regs=["All",...new Set(inTab(t).map(c=>c.r))];
   const order=["seal","coin","monument","flag","tradition"]; const kinds=order.filter(k=>inTab(t).some(c=>c.k===k||(k==="flag"&&c.flag)));
@@ -459,13 +464,11 @@ for (const t of ["early","later"]){
   else document.getElementById(`f-${t}-s`).remove();
 }
 function renderAll(){
-  const showPlaces = F.itihasa==="all"||F.itihasa==="place";
-  const it = F.itihasa==="place" ? [] : inTab("itihasa").filter(c=>F.itihasa==="all"||c.k===F.itihasa);
-  const gi=document.getElementById("grid-itihasa");
-  gi.hidden = F.itihasa==="place";
-  gi.innerHTML = it.map(card).join("") || (F.itihasa==="place"?"":`<div class="empty">No banners match that filter.</div>`);
-  document.getElementById("places-sec").hidden = !showPlaces;
-  document.getElementById("grid-places").innerHTML = inTab("places").map(card).join("");
+  const it = inTab("itihasa").filter(c=>F.itihasa==="all"||c.k===F.itihasa);
+  document.getElementById("grid-itihasa").innerHTML = it.map(card).join("") || `<div class="empty">No banners match that filter.</div>`;
+  const PL=inTab("places"), epics=["Rāmāyaṇa","Mahābhārata"];
+  document.getElementById("places-body").innerHTML = epics.filter(e=>PL.some(c=>c.epic===e)).map(e=>
+    `<h3 class="epic-h">${e}</h3><div class="grid">${PL.filter(c=>c.epic===e).map(card).join("")}</div>`).join("");
   for (const t of ["early","later"]){
     const f=F[t]; const list=inTab(t).filter(c=>(f.r==="All"||c.r===f.r)&&(f.k==="all"||c.k===f.k||(f.k==="flag"&&c.flag))&&(f.s==="all"||c.scenes));
     document.getElementById(`grid-${t}`).innerHTML = list.map(card).join("") || `<div class="empty">Nothing matches that region and evidence type. Pick another filter.</div>`;
@@ -513,6 +516,8 @@ function show(k, focus){
 }
 tabs.forEach((t,i)=>{ t.onclick=()=>{ show(t.id.slice(4)); setHash(t.id.slice(4)); };
   t.onkeydown=e=>{ if(e.key==="ArrowRight"||e.key==="ArrowLeft"){ e.preventDefault(); const n=tabs[(i+(e.key==="ArrowRight"?1:tabs.length-1))%tabs.length]; show(n.id.slice(4),true); setHash(n.id.slice(4)); } }; });
+document.getElementById("j-ban").onclick=e=>{e.preventDefault();show("itihasa");document.getElementById("grid-itihasa").scrollIntoView({block:"start"});setHash("itihasa");};
+document.getElementById("j-pl").onclick=e=>{e.preventDefault();show("itihasa");document.getElementById("places-sec").scrollIntoView({block:"start"});setHash("places");};
 function setHash(h){ try{ history.replaceState(null,"","#"+h); }catch(e){} }
 
 /* entry dialog */
