@@ -1412,6 +1412,47 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Seal_of_the_Chola_King_Rajendra_I_(reigned_1012-1044)_LACMA_M.87.272.5.jpg",
 "credit": "Los Angeles County Museum of Art · Public domain",
 "licurl": null
+},
+"scenes": {
+"heading": "Setting · Thanjavur under Rājarāja I, c. 1010–1014 CE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/chola/city.webp",
+"title": "The capital: the moated temple, the palace to its north, the town",
+"alt": "Hypothetical reconstruction of Thanjavur: an east-facing granite temple with a pyramidal tower inside a moat and bastioned wall, a palace compound to its north, two long temple streets and the town beyond",
+"attested": "The temple faces east; from the east a deep moat, filled at the entrance to make a causeway, then a bastioned wall of fortification, then a heavier enclosure wall about 6 m inside it, with the short, stocky outer gopura and, about 100 m further west, the inner gopura. The palace lay north of the temple. In Rājarāja's 29th year two temple streets, each in two rows of about a hundred houses, were built for the temple's women servants. Tanjavur is called 'surrounded by a moat' in the Tiruvisaippa of Karuvur Devar, the king's guru (S. R. Balasubrahmanyam, Middle Chola Temples, 1975, pp. 16–27, 74, 81–82, citing the inscriptions and the Tiruvisaippa).",
+"prescribed": "A modern scholar's account of the inscriptions and the surviving temple. No contemporary description of the town as a whole exists in the sources read.",
+"secondLabel": "Second source",
+"conjecture": "The palace's form and size; the plan and extent of the town; the wall and moat shown around the whole town (a moat round the city is attested, a town wall is not); house forms; the number and spacing of tiers on the tower (the source says thirteen); the rice fields and watercourses.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "street",
+"label": "Street",
+"img": "scenes/chola/street.webp",
+"title": "A street outside Tanjore: musicians, elephants, shepherds, bazaar",
+"alt": "Hypothetical reconstruction of a street at the edge of Thanjavur: musicians with horns and drums, a working elephant, soldiers at a gate, shepherds with cows and sheep, a market stall, and the temple tower in the distance",
+"attested": "Ten streets lay outside Tanjore: those of the musicians (Gandharva-teru), bowmen, those who cook for elephants, the elephant troops, the temple kitchen (Madaippalli-teru), and four named for Chola kings; the weavers' street lay inside the town; three bazaars lay outside it. Shepherds in these streets kept cows, she-buffaloes and ewes and supplied ghee for the temple's lamps (Rajarajesvara temple inscription No. 94, SII vol. II, ed. Hultzsch and Venkayya, 1913; repeated in Balasubrahmanyam 1975, pp. 81–82).",
+"prescribed": "Balasubrahmanyam, Middle Chola Temples (1975), citing the same record.",
+"secondLabel": "Second source",
+"conjecture": "House forms, layout, paving, dress and the look of the bazaars. The elephant, musicians and soldiers are inferred from the street names. The tiger flag over the gate is the model's addition: the Chola tiger emblem is real, but no flag at this gate is attested.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/chola/temple.webp",
+"title": "The Rājarājeśvara temple, newly complete",
+"alt": "Hypothetical reconstruction of the Rajarajeswara temple: the granite pyramidal tower with a gilded finial above a courtyard of priests, dancers, musicians and lamps",
+"attested": "A stone temple with a pyramidal tower of thirteen storeys, about 63 m high, topped by a single granite block with Nandis at its corners, a stone cupola and a gilded finial given in the king's 25th year; a cloistered courtyard; two gateways. The inscriptions on its walls record gilt-copper pots, silver dishes, jewelled ornaments, seven copper Gaṇapati images (two dancing), and lamps kept burning on ghee from the shepherds' cows and ewes (SII vol. II Nos. 84–94; Balasubrahmanyam 1975, pp. 16–27).",
+"prescribed": "The temple still stands; the second source describes its structure from the monument.",
+"secondLabel": "Second source",
+"conjecture": "Colours, paint and plaster, the amount of carving, the people and their dress, the lamps and flowers, the time of day. The tower is painted more heavily carved than the original.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
 }
 },
 {
