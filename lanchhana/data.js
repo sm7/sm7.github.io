@@ -1127,7 +1127,48 @@ window.LR={
 "sky"
 ],
 "prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a wild boar (varāha) standing in profile facing right, bristling mane along its back, tusks showing, sturdy and heraldic. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"repaint": "a wild boar (varāha) running in profile, bristles along the back and tusks showing, with a small sun and a crescent moon above it on either side and two fly-whisks (chauris), as on a Chalukya grant seal."
+"repaint": "a wild boar (varāha) running in profile, bristles along the back and tusks showing, with a small sun and a crescent moon above it on either side and two fly-whisks (chauris), as on a Chalukya grant seal.",
+"scenes": {
+"heading": "Setting · Pulakeśin II's Deccan, c. 610–642 CE",
+"items": [
+{
+"k": "army",
+"label": "Army",
+"img": "scenes/chalukya/army.webp",
+"title": "The army on the march: drums, lances and elephants",
+"alt": "Hypothetical reconstruction of a Chalukya army crossing a shallow river: drummers in front, war elephants with howdahs, umbrellas and banners, lance-bearing soldiers with round shields, rocky hills behind",
+"attested": "Xuanzang, who visited c. 640, calls the people tall and stern, \"grateful to benefactors, relentless to enemies\"; they fight with lances, a band of several hundred champions goes to battle, and drums are beaten before them when they march out; elephants number in many hundreds (Si-yu-ki, Book XI, tr. S. Beal, 1884, vol. 2 pp. 255–258). The Aihole inscription (634–35 CE) gives the king's armies elephants, banners, umbrellas and chowries, and has him cross the Kāverī on elephants (Epigraphia Indica vol. VI no. 1, tr. F. Kielhorn, 1902; a court poem, with a praise-poem's exaggeration).",
+"prescribed": "None: no second source read for dress or arms.",
+"secondLabel": "Other sources",
+"conjecture": "Dress, arms, the elephants' gear, the river, the numbers and the landscape. The wine-drinking champions and the rutting elephants are in the texts but not shown. The lion on the banner is the model's invention; the dynasty's emblem is the boar.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Jina temple",
+"img": "scenes/chalukya/temple.webp",
+"title": "Aihole: the stone mansion of Jinendra",
+"alt": "Hypothetical reconstruction of a seventh-century stone Jain temple at Aihole: pillared porch, low shrine above, lattice windows, worshippers with offerings, a banyan tree, red sandstone hills",
+"attested": "The Aihole inscription says the poet Ravikīrti caused a \"stone mansion of Jinendra\" to be built, and the poem is engraved on it (verses 35–37; dated Śaka 556 = 634–35 CE; Epigraphia Indica vol. VI no. 1, tr. F. Kielhorn, 1902). The text does not describe its form.",
+"prescribed": "The form follows the surviving temple at Aihole (from the monument; not read in a source here).",
+"secondLabel": "Surviving monument",
+"conjecture": "Everything about its shape and setting, the worshippers, the priest, the seated Jina inside, the trees and hills.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "monastery",
+"label": "Rock monastery",
+"img": "scenes/chalukya/monastery.webp",
+"title": "A rock-cut monastery with a stone Buddha",
+"alt": "Hypothetical reconstruction of a rock-cut Buddhist hall: carved pillars, a colossal seated stone Buddha under a tiered canopy, painted walls, monks in saffron and lay worshippers with lamps",
+"attested": "Xuanzang describes a monastery in a dark valley with a great mountain behind: lofty halls and deep side-aisles cut through the rock face, storey above storey; in the great vihāra a stone Buddha about 70 feet high under a stone canopy of seven stages; on the four walls, painted scenes of the Bodhisattva's former lives (Si-yu-ki, Book XI, tr. S. Beal, 1884, vol. 2 pp. 255–258). Beal identifies it with Ajanta and notes the measurements are exaggerated.",
+"prescribed": "None: no second source read for the hall's form.",
+"secondLabel": "Other sources",
+"conjecture": "All form and colour, the hall's proportions, the monks and worshippers. The canopy shows about five tiers, not seven, and the murals are denser than anything the text gives.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "pushyabhuti",
