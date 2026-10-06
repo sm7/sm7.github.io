@@ -1478,7 +1478,29 @@ window.LR={
 "boar",
 "gods"
 ],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Ādivarāha, the boar incarnation of Viṣṇu: a figure with a boar's head and a man's body, crowned, striding to the right, one hand on his hip and the other raised holding a discus (cakra). No flag, no flagstaff, no parasol, no tassels. No human figures other than Ādivarāha. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
+"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Ādivarāha, the boar incarnation of Viṣṇu: a figure with a boar's head and a man's body, crowned, striding to the right, one hand on his hip and the other raised holding a discus (cakra). No flag, no flagstaff, no parasol, no tassels. No human figures other than Ādivarāha. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"scenes": {
+"heading": "Setting · The kingdom the Arab merchants called Jurz",
+"items": [
+{
+"k": "horses",
+"label": "Horses and camels",
+"img": "scenes/pratihara/horses.webp",
+"title": "Horses, camels and silver dust in the realm of Jurz",
+"alt": "Hypothetical reconstruction of a dry-plain gathering of horses and camels with traders weighing silver dust on small scales, as the Arab merchants described the king of Jurz's country",
+"attested": "The merchant Sulaimān (c. 851) says the king of Jurz 'maintains numerous forces, and no other Indian prince has so fine a cavalry'; he is unfriendly to the Arabs; 'his camels and horses are numerous'; exchanges are made 'with silver (and gold) in dust', and there are said to be mines of these metals; 'there is no country in India more safe from robbers'. Al-Masʿūdī (c. 943) calls him 'a king who is rich in horses and camels, and has a large army' (Elliot & Dowson, History of India as told by its own historians, vol. 1 (1867), Early Arab Geographers I (Sulaimān, c. 851 CE, pp. 4–5) and III (al-Masʿūdī, c. 943 CE, p. 25)).",
+"prescribed": "Both are outsiders' reports, and Masʿūdī partly repeats Sulaimān. R. C. Majumdar (ed.), The History and Culture of the Indian People, vol. 4, The Age of Imperial Kanauj (Bharatiya Vidya Bhavan, 1955), reads 'Jurz'/'Juzr' as an Arab form of Gurjara and takes the king as the Pratihāra Mihira Bhoja, quoting Sulaimān in full in its chapter on Bhoja and again in its Foreword; the same volume places Nāgabhaṭa II's territory in 'Marwad, Malava and modern North Gujarat'. Sulaimān's own words about the land, 'a tongue of land', are queried there as '(Saurashtra?)', so its extent is not fixed by the text.",
+"conjecture": "The plain, the number of animals, the scales and the traders' dress are not in the text, and neither is any description of vegetation: the dry sandy western setting is inferred only from Majumdar's placing of the Pratihāra homeland in Marwar and north Gujarat. No source describes what traders or herdsmen of Jurz wore. The mixed dress shown (dhoti with sash, plain headcloths, a few short plain tunics, some bare chests with a shoulder cloth) is inferred from Sanskrit literature of the Kanauj region, which does name a kañcuka on a man and an uṣṇīṣa-paṭṭa headband, so bare-headed, dhoti-only figures alone would not fit. The scene shows only the attested elements of horses, camels and silver dust, and no armed men, because no building, temple or city of Jurz is described. No king is drawn.",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction painted with an AI image model from translated Arab travellers' reports and a modern scholarly history; not an archaeological finding.",
+"original": {
+"lang": "sa-Latn",
+"text": "vīdhra-kañcuka-cchanna-vapuṣā … uṣṇīṣa-paṭṭakāṃl lalāṭa-madhya-ghaṭita-vikaṭa-svastikā-granthīn",
+"ref": "Bāṇa, Harṣacarita, ucchvāsa 2 (a man 'with body covered by a kañcuka') and ucchvāsa 3 (men wearing uṣṇīṣa headbands); GRETIL text after Parab (Nirnaya Sagar, 7th ed. 1946). 7th-century Kanauj region, earlier than the Arab reports; shown only as evidence that these garments existed there."
+}
+}
+]
+}
 },
 {
 "id": "pala",
