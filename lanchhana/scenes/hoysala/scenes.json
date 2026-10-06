@@ -1,0 +1,42 @@
+{
+ "id": "hoysala",
+ "heading": "Setting · Viṣṇuvardhana's Velāpura (Belūr), 1117 CE",
+ "items": [
+  {
+   "k": "temple",
+   "label": "Temple",
+   "img": "scenes/hoysala/temple.webp",
+   "title": "The temple of Vijaya Nārāyaṇa: a lofty pile of pillars and lions",
+   "alt": "Hypothetical reconstruction of a twelfth-century Karnataka stone temple: rows of carved pillars, friezes of elephants and lions, a tall tiered superstructure with gilded finials, worshippers with garlands in a courtyard",
+   "attested": "The grant describes the temple set up by Viṣṇuvardhana as a lofty pile adorned with all the signs of fortune, filled with pillars, with lions and elephants among its decorations, with large chambers and a deep, peaceful interior, and adorned with numerous gilded pinnacles \"towering up in innumerable storeys\" (B. L. Rice, Mysore Inscriptions, translated for Government (Bangalore, 1879), pp. 264–269, no. 145 (Belūr, Śaka 1039 = 1117 CE)). Rice notes that the similes are puns, so the passage is poetry, not a plan.",
+   "prescribed": "None: no source read for the temple's form or its surviving fabric.",
+   "secondLabel": "Other sources",
+   "conjecture": "The shape, plan, materials and carving. The \"innumerable storeys\" are poetic; the painting shows a stepped tower the text does not specify. The surviving Channakeśava temple at Belūr is not described in any source read here.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "service",
+   "label": "Service",
+   "img": "scenes/hoysala/service.webp",
+   "title": "The daily service: lamps, garlands, prayers and dancers",
+   "alt": "Hypothetical reconstruction of an evening service in a twelfth-century temple hall: dancers with oil lamps, garland-makers, a scribe with palm-leaf manuscripts, priests at a sacred fire, three lit images at the far end, a queen watching",
+   "attested": "The king endowed the daily service, divine decoration and ceremonies of the three watches of the gods Vijaya Nārāyaṇa, Channa Keśava and Lakṣmī Nārāyaṇa, and the support of Vaiṣṇavas, Brahmans, learned men to write the prayers and songs, garland-makers, dancing girls for illumination, and all kinds of temple servants. His chief queen Śāntala Devī is called a crowning ornament of finished dancers (B. L. Rice, Mysore Inscriptions, translated for Government (Bangalore, 1879), pp. 264–269, no. 145 (Belūr, Śaka 1039 = 1117 CE)).",
+   "prescribed": "None.",
+   "secondLabel": "Other sources",
+   "conjecture": "The hall, its pillars and hanging lamps, the lit images, the dance movements and costume, the queen's dress and the sacred fire. The draped garments on some women may be later than 1117.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "city",
+   "label": "Town",
+   "img": "scenes/hoysala/city.webp",
+   "title": "Velāpura: ramparts, moat and a king's palace (later witness)",
+   "alt": "Hypothetical reconstruction of a fortified temple town: high stone ramparts with bastions, a moat and lake, a fortified gateway with guards and archers, a stone temple inside, a palace compound and thatched houses",
+   "attested": "Viṣṇuvardhana is said to be ruling \"from his palace in the great city of Velapura\" (B. L. Rice, Mysore Inscriptions, translated for Government (Bangalore, 1879), pp. 264–269, no. 145 (Belūr, Śaka 1039 = 1117 CE)).",
+   "prescribed": "A later Belūr grant of Vīra Ballāḷa's time praises a ruler whose \"doors [are] securely fastened, his lodges filled with guards and archers, his ramparts high, surrounded with a moat — the lake named Vasudeva tīrtha\" (same volume, pp. 266–267). It is not from Viṣṇuvardhana's day.",
+   "secondLabel": "Later witness",
+   "conjecture": "The town's plan, gateway, wall and moat forms, the palace, houses and roofs. The red banners at the gate are the model's invention. The later grant may describe the temple precinct rather than a whole town.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}

@@ -1594,7 +1594,7 @@ window.LR={
 "attested": "The temple faces east; from the east a deep moat, filled at the entrance to make a causeway, then a bastioned wall of fortification, then a heavier enclosure wall about 6 m inside it, with the short, stocky outer gopura and, about 100 m further west, the inner gopura. The palace lay north of the temple. In Rājarāja's 29th year two temple streets, each in two rows of about a hundred houses, were built for the temple's women servants. Tanjavur is called 'surrounded by a moat' in the Tiruvisaippa of Karuvur Devar, the king's guru (S. R. Balasubrahmanyam, Middle Chola Temples, 1975, pp. 16–27, 74, 81–82, citing the inscriptions and the Tiruvisaippa).",
 "prescribed": "A modern scholar's account of the inscriptions and the surviving temple. No contemporary description of the town as a whole exists in the sources read.",
 "secondLabel": "Second source",
-"conjecture": "The palace's form and size; the plan and extent of the town; the wall and moat shown around the whole town (a moat round the city is attested, a town wall is not); house forms; the number and spacing of tiers on the tower (the source says thirteen); the rice fields and watercourses.",
+"conjecture": "The palace's form and size; the plan and extent of the town; the wall and moat shown around the whole town (a moat round the city is attested, a town wall is not); house forms and roofs; the number and spacing of tiers on the tower (the source says thirteen); the rice fields and watercourses. Dress is conjecture: no dress source was read. After review the first paintings were repainted to remove forms that look later than 1010 CE (stitched blouses and draped saris, turbans, a modern dance costume, machine-made tiles, tall gateway towers, woolly sheep); the current wrapped garments and chest bands follow Chola sculpture as the painter remembers it, not a cited source.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 },
 {
@@ -1606,7 +1606,7 @@ window.LR={
 "attested": "Ten streets lay outside Tanjore: those of the musicians (Gandharva-teru), bowmen, those who cook for elephants, the elephant troops, the temple kitchen (Madaippalli-teru), and four named for Chola kings; the weavers' street lay inside the town; three bazaars lay outside it. Shepherds in these streets kept cows, she-buffaloes and ewes and supplied ghee for the temple's lamps (Rajarajesvara temple inscription No. 94, SII vol. II, ed. Hultzsch and Venkayya, 1913; repeated in Balasubrahmanyam 1975, pp. 81–82).",
 "prescribed": "Balasubrahmanyam, Middle Chola Temples (1975), citing the same record.",
 "secondLabel": "Second source",
-"conjecture": "House forms, layout, paving, dress and the look of the bazaars. The elephant, musicians and soldiers are inferred from the street names. The tiger flag over the gate is the model's addition: the Chola tiger emblem is real, but no flag at this gate is attested.",
+"conjecture": "House forms, layout, paving, dress and the look of the bazaars. The elephant, musicians and bowmen are inferred from the street names. The flag over the gate in the first painting was the model's addition and has been removed; the sheep are still partly woolly in the painting. Dress is conjecture: no dress source was read. After review the first paintings were repainted to remove forms that look later than 1010 CE (stitched blouses and draped saris, turbans, a modern dance costume, machine-made tiles, tall gateway towers, woolly sheep); the current wrapped garments and chest bands follow Chola sculpture as the painter remembers it, not a cited source.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 },
 {
@@ -1618,7 +1618,7 @@ window.LR={
 "attested": "A stone temple with a pyramidal tower of thirteen storeys, about 63 m high, topped by a single granite block with Nandis at its corners, a stone cupola and a gilded finial given in the king's 25th year; a cloistered courtyard; two gateways. The inscriptions on its walls record gilt-copper pots, silver dishes, jewelled ornaments, seven copper Gaṇapati images (two dancing), and lamps kept burning on ghee from the shepherds' cows and ewes (SII vol. II Nos. 84–94; Balasubrahmanyam 1975, pp. 16–27).",
 "prescribed": "The temple still stands; the second source describes its structure from the monument.",
 "secondLabel": "Second source",
-"conjecture": "Colours, paint and plaster, the amount of carving, the people and their dress, the lamps and flowers, the time of day. The tower is painted more heavily carved than the original.",
+"conjecture": "Colours, paint and plaster, the amount of carving, the people, the lamps and flowers, the time of day. The tower is painted more heavily carved than the original. The dancing Gaṇapati carried on a platform is inferred from the seven Gaṇapati images (two dancing) in the inscriptions; the procession is not described. Dress is conjecture: no dress source was read. After review the first paintings were repainted to remove forms that look later than 1010 CE (stitched blouses and draped saris, turbans, a modern dance costume, machine-made tiles, tall gateway towers, woolly sheep); the current wrapped garments and chest bands follow Chola sculpture as the painter remembers it, not a cited source.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 }
 ]
@@ -1729,6 +1729,47 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Sala_fighting_the_Tiger_(The_Hoysala_Emblem),_East_entrance,_Chennakesava_temple,_Belur_03.jpg",
 "credit": "Rohit14400 · CC BY-SA 4.0",
 "licurl": "https://creativecommons.org/licenses/by-sa/4.0"
+},
+"scenes": {
+"heading": "Setting · Viṣṇuvardhana's Velāpura (Belūr), 1117 CE",
+"items": [
+{
+"k": "temple",
+"label": "Temple",
+"img": "scenes/hoysala/temple.webp",
+"title": "The temple of Vijaya Nārāyaṇa: a lofty pile of pillars and lions",
+"alt": "Hypothetical reconstruction of a twelfth-century Karnataka stone temple: rows of carved pillars, friezes of elephants and lions, a tall tiered superstructure with gilded finials, worshippers with garlands in a courtyard",
+"attested": "The grant describes the temple set up by Viṣṇuvardhana as a lofty pile adorned with all the signs of fortune, filled with pillars, with lions and elephants among its decorations, with large chambers and a deep, peaceful interior, and adorned with numerous gilded pinnacles \"towering up in innumerable storeys\" (B. L. Rice, Mysore Inscriptions, translated for Government (Bangalore, 1879), pp. 264–269, no. 145 (Belūr, Śaka 1039 = 1117 CE)). Rice notes that the similes are puns, so the passage is poetry, not a plan.",
+"prescribed": "None: no source read for the temple's form or its surviving fabric.",
+"secondLabel": "Other sources",
+"conjecture": "The shape, plan, materials and carving. The \"innumerable storeys\" are poetic; the painting shows a stepped tower the text does not specify. The surviving Channakeśava temple at Belūr is not described in any source read here.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "service",
+"label": "Service",
+"img": "scenes/hoysala/service.webp",
+"title": "The daily service: lamps, garlands, prayers and dancers",
+"alt": "Hypothetical reconstruction of an evening service in a twelfth-century temple hall: dancers with oil lamps, garland-makers, a scribe with palm-leaf manuscripts, priests at a sacred fire, three lit images at the far end, a queen watching",
+"attested": "The king endowed the daily service, divine decoration and ceremonies of the three watches of the gods Vijaya Nārāyaṇa, Channa Keśava and Lakṣmī Nārāyaṇa, and the support of Vaiṣṇavas, Brahmans, learned men to write the prayers and songs, garland-makers, dancing girls for illumination, and all kinds of temple servants. His chief queen Śāntala Devī is called a crowning ornament of finished dancers (B. L. Rice, Mysore Inscriptions, translated for Government (Bangalore, 1879), pp. 264–269, no. 145 (Belūr, Śaka 1039 = 1117 CE)).",
+"prescribed": "None.",
+"secondLabel": "Other sources",
+"conjecture": "The hall, its pillars and hanging lamps, the lit images, the dance movements and costume, the queen's dress and the sacred fire. The draped garments on some women may be later than 1117.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "city",
+"label": "Town",
+"img": "scenes/hoysala/city.webp",
+"title": "Velāpura: ramparts, moat and a king's palace (later witness)",
+"alt": "Hypothetical reconstruction of a fortified temple town: high stone ramparts with bastions, a moat and lake, a fortified gateway with guards and archers, a stone temple inside, a palace compound and thatched houses",
+"attested": "Viṣṇuvardhana is said to be ruling \"from his palace in the great city of Velapura\" (B. L. Rice, Mysore Inscriptions, translated for Government (Bangalore, 1879), pp. 264–269, no. 145 (Belūr, Śaka 1039 = 1117 CE)).",
+"prescribed": "A later Belūr grant of Vīra Ballāḷa's time praises a ruler whose \"doors [are] securely fastened, his lodges filled with guards and archers, his ramparts high, surrounded with a moat — the lake named Vasudeva tīrtha\" (same volume, pp. 266–267). It is not from Viṣṇuvardhana's day.",
+"secondLabel": "Later witness",
+"conjecture": "The town's plan, gateway, wall and moat forms, the palace, houses and roofs. The red banners at the gate are the model's invention. The later grant may describe the temple precinct rather than a whole town.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
 }
 },
 {
