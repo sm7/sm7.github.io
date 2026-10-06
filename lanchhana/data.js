@@ -6,12 +6,12 @@ window.LR={
 "https://zenodo.org/records/11501713"
 ],
 "aiyerEI27": [
-"K. V. Subrahmanya Aiyer, 'Seals of Tiruppuvanam plates', Epigraphia Indica 27 (1947-48) (note citing W. Elliot, Coins of Southern India, p. 124) — whatisindia.com",
-"https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/subrahmanyaaiyar.html"
+"K. V. Subrahmanya Aiyer, 'Seals of Tiruppuvanam plates', Epigraphia Indica 27 (1947-48) (note citing W. Elliot, Coins of Southern India, p. 124)",
+""
 ],
 "arie1935": [
-"Annual Report on South Indian Epigraphy for the year ending 31 March 1935, Part II, 'Eastern Gangas' (copper-plate of Anantavarman, son of Devendravarman) — whatisindia.com transcription",
-"https://www.whatisindia.com/inscriptions/annualreports/31stmarch1935/easterngangas.html"
+"Annual Report on South Indian Epigraphy for the year ending 31 March 1935, Part II, 'Eastern Gangas' (copper-plate of Anantavarman, son of Devendravarman)",
+""
 ],
 "asherSarnath": [
 "Frederick M. Asher, 'Lion capital, Sarnath Museum', Asher Collection, American Institute of Indian Studies — VMIS",
@@ -74,12 +74,12 @@ window.LR={
 "https://www.chennaimuseum.org/draft/gallery/04/01/coin1.htm"
 ],
 "cii3rev_no48": [
-"CII III (rev. ed., 1981), No. 48 'Nālandā Clay Seal of Viṣṇugupta', pp. 364-365 — whatisindia.com",
-"https://whatisindia.com/inscriptions/earlyguptakings/theguptainscriptions162.html"
+"CII III (rev. ed., 1981), No. 48 'Nālandā Clay Seal of Viṣṇugupta', pp. 364-365",
+""
 ],
 "cii3rev_toc": [
-"J.F. Fleet, rev. D.R. Bhandarkar, ed. B.Ch. Chhabra & G.S. Gai, Corpus Inscriptionum Indicarum III: Inscriptions of the Early Gupta Kings (rev. ed., 1981), contents: No. 45 'Nālandā Clay Seals of Kumāragupta III' p. 355; No. 46 'Bhitarī Copper-Silver Seal of Kumāragupta III' p. 358 — whatisindia.com",
-"https://whatisindia.com/inscriptions/earlyguptakings/contents2.html"
+"J.F. Fleet, rev. D.R. Bhandarkar, ed. B.Ch. Chhabra & G.S. Gai, Corpus Inscriptionum Indicarum III: Inscriptions of the Early Gupta Kings (rev. ed., 1981), contents: No. 45 'Nālandā Clay Seals of Kumāragupta III' p. 355; No. 46 'Bhitarī Copper-Silver Seal of Kumāragupta III' p. 358",
+""
 ],
 "dandekarVadnagar": [
 "A. Dandekar, S. Moin, Sukumaran, Ambekar & Jain, 'The numismatic assemblage of Vadnagar: discoveries', Heritage: Journal of Multidisciplinary Studies in Archaeology 12 (2024), pp. 340-439",
@@ -254,8 +254,8 @@ window.LR={
 "https://www.academia.edu/105150273/_Cross_and_Balls_Ujjain_symbol_on_Ancient_Indian_Coins_Introduction"
 ],
 "sircarEI32": [
-"D. C. Sircar, [Pallava inscription], Epigraphia Indica 32 (1957-58) — text at whatisindia.com",
-"https://whatisindia.com/inscriptions/epigraphica_indica/vol32_1957-1958/sircar68.html"
+"D. C. Sircar, [Pallava inscription], Epigraphia Indica 32 (1957-58)",
+""
 ],
 "srikantaSastri": [
 "S. Srikanta Sastri, 'Evolution of the Gandabherunda', Quarterly Journal of the Mythic Society (Bangalore) — page 1 of 6 readable at srikanta-sastri.org",
@@ -270,12 +270,12 @@ window.LR={
 "https://books.google.com/books/about/Coinage_of_Tripura.html?id=szsfAAAAMAAJ"
 ],
 "vatsEI27": [
-"M. S. Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947–48) — whatisindia.com transcription",
-"https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/vatsmadhosarup2.html"
+"M. S. Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947–48)",
+""
 ],
 "vatsSohnag": [
-"Madho Sarup Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947-48) — text at whatisindia.com",
-"https://whatisindia.com/inscriptions/epigraphica_indica/vol27_1947-1948/vatsmadhosarup2.html"
+"Madho Sarup Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947-48)",
+""
 ],
 "vijEI": [
 "F. Kielhorn, 'British Museum Plates of Sadasivaraya: Saka-Samvat 1478', Epigraphia Indica IV (1896–97), no. 1, p. 1 — Internet Archive",
@@ -286,7 +286,7 @@ window.LR={
 "https://www.ias.ac.in/public/Volumes/boms/009/02/0137-0147.pdf"
 ],
 "val": [
-"Vālmīki Rāmāyaṇa: Sanskrit text with word-by-word gloss and prose translation (Bāla 5; Ayodhyā 2, 6, 10, 15–17, 59, 71, 100; Yuddha 127–128), valmikiramayan.net, ed. Desiraju Hanumanta Rao et al.",
+"Vālmīki Rāmāyaṇa, Sanskrit text with prose translation, valmikiramayan.net (Bāla Kāṇḍa trans. Desiraju Hanumanta Rao; Ayodhyā and Yuddha Kāṇḍas trans. K. M. K. Murthy, 2006). Passages used: Bāla 5, 29–31, 50, 66–67, 69–73; Ayodhyā 2, 6, 10, 15–17, 59, 71, 100; Yuddha 127–128",
 "https://www.valmikiramayan.net/"
 ]
 },

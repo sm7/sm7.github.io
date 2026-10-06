@@ -383,7 +383,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js?v=14"></script>
+<script src="data.js?v=15"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
@@ -552,8 +552,8 @@ function entryHtml(c){
       ${c.review?`<p class="warn review"><b>Awaiting scholarly confirmation.</b> ${esc(c.review)}</p>`:""}
       ${c.flag?`<div class="flagrow">${flagSvg(c.flag)}<span>${esc(c.flag.cap)}</span></div>`:""}
       ${c.motifs.length?`<h4>Motifs</h4><div class="mchips">${c.motifs.map(m=>`<a class="chip" href="#motif-${m}" data-motif="${m}">${esc(MOTIFS[m])} <small>${C.filter(x=>x.motifs.includes(m)).length}</small></a>`).join("")}</div>`:""}`;
-  const srcBody=`<h4>Sources</h4><ol class="srcs">${keys.map((k,n)=>`<li id="src-${c.id}-${n+1}"><a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(srcTitle(k))}</a></li>`).join("")}</ol>
-      ${c.read?`<h4>Further reading</h4><ul class="srcs" style="list-style:none;padding:0">${c.read.map(k=>`<li><a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(SRC[k][0])}</a></li>`).join("")}</ul>`:""}
+  const srcBody=`<h4>Sources</h4><ol class="srcs">${keys.map((k,n)=>`<li id="src-${c.id}-${n+1}">${SRC[k][1]?`<a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(srcTitle(k))}</a>`:esc(srcTitle(k))}</li>`).join("")}</ol>
+      ${c.read?`<h4>Further reading</h4><ul class="srcs" style="list-style:none;padding:0">${c.read.map(k=>`<li>${SRC[k][1]?`<a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(SRC[k][0])}</a>`:esc(SRC[k][0])}</li>`).join("")}</ul>`:""}
       ${how}`;
   return `<div class="dlg-bar"><span class="where">${esc(TABS[c.tab].label)}</span>
         <button class="ib" type="button" data-go="${prev.id}" aria-label="Previous entry: ${esc(prev.n)}">←</button>

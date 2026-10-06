@@ -79,6 +79,6 @@ const use={};
 cards.forEach(c=>{const keys=new Set((JSON.stringify(c).match(/\{([A-Za-z0-9_]+)\}/g)||[]).map(x=>x.slice(1,-1)));(c.read||[]).forEach(k=>keys.add(k));keys.forEach(k=>{if(SRC[k])use[k]=(use[k]||0)+1})});
 const ks=Object.keys(SRC).sort((a,b)=>SRC[a][0].localeCompare(SRC[b][0]));
 const bl=document.getElementById("bl");
-function draw(f){bl.innerHTML=ks.filter(k=>!f||SRC[k][0].toLowerCase().includes(f)).map(k=>`<li><a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(SRC[k][0])}</a><small>${use[k]||0} ${use[k]===1?"entry":"entries"}</small></li>`).join("")}
+function draw(f){bl.innerHTML=ks.filter(k=>!f||SRC[k][0].toLowerCase().includes(f)).map(k=>`<li>${SRC[k][1]?`<a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(SRC[k][0])}</a>`:esc(SRC[k][0])}<small>${use[k]||0} ${use[k]===1?"entry":"entries"}</small></li>`).join("")}
 draw("");document.getElementById("q").addEventListener("input",e=>draw(e.target.value.toLowerCase()));
 </script>

@@ -1,0 +1,219 @@
+# Lāñchhana Register: source list
+Generated 2026-10-06 from lanchhana/data.js. Name, link (blank = name only), and the entries that cite it.
+
+- **aioSiyaka**: H. V. Trivedi, CII VII.2 (1978) pp. 8–9 no. 3 (after D. B. Diskalkar, EI 19), as described in Asia Inscriptions Online, 'The second plate of Ahmedabad grant of Sīyaka' (2024) — Zenodo
+  - https://zenodo.org/records/11501713
+  - cited by: paramara
+- **aiyerEI27**: K. V. Subrahmanya Aiyer, 'Seals of Tiruppuvanam plates', Epigraphia Indica 27 (1947-48) (note citing W. Elliot, Coins of Southern India, p. 124)
+  - (name only)
+  - cited by: pandya
+- **arie1935**: Annual Report on South Indian Epigraphy for the year ending 31 March 1935, Part II, 'Eastern Gangas' (copper-plate of Anantavarman, son of Devendravarman)
+  - (name only)
+  - cited by: eastern-ganga
+- **asherSarnath**: Frederick M. Asher, 'Lion capital, Sarnath Museum', Asher Collection, American Institute of Indian Studies — VMIS
+  - https://vmis.in/ArchiveCategories/collection_gallery_parent?id=1616&siteid=6135&minrange=0&maxrange=0&count=24
+  - cited by: maurya
+- **balogh2014**: Dániel Balogh, 'A New Piece of the Early Rāṣṭrakūṭa Puzzle from Jamkhed', South Asian Studies 30(2) (2014), pp. 173-180
+  - https://www.academia.edu/9004566/A_New_Piece_of_the_Early_R%C4%81%E1%B9%A3%E1%B9%ADrak%C5%AB%E1%B9%ADa_Puzzle_from_Jamkhed
+  - cited by: rashtrakuta
+- **bhattacharya1998**: G. Bhattacharya, 'The new Pāla ruler, Gopāla (II), son of Śūrapāla (I)', in C. P. Sinha (ed.), Facets of Indian Culture: Gustav Roth Felicitation Volume (1998), pp. 177–181 — Academia.edu
+  - https://www.academia.edu/11894657
+  - cited by: pala
+- **bhattacharyya1979**: P. K. Bhattacharyya, 'Two interesting coins of Śaśāṅka', JRAS 111.2 (1979), pp. 153–155 — Cambridge Core
+  - https://www.cambridge.org/core/services/aop-cambridge-core/content/view/15EBA58BF4D30B641AD0E7C803FD09C2/S0035869X00135579a.pdf/two_interesting_coins_of_sasanka1.pdf
+  - cited by: gauda
+- **bhattasali**: N. K. Bhattasali, Iconography of Buddhist and Brahmanical Sculptures in the Dacca Museum (1929), 'Iconography of Śaiva images — Introduction', c. p. 236 — Wisdom Library transcription
+  - https://www.wisdomlib.org/hinduism/book/iconography-of-buddhist-and-brahmanical-sculptures/d/doc1473820.html
+  - cited by: sena
+- **bmGautamiputra**: British Museum, silver coin of Gautamiputra Satakarni overstruck on Nahapana, reg. no. 1907,0102.12 — museum record via Google Arts & Culture
+  - https://artsandculture.google.com/asset/silver-coin-of-gautamiputra-satakarni/tQEoF2ik43FHRg?hl=en
+  - cited by: satavahana, kshatrapa
+- **bmSamudragupta**: British Museum, gold coin of Samudragupta, reg. no. 1894,0506.151 — collection record
+  - https://www.britishmuseum.org/collection/object/C_1894-0506-151
+  - cited by: gupta
+- **bmSasanka**: British Museum, gold coin of Śaśāṅka, reg. 1894,0506.159 (= Allan, BMC Gupta Dynasties and Śaśāṅka, 1914, no. 608, p. 147) — museum record
+  - https://www.britishmuseum.org/collection/object/C_1894-0506-159
+  - cited by: gauda
+- **bmSena**: British Museum, 'Plaque' (Barrackpur copper-plate of Vijayasena), reg. no. 1957,1121.1 (bibl. N. G. Majumdar, Inscriptions of Bengal III, 1929, p. 63) — British Museum collection
+  - https://www.britishmuseum.org/collection/object/A_1957-1121-1
+  - cited by: sena
+- **bmSenaGAC**: British Museum, 'Copper plate with inscription' (Vijayasena), museum-supplied description — Google Arts & Culture
+  - https://artsandculture.google.com/asset/copper-plate-with-inscription/JgHSwKWoCTVy2w
+  - cited by: sena
+- **borgohain2023**: T. Borgohain & K. Bhuyan, 'A Study on the Tai-Ahom Dragon Ngi Ngao Kham', IJRAR 10(1) (2023), pp. 461–463 (low-impact journal)
+  - https://ijrar.org/papers/IJRAR23A2031.pdf
+  - cited by: ahom
+- **brown**: C. J. Brown, The Coins of India (1922), keys to Plates V–VI — Project Gutenberg
+  - https://www.gutenberg.org/ebooks/75542
+  - cited by: chandela, chauhan
+- **brownCoins**: C. J. Brown, The Coins of India (1922), keys to Plates V–VI — Project Gutenberg
+  - https://www.gutenberg.org/ebooks/75542
+  - cited by: gauda, karkota, kalachuri, shahi, gahadavala
+- **chennaiChola**: Government Museum, Chennai, Numismatics Gallery, 'Chola coins' (gallery catalogue page) — museum record
+  - https://www.chennaimuseum.org/draft/gallery/04/01/coin5.htm
+  - cited by: chola
+- **chennaiIntro**: Government Museum, Chennai, Numismatics Gallery, introductory text on South Indian coins — museum record
+  - https://www.chennaimuseum.org/draft/gallery/04/01/coin1.htm
+  - cited by: pandya
+- **cii3rev_no48**: CII III (rev. ed., 1981), No. 48 'Nālandā Clay Seal of Viṣṇugupta', pp. 364-365
+  - (name only)
+  - cited by: gupta
+- **cii3rev_toc**: J.F. Fleet, rev. D.R. Bhandarkar, ed. B.Ch. Chhabra & G.S. Gai, Corpus Inscriptionum Indicarum III: Inscriptions of the Early Gupta Kings (rev. ed., 1981), contents: No. 45 'Nālandā Clay Seals of Kumāragupta III' p. 355; No. 46 'Bhitarī Copper-Silver Seal of Kumāragupta III' p. 358
+  - (name only)
+  - cited by: gupta
+- **dandekarVadnagar**: A. Dandekar, S. Moin, Sukumaran, Ambekar & Jain, 'The numismatic assemblage of Vadnagar: discoveries', Heritage: Journal of Multidisciplinary Studies in Archaeology 12 (2024), pp. 340-439
+  - https://www.heritageuniversityofkerala.com/JournalPDF/Volume12/7.pdf
+  - cited by: kshatrapa
+- **dasMatanga**: Chandrima Das, Mātaṅgalīlā and Hastyāyurveda: a study (doctoral thesis, 2021), section 'Depiction of elephants on the royal seals and inscription-slabs/plates' — Wisdom Library
+  - https://www.wisdomlib.org/hinduism/essay/matangalila-and-hastyayurveda-study/d/doc1187547.html
+  - cited by: kamarupa, western-ganga
+- **dasNalanda**: Chirantani Das, Settlement in Early Historic Ganga Plain (thesis), section on Nalanda (citing Hirananda Sastri) — Wisdom Library
+  - https://www.wisdomlib.org/history/essay/settlement-in-early-historic-ganga-plain/d/doc370480.html
+  - cited by: kamarupa, maukhari, pushyabhuti
+- **dharmaMayidavolu**: DHARMA project (ERC), 'Mayidavōlu plates, time of Śiva-Skandavarman, year 10', edition record INSPallava00002, after Hultzsch, EI 6
+  - https://dharmalekha.info/texts/INSPallava00002
+  - cited by: pallava
+- **dutta2019**: Debajit Dutta, 'Contextualising Numismatic with Religion: Focus on Medieval Northeast India', Indian Historical Review 46(1) (2019), pp. 1-21 — author PDF on academia.edu (page refs below are PDF pages)
+  - https://www.academia.edu/108557005/Contextualising_Numismatic_with_Religion_Focus_on_Medieval_Northeast_India
+  - cited by: ahom, tripura
+- **epiTelanganica2**: Epigraphia Telanganica, vol. II (MCR HRD Institute of Telangana), pp. 13-14 (Eastern Chalukya Mangallu grant, seal)
+  - https://www.mcrhrdi.gov.in/images/epigraphia/Vol-II.pdf
+  - cited by: chalukya
+- **falkKushan**: Harry Falk, 'Kushan religion and politics', Bulletin of the Asia Institute 29 (2015 [2019]) — Academia.edu
+  - https://www.academia.edu/41296411/Kushan_religion_and_politics
+  - cited by: kushan
+- **gan**: Mahābhārata, Drona Parva, Section CIV, tr. K. M. Ganguli — sacred-texts.com
+  - https://sacred-texts.com/hin/m07/m07101.htm
+  - cited by: shala
+- **gan7023**: Mahābhārata, Droṇa Parva, Section XXIII, tr. K. M. Ganguli (vulgate) — sacred-texts.com
+  - https://www.sacred-texts.com/hin/m07/m07023.htm
+  - cited by: ghatotkaca, yudhishthira, bhima, nakula, sahadeva, abhimanyu
+- **ganSarabha**: Mahābhārata, Śānti Parva, Section CXVII, tr. K. M. Ganguli — sacred-texts.com
+  - https://sacred-texts.com/hin/m12/m12a116.htm
+  - cited by: nakula
+- **hultzschMayidavolu**: E. Hultzsch, 'Mayidavolu plates of Sivaskandavarman', Epigraphia Indica 6 (1900-01), pp. 84-89 (seal at p. 86) — Internet Archive scan of the volume
+  - https://archive.org/details/EpigraphiaIndicaVol6
+  - cited by: pallava
+- **icomosHoy**: ICOMOS, Evaluation of 'Sacred Ensembles of the Hoysalas' (India), WHC 2023 evaluations, pp. 342–343 — UNESCO WHC
+  - https://whc.unesco.org/document/205738
+  - cited by: hoysala
+- **jackson**: R. P. Jackson, 'The Dominions, Emblems, and Coins of the South Indian Dynasties', British Numismatic Journal 9 (1912), pp. 296-339 (Pandya and Chera sections; exact page of each quote not reliably readable) — BNS digital BNJ
+  - https://www.britnumsoc.org/publications/Digital%20BNJ/pdfs/1912_BNJ_9_13.pdf
+  - cited by: pandya, chera, hoysala, kakatiya, yadava, vijayanagara, travancore
+- **jaiGolden**: Roper Lethbridge, The Golden Book of India (1893), Introduction, p. viii — Google Books
+  - https://books.google.com/books/about/The_Golden_Book_of_India.html?id=bHiBAAAAIAAJ
+  - cited by: jaipur
+- **jaiJhar**: Premlata Pokharna, 'Coins found from Jaipur Region', in J.N. Asopa (ed.), Cultural Heritage of Jaipur (1982), p. 10 — Internet Archive
+  - https://ia601502.us.archive.org/11/items/in.ernet.dli.2015.119128/2015.119128.Cultural-Heritage-Of-Jaipur_text.pdf
+  - cited by: jaipur
+- **jhanjh2020**: D. K. Jhanjh, 'Revisiting a tenth-century copper plate inscription: a Rāṣṭrakūṭa record restruck by the Paramāras', Journal of the Asiatic Society 62.3 (2020) — Academia.edu
+  - https://www.academia.edu/96524969/Revisiting_a_Tenth_Century_Copper_Plate_Inscription_A_Rastrakuta_Record_Restruck_by_the_Paramaras
+  - cited by: paramara
+- **lacmaSeal**: LACMA, 'Seal of the Chola King Rajendra I (reigned 1012–1044)' — museum record (object evidence only)
+  - https://collections.lacma.org/node/170495
+  - cited by: chola
+- **maitra2015**: S. N. Maitra, Kingship in Early Medieval India: A Comparative Study of the Cholas and the Eastern Gangas (PhD thesis, 2015), ch. on the Mahanadi delta 600–900 CE — Wisdom Library reader
+  - https://www.wisdomlib.org/history/essay/kingship-in-early-medieval-india/d/doc626464.html
+  - cited by: eastern-ganga
+- **marDuff1**: James Grant Duff, A History of the Mahrattas (1826), vol. I, p. 267 n., p. 368 n., pp. 370–371 — ibiblio transcription
+  - https://www.ibiblio.org/britishraj/Duff1/chapter08.html
+  - cited by: maratha
+- **marDuff3**: James Grant Duff, A History of the Mahrattas (1826), vol. III, p. 440 — ibiblio transcription
+  - https://ibiblio.org/britishraj/Duff3/chapter18.html
+  - cited by: maratha
+- **mbs7022**: Mahābhārata 7.22 (Sanskrit, BORI CE via Tokunaga/Smith)
+  - https://www.sacred-texts.com/hin/mbs/mbs07022.htm
+  - cited by: ghatotkaca, pandava-colours, yudhishthira, bhima, nakula, sahadeva, abhimanyu
+- **mbsIndex**: The Mahābhārata in Sanskrit: source note (BORI critical edition, Tokunaga/Smith) — sacred-texts.com
+  - https://sacred-texts.com/hin/mbs/index.htm
+  - cited by: pandava-colours, yudhishthira, bhima, nakula, sahadeva, abhimanyu
+- **nagaswamyKolli**: R. Nagaswamy, 'Kollip-purai: An Inscribed Tamil Coin' (first announced in Dinamani, 15 Nov 1987) — Tamil Arts Academy
+  - https://tamilartsacademy.com/articles/article48.xml
+  - cited by: chera
+- **nagaswamyVelanjeri**: R. Nagaswamy, 'Thiruttani and Velanjeri Copper Plates' (Tamil Nadu State Dept of Archaeology edition of the Velanjeri plates of Parantaka I; article text by the editor) — Tamil Arts Academy
+  - https://tamilartsacademy.com/articles/article28.xml
+  - cited by: chola
+- **nmDelhiSangam**: National Museum, New Delhi, gallery label 'Coins of Sangam age' (photo: Gabe Hiemstra, CC BY-NC-ND) — wisdomlib gallery
+  - https://www.wisdomlib.org/gallery/new-delhi-museum-coins/9806
+  - cited by: chera
+- **palladino2017**: M. Palladino, The Sun-Worshipping Śākadvīpīya Brāhmaṇas (PhD thesis, 2017), §5 'King Bhoja and the Sun cult' — Wisdom Library reader
+  - https://www.wisdomlib.org/history/essay/the-sun-worshipping-sakadvipiya-brahmanas/d/doc1500669.html
+  - cited by: pratihara
+- **parg**: F. E. Pargiter, The Purana Text of the Dynasties of the Kali Age (1913) — Internet Archive
+  - https://archive.org/details/in.ernet.dli.2015.22906
+  - cited by: magadha-coin
+- **ponniahJain**: P. V. Radhakrishnan Ponniah Velliah & G. Chaganraj Jain, 'A note on caparisoned elephant motif gold coins of the Western Gangas', Studies in South Indian Coins 31 (2024), pp. 69-84 — Academia.edu
+  - https://www.academia.edu/120396494/A_NOTE_ON_CAPARISONED_ELEPHANT_MOTIF_GOLD_COINS_OF_THE_WESTERN_GANGAS
+  - cited by: western-ganga
+- **prabhune**: P. P. Prabhune, 'Gold coin of Yadava Amana, a Yadava ruler of Devagiri', Edu Care (2020), pp. 39–41 — Academia.edu
+  - https://www.academia.edu/47736831/Gold_coin_of_Yadava_Amana_A_Yadava_ruler_of_Devagiri
+  - cited by: yadava
+- **pradhan2011**: Bikash Chandra Pradhan, Sripura (Archaeological Survey) (2011), ch. 'Copper Plate Inscriptions: Salient Features' — wisdomlib.org
+  - https://www.wisdomlib.org/history/essay/sripura-archaeological-survey/d/doc1149485.html
+  - cited by: sharabhapuriya, panduvamshi
+- **rajaguru1958**: S. N. Rajaguru, Inscriptions of Orissa, vol. I (1958), historical note on the Śailodbhavas (Rohtasgadh seal-matrix) — Wisdom Library reader
+  - https://www.wisdomlib.org/history/book/inscriptions-of-orissa-rajaguru/d/doc1883103.html
+  - cited by: gauda
+- **ram**: Rāmāyaṇa 2.96 (Sanskrit + gloss)
+  - https://www.valmikiramayan.net/utf8/ayodhya/sarga96/ayodhyaitrans96.htm
+  - cited by: ikshvaku
+- **rathAnimal**: Jayanti Rath, 'The animal motifs on Indian coins (ancient and mediaeval period)', Orissa Historical Research Journal XLVII.1, pp. 57-65 — Govt. of Odisha
+  - https://magazines.odisha.gov.in/Journal/jounalvol1/pdf/orhj-8.pdf
+  - cited by: satavahana, vishnukundina, pallava, chalukya
+- **s1216**: Mahābhārata 1.216 (Sanskrit)
+  - https://www.sacred-texts.com/hin/mbs/mbs01216.htm
+  - cited by: arjuna
+- **s581**: Mahābhārata 5.81 (Sanskrit)
+  - https://www.sacred-texts.com/hin/mbs/mbs05081.htm
+  - cited by: krishna
+- **s617**: Mahābhārata 6.17 (Sanskrit)
+  - https://www.sacred-texts.com/hin/mbs/mbs06017.htm
+  - cited by: magadha, bhishma, drona, duryodhana, jayadratha
+- **s623**: Mahābhārata 6.23 (Sanskrit; Bhagavadgītā 1)
+  - https://www.sacred-texts.com/hin/mbs/mbs06023.htm
+  - cited by: arjuna
+- **s780**: Mahābhārata 7.80 (Sanskrit)
+  - https://www.sacred-texts.com/hin/mbs/mbs07080.htm
+  - cited by: arjuna, duryodhana, karna, ashvatthaman, kripa, shalya, jayadratha, bhurishravas, vrishasena, shala
+- **sampathMysore**: Vikram Sampath, Splendours of Royal Mysore: The Untold Story of the Wodeyars (Rupa, 2008) — Internet Archive
+  - https://archive.org/details/splendoursofroya0000vikr
+  - cited by: mysore
+- **sarkar2020**: Abhick Sarkar, 'Revisiting the Repoussé Coins of Chhattisgarh and Bengal', Journal of Bengal Art (2020) — academia.edu
+  - https://www.academia.edu/62637171/Revisiting_The_Repouss%C3%A9_Coins_of_Chhattisgarh_and_Bengal
+  - cited by: sharabhapuriya
+- **schlosserTandon**: Andrea Schlosser & Pankaj Tandon, 'The Channapatna plates' [Western Ganga grant], Studien zur Indologie und Iranistik 26 (2009), pp. 219-247 — BU
+  - https://people.bu.edu/ptandon/Channapatna-Plates.pdf
+  - cited by: western-ganga
+- **sikhHerrli**: Hans Herrli, The Coins of the Sikhs, 2nd rev. ed. (2004), pp. 19, 22, 26–29 — Internet Archive
+  - https://ia800407.us.archive.org/4/items/TheCoinsOfTheSikhs/TheCoinsOfTheSikhs.pdf
+  - cited by: sikh
+- **singhUjjain**: Mitresh Singh, '"Cross-and-Balls" Ujjain symbol on ancient Indian coins', Journal of the Numismatic Society of Calcutta (July 2023), pp. 1-10 — Academia.edu
+  - https://www.academia.edu/105150273/_Cross_and_Balls_Ujjain_symbol_on_Ancient_Indian_Coins_Introduction
+  - cited by: satavahana
+- **sircarEI32**: D. C. Sircar, [Pallava inscription], Epigraphia Indica 32 (1957-58)
+  - (name only)
+  - cited by: pallava
+- **srikantaSastri**: S. Srikanta Sastri, 'Evolution of the Gandabherunda', Quarterly Journal of the Mythic Society (Bangalore) — page 1 of 6 readable at srikanta-sastri.org
+  - https://www.srikanta-sastri.org/evolutionofthegandabherunda
+  - cited by: mysore
+- **tod1829_bk4ch18**: James Tod, Annals and Antiquities of Rajasthan, vol. 1 (1829), Bk IV ch. 18, p. 551 — ibiblio britishraj
+  - https://www.ibiblio.org/britishraj/Tod1/bk04ch18.html
+  - cited by: mewar
+- **triSarma**: Ramanimohan Sarma, Coinage of Tripura (Numismatic Society of India, 1980) — Google Books
+  - https://books.google.com/books/about/Coinage_of_Tripura.html?id=szsfAAAAMAAJ
+  - cited by: tripura
+- **val**: Vālmīki Rāmāyaṇa, Sanskrit text with prose translation, valmikiramayan.net (Bāla Kāṇḍa trans. Desiraju Hanumanta Rao; Ayodhyā and Yuddha Kāṇḍas trans. K. M. K. Murthy, 2006). Passages used: Bāla 5, 29–31, 50, 66–67, 69–73; Ayodhyā 2, 6, 10, 15–17, 59, 71, 100; Yuddha 127–128
+  - https://www.valmikiramayan.net/
+  - cited by: ayodhya
+- **vatsEI27**: M. S. Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947–48)
+  - (name only)
+  - cited by: pratihara
+- **vatsSohnag**: Madho Sarup Vats, 'Sohnag terracotta seal of Avantivarman', Epigraphia Indica 27 (1947-48)
+  - (name only)
+  - cited by: gupta, maukhari, pushyabhuti
+- **vijEI**: F. Kielhorn, 'British Museum Plates of Sadasivaraya: Saka-Samvat 1478', Epigraphia Indica IV (1896–97), no. 1, p. 1 — Internet Archive
+  - https://archive.org/stream/epigraphia-indica/epigraphia-indica-vol-04_djvu.txt
+  - cited by: vijayanagara
+- **vijayakumar1987**: M. Vijayakumar, M.C. Ganorkar, V. Pandit Rao & P. Gayathri, 'A study of Vishnukundin coins', Bulletin of Materials Science 9(2) (1987), pp. 137-147 — Indian Academy of Sciences
+  - https://www.ias.ac.in/public/Volumes/boms/009/02/0137-0147.pdf
+  - cited by: vishnukundina
