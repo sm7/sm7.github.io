@@ -168,6 +168,11 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 .pane.scenes .lab{grid-template-columns:1fr;gap:3px}.pane.scenes .lab dd{margin:0 0 8px}.pane.scenes .lab dt{justify-self:start}
 @media (min-width:900px){.pane.scenes .gal .scene{grid-template-columns:minmax(0,1.75fr) minmax(260px,1fr);align-items:start}.pane.scenes .gal .scene .cap{padding:16px 18px}}
 @media (max-width:560px){.dlg-head,.pane.scenes{padding-left:16px;padding-right:16px}.mtabs{padding:0 8px}}
+.hasplace{font:600 11px/1 var(--mono);color:var(--copper);border:1px solid var(--copper);border-radius:999px;padding:4px 8px;white-space:nowrap;text-decoration:none;background:color-mix(in srgb,var(--copper) 8%,transparent)}
+.hasplace:hover{background:var(--copper);color:#fff}
+.xlink{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 0;font-size:14px}
+.xlink b{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.xlink a{color:var(--ink);border-bottom:1px solid var(--copper);text-decoration:none}
 .hasscenes{font:600 11px/1 var(--mono);color:var(--verdigris);border:1px solid var(--verdigris);border-radius:999px;padding:4px 8px;white-space:nowrap}
 /* scenes gallery */
 .gal{display:grid;gap:10px;min-width:0}
@@ -378,7 +383,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js?v=12"></script>
+<script src="data.js?v=13"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
@@ -443,7 +448,7 @@ function card(c){
       ${c.san?`<blockquote class="verse">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
       ${c.quote?`<blockquote class="verse en">“${esc(c.quote)}”<cite>Ganguli, Droṇa Parva §23</cite></blockquote>`:""}
       <p>${html}</p>${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}</div>
-    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span>${c.scenes?`<span class="hasscenes" title="Reconstructed city, street and temple scenes in the entry">${c.scenes.items.length} scenes</span>`:""}<span class="more">Open entry →</span></div>
+    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span>${c.scenes?`<span class="hasscenes" title="Reconstructed city, street and temple scenes in the entry">${c.scenes.items.length} scenes</span>`:""}${(c.places||[]).map(id=>BY[id]?`<a class="hasplace" href="#${id}" title="Reconstructed scenes of this place">Place · ${esc(BY[id].n)}</a>`:"").join("")}<span class="more">Open entry →</span></div>
   </article>`;
 }
 
@@ -535,11 +540,14 @@ function entryHtml(c){
     ? `<details class="prompt"><summary>How this painting was made</summary><p>${esc(c.model||"OpenAI image model (ChatGPT)")}, from ${c.prompt?"this prompt":"this subject brief, combined with the shared style instruction below"}:</p><p>${esc(c.prompt||c.brief)}</p>${c.prompt?"":`<p>${esc(STYLE)}</p>`}<p>The result was checked against the source and regenerated where it added or missed details.</p></details>`
     : c.model ? `<details class="prompt"><summary>How this image was made</summary><p>${esc(c.model)}.</p></details>`
     : c.pending ? "" : `<details class="prompt"><summary>How this painting was made</summary><p>OpenAI image model (ChatGPT). The prompt for this early painting was not recorded.</p></details>`;
+  const placeLink = (c.places||[]).filter(id=>BY[id]).length ? `<div class="xlink"><b>Place</b>${c.places.filter(id=>BY[id]).map(id=>`<a href="#${id}">${esc(BY[id].n)} · ${BY[id].scenes.items.length} reconstructed scenes →</a>`).join("")}</div>` : "";
+  const bannerLink = (()=>{ const b=C.filter(x=>(x.places||[]).includes(c.id)); return b.length ? `<div class="xlink"><b>Banner</b>${b.map(x=>`<a href="#${x.id}">${esc(x.who||x.n)} · ${esc(x.e)} →</a>`).join("")}</div>` : ""; })();
   const titleBlock=`<div><h2 id="dlg-title">${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates" style="font-size:13px">${esc(c.tab==="itihasa"?c.n:c.d)}${c.r?" · "+esc(c.r):""}</span></div>`;
   const emblemHead=`<div class="emblem"><strong style="font-size:17px">${esc(c.e)}</strong>${c.nat?`<span class="native ${c.nc}" style="font-size:19px">${c.nat}</span>`:""}<span class="pill ${c.k}" style="font:500 11px/1 var(--mono)">${KLABEL[c.k]}</span></div>`;
   const emblemBody=`${c.san?`<blockquote class="verse" style="font-size:15px">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
       ${c.quote?`<blockquote class="verse en" style="font-size:15px">“${esc(c.quote)}”<cite>K. M. Ganguli, Droṇa Parva section 23 (vulgate)</cite></blockquote>`:""}
       <p class="t">${html}</p>
+      ${placeLink}
       ${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}
       ${c.review?`<p class="warn review"><b>Awaiting scholarly confirmation.</b> ${esc(c.review)}</p>`:""}
       ${c.flag?`<div class="flagrow">${flagSvg(c.flag)}<span>${esc(c.flag.cap)}</span></div>`:""}
@@ -554,6 +562,7 @@ function entryHtml(c){
         <button class="ib" type="button" id="reportbtn">Report an error</button>
         <button class="ib" type="button" id="closedlg" autofocus aria-label="Close entry">Close</button></div>
   ${c.tab==="places"?`<div class="dlg-head"><div><h2 id="dlg-title" style="font:800 clamp(26px,4vw,38px)/1.05 var(--display);margin:0">${esc(c.n)}</h2><span class="dates" style="font-size:13px">${esc(c.who)}</span></div></div>
+  ${bannerLink?`<div class="dlg-body" style="padding-top:0;padding-bottom:0">${bannerLink}</div>`:""}
   <div class="mtabs" role="tablist"><button type="button" role="tab" data-pane="scenes" aria-selected="true">Scenes · ${c.scenes.items.length}</button><button type="button" role="tab" data-pane="srcs" aria-selected="false">About &amp; sources</button></div>
   <div class="pane scenes" data-p="scenes">${galleryHtml(c.scenes)}</div>
   <div class="pane" data-p="srcs" hidden><div class="dlg-body"><p class="t">${html}</p>${srcBody}</div></div>`

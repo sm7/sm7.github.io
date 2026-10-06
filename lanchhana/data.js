@@ -313,6 +313,9 @@ window.LR={
 "cards": [
 {
 "id": "ikshvaku",
+"places": [
+"ayodhya"
+],
 "tab": "itihasa",
 "no": "1",
 "n": "Ikṣvāku of Ayodhyā",
