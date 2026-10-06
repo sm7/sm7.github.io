@@ -26,3 +26,6 @@ Status: candidates from memory; every entry must be located on archive.org (or s
 | Travancore, Mysore | Buchanan; Barbosa | Journey through Mysore (1807); Book of Duarte Barbosa (Dames 1918) |
 | Kāmarūpa | Xuanzang; Kālikā Purāṇa | Si-yu-ki - used |
 Rule: label "Second source"; give edition, translator, page; never Wikipedia.
+
+## Local copies (Mac: ~/Pictures/Lanchhana/sources/travelogues/) - archive.org ids
+Elliot & Dowson v1 historyofindiaas01elli (Sulaimān, Masʿūdī) - READ; Chau Ju-kua chaujukuahiswork00chauuoft; Yijing arecordbuddhist01takagoog; Xuanzang/Beal siyukibuddhistr00bealgoog; Megasthenes dli.ministry.00254; Arthaśāstra KautilyasArthasastra; Marco Polo bookofsermarcopo21903polo + bookofsermarcopo00polo; al-Bīrūnī dli.ernet.30229 + in.ernet.dli.2015.30227; Sewell forgottenempire00robe; Major indiainfifteenth00majorich; Barbosa in.ernet.dli.2015.47302/47303; Faxian india.history.resource.540; Ibn Baṭṭūṭa bub_gb_22IbAQAAMAAJ; Roe embassysirthoma0[03]roegoog; Fryer b30325043; Gait dli.pahar.1722. (File "…vol-with-ghaznavids-sind-not-vol1…" and "…candidate-vol1…" are other Elliot volumes, not v1.)

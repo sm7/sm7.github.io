@@ -1,0 +1,18 @@
+{
+ "id": "pratihara",
+ "heading": "Setting · The kingdom the Arab merchants called Jurz",
+ "items": [
+  {
+   "k": "horses",
+   "label": "Horses and camels",
+   "img": "scenes/pratihara/horses.webp",
+   "title": "Horses, camels and silver dust in the realm of Jurz",
+   "alt": "Hypothetical reconstruction of a dry-plain gathering of horses and camels with traders weighing silver dust on small scales, as the Arab merchants described the king of Jurz's country",
+   "attested": "The merchant Sulaimān (c. 851) says the king of Jurz 'maintains numerous forces, and no other Indian prince has so fine a cavalry'; he is unfriendly to the Arabs; 'his camels and horses are numerous'; exchanges are made 'with silver (and gold) in dust', and there are said to be mines of these metals; 'there is no country in India more safe from robbers'. Al-Masʿūdī (c. 943) calls him 'a king who is rich in horses and camels, and has a large army' (Elliot & Dowson, History of India as told by its own historians, vol. 1 (1867), Early Arab Geographers I (Sulaimān, c. 851 CE, pp. 4–5) and III (al-Masʿūdī, c. 943 CE, p. 25)).",
+   "prescribed": "Both are outsiders' reports, and Masʿūdī partly repeats Sulaimān. Whether Jurz (Juzr) is the Gurjara-Pratihāra realm is the usual but not the only view; the editors discuss Gujarat and Kanauj (Elliot, notes to pp. 4 and 25).",
+   "conjecture": "The plain, the number of animals, the traders' dress and the scales are not in the text; the scene shows only the attested elements of horses, camels, silver dust and no armed men, because no building, temple or city of Jurz is described. No king is drawn.",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction painted with an AI image model from translated Arab travellers' reports; not an archaeological finding."
+  }
+ ]
+}
