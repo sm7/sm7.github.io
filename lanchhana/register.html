@@ -186,7 +186,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 .badge{position:absolute;top:8px;left:8px;font:600 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;background:rgba(14,21,19,.78);color:#fff;border-radius:4px;padding:5px 7px;pointer-events:none}
 .lab{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:12.5px;line-height:1.5;margin:0}
 .lab dt{font:600 11px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:4px;height:fit-content;white-space:nowrap}
-.lab dt.T{background:var(--verdigris);color:#fff}.lab dt.A{background:var(--copper);color:#fff}.lab dt.C{background:var(--line);color:var(--ink)}
+.lab dt.O{background:var(--ink);color:var(--paper,#fff)}.lab dd.orig i{display:block;color:var(--ink);margin-bottom:2px}.lab dd.orig span{font-size:12px}.lab dt.T{background:var(--verdigris);color:#fff}.lab dt.A{background:var(--copper);color:#fff}.lab dt.C{background:var(--line);color:var(--ink)}
 .lab dd{margin:0;color:var(--muted)}
 .hyp{font:500 11.5px/1.5 var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin:0}
 .gnav{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
@@ -383,7 +383,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js?v=16"></script>
+<script src="data.js?v=17"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
@@ -529,7 +529,7 @@ function setHash(h){ try{ history.replaceState(null,"","#"+h); }catch(e){} }
 const dlg=document.getElementById("entry");
 let openId=null;
 const HYP="Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Figures follow early Indian relief idiom; ornament is illustrative.";
-function sceneFig(s,n,lazy){ return `<figure class="scene"><img src="${esc(s.img)}?v=1" alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''} data-zoom="${n}"><span class="badge">Reconstruction</span><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.attested)}</dd><dt class="A">${esc(s.secondLabel||"Prescribed")}</dt><dd>${esc(s.prescribed)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.conjecture)}</dd></dl><p class="hyp">${esc(s.note||HYP)}</p></figcaption></figure>`; }
+function sceneFig(s,n,lazy){ return `<figure class="scene"><img src="${esc(s.img)}?v=1" alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''} data-zoom="${n}"><span class="badge">Reconstruction</span><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.attested)}</dd>${s.original?`<dt class="O">Original</dt><dd class="orig"><i lang="${esc(s.original.lang||"sa-Latn")}">${esc(s.original.text)}</i> <span>${esc(s.original.ref)}</span></dd>`:""}<dt class="A">${esc(s.secondLabel||"Prescribed")}</dt><dd>${esc(s.prescribed)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.conjecture)}</dd></dl><p class="hyp">${esc(s.note||HYP)}</p></figcaption></figure>`; }
 function galleryHtml(g){ const L=g.items; return `<section class="gal" aria-label="${esc(g.heading)}"><h4>${esc(g.heading)}</h4><p class="legend"><b class="T">Attested</b> stated in the primary source · <b class="A">Second source</b> a later or secondary text · <b class="C">Conjecture</b> our inference, not in any source. Every scene is a hypothetical reconstruction.</p><div class="gnav">${L.map((s,n)=>`<button type="button" data-dot="${n}" ${n?'':'aria-current="true"'}>${esc(s.label)}</button>`).join("")}<span class="ct" id="gct" aria-live="polite">1 / ${L.length}</span></div><div class="track" id="track" tabindex="0" aria-label="${esc(g.heading)}">${L.map((s,n)=>sceneFig(s,n,n>0)).join("")}</div></section>`; }
 function entryHtml(c){
   const {html, keys} = cite(c,true);
