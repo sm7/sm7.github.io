@@ -7,3 +7,7 @@ Valabhi: country about 6000 li round, capital about 30 li; like Malava in soil, 
 
 ## Scene 1: the merchant city (Attested): wealth, dense population, stored goods from distant lands, monasteries and temples. Conjecture: layout, architecture, dress.
 ## Scene 2: the seven-day assembly (Attested): gifts to monks, redeemed at twice their price. Conjecture: setting, dress, the king's look, the pavilion.
+
+## Second source (added)
+Kurush Dalal, "The Maitrakas", Live History India, 27 June 2021 (https://www.livehistoryindia.com/story/history-of-india-2000-years/the-maitrakas): Vallabhi at the head of Bhavnagar Creek, a trade centre in Indian Ocean commerce (citing H. P. Ray, Ars Orientalis 34, 2004); Maitraka silver coins and copper coins with a trident and often a war-axe; Dudda-Vihara built for Dudda (niece of Dhruvasena I); Dhruvasena II (627–641) donated to Buddhist and Brahmanical institutions; I-tsing ranks Vallabhi with Nalanda; excavations by M. S. University of Baroda 1979–80 (R. N. Mehta). The article cites the Maitraka copper plates and CII vol. 4.
+## Repaint (user instruction): no stupa or other religious building in either scene; stay with the primary source.

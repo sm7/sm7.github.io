@@ -1,0 +1,30 @@
+{
+ "id": "maitraka",
+ "heading": "Setting · Valabhī under the king Xuanzang met, c. 640 CE",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "img": "scenes/maitraka/city.webp",
+   "title": "Valabhī, a merchant city of stored wealth",
+   "alt": "Hypothetical reconstruction of a seventh-century western Indian merchant street: brick-and-timber houses, warehouses with bales, pearls, spices and ivory, merchants weighing goods, bullock carts and camels, monks passing",
+   "attested": "The capital was about 30 li round; the population very dense and the establishments rich; some hundred families possessed a hundred lakhs; the rare and valuable products of distant regions were stored there in great quantities; there were about a hundred monasteries with 6,000 monks and several hundred Deva temples (Xuanzang, Si-yu-ki, Book XI, tr. S. Beal, 1884, vol. 2 pp. 266–268).",
+   "prescribed": "Valabhī stood at the head of Bhavnagar Creek and shared in Indian Ocean trade; Maitraka coins were struck in silver and copper, the copper ones with a trident and often a war-axe; the university drew comparison with Nālandā (I-tsing) (K. Dalal, \"The Maitrakas\", Live History India, 27 June 2021, citing H. P. Ray, Ars Orientalis 34, 2004).",
+   "secondLabel": "Second source",
+   "conjecture": "The street, houses, balconies, shop fronts, goods, dress and the camels. The monasteries and temples are attested but not shown, because the text puts the great monastery outside the city and gives no building form. A first draft placed a stūpa here; it was removed as not in the text.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "assembly",
+   "label": "Assembly",
+   "img": "scenes/maitraka/assembly.webp",
+   "title": "The king's seven-day charity to the monks",
+   "alt": "Hypothetical reconstruction of a seventh-century Gujarat king giving folded robes to seated Buddhist monks in a brick courtyard under an open pavilion, with trays of jewels, food and medicine laid out and a crowd behind ropes",
+   "attested": "The king, a Kshatriya recently and sincerely devoted to the Buddhist faith, summoned a great assembly every year and for seven days gave away gems, exquisite food, the three garments and medicines to the monks, with costly articles of the seven precious substances; he afterwards redeemed them at twice their price. He honoured learned monks from distant lands (Xuanzang, Si-yu-ki, Book XI, tr. S. Beal, 1884, vol. 2 pp. 266–268). Beal's note records that Bühler and Cunningham identify the king with Dhruvabhaṭa, Burgess with Dhruvasena II.",
+   "prescribed": "Dhruvasena II (627–641 CE) made gifts to both Buddhist and Brahmanical institutions (K. Dalal, \"The Maitrakas\", Live History India, 27 June 2021).",
+   "secondLabel": "Second source",
+   "conjecture": "The place, pavilion, courtyard, dress, crown, crowd and the look of the gifts: the text names none of them. The 'redeeming at twice the price' is not shown. A first draft showed a large stūpa, a lion column and banners; they were removed as not in the text.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}
