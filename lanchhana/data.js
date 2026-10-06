@@ -1420,7 +1420,36 @@ window.LR={
 "credit": "Unknown author · Public domain",
 "licurl": null
 },
-"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check.",
+"scenes": {
+"heading": "Setting · The Balhara's kingdom in Amoghavarṣa I's time, c. 851 CE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"img": "scenes/rashtrakuta/city.webp",
+"title": "A city of the Balhara, with its Arab merchants",
+"alt": "Hypothetical reconstruction of a ninth-century Deccan market street: Arab merchants in robes and turbans trading cloth and pepper with Indians in cotton, camels and bullock carts, a pillared hall beside a tank",
+"attested": "Sulaymān says the Balhara favours the Arabs more than any other Indian king, and that his subjects follow his example; he has immense wealth, and Tatariya dirhams are the coin of his country (Sulaymān the merchant, 851 CE, in Early Arab Geographers, in H. M. Elliot, History of India as told by its own historians, vol. 1, ed. J. Dowson, 1867). Iṣṭakhrī and Ibn Ḥawqal add that Muslims live in the cities of his realm, that Jāmiʿ mosques stand there, and that Muslims govern those cities for him (same volume). Al-Masʿūdī (943–44 CE) calls the capital, Mankir, \"the great centre of India\"; Elliot says its site is uncertain.",
+"prescribed": "None: no second source read for any Rāṣṭrakūṭa city.",
+"secondLabel": "Other sources",
+"conjecture": "The city, its layout, houses, dress and goods. Which city this is: Mankir cannot be placed, so this is a generic town. The mosque is not readable as one; the painting shows a pillared hall by a tank, and the text gives no mosque design. The camels are a guess.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "court",
+"label": "Court",
+"img": "scenes/rashtrakuta/court.webp",
+"title": "The Balhara's court: envoys, troops and elephants",
+"alt": "Hypothetical reconstruction of a ninth-century Deccan audience hall: a king on a throne under a white umbrella with fan-bearers, foreign envoys presenting gifts, soldiers and war elephants in the courtyard beyond",
+"attested": "Sulaymān calls the Balhara the most eminent prince of India, to whom every prince pays homage; his envoys to other princes are received with profound respect; he pays his troops regular wages, as is the practice among the Arabs, and has many horses and elephants and immense wealth (Sulaymān the merchant, 851 CE, in Early Arab Geographers, in H. M. Elliot, History of India as told by its own historians, vol. 1, ed. J. Dowson, 1867).",
+"prescribed": "None: no second source read for the court or palace.",
+"secondLabel": "Other sources",
+"conjecture": "The hall, throne, umbrella, dress, gifts and faces; no source describes the court. The scene shows foreign envoys, which the text does not state. The towers in the background are tall and tiered, which is not established for this date.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "kalachuri",
