@@ -36,3 +36,8 @@ M entry 6ac51bbc-ab9c-83ea-b09b-f5f3e7020be9
 N coronation 6ac51be4-18d4-83ea-8bfc-1e1254f0bfd0
 O kosala 6ac51c0b-f498-83e9-bf89-1b8ddd1f49aa
 P ramarajya 6ac51c31-c250-83ea-ac85-19ddc42afcf7
+
+## Revisions
+- Scene L (Rāma returns) removed at the user's request.
+- Queens redo: 6ac51e21-1dd8-83ea-9826-d17a7b3a48a7; prep redo: 6ac51e47-13f4-83e9-b67d-eaa6354e407c.
+- Coronation v3 (Hanumān and vānara chiefs added): 6ac528d8-e81c-83ea-aa87-ba4858e132ce (v2: 6ac527c5-0c70-83ea-bb12-ac2dbbb024f8).

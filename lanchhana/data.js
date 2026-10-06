@@ -2353,11 +2353,11 @@ window.LR={
 "label": "Coronation",
 "img": "scenes/ayodhya/coronation.webp",
 "title": "Rāma's consecration",
-"alt": "Rāma and Sītā are consecrated on a jewelled seat with gold pots of water; attendants hold a white parasol and whisks.",
-"attested": "Vasiṣṭha seats Rāma with Sītā on a seat of precious stones (6.128.59). Vasiṣṭha, Vāmadeva, Kaśyapa, Kātyāyana, Suyajña, Gautama and Vijaya consecrate him with clear, fragrant water (6.128.60–61), and maidens, ministers, warriors and merchants sprinkle sap of herbs (6.128.62). The crown that Manu wore, made by Brahmā, is set on him on a throne of precious stones in the council-hall, studded with gold (6.128.64–67). Śatrughna holds the white parasol, Sugrīva a white whisk and Vibhīṣaṇa another (6.128.68–69). The water was brought in jewelled jars from the four oceans and from five hundred rivers (6.128.49–57).",
+"alt": "Rāma and Sītā are consecrated on a jewelled seat with gold pots of water; Hanumān kneels before Rāma, with vānara chiefs and a bear beside him.",
+"attested": "Vasiṣṭha seats Rāma with Sītā on a seat of precious stones (6.128.59). Vasiṣṭha, Vāmadeva, Kaśyapa, Kātyāyana, Suyajña, Gautama and Vijaya consecrate him with clear, fragrant water (6.128.60–61), and maidens, ministers, warriors and merchants sprinkle sap of herbs (6.128.62). The crown that Manu wore, made by Brahmā, is set on him on a throne of precious stones in the council-hall, studded with gold (6.128.64–67). Śatrughna holds the white parasol, Sugrīva a white whisk and Vibhīṣaṇa another (6.128.68–69). Sugrīva, Vibhīṣaṇa and the vānara chiefs are among those present at the consecration (6.128.84–87). The water was brought in jewelled jars from the four oceans and from five hundred rivers (6.128.49–57).",
 "prescribed": "No second source is used for this scene.",
 "secondLabel": "Second source",
-"conjecture": "Rāma's blue skin and the gold-pillared hall with its carved lions are the painter's. The number and posture of the sages, the ornament of the seat and the dress of the attendants are not in the text. The text does not describe the hall except as 'studded with gold'.",
+"conjecture": "Which figure is Hanumān, his kneeling pose and his monkey face are the painter's; the text says the vānaras took human form for the stay in Ayodhyā (6.127.43, 6.128.32) and gives no form for them at the ceremony. Rāma's dark complexion, the gold-pillared hall with its carved lions and the banners are the painter's. The number and posture of the sages, the ornament of the seat and the dress of the attendants are not in the text. The text does not describe the hall except as 'studded with gold'.",
 "note": "Hypothetical reconstruction of a place in a poem, painted with an AI image model from the verses cited; the Rāmāyaṇa describes no excavated site. Figures, dress and architecture are illustrative; items marked Conjecture are not in the text."
 },
 {
