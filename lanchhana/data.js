@@ -121,6 +121,10 @@ window.LR={
 "Mahābhārata, Śānti Parva, Section CXVII, tr. K. M. Ganguli — sacred-texts.com",
 "https://sacred-texts.com/hin/m12/m12a116.htm"
 ],
+"kielhornJunagadh": [
+"F. Kielhorn, 'Junagadh rock inscription of Rudradaman; the year 72', Epigraphia Indica 8 (1905-06), no. 6 — Internet Archive scan of the volume",
+"https://archive.org/details/in.ernet.dli.2015.56654"
+],
 "hultzschMayidavolu": [
 "E. Hultzsch, 'Mayidavolu plates of Sivaskandavarman', Epigraphia Indica 6 (1900-01), pp. 84-89 (seal at p. 86) — Internet Archive scan of the volume",
 "https://archive.org/details/EpigraphiaIndicaVol6"
@@ -865,7 +869,36 @@ window.LR={
 "ritual"
 ],
 "prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: the coin reverse of the Western Kshatrapas in gold relief: a hill of three arches stacked like a pyramid (one arch on top of two), a small crescent on the top arch, a wavy river line beneath, a small rayed sun to the left and a small crescent moon to the right. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"repaint": "the Western Kṣatrapa coin reverse: a hill of three arches stacked like a pyramid (one arch on top of two), with a wavy line beneath it, a small crescent moon to the LEFT of the hill and a small rayed sun to the RIGHT, in silver relief. No crescent on top of the hill."
+"repaint": "the Western Kṣatrapa coin reverse: a hill of three arches stacked like a pyramid (one arch on top of two), with a wavy line beneath it, a small crescent moon to the LEFT of the hill and a small rayed sun to the RIGHT, in silver relief. No crescent on top of the hill.",
+"scenes": {
+"heading": "Setting · The Sudarśana lake at Girinagara (Junagadh), Saka year 72 (c. 150 CE)",
+"items": [
+{
+"k": "breach",
+"label": "The breach",
+"img": "scenes/kshatrapa/breach.webp",
+"title": "The Sudarśana dam after the storm",
+"alt": "Hypothetical reconstruction of the breached Sudarśana dam below the Girnar hill: a gap in the stone embankment, the lake drained to a muddy bed strewn with uprooted trees, and townspeople lamenting on the bank",
+"attested": "On the first of the dark half of Mārgaśīrṣa in the 72nd year, rain turned the earth 'into one ocean'; the floods of the Suvarṇasikatā and Palāśinī streams from mount Urjayat and a storm 'tore down hill-tops, trees, banks, turrets, upper stories, gates and raised places of shelter'. A breach 420 cubits long, as broad, and 75 cubits deep let all the water escape, so that the lake, 'almost like a sandy desert', became ugly to look at. The dam had been made of stone and clay with conduits, drains and guards against foul matter. 'The people in their despair of having the dam rebuilt were loudly lamenting' (Epigraphia Indica vol. VIII no. 6, Junagadh inscription of Rudradāman, tr. F. Kielhorn (1905–06), lines 3–8 and 16–17). {kielhornJunagadh}",
+"prescribed": "The text is a royal eulogy of Rudradāman and Kielhorn marks several words as damaged or conjectural. The size of the breach is the inscription's own figure.",
+"conjecture": "The look of the hill, the drained lakebed, the people's dress and numbers, and the exact shape of the gap. Nothing says where they stood. Rudradāman is not shown; the inscription gives no description of the city of Girinagara, so none is drawn.",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction painted with an AI image model from a translated inscription; not an archaeological finding."
+},
+{
+"k": "repair",
+"label": "The repair",
+"img": "scenes/kshatrapa/repair.webp",
+"title": "Rudradāman's repair of the dam",
+"alt": "Hypothetical reconstruction of masons rebuilding the stone-faced Sudarśana dam, with a conduit through it and the lake refilling below the Girnar hill",
+"attested": "Rudradāman had the dam made 'three times as strong in breadth and length', at vast cost from his own treasury, 'without oppressing the inhabitants of the towns and country by taxes, forced labour and acts of affection'. The lake had earlier been built by the Vaiśya Puṣyagupta, provincial governor of the Maurya king Candragupta, and adorned with conduits for Aśoka by the Yavana king Tuṣāspha. His counsellors and executives opposed the work; it was carried out by the minister Suviśākha, a Pahlava (Epigraphia Indica vol. VIII no. 6, tr. Kielhorn, lines 8–20). {kielhornJunagadh}",
+"prescribed": "Eulogy of the king; 'three times as strong' and the payment from his own treasury are the court poet's claims.",
+"conjecture": "How the masons worked, their tools and dress, the stone blocks and the form of the conduit are not in the text. The lake and dam are shown as a plain stone-faced embankment; no gate, temple or building is drawn because none is described.",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction painted with an AI image model from a translated inscription; not an archaeological finding."
+}
+]
+}
 },
 {
 "id": "gupta",
