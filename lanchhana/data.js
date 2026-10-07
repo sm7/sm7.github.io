@@ -2522,6 +2522,18 @@ window.LR={
 "conjecture": "The text is an enemy-camp description in English translation; I hold no Persian original. Not given: roof shapes, colours, the look of the stone gates, the palace's carving, number of people, sky and landscape (Brahmaputra plain, trees, hills). Talish says the wooden audience hall had brass mirrors but does not say it is visible from outside. Period is 1662-63, within the Ahom dynasty (1228-1826), at its Garhgaon capital before Rangpur became the main seat. The gate's look, the river craft and the exact house forms are the painter's.",
 "note": "Hypothetical reconstruction painted with an AI image model from Talish via Blochmann and Gait; not an archaeological finding.",
 "img": "scenes/ahom/city.webp"
+},
+{
+"k": "street",
+"label": "Bazaar road",
+"title": "The narrow paan-sellers' road at Garhgaon",
+"alt": "Hypothetical reconstruction of the narrow bazaar road of Garhgaon, lined only by paan-sellers, as described by Talish in 1662-63.",
+"attested": "Same Talish passage via Blochmann, in Gait, History of Assam (1906), p. 141-142: 'The bazar road is narrow, and is occupied only by paa-sellers.' He adds that eatables are not sold as in other markets; each household keeps a year's store and no one buys or sells. Betel leaf and unripe areca nut were consumed in large quantities (Gait, p. 140).",
+"prescribed": "Second source: Gait, p. 140, from the same chronicler: people carve boxes, trays, stools and chairs from single blocks of wood and weave embroidered silk; dress as in the city scene (coarse cloth in three pieces, jacket for the rich). No second independent source for the street was found; this scene rests on Talish alone.",
+"secondLabel": "Second source",
+"conjecture": "This is a thin scene: only a narrow road with paan-sellers is given. Number of stalls, the shape of the stalls, goods displayed, colours, and which traders are men or women are invented. Do not paint food stalls, grain, or vegetables, because the text says food is not sold. The stall structure, the number of people and the house forms are the painter's; the text gives only the narrow road with paan-sellers and no food for sale.",
+"note": "Hypothetical reconstruction painted with an AI image model from Talish via Blochmann and Gait; not an archaeological finding.",
+"img": "scenes/ahom/street.webp"
 }
 ]
 }
