@@ -18,6 +18,35 @@
     "text": "vīdhra-kañcuka-cchanna-vapuṣā … uṣṇīṣa-paṭṭakāṃl lalāṭa-madhya-ghaṭita-vikaṭa-svastikā-granthīn",
     "ref": "Bāṇa, Harṣacarita, ucchvāsa 2 (a man 'with body covered by a kañcuka') and ucchvāsa 3 (men wearing uṣṇīṣa headbands); GRETIL text after Parab (Nirnaya Sagar, 7th ed. 1946). 7th-century Kanauj region, earlier than the Arab reports; shown only as evidence that these garments existed there."
    }
+  },
+  {
+   "k": "city",
+   "label": "City",
+   "title": "Kanauj on the Ganges, seven forts and many temples",
+   "alt": "Hypothetical reconstruction of Kanauj (Mahodaya) as an Arab-Persian chronicler saw it in 1018, with the dress of its women from Rajasekhara's verse.",
+   "attested": "Al-Utbi, Tarikh-i Yamini (Mahmud of Ghazni's march on Kanauj, 1018), in Elliot & Dowson, History of India as told by its own historians, vol. 2, pp. 45-46: Kanauj has seven distinct forts washed by the Ganges, and nearly ten thousand temples; its king fled before Mahmud. Period caveat: this is 1018, the last years of Pratihara rule under Rajyapala, not the peak c. 850-910.",
+   "prescribed": "Rajasekhara, Kavyamimamsa (court of the Pratihara kings at Mahodaya/Kanauj, c. 900), line 168 of the GRETIL text: ladies of Mahodaya wear swinging earrings, a long necklace that sways, and an under-garment reaching the ankles. Different text, same city, about a century earlier.",
+   "secondLabel": "Second source",
+   "conjecture": "Everything not given by the two texts: look of the forts (brick or stone, height), roofs and temple forms, colours, river boats, crowds, men's dress, faces, sky. Temples are shown only as numerous and plain; no shikhara style is asserted. The painter chose the river boats and sails, the ghat steps and the shapes of the wall towers and temple spires; the text gives only seven forts, about ten thousand temples and the women's dress.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Al-Utbi (Elliot & Dowson vol. 2) and Rajasekhara's Kavyamimamsa; not an archaeological finding.",
+   "original": {
+    "lang": "sa",
+    "text": "tāṭaṅkavalganataraṅgitagaṇḍalekhamānābhilambidaradolitatārahāram / āśroṇigulphaparimaṇḍalitāntarīyaṃ veṣaṃ namasyata mahodayasundarīṇām",
+    "ref": "Rajasekhara, Kavyamimamsa, GRETIL plaintext (gretil_sa_rAjazekhara-kAvyamImAMsA-1.txt), line 168 (verse on the dress of the women of Mahodaya)"
+   },
+   "img": "scenes/pratihara/city.webp"
+  },
+  {
+   "k": "street",
+   "label": "Bazaar",
+   "title": "A market lane in a story-city, 778 CE",
+   "alt": "Hypothetical reconstruction of a busy bazaar approached from a city gate, from the Prakrit Kuvalayamala of 778, composed at Jalor.",
+   "attested": "Uddyotanasuri, Kuvalayamala (Prakrit, completed 778 at Jalor), part 1 (archive.org OCR, section numbers as printed there are inconsistent, about sec. 245-247): the hero enters the city Vijayapuri through a gate-tower while drums, conches and bards sound; then a market where many wares are spread out and buying and selling goes on with loud noise, with merchants of many regions (the text says eighteen regional languages) who are told apart by their speech and bodies. Sale-patter is quoted (weights and prices called out). Caveat: Vijayapuri is a literary story-city, not named as a Pratihara town; the poem is of the Gurjara-Pratihara period and region (Jalor), so this is the nearest contemporary bazaar text, not a portrait of Kanauj.",
+   "prescribed": "Sulaiman (851), in Elliot & Dowson vol. 1 (Ruhmi section, read, not Jurz): trade is carried on with cowries and fine cotton cloth is made. Weak support, other kingdom; use only for goods. Majumdar, HCIP vol. 4 (secondary): Arab accounts name the Jurz (Gurjara) kingdom as rich in cavalry and trade, and safe from robbers.",
+   "secondLabel": "Second source",
+   "conjecture": "Shop-fronts, awnings, stalls, goods other than cloth, dress of every person (the Prakrit gives regional types by face and speech, not clothes), buildings, colours. No temple in this scene. The gate's form, the stalls, the draught animals and the elephant are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Uddyotanasuri's Kuvalayamala (778), with Arab accounts as second source; not an archaeological finding.",
+   "img": "scenes/pratihara/street.webp"
   }
  ]
 }

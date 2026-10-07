@@ -15,6 +15,23 @@
    "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
   },
   {
+   "k": "street",
+   "label": "Bazaar",
+   "title": "A tavern and garland-shop street in Kanchipura",
+   "alt": "Hypothetical reconstruction of a Kanchipura street of liquor shops and garland shops in the time of Mahendravarman I, with drinkers dancing and a Buddhist monk passing.",
+   "attested": "Mahendravarman I, Mattavilasa-prahasana (a farce by the king himself), Sanskrit and Prakrit, GRETIL plain text (after N.P. Unni 1998 and T.G. Sastri 1917). Kapalin's speeches describe Kanchipura: garland shops (malyapana) like the very matrix of spring; the young women's girdles (kanci) ringing; drums sounding from above like thunder, from the tops of the vimanas. A liquor shop (surapana) with a flag-pole (dhvajastambha) standing for the sacrificial post, drinkers (saundah) as priests, cups (casaka) as soma-cups, roast meat (sulya-mamsa) as the offering. Drunk dancers: upper cloth held up in one raised hand, lower cloth slipping, with a lingering of the beat while it is refastened, neck-garlands in disorder. A Buddhist monk (sakyabhiksu) enters with a bowl in hand, carrying his begging-bowl hidden in his robes (bahucivara-dharana, many robes); he praises the house of the merchant Dhanadasa for its alms. A Pasupata ascetic is described as wearing a patched many-coloured robe (citra-civara), ash-smeared, with matted dry hair and garlands cast off from worship.",
+   "prescribed": "Not drawn from a second text. Dandin, Dasakumaracarita (GRETIL, saved) and Xuanzang on Kanchipura (Beal) were checked for an independent street scene and give none that can be painted; they are not used.",
+   "secondLabel": "Second source",
+   "conjecture": "Everything about the look of the buildings (timber, brick, thatch or plaster, number of storeys, roof forms), the colours of cloth and awnings, the faces, the street surface, and the sky are invented. The play gives no plan of the street and names no goods in the garland shops beyond garlands. The monk's robe colour, the shape of the cups and the shape of the flag are not given. Dress beyond the specified items (slipping lower cloth with a raised-hand upper cloth for the dancers, many robes for the monk, patched multicoloured robe and ash for the Pasupata) is conjecture. The text mentions vimanas only as a source of drum-sound; no temple is drawn. The merchant's house, the thatched stalls, the number of dancers and every colour are the painter's; the monk's and ascetic's robes follow the play's wording only in kind.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Mahendravarman I's Mattavilasa-prahasana (Sanskrit/Prakrit, GRETIL); not an archaeological finding.",
+   "original": {
+    "lang": "sa",
+    "text": "kapālī - aho tu khalu vimānaśikharaviśrāntaghanarasitasandigdhamṛdaṅgaśabdasya madhusamayanirmāṇamātṛkāyamāṇamālyāpaṇasya kusumaśaravijayaghoṣaṇāyamānavarayuvatikāñcīravasya kāñcīpurasya parā vibhūtiḥ /\nkapālī - priye! paśya paśya / eṣa surāpaṇo yajñavāṭavibhūtim anukaroti / atra hi dhvajastambho yūpaḥ, surā somaḥ, śauṇḍā ṛtvijaḥ, caṣakāś camasāḥ, śūlyamāṃsaprabhṛtaya upadaṃśā havirviśeṣāḥ, mattavacanāni yajūṃsi, gītāni sāmāni, udaṅkāḥ sruvāḥ, tarṣo 'gniḥ, surāpaṇādhipatir yajamānaḥ /\nkapālī - aho darśanīyāni prahatamardalakaraṇānugatāni vividhāṅgahāravacanabhrūvikārāṇi ucchritaikahastāvalambitottarīyāṇi vigalitavasanapratisamādhānakṣaṇaviṣamitalayāni vyākulitakaṇṭhaguṇāni mattavilāsanṛttāni /",
+    "ref": "Mahendravarman I, Mattavilasa-prahasana, speeches of the Kapalin (GRETIL plain text; verse 9 context and the prose that follows); editorial variant readings in braces in the GRETIL file have been removed here."
+   },
+   "img": "scenes/pallava/street.webp"
+  },
+  {
    "k": "temple",
    "label": "Rock temples",
    "img": "scenes/pallava/mamallapuram.webp",

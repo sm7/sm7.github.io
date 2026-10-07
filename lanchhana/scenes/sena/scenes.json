@@ -1,0 +1,23 @@
+{
+ "id": "sena",
+ "heading": "Setting · Vijayapura, capital of the Sena king Lakshmanasena (Dhoyi's Pavanaduta, c. 1180-1200), and the Pradyumnesvara temple at Deopara (Vijayasena's time, 12th century)",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "title": "Vijayapura: mansions with roof pavilions, courtyard areca palms and incense smoke",
+   "alt": "Hypothetical reconstruction of the Sena capital Vijayapura as described in Dhoyi's Pavanaduta: tall mansions with roof pavilions and carved figures, areca palms in courtyards, aguru smoke at dusk.",
+   "attested": "Dhoyi, Pavanaduta (Sanskrit messenger-poem by the court poet of the Sena king Lakshmanasena, 12th century), verses 36-50, read in the GRETIL file (ed. Chintaharan Chakravarti, Calcutta 1926); my own paraphrase, no published translation consulted. v.36: the cloud will see the 'lofty capital' Vijayapura, a royal camp-city (skandhavara). v.37: on the tops of the mansions there are roof pavilions (vadabhi) with carved female figures (salabhanjika) among which women play hide-and-seek. v.38: city women plant areca palms (kramuka) in the courtyards, each with a built basin at its foot, watered at night by flowing water. v.42: play-tanks of shallow water, jasmine garlands, swings and moonlight. v.44-45: the city is full of pearls, emeralds, sapphires, conch and coral; young women wear emerald necklaces and carry lamps through the dark to their lovers. v.49: at dusk the smoke of burnt aguru from the mansions rises through the lattices, dark as a rain cloud. v.50: couples on the roofs of pleasure-pavilions (keliharmya) in the moonlight.",
+   "prescribed": "Deopara inscription of Vijayasena (Epigraphia Indica vol. 1, pp. 305-315 (the inscription is numbered just before the Sunak grant, no. XXXVI), translation as printed there), v.29 and v.30: a lake dug before the Pradyumnesvara temple, whose water carries the musk of the citizens' wives who bathe in it; v.30 mentions dresses, towns 'filled with citizens'. A different Sena text of the same century and the same kingdom (Varendra, not Vijayapura), so it supports the bathing-lake and the musk-using town women but not the building forms.",
+   "secondLabel": "Second source",
+   "conjecture": "Not given by the text: what the mansions are built of, their number of storeys, roof shape, the street plan, city wall, river, trees other than areca, sky and season; the clothing of men (the poem is about women's ornament and gives no garments); skin tone and faces. The poem is ornate court verse about a place the poet knew; 'Vijayapura' is named but its position is debated and I do not place it on a map. Women are ornamented with pearls, emeralds, sapphires, conch bangles and coral (44-45) but the cut of their garments is not given, so use natural varied clothing, some stitched or wrapped as the painter decides, not all white. The sunset sky, the moon, the distant towers and the stone fabric of the mansions are the painter's; the poem gives only roof pavilions, areca palms with basins, lattice windows and aguru smoke.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Dhoyi's Pavanaduta (Sanskrit, GRETIL) and the Deopara inscription (EI 1); not an archaeological finding.",
+   "original": {
+    "lang": "sa",
+    "text": "yatsadhānām upari vaḍabhīśālabhañjīṣu līnās susnigdhāsu prakṛtimadhurās kelikautūhalena| unnīyante katham api rahaḥpāṇipaṅkeruhāgrasparśodgacchatpulakamukulās subhruvas vallabhena|| 37\n\nsnigdhaśyāmāramaṇamaṇibhis baddhamundhālavālās paurastrībhis kramukataravas ropitās prāṅgaṇeṣu| yatra ayatnopagatasalilais naktam āsiktamūlās na apekṣante parijanavadhūpāṇiviśrāṇitāmbhas|| 38\n\nprāsādānām dinapariṇatau garbham dagdhāgurūṇām jālodgīrṇas sajalajaladaśyāmalas yatra dhūmas| sadyaḥkrīḍākutukarabhasārūḍhapaurīmukhendujyotsnāsaṃgaprasṛmaratamaḥśreṇiśaṅkām tanoti|| 49",
+    "ref": "Dhoyi, Pavanaduta 37, 38, 49, GRETIL file gretil_sa_dhoyI-pavanadUta.txt (saved in sources/originals); the '+' word-boundary markers of the file are replaced by spaces here, the text is otherwise unchanged"
+   },
+   "img": "scenes/sena/city.webp"
+  }
+ ]
+}

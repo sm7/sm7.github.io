@@ -1194,6 +1194,23 @@ window.LR={
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 },
 {
+"k": "street",
+"label": "Bazaar",
+"title": "A tavern and garland-shop street in Kanchipura",
+"alt": "Hypothetical reconstruction of a Kanchipura street of liquor shops and garland shops in the time of Mahendravarman I, with drinkers dancing and a Buddhist monk passing.",
+"attested": "Mahendravarman I, Mattavilasa-prahasana (a farce by the king himself), Sanskrit and Prakrit, GRETIL plain text (after N.P. Unni 1998 and T.G. Sastri 1917). Kapalin's speeches describe Kanchipura: garland shops (malyapana) like the very matrix of spring; the young women's girdles (kanci) ringing; drums sounding from above like thunder, from the tops of the vimanas. A liquor shop (surapana) with a flag-pole (dhvajastambha) standing for the sacrificial post, drinkers (saundah) as priests, cups (casaka) as soma-cups, roast meat (sulya-mamsa) as the offering. Drunk dancers: upper cloth held up in one raised hand, lower cloth slipping, with a lingering of the beat while it is refastened, neck-garlands in disorder. A Buddhist monk (sakyabhiksu) enters with a bowl in hand, carrying his begging-bowl hidden in his robes (bahucivara-dharana, many robes); he praises the house of the merchant Dhanadasa for its alms. A Pasupata ascetic is described as wearing a patched many-coloured robe (citra-civara), ash-smeared, with matted dry hair and garlands cast off from worship.",
+"prescribed": "Not drawn from a second text. Dandin, Dasakumaracarita (GRETIL, saved) and Xuanzang on Kanchipura (Beal) were checked for an independent street scene and give none that can be painted; they are not used.",
+"secondLabel": "Second source",
+"conjecture": "Everything about the look of the buildings (timber, brick, thatch or plaster, number of storeys, roof forms), the colours of cloth and awnings, the faces, the street surface, and the sky are invented. The play gives no plan of the street and names no goods in the garland shops beyond garlands. The monk's robe colour, the shape of the cups and the shape of the flag are not given. Dress beyond the specified items (slipping lower cloth with a raised-hand upper cloth for the dancers, many robes for the monk, patched multicoloured robe and ash for the Pasupata) is conjecture. The text mentions vimanas only as a source of drum-sound; no temple is drawn. The merchant's house, the thatched stalls, the number of dancers and every colour are the painter's; the monk's and ascetic's robes follow the play's wording only in kind.",
+"note": "Hypothetical reconstruction painted with an AI image model from Mahendravarman I's Mattavilasa-prahasana (Sanskrit/Prakrit, GRETIL); not an archaeological finding.",
+"original": {
+"lang": "sa",
+"text": "kapālī - aho tu khalu vimānaśikharaviśrāntaghanarasitasandigdhamṛdaṅgaśabdasya madhusamayanirmāṇamātṛkāyamāṇamālyāpaṇasya kusumaśaravijayaghoṣaṇāyamānavarayuvatikāñcīravasya kāñcīpurasya parā vibhūtiḥ /\nkapālī - priye! paśya paśya / eṣa surāpaṇo yajñavāṭavibhūtim anukaroti / atra hi dhvajastambho yūpaḥ, surā somaḥ, śauṇḍā ṛtvijaḥ, caṣakāś camasāḥ, śūlyamāṃsaprabhṛtaya upadaṃśā havirviśeṣāḥ, mattavacanāni yajūṃsi, gītāni sāmāni, udaṅkāḥ sruvāḥ, tarṣo 'gniḥ, surāpaṇādhipatir yajamānaḥ /\nkapālī - aho darśanīyāni prahatamardalakaraṇānugatāni vividhāṅgahāravacanabhrūvikārāṇi ucchritaikahastāvalambitottarīyāṇi vigalitavasanapratisamādhānakṣaṇaviṣamitalayāni vyākulitakaṇṭhaguṇāni mattavilāsanṛttāni /",
+"ref": "Mahendravarman I, Mattavilasa-prahasana, speeches of the Kapalin (GRETIL plain text; verse 9 context and the prose that follows); editorial variant readings in braces in the GRETIL file have been removed here."
+},
+"img": "scenes/pallava/street.webp"
+},
+{
 "k": "temple",
 "label": "Rock temples",
 "img": "scenes/pallava/mamallapuram.webp",
@@ -1593,6 +1610,35 @@ window.LR={
 "text": "vīdhra-kañcuka-cchanna-vapuṣā … uṣṇīṣa-paṭṭakāṃl lalāṭa-madhya-ghaṭita-vikaṭa-svastikā-granthīn",
 "ref": "Bāṇa, Harṣacarita, ucchvāsa 2 (a man 'with body covered by a kañcuka') and ucchvāsa 3 (men wearing uṣṇīṣa headbands); GRETIL text after Parab (Nirnaya Sagar, 7th ed. 1946). 7th-century Kanauj region, earlier than the Arab reports; shown only as evidence that these garments existed there."
 }
+},
+{
+"k": "city",
+"label": "City",
+"title": "Kanauj on the Ganges, seven forts and many temples",
+"alt": "Hypothetical reconstruction of Kanauj (Mahodaya) as an Arab-Persian chronicler saw it in 1018, with the dress of its women from Rajasekhara's verse.",
+"attested": "Al-Utbi, Tarikh-i Yamini (Mahmud of Ghazni's march on Kanauj, 1018), in Elliot & Dowson, History of India as told by its own historians, vol. 2, pp. 45-46: Kanauj has seven distinct forts washed by the Ganges, and nearly ten thousand temples; its king fled before Mahmud. Period caveat: this is 1018, the last years of Pratihara rule under Rajyapala, not the peak c. 850-910.",
+"prescribed": "Rajasekhara, Kavyamimamsa (court of the Pratihara kings at Mahodaya/Kanauj, c. 900), line 168 of the GRETIL text: ladies of Mahodaya wear swinging earrings, a long necklace that sways, and an under-garment reaching the ankles. Different text, same city, about a century earlier.",
+"secondLabel": "Second source",
+"conjecture": "Everything not given by the two texts: look of the forts (brick or stone, height), roofs and temple forms, colours, river boats, crowds, men's dress, faces, sky. Temples are shown only as numerous and plain; no shikhara style is asserted. The painter chose the river boats and sails, the ghat steps and the shapes of the wall towers and temple spires; the text gives only seven forts, about ten thousand temples and the women's dress.",
+"note": "Hypothetical reconstruction painted with an AI image model from Al-Utbi (Elliot & Dowson vol. 2) and Rajasekhara's Kavyamimamsa; not an archaeological finding.",
+"original": {
+"lang": "sa",
+"text": "tāṭaṅkavalganataraṅgitagaṇḍalekhamānābhilambidaradolitatārahāram / āśroṇigulphaparimaṇḍalitāntarīyaṃ veṣaṃ namasyata mahodayasundarīṇām",
+"ref": "Rajasekhara, Kavyamimamsa, GRETIL plaintext (gretil_sa_rAjazekhara-kAvyamImAMsA-1.txt), line 168 (verse on the dress of the women of Mahodaya)"
+},
+"img": "scenes/pratihara/city.webp"
+},
+{
+"k": "street",
+"label": "Bazaar",
+"title": "A market lane in a story-city, 778 CE",
+"alt": "Hypothetical reconstruction of a busy bazaar approached from a city gate, from the Prakrit Kuvalayamala of 778, composed at Jalor.",
+"attested": "Uddyotanasuri, Kuvalayamala (Prakrit, completed 778 at Jalor), part 1 (archive.org OCR, section numbers as printed there are inconsistent, about sec. 245-247): the hero enters the city Vijayapuri through a gate-tower while drums, conches and bards sound; then a market where many wares are spread out and buying and selling goes on with loud noise, with merchants of many regions (the text says eighteen regional languages) who are told apart by their speech and bodies. Sale-patter is quoted (weights and prices called out). Caveat: Vijayapuri is a literary story-city, not named as a Pratihara town; the poem is of the Gurjara-Pratihara period and region (Jalor), so this is the nearest contemporary bazaar text, not a portrait of Kanauj.",
+"prescribed": "Sulaiman (851), in Elliot & Dowson vol. 1 (Ruhmi section, read, not Jurz): trade is carried on with cowries and fine cotton cloth is made. Weak support, other kingdom; use only for goods. Majumdar, HCIP vol. 4 (secondary): Arab accounts name the Jurz (Gurjara) kingdom as rich in cavalry and trade, and safe from robbers.",
+"secondLabel": "Second source",
+"conjecture": "Shop-fronts, awnings, stalls, goods other than cloth, dress of every person (the Prakrit gives regional types by face and speech, not clothes), buildings, colours. No temple in this scene. The gate's form, the stalls, the draught animals and the elephant are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from Uddyotanasuri's Kuvalayamala (778), with Arab accounts as second source; not an archaeological finding.",
+"img": "scenes/pratihara/street.webp"
 }
 ]
 }
@@ -2104,7 +2150,29 @@ window.LR={
 "motifs": [
 "gods"
 ],
-"brief": "the Sena royal seal device: a ten-armed, five-faced Śiva (Sadāśiva) seated cross-legged on a lotus, his many hands fanned out holding attributes. No flag, no flagstaff, no parasol, no tassels. No human figures other than the god."
+"brief": "the Sena royal seal device: a ten-armed, five-faced Śiva (Sadāśiva) seated cross-legged on a lotus, his many hands fanned out holding attributes. No flag, no flagstaff, no parasol, no tassels. No human figures other than the god.",
+"scenes": {
+"heading": "Setting · Vijayapura, capital of the Sena king Lakshmanasena (Dhoyi's Pavanaduta, c. 1180-1200), and the Pradyumnesvara temple at Deopara (Vijayasena's time, 12th century)",
+"items": [
+{
+"k": "city",
+"label": "City",
+"title": "Vijayapura: mansions with roof pavilions, courtyard areca palms and incense smoke",
+"alt": "Hypothetical reconstruction of the Sena capital Vijayapura as described in Dhoyi's Pavanaduta: tall mansions with roof pavilions and carved figures, areca palms in courtyards, aguru smoke at dusk.",
+"attested": "Dhoyi, Pavanaduta (Sanskrit messenger-poem by the court poet of the Sena king Lakshmanasena, 12th century), verses 36-50, read in the GRETIL file (ed. Chintaharan Chakravarti, Calcutta 1926); my own paraphrase, no published translation consulted. v.36: the cloud will see the 'lofty capital' Vijayapura, a royal camp-city (skandhavara). v.37: on the tops of the mansions there are roof pavilions (vadabhi) with carved female figures (salabhanjika) among which women play hide-and-seek. v.38: city women plant areca palms (kramuka) in the courtyards, each with a built basin at its foot, watered at night by flowing water. v.42: play-tanks of shallow water, jasmine garlands, swings and moonlight. v.44-45: the city is full of pearls, emeralds, sapphires, conch and coral; young women wear emerald necklaces and carry lamps through the dark to their lovers. v.49: at dusk the smoke of burnt aguru from the mansions rises through the lattices, dark as a rain cloud. v.50: couples on the roofs of pleasure-pavilions (keliharmya) in the moonlight.",
+"prescribed": "Deopara inscription of Vijayasena (Epigraphia Indica vol. 1, pp. 305-315 (the inscription is numbered just before the Sunak grant, no. XXXVI), translation as printed there), v.29 and v.30: a lake dug before the Pradyumnesvara temple, whose water carries the musk of the citizens' wives who bathe in it; v.30 mentions dresses, towns 'filled with citizens'. A different Sena text of the same century and the same kingdom (Varendra, not Vijayapura), so it supports the bathing-lake and the musk-using town women but not the building forms.",
+"secondLabel": "Second source",
+"conjecture": "Not given by the text: what the mansions are built of, their number of storeys, roof shape, the street plan, city wall, river, trees other than areca, sky and season; the clothing of men (the poem is about women's ornament and gives no garments); skin tone and faces. The poem is ornate court verse about a place the poet knew; 'Vijayapura' is named but its position is debated and I do not place it on a map. Women are ornamented with pearls, emeralds, sapphires, conch bangles and coral (44-45) but the cut of their garments is not given, so use natural varied clothing, some stitched or wrapped as the painter decides, not all white. The sunset sky, the moon, the distant towers and the stone fabric of the mansions are the painter's; the poem gives only roof pavilions, areca palms with basins, lattice windows and aguru smoke.",
+"note": "Hypothetical reconstruction painted with an AI image model from Dhoyi's Pavanaduta (Sanskrit, GRETIL) and the Deopara inscription (EI 1); not an archaeological finding.",
+"original": {
+"lang": "sa",
+"text": "yatsadhānām upari vaḍabhīśālabhañjīṣu līnās susnigdhāsu prakṛtimadhurās kelikautūhalena| unnīyante katham api rahaḥpāṇipaṅkeruhāgrasparśodgacchatpulakamukulās subhruvas vallabhena|| 37\n\nsnigdhaśyāmāramaṇamaṇibhis baddhamundhālavālās paurastrībhis kramukataravas ropitās prāṅgaṇeṣu| yatra ayatnopagatasalilais naktam āsiktamūlās na apekṣante parijanavadhūpāṇiviśrāṇitāmbhas|| 38\n\nprāsādānām dinapariṇatau garbham dagdhāgurūṇām jālodgīrṇas sajalajaladaśyāmalas yatra dhūmas| sadyaḥkrīḍākutukarabhasārūḍhapaurīmukhendujyotsnāsaṃgaprasṛmaratamaḥśreṇiśaṅkām tanoti|| 49",
+"ref": "Dhoyi, Pavanaduta 37, 38, 49, GRETIL file gretil_sa_dhoyI-pavanadUta.txt (saved in sources/originals); the '+' word-boundary markers of the file are replaced by spaces here, the text is otherwise unchanged"
+},
+"img": "scenes/sena/city.webp"
+}
+]
+}
 },
 {
 "id": "gahadavala",
