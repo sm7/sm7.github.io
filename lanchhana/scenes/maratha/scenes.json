@@ -1,0 +1,18 @@
+{
+ "id": "maratha",
+ "heading": "Setting · Raigad (Rairee), Shivaji's capital, 1674",
+ "items": [
+  {
+   "k": "city",
+   "label": "Hill capital",
+   "title": "Raigad, the hill-fort capital",
+   "alt": "Hypothetical reconstruction of the hill fortress and court of Raigad (Rairee) in 1674, as recorded in the English embassy narrative of Fryer.",
+   "attested": "John Fryer, A New Account of East-India and Persia (1698), narrative of the embassy to Seva Gi and journey to Rairee, 1674 (saved copy lines ~10300-10372). Fryer says the hill is fortified more by nature than art, with one avenue guarded by two narrow gates and a high strong wall with bastions; the rest is precipice. On the mountain are many strong buildings, the Rajah's court and the ministers' houses, about 300; about two and a half miles long, no pleasant trees or grain. The English were lodged about a mile from the Rajah's palace. At audience they found the Rajah on a magnificent throne with nobles in rich attire; on each side of the throne hung gilded lance heads bearing two gold fish heads, horse tails and a pair of gold scales; at the palace gate stood two small elephants each side and two horses with gold trappings.",
+   "prescribed": "Second source: Fryer's own account is the only one read. Duff, History of the Mahrattas vol. 1 (archive.org historyofmahratt01duffuoft) was loaded but not read for this passage; no independent description of Raigad's appearance is claimed.",
+   "secondLabel": "Second source",
+   "conjecture": "Fryer narrates the embassy at second hand and gives no form for buildings: architecture, roofs, colours, the exact look of walls and gates, number of people and landscape beyond the precipice are all invented. Dress is only 'rich attire' for nobles. The 1674 date is the coronation year, within the Maratha dynasty's span and region (Konkan hills). The painter made the summit denser and more orderly than Fryer's 'about 300' plain buildings suggests, added roof tiles and an umbrella-borne procession, and chose the shapes of the gates and bastions.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Fryer's New Account (1698); not an archaeological finding.",
+   "img": "scenes/maratha/city.webp"
+  }
+ ]
+}

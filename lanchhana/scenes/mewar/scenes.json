@@ -1,0 +1,18 @@
+{
+ "id": "mewar",
+ "heading": "Setting · Udaipur on Lake Pichola, c. 1730s-1820s (Mewar)",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "title": "Udaipur and the Pichola lake",
+   "alt": "Hypothetical reconstruction of Udaipur, the Mewar capital, on Lake Pichola with its marble island palaces and hills beyond, as described by Tod.",
+   "attested": "James Tod, Annals and Antiquities of Rajasthan, vol. I (Crooke ed., Oxford 1920), Annals of Mewar, pp. 405-406 and 433-434. Tod writes that the palace on the lake, 'called the Jagniwas', covers about four acres; 'Nothing but marble enters into their composition' (columns, baths, reservoirs, fountains), inlaid with mosaics and lit through coloured glass. Apartments carry water-colour historical paintings and plaster medallions. Between the buildings are flower parterres, orange and lemon groves, tamarind, khirni, palmyra, coco, cypress and plantain trees. Colonnaded refectories stand at the water's edge; lotus covers the lake. The Pichola has an indented, wooded margin and the Aravalli pass at its far end. Tod adds that Rana Partap's chiefs first built only huts on the Pichola bank, the site of the later city, and that Rana Amra Singh fortified the heights round the capital with a wall and ditch.",
+   "prescribed": "Second source: Crooke's bracketed notes in the same edition, citing Lt-Col. K. D. Erskine, Rajputana Gazetteer (Mewar), vol. ii A, p. 109: the Jagmandir was built by Jagat Singh I (1628-52) and the Jagniwas by Jagat Singh II (1734-51); the lake is ascribed to the 14th century with an embankment of 1660. These are scholarly dates for the buildings, not a visual description.",
+   "secondLabel": "Second source",
+   "conjecture": "Everything not listed above: roof forms, domes, chhatris, the colour of the marble (Tod says only 'marble'), the town's houses and city wall seen from across the water, the amount of boats and people, dress, faces and sky. Tod wrote around 1820 about buildings of the 17th-18th centuries, so the view is a 1730s-1820s Udaipur, not the city of the founder Udai Singh (1560s). Tod's marble palace is shown with small domed pavilions (chhatris) of a form the painter chose; the number, shapes and the boats are not from the text.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Tod's Annals of Mewar (Crooke ed.); not an archaeological finding.",
+   "img": "scenes/mewar/city.webp"
+  }
+ ]
+}

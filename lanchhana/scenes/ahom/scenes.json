@@ -1,0 +1,18 @@
+{
+ "id": "ahom",
+ "heading": "Setting · Garhgaon, Ahom capital, 1662-63",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "title": "Garhgaon, the Ahom capital",
+   "alt": "Hypothetical reconstruction of Garhgaon, the Ahom capital, as seen by Shihabuddin Talish during Mir Jumla's invasion of 1662-63.",
+   "attested": "Shihabuddin Talish (Fathiyah-i-Ibriyah), a Mughal chronicler who accompanied Mir Jumla in 1662-63, as summarised and partly translated by H. Blochmann (J. Asiatic Soc. Bengal 1872) and quoted in E. A. Gait, History of Assam (1906), pp. 139-142. Talish says Garhgaon has four stone-and-mortar gates, each three kos from the palace; a broad raised embankment road; no fortification but circular bamboo clumps; huts of inhabitants inside the bamboo, each with a garden or field. Near the palace, on both sides of the Dikhu river, are large houses. The palace is ringed by an embankment with a bamboo palisade and a water-filled ditch over a man's height deep, circumference over two miles. Inside are high spacious buildings; the audience hall is 120 cubits long, 30 wide, with sixty-six smooth pillars and ornate wooden trellis work. Because the soil is damp people live on a raised floor (machan). Except some temples and the gates of Garhgaon there were no masonry buildings; houses were of wood, bamboo and grass.",
+   "prescribed": "Second source: Gait himself (same pages, from Talish and the Alamgirnamah) on dress: poor people used one coarse cloth for the head, one for the waist, one over the shoulders; richer people also wore a jacket; women, even royal, went without head coverings; head, beard and whiskers were shaved. Boats and river traffic were very great.",
+   "secondLabel": "Second source",
+   "conjecture": "The text is an enemy-camp description in English translation; I hold no Persian original. Not given: roof shapes, colours, the look of the stone gates, the palace's carving, number of people, sky and landscape (Brahmaputra plain, trees, hills). Talish says the wooden audience hall had brass mirrors but does not say it is visible from outside. Period is 1662-63, within the Ahom dynasty (1228-1826), at its Garhgaon capital before Rangpur became the main seat. The gate's look, the river craft and the exact house forms are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Talish via Blochmann and Gait; not an archaeological finding.",
+   "img": "scenes/ahom/city.webp"
+  }
+ ]
+}

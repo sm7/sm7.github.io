@@ -2381,7 +2381,24 @@ window.LR={
 "sky"
 ],
 "brief": "the Mewar royal sun: a golden rayed sun disc with a calm human face at its centre. No flag, no flagstaff, no parasol, no tassels. No human figures.",
-"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check.",
+"scenes": {
+"heading": "Setting · Udaipur on Lake Pichola, c. 1730s-1820s (Mewar)",
+"items": [
+{
+"k": "city",
+"label": "City",
+"title": "Udaipur and the Pichola lake",
+"alt": "Hypothetical reconstruction of Udaipur, the Mewar capital, on Lake Pichola with its marble island palaces and hills beyond, as described by Tod.",
+"attested": "James Tod, Annals and Antiquities of Rajasthan, vol. I (Crooke ed., Oxford 1920), Annals of Mewar, pp. 405-406 and 433-434. Tod writes that the palace on the lake, 'called the Jagniwas', covers about four acres; 'Nothing but marble enters into their composition' (columns, baths, reservoirs, fountains), inlaid with mosaics and lit through coloured glass. Apartments carry water-colour historical paintings and plaster medallions. Between the buildings are flower parterres, orange and lemon groves, tamarind, khirni, palmyra, coco, cypress and plantain trees. Colonnaded refectories stand at the water's edge; lotus covers the lake. The Pichola has an indented, wooded margin and the Aravalli pass at its far end. Tod adds that Rana Partap's chiefs first built only huts on the Pichola bank, the site of the later city, and that Rana Amra Singh fortified the heights round the capital with a wall and ditch.",
+"prescribed": "Second source: Crooke's bracketed notes in the same edition, citing Lt-Col. K. D. Erskine, Rajputana Gazetteer (Mewar), vol. ii A, p. 109: the Jagmandir was built by Jagat Singh I (1628-52) and the Jagniwas by Jagat Singh II (1734-51); the lake is ascribed to the 14th century with an embankment of 1660. These are scholarly dates for the buildings, not a visual description.",
+"secondLabel": "Second source",
+"conjecture": "Everything not listed above: roof forms, domes, chhatris, the colour of the marble (Tod says only 'marble'), the town's houses and city wall seen from across the water, the amount of boats and people, dress, faces and sky. Tod wrote around 1820 about buildings of the 17th-18th centuries, so the view is a 1730s-1820s Udaipur, not the city of the founder Udai Singh (1560s). Tod's marble palace is shown with small domed pavilions (chhatris) of a form the painter chose; the number, shapes and the boats are not from the text.",
+"note": "Hypothetical reconstruction painted with an AI image model from Tod's Annals of Mewar (Crooke ed.); not an archaeological finding.",
+"img": "scenes/mewar/city.webp"
+}
+]
+}
 },
 {
 "id": "jaipur",
@@ -2490,7 +2507,24 @@ window.LR={
 ],
 "warn": "Emblem and flag rest only on low-impact journal papers",
 "brief": "the Tai-Ahom ngi-ngao-kham: a winged lion-dragon with a lion's mane and body, small wings and a curling tail, in red, rampant. No flag, no flagstaff, no parasol, no tassels. No human figures.",
-"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check."
+"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check.",
+"scenes": {
+"heading": "Setting · Garhgaon, Ahom capital, 1662-63",
+"items": [
+{
+"k": "city",
+"label": "City",
+"title": "Garhgaon, the Ahom capital",
+"alt": "Hypothetical reconstruction of Garhgaon, the Ahom capital, as seen by Shihabuddin Talish during Mir Jumla's invasion of 1662-63.",
+"attested": "Shihabuddin Talish (Fathiyah-i-Ibriyah), a Mughal chronicler who accompanied Mir Jumla in 1662-63, as summarised and partly translated by H. Blochmann (J. Asiatic Soc. Bengal 1872) and quoted in E. A. Gait, History of Assam (1906), pp. 139-142. Talish says Garhgaon has four stone-and-mortar gates, each three kos from the palace; a broad raised embankment road; no fortification but circular bamboo clumps; huts of inhabitants inside the bamboo, each with a garden or field. Near the palace, on both sides of the Dikhu river, are large houses. The palace is ringed by an embankment with a bamboo palisade and a water-filled ditch over a man's height deep, circumference over two miles. Inside are high spacious buildings; the audience hall is 120 cubits long, 30 wide, with sixty-six smooth pillars and ornate wooden trellis work. Because the soil is damp people live on a raised floor (machan). Except some temples and the gates of Garhgaon there were no masonry buildings; houses were of wood, bamboo and grass.",
+"prescribed": "Second source: Gait himself (same pages, from Talish and the Alamgirnamah) on dress: poor people used one coarse cloth for the head, one for the waist, one over the shoulders; richer people also wore a jacket; women, even royal, went without head coverings; head, beard and whiskers were shaved. Boats and river traffic were very great.",
+"secondLabel": "Second source",
+"conjecture": "The text is an enemy-camp description in English translation; I hold no Persian original. Not given: roof shapes, colours, the look of the stone gates, the palace's carving, number of people, sky and landscape (Brahmaputra plain, trees, hills). Talish says the wooden audience hall had brass mirrors but does not say it is visible from outside. Period is 1662-63, within the Ahom dynasty (1228-1826), at its Garhgaon capital before Rangpur became the main seat. The gate's look, the river craft and the exact house forms are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from Talish via Blochmann and Gait; not an archaeological finding.",
+"img": "scenes/ahom/city.webp"
+}
+]
+}
 },
 {
 "id": "tripura",
@@ -2537,7 +2571,24 @@ window.LR={
 "cap": "Bhagwā jhenḍā: deep orange and swallow-tailed, as Grant Duff (1826) describes it.",
 "conf": "medium"
 },
-"brief": "the Maratha bhagwa jhenda: a plain deep-saffron swallow-tailed pennant flying from a short golden staff. No emblem on the flag, no parasol, no tassels. No human figures."
+"brief": "the Maratha bhagwa jhenda: a plain deep-saffron swallow-tailed pennant flying from a short golden staff. No emblem on the flag, no parasol, no tassels. No human figures.",
+"scenes": {
+"heading": "Setting · Raigad (Rairee), Shivaji's capital, 1674",
+"items": [
+{
+"k": "city",
+"label": "Hill capital",
+"title": "Raigad, the hill-fort capital",
+"alt": "Hypothetical reconstruction of the hill fortress and court of Raigad (Rairee) in 1674, as recorded in the English embassy narrative of Fryer.",
+"attested": "John Fryer, A New Account of East-India and Persia (1698), narrative of the embassy to Seva Gi and journey to Rairee, 1674 (saved copy lines ~10300-10372). Fryer says the hill is fortified more by nature than art, with one avenue guarded by two narrow gates and a high strong wall with bastions; the rest is precipice. On the mountain are many strong buildings, the Rajah's court and the ministers' houses, about 300; about two and a half miles long, no pleasant trees or grain. The English were lodged about a mile from the Rajah's palace. At audience they found the Rajah on a magnificent throne with nobles in rich attire; on each side of the throne hung gilded lance heads bearing two gold fish heads, horse tails and a pair of gold scales; at the palace gate stood two small elephants each side and two horses with gold trappings.",
+"prescribed": "Second source: Fryer's own account is the only one read. Duff, History of the Mahrattas vol. 1 (archive.org historyofmahratt01duffuoft) was loaded but not read for this passage; no independent description of Raigad's appearance is claimed.",
+"secondLabel": "Second source",
+"conjecture": "Fryer narrates the embassy at second hand and gives no form for buildings: architecture, roofs, colours, the exact look of walls and gates, number of people and landscape beyond the precipice are all invented. Dress is only 'rich attire' for nobles. The 1674 date is the coronation year, within the Maratha dynasty's span and region (Konkan hills). The painter made the summit denser and more orderly than Fryer's 'about 300' plain buildings suggests, added roof tiles and an umbrella-borne procession, and chose the shapes of the gates and bastions.",
+"note": "Hypothetical reconstruction painted with an AI image model from Fryer's New Account (1698); not an archaeological finding.",
+"img": "scenes/maratha/city.webp"
+}
+]
+}
 },
 {
 "id": "sikh",
