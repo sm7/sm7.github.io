@@ -7,3 +7,12 @@ Plank-built stitched boats, no stone anchor, no baskets, one distant stitched-pl
 
 ## madurai-bazaar (Cilappatikaram, Madurai-kandam, canto XIV, tr. Dikshitar 1939, lines 168-218)
 Create an image. A realistic digital painting, sharp detail, warm natural morning light. A busy bazaar street inside an ancient walled South Indian city in the early centuries CE. Dark-skinned South Indian merchants and customers in plain wrapped cloth. Open-fronted shops on both sides with plain lime-plastered flat-roofed terraced houses above. In the foreground a jeweller's shop with heaps of white pearls, red coral and loose coloured gems laid out on cloth, and a merchant weighing with a balance. Further down the street, goldsmiths' shops each with a small plain cloth flag hanging at the door. A grain merchant with open sacks of grain and pepper beside a measuring vessel. A shop with piles of folded cloth bundles. One covered bullock cart in the lane. No temple, no gopuram, no elephants, no horses, no king, no text, no letters. Varied natural poses, no repeated identical figures. Landscape 16:9.
+
+## madurai-bazaar v1 verdict
+Everyone in white (model default; the text gives no dress colour for merchants). Rejected for uniformity.
+
+## madurai-bazaar v2 (English, dress variety)
+Same as v1 plus: "Their clothing is varied: most in plain undyed cotton wrapped at the waist, but several in dyed cloth (madder red, indigo blue, ochre, green), a few women in a red silk waist-cloth, some men bare-chested, some with a shoulder cloth." Red silk waist-cloth: Cilappatikaram XIV ll. 86 (arattap pumpattu araimisai utii). Other colours are conjecture.
+
+## madurai-bazaar v3 (Tamil text in prompt, test)
+Style header + Tamil ll. 203-207 and 209-211 of Ur-kan-katai (Project Madurai pm0111_01) with no English description of the shops; dress sentence as v2.
