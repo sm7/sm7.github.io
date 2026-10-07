@@ -1,2 +1,5 @@
 ## pearls
 Create an image. A realistic digital painting, sharp detail, warm natural daylight in April, a very shallow calm gulf off the south-east coast of India in the 13th century CE, clear green-turquoise water over a sandy bed, no land in view. In the foreground two or three small open wooden boats of plank construction with rope and a stone anchor, with several dark-skinned South Indian divers: one surfacing with a small net bag tied at his waist, another about to dive, others in the boat sorting grey ribbed oyster shells into a basket; all wear only a small loincloth. Far behind, one larger plain wooden sailing vessel anchored on the horizon. No shore, no buildings, no temple, no king, no flags, no text, no letters. Varied poses, natural skin tones, sparkling water. Landscape 16:9.
+
+## pearls v2 (after 'too prehistoric' review)
+Plank-built stitched boats, no stone anchor, no baskets, one distant stitched-plank single-mast ship (Polo, Hormuz ships, book 1 ch. 19). Submitted 2026-10-07.
