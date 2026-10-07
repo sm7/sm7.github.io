@@ -3,3 +3,7 @@ Create an image. A realistic digital painting, sharp detail, warm natural daylig
 
 ## pearls v2 (after 'too prehistoric' review)
 Plank-built stitched boats, no stone anchor, no baskets, one distant stitched-plank single-mast ship (Polo, Hormuz ships, book 1 ch. 19). Submitted 2026-10-07.
+
+
+## madurai-bazaar (Cilappatikaram, Madurai-kandam, canto XIV, tr. Dikshitar 1939, lines 168-218)
+Create an image. A realistic digital painting, sharp detail, warm natural morning light. A busy bazaar street inside an ancient walled South Indian city in the early centuries CE. Dark-skinned South Indian merchants and customers in plain wrapped cloth. Open-fronted shops on both sides with plain lime-plastered flat-roofed terraced houses above. In the foreground a jeweller's shop with heaps of white pearls, red coral and loose coloured gems laid out on cloth, and a merchant weighing with a balance. Further down the street, goldsmiths' shops each with a small plain cloth flag hanging at the door. A grain merchant with open sacks of grain and pepper beside a measuring vessel. A shop with piles of folded cloth bundles. One covered bullock cart in the lane. No temple, no gopuram, no elephants, no horses, no king, no text, no letters. Varied natural poses, no repeated identical figures. Landscape 16:9.
