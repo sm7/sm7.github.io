@@ -444,7 +444,7 @@ main{display:block}main:focus{outline:0}
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js?v=51"></script>
+<script src="data.js?v=61"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
@@ -492,7 +492,7 @@ const tw=(p,w)=>p.replace(/\.webp$/,"-"+w+".webp");
 function placeCard(c){
   const {html, keys} = cite(c,false), L=c.scenes.items, pick=[3,9,13].map(i=>L[Math.min(i,L.length-1)]);
   return `<article class="card place" data-id="${c.id}">
-    <div><img class="pcover" loading="lazy" decoding="async" src="${esc(tw(L[0].img,960))}?v=5" srcset="${esc(tw(L[0].img,480))}?v=5 480w, ${esc(tw(L[0].img,960))}?v=5 960w" sizes="(min-width:1000px) 360px, 90vw" alt="${esc(L[0].alt)}"><div class="pstrip">${pick.map(s=>`<img loading="lazy" decoding="async" src="${esc(tw(s.img,480))}?v=5" alt="">`).join("")}</div></div>
+    <div><img class="pcover" loading="lazy" decoding="async" src="${esc(tw(L[0].img,960))}?v=6" srcset="${esc(tw(L[0].img,480))}?v=6 480w, ${esc(tw(L[0].img,960))}?v=6 960w" sizes="(min-width:1000px) 360px, 90vw" alt="${esc(L[0].alt)}"><div class="pstrip">${pick.map(s=>`<img loading="lazy" decoding="async" src="${esc(tw(s.img,480))}?v=6" alt="">`).join("")}</div></div>
     <div class="head"><div><h2>${esc(c.n)}</h2><span class="dates">${esc(c.who)}</span></div></div>
     <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong></div><p>${html}</p></div>
     <div class="meta"><span class="pill place">${KLABEL[c.k]}</span><span class="hasscenes">${L.length} scenes</span><span>${keys.length} source${keys.length===1?"":"s"}</span><button type="button" class="more open" aria-label="${esc(c.n)}: open place">Open place →</button></div>
@@ -510,7 +510,7 @@ function card(c){
   const idiom = c.tab==="itihasa" ? (c.k==="coin" ? "Drawn from the documented punch marks" : c.k==="vulgate" ? "Painted from Ganguli's description" : "Painted from the verse")
     : `Painted from the ${c.k==="tradition"?"traditional":c.k} ${c.k==="monument"?"itself":"description"}`;
   return `<article class="card" data-id="${c.id}">
-    <div>${art(c)}<div class="idiom" style="margin-top:10px">${idiom}</div>${c.scenes?`<img class="sthumb" loading="lazy" decoding="async" src="${esc(tw(c.scenes.items[0].img,480))}?v=5" width="480" height="320" alt="" style="margin-top:10px">`:""}</div>
+    <div>${art(c)}<div class="idiom" style="margin-top:10px">${idiom}</div>${c.scenes?`<img class="sthumb" loading="lazy" decoding="async" src="${esc(tw(c.scenes.items[0].img,480))}?v=6" width="480" height="320" alt="" style="margin-top:10px">`:""}</div>
     <div class="head"><div><h2>${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates">${esc(c.tab==="itihasa"?c.n:c.d)}</span></div>${c.flag?flagSvg(c.flag):""}</div>
     <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong>${c.nat?`<span class="native ${c.nc}">${c.nat}</span>`:""}</div>
       ${c.san?`<blockquote class="verse">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
@@ -612,7 +612,7 @@ function setHash(h){ try{ history.replaceState(null,"","#"+h); }catch(e){} }
 const dlg=document.getElementById("entry");
 let openId=null;
 const HYP="Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Figures follow early Indian relief idiom; ornament is illustrative.";
-function sceneFig(s,n,lazy,full){ return `<figure class="scene"><img src="${esc(full?s.img:tw(s.img,960))}?v=5" ${full?"":`srcset="${esc(tw(s.img,480))}?v=5 480w, ${esc(tw(s.img,960))}?v=5 960w, ${esc(s.img)}?v=5 1600w" sizes="(min-width:900px) 620px, 88vw"`} alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''} data-zoom="${n}"><span class="badge">Reconstruction</span><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.attested)}</dd>${s.original?`<dt class="O">Original</dt><dd class="orig"><i lang="${esc(s.original.lang||"sa-Latn")}">${esc(s.original.text)}</i> <span>${esc(s.original.ref)}</span></dd>`:""}<dt class="A">${esc(s.secondLabel||"Prescribed")}</dt><dd>${esc(s.prescribed)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.conjecture)}</dd></dl><p class="hyp">${esc(s.note||HYP)}</p></figcaption></figure>`; }
+function sceneFig(s,n,lazy,full){ return `<figure class="scene"><img src="${esc(full?s.img:tw(s.img,960))}?v=6" ${full?"":`srcset="${esc(tw(s.img,480))}?v=6 480w, ${esc(tw(s.img,960))}?v=6 960w, ${esc(s.img)}?v=6 1600w" sizes="(min-width:900px) 620px, 88vw"`} alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''} data-zoom="${n}"><span class="badge">Reconstruction</span><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.attested)}</dd>${s.original?`<dt class="O">Original</dt><dd class="orig"><i lang="${esc(s.original.lang||"sa-Latn")}">${esc(s.original.text)}</i> <span>${esc(s.original.ref)}</span></dd>`:""}<dt class="A">${esc(s.secondLabel||"Prescribed")}</dt><dd>${esc(s.prescribed)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.conjecture)}</dd></dl><p class="hyp">${esc(s.note||HYP)}</p></figcaption></figure>`; }
 function galleryHtml(g){ const L=g.items; return `<section class="gal" aria-label="${esc(g.heading)}"><h4>${esc(g.heading)}</h4><p class="legend"><b class="T">Attested</b> stated in the primary source · <b class="A">Second source</b> a later or secondary text · <b class="C">Conjecture</b> our inference, not in any source. Every scene is a hypothetical reconstruction.</p><div class="gnav">${L.map((s,n)=>`<button type="button" data-dot="${n}" ${n?'':'aria-current="true"'}>${esc(s.label)}</button>`).join("")}<span class="ct" id="gct" aria-live="polite">1 / ${L.length}</span></div><div class="track" id="track" tabindex="0" aria-label="${esc(g.heading)}">${L.map((s,n)=>sceneFig(s,n,n>0)).join("")}</div></section>`; }
 function entryHtml(c){
   const {html, keys} = cite(c,true);
