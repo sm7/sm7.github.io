@@ -1717,6 +1717,23 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Pandya_coin,_South_Asia_-_Rev_pair_of_fish,_Obv_bull.jpg",
 "credit": "Jnumis · Public domain",
 "licurl": null
+},
+"scenes": {
+"heading": "Setting · The pearl fishery of the Pāṇḍya coast",
+"items": [
+{
+"k": "pearls",
+"label": "The pearl fishery",
+"img": "scenes/pandya/pearls.webp",
+"title": "Pearl-divers in the shallow gulf off the Pāṇḍya coast",
+"alt": "Hypothetical reconstruction of pearl-divers working from small boats in a shallow gulf, wearing only loincloths, one surfacing with a net bag tied at his waist",
+"attested": "The anonymous Greek merchant's guide Periplus of the Erythraean Sea (§59, 1st century CE) says that from Comari the coast 'extends to Colchi, where the pearl-fisheries are (they are worked by condemned criminals); and it belongs to the Pandian Kingdom', and that at Argaru the pearls gathered on that coast are bought (tr. Schoff 1912, p. 46).",
+"prescribed": "Marco Polo (c. 1293, tr. Yule, The Book of Ser Marco Polo, vol. 2, 1903, book 3, chs. 16–17) describes the fishery of 'Sonder Bandi Davar' in Maabar, about twelve centuries after the Periplus: the gulf between Ceylon and the mainland is only 'no more than 10 or 12 fathoms, and in some places no more than two'; the fishers go out in vessels 'great and small' from April till mid-May, anchor 60 miles into the gulf and 'shift from their large vessels into small boats'; merchants in companies hire men on wages; the divers go down four to twelve fathoms and bring the shells up in a 'net bag tied round the waist'; the king takes a tenth. Of dress he says there is 'never a Tailor' in Maabar and 'everybody goes naked' but for 'a scrap of cloth'. The two sources differ: the Periplus names criminal labour, Polo hired divers; the scene follows Polo's account of the work.",
+"conjecture": "The shape and number of the boats and their rope lashings, the stone hanging from a rope, the baskets of shells, the divers' faces, bodies and hair, the colour of the sea, the sky and the distant ship are not in either text; Polo says only 'vessels, great and small' and 'small boats'. No shore, building, temple or king is drawn. Polo's 'charmers' of fish and the royal tenth are not shown. The Pāṇḍya kingdom of the Periplus and the Maabar of Polo are not the same period or ruler, so the scene shows only what both describe: divers, boats and shallow water.",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction painted with an AI image model from a translated Greek guide and a translated 13th-century traveller; not an archaeological finding."
+}
+]
 }
 },
 {
