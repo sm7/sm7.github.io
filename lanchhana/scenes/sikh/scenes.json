@@ -1,0 +1,42 @@
+{
+ "id": "sikh",
+ "heading": "Setting · Amritsar and Lahore, 1835-36 (Sikh Empire)",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "title": "Amritsar, the Sikh holy city",
+   "alt": "Hypothetical reconstruction of Amritsar's streets and the sacred tank, as seen by Baron Hügel in 1836.",
+   "attested": "Charles von Hügel, Travels in Kashmir and the Panjab (Jervis trans., 1845), pp. 391-393. Hügel: 'Amritsir is the most bustling of all the cities of the Panjab'; in every street the most beautiful productions of India are exhibited for sale, and the streets seemed endless as he rode through on an elephant. The sacred pool is about 150 paces square, surrounded by a pavement 20-25 paces broad, and by the most considerable houses of the city, whose windows look onto the enclosed space; stone steps lead to the water, which is clear.",
+   "prescribed": "Second source: Hügel is the only eyewitness found of this scene. The Court and Camp of Runjeet Singh (Osborne, 1840, archive.org) only mentions Amritsar as the treasure city and Govindgarh fort; Vigne (Personal Narrative) has no Amritsar street passage in the portions searched. This scene is single-source.",
+   "secondLabel": "Second source",
+   "conjecture": "Roof shapes, house forms, colours, shopfronts, crowds, dress and faces are not described for Amritsar itself. Period is 1836, within the Sikh Empire (1799-1849) and Punjab region. The architecture, the extent of the bazaar stalls and the dress are the painter's; Hügel is the only source.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Hügel's Travels in Kashmir and the Panjab; not an archaeological finding.",
+   "img": "scenes/sikh/city.webp"
+  },
+  {
+   "k": "street",
+   "label": "Bazaar",
+   "title": "A bazaar street of Lahore",
+   "alt": "Hypothetical reconstruction of a Lahore bazaar street with projecting awnings and balconies, after Hügel in 1836.",
+   "attested": "Hügel, Travels in Kashmir and the Panjab, Lahor chapter, pp. 291-292. The bazaar is reached beyond heaps of ruins and rubbish near the palace; goods of great value are displayed in narrow, crooked streets that become a slough after rain. 'Very strong and moveable awnings project over the shops' and nearly fill the roadway. Stuffs hang out to dry; carts with oxen, horsemen, camels and an elephant jostle; on finely carved balconies sit wealthy Banyans (merchants).",
+   "prescribed": "Second source: Hügel, same book, p. 251, on Wazirabad: the old bazaar was pulled down and rebuilt on a European model with carriage-wide streets by Avitabile; the old Indian-town bazaars are described as so narrow a pedestrian can hardly force his way. This supports the narrowness in the Lahore passage but is the same author.",
+   "secondLabel": "Second source",
+   "conjecture": "The exact goods, shop signs (none), colour of awnings, architecture of balconies beyond 'finely carved', dress and faces are invented. White dress is only mentioned for Hügel himself ('his white dress bespattered'), not for the townspeople. Hügel is the only source; the painter chose the goods, awning colours and dress.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Hügel's Travels; not an archaeological finding.",
+   "img": "scenes/sikh/street.webp"
+  },
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "The Hari Mander in the sacred pool at Amritsar",
+   "alt": "Hypothetical reconstruction of the Hari Mander (Golden Temple) in its pool with a bridge, as described by Baron Hügel in 1836.",
+   "attested": "Hügel, Travels in Kashmir and the Panjab, pp. 393-396. The temple of Hari Mander stands on an island in the middle of the pool, reached by a bridge on the west. It 'is surmounted by a golden roof', inlaid with marble; a large door of gold opens into the temple, surrounded by little vestibules with richly ornamented pillars. Before the bridge stand two large red banners 30-40 ells long, stretched on masts, with white lettering (his transcription). Inside, a Guru sits on a throne of cushions before a gold-worked carpet and Kashmir shawl, with devotees in a circle and a fan-bearer. Workmen were laying a pietra dura floor and marble walls were painted with flowers. The entrance from the city is unpretending and surrounded by houses.",
+   "prescribed": "Second source: none beyond Hügel for the temple's form in 1836. Hügel also narrates the history of the temple's destruction by Ahmed Shah (p. 392) and restoration, so the golden roof is a late-Sikh state, not earlier.",
+   "secondLabel": "Second source",
+   "conjecture": "The shape of the roof, the amount of gold, the proportions of the bridge and shrine, the colour of the marble and the people's dress are not given in detail. The banners carry writing in Hügel's account; the image prompt asks for none to avoid garbled script. Hügel is the only source; the banners are shown without lettering and the shrine's form and amount of gilding are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Hügel's Travels; not an archaeological finding.",
+   "img": "scenes/sikh/temple.webp"
+  }
+ ]
+}
