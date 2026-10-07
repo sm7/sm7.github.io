@@ -1572,7 +1572,24 @@ window.LR={
 "motifs": [
 "bull"
 ],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Nandi, a humped bull, lying down in profile facing left with legs folded, a bell at his neck. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
+"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: Nandi, a humped bull, lying down in profile facing left with legs folded, a bell at his neck. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"scenes": {
+"heading": "Bhubaneswar, Kalinga · Anangabhima I era, 12th c.",
+"items": [
+{
+"k": "temple",
+"label": "Temple",
+"title": "Meghesvara temple, with garden, tank and hall",
+"alt": "Hypothetical reconstruction of a Siva temple with garden, tank, and open hall founded by a general of Anangabhima.",
+"attested": "Inscription of Svapnesvara (Bhubaneswar, Meghesvara temple), Epigraphia Indica VI no. 17A, edition summary: records foundation of a magnificent temple of Siva Meghesvara (vv. 22-24); gift of female attendants to the god (v. 25); a garden near the temple (vv. 26-27); a tank near it (v. 28); a mandapa or open hall in connection with the tank (v. 29); wells and tanks on roads and in towns, lamps in temples, Vedic study cloisters (v. 30); a brahmapura for the Saiva teacher.",
+"prescribed": "None. Abul Fazl's Ain-i-Akbari on Jagannath/Konark is 16th c., a different era and not used for painting.",
+"secondLabel": "Second source",
+"conjecture": "Architecture (the Odishan deul with curvilinear spire is the surviving type but the inscription does not describe its shape), carving, dress, devotees. The Meghesvara surviving at Bhubaneswar is the object; label it. Date: inscription belongs to the time of Anangabhima (c. 1190s) and the general Svapnesvara; the Eastern Ganga span is c. 1078-1435. The text used is the editor's summary of the verses, not the Sanskrit; the painted tower is a Bhubaneswar-type deul chosen by the painter, and the tank's size and the hall's position are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Svapnesvara inscription (EI VI no. 17A); not an archaeological finding.",
+"img": "scenes/eastern-ganga/temple.webp"
+}
+]
+}
 },
 {
 "id": "pratihara",
@@ -2276,6 +2293,35 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Prithviraj_III_Jital.jpg",
 "credit": "Quezerque · CC BY-SA 4.0",
 "licurl": "https://creativecommons.org/licenses/by-sa/4.0"
+},
+"scenes": {
+"heading": "Setting · Ajayameru (Ajmer), as the Prithvirajavijaya describes it, c. 1190s CE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"title": "Ajayameru: a hill-fort city of whitewashed mansions, windows and incense smoke",
+"alt": "Hypothetical reconstruction of Ajayameru (Ajmer) as praised in canto 5 of the Prithvirajavijaya: whitewashed mansions with windows, a hill fort with wells, incense smoke at night.",
+"attested": "Jayanaka, Prithvirajavijaya (Sanskrit court poem on the Chauhan king Prithviraja III, composed in his time, late 12th century; the dating comes from the poem's subject and I did not verify it in the pages read), canto 5, verses 141-191, in a Sanskrit text with a commentary (archive.org OCR in.ernet.dli.2015.485504). The OCR is noisy; I read the verses and the commentary and paraphrase only what both support. v.147: people sit at the windows (vatayana) and enjoy breezes full of golden-lotus pollen. v.150: the city has wells on its hill fort (giri-durga), so that water is found on a mountain fort. v.154: the smoke of incense burnt to perfume women's hair blackens the white-washed (sudhasita) mansion and the moon. v.155: moonstones in the mansions drip spray at night on the cheeks of the women. v.191: King Ajayaraja founded the city Ajayameru, set up its prosperity, and then installed his son on the throne.",
+"prescribed": "No second source read. Hammira-mahakavya (Nayachandra) and Ajmer inscriptions were on my list; archive.org went offline before I could open them, so none is used.",
+"secondLabel": "Second source",
+"conjecture": "The verses are praise verse with commentary-style figures, so the 'moonstone spray' and 'golden-lotus pollen' are poetry. What is attested for the picture: a hill-fort city, whitewashed mansions with windows, incense smoke at night. Not given: the number and shape of the mansions, the walls and gates, the lake (Anasagara) or the hill's profile, the street plan, trees, people and dress, sky. The pictured Ajmer is the poet's, probably within the same decades as the poem (late 12th century); I did not verify against the extant Taragarh hill or its remains. Dress is conjecture: natural varied clothing, mostly plain cotton, some dyed cloth. The sunset sky, the fort's outline and the terraced stone walls are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Prithvirajavijaya (Sanskrit, archive.org OCR); not an archaeological finding.",
+"img": "scenes/chauhan/city.webp"
+},
+{
+"k": "street",
+"label": "Bazaar",
+"title": "A market lane in Ajayameru dusted with camphor and musk",
+"alt": "Hypothetical reconstruction of a market lane in Ajayameru where fallen camphor and musk dust the lane and the residents' clothes, as in Prithvirajavijaya 5.178.",
+"attested": "Jayanaka, Prithvirajavijaya, canto 5, verse 178, with the commentary (archive.org OCR in.ernet.dli.2015.485504; the OCR of the verse is partly garbled but the commentary states it plainly): the market lane (panya-vithika, 'lane of goods') is powdery with fallen camphor and musk, and it makes the city's residents' clothes white and dark. That is the whole description; there is no list of goods or buildings. Verse 189 of the same canto has the word for a camphor-shop (karpura-vipana) but the OCR around it is too broken to read, so it is not used.",
+"prescribed": "No second source read for this lane.",
+"secondLabel": "Second source",
+"conjecture": "The verse is a poetic figure (camphor makes cloth white, musk dark), so it is not a literal measure of how much powder lay on the ground. The scene must be kept very sparse: a narrow lane with open shop fronts, some white and some dark powder on the ground and a few clothes in white or dark shades. Not given: shop construction, awnings, goods other than camphor and musk, number of people, any dress beyond the white and dark tones, animals, any temple. The date is the poem's (late 12th century). The text is a single verse; everything except the camphor-and-musk dust and the white and dark clothes is the painter's, including the shops' goods.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Prithvirajavijaya (Sanskrit, archive.org OCR); not an archaeological finding.",
+"img": "scenes/chauhan/street.webp"
+}
+]
 }
 },
 {

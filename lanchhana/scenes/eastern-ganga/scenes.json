@@ -1,0 +1,18 @@
+{
+ "id": "eastern-ganga",
+ "heading": "Bhubaneswar, Kalinga · Anangabhima I era, 12th c.",
+ "items": [
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "Meghesvara temple, with garden, tank and hall",
+   "alt": "Hypothetical reconstruction of a Siva temple with garden, tank, and open hall founded by a general of Anangabhima.",
+   "attested": "Inscription of Svapnesvara (Bhubaneswar, Meghesvara temple), Epigraphia Indica VI no. 17A, edition summary: records foundation of a magnificent temple of Siva Meghesvara (vv. 22-24); gift of female attendants to the god (v. 25); a garden near the temple (vv. 26-27); a tank near it (v. 28); a mandapa or open hall in connection with the tank (v. 29); wells and tanks on roads and in towns, lamps in temples, Vedic study cloisters (v. 30); a brahmapura for the Saiva teacher.",
+   "prescribed": "None. Abul Fazl's Ain-i-Akbari on Jagannath/Konark is 16th c., a different era and not used for painting.",
+   "secondLabel": "Second source",
+   "conjecture": "Architecture (the Odishan deul with curvilinear spire is the surviving type but the inscription does not describe its shape), carving, dress, devotees. The Meghesvara surviving at Bhubaneswar is the object; label it. Date: inscription belongs to the time of Anangabhima (c. 1190s) and the general Svapnesvara; the Eastern Ganga span is c. 1078-1435. The text used is the editor's summary of the verses, not the Sanskrit; the painted tower is a Bhubaneswar-type deul chosen by the painter, and the tank's size and the hall's position are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from the Svapnesvara inscription (EI VI no. 17A); not an archaeological finding.",
+   "img": "scenes/eastern-ganga/temple.webp"
+  }
+ ]
+}
