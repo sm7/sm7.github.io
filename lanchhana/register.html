@@ -242,6 +242,15 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 @media (prefers-reduced-motion:no-preference){.card{transition:background .15s}}
 
 /* a11y + polish */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.searchbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding-block:16px 0}
+.searchbar input{flex:1 1 280px;max-width:520px;font:400 15px/1.4 var(--body);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:11px 16px}
+.searchbar input:focus-visible{outline:2px solid var(--copper);outline-offset:1px}
+.qcount{font:500 12px/1.4 var(--mono);color:var(--muted)}
+.sk{font:500 11px/1 var(--mono);border-radius:999px;padding:4px 8px;white-space:nowrap;letter-spacing:.02em}
+.sk.on{color:var(--verdigris);border:1px solid var(--verdigris)}
+.sk.off{color:var(--muted);border:1px dashed var(--line)}
+.sks{display:inline-flex;gap:4px;flex-wrap:wrap}
 .skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:6px;z-index:100;font:600 14px var(--body);text-decoration:none}
 .skip:focus{top:12px}
 main{display:block}main:focus{outline:0}
@@ -287,6 +296,8 @@ main{display:block}main:focus{outline:0}
     <button class="tab" role="tab" id="tab-timeline" aria-controls="panel-timeline">Timeline<small></small></button>
     <button class="tab" role="tab" id="tab-motifs" aria-controls="panel-motifs">Motif index<small></small></button>
   </div>
+
+  <div class="searchbar" id="searchbar" role="search"><label for="q" class="sr">Search the register</label><input id="q" type="search" placeholder="Search the register…" autocomplete="off" enterkeyhint="search"><button type="button" class="ib" id="qclear" hidden>Clear</button><span id="qcount" class="qcount" role="status" aria-live="polite"></span></div>
 
   <div role="tabpanel" id="panel-itihasa" aria-labelledby="tab-itihasa">
     <nav class="jump" aria-label="On this tab"><a href="#itihasa" id="j-ban">Banners</a><a href="#places" id="j-pl">Places</a></nav>
@@ -459,14 +470,21 @@ function art(c, big){
 }
 function sub(c){ return c.tab==="itihasa" ? c.who : c.d; }
 
+const tw=(p,w)=>p.replace(/\.webp$/,"-"+w+".webp");
 function placeCard(c){
   const {html, keys} = cite(c,false), L=c.scenes.items, pick=[3,9,13].map(i=>L[Math.min(i,L.length-1)]);
   return `<article class="card place" data-id="${c.id}">
-    <div><img class="pcover" loading="lazy" src="${esc(L[0].img)}?v=1" alt="${esc(L[0].alt)}"><div class="pstrip">${pick.map(s=>`<img loading="lazy" src="${esc(s.img)}?v=1" alt="">`).join("")}</div></div>
+    <div><img class="pcover" loading="lazy" decoding="async" src="${esc(tw(L[0].img,960))}?v=2" srcset="${esc(tw(L[0].img,480))}?v=2 480w, ${esc(tw(L[0].img,960))}?v=2 960w" sizes="(min-width:1000px) 360px, 90vw" alt="${esc(L[0].alt)}"><div class="pstrip">${pick.map(s=>`<img loading="lazy" decoding="async" src="${esc(tw(s.img,480))}?v=2" alt="">`).join("")}</div></div>
     <div class="head"><div><h2>${esc(c.n)}</h2><span class="dates">${esc(c.who)}</span></div></div>
     <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong></div><p>${html}</p></div>
     <div class="meta"><span class="pill place">${KLABEL[c.k]}</span><span class="hasscenes">${L.length} scenes</span><span>${keys.length} source${keys.length===1?"":"s"}</span><button type="button" class="more open" aria-label="${esc(c.n)}: open place">Open place →</button></div>
   </article>`;
+}
+const SK=[["city","City"],["street","Street"],["temple","Temple"]];
+function skHtml(c){
+  if (c.tab!=="early"&&c.tab!=="later") return c.scenes?`<span class="hasscenes">${c.scenes.items.length} scenes</span>`:"";
+  const have=new Set((c.scenes?c.scenes.items:[]).map(x=>x.k));
+  return `<span class="sks" aria-label="Scenes available">${SK.map(([k,l])=>have.has(k)?`<span class="sk on" title="${l} scene in the entry">${l}</span>`:`<span class="sk off" title="No source found that describes this honestly, so none is painted">${l} · none</span>`).join("")}</span>`;
 }
 function card(c){
   if (c.tab==="places") return placeCard(c);
@@ -474,13 +492,13 @@ function card(c){
   const idiom = c.tab==="itihasa" ? (c.k==="coin" ? "Drawn from the documented punch marks" : c.k==="vulgate" ? "Painted from Ganguli's description" : "Painted from the verse")
     : `Painted from the ${c.k==="tradition"?"traditional":c.k} ${c.k==="monument"?"itself":"description"}`;
   return `<article class="card" data-id="${c.id}">
-    <div>${art(c)}<div class="idiom" style="margin-top:10px">${idiom}</div>${c.scenes?`<img class="sthumb" loading="lazy" src="${esc(c.scenes.items[0].img)}?v=1" alt="" style="margin-top:10px">`:""}</div>
+    <div>${art(c)}<div class="idiom" style="margin-top:10px">${idiom}</div>${c.scenes?`<img class="sthumb" loading="lazy" decoding="async" src="${esc(tw(c.scenes.items[0].img,480))}?v=2" width="480" height="320" alt="" style="margin-top:10px">`:""}</div>
     <div class="head"><div><h2>${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates">${esc(c.tab==="itihasa"?c.n:c.d)}</span></div>${c.flag?flagSvg(c.flag):""}</div>
     <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong>${c.nat?`<span class="native ${c.nc}">${c.nat}</span>`:""}</div>
       ${c.san?`<blockquote class="verse">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
       ${c.quote?`<blockquote class="verse en">“${esc(c.quote)}”<cite>Ganguli, Droṇa Parva §23</cite></blockquote>`:""}
       <p>${html}</p>${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}</div>
-    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span>${c.scenes?`<span class="hasscenes" title="Reconstructed city, street and temple scenes in the entry">${c.scenes.items.length} scenes</span>`:""}${(c.places||[]).map(id=>BY[id]?`<a class="hasplace" href="#${id}" title="Reconstructed scenes of this place">Place · ${esc(BY[id].n)}</a>`:"").join("")}<button type="button" class="more open" aria-label="${esc((c.tab==='itihasa'?c.who:c.n)+', '+c.e)}: open entry">Open entry →</button></div>
+    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span>${skHtml(c)}${(c.places||[]).map(id=>BY[id]?`<a class="hasplace" href="#${id}" title="Reconstructed scenes of this place">Place · ${esc(BY[id].n)}</a>`:"").join("")}<button type="button" class="more open" aria-label="${esc((c.tab==='itihasa'?c.who:c.n)+', '+c.e)}: open entry">Open entry →</button></div>
   </article>`;
 }
 
@@ -497,21 +515,34 @@ for (const t of ["early","later"]){
   const order=["seal","coin","monument","flag","tradition"]; const kinds=order.filter(k=>inTab(t).some(c=>c.k===k||(k==="flag"&&c.flag)));
   chips(`f-${t}-r`, regs.map(r=>[r,r]), ()=>F[t].r, v=>F[t].r=v);
   chips(`f-${t}-k`, [["all","All"],...kinds.map(k=>[k,k[0].toUpperCase()+k.slice(1)])], ()=>F[t].k, v=>F[t].k=v);
-  if (inTab(t).some(c=>c.scenes)) chips(`f-${t}-s`, [["all","All"],["scenes","With scenes"]], ()=>F[t].s, v=>F[t].s=v);
+  if (inTab(t).some(c=>c.scenes)) chips(`f-${t}-s`, [["all","All"],["scenes","Any scene"],["city","City"],["street","Street"],["temple","Temple"]], ()=>F[t].s, v=>F[t].s=v);
   else document.getElementById(`f-${t}-s`).remove();
 }
+const fold=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const HAY=new Map();
+function hay(c){ if(!HAY.has(c.id)) HAY.set(c.id,fold([c.n,c.who,c.d,c.e,c.nat,c.r,c.san,c.quote,c.k,...(c.scenes?c.scenes.items.flatMap(x=>[x.k,x.title,x.alt]):[])].join(" "))); return HAY.get(c.id); }
+let Q=[];
+function match(c){ return Q.every(t=>hay(c).includes(t)); }
 function renderAll(){
-  const it = inTab("itihasa").filter(c=>F.itihasa==="all"||c.k===F.itihasa);
-  document.getElementById("grid-itihasa").innerHTML = it.map(card).join("") || `<div class="empty">No banners match that filter.</div>`;
-  const PL=inTab("places"), epics=["Rāmāyaṇa","Mahābhārata"];
+  const it = inTab("itihasa").filter(c=>(F.itihasa==="all"||c.k===F.itihasa)&&match(c));
+  document.getElementById("grid-itihasa").innerHTML = it.map(card).join("") || `<div class="empty">No banners match. <button type="button" class="linkbtn" data-reset>Clear search and filters</button></div>`;
+  const PL=inTab("places").filter(match), epics=["Rāmāyaṇa","Mahābhārata"];
   document.getElementById("places-body").innerHTML = epics.filter(e=>PL.some(c=>c.epic===e)).map(e=>
     `<h3 class="epic-h">${e}</h3><div class="grid">${PL.filter(c=>c.epic===e).map(card).join("")}</div>`).join("");
   for (const t of ["early","later"]){
-    const f=F[t]; const list=inTab(t).filter(c=>(f.r==="All"||c.r===f.r)&&(f.k==="all"||c.k===f.k||(f.k==="flag"&&c.flag))&&(f.s==="all"||c.scenes));
-    document.getElementById(`grid-${t}`).innerHTML = list.map(card).join("") || `<div class="empty">Nothing matches that region and evidence type. Pick another filter.</div>`;
+    const f=F[t]; const list=inTab(t).filter(c=>(f.r==="All"||c.r===f.r)&&(f.k==="all"||c.k===f.k||(f.k==="flag"&&c.flag))&&(f.s==="all"||(c.scenes&&(f.s==="scenes"||c.scenes.items.some(x=>x.k===f.s))))&&match(c));
+    document.getElementById(`grid-${t}`).innerHTML = list.map(card).join("") || `<div class="empty">Nothing matches. <button type="button" class="linkbtn" data-reset>Clear search and filters</button></div>`;
   }
 }
 renderAll();
+const qi=document.getElementById("q"), qc=document.getElementById("qclear"), qn=document.getElementById("qcount");
+function applyQ(){ Q=fold(qi.value).split(/\s+/).filter(Boolean); qc.hidden=!Q.length; renderAll();
+  qn.textContent = Q.length ? ["itihasa","early","later"].map(t=>{const n=inTab(t).filter(match).length+(t==="itihasa"?inTab("places").filter(match).length:0);return n+" in "+({itihasa:"Itihāsa",early:"Early",later:"Later"})[t];}).join(" · ") : "";
+  try{ const u=new URL(location.href); Q.length?u.searchParams.set("q",qi.value.trim()):u.searchParams.delete("q"); history.replaceState(null,"",u); }catch(e){} }
+let qT; qi.addEventListener("input",()=>{ clearTimeout(qT); qT=setTimeout(applyQ,120); });
+qc.onclick=()=>{ qi.value=""; applyQ(); qi.focus(); };
+document.addEventListener("click",e=>{ if(e.target.closest("[data-reset]")){ qi.value=""; for(const t of ["early","later"]) F[t]={r:"All",k:"all",s:"all"}; F.itihasa="all"; document.querySelectorAll(".controls .chip").forEach(b=>b.setAttribute("aria-pressed",/^(All)$/.test(b.textContent))); applyQ(); } });
+{ const p=new URLSearchParams(location.search).get("q"); if(p){ qi.value=p; applyQ(); } }
 
 /* motif index */
 (function(){
@@ -534,7 +565,7 @@ tabs.forEach(t=>t.querySelector("small").textContent=counts[t.id.slice(4)]);
 document.getElementById("foot-count").textContent = `${C.length} entries · ${Object.keys(SRC).length} sources cited`;
 function stats(k){
   const L=inTab(k), s=(a,b)=>`<div><b>${a}</b>${b}</div>`;
-  if (k==="itihasa"){ const P=inTab("places"); return s(L.length,"banners")+s(L.filter(c=>c.k==="epic").length,"critical edition")+s(P.length,P.length===1?"place":"places")+s(P.reduce((n,c)=>n+c.scenes.items.length,0),"place scenes"); }
+  if (k==="itihasa"){ const P=inTab("places"); return s(L.length,"banners")+s(L.filter(c=>c.k==="epic").length,"critical edition")+s(P.reduce((n,c)=>n+c.scenes.items.length,0),"scenes in "+P.length+(P.length===1?" place":" places")); }
   if (k==="early") return s(L.length,"dynasties")+s(L.filter(c=>c.k==="seal").length,"seal-attested");
   if (k==="later") return s(L.length,"kingdoms")+s(L.filter(c=>c.flag).length,"flags shown");
   if (k==="timeline") return s(Object.keys(window.LR.SPAN||{}).length,"dynasties dated")+s(inTab("itihasa").length,"epic banners, undated");
@@ -549,6 +580,8 @@ function show(k, focus){
   document.getElementById("stats").innerHTML=stats(k);
   tabs.forEach(t=>{ const on=t.id==="tab-"+k; t.setAttribute("aria-selected",on); t.tabIndex=on?0:-1;
     document.getElementById(t.getAttribute("aria-controls")).hidden=!on; if(on&&focus) t.focus(); });
+  document.getElementById("searchbar").hidden = (k==="timeline"||k==="motifs");
+  document.title = (k==="itihasa"?"":TABS[k].label+" · ")+"Lāñchhana Register";
   if(k==="timeline") renderTimeline();
 }
 tabs.forEach((t,i)=>{ t.onclick=()=>{ show(t.id.slice(4)); setHash(t.id.slice(4)); };
@@ -561,7 +594,7 @@ function setHash(h){ try{ history.replaceState(null,"","#"+h); }catch(e){} }
 const dlg=document.getElementById("entry");
 let openId=null;
 const HYP="Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Figures follow early Indian relief idiom; ornament is illustrative.";
-function sceneFig(s,n,lazy){ return `<figure class="scene"><img src="${esc(s.img)}?v=1" alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''} data-zoom="${n}"><span class="badge">Reconstruction</span><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.attested)}</dd>${s.original?`<dt class="O">Original</dt><dd class="orig"><i lang="${esc(s.original.lang||"sa-Latn")}">${esc(s.original.text)}</i> <span>${esc(s.original.ref)}</span></dd>`:""}<dt class="A">${esc(s.secondLabel||"Prescribed")}</dt><dd>${esc(s.prescribed)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.conjecture)}</dd></dl><p class="hyp">${esc(s.note||HYP)}</p></figcaption></figure>`; }
+function sceneFig(s,n,lazy,full){ return `<figure class="scene"><img src="${esc(full?s.img:tw(s.img,960))}?v=2" ${full?"":`srcset="${esc(tw(s.img,480))}?v=2 480w, ${esc(tw(s.img,960))}?v=2 960w, ${esc(s.img)}?v=2 1600w" sizes="(min-width:900px) 620px, 88vw"`} alt="${esc(s.alt)}" width="1536" height="1024" ${lazy?'loading="lazy"':''} data-zoom="${n}"><span class="badge">Reconstruction</span><figcaption class="cap"><h3>${esc(s.title)}</h3><dl class="lab"><dt class="T">Attested</dt><dd>${esc(s.attested)}</dd>${s.original?`<dt class="O">Original</dt><dd class="orig"><i lang="${esc(s.original.lang||"sa-Latn")}">${esc(s.original.text)}</i> <span>${esc(s.original.ref)}</span></dd>`:""}<dt class="A">${esc(s.secondLabel||"Prescribed")}</dt><dd>${esc(s.prescribed)}</dd><dt class="C">Conjecture</dt><dd>${esc(s.conjecture)}</dd></dl><p class="hyp">${esc(s.note||HYP)}</p></figcaption></figure>`; }
 function galleryHtml(g){ const L=g.items; return `<section class="gal" aria-label="${esc(g.heading)}"><h4>${esc(g.heading)}</h4><p class="legend"><b class="T">Attested</b> stated in the primary source · <b class="A">Second source</b> a later or secondary text · <b class="C">Conjecture</b> our inference, not in any source. Every scene is a hypothetical reconstruction.</p><div class="gnav">${L.map((s,n)=>`<button type="button" data-dot="${n}" ${n?'':'aria-current="true"'}>${esc(s.label)}</button>`).join("")}<span class="ct" id="gct" aria-live="polite">1 / ${L.length}</span></div><div class="track" id="track" tabindex="0" aria-label="${esc(g.heading)}">${L.map((s,n)=>sceneFig(s,n,n>0)).join("")}</div></section>`; }
 function entryHtml(c){
   const {html, keys} = cite(c,true);
@@ -629,7 +662,7 @@ dlg.addEventListener("click",e=>{ const b=e.target.closest(".mtabs [data-pane]")
   dlg.querySelectorAll(".pane").forEach(p=>p.hidden=p.dataset.p!==b.dataset.pane); });
 /* scenes gallery handlers */
 dlg.addEventListener("click",e=>{
-  const z=e.target.closest("[data-zoom]"); if(z&&BY[openId]&&BY[openId].scenes){ const s=BY[openId].scenes.items[+z.dataset.zoom]; const d=document.createElement("div"); d.className="lb"; d.innerHTML=`<button class="ib x" type="button">Close</button>`+sceneFig(s,0,false); d.onclick=ev=>{ if(ev.target===d||ev.target.classList.contains("x")) d.remove(); }; dlg.appendChild(d); d.querySelector(".x").focus(); return; }
+  const z=e.target.closest("[data-zoom]"); if(z&&BY[openId]&&BY[openId].scenes){ const s=BY[openId].scenes.items[+z.dataset.zoom]; const d=document.createElement("div"); d.className="lb"; d.innerHTML=`<button class="ib x" type="button">Close</button>`+sceneFig(s,0,false,true); d.onclick=ev=>{ if(ev.target===d||ev.target.classList.contains("x")) d.remove(); }; dlg.appendChild(d); d.querySelector(".x").focus(); return; }
   const dt=e.target.closest("[data-dot]"); if(dt){ const t=dlg.querySelector("#track"), sl=t&&t.children[+dt.dataset.dot]; if(sl) t.scrollTo({left:sl.offsetLeft-t.offsetLeft,behavior:"smooth"}); }
 });
 dlg.addEventListener("scroll",e=>{ if(e.target.id!=="track") return; const t=e.target; let n=0,best=1e9; [...t.children].forEach((c,k)=>{ const d=Math.abs(c.offsetLeft-t.offsetLeft-t.scrollLeft); if(d<best){best=d;n=k;} }); dlg.querySelectorAll("[data-dot]").forEach((b,k)=>b.toggleAttribute("aria-current",k===n)); const ct=dlg.querySelector("#gct"); if(ct) ct.textContent=`${n+1} / ${t.children.length}`; },true);
