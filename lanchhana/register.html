@@ -4,6 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lāñchhana Register</title>
 <meta name="description" content="Royal emblems of Indian dynasties and the war banners of the epics, each painted as a medallion and cited sentence by sentence.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%232C7A6B%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%278%27 fill=%27%23A4531F%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#EDF1EE" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1513" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website"><meta property="og:title" content="Lāñchhana Register"><meta property="og:description" content="Royal emblems of Indian dynasties and the war banners of the epics, each painted as a medallion and cited sentence by sentence."><meta property="og:image" content="https://sm7.github.io/lanchhana/epic/04-arjuna.webp"><meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://sm7.github.io/lanchhana/register.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&family=Noto+Serif+Tamil:wght@500&family=Noto+Serif:wght@500&display=swap">
@@ -11,7 +15,7 @@
 /* Layout: a catalogue plate. Painted medallions in a ruled grid, filterable by region and kind of evidence; every card opens a full entry. */
 :root{
   --paper:#EDF1EE; --panel:#F6F8F6; --ink:#16201D; --muted:#56655F; --line:#CAD4CF;
-  --copper:#A4531F; --verdigris:#2C7A6B; --wash:#E3EAE6; --scrim:rgba(14,21,19,.55);
+  --copper:#A4531F; --verdigris:#226456; --wash:#E3EAE6; --scrim:rgba(14,21,19,.55);
   --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
   --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
@@ -236,10 +240,37 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 @media (max-width:760px){header{grid-template-columns:1fr} section.notes{grid-template-columns:1fr} .motif{grid-template-columns:1fr;gap:12px}}
 @media (max-width:380px){.grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:no-preference){.card{transition:background .15s}}
+
+/* a11y + polish */
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:6px;z-index:100;font:600 14px var(--body);text-decoration:none}
+.skip:focus{top:12px}
+main{display:block}main:focus{outline:0}
+.card .open{all:unset;cursor:pointer;color:var(--ink);font:500 12px/1 var(--mono);margin-left:auto;padding:12px 0 12px 12px}
+.card .open::after{content:"";position:absolute;inset:0}
+.card .open:focus-visible{outline:2px solid var(--copper);outline-offset:-2px;border-radius:2px}
+.card .open:focus-visible::after{outline:2px solid var(--copper);outline-offset:-2px}
+.card a,.card .flag{position:relative;z-index:2}
+.card:has(.open:focus-visible){background:var(--wash)}
+:root{--on-accent:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--on-accent:#0E1513}}
+:root[data-theme="dark"]{--on-accent:#0E1513}
+.legend b,.lab dt.T,.lab dt.A,.hasplace:hover{color:var(--on-accent)}
+.legend b.C,.lab dt.C{color:var(--ink)}
+.scene img{aspect-ratio:auto!important;height:auto!important;object-fit:contain!important}
+@media (pointer:coarse){.chip,.gnav button,.ib,.mtabs button,.tab{min-height:44px}.top a{padding:12px 0}.hasplace{padding:12px 10px}.card .open{padding:16px 0 16px 12px}nav.jump a{padding:12px 0 4px;display:inline-block}.xlink a,ol.srcs a,footer a{padding:10px 0;display:inline-block}}
+.lede,.prose p{text-align:left}
+.conf{font-size:11px}.badge{font-size:11.5px}.pill{font-size:12px}.mini span{font-size:11px}.tl-grid span{font-size:11px}sup.c{font-size:11px}
+.tabs{position:relative;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+@media (min-width:1000px){.tabs{-webkit-mask-image:none;mask-image:none}}
+@media (max-width:640px){.top .grow{display:none}}
+@media print{.top,.tabs,.controls,dialog,.skip,nav.jump{display:none!important}body{background:#fff;color:#000}.grid{grid-template-columns:repeat(2,1fr)}.card{break-inside:avoid}}
 </style>
 
+<a class="skip" href="#main">Skip to content</a>
+<noscript><p style="padding:20px;font:15px sans-serif">This page builds its content with JavaScript. Please enable it, or browse the source files at <a href="https://github.com/sm7/sm7.github.io/tree/master/lanchhana">github.com/sm7/sm7.github.io</a>.</p></noscript>
 <div class="wrap">
   <nav class="top" aria-label="Site"><a href="index.html">About</a><a href="register.html" aria-current="page">The register</a><a href="sources.html">Sources</a><a href="#timeline">Timeline</a><a href="#motifs">Motif index</a><span class="grow">sm7.github.io/lanchhana</span></nav>
+  <main id="main" tabindex="-1">
   <header>
     <div>
       <p class="eyebrow" id="hd-eyebrow"></p>
@@ -360,6 +391,7 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
     <div class="motifs" id="motif-list"></div>
   </div>
 
+  </main>
   <footer>
     <span id="foot-count"></span>
     <a href="index.html">About the register and how entries are made</a>
@@ -429,11 +461,11 @@ function sub(c){ return c.tab==="itihasa" ? c.who : c.d; }
 
 function placeCard(c){
   const {html, keys} = cite(c,false), L=c.scenes.items, pick=[3,9,13].map(i=>L[Math.min(i,L.length-1)]);
-  return `<article class="card place" tabindex="0" role="button" data-id="${c.id}" aria-label="${esc(c.n+": open place")}">
+  return `<article class="card place" data-id="${c.id}">
     <div><img class="pcover" loading="lazy" src="${esc(L[0].img)}?v=1" alt="${esc(L[0].alt)}"><div class="pstrip">${pick.map(s=>`<img loading="lazy" src="${esc(s.img)}?v=1" alt="">`).join("")}</div></div>
     <div class="head"><div><h2>${esc(c.n)}</h2><span class="dates">${esc(c.who)}</span></div></div>
     <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong></div><p>${html}</p></div>
-    <div class="meta"><span class="pill place">${KLABEL[c.k]}</span><span class="hasscenes">${L.length} scenes</span><span>${keys.length} source${keys.length===1?"":"s"}</span><span class="more">Open place →</span></div>
+    <div class="meta"><span class="pill place">${KLABEL[c.k]}</span><span class="hasscenes">${L.length} scenes</span><span>${keys.length} source${keys.length===1?"":"s"}</span><button type="button" class="more open" aria-label="${esc(c.n)}: open place">Open place →</button></div>
   </article>`;
 }
 function card(c){
@@ -441,14 +473,14 @@ function card(c){
   const {html, keys} = cite(c,false);
   const idiom = c.tab==="itihasa" ? (c.k==="coin" ? "Drawn from the documented punch marks" : c.k==="vulgate" ? "Painted from Ganguli's description" : "Painted from the verse")
     : `Painted from the ${c.k==="tradition"?"traditional":c.k} ${c.k==="monument"?"itself":"description"}`;
-  return `<article class="card" tabindex="0" role="button" data-id="${c.id}" aria-label="${esc(c.n+", "+c.e+": open entry")}">
+  return `<article class="card" data-id="${c.id}">
     <div>${art(c)}<div class="idiom" style="margin-top:10px">${idiom}</div>${c.scenes?`<img class="sthumb" loading="lazy" src="${esc(c.scenes.items[0].img)}?v=1" alt="" style="margin-top:10px">`:""}</div>
     <div class="head"><div><h2>${esc(c.tab==="itihasa"?c.who:c.n)}</h2><span class="dates">${esc(c.tab==="itihasa"?c.n:c.d)}</span></div>${c.flag?flagSvg(c.flag):""}</div>
     <div style="display:grid;gap:10px;min-width:0"><div class="emblem"><strong>${esc(c.e)}</strong>${c.nat?`<span class="native ${c.nc}">${c.nat}</span>`:""}</div>
       ${c.san?`<blockquote class="verse">${esc(c.san)}<cite>${esc(c.ref)}</cite></blockquote>`:""}
       ${c.quote?`<blockquote class="verse en">“${esc(c.quote)}”<cite>Ganguli, Droṇa Parva §23</cite></blockquote>`:""}
       <p>${html}</p>${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}</div>
-    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span>${c.scenes?`<span class="hasscenes" title="Reconstructed city, street and temple scenes in the entry">${c.scenes.items.length} scenes</span>`:""}${(c.places||[]).map(id=>BY[id]?`<a class="hasplace" href="#${id}" title="Reconstructed scenes of this place">Place · ${esc(BY[id].n)}</a>`:"").join("")}<span class="more">Open entry →</span></div>
+    <div class="meta"><span class="pill ${c.k}">${KLABEL[c.k]}</span>${c.r?`<span>${c.r}</span>`:""}<span>${keys.length} source${keys.length===1?"":"s"}</span>${c.scenes?`<span class="hasscenes" title="Reconstructed city, street and temple scenes in the entry">${c.scenes.items.length} scenes</span>`:""}${(c.places||[]).map(id=>BY[id]?`<a class="hasplace" href="#${id}" title="Reconstructed scenes of this place">Place · ${esc(BY[id].n)}</a>`:"").join("")}<button type="button" class="more open" aria-label="${esc((c.tab==='itihasa'?c.who:c.n)+', '+c.e)}: open entry">Open entry →</button></div>
   </article>`;
 }
 
@@ -589,7 +621,7 @@ function openEntry(id){
     const done=()=>{cl.textContent="Link copied";setTimeout(()=>cl.textContent="Copy link",1600);};
     try{ navigator.clipboard.writeText(u).then(done,()=>{cl.textContent=u;}); }catch(e){ cl.textContent=u; } };
 }
-dlg.addEventListener("close",()=>{ const c=BY[openId]; openId=null; if(c) setHash(current); const el=document.querySelector(`.card[data-id="${c&&c.id}"]`); if(el&&(current===c.tab||(current==="itihasa"&&c.tab==="places"))) el.focus({preventScroll:true}); });
+dlg.addEventListener("close",()=>{ const c=BY[openId]; openId=null; if(c) setHash(current); const el=document.querySelector(`.card[data-id="${c&&c.id}"] .open`)||document.querySelector(`.card[data-id="${c&&c.id}"]`); if(el&&(current===c.tab||(current==="itihasa"&&c.tab==="places"))) el.focus({preventScroll:true}); });
 dlg.addEventListener("click",e=>{ if(e.target===dlg) dlg.close(); });
 /* modal tabs */
 dlg.addEventListener("click",e=>{ const b=e.target.closest(".mtabs [data-pane]"); if(!b) return;
@@ -605,7 +637,6 @@ dlg.addEventListener("keydown",e=>{ if(e.key==="Escape"){ const l=dlg.querySelec
 
 document.addEventListener("keydown",e=>{ if(!dlg.open||rp.open||e.target.closest("input,textarea,select")) return; if(e.key==="ArrowRight"&&!e.target.closest("input")) dlg.querySelector('[data-go]:nth-of-type(2)')?.click(); if(e.key==="ArrowLeft") dlg.querySelector('[data-go]')?.click(); });
 document.addEventListener("click",e=>{ const t=e.target.closest(".card[data-id],.mini[data-id],.tl-bar[data-id]"); if(t&&!e.target.closest("a")) openEntry(t.dataset.id); });
-document.addEventListener("keydown",e=>{ const t=e.target.closest&&e.target.closest(".card[data-id]"); if(t&&(e.key==="Enter"||e.key===" ")){ e.preventDefault(); openEntry(t.dataset.id);} });
 document.getElementById("f-motifs").addEventListener("click",e=>{ const a=e.target.closest("a"); if(!a) return; e.preventDefault(); goMotif(a.getAttribute("href").slice(7)); });
 function goMotif(m){ show("motifs"); setHash("motif-"+m); const el=document.getElementById("motif-"+m); if(el) el.scrollIntoView({block:"start"}); }
 

@@ -1,6 +1,13 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
 <title>Lāñchhana Register</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="A register of the emblems by which Indian kingdoms marked their authority, from the war banners of the epics to the seals, coins and flags of historical dynasties.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%232C7A6B%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%278%27 fill=%27%23A4531F%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#EDF1EE" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1513" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website"><meta property="og:title" content="Lāñchhana Register"><meta property="og:description" content="A register of the emblems by which Indian kingdoms marked their authority, from the war banners of the epics to the seals, coins and flags of historical dynasties."><meta property="og:image" content="https://sm7.github.io/lanchhana/epic/04-arjuna.webp"><meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://sm7.github.io/lanchhana/index.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&display=swap">
@@ -106,10 +113,21 @@ footer{padding-top:24px;font:12px/1.7 var(--mono);color:var(--muted);display:fle
 @media (max-width:900px){.hero,.cols{grid-template-columns:1fr} .regs{grid-template-columns:1fr} ol.method{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.trail{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:24px}.trail::before{display:none}.step img{width:120px}.kinds div{grid-template-columns:1fr auto}.kinds div>span:nth-child(2){grid-column:1/-1;order:3}}
 @media (max-width:420px){ol.method{grid-template-columns:1fr}}
+
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:6px;z-index:100;font:600 14px var(--body);text-decoration:none}
+.skip:focus{top:12px}
+main{display:block}main:focus{outline:0}
+.lede,.prose p{text-align:left}
+@media (pointer:coarse){.top a{padding:12px 0}footer a{padding:10px 0;display:inline-block}}
+@media (max-width:640px){.top .grow{display:none}}
+@media print{.top,.skip{display:none!important}body{background:#fff;color:#000}}
 </style>
 
+<a class="skip" href="#main">Skip to content</a>
+<noscript><p style="padding:20px;font:15px sans-serif">This page builds its content with JavaScript. Please enable it, or browse the source files at <a href="https://github.com/sm7/sm7.github.io/tree/master/lanchhana">github.com/sm7/sm7.github.io</a>.</p></noscript>
 <div class="wrap">
   <nav class="top" aria-label="Site"><a href="index.html" aria-current="page">About</a><a class="reg-link" href="register.html">The register <span id="nav-n"></span> →</a><a href="sources.html">Sources</a><a href="register.html#timeline">Timeline</a><a href="register.html#motifs">Motif index</a><span class="grow">sm7.github.io/lanchhana</span></nav>
+  <main id="main" tabindex="-1">
 
   <div class="hero">
     <div>
@@ -185,6 +203,7 @@ footer{padding-top:24px;font:12px/1.7 var(--mono);color:var(--muted);display:fle
     </div>
   </section>
 
+  </main>
   <footer>
     <span id="foot"></span>
     <a href="register.html">Open the register</a>
