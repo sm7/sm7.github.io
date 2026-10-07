@@ -8,6 +8,15 @@
 <meta name="theme-color" content="#EDF1EE" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1513" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website"><meta property="og:title" content="Sources · Lāñchhana Register"><meta property="og:description" content="Every source cited in the Lāñchhana Register: the entries, the scene reconstructions, and the full bibliography."><meta property="og:image" content="https://sm7.github.io/lanchhana/epic/04-arjuna.webp"><meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://sm7.github.io/lanchhana/sources.html">
+<script>
+(function(){var k="lr-theme",t;try{t=localStorage.getItem(k)}catch(e){}
+if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;
+document.addEventListener("DOMContentLoaded",function(){var nav=document.querySelector("nav.top");if(!nav)return;
+var b=document.createElement("button");b.type="button";b.className="themebtn";
+function lab(){var c=document.documentElement.dataset.theme;b.textContent=c==="dark"?"Theme: dark":c==="light"?"Theme: light":"Theme: auto";b.setAttribute("aria-label","Colour theme: "+(c||"follows your device")+". Activate to change.")}
+b.onclick=function(){var c=document.documentElement.dataset.theme,n=c===undefined?"light":c==="light"?"dark":"";if(n)document.documentElement.dataset.theme=n;else delete document.documentElement.dataset.theme;try{n?localStorage.setItem(k,n):localStorage.removeItem(k)}catch(e){}lab()};
+lab();var g=nav.querySelector(".grow");g?nav.insertBefore(b,g):nav.appendChild(b);b.style.marginLeft=g?"":"auto"})})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -68,6 +77,9 @@ main{display:block}main:focus{outline:0}
 @media (pointer:coarse){.top a{padding:12px 0}footer a{padding:10px 0;display:inline-block}}
 @media (max-width:640px){.top .grow{display:none}}
 @media print{.top,.skip{display:none!important}body{background:#fff;color:#000}}
+.themebtn{all:unset;cursor:pointer;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:7px 10px;border:1px solid var(--line);border-radius:999px}
+.themebtn:hover{color:var(--ink);border-color:var(--verdigris)}.themebtn:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+@media (pointer:coarse){.themebtn{padding:14px 12px}}
 </style>
 <a class="skip" href="#main">Skip to content</a>
 <noscript><p style="padding:20px;font:15px sans-serif">This page builds its content with JavaScript. Please enable it, or browse the source files at <a href="https://github.com/sm7/sm7.github.io/tree/master/lanchhana">github.com/sm7/sm7.github.io</a>.</p></noscript>

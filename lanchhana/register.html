@@ -8,6 +8,15 @@
 <meta name="theme-color" content="#EDF1EE" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1513" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website"><meta property="og:title" content="Lāñchhana Register"><meta property="og:description" content="Royal emblems of Indian dynasties and the war banners of the epics, each painted as a medallion and cited sentence by sentence."><meta property="og:image" content="https://sm7.github.io/lanchhana/epic/04-arjuna.webp"><meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://sm7.github.io/lanchhana/register.html">
+<script>
+(function(){var k="lr-theme",t;try{t=localStorage.getItem(k)}catch(e){}
+if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;
+document.addEventListener("DOMContentLoaded",function(){var nav=document.querySelector("nav.top");if(!nav)return;
+var b=document.createElement("button");b.type="button";b.className="themebtn";
+function lab(){var c=document.documentElement.dataset.theme;b.textContent=c==="dark"?"Theme: dark":c==="light"?"Theme: light":"Theme: auto";b.setAttribute("aria-label","Colour theme: "+(c||"follows your device")+". Activate to change.")}
+b.onclick=function(){var c=document.documentElement.dataset.theme,n=c===undefined?"light":c==="light"?"dark":"";if(n)document.documentElement.dataset.theme=n;else delete document.documentElement.dataset.theme;try{n?localStorage.setItem(k,n):localStorage.removeItem(k)}catch(e){}lab()};
+lab();var g=nav.querySelector(".grow");g?nav.insertBefore(b,g):nav.appendChild(b);b.style.marginLeft=g?"":"auto"})})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Devanagari:wght@500&family=Noto+Serif+Tamil:wght@500&family=Noto+Serif:wght@500&display=swap">
@@ -242,6 +251,11 @@ details.prompt p{font:400 12.5px/1.6 var(--mono);color:var(--muted);margin:10px 
 @media (prefers-reduced-motion:no-preference){.card{transition:background .15s}}
 
 /* a11y + polish */
+.tl-list{margin-top:14px;font-size:13.5px}.tl-list summary{cursor:pointer;font:600 13px var(--body);padding:10px 0}
+.tl-list ol{columns:2 280px;margin:6px 0 0;padding-left:20px;color:var(--muted)}.tl-list li{break-inside:avoid;padding:3px 0}
+.tl-list .linkbtn{color:var(--ink)}
+.tl-scroll:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+@media (max-width:560px){.dlg-bar{padding:8px 12px;gap:6px}.dlg-bar .where{flex:1 0 100%}.dlg-bar .ib{padding:10px 12px}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .searchbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding-block:16px 0}
 .searchbar input{flex:1 1 280px;max-width:520px;font:400 15px/1.4 var(--body);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:11px 16px}
@@ -273,6 +287,9 @@ main{display:block}main:focus{outline:0}
 @media (min-width:1000px){.tabs{-webkit-mask-image:none;mask-image:none}}
 @media (max-width:640px){.top .grow{display:none}}
 @media print{.top,.tabs,.controls,dialog,.skip,nav.jump{display:none!important}body{background:#fff;color:#000}.grid{grid-template-columns:repeat(2,1fr)}.card{break-inside:avoid}}
+.themebtn{all:unset;cursor:pointer;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:7px 10px;border:1px solid var(--line);border-radius:999px}
+.themebtn:hover{color:var(--ink);border-color:var(--verdigris)}.themebtn:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+@media (pointer:coarse){.themebtn{padding:14px 12px}}
 </style>
 
 <a class="skip" href="#main">Skip to content</a>
@@ -388,7 +405,8 @@ main{display:block}main:focus{outline:0}
   <div role="tabpanel" id="panel-timeline" aria-labelledby="tab-timeline" hidden>
     <p class="tl-note">Each bar runs from the start to the end of the dynasty's rule or, where the entry gives only a coinage period, of that period. Dates are approximate and follow each entry's date line. The Bhāratīya Itihāsa banners have no agreed date, so they sit in their own strip below the axis rather than at a year. Select a bar or a medallion to open its entry.</p>
     <div class="tl-key"><span><i class="e"></i>Early dynasties</span><span><i class="l"></i>Later kingdoms</span><span>Fading bar: no end date given</span></div>
-    <div class="tl-scroll" id="tl-scroll"><div class="tl" id="tl"></div></div>
+    <div class="tl-scroll" id="tl-scroll" role="region" aria-label="Timeline chart, scrolls sideways" tabindex="0"><div class="tl" id="tl"></div></div>
+    <details class="tl-list"><summary>Timeline as a list</summary><ol id="tl-ol"></ol></details>
     <p class="tl-hint" id="tl-hint" hidden>Scroll sideways to see later dates →</p>
     <section class="tl-epic" style="margin-top:28px" aria-labelledby="tl-epic-h">
       <h3 id="tl-epic-h">Bhāratīya Itihāsa banners <small>undated</small></h3>
@@ -669,7 +687,7 @@ dlg.addEventListener("scroll",e=>{ if(e.target.id!=="track") return; const t=e.t
 dlg.addEventListener("keydown",e=>{ if(e.key==="Escape"){ const l=dlg.querySelector(".lb"); if(l){ e.preventDefault(); l.remove(); } } if(e.target.id==="track"&&(e.key==="ArrowRight"||e.key==="ArrowLeft")) e.stopPropagation(); });
 
 document.addEventListener("keydown",e=>{ if(!dlg.open||rp.open||e.target.closest("input,textarea,select")) return; if(e.key==="ArrowRight"&&!e.target.closest("input")) dlg.querySelector('[data-go]:nth-of-type(2)')?.click(); if(e.key==="ArrowLeft") dlg.querySelector('[data-go]')?.click(); });
-document.addEventListener("click",e=>{ const t=e.target.closest(".card[data-id],.mini[data-id],.tl-bar[data-id]"); if(t&&!e.target.closest("a")) openEntry(t.dataset.id); });
+document.addEventListener("click",e=>{ const t=e.target.closest(".card[data-id],.mini[data-id],.tl-bar[data-id],#tl-ol [data-id]"); if(t&&!e.target.closest("a")) openEntry(t.dataset.id); });
 document.getElementById("f-motifs").addEventListener("click",e=>{ const a=e.target.closest("a"); if(!a) return; e.preventDefault(); goMotif(a.getAttribute("href").slice(7)); });
 function goMotif(m){ show("motifs"); setHash("motif-"+m); const el=document.getElementById("motif-"+m); if(el) el.scrollIntoView({block:"start"}); }
 
@@ -687,6 +705,7 @@ function renderTimeline(){
   const H=34+lanes.length*36, W=Math.max(Math.ceil(x(Y1)),Math.ceil(Math.max(...lanes))); el.style.width=W+"px"; el.style.height=H+"px";
   let grid=""; for(let y=-300;y<=1900;y+=(K<0.6?200:100)){ grid+=`<div class="tl-grid${y===0?" zero":""}" style="left:${x(y)}px"><span>${y<0?-y+" BCE":y===0?"1 CE":y+" CE"}</span></div>`; }
   el.innerHTML=grid+items.map(it=>{ const c=it.c; return `<button class="tl-bar ${c.tab}${it.open?" open":""}" type="button" data-id="${c.id}" style="left:${it.left}px;top:${30+it.lane*36}px;width:${it.w}px" title="${esc(nm(c)+" · "+c.d+" · "+c.e)}">${c.pending?"":`<img src="${c.img}?v=8" alt="" loading="lazy">`}<span style="position:relative">${esc(nm(c))}</span></button>`; }).join("");
+  document.getElementById("tl-ol").innerHTML=items.map(it=>`<li><button type="button" class="linkbtn" data-id="${it.c.id}">${esc(nm(it.c))}</button> <span>${esc(it.c.d)}</span></li>`).join("");
   document.getElementById("tl-hint").hidden = W<=avail+2;
 }
 let tlTimer; window.addEventListener("resize",()=>{ clearTimeout(tlTimer); tlTimer=setTimeout(()=>{ if(current==="timeline") renderTimeline(); },150); });
