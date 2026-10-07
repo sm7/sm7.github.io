@@ -1,0 +1,23 @@
+{
+ "id": "ikshvaku",
+ "heading": "Setting · Ayodhyā, the night before Rāma's planned consecration (Vālmīki Rāmāyaṇa 2.6)",
+ "items": [
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "The temple: Rāma's night vigil in the shrine of Viṣṇu",
+   "alt": "Hypothetical reconstruction of a vigil in a Viṣṇu shrine at Ayodhyā: a prince and his wife beside a blazing sacrificial fire, a ghee offering, and a bed of kuśa grass.",
+   "attested": "After his bath, Rāma goes with his wide-eyed wife to Nārāyaṇa (2.6.1). He lifts a vessel of ghee to his head and pours it, as prescribed, into a blazing fire as an offering to the great deity (2.6.2). He eats what remains of the offering, meditates on Nārāyaṇa, and lies down, silent and self-controlled, with Vaidehī on a well-spread bed of kuśa grass 'in the splendid shrine (āyatana) of Viṣṇu' (2.6.3–4). Near the end of the night he wakes, hears the praises of the bards (sūta, māgadha, vandin), prays at dawn twilight (2.6.5–6), bows and praises Madhusūdana, wearing spotless kṣauma cloth, and has Brahmans recite blessings; their chant, with musical instruments, fills Ayodhyā (2.6.7–8).",
+   "prescribed": "None: no second source read. Elsewhere in the same poem temples are mentioned only as places for banners (2.6.11), as shrines Rāma passes on his ride (2.17), as deserted, unadorned shrines in the silent city (2.71), and in the list of a well-kept kingdom's caityas and shrines (2.100.43); these are the same text and give no interior.",
+   "secondLabel": "Second source",
+   "conjecture": "Everything visible: the size and plan of the shrine, its materials, pillars, roof, lamps, the form of the fire-pit, whether any image stands there (the verses name no image), the look of Sītā and Rāma, Sītā's dress, the colour of the cloth Rāma wears at night (the text gives kṣauma only for the dawn), the sky outside. No later temple forms (stone tower, gopura) are in the text. The painter added a brick fire-altar, a small image in a wall niche and a view out of the door at night; none is in the text. The prince is shown twice (pouring the ghee and, in the text's later moment, lying on the kusha grass with his wife) in one picture.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Rāmāyaṇa 2.6; the poem describes no excavated site; not an archaeological finding. Period: the epic, undated; the verses are as numbered in the southern vulgate text saved from valmikiramayan.net.",
+   "original": {
+    "lang": "sa",
+    "text": "gate purohite rāmaḥ snāto niyatamānasaḥ | saha patnyā viśālākṣyā nārāyaṇamupāgamat || 2-6-1\npragṛhya śirasā pātraṃ haviṣo vidhivattadā | mahate daivatāyājyaṃ juhāva jvalitānale || 2-6-2\nśeṣaṃ ca haviṣastasya prāśyāśāsyātmanaḥ priyam | dhyāyannārāyaṇaṃ devaṃ svāstīrṇe kuśasaṃstare || 2-6-3 vāgyataḥ saha vaidehyā bhūtvā niyatamānasaḥ | śrīmatyāyatane viṣṇoḥ śiśye naravarātmajaḥ || 2-6-4",
+    "ref": "Vālmīki Rāmāyaṇa 2.6.1–4 (southern vulgate numbering), romanised text from valmikiramayan.net, saved as valmiki_ayodhya_kanda_selected-sargas.txt"
+   },
+   "img": "scenes/ikshvaku/temple.webp"
+  }
+ ]
+}

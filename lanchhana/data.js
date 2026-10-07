@@ -336,7 +336,29 @@ window.LR={
 "t": "Lakṣmaṇa sees an army approach and concludes that Bharata is coming against them.{ram} He points to its ensign: a very large, glorious, branching kovidāra tree with raised trunk, shining on the chariot.{ram} The verse names only the tree.{ram}",
 "motifs": [
 "plant"
+],
+"scenes": {
+"heading": "Setting · Ayodhyā, the night before Rāma's planned consecration (Vālmīki Rāmāyaṇa 2.6)",
+"items": [
+{
+"k": "temple",
+"label": "Temple",
+"title": "The temple: Rāma's night vigil in the shrine of Viṣṇu",
+"alt": "Hypothetical reconstruction of a vigil in a Viṣṇu shrine at Ayodhyā: a prince and his wife beside a blazing sacrificial fire, a ghee offering, and a bed of kuśa grass.",
+"attested": "After his bath, Rāma goes with his wide-eyed wife to Nārāyaṇa (2.6.1). He lifts a vessel of ghee to his head and pours it, as prescribed, into a blazing fire as an offering to the great deity (2.6.2). He eats what remains of the offering, meditates on Nārāyaṇa, and lies down, silent and self-controlled, with Vaidehī on a well-spread bed of kuśa grass 'in the splendid shrine (āyatana) of Viṣṇu' (2.6.3–4). Near the end of the night he wakes, hears the praises of the bards (sūta, māgadha, vandin), prays at dawn twilight (2.6.5–6), bows and praises Madhusūdana, wearing spotless kṣauma cloth, and has Brahmans recite blessings; their chant, with musical instruments, fills Ayodhyā (2.6.7–8).",
+"prescribed": "None: no second source read. Elsewhere in the same poem temples are mentioned only as places for banners (2.6.11), as shrines Rāma passes on his ride (2.17), as deserted, unadorned shrines in the silent city (2.71), and in the list of a well-kept kingdom's caityas and shrines (2.100.43); these are the same text and give no interior.",
+"secondLabel": "Second source",
+"conjecture": "Everything visible: the size and plan of the shrine, its materials, pillars, roof, lamps, the form of the fire-pit, whether any image stands there (the verses name no image), the look of Sītā and Rāma, Sītā's dress, the colour of the cloth Rāma wears at night (the text gives kṣauma only for the dawn), the sky outside. No later temple forms (stone tower, gopura) are in the text. The painter added a brick fire-altar, a small image in a wall niche and a view out of the door at night; none is in the text. The prince is shown twice (pouring the ghee and, in the text's later moment, lying on the kusha grass with his wife) in one picture.",
+"note": "Hypothetical reconstruction painted with an AI image model from Rāmāyaṇa 2.6; the poem describes no excavated site; not an archaeological finding. Period: the epic, undated; the verses are as numbered in the southern vulgate text saved from valmikiramayan.net.",
+"original": {
+"lang": "sa",
+"text": "gate purohite rāmaḥ snāto niyatamānasaḥ | saha patnyā viśālākṣyā nārāyaṇamupāgamat || 2-6-1\npragṛhya śirasā pātraṃ haviṣo vidhivattadā | mahate daivatāyājyaṃ juhāva jvalitānale || 2-6-2\nśeṣaṃ ca haviṣastasya prāśyāśāsyātmanaḥ priyam | dhyāyannārāyaṇaṃ devaṃ svāstīrṇe kuśasaṃstare || 2-6-3 vāgyataḥ saha vaidehyā bhūtvā niyatamānasaḥ | śrīmatyāyatane viṣṇoḥ śiśye naravarātmajaḥ || 2-6-4",
+"ref": "Vālmīki Rāmāyaṇa 2.6.1–4 (southern vulgate numbering), romanised text from valmikiramayan.net, saved as valmiki_ayodhya_kanda_selected-sargas.txt"
+},
+"img": "scenes/ikshvaku/temple.webp"
+}
 ]
+}
 },
 {
 "id": "magadha-coin",
@@ -398,6 +420,23 @@ window.LR={
 "ref": "Mahābhārata 2.19, critical-edition e-text, GRETIL mbh_02_u.htm (saved as gretil_sa_mahabharata-02-sabhaparvan_critical-edition_mbh_02_u.txt), verse numbers as in that file"
 },
 "img": "scenes/magadha/city.webp"
+},
+{
+"k": "temple",
+"label": "Hill shrine (caitya)",
+"title": "The shrine: the ancient hill peak worshipped with garlands",
+"alt": "Hypothetical reconstruction of the Magadhan hill-peak caitya, a huge ancient peak hung with garlands and revered by townspeople, with three drums beside it strewn with flowers.",
+"attested": "A lofty hill of the city is honoured by the Bārhadratha kings and by the townspeople (2.19.14). There Bṛhadratha killed the bull-like Ṛṣabha and made three drums (bherī) from his hide, set up in his city; these drums resound, strewn with divine flowers (2.19.15–16). The sacred object is called the Magadhans' 'caitya' peak, a firm, very broad, huge, ancient peak 'ever honoured with garlands' (2.19.17–18).",
+"prescribed": "None: no second source read. Faxian names no hill shrine at Girivraja.",
+"secondLabel": "Second source",
+"conjecture": "The text describes a peak, not a built temple, so NO building is painted. Everything else is the painter's: the rock's shape, how the garlands hang, the drums' size and stand, worshippers' number, dress, trees, light. The drums are legendary; the episode has the heroes break the peak, which is not shown. If the register insists on a building for 'Temple', this scene should be dropped. The painter chose the amount and colours of the garlands, the worshippers' number and the way the drums lie; no building appears.",
+"note": "Hypothetical reconstruction painted with an AI image model from Mahābhārata 2.19; not an archaeological finding; no temple building is claimed.",
+"original": {
+"lang": "sa",
+"text": "02,019.014a te 'tha dvāram anāsādya purasya girim ucchritam\n02,019.014c bārhadrathaiḥ pūjyamānaṃ tathā nagaravāsibhiḥ\n02,019.016c yatra tāḥ prāṇadan bheryo divyapuṣpāvacūrṇitāḥ\n02,019.018a sthiraṃ suvipulaṃ śṛṅgaṃ sumahāntaṃ purātanam\n02,019.018c arcitaṃ mālyadāmaiś ca satataṃ supratiṣṭhitam",
+"ref": "Mahābhārata 2.19, critical-edition e-text, GRETIL mbh_02_u.htm (saved as gretil_sa_mahabharata-02-sabhaparvan_critical-edition_mbh_02_u.txt), verse numbers as in that file"
+},
+"img": "scenes/magadha/temple.webp"
 }
 ]
 }
