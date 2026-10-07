@@ -1,7 +1,35 @@
 {
  "id": "gupta",
- "heading": "Setting · Pāṭaliputra under Candragupta II, c. 405–411 CE",
+ "heading": "Setting · Pāṭaliputra under Candragupta II, c. 405–411 CE; the city scene shows Ujjayinī as Kālidāsa's Meghadūta pictures it (his date is uncertain)",
  "items": [
+  {
+   "k": "charity",
+   "label": "Charity house",
+   "img": "scenes/gupta/charity.webp",
+   "title": "The house of charity and medicine",
+   "alt": "Hypothetical reconstruction of a charity house in Magadha: physicians and attendants caring for the poor and sick in a brick courtyard",
+   "attested": "Heads of Vaiśya families set up in the cities houses for charity and medicine; the poor, orphans, widowers, childless men, the maimed, cripples and the diseased go there and are given every help; doctors examine them and give food and medicine; they leave when better (Faxian, ch. XXVII, p. 79).",
+   "prescribed": "None: no second source read.",
+   "conjecture": "The building's form, furnishing, dress and number of people.",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "city",
+   "label": "City",
+   "title": "The city: Ujjayinī at dusk, mansions, lattices and the king's road",
+   "alt": "Hypothetical reconstruction of Ujjayinī at dusk: tall flower-scented mansions with lattice windows letting out incense smoke, pigeons asleep on rooftops, house peacocks dancing, a broad royal road.",
+   "attested": "The Cloud is told to go to Ujjayinī (also called Viśālā) of the Avantis, 'a bright piece of heaven' (Meghadūta 30, as numbered in the GRETIL e-text). Its mansions (harmya) are fragrant with flowers and marked with the red lac footprints of lovely women (32); smoke of hair-perfuming incense streams out of their lattice windows, and pet peacocks of the houses dance (32); pigeons sleep on the roof-chambers of houses (38). Women of the city have quick-glancing eyes (27). At night the king's road is blocked with darkness and women go to their lovers along it (37). The Śiprā breeze moves over the city (31), and a temple of Mahākāla (Śiva) stands there (33–35).",
+   "prescribed": "Faxian (Legge, p. 79) calls the cities of Magadha 'the greatest of all in the Middle Kingdom', their people rich and prosperous, and describes stone halls with carved, inlaid work at Pāṭaliputra c. 405–411. His city is a different city; he gives no Ujjayinī detail. Use only as general Gupta-age corroboration of rich towns with carved-stone halls.",
+   "secondLabel": "Second source",
+   "conjecture": "Everything built: the mansions' storeys, material, plaster or brick, roof forms, window lattice patterns, colours, the road's width and paving, walls, gates, the Śiprā river, trees, dress. The poem gives no wall or gate and no size; its Mahākāla temple is in the card's temple scene and is not drawn here. Date: Kālidāsa is placed in the Gupta age by tradition only, and Ujjayinī lay in Malwa, not Magadha. The sunset sky, the number of peacocks and pigeons and the street's paving are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Kālidāsa's Meghadūta (GRETIL e-text) and Faxian; not an archaeological finding. Poetry, not an eyewitness account.",
+   "original": {
+    "lang": "sa",
+    "text": "jālodgīrṇair upacitavapuḥ keśasaṃskāradhūpair bandhuprītyā bhavanaśikhibhir dattanṛttopahāraḥ \nharmyeṣv asyāḥ kusumasurabhiṣv adhvakhinnāntarātmā nītvā rātriṃ lalitavanitāpādarāgāṅkiteṣu // KMgD_32\ntāṃ kasyāṃ cid bhavanavalabhau suptapārāvatāyāṃ nītvā rātriṃ ciravilasanāt khinnavidyutkalatraḥ \ndṛṣṭe sūrye punar api bhavān vāhayed adhvaśeṣaṃ mandāyante na khalu suhṛdām abhyupetārthakṛtyāḥ // KMgD_38",
+    "ref": "Kālidāsa, Meghadūta, verses numbered KMgD_32 and KMgD_38 in the GRETIL e-text (saved as gretil_sa_kAlidAsa-meghadUta.txt)"
+   },
+   "img": "scenes/gupta/city.webp"
+  },
   {
    "k": "street",
    "label": "Street",
@@ -22,17 +50,6 @@
    "attested": "By the side of the tope of Aśoka a very grand and beautiful Mahāyāna monastery, and a Hīnayāna one, with 600–700 monks together; the great tope more than 3 li south of the city with a Buddha footprint and a vihāra before it; the palace halls with carved and inlaid stone, standing 'now as of old' (Faxian, ch. XXVII, pp. 77–80).",
    "prescribed": "None: no second source read.",
    "conjecture": "The tope's size and dome, monastery plans and materials, the lions, the vihāra's form.",
-   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
-  },
-  {
-   "k": "charity",
-   "label": "Charity house",
-   "img": "scenes/gupta/charity.webp",
-   "title": "The house of charity and medicine",
-   "alt": "Hypothetical reconstruction of a charity house in Magadha: physicians and attendants caring for the poor and sick in a brick courtyard",
-   "attested": "Heads of Vaiśya families set up in the cities houses for charity and medicine; the poor, orphans, widowers, childless men, the maimed, cripples and the diseased go there and are given every help; doctors examine them and give food and medicine; they leave when better (Faxian, ch. XXVII, p. 79).",
-   "prescribed": "None: no second source read.",
-   "conjecture": "The building's form, furnishing, dress and number of people.",
    "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
   }
  ]

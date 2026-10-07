@@ -422,6 +422,23 @@ window.LR={
 "img": "scenes/magadha/city.webp"
 },
 {
+"k": "street",
+"label": "Bazaar",
+"title": "The street: the royal road between food and garland shops",
+"alt": "Hypothetical reconstruction of a royal road in Girivraja with shops of eatables and garlands, a garland-seller, and three tall strangers in coloured cloth wearing garlands.",
+"attested": "Kṛṣṇa, Bhīma and Arjuna enter the city and see the supreme splendour of its shops of eatables and garlands, rich, 'endowed with all good things' and full of all that is desired (2.19.22). They walk along the royal road in that street, seeing the wealth (2.19.23). They take garlands from the garland-makers (2.19.24). The three wear coloured (not white) cloth, garlands and polished earrings (2.19.24c); they are described as bare-armed, unarmed, in the vow of Snātakas (2.19.21).",
+"prescribed": "None: no second source read for a Magadhan bazaar.",
+"secondLabel": "Second source",
+"conjecture": "The shops' structure, awnings, goods beyond food and garlands, the road's width and paving, houses, townspeople and their dress, vessels, carts. Only the three strangers' dress is in the text, and it is described by one word (virāga, 'dyed/coloured'); the actual colours are the painter's. The painted elephant, the distant gateway and the colour of each cloth are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from Mahābhārata 2.19; not an archaeological finding.",
+"original": {
+"lang": "sa",
+"text": "02,019.022a bhakṣyamālyāpaṇānāṃ ca dadṛśuḥ śriyam uttamām\n02,019.022c sphītāṃ sarvaguṇopetāṃ sarvakāmasamṛddhinīm\n02,019.023a tāṃ tu dṛṣṭvā samṛddhiṃ te vīthyāṃ tasyāṃ narottamāḥ\n02,019.023c rājamārgeṇa gacchantaḥ kṛṣṇabhīmadhanaṃjayāḥ\n02,019.024a balād gṛhītvā mālyāni mālākārān mahābalāḥ\n02,019.024c virāgavasanāḥ sarve sragviṇo mṛṣṭakuṇḍalāḥ",
+"ref": "Mahābhārata 2.19, critical-edition e-text, GRETIL mbh_02_u.htm (saved as gretil_sa_mahabharata-02-sabhaparvan_critical-edition_mbh_02_u.txt), verse numbers as in that file"
+},
+"img": "scenes/magadha/street.webp"
+},
+{
 "k": "temple",
 "label": "Hill shrine (caitya)",
 "title": "The shrine: the ancient hill peak worshipped with garlands",
@@ -996,8 +1013,36 @@ window.LR={
 },
 "repaint": "Garuḍa, the divine eagle of Viṣṇu, facing front with both wings spread wide and a bird's hooked beak, flanked by a small sun on one side and a crescent moon on the other, as on a Gupta royal seal. No serpent, no crown.",
 "scenes": {
-"heading": "Setting · Pāṭaliputra under Candragupta II, c. 405–411 CE",
+"heading": "Setting · Pāṭaliputra under Candragupta II, c. 405–411 CE; the city scene shows Ujjayinī as Kālidāsa's Meghadūta pictures it (his date is uncertain)",
 "items": [
+{
+"k": "charity",
+"label": "Charity house",
+"img": "scenes/gupta/charity.webp",
+"title": "The house of charity and medicine",
+"alt": "Hypothetical reconstruction of a charity house in Magadha: physicians and attendants caring for the poor and sick in a brick courtyard",
+"attested": "Heads of Vaiśya families set up in the cities houses for charity and medicine; the poor, orphans, widowers, childless men, the maimed, cripples and the diseased go there and are given every help; doctors examine them and give food and medicine; they leave when better (Faxian, ch. XXVII, p. 79).",
+"prescribed": "None: no second source read.",
+"conjecture": "The building's form, furnishing, dress and number of people.",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "city",
+"label": "City",
+"title": "The city: Ujjayinī at dusk, mansions, lattices and the king's road",
+"alt": "Hypothetical reconstruction of Ujjayinī at dusk: tall flower-scented mansions with lattice windows letting out incense smoke, pigeons asleep on rooftops, house peacocks dancing, a broad royal road.",
+"attested": "The Cloud is told to go to Ujjayinī (also called Viśālā) of the Avantis, 'a bright piece of heaven' (Meghadūta 30, as numbered in the GRETIL e-text). Its mansions (harmya) are fragrant with flowers and marked with the red lac footprints of lovely women (32); smoke of hair-perfuming incense streams out of their lattice windows, and pet peacocks of the houses dance (32); pigeons sleep on the roof-chambers of houses (38). Women of the city have quick-glancing eyes (27). At night the king's road is blocked with darkness and women go to their lovers along it (37). The Śiprā breeze moves over the city (31), and a temple of Mahākāla (Śiva) stands there (33–35).",
+"prescribed": "Faxian (Legge, p. 79) calls the cities of Magadha 'the greatest of all in the Middle Kingdom', their people rich and prosperous, and describes stone halls with carved, inlaid work at Pāṭaliputra c. 405–411. His city is a different city; he gives no Ujjayinī detail. Use only as general Gupta-age corroboration of rich towns with carved-stone halls.",
+"secondLabel": "Second source",
+"conjecture": "Everything built: the mansions' storeys, material, plaster or brick, roof forms, window lattice patterns, colours, the road's width and paving, walls, gates, the Śiprā river, trees, dress. The poem gives no wall or gate and no size; its Mahākāla temple is in the card's temple scene and is not drawn here. Date: Kālidāsa is placed in the Gupta age by tradition only, and Ujjayinī lay in Malwa, not Magadha. The sunset sky, the number of peacocks and pigeons and the street's paving are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from Kālidāsa's Meghadūta (GRETIL e-text) and Faxian; not an archaeological finding. Poetry, not an eyewitness account.",
+"original": {
+"lang": "sa",
+"text": "jālodgīrṇair upacitavapuḥ keśasaṃskāradhūpair bandhuprītyā bhavanaśikhibhir dattanṛttopahāraḥ \nharmyeṣv asyāḥ kusumasurabhiṣv adhvakhinnāntarātmā nītvā rātriṃ lalitavanitāpādarāgāṅkiteṣu // KMgD_32\ntāṃ kasyāṃ cid bhavanavalabhau suptapārāvatāyāṃ nītvā rātriṃ ciravilasanāt khinnavidyutkalatraḥ \ndṛṣṭe sūrye punar api bhavān vāhayed adhvaśeṣaṃ mandāyante na khalu suhṛdām abhyupetārthakṛtyāḥ // KMgD_38",
+"ref": "Kālidāsa, Meghadūta, verses numbered KMgD_32 and KMgD_38 in the GRETIL e-text (saved as gretil_sa_kAlidAsa-meghadUta.txt)"
+},
+"img": "scenes/gupta/city.webp"
+},
 {
 "k": "street",
 "label": "Street",
@@ -1018,17 +1063,6 @@ window.LR={
 "attested": "By the side of the tope of Aśoka a very grand and beautiful Mahāyāna monastery, and a Hīnayāna one, with 600–700 monks together; the great tope more than 3 li south of the city with a Buddha footprint and a vihāra before it; the palace halls with carved and inlaid stone, standing 'now as of old' (Faxian, ch. XXVII, pp. 77–80).",
 "prescribed": "None: no second source read.",
 "conjecture": "The tope's size and dome, monastery plans and materials, the lions, the vihāra's form.",
-"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
-},
-{
-"k": "charity",
-"label": "Charity house",
-"img": "scenes/gupta/charity.webp",
-"title": "The house of charity and medicine",
-"alt": "Hypothetical reconstruction of a charity house in Magadha: physicians and attendants caring for the poor and sick in a brick courtyard",
-"attested": "Heads of Vaiśya families set up in the cities houses for charity and medicine; the poor, orphans, widowers, childless men, the maimed, cripples and the diseased go there and are given every help; doctors examine them and give food and medicine; they leave when better (Faxian, ch. XXVII, p. 79).",
-"prescribed": "None: no second source read.",
-"conjecture": "The building's form, furnishing, dress and number of people.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 }
 ]
@@ -1922,7 +1956,29 @@ window.LR={
 "credit": "Unknown author · Public domain",
 "licurl": null
 },
-"repaint": "Garuḍa flying to the right in HUMAN form: a crowned human figure with a beak-like nose, wings springing from the shoulders, holding a hooded cobra in his left hand and raising his right hand to strike it, as engraved on Paramāra copper plates."
+"repaint": "Garuḍa flying to the right in HUMAN form: a crowned human figure with a beak-like nose, wings springing from the shoulders, holding a hooded cobra in his left hand and raising his right hand to strike it, as engraved on Paramāra copper plates.",
+"scenes": {
+"heading": "Setting · Ujjayini (Malwa), as a Paramara court poet describes it, c. 1000-1010 CE",
+"items": [
+{
+"k": "city",
+"label": "City",
+"title": "Ujjayini: the moated city of lime-washed and blue-stone houses",
+"alt": "Hypothetical reconstruction of Ujjayini as described in Padmagupta's Navasahasankacarita, canto 1: a moated city of whitewashed and dark-stone houses with red pennants.",
+"attested": "Padmagupta, Navasahasankacarita (court poem on the Paramara king Sindhuraja, written about 1005 CE), canto 1, 'ujjayinivarnanam', verses 17-37, Sanskrit text read in the GRETIL file (my own paraphrase; I consulted no published translation). The city is called Ujjayini and likened to Amaravati; the poem names the legendary king Vikramaditya as its ruler (1.17). A moat (parikha) round the city is tawny with lotus pollen and swans, 'like a golden girdle' on its hips (1.18). Houses are bright with thick lime-wash at every step (sandra-sudha, 1.20). Pleasure-houses have strings of hanging pearls (1.21). Rows of windows are of white stone with golden lotus ornaments (1.23). Houses of dark blue stone have red pennants (vaijayanti) fluttering in the wind (1.24). Women's houses have pennants and gold bells that tinkle constantly (1.29). Dark aguru incense smoke rises (1.30). Courtyards glow red with ruby light (1.36). A rampart (prakara) is mentioned (1.19).",
+"prescribed": "No second source read. Merutunga's Prabandhacintamani (Tawney) for Dhara/Malwa was on my list but archive.org went offline before I could re-open it, so nothing from it is used here.",
+"secondLabel": "Second source",
+"conjecture": "All of it is poetic praise in the kavya manner (Ujjayini is likened to heaven, windows to lotus-chains), so stones and metals are partly hyperbole: paint restrained, real-looking lime-wash, dark stone and red cloth pennants, not glowing jewels. Not given by the text and left to the painter: the street plan, the height and roofs of the houses, the rampart's form, trees, the people and their dress, the sky and season. Period note: the text describes Ujjayini in the legendary time of Vikramaditya in a poem written for the Paramara court c. 1005; the Paramara capital in the same period was Dhara, so this is an idealised Ujjayini and not a Dhara scene. The crenellated rampart, the round bastions and the bridge over the moat are the painter's; the text names only the moat, swans, lotus pollen, white and dark houses, windows with golden lotus ornaments and red pennants.",
+"note": "Hypothetical reconstruction painted with an AI image model from Padmagupta's Navasahasankacarita (Sanskrit, GRETIL); not an archaeological finding.",
+"original": {
+"lang": "sa",
+"text": "āmañjuguñjatkalahaṃsapaṅktivikasvarāmbhojarajaḥpiśaṅgā \nābhāti yasyāḥ parikhā nitambe saśabdajambūnadamekhaleva // PNc_1.18\n\npade pade sāndrasudhojjvalāni gṛhāṇi yā nākasadāṃ bibharti \nabhyudgatānīva phaṇīndralokam āpūrya tadbhūmibhṛtāṃ yaśāṃsi // PNc_1.20\n\nyatrānanair eṇādṛśām abhikhyāṃ sitāśmavātāyanapaṅktir eti \nambhoruhair ujjvalahemakḷptair ākāśagaṅgājalaveṇikeva // PNc_1.23\n\nvidhūyamānāḥ pavanena yasyāṃ nīlāśmaveśmāruṇavaijayantyaḥ \nbhinnāñjanaśyāmaghanodgatānāṃ taḍillatānāṃ dyutim āvahanti // PNc_1.24",
+"ref": "Padmagupta, Navasahasankacarita 1.18, 1.20, 1.23, 1.24; GRETIL plain-text file gretil_sa_padmagupta-navasAhasAGkacarita.txt (saved in sources/originals)"
+},
+"img": "scenes/paramara/city.webp"
+}
+]
+}
 },
 {
 "id": "hoysala",

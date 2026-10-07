@@ -1,0 +1,23 @@
+{
+ "id": "paramara",
+ "heading": "Setting · Ujjayini (Malwa), as a Paramara court poet describes it, c. 1000-1010 CE",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "title": "Ujjayini: the moated city of lime-washed and blue-stone houses",
+   "alt": "Hypothetical reconstruction of Ujjayini as described in Padmagupta's Navasahasankacarita, canto 1: a moated city of whitewashed and dark-stone houses with red pennants.",
+   "attested": "Padmagupta, Navasahasankacarita (court poem on the Paramara king Sindhuraja, written about 1005 CE), canto 1, 'ujjayinivarnanam', verses 17-37, Sanskrit text read in the GRETIL file (my own paraphrase; I consulted no published translation). The city is called Ujjayini and likened to Amaravati; the poem names the legendary king Vikramaditya as its ruler (1.17). A moat (parikha) round the city is tawny with lotus pollen and swans, 'like a golden girdle' on its hips (1.18). Houses are bright with thick lime-wash at every step (sandra-sudha, 1.20). Pleasure-houses have strings of hanging pearls (1.21). Rows of windows are of white stone with golden lotus ornaments (1.23). Houses of dark blue stone have red pennants (vaijayanti) fluttering in the wind (1.24). Women's houses have pennants and gold bells that tinkle constantly (1.29). Dark aguru incense smoke rises (1.30). Courtyards glow red with ruby light (1.36). A rampart (prakara) is mentioned (1.19).",
+   "prescribed": "No second source read. Merutunga's Prabandhacintamani (Tawney) for Dhara/Malwa was on my list but archive.org went offline before I could re-open it, so nothing from it is used here.",
+   "secondLabel": "Second source",
+   "conjecture": "All of it is poetic praise in the kavya manner (Ujjayini is likened to heaven, windows to lotus-chains), so stones and metals are partly hyperbole: paint restrained, real-looking lime-wash, dark stone and red cloth pennants, not glowing jewels. Not given by the text and left to the painter: the street plan, the height and roofs of the houses, the rampart's form, trees, the people and their dress, the sky and season. Period note: the text describes Ujjayini in the legendary time of Vikramaditya in a poem written for the Paramara court c. 1005; the Paramara capital in the same period was Dhara, so this is an idealised Ujjayini and not a Dhara scene. The crenellated rampart, the round bastions and the bridge over the moat are the painter's; the text names only the moat, swans, lotus pollen, white and dark houses, windows with golden lotus ornaments and red pennants.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Padmagupta's Navasahasankacarita (Sanskrit, GRETIL); not an archaeological finding.",
+   "original": {
+    "lang": "sa",
+    "text": "āmañjuguñjatkalahaṃsapaṅktivikasvarāmbhojarajaḥpiśaṅgā \nābhāti yasyāḥ parikhā nitambe saśabdajambūnadamekhaleva // PNc_1.18\n\npade pade sāndrasudhojjvalāni gṛhāṇi yā nākasadāṃ bibharti \nabhyudgatānīva phaṇīndralokam āpūrya tadbhūmibhṛtāṃ yaśāṃsi // PNc_1.20\n\nyatrānanair eṇādṛśām abhikhyāṃ sitāśmavātāyanapaṅktir eti \nambhoruhair ujjvalahemakḷptair ākāśagaṅgājalaveṇikeva // PNc_1.23\n\nvidhūyamānāḥ pavanena yasyāṃ nīlāśmaveśmāruṇavaijayantyaḥ \nbhinnāñjanaśyāmaghanodgatānāṃ taḍillatānāṃ dyutim āvahanti // PNc_1.24",
+    "ref": "Padmagupta, Navasahasankacarita 1.18, 1.20, 1.23, 1.24; GRETIL plain-text file gretil_sa_padmagupta-navasAhasAGkacarita.txt (saved in sources/originals)"
+   },
+   "img": "scenes/paramara/city.webp"
+  }
+ ]
+}

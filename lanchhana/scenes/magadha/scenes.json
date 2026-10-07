@@ -20,6 +20,23 @@
    "img": "scenes/magadha/city.webp"
   },
   {
+   "k": "street",
+   "label": "Bazaar",
+   "title": "The street: the royal road between food and garland shops",
+   "alt": "Hypothetical reconstruction of a royal road in Girivraja with shops of eatables and garlands, a garland-seller, and three tall strangers in coloured cloth wearing garlands.",
+   "attested": "Kṛṣṇa, Bhīma and Arjuna enter the city and see the supreme splendour of its shops of eatables and garlands, rich, 'endowed with all good things' and full of all that is desired (2.19.22). They walk along the royal road in that street, seeing the wealth (2.19.23). They take garlands from the garland-makers (2.19.24). The three wear coloured (not white) cloth, garlands and polished earrings (2.19.24c); they are described as bare-armed, unarmed, in the vow of Snātakas (2.19.21).",
+   "prescribed": "None: no second source read for a Magadhan bazaar.",
+   "secondLabel": "Second source",
+   "conjecture": "The shops' structure, awnings, goods beyond food and garlands, the road's width and paving, houses, townspeople and their dress, vessels, carts. Only the three strangers' dress is in the text, and it is described by one word (virāga, 'dyed/coloured'); the actual colours are the painter's. The painted elephant, the distant gateway and the colour of each cloth are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Mahābhārata 2.19; not an archaeological finding.",
+   "original": {
+    "lang": "sa",
+    "text": "02,019.022a bhakṣyamālyāpaṇānāṃ ca dadṛśuḥ śriyam uttamām\n02,019.022c sphītāṃ sarvaguṇopetāṃ sarvakāmasamṛddhinīm\n02,019.023a tāṃ tu dṛṣṭvā samṛddhiṃ te vīthyāṃ tasyāṃ narottamāḥ\n02,019.023c rājamārgeṇa gacchantaḥ kṛṣṇabhīmadhanaṃjayāḥ\n02,019.024a balād gṛhītvā mālyāni mālākārān mahābalāḥ\n02,019.024c virāgavasanāḥ sarve sragviṇo mṛṣṭakuṇḍalāḥ",
+    "ref": "Mahābhārata 2.19, critical-edition e-text, GRETIL mbh_02_u.htm (saved as gretil_sa_mahabharata-02-sabhaparvan_critical-edition_mbh_02_u.txt), verse numbers as in that file"
+   },
+   "img": "scenes/magadha/street.webp"
+  },
+  {
    "k": "temple",
    "label": "Hill shrine (caitya)",
    "title": "The shrine: the ancient hill peak worshipped with garlands",
