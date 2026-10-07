@@ -1,0 +1,18 @@
+{
+ "id": "satavahana",
+ "heading": "Setting · Mount Tiranhu (Trirasmi) at Nasik, Govardhana district: records of Siri-Sātakaṇi Gotamīputa (his years 18, 24) and Siri-Pulumāvi (his years 19, 22); no calendar date is given",
+ "items": [
+  {
+   "k": "temple",
+   "label": "Cave monastery",
+   "title": "The monastery: the Queen's Cave on Mount Tiranhu",
+   "alt": "Hypothetical reconstruction of a Buddhist cave monastery cut near the top of a hill at Nasik, with monks of the Bhadāyaṇīya school outside it and fields below.",
+   "attested": "In regnal year 19 of Siri-Pulumāvi, the great queen Gotamī Balasiri, mother of Siri-Sātakaṇi Gotamīputa, had a cave made on the top of the Tiranhu mountain, 'similar to the top of the Kailāsa', and made it 'quite equal to the divine mansions'; she gave it to the sangha of monks, the Bhadāyaṇīya fraternity, and her grandson granted the village Pisājipadaka on the south-west side of the mountain for its adornment (Nasik no. 2, EI 8 pp. 60–62 with Senart's translation). Later the king's order (no. 3, charter delivered in year 22) gives the village of Sāmalipada to the Bhadāyaṇīya monks 'dwelling in the Queen's Cave' for its upkeep, in exchange for the village Sudasana, and names the Śramaṇas of Dhanamkata who dwell on mount Tiranhu as the givers of the first village (EI 8 no. 3).",
+   "prescribed": "Nasik no. 4 and no. 5 (orders of Gautamīputra, years 18 and 24) give fields to the 'Tekirasi' ascetics and to mendicants 'dwelling in the cave which is a pious gift of ours' on mount Tiranhu (EI 8). They confirm the hill-top monastic community, not its look.",
+   "secondLabel": "Second source",
+   "conjecture": "The cave's form: facade, pillars, cells, carvings, painted plaster, the verandah, the approach, the hillside itself, the colours. The text says 'cave' (leṇa) 'made', not how; reading it as rock-cut is the painter's. Monks' dress and number, the donors, the sky. The 'Kailāsa' and 'divine mansions' phrases are praise, not description. The painted cave is deliberately plain; the real Nasik cave of Gotami Balasiri has a carved facade and the painter did not reproduce it. The path, village and plain are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from the Nasik cave inscriptions (Epigraphia Indica 8); not an archaeological finding.",
+   "img": "scenes/satavahana/temple.webp"
+  }
+ ]
+}

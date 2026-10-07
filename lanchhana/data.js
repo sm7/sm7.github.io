@@ -891,6 +891,23 @@ window.LR={
 "file": "https://commons.wikimedia.org/wiki/File:Elephant_type_Coin_of_Pulmavi,_Satvahan_Period,_Bhopal_State_Museum.jpg",
 "credit": "SpeakingArch · CC BY-SA 4.0",
 "licurl": "https://creativecommons.org/licenses/by-sa/4.0"
+},
+"scenes": {
+"heading": "Setting · Mount Tiranhu (Trirasmi) at Nasik, Govardhana district: records of Siri-Sātakaṇi Gotamīputa (his years 18, 24) and Siri-Pulumāvi (his years 19, 22); no calendar date is given",
+"items": [
+{
+"k": "temple",
+"label": "Cave monastery",
+"title": "The monastery: the Queen's Cave on Mount Tiranhu",
+"alt": "Hypothetical reconstruction of a Buddhist cave monastery cut near the top of a hill at Nasik, with monks of the Bhadāyaṇīya school outside it and fields below.",
+"attested": "In regnal year 19 of Siri-Pulumāvi, the great queen Gotamī Balasiri, mother of Siri-Sātakaṇi Gotamīputa, had a cave made on the top of the Tiranhu mountain, 'similar to the top of the Kailāsa', and made it 'quite equal to the divine mansions'; she gave it to the sangha of monks, the Bhadāyaṇīya fraternity, and her grandson granted the village Pisājipadaka on the south-west side of the mountain for its adornment (Nasik no. 2, EI 8 pp. 60–62 with Senart's translation). Later the king's order (no. 3, charter delivered in year 22) gives the village of Sāmalipada to the Bhadāyaṇīya monks 'dwelling in the Queen's Cave' for its upkeep, in exchange for the village Sudasana, and names the Śramaṇas of Dhanamkata who dwell on mount Tiranhu as the givers of the first village (EI 8 no. 3).",
+"prescribed": "Nasik no. 4 and no. 5 (orders of Gautamīputra, years 18 and 24) give fields to the 'Tekirasi' ascetics and to mendicants 'dwelling in the cave which is a pious gift of ours' on mount Tiranhu (EI 8). They confirm the hill-top monastic community, not its look.",
+"secondLabel": "Second source",
+"conjecture": "The cave's form: facade, pillars, cells, carvings, painted plaster, the verandah, the approach, the hillside itself, the colours. The text says 'cave' (leṇa) 'made', not how; reading it as rock-cut is the painter's. Monks' dress and number, the donors, the sky. The 'Kailāsa' and 'divine mansions' phrases are praise, not description. The painted cave is deliberately plain; the real Nasik cave of Gotami Balasiri has a carved facade and the painter did not reproduce it. The path, village and plain are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Nasik cave inscriptions (Epigraphia Indica 8); not an archaeological finding.",
+"img": "scenes/satavahana/temple.webp"
+}
+]
 }
 },
 {
@@ -953,7 +970,7 @@ window.LR={
 "prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: the coin reverse of the Western Kshatrapas in gold relief: a hill of three arches stacked like a pyramid (one arch on top of two), a small crescent on the top arch, a wavy river line beneath, a small rayed sun to the left and a small crescent moon to the right. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
 "repaint": "the Western Kṣatrapa coin reverse: a hill of three arches stacked like a pyramid (one arch on top of two), with a wavy line beneath it, a small crescent moon to the LEFT of the hill and a small rayed sun to the RIGHT, in silver relief. No crescent on top of the hill.",
 "scenes": {
-"heading": "Setting · The Sudarśana lake at Girinagara (Junagadh), Saka year 72 (c. 150 CE)",
+"heading": "Setting · The Sudarśana lake at Girinagara (Junagadh), Saka year 72 (c. 150 CE); the port and monastery scenes show Barygaza (Periplus, 1st century CE) and Nahapāna's son-in-law's Nasik cave (c. 120 CE), earlier than that date",
 "items": [
 {
 "k": "breach",
@@ -983,6 +1000,30 @@ window.LR={
 "conjecture": "How the masons worked, their tools and dress, the stone blocks and the form of the conduit are not in the text. The lake and dam are shown as a plain stone-faced embankment; no gate, temple or building is drawn because none is described.",
 "secondLabel": "Second source",
 "note": "Hypothetical reconstruction painted with an AI image model from a translated inscription; not an archaeological finding."
+},
+{
+"k": "city",
+"label": "City port",
+"title": "The port: Barygaza on its tidal river",
+"alt": "Hypothetical reconstruction of the river port of Barygaza: moored trading vessels in tidal basins, pilot boats, a waterfront with quadrangular rest-houses and bales of cloth.",
+"attested": "Barygaza lies on its river, about 300 stadia up from the mouth, reached only by native pilots in the king's service in large boats called trappaga and cotymba, who tow ships between 'stations' up with the flood and lie through the ebb 'at anchorages and in basins' (Periplus §§43–44). The tide is so great that the river bottom is suddenly seen and ships are left on their sides unless propped (§45). Greek-lettered drachmae of Apollodotus and Menander are still current there (§47); imports include wine, copper, tin, lead, coral, topaz, thin clothing, 'bright-colored girdles a cubit wide', storax, glass, gold and silver coin; for the king, silver vessels, singing boys, maidens, fine wines (§49); exports include ivory, agate and carnelian, cotton cloth of all kinds, silk cloth, yarn, pepper (§49) (Schoff 1912). Uṣavadāta's inscription says he gave 'the shelter of quadrangular rest-houses' at Bharukachha, Dasapura, Govardhana and Sorparaga, made wells, tanks and gardens, and set up free ferries by boat on the rivers Ibā, Pārada, Damaṇa, Tāpī, Karabeṇā and Dahanukā (Nasik no. 10, EI 8 p. 78–79).",
+"prescribed": "The Nasik inscription (a different text, from the same Kshatrapa ruler's family) supplies the rest-houses and ferries; the Periplus is the primary source for the port.",
+"secondLabel": "Second source",
+"conjecture": "The look of the city: house forms, quay walls, warehouses, the rest-house's plan, dress, ship types (the Periplus names only the pilots' boats; their form is unknown), the river's width and banks, the weather. The text says nothing of walls or a palace. The tidal bore of §46 is not painted. The ships' rigs, the size of the harbour and the long waterfront building are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Periplus (Schoff 1912) and Nasik no. 10 (Epigraphia Indica 8); not an archaeological finding.",
+"img": "scenes/kshatrapa/city.webp"
+},
+{
+"k": "temple",
+"label": "Cave monastery",
+"title": "The monastery: Uṣavadāta's cave at Govardhana (Nasik)",
+"alt": "Hypothetical reconstruction of a rock-cut monastery on the Trirasmi hills at Nasik with a verandah, small cells and water cisterns, and monks of several kinds receiving cloth.",
+"attested": "Uṣavadāta, son-in-law of the Kshaharāta kshatrapa Nahapāna, 'in the Trirasmi hills at Govardhana' had 'this cave to be made and these cisterns' (Nasik no. 10, in the veranda of Cave 10, EI 8 pp. 78–79). A cell over the doorway of the left cell is the gift of his wife Dakhamitrā, Nahapāna's daughter (no. 11). In year 42, in Vesākha, he gave the cave to the sangha of the four quarters, with a perpetual endowment of 3000 kārṣāpaṇas placed in two weavers' guilds at Govardhana (2000 and 1000), the interest to pay cloth-money and a monthly stipend to monks 'of any sect and any origin' living in the cave; he also gave 8000 coconut stems at Chikhalapadra in the Kāpura district; all was proclaimed and registered at the town's hall and record office (no. 12, EI 8 pp. 82–83). He also bought a field for 4000 kārṣāpaṇas on the north-west boundary of the town, from which food for all monks of the cave is drawn (no. 10).",
+"prescribed": "Nasik no. 11 and no. 12 are separate inscriptions on the same site, confirming the veranda, cells, doorway, cisterns and the monks' cloth. The weavers' guilds of Govardhana are also named in no. 12.",
+"secondLabel": "Second source",
+"conjecture": "The cave's form: that it is rock-cut, its facade, pillars, cell size, number of cells, the verandah's depth, the cisterns' shape, the hillside, colours, monks' number and dress (the texts give only 'cloth money'), the weavers' presence. The inscription says 'cave', 'cell', 'veranda', 'cisterns'; the painter shapes them. The cave's exact plan, the number of cells and pillars and the valley view are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Nasik cave inscriptions nos. 10–12 (Epigraphia Indica 8); not an archaeological finding.",
+"img": "scenes/kshatrapa/temple.webp"
 }
 ]
 }
