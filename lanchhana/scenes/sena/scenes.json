@@ -18,6 +18,18 @@
     "ref": "Dhoyi, Pavanaduta 37, 38, 49, GRETIL file gretil_sa_dhoyI-pavanadUta.txt (saved in sources/originals); the '+' word-boundary markers of the file are replaced by spaces here, the text is otherwise unchanged"
    },
    "img": "scenes/sena/city.webp"
+  },
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "Pradyumnesvara at Deopara: a very tall temple with a golden finial and a lake before it",
+   "alt": "Hypothetical reconstruction of Vijayasena's Pradyumnesvara temple at Deopara as praised in the Deopara inscription: a very tall temple with a golden cupola, a lake in front.",
+   "attested": "Deopara inscription of Vijayasena (Sena king, c. late 11th to mid 12th century; the pages I read do not give a date for the inscription), Epigraphia Indica vol. 1, pp. 305-315 (the inscription is numbered just before the Sunak grant, no. XXXVI), translation as printed there. v.25: the king builds lofty temples and digs extensive lakes. v.26: he built a high temple of Pradyumnesvara, so tall that its base fills the quarters and its middle is clothed by the sky. v.28: a golden cupola was placed by the king on the temple. v.29: before the temple of Siva he dug a lake whose water is streaked with jewel-light and to which bees come for the musk of the town women who bathe there. v.31: the image of the god was dressed with variegated silk instead of elephant hide, a large pearl string, sandal-powder instead of ashes, a string of sapphires and emeralds in place of snakes. A footnote of the editor takes Pradyumnesvara to be a Hari-Hara (Vishnu-Siva) form. The record was engraved by Kanaka Salapani of the guild of Varendra artists.",
+   "prescribed": "No second text read for this temple.",
+   "secondLabel": "Second source",
+   "conjecture": "The text gives height, a golden cupola on top, a lake in front, and an adorned image. It does not give the plan, the building material (stone, brick or other), the shape of the tower, doors, sculpture or the number of storeys; all of that is for the painter. Height is poetic exaggeration (the tower touches the sky, blocks the sun's path), so paint a tall tower but a believable one. The 'golden cupola' may be a gilded pinnacle; its exact form is conjecture. Figures: only town women bathing in the lake are mentioned; their dress is conjecture. The tower's tapering outline, the stone platform, the trees and the number of women are the painter's; the bees named by the text are not visible.",
+   "note": "Hypothetical reconstruction painted with an AI image model from the Deopara inscription of Vijayasena (EI 1); not an archaeological finding.",
+   "img": "scenes/sena/temple.webp"
   }
  ]
 }

@@ -2170,6 +2170,18 @@ window.LR={
 "ref": "Dhoyi, Pavanaduta 37, 38, 49, GRETIL file gretil_sa_dhoyI-pavanadUta.txt (saved in sources/originals); the '+' word-boundary markers of the file are replaced by spaces here, the text is otherwise unchanged"
 },
 "img": "scenes/sena/city.webp"
+},
+{
+"k": "temple",
+"label": "Temple",
+"title": "Pradyumnesvara at Deopara: a very tall temple with a golden finial and a lake before it",
+"alt": "Hypothetical reconstruction of Vijayasena's Pradyumnesvara temple at Deopara as praised in the Deopara inscription: a very tall temple with a golden cupola, a lake in front.",
+"attested": "Deopara inscription of Vijayasena (Sena king, c. late 11th to mid 12th century; the pages I read do not give a date for the inscription), Epigraphia Indica vol. 1, pp. 305-315 (the inscription is numbered just before the Sunak grant, no. XXXVI), translation as printed there. v.25: the king builds lofty temples and digs extensive lakes. v.26: he built a high temple of Pradyumnesvara, so tall that its base fills the quarters and its middle is clothed by the sky. v.28: a golden cupola was placed by the king on the temple. v.29: before the temple of Siva he dug a lake whose water is streaked with jewel-light and to which bees come for the musk of the town women who bathe there. v.31: the image of the god was dressed with variegated silk instead of elephant hide, a large pearl string, sandal-powder instead of ashes, a string of sapphires and emeralds in place of snakes. A footnote of the editor takes Pradyumnesvara to be a Hari-Hara (Vishnu-Siva) form. The record was engraved by Kanaka Salapani of the guild of Varendra artists.",
+"prescribed": "No second text read for this temple.",
+"secondLabel": "Second source",
+"conjecture": "The text gives height, a golden cupola on top, a lake in front, and an adorned image. It does not give the plan, the building material (stone, brick or other), the shape of the tower, doors, sculpture or the number of storeys; all of that is for the painter. Height is poetic exaggeration (the tower touches the sky, blocks the sun's path), so paint a tall tower but a believable one. The 'golden cupola' may be a gilded pinnacle; its exact form is conjecture. Figures: only town women bathing in the lake are mentioned; their dress is conjecture. The tower's tapering outline, the stone platform, the trees and the number of women are the painter's; the bees named by the text are not visible.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Deopara inscription of Vijayasena (EI 1); not an archaeological finding.",
+"img": "scenes/sena/temple.webp"
 }
 ]
 }
@@ -2223,7 +2235,24 @@ window.LR={
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
 },
 "warn": "The Hanumān copper coins often cited have not yet been checked",
-"repaint": "a four-armed goddess seated frontally, cross-legged, as on Chandela gold drammas, rendered in gold."
+"repaint": "a four-armed goddess seated frontally, cross-legged, as on Chandela gold drammas, rendered in gold.",
+"scenes": {
+"heading": "Setting · Khajuraho, the Vishnu temple built under the Chandela king Yasovarman (inscription of Vikrama 1011 = 954 CE)",
+"items": [
+{
+"k": "temple",
+"label": "Temple",
+"title": "Yasovarman's Vaikuntha temple at Khajuraho: golden pinnacles and banners on tall poles",
+"alt": "Hypothetical reconstruction of the Vishnu temple built by the Chandela king Yasovarman at Khajuraho as praised in the inscription of Vikrama 1011.",
+"attested": "Khajuraho inscription no. III, Epigraphia Indica vol. 1, p. 134 (translation as printed there, verses 42-43; the inscription is dated at its end, v.49, in the year 1011, understood as Vikrama 1011 = 954 CE). v.42: King Yasovarman 'erected this charming splendid home' of Vishnu, which rivals the peaks of the snow mountain; its golden pinnacles light up the sky; multitudes of banners on high poles wave on it; at the sight of it heavenly beings who gather on festivals are struck with wonder. v.43: the image of Vaikuntha set up there had been obtained from Kailasa by the lord of Bhota, then given to Sahi of Kira, then to Herambapala, then to his son Devapala, from whom Yasovarman received it. The record was composed by the poet Madhava, son of Dedda (v.47).",
+"prescribed": "Khajuraho inscription no. IV (Dhanga, Vikrama 1059 = 1002 CE), editor's footnote giving his rendering of its verse on the same Vaikuntha dwelling, EI vol. 1 pp. 144-145: with its sharp spires, shining like the autumn moon, it pierces the zodiac so that the sun's charioteer turns his chariot away; its golden dome is always taken for the sun, and it kisses the peaks of the snow mountain. A second inscription, 48 years later, of the same dynasty and the same temple.",
+"secondLabel": "Second source",
+"conjecture": "Both inscriptions praise height and gold in the kavya manner: spires, a golden dome, pinnacles and banners on poles are the attested features; the heights are hyperbole. Not given: the stone, the plan, the number of porches, sculpture, steps, courtyard, the proportions of the spires, the colour of the stone, whether the banners are cloth or metal, any figures or their dress. The inscription does not say which surviving building at Khajuraho this is; do not copy a surviving temple's carving as if the text described it. Banners with writing are excluded. The painted spire form, the amount of carving, the hills and the number of banners are the painter's and follow a familiar north-Indian temple type, not a documented plan.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Khajuraho inscriptions III and IV (Epigraphia Indica vol. 1); not an archaeological finding.",
+"img": "scenes/chandela/temple.webp"
+}
+]
+}
 },
 {
 "id": "chauhan",

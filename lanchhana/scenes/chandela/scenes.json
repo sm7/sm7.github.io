@@ -1,0 +1,18 @@
+{
+ "id": "chandela",
+ "heading": "Setting · Khajuraho, the Vishnu temple built under the Chandela king Yasovarman (inscription of Vikrama 1011 = 954 CE)",
+ "items": [
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "Yasovarman's Vaikuntha temple at Khajuraho: golden pinnacles and banners on tall poles",
+   "alt": "Hypothetical reconstruction of the Vishnu temple built by the Chandela king Yasovarman at Khajuraho as praised in the inscription of Vikrama 1011.",
+   "attested": "Khajuraho inscription no. III, Epigraphia Indica vol. 1, p. 134 (translation as printed there, verses 42-43; the inscription is dated at its end, v.49, in the year 1011, understood as Vikrama 1011 = 954 CE). v.42: King Yasovarman 'erected this charming splendid home' of Vishnu, which rivals the peaks of the snow mountain; its golden pinnacles light up the sky; multitudes of banners on high poles wave on it; at the sight of it heavenly beings who gather on festivals are struck with wonder. v.43: the image of Vaikuntha set up there had been obtained from Kailasa by the lord of Bhota, then given to Sahi of Kira, then to Herambapala, then to his son Devapala, from whom Yasovarman received it. The record was composed by the poet Madhava, son of Dedda (v.47).",
+   "prescribed": "Khajuraho inscription no. IV (Dhanga, Vikrama 1059 = 1002 CE), editor's footnote giving his rendering of its verse on the same Vaikuntha dwelling, EI vol. 1 pp. 144-145: with its sharp spires, shining like the autumn moon, it pierces the zodiac so that the sun's charioteer turns his chariot away; its golden dome is always taken for the sun, and it kisses the peaks of the snow mountain. A second inscription, 48 years later, of the same dynasty and the same temple.",
+   "secondLabel": "Second source",
+   "conjecture": "Both inscriptions praise height and gold in the kavya manner: spires, a golden dome, pinnacles and banners on poles are the attested features; the heights are hyperbole. Not given: the stone, the plan, the number of porches, sculpture, steps, courtyard, the proportions of the spires, the colour of the stone, whether the banners are cloth or metal, any figures or their dress. The inscription does not say which surviving building at Khajuraho this is; do not copy a surviving temple's carving as if the text described it. Banners with writing are excluded. The painted spire form, the amount of carving, the hills and the number of banners are the painter's and follow a familiar north-Indian temple type, not a documented plan.",
+   "note": "Hypothetical reconstruction painted with an AI image model from the Khajuraho inscriptions III and IV (Epigraphia Indica vol. 1); not an archaeological finding.",
+   "img": "scenes/chandela/temple.webp"
+  }
+ ]
+}
