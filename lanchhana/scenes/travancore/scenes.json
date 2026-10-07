@@ -1,0 +1,18 @@
+{
+ "id": "travancore",
+ "heading": "Setting · Sri Padmanabhaswami temple, Trivandrum, as described 1891 (18th-century structure)",
+ "items": [
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "The Sri Padmanabhaswami temple at Trivandrum",
+   "alt": "Hypothetical reconstruction of the Sri Padmanabhaswami temple at Trivandrum with its gopuram, lamp-lit corridor and eastern bazaar, as described by Nagam Aiya in 1891.",
+   "attested": "V. Nagam Aiya, Travancore State Manual vol. I (1906), Archaeology chapter, pp. 166-168, quoting his own Census of Travancore 1891 description. The temple stands in a plain, faces east, and the view through the fort gate along 'a long line of bazaars' with paddy fields and coconut groves behind. The enclosure is 570 x 510 ft. A seven-storey granite and brick gopuram about 100 ft high has windows lit each evening, a sculpted stone base, Hindu figures on the masonry and seven gold finials. Behind it a 324-pillar corridor (Seevalimantapom) has one Nair-girl lamp-bearer carved on each pillar and brass hanging lamps between; it also serves as a dining hall for about 2,500 leaves.",
+   "prescribed": "Second source: Aiya, same volume, history chapter (Marthanda Varma reign, c. 1729-58): the stone corridor measuring 420 x 226.5 ft, 368 pillars, was built by that Maharajah in six months by 4,000 masons, 6,000 coolies and 100 elephants; the eastern gopuram's foundation was laid in 1566 and built to the fifth storey in his time, the rest in the next reign. The two accounts differ on pillar numbers and dimensions (324 vs 368) and I report both without reconciling them.",
+   "secondLabel": "Second source",
+   "conjecture": "The text is a 1891 colonial description of a structure from the 1730s-50s, so the Travancore dynasty's early modern period is represented but not a contemporary witness. Colours, roof shape of the shrine (Aiya says only 'Dravidian'), number and dress of worshippers, time of day and the look of the bazaar buildings are invented. Dress is not given. Aiya (1891/1906) is the only source; the sunset light, bazaar stalls, worshippers and dress are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Aiya's Travancore State Manual vol. I; not an archaeological finding.",
+   "img": "scenes/travancore/temple.webp"
+  }
+ ]
+}

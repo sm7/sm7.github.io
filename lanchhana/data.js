@@ -1177,7 +1177,24 @@ window.LR={
 "motifs": [
 "elephant"
 ],
-"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a war elephant in rut (madagaja) walking in profile to the right, trunk curled, tusks forward, a simple caparison on its back. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements."
+"prompt": "Create an image. A royal emblem of an early Indian dynasty, as carved on its seal or struck on its coins, shown as a single bold emblem in the centre of the medallion: a war elephant in rut (madagaja) walking in profile to the right, trunk curled, tusks forward, a simple caparison on its back. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"scenes": {
+"heading": "Sravanabelagola, Mysore · Ganga period, c. 980 CE",
+"items": [
+{
+"k": "temple",
+"label": "Temple / Image",
+"title": "The Gommata image on Indragiri",
+"alt": "Hypothetical reconstruction of the colossal Gommata image erected at Sravanabelagola under Ganga patronage.",
+"attested": "Epigraphia Carnatica vol. II, Rice 1889, Sravanabelagola inscriptions (nos. 75-77 for the Gommata image: Chavundaraya, minister of the Ganga king Racha-malla/Marasimha) with Rice's introduction on Gomata/Gommata (pp. 23-24 of the OCR) on the colossal standing image, its location and descriptive details as given by Rice.",
+"prescribed": "Rice's own description of the surviving image (creepers twining the legs and arms, half-smile) is a late scholarly secondary source; the surviving monument is a check.",
+"secondLabel": "Second source",
+"conjecture": "The 1116 cloisters (Hoysala era) are excluded. Anything not in the epigraphs: surrounding structures at c. 980, pilgrims, dress. This is a surviving monument, not a described temple building. The image shows the statue in the traditional Digambara Jain convention of an unclothed standing saint; the surrounding hill, pilgrims and their dress are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from Epigraphia Carnatica II (Rice 1889); not an archaeological finding.",
+"img": "scenes/western-ganga/temple.webp"
+}
+]
+}
 },
 {
 "id": "vishnukundina",
@@ -2742,7 +2759,24 @@ window.LR={
 "credit": "Post of Travancore · Public domain",
 "licurl": null
 },
-"repaint": "a single conch shell (śaṅkha) in silver-white, shown upright, as on Travancore silver chakrams. No garland and no crescent."
+"repaint": "a single conch shell (śaṅkha) in silver-white, shown upright, as on Travancore silver chakrams. No garland and no crescent.",
+"scenes": {
+"heading": "Setting · Sri Padmanabhaswami temple, Trivandrum, as described 1891 (18th-century structure)",
+"items": [
+{
+"k": "temple",
+"label": "Temple",
+"title": "The Sri Padmanabhaswami temple at Trivandrum",
+"alt": "Hypothetical reconstruction of the Sri Padmanabhaswami temple at Trivandrum with its gopuram, lamp-lit corridor and eastern bazaar, as described by Nagam Aiya in 1891.",
+"attested": "V. Nagam Aiya, Travancore State Manual vol. I (1906), Archaeology chapter, pp. 166-168, quoting his own Census of Travancore 1891 description. The temple stands in a plain, faces east, and the view through the fort gate along 'a long line of bazaars' with paddy fields and coconut groves behind. The enclosure is 570 x 510 ft. A seven-storey granite and brick gopuram about 100 ft high has windows lit each evening, a sculpted stone base, Hindu figures on the masonry and seven gold finials. Behind it a 324-pillar corridor (Seevalimantapom) has one Nair-girl lamp-bearer carved on each pillar and brass hanging lamps between; it also serves as a dining hall for about 2,500 leaves.",
+"prescribed": "Second source: Aiya, same volume, history chapter (Marthanda Varma reign, c. 1729-58): the stone corridor measuring 420 x 226.5 ft, 368 pillars, was built by that Maharajah in six months by 4,000 masons, 6,000 coolies and 100 elephants; the eastern gopuram's foundation was laid in 1566 and built to the fifth storey in his time, the rest in the next reign. The two accounts differ on pillar numbers and dimensions (324 vs 368) and I report both without reconciling them.",
+"secondLabel": "Second source",
+"conjecture": "The text is a 1891 colonial description of a structure from the 1730s-50s, so the Travancore dynasty's early modern period is represented but not a contemporary witness. Colours, roof shape of the shrine (Aiya says only 'Dravidian'), number and dress of worshippers, time of day and the look of the bazaar buildings are invented. Dress is not given. Aiya (1891/1906) is the only source; the sunset light, bazaar stalls, worshippers and dress are the painter's.",
+"note": "Hypothetical reconstruction painted with an AI image model from Aiya's Travancore State Manual vol. I; not an archaeological finding.",
+"img": "scenes/travancore/temple.webp"
+}
+]
+}
 },
 {
 "id": "ayodhya",

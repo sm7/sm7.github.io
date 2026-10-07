@@ -1,0 +1,18 @@
+{
+ "id": "western-ganga",
+ "heading": "Sravanabelagola, Mysore · Ganga period, c. 980 CE",
+ "items": [
+  {
+   "k": "temple",
+   "label": "Temple / Image",
+   "title": "The Gommata image on Indragiri",
+   "alt": "Hypothetical reconstruction of the colossal Gommata image erected at Sravanabelagola under Ganga patronage.",
+   "attested": "Epigraphia Carnatica vol. II, Rice 1889, Sravanabelagola inscriptions (nos. 75-77 for the Gommata image: Chavundaraya, minister of the Ganga king Racha-malla/Marasimha) with Rice's introduction on Gomata/Gommata (pp. 23-24 of the OCR) on the colossal standing image, its location and descriptive details as given by Rice.",
+   "prescribed": "Rice's own description of the surviving image (creepers twining the legs and arms, half-smile) is a late scholarly secondary source; the surviving monument is a check.",
+   "secondLabel": "Second source",
+   "conjecture": "The 1116 cloisters (Hoysala era) are excluded. Anything not in the epigraphs: surrounding structures at c. 980, pilgrims, dress. This is a surviving monument, not a described temple building. The image shows the statue in the traditional Digambara Jain convention of an unclothed standing saint; the surrounding hill, pilgrims and their dress are the painter's.",
+   "note": "Hypothetical reconstruction painted with an AI image model from Epigraphia Carnatica II (Rice 1889); not an archaeological finding.",
+   "img": "scenes/western-ganga/temple.webp"
+  }
+ ]
+}
