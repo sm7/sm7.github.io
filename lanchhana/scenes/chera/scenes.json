@@ -13,6 +13,23 @@
    "secondLabel": "Other sources",
    "conjecture": "The town's buildings (thatched sheds here), ship and boat forms, dress, the elephant, the crowd. The text describes only the trade, so this is the only scene.",
    "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "The Pattini-kottam consecrated by the Chera king Senguttuvan",
+   "alt": "Hypothetical reconstruction of the Pattini shrine of Vanci, built by Chera craftsmen under Senguttuvan, with the stone image, flower offerings and guardian figures at the door.",
+   "attested": "Ilanko Atikal, Cilappatikaram, Vanci-kandam, canto 28 (Natukar-katai), Tamil text (Project Madurai) and V.R. Ramachandra Dikshitar, The Silappadikaram (1939), pp. 325-326. Pattini is given a shrine (kottam) built by Brahmins, priests, astrologers and skilled sculptors 'in all its parts according to the prescribed rules'. Inside is her image carved in stone brought from the Himalaya; it is decked with choice ornaments and worshipped with flowers. At the entrance guardian deities (dvara-palas) are placed. The king orders daily sacrifices and festivals.",
+   "prescribed": "Duarte Barbosa, Book of Duarte Barbosa, tr. M.L. Dames (Hakluyt, vol. 2, pp. 35-37), on Malabar temples c. 1514 (labelled as a much later Kerala account, Zamorin-era, not the Silappadikaram's Chera): a temple 'house of prayer' with Brahman priests, a wall round it, a man-high stone with three steps before the door, a small dark chapel inside with an idol of gold, silver or metal and three oil lamps always burning, a priest entering twice daily with flowers and sweet grasses, processions with musicians and a state umbrella. Note by Dames's translator (T.) identifies the stone as the mandapam and the chapel as the sri-kovil.",
+   "secondLabel": "Second source",
+   "conjecture": "Date and place: the Silappadikaram is an epic of about the 5th-6th century CE telling a story of the 2nd century; Vanci's Pattini temple is an epic's temple. Barbosa is 1514, Calicut country. The look of the shrine (roof, walls, materials, colours), its size, the form of the image beyond 'carved on stone', the guardian figures' look, and every face and cloth are invented. Barbosa gives a walled temple with a stone platform and a dark chapel; if painted, the painter should use that only for the plan, and mark it as late. No gopuram. The painting shows four lamps; Barbosa's three lamps and the exact guardian forms are not followed.",
+   "note": "Hypothetical reconstruction painted with an AI image model from the Silappadikaram (Tamil, Dikshitar 1939) and Barbosa (Dames); not an archaeological finding.",
+   "original": {
+    "lang": "ta",
+    "text": "மதுரை மூதூர் மாநகர் கேடுறக்\nகொதியழற் சீற்றம் கொங்கையின் விளைத்து\nநன்னா டணைந்து நளிர்சினை வேங்கைப்\nபொன்னணி புதுநிழல் பொருந்திய நங்கையை\nஅறக்களத் தந்தணர் ஆசான் பெருங்கணி\nசிறப்புடைக் கம்மியர் தம்மொடுஞ் சென்று\nமேலோர் விழையும் நூனெறி மாக்கள்\nபால்பெற வகுத்த பத்தினிக் கோட்டத்து\nஇமையவர் உறையும் இமையச் செவ்வரைச்\nசிமையச் சென்னித் தெய்வம் பரசிக்\nகைவினை முற்றிய தெய்வப் படிமத்து\nவித்தகர் இயற்றிய விளங்கிய கோலத்து\nமுற்றிழை நன்கலம் முழுவதும் பூட்டிப்\nபூப்பலி செய்து காப்பக்கடை நிறுத்தி\nவேள்வியும் விழாவும் நாடொறும் வகுத்துக்\nகடவுள் மங்கலம் செய்கென ஏவினன்\nவடதிசை வணக்கிய மன்னவ ரேறென்.",
+    "ref": "Cilappatikaram, Vanci-kandam, Natukar-katai ll. 219-233 (as numbered in the Project Madurai text), saved as pm_tamil_cilappatikaram-vanci-kandam.txt"
+   },
+   "img": "scenes/chera/temple.webp"
   }
  ]
 }

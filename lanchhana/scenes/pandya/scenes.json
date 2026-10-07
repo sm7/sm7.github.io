@@ -30,6 +30,40 @@
    "conjecture": "The text names the streets and what they sold; it does not give the look of any of it. The canopies on bamboo poles, the colours of the flags and cloth, the cut and colour of the gems, the heaps of coral, the stone paving, the faces, bodies and poses, and the sky are not in the text. Clothing is entirely conjecture: the Tamil gives no dress for merchants or customers (its only dress colour is a red silk waist-cloth on the ladies of the city, l. 86, not shown here), so the mix of plain and dyed cotton, bare-chested men and head-cloths is the image model's invention. The poem is literature, its date is disputed, and its Pāṇḍya king is earlier than the 590–920 span given for this dynasty here. No temple, gate or wall is drawn.",
    "secondLabel": "Second source",
    "note": "Hypothetical reconstruction painted with an AI image model from the original Tamil lines quoted above; not an archaeological finding."
+  },
+  {
+   "k": "city",
+   "label": "City",
+   "title": "Madurai, the walled Pandya capital on the Vaigai",
+   "alt": "Hypothetical reconstruction of Madurai, a moated and walled Pandya city with gate towers and a broad street like a river, from the Maduraikkanci and Cilappatikaram.",
+   "attested": "Mangudi Marudanar, Maduraikkanci, ll. 351-360 (Tamil, Project Madurai text): the city has a deep ditch of blue water; a lofty wall with many ranks of weapons; strong battle-gates with doors blackened with oil; mansions as tall as rain-wrapped hills; a gate like the Vaigai, open to all; many-windowed good houses rising to the sky; a wide long street lying like a river, with many groups of people making sound. Ilanko Atikal, Cilappatikaram, Madurai-kandam canto XIV (Urkankatai), ll. 62-70 (Tamil, Project Madurai; English, V.R. Ramachandra Dikshitar 1939, p. 200): a street over a narrow passage (surangai) built so that herds of long-trunked elephants can go from the moat; a guarded defence forest; the gate watched by Yavana swordsmen; flags waving in the west wind; the interior glittering like Indra's opened jewel-box.",
+   "prescribed": "K.A. Nilakanta Sastri, The Pandyan Kingdom (1929), pp. 35-36, summarises the Maduraikkanci picture of Madurai as moat, walls and gateways, crowded bazaars, temples and debating halls. Used only to confirm the reading of the Tamil, not to add detail.",
+   "secondLabel": "Second source",
+   "conjecture": "Date: Maduraikkanci and Cilappatikaram are Sangam and post-Sangam texts (roughly the 2nd-5th century CE), earlier than the Pandya dynasty span of the card (c. 590-920 CE); the scene shows the city as these texts picture it, not Madurai in the early medieval Pandya period. Materials, colours, the exact shape of the towers over the gates, the number of storeys, the river bank, the layout of the city and the Yavana guards' dress are all invented. The Vaigai is named only as a comparison for the gate or street (as read in the Tamil); do not paint a fixed river position. No temple spire is drawn.",
+   "note": "Hypothetical reconstruction painted with an AI image model from the Maduraikkanci and Cilappatikaram (Tamil); not an archaeological finding.",
+   "original": {
+    "lang": "ta",
+    "text": "மண்ணுற ஆழ்ந்த மணிநீர்க் கிடங்கின்\nவிண்ணுற வோங்கிய பல்படைப் புரிசைத்\nதொல்வலி நிலைஇய அணங்குடை நெடுநிலை\nநெய்படக் கரிந்த திண்போர்க் கதவின்\nமழையாடு மலையி னிவந்த மாடமொடு\nவையை யன்ன வழக்குடை வாயில்\nவகைபெற எழுந்து வான மூழ்கி\nசில்காற் றிசைக்கும் பல்புழை நல்லில்\nயாறுகிடந் தன்ன அகனெடுந் தெருவிற்\nபல்வேறு குழாஅத் திசையெழுந் தொலிப்ப\n---\nஇளைசூழ் மிளையொடு வளைவுடன் கிடந்த\nஇலங்குநீர்ப் பரப்பின் வலம்புண ரகழியில்\nபெருங்கை யானை இனநிரை பெயரும்\nசுருங்கை வீதி மருங்கிற் போகிக்\nகடிமதில் வாயில் காவலிற் சிறந்த\nஅடல்வாள் யவனர்க் கயிராது புக்காங்கு\nஆயிரங் கண்ணோன் அருங்கலச் செப்பு\nவாய்திறந் தன்ன மதிலக வரைப்பில்",
+    "ref": "Maduraikkanci ll. 351-360, then Cilappatikaram, Madurai-kandam, Urkankatai (canto 14) ll. 62-70, Project Madurai Tamil text saved as pm_tamil_maduraikkanchi_and_cilappatikaram-madurai-kandam.txt; the Maduraikkanci lines are glued in the saved file and were split here at the verse joins"
+   },
+   "img": "scenes/pandya/city.webp"
+  },
+  {
+   "k": "temple",
+   "label": "Temple",
+   "title": "Worship at Madurai's god-shrines and a hill-like Brahmin pali",
+   "alt": "Hypothetical reconstruction of women and priests worshipping with flowers and incense at shrines of Madurai, the Maduraikkanci's 'god's pali' and the hill-like pali of the learned.",
+   "attested": "Maduraikkanci ll. 461-476 (Tamil): middle-aged women, beautiful, with their children, worship with flowers and incense and praise the 'god's pali' (kadavul palli), the guarded shrine; the Vedas are chanted; a Brahmin pali (antanar palli) is 'like a hill carved' (kunru kuyin-ranna); flowers and incense are brought by Jain lay worshippers (savakar) to a further pali (reading of the Tamil by this draft, not from a published translation; pali glossed as shrine or residence). Cilappatikaram XIV ll. 7-12 (Dikshitar 1939, p. 199): the morning conch and drum sound from the temples of Siva, Visnu, Baladeva and Subrahmanya; this is a sound and a list of names only, so no temple of these gods is drawn.",
+   "prescribed": "K.A. Nilakanta Sastri, The Pandyan Kingdom (1929), pp. 35-36 (Maduraikkanci summary: temples and debating halls) and pp. 585-650 (temple endowment practice in later Pandya inscriptions) confirm temples as an institution of Pandya Madurai but give no building form. Marco Polo and Ibn Battuta were checked: the Polo 'abbeys' passage concerns temple dancing-girls (cail), not a Madurai temple building.",
+   "secondLabel": "Second source",
+   "conjecture": "Date: Sangam (c. 2nd-5th century CE), earlier than the card's span. The text says the Brahmin pali is 'like a hill carved', so the painter may show a tall carved or built mass; every other form is invented: the shape and material of the shrine, its walls, roof, doors, courtyard, colours, the image or lack of one inside, dress and faces. Keep the building plain, no gopuram, no stucco figures. The scene shows people at worship; it is not a documented plan of any temple.",
+   "note": "Hypothetical reconstruction painted with an AI image model from the Maduraikkanci (Tamil), with the Cilappatikaram as context; not an archaeological finding.",
+   "original": {
+    "lang": "ta",
+    "text": "திண்கதிர் மதாணி யண்குறு மாக்களை\nஓம்பினர்த் தழீஇத் தாம்புணர்ந்து முயங்கி\nதாதணி தாமரைப் போதுபிடித் தாங்கு\nதாமு மவரும் ஓராங்கு விளங்கக்\nகாமர் கவினிய பேரிளம் பெண்டிர்\nபூவினர் புகையினர் தொழுவனர் பழிச்சி\nசிறந்து புறங்காக்குங் கடவுட் பள்ளியும்\nசிறந்த வேதம் விளங்கப் பாடி\nவிழுச்சீர் எய்திய ஒழுக்கமொடு புணர்ந்து\nநிலமமர் வையத் தொருதா மாகி\nஉயர்நிலை யுலக மிவணின் றெய்தும்\nஅறநெறி பிழையா அன்புடை நெஞ்சிற்\nபெரியோர் மேஎ யினிதி னுறையுங்\nகுன்றுகுயின் றன்ன அந்தணர் பள்ளியும்\nவண்டுபடப் பழுநிய தேனார் தோற்றத்துப்\nபூவும் புகையுஞ் சாவகர் பழிச்சச்",
+    "ref": "Maduraikkanci ll. 461-476, Project Madurai Tamil text saved as pm_tamil_maduraikkanchi_and_cilappatikaram-madurai-kandam.txt (lines glued in the saved file, split here at verse joins)"
+   },
+   "img": "scenes/pandya/temple.webp"
   }
  ]
 }

@@ -378,7 +378,29 @@ window.LR={
 "motifs": [
 "bull"
 ],
-"prompt": "Create an image. A war standard whose device is a bull: a strong, plain humped bull standing in profile, without ornaments. The device is a three-dimensional figure mounted on the very top of a golden flagstaff, seen against the sky — not painted on cloth, not a flag. Only the upper flagstaff, no chariot, no people. No finial, no parasol, no tassels. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no people, no modern elements."
+"prompt": "Create an image. A war standard whose device is a bull: a strong, plain humped bull standing in profile, without ornaments. The device is a three-dimensional figure mounted on the very top of a golden flagstaff, seen against the sky — not painted on cloth, not a flag. Only the upper flagstaff, no chariot, no people. No finial, no parasol, no tassels. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no people, no modern elements.",
+"scenes": {
+"heading": "Setting · Girivraja, the Magadhan capital, in the Mahābhārata (Sabhāparvan 2.18–19); the epic gives no date",
+"items": [
+{
+"k": "city",
+"label": "City",
+"title": "The city: Girivraja ringed by its five hills",
+"alt": "Hypothetical reconstruction of Girivraja, the Magadhan capital: a prosperous settlement of fine houses inside a ring of five wooded hills, with cattle in the fields.",
+"attested": "Kṛṣṇa, Bhīma and Arjuna travel east over the Gaṇḍakī, Śoṇa and other rivers into the Magadhan country and reach the hill Goratha, a place thick with cattle, well watered and with fine trees, from where they see the city of the Magadhans (2.18.27–30). Kṛṣṇa calls the Magadhan settlement great and pleasant, rich in cattle, always well watered, free of sickness and 'rich in fine houses' (2.19.1). Five great-peaked hills with cool trees, joined together, stand as if guarding Girivraja (2.19.3); flowering woods of lodhra grow among them (2.19.4). The city is full of well-fed, contented people of the four orders, has thriving festivals and is hard to attack (2.19.13).",
+"prescribed": "Faxian (Legge 1886, pp. 81–82, the Rājagṛha chapter; the saved edition prints 'XXVIII' on both the Pāṭaliputra and Rājagṛha chapters) saw the old city of Bimbisāra, in Magadha, in a circle of five hills that 'have the appearance of the suburban wall of a city'; inside it, all was empty (his travels, A.D. 399–414 per Legge's title). He supports only the ring of five hills; his city was a ruin, so nothing of the epic's busy city comes from him.",
+"secondLabel": "Second source",
+"conjecture": "Everything built: the walls, gates, roof forms, house materials, streets, temples, the king's hall, colours, dress. The text gives no size or plan. The hills' exact shapes, the river, the light and the people's clothing are the painter's. The epic's date is unknown and the older Girivraja was a different place from Faxian's ruin. The painter also added a river with a bridge and boats, paddy fields and hillside blossoms of unspecified kind; none of these is in the text (it says only well-watered, cattle, lodhra).",
+"note": "Hypothetical reconstruction painted with an AI image model from Mahābhārata 2.18–19 (GRETIL critical-edition e-text) and Faxian; not an archaeological finding.",
+"original": {
+"lang": "sa",
+"text": "02,019.001a eṣa pārtha mahān svāduḥ paśumān nityam ambumān\n02,019.001c nirāmayaḥ suveśmāḍhyo niveśo māgadhaḥ śubhaḥ\n02,019.003a ete pañca mahāśṛṅgāḥ parvatāḥ śītaladrumāḥ\n02,019.003c rakṣantīvābhisaṃhatya saṃhatāṅgā girivrajam\n02,019.013a tuṣṭapuṣṭajanopetaṃ cāturvarṇyajanākulam\n02,019.013c sphītotsavam anādhṛṣyam āseduś ca girivrajam",
+"ref": "Mahābhārata 2.19, critical-edition e-text, GRETIL mbh_02_u.htm (saved as gretil_sa_mahabharata-02-sabhaparvan_critical-edition_mbh_02_u.txt), verse numbers as in that file"
+},
+"img": "scenes/magadha/city.webp"
+}
+]
+}
 },
 {
 "id": "krishna",
@@ -1749,6 +1771,40 @@ window.LR={
 "conjecture": "The text names the streets and what they sold; it does not give the look of any of it. The canopies on bamboo poles, the colours of the flags and cloth, the cut and colour of the gems, the heaps of coral, the stone paving, the faces, bodies and poses, and the sky are not in the text. Clothing is entirely conjecture: the Tamil gives no dress for merchants or customers (its only dress colour is a red silk waist-cloth on the ladies of the city, l. 86, not shown here), so the mix of plain and dyed cotton, bare-chested men and head-cloths is the image model's invention. The poem is literature, its date is disputed, and its Pāṇḍya king is earlier than the 590–920 span given for this dynasty here. No temple, gate or wall is drawn.",
 "secondLabel": "Second source",
 "note": "Hypothetical reconstruction painted with an AI image model from the original Tamil lines quoted above; not an archaeological finding."
+},
+{
+"k": "city",
+"label": "City",
+"title": "Madurai, the walled Pandya capital on the Vaigai",
+"alt": "Hypothetical reconstruction of Madurai, a moated and walled Pandya city with gate towers and a broad street like a river, from the Maduraikkanci and Cilappatikaram.",
+"attested": "Mangudi Marudanar, Maduraikkanci, ll. 351-360 (Tamil, Project Madurai text): the city has a deep ditch of blue water; a lofty wall with many ranks of weapons; strong battle-gates with doors blackened with oil; mansions as tall as rain-wrapped hills; a gate like the Vaigai, open to all; many-windowed good houses rising to the sky; a wide long street lying like a river, with many groups of people making sound. Ilanko Atikal, Cilappatikaram, Madurai-kandam canto XIV (Urkankatai), ll. 62-70 (Tamil, Project Madurai; English, V.R. Ramachandra Dikshitar 1939, p. 200): a street over a narrow passage (surangai) built so that herds of long-trunked elephants can go from the moat; a guarded defence forest; the gate watched by Yavana swordsmen; flags waving in the west wind; the interior glittering like Indra's opened jewel-box.",
+"prescribed": "K.A. Nilakanta Sastri, The Pandyan Kingdom (1929), pp. 35-36, summarises the Maduraikkanci picture of Madurai as moat, walls and gateways, crowded bazaars, temples and debating halls. Used only to confirm the reading of the Tamil, not to add detail.",
+"secondLabel": "Second source",
+"conjecture": "Date: Maduraikkanci and Cilappatikaram are Sangam and post-Sangam texts (roughly the 2nd-5th century CE), earlier than the Pandya dynasty span of the card (c. 590-920 CE); the scene shows the city as these texts picture it, not Madurai in the early medieval Pandya period. Materials, colours, the exact shape of the towers over the gates, the number of storeys, the river bank, the layout of the city and the Yavana guards' dress are all invented. The Vaigai is named only as a comparison for the gate or street (as read in the Tamil); do not paint a fixed river position. No temple spire is drawn.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Maduraikkanci and Cilappatikaram (Tamil); not an archaeological finding.",
+"original": {
+"lang": "ta",
+"text": "மண்ணுற ஆழ்ந்த மணிநீர்க் கிடங்கின்\nவிண்ணுற வோங்கிய பல்படைப் புரிசைத்\nதொல்வலி நிலைஇய அணங்குடை நெடுநிலை\nநெய்படக் கரிந்த திண்போர்க் கதவின்\nமழையாடு மலையி னிவந்த மாடமொடு\nவையை யன்ன வழக்குடை வாயில்\nவகைபெற எழுந்து வான மூழ்கி\nசில்காற் றிசைக்கும் பல்புழை நல்லில்\nயாறுகிடந் தன்ன அகனெடுந் தெருவிற்\nபல்வேறு குழாஅத் திசையெழுந் தொலிப்ப\n---\nஇளைசூழ் மிளையொடு வளைவுடன் கிடந்த\nஇலங்குநீர்ப் பரப்பின் வலம்புண ரகழியில்\nபெருங்கை யானை இனநிரை பெயரும்\nசுருங்கை வீதி மருங்கிற் போகிக்\nகடிமதில் வாயில் காவலிற் சிறந்த\nஅடல்வாள் யவனர்க் கயிராது புக்காங்கு\nஆயிரங் கண்ணோன் அருங்கலச் செப்பு\nவாய்திறந் தன்ன மதிலக வரைப்பில்",
+"ref": "Maduraikkanci ll. 351-360, then Cilappatikaram, Madurai-kandam, Urkankatai (canto 14) ll. 62-70, Project Madurai Tamil text saved as pm_tamil_maduraikkanchi_and_cilappatikaram-madurai-kandam.txt; the Maduraikkanci lines are glued in the saved file and were split here at the verse joins"
+},
+"img": "scenes/pandya/city.webp"
+},
+{
+"k": "temple",
+"label": "Temple",
+"title": "Worship at Madurai's god-shrines and a hill-like Brahmin pali",
+"alt": "Hypothetical reconstruction of women and priests worshipping with flowers and incense at shrines of Madurai, the Maduraikkanci's 'god's pali' and the hill-like pali of the learned.",
+"attested": "Maduraikkanci ll. 461-476 (Tamil): middle-aged women, beautiful, with their children, worship with flowers and incense and praise the 'god's pali' (kadavul palli), the guarded shrine; the Vedas are chanted; a Brahmin pali (antanar palli) is 'like a hill carved' (kunru kuyin-ranna); flowers and incense are brought by Jain lay worshippers (savakar) to a further pali (reading of the Tamil by this draft, not from a published translation; pali glossed as shrine or residence). Cilappatikaram XIV ll. 7-12 (Dikshitar 1939, p. 199): the morning conch and drum sound from the temples of Siva, Visnu, Baladeva and Subrahmanya; this is a sound and a list of names only, so no temple of these gods is drawn.",
+"prescribed": "K.A. Nilakanta Sastri, The Pandyan Kingdom (1929), pp. 35-36 (Maduraikkanci summary: temples and debating halls) and pp. 585-650 (temple endowment practice in later Pandya inscriptions) confirm temples as an institution of Pandya Madurai but give no building form. Marco Polo and Ibn Battuta were checked: the Polo 'abbeys' passage concerns temple dancing-girls (cail), not a Madurai temple building.",
+"secondLabel": "Second source",
+"conjecture": "Date: Sangam (c. 2nd-5th century CE), earlier than the card's span. The text says the Brahmin pali is 'like a hill carved', so the painter may show a tall carved or built mass; every other form is invented: the shape and material of the shrine, its walls, roof, doors, courtyard, colours, the image or lack of one inside, dress and faces. Keep the building plain, no gopuram, no stucco figures. The scene shows people at worship; it is not a documented plan of any temple.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Maduraikkanci (Tamil), with the Cilappatikaram as context; not an archaeological finding.",
+"original": {
+"lang": "ta",
+"text": "திண்கதிர் மதாணி யண்குறு மாக்களை\nஓம்பினர்த் தழீஇத் தாம்புணர்ந்து முயங்கி\nதாதணி தாமரைப் போதுபிடித் தாங்கு\nதாமு மவரும் ஓராங்கு விளங்கக்\nகாமர் கவினிய பேரிளம் பெண்டிர்\nபூவினர் புகையினர் தொழுவனர் பழிச்சி\nசிறந்து புறங்காக்குங் கடவுட் பள்ளியும்\nசிறந்த வேதம் விளங்கப் பாடி\nவிழுச்சீர் எய்திய ஒழுக்கமொடு புணர்ந்து\nநிலமமர் வையத் தொருதா மாகி\nஉயர்நிலை யுலக மிவணின் றெய்தும்\nஅறநெறி பிழையா அன்புடை நெஞ்சிற்\nபெரியோர் மேஎ யினிதி னுறையுங்\nகுன்றுகுயின் றன்ன அந்தணர் பள்ளியும்\nவண்டுபடப் பழுநிய தேனார் தோற்றத்துப்\nபூவும் புகையுஞ் சாவகர் பழிச்சச்",
+"ref": "Maduraikkanci ll. 461-476, Project Madurai Tamil text saved as pm_tamil_maduraikkanchi_and_cilappatikaram-madurai-kandam.txt (lines glued in the saved file, split here at verse joins)"
+},
+"img": "scenes/pandya/temple.webp"
 }
 ]
 }
@@ -1783,6 +1839,23 @@ window.LR={
 "secondLabel": "Other sources",
 "conjecture": "The town's buildings (thatched sheds here), ship and boat forms, dress, the elephant, the crowd. The text describes only the trade, so this is the only scene.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"k": "temple",
+"label": "Temple",
+"title": "The Pattini-kottam consecrated by the Chera king Senguttuvan",
+"alt": "Hypothetical reconstruction of the Pattini shrine of Vanci, built by Chera craftsmen under Senguttuvan, with the stone image, flower offerings and guardian figures at the door.",
+"attested": "Ilanko Atikal, Cilappatikaram, Vanci-kandam, canto 28 (Natukar-katai), Tamil text (Project Madurai) and V.R. Ramachandra Dikshitar, The Silappadikaram (1939), pp. 325-326. Pattini is given a shrine (kottam) built by Brahmins, priests, astrologers and skilled sculptors 'in all its parts according to the prescribed rules'. Inside is her image carved in stone brought from the Himalaya; it is decked with choice ornaments and worshipped with flowers. At the entrance guardian deities (dvara-palas) are placed. The king orders daily sacrifices and festivals.",
+"prescribed": "Duarte Barbosa, Book of Duarte Barbosa, tr. M.L. Dames (Hakluyt, vol. 2, pp. 35-37), on Malabar temples c. 1514 (labelled as a much later Kerala account, Zamorin-era, not the Silappadikaram's Chera): a temple 'house of prayer' with Brahman priests, a wall round it, a man-high stone with three steps before the door, a small dark chapel inside with an idol of gold, silver or metal and three oil lamps always burning, a priest entering twice daily with flowers and sweet grasses, processions with musicians and a state umbrella. Note by Dames's translator (T.) identifies the stone as the mandapam and the chapel as the sri-kovil.",
+"secondLabel": "Second source",
+"conjecture": "Date and place: the Silappadikaram is an epic of about the 5th-6th century CE telling a story of the 2nd century; Vanci's Pattini temple is an epic's temple. Barbosa is 1514, Calicut country. The look of the shrine (roof, walls, materials, colours), its size, the form of the image beyond 'carved on stone', the guardian figures' look, and every face and cloth are invented. Barbosa gives a walled temple with a stone platform and a dark chapel; if painted, the painter should use that only for the plan, and mark it as late. No gopuram. The painting shows four lamps; Barbosa's three lamps and the exact guardian forms are not followed.",
+"note": "Hypothetical reconstruction painted with an AI image model from the Silappadikaram (Tamil, Dikshitar 1939) and Barbosa (Dames); not an archaeological finding.",
+"original": {
+"lang": "ta",
+"text": "மதுரை மூதூர் மாநகர் கேடுறக்\nகொதியழற் சீற்றம் கொங்கையின் விளைத்து\nநன்னா டணைந்து நளிர்சினை வேங்கைப்\nபொன்னணி புதுநிழல் பொருந்திய நங்கையை\nஅறக்களத் தந்தணர் ஆசான் பெருங்கணி\nசிறப்புடைக் கம்மியர் தம்மொடுஞ் சென்று\nமேலோர் விழையும் நூனெறி மாக்கள்\nபால்பெற வகுத்த பத்தினிக் கோட்டத்து\nஇமையவர் உறையும் இமையச் செவ்வரைச்\nசிமையச் சென்னித் தெய்வம் பரசிக்\nகைவினை முற்றிய தெய்வப் படிமத்து\nவித்தகர் இயற்றிய விளங்கிய கோலத்து\nமுற்றிழை நன்கலம் முழுவதும் பூட்டிப்\nபூப்பலி செய்து காப்பக்கடை நிறுத்தி\nவேள்வியும் விழாவும் நாடொறும் வகுத்துக்\nகடவுள் மங்கலம் செய்கென ஏவினன்\nவடதிசை வணக்கிய மன்னவ ரேறென்.",
+"ref": "Cilappatikaram, Vanci-kandam, Natukar-katai ll. 219-233 (as numbered in the Project Madurai text), saved as pm_tamil_cilappatikaram-vanci-kandam.txt"
+},
+"img": "scenes/chera/temple.webp"
 }
 ]
 }
