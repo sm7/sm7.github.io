@@ -1,24 +1,36 @@
 {
-  "id": "maurya",
-  "heading": "Setting · Pāṭaliputra under Candragupta, c. 321–297 BCE",
-  "items": [
-    {"k": "city", "label": "City", "img": "scenes/maurya/city.webp",
-     "title": "The city: Pāṭaliputra at the river confluence, c. 300 BCE",
-     "alt": "Hypothetical reconstruction of Pāṭaliputra: a long narrow riverside city behind a timber palisade and a lotus-filled ditch",
-     "attested": "A long narrow city, about 80 stades by 15, at the meeting of two rivers, behind a timber palisade pierced for archers, with a ditch for defence and drainage (Megasthenes, in Strabo 15.1.35–36).",
-     "prescribed": "Wide ditches with lotus and crocodiles, square towers, an arched gateway (Arthaśāstra 2.3, a prescription attributed to Kauṭilya; its date is debated).",
-     "conjecture": "Roof forms, the palace hall, boats, vegetation, the light."},
-    {"k": "street", "label": "Street", "img": "scenes/maurya/street.webp",
-     "title": "The street: a royal road in the morning market",
-     "alt": "Hypothetical reconstruction of a Pāṭaliputra royal road with market stalls, bullock carts and officials at a weighing scale",
-     "attested": "City commissioners supervised the markets, in boards of five (Megasthenes, in Strabo 15.1.50–51).",
-     "prescribed": "Royal roads four daṇḍas (about 24 ft) wide; sellers of scents, garlands and grain on the east side; a well for every ten houses (Arthaśāstra 2.4).",
-     "conjecture": "House fronts, dress, carts, the individual figures."},
-    {"k": "temple", "label": "Temple", "img": "scenes/maurya/temple.webp",
-     "title": "The temple: a grand Śiva shrine, entrance facing north-east",
-     "alt": "Hypothetical reconstruction of a grand brick and timber Śiva temple at Pāṭaliputra with worshippers at the steps",
-     "attested": "Temples (hiera) were under the commissioners' care (Megasthenes, in Strabo 15.1.51). No eyewitness describes one.",
-     "prescribed": "At the centre of the city, the apartments of the gods, Śiva among them (Arthaśāstra 2.4).",
-     "conjecture": "Everything visible: the brick plinth, timber hall, tiered tiled roof, the figure in the sanctum, its size, and its north-east facing."}
-  ]
+ "id": "maurya",
+ "heading": "Setting · Pāṭaliputra under Candragupta, c. 321–297 BCE",
+ "items": [
+  {
+   "k": "city",
+   "label": "City",
+   "img": "scenes/maurya/city.webp",
+   "title": "The city: Pāṭaliputra at the river confluence, c. 300 BCE",
+   "alt": "Hypothetical reconstruction of Pāṭaliputra: a long narrow riverside city behind a timber palisade and a lotus-filled ditch",
+   "attested": "A long narrow city, about 80 stades by 15, at the meeting of two rivers, behind a timber palisade pierced for archers, with a ditch for defence and drainage (Megasthenes, in Strabo 15.1.35–36).",
+   "prescribed": "Wide ditches with lotus and crocodiles, square towers, an arched gateway (Arthaśāstra 2.3, a prescription attributed to Kauṭilya; its date is debated).",
+   "conjecture": "Roof forms, the palace hall, boats, vegetation, the light."
+  },
+  {
+   "k": "street",
+   "label": "Street",
+   "img": "scenes/maurya/street.webp",
+   "title": "The street: a royal road in the morning market",
+   "alt": "Hypothetical reconstruction of a Pāṭaliputra royal road with market stalls, bullock carts and officials at a weighing scale",
+   "attested": "City commissioners supervised the markets, in boards of five (Megasthenes, in Strabo 15.1.50–51).",
+   "prescribed": "Royal roads four daṇḍas (about 24 ft) wide; sellers of scents, garlands and grain on the east side; a well for every ten houses (Arthaśāstra 2.4).",
+   "conjecture": "House fronts, dress, carts, the individual figures."
+  },
+  {
+   "k": "temple",
+   "label": "Temple",
+   "img": "scenes/maurya/temple.webp",
+   "title": "The temple: a grand Śiva shrine, entrance facing north-east",
+   "alt": "Hypothetical reconstruction of a grand brick and timber Śiva temple at Pāṭaliputra with worshippers at the steps",
+   "attested": "Temples (hiera) were under the commissioners' care (Megasthenes, in Strabo 15.1.51). No eyewitness describes one.",
+   "prescribed": "At the centre of the city, the apartments of the gods, Śiva among them (Arthaśāstra 2.4).",
+   "conjecture": "Everything visible: the brick plinth, timber hall, tiered tiled roof, the figure in the sanctum, its size, and its north-east facing. Timber porch, thatch, flower garlands and dress are the painter's; the text gives only a grand Shiva temple with its entrance facing north-east."
+  }
+ ]
 }

@@ -864,7 +864,7 @@ window.LR={
 "alt": "Hypothetical reconstruction of a grand brick and timber Śiva temple at Pāṭaliputra with worshippers at the steps",
 "attested": "Temples (hiera) were under the commissioners' care (Megasthenes, in Strabo 15.1.51). No eyewitness describes one.",
 "prescribed": "At the centre of the city, the apartments of the gods, Śiva among them (Arthaśāstra 2.4).",
-"conjecture": "Everything visible: the brick plinth, timber hall, tiered tiled roof, the figure in the sanctum, its size, and its north-east facing."
+"conjecture": "Everything visible: the brick plinth, timber hall, tiered tiled roof, the figure in the sanctum, its size, and its north-east facing. Timber porch, thatch, flower garlands and dress are the painter's; the text gives only a grand Shiva temple with its entrance facing north-east."
 }
 ]
 }
@@ -1103,7 +1103,7 @@ window.LR={
 "alt": "Hypothetical reconstruction of the Mahāyāna and Hīnayāna monasteries beside Aśoka's tope at Pāṭaliputra with a stone palace hall behind",
 "attested": "By the side of the tope of Aśoka a very grand and beautiful Mahāyāna monastery, and a Hīnayāna one, with 600–700 monks together; the great tope more than 3 li south of the city with a Buddha footprint and a vihāra before it; the palace halls with carved and inlaid stone, standing 'now as of old' (Faxian, ch. XXVII, pp. 77–80).",
 "prescribed": "None: no second source read.",
-"conjecture": "The tope's size and dome, monastery plans and materials, the lions, the vihāra's form.",
+"conjecture": "The tope's size and dome, monastery plans and materials, the lions, the vihāra's form. The stupa's profile, the lion-topped pillar and the columned palace hall are the painter's; the pilgrim gives the monasteries, the tope and a stone palace.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 }
 ]
@@ -1248,7 +1248,7 @@ window.LR={
 "attested": "The capital, Kāñcīpura, was about 30 li round; the soil fertile and regularly cultivated, with much grain and many flowers and fruits; hot climate; the people courageous, honest and fond of learning; some hundred monasteries with 10,000 monks of the Sthavira school of the Great Vehicle; some eighty temples of the gods; many Nirgranthas (naked Jain ascetics); stūpas built by Aśoka at places the Buddha had visited (Hiuen Tsiang, Si-yu-ki, Book X, tr. S. Beal, 1884, vol. 2 pp. 228–229).",
 "prescribed": "None: no second source read for the city's buildings.",
 "secondLabel": "Other sources",
-"conjecture": "All architecture (brick, timber and stucco, little of it surviving), layout, dress, and the mix of Buddhist and other buildings. The Nirgranthas are attested but not shown. The first painting had tall tapering temple towers, which belong to later centuries; this one shows only low buildings. No street, wall or palace is described in the text.",
+"conjecture": "All architecture (brick, timber and stucco, little of it surviving), layout, dress, and the mix of Buddhist and other buildings. The Nirgranthas are attested but not shown. The first painting had tall tapering temple towers, which belong to later centuries; this one shows only low buildings. No street, wall or palace is described in the text. Stupa and shrine forms are the painter's reading of the pilgrim's brief description.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 },
 {
@@ -2160,7 +2160,7 @@ window.LR={
 "attested": "Viṣṇuvardhana is said to be ruling \"from his palace in the great city of Velapura\" (B. L. Rice, Mysore Inscriptions, translated for Government (Bangalore, 1879), pp. 264–269, no. 145 (Belūr, Śaka 1039 = 1117 CE)).",
 "prescribed": "A later Belūr grant of Vīra Ballāḷa's time praises a ruler whose \"doors [are] securely fastened, his lodges filled with guards and archers, his ramparts high, surrounded with a moat — the lake named Vasudeva tīrtha\" (same volume, pp. 266–267). It is not from Viṣṇuvardhana's day.",
 "secondLabel": "Later witness",
-"conjecture": "The town's plan, gateway, wall and moat forms, the palace, houses and roofs. The red banners at the gate are the model's invention. The later grant may describe the temple precinct rather than a whole town.",
+"conjecture": "The town's plan, gateway, wall and moat forms, the palace, houses and roofs. The red banners at the gate are the model's invention. The later grant may describe the temple precinct rather than a whole town. The round bastions, moat bridge and the temple's tower form are the painter's; the source is a later witness and gives ramparts, moat, gateway and palace.",
 "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
 }
 ]
