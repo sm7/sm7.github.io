@@ -1,6 +1,6 @@
 {
  "id": "pandya",
- "heading": "Setting · The pearl fishery of the Pāṇḍya coast",
+ "heading": "Setting · The pearl fishery and the city of Madurai",
  "items": [
   {
    "k": "pearls",
@@ -13,6 +13,23 @@
    "conjecture": "The shape and number of the boats and their rope lashings, the stone hanging from a rope, the baskets of shells, the divers' faces, bodies and hair, the colour of the sea, the sky and the distant ship are not in either text; Polo says only 'vessels, great and small' and 'small boats'. No shore, building, temple or king is drawn. Polo's 'charmers' of fish and the royal tenth are not shown. The Pāṇḍya kingdom of the Periplus and the Maabar of Polo are not the same period or ruler, so the scene shows only what both describe: divers, boats and shallow water.",
    "secondLabel": "Second source",
    "note": "Hypothetical reconstruction painted with an AI image model from a translated Greek guide and a translated 13th-century traveller; not an archaeological finding."
+  },
+  {
+   "k": "bazaar",
+   "label": "The bazaar streets",
+   "img": "scenes/pandya/bazaar.webp",
+   "title": "The bazaar streets of Madurai: gems, goldsmiths, cloth and grain",
+   "alt": "Hypothetical reconstruction of a crowded market street in ancient Madurai: trays of gems, pearls and coral, flags hung at goldsmiths' stalls, tall stacks of folded cloth, sacks of grain and black pepper, balances and measures, and people in plain and dyed cotton",
+   "attested": "The Tamil epic Cilappatikāram (Ilaṅkō Aṭikaḷ), Maduraik-kāṇḍam, canto 14 Ūrkāṇ Kātai ('Seeing the City'), ll. 180–211, walks Kōvalaṉ through the bazaars of Madurai: a street of gem-dealers with pearls, corals and stones tested for flaws (pearls named after the planets); a street of goldsmiths 'where flags are raised' to mark the kind of gold sold; a street of cloth merchants with bundles of cotton, hair and silk cloth piled in hundreds; and a street of corn-chandlers going about with balances and grain-measures amid sacks of grain and bags of black pepper (tr. V. R. R. Dikshitar, The Silappadikaram, 1939, pp. 206–208). The poem names a temple of Śiva, of Viṣṇu, of Balarāma and of Murukan only as morning conch and drum sounds (ll. 7–10), not as buildings.",
+   "original": {
+    "lang": "ta",
+    "text": "பொலந்தெரி மாக்கள் கலங்கஞ ரொழித்தாங்கு\nஇலங்குகொடி யெடுக்கும் நலங்கிளர் வீதியும்\nநூலினும் மயிரினும் நுழைநூற் பட்டினும்\nபால்வகை தெரியாப் பன்னூ றடுக்கத்து\nநறுமடி செறிந்த அறுவை வீதியும்\nநிறைக்கோல் துலாத்தர் பறைக்கட் பராரையர்\nஅம்பண வளவையர் எங்கணுந் திரிதரக்\nகால மன்றியும் கருங்கறி மூடையொடு\nகூலங் குவித்த கூல வீதியும்",
+    "ref": "Cilappatikāram, Maduraik-kāṇḍam, Ūrkāṇ Kātai, ll. 203–211 (Project Madurai e-text)"
+   },
+   "prescribed": "K. A. Nilakanta Sastri, The Pandyan Kingdom (London: Luzac, 1929), pp. 35–36, summarises the Maduraikkāñci (Pattuppāṭṭu) as giving a long description of Madurai 'with her ditch, walls and gateways, her crowded bazaars more than usually busy on festival day, her temples and her debating halls', and notes Yavana guards in the fortress in the Cilappatikāram (xiv, ll. 66–7). So an independent poem agrees on a walled city with crowded bazaars; the street-by-street detail above rests on the Cilappatikāram alone. Sastri also warns that the poets drew many such pictures 'in obedience to literary convention', though on 'a fairly solid foundation in the facts of contemporary life'. The Maduraikkāñci itself has not been checked line by line here.",
+   "conjecture": "The text names the streets and what they sold; it does not give the look of any of it. The canopies on bamboo poles, the colours of the flags and cloth, the cut and colour of the gems, the heaps of coral, the stone paving, the faces, bodies and poses, and the sky are not in the text. Clothing is entirely conjecture: the Tamil gives no dress for merchants or customers (its only dress colour is a red silk waist-cloth on the ladies of the city, l. 86, not shown here), so the mix of plain and dyed cotton, bare-chested men and head-cloths is the image model's invention. The poem is literature, its date is disputed, and its Pāṇḍya king is earlier than the 590–920 span given for this dynasty here. No temple, gate or wall is drawn.",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction painted with an AI image model from the original Tamil lines quoted above; not an archaeological finding."
   }
  ]
 }
