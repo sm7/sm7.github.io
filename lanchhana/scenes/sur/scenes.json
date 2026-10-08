@@ -1,0 +1,30 @@
+{
+ "id": "sur",
+ "heading": "Setting · Delhi and the royal road under Sher Shāh, c. 1540–1545 CE",
+ "items": [
+  {
+   "label": "City",
+   "title": "The new city on the river bank: Sher Shāh's Delhi",
+   "alt": "Hypothetical reconstruction of Delhi c. 1542: a rubble and ashlar citadel with battered bastions and a high gateway, an unfinished outer wall with scaffolding and piles of cut stone, a stone mosque with a shallow dome, boats on the river",
+   "attested": "The former capital 'was at a distance from the Jumna, and Sher Shah destroyed and rebuilt it by the bank of the Jumna' with two forts: the smaller for the governor's residence, the other, the wall round the whole city; in the governor's fort he built a Jāmiʿ mosque of stone, ornamented with much gold and lapis lazuli; the fortifications round the city were not complete when he died (ʿAbbās Sarwānī, Tārīkh-i Shēr Shāhī, in Elliot & Dowson, History of India, vol. IV, p. 419). ʿAbd Allāh places the new city on the Jumna bank in the village of Indrapat, between Firozabad and Kilu Khari, after Sher Shāh destroyed the Siri fort in 947 H. (Tārīkh-i Dāʾūdī, in Elliot & Dowson, History of India, vol. IV, pp. 476–477; the text is cut off in the reading made).",
+   "prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+   "conjecture": "The plan, the number of gates, wall heights and finish, the look of the citadel, the form of the mosque (the source says only that it was of stone), the city fabric, the people, the boats and the stage of the work. The sources do not describe the river front.",
+   "k": "city",
+   "img": "scenes/sur/city.webp",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "label": "Road halt",
+   "title": "The sarāʾī on the royal road",
+   "alt": "Hypothetical reconstruction of a Sūr-period sarāʾī c. 1540: a fired-brick gateway with water pots, a courtyard with a well and a small brick mosque, merchants unloading carts, horses tethered under roadside trees and a cook at a hearth",
+   "attested": "Sher Shāh made a sarāʾī on every road at a distance of two kos, 1,700 in all; each had separate lodgings for Hindus and Muslims, pots of water at the gate, Brahmans to provide hot and cold water, beds, food and grain for horses, a well and a brick mosque in the middle with an imam, a muʾazzin and watchmen, and two horses kept for news; fruit and shade trees were planted on both sides of the highway, where travellers rested and tethered their horses; corn was cheap (ʿAbbās Sarwānī, in Elliot & Dowson, History of India, vol. IV, pp. 417–418, 421, 425). Elliot notes that in his own day no trace of sarāʾī, mosque, road or tree could be found.",
+   "prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+   "conjecture": "The courtyard's plan, the number of cells, the gate form, wall height and brick bond, the dress and goods of travellers, the tree species and the season. The source puts the well and mosque in the middle but gives no plan.",
+   "k": "street",
+   "img": "scenes/sur/street.webp",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}

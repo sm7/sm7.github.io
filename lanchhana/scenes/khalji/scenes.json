@@ -1,0 +1,30 @@
+{
+ "id": "khalji",
+ "heading": "Setting · Siri and Delhi under ʿAlāʾ al-Dīn, c. 1303–1311 CE",
+ "items": [
+  {
+   "label": "City",
+   "title": "Siri and Delhi under ʿAlāʾ al-Dīn: the palace-city, the enlarged Jāmiʿ Masjid and the granaries",
+   "alt": "Hypothetical reconstruction of Delhi c. 1305: a rubble fort wall with round bastions and a pointed gateway, a pillared hall, a great mosque with an unfinished minaret under bamboo scaffolding, a tank with a domed pavilion and vaulted granaries",
+   "attested": "ʿAlāʾ al-Dīn entrenched his camp at Siri during the Mongol siege, then built a palace there and made it his capital; the fort of Siri was finished and became a populous place; he had the fort of Delhi repaired; three or four royal granaries in the city were always full (Baranī, in Elliot & Dowson, History of India, vol. III, pp. 160, 191, 200). Amīr Khusraw says he added a fourth court with lofty pillars to the Jāmiʿ Masjid, planned a second minar of double the circumference, with stone dug from the hills and from demolished temples, and cleaned the tank of Shamsu-d-dīn and 'erected a dome in the middle of it' (pp. 69–70). The Alai Darwaza (inscribed 1311) is a square chamber of red sandstone with marble bands, horse-shoe arches and a plain dome, and only the first stage of his great minar was raised (Page, Guide to the Qutb, pp. 1–23).",
+   "prescribed": "Page offers a conjectural reconstruction of the mosque with the ʿAlāʾī additions, c. 1315. No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+   "conjecture": "The circuit and bastions of Siri's wall, the form of the Red Palace and of the Hazār-sutūn (named, not described), the layout of the town, the granary buildings (shown as vaulted brick stores), the form of the tank's dome, the scaffolding, the soldiers' dress (mail and lamellar), and the crowd. The sources also record the tower of Mongol heads at the Badaun gate; it is not shown.",
+   "k": "city",
+   "img": "scenes/khalji/city.webp",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "label": "Bazaar",
+   "title": "The regulated market: grain dealers, carriers and the inspector's scales",
+   "alt": "Hypothetical reconstruction of a regulated Delhi market c. 1305: bullock carts unloading grain, dealers with scales, a market inspector with a staff and balance, stalls of caps, shoes and combs, and mounted officials",
+   "attested": "ʿAlāʾ al-Dīn fixed grain prices by regulation; the market controller went round the markets with horse and foot, deputies and spies; the royal granaries held grain that was sold at the fixed rate when rains failed; all carriers (kārawāniyān, banjāras) were placed under the market controller and settled in villages on the Jumna; hoarding was forbidden; prices were also fixed for things sold at the stalls, 'from caps to shoes, from combs to needles'; the Sultan tested sellers by sending boys to buy bread, which was then weighed before him (Baranī, in Elliot & Dowson, History of India, vol. III, pp. 192–197). The cloth, horse and cattle regulations are replaced by asterisks in this translation.",
+   "prescribed": "No scholar's account could be read. No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+   "conjecture": "The market's physical setting (an open square with rubble and lime-plaster shop fronts and cloth awnings; no source gives a site), the shape of the scales and weights, the sacks and baskets, the dress of traders and officials, the number of people and the mosque, granary and gateway in the distance. The sources also describe the sale of slaves and a punishment for short weight; neither is shown.",
+   "k": "street",
+   "img": "scenes/khalji/street.webp",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}

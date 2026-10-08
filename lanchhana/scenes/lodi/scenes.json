@@ -1,0 +1,30 @@
+{
+ "id": "lodi",
+ "heading": "Setting · Agra and the markets under Sikandar Lodī, 1504 CE",
+ "items": [
+  {
+   "label": "City",
+   "title": "Agra chosen from the royal barge",
+   "alt": "Hypothetical reconstruction of the site of Agra in 1504: a royal barge with a canopy on a wide river, two low mounds on the bank, village huts and surveyors with rods and ropes",
+   "attested": "Sikandar left Delhi, marched to Mathura and took boat; approaching, he saw two elevated spots suited for building and asked the commander of the royal barge which was preferable; the answer 'That which is Agra, or in advance' led him to name the city and order its foundation; he ordered a fort built; on Sunday 3 Safar 911 H. (July 1505) a violent earthquake threw down lofty buildings (Niʿmat Allāh, in Elliot & Dowson, History of India, vol. V, pp. 98–100; ʿAbd Allāh, Tārīkh-i Dāʾūdī, in Elliot & Dowson, History of India, vol. IV, p. 465).",
+   "prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+   "conjecture": "The bank, huts, trees and boats, the dress of the party (long tunics, sashes and small turbans), the barge's canopy and pennant, the shape of the mounds, which mound is chosen (the source says only 'Agra, or in advance'), the surveyors and the season. No city or fort is yet built, as the source gives none at this moment.",
+   "k": "city",
+   "img": "scenes/lodi/city.webp",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  },
+  {
+   "label": "Bazaar",
+   "title": "Cheap grain, cheap cloth",
+   "alt": "Hypothetical reconstruction of a north-Indian market street c. 1500: grain in sacks and baskets weighed on balances, cloth lengths hung to display, jars of ghee, a moneychanger with copper coins, bullock carts and shoppers",
+   "attested": "ʿAbd Allāh says that in Sikandar's reign grain, merchandise and goods of every kind were so cheap that small means sufficed to live comfortably (Tārīkh-i Dāʾūdī, in Elliot & Dowson, History of India, vol. IV, p. 448). For Ibrāhīm's time, compared with Sikandar's, he gives ten mans of corn, five sirs of ghee and ten yards of cloth for one bahlolī (p. 476); these figures are Ibrāhīm's, not Sikandar's.",
+   "prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+   "conjecture": "The entire physical setting: shop fronts, awnings, containers, weights, dress, crowd and animals, and the distant domed tomb (kept low and small). The source gives commodities, a coin and prices only. Women's dress follows the painter's idea of a draped garment and is not sourced.",
+   "k": "street",
+   "img": "scenes/lodi/street.webp",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}

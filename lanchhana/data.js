@@ -3096,7 +3096,24 @@ window.LR={
 "brief": "two coin faces side by side inside the medallion, as on the small copper jital of Shams al-Din Iltutmish: on the left face a horseman riding to the right, on the right face a bull seated facing left. No flag, no flagstaff, no parasol, no tassels. No other human figures.",
 "review": "The Nāgarī legend on the horseman-and-bull coins and how long the type ran after Iltutmish could not be checked: Thomas (1871), Lane-Poole (1884) and Wright were found on archive.org but their full texts could not be opened from this session, and the British Museum records leave the inscription field empty.",
 "prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: two coin faces side by side inside the medallion, as on the small copper jital of Shams al-Din Iltutmish: on the left face a horseman riding to the right, on the right face a bull seated facing left. No flag, no flagstaff, no parasol, no tassels. No other human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"img": "later/l19-mamluk.webp"
+"img": "later/l19-mamluk.webp",
+"scenes": {
+"heading": "Setting · Delhi under Iltutmish, c. 1229–1237 CE",
+"items": [
+{
+"label": "City",
+"title": "Delhi of the slave-sultans: the Qutb mosque precinct, the Jāmiʿ Masjid quarter and the royal kūshks",
+"alt": "Hypothetical reconstruction of Delhi c. 1230: the Quwwat-ul-Islām mosque with its great arched screen and a red-sandstone minaret, a small domed tomb, a walled town and a dusty road with carts and camels",
+"attested": "Iltutmish took the throne of Delhi in 607 H. (1210); his chief palace was the Kushk-i Fīrūzī, and a Jāmiʿ Masjid with a gate called the Muʿizzī stood in the city, with the clothes bazaar on one approach to it (Minhāj-i Sirāj, in Elliot & Dowson, History of India, vol. II, pp. 332–336). The Qutb group has Aibak's Quwwat-ul-Islām mosque with its great arched screen dated 1199 and the minar begun by Aibak and completed by Iltutmish; the mosque was built from the materials of demolished Hindu temples, with columns of different temples set one upon another; Iltutmish extended the mosque and screen, using plainer columns because the supply of carved columns had given out; a square red-sandstone tomb with a dome on squinches, banded with Qurʾānic inscription, stands in the precinct (J. A. Page, A Guide to the Qutb, ASI, 1938, pp. 1–23).",
+"prescribed": "Page gives the only physical reconstruction read, a conjectural perspective of the mosque as it stood c. 1315, and says himself that his central bay rests on corbel and lintel fragments, not on a text. No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "The wall circuit and gates of the town, the street plan, house forms (shown as flat-roofed rubble and lime-plaster houses), the position of the Jāmiʿ Masjid relative to the Qutb precinct, the form of the Kushk-i Fīrūzī (not shown separately), the minaret shown at four storeys, dress (Turkish nobles in coats and caps, townspeople in wrapped cloths), animals and carts. The painter's view of the minaret and screen follows the surviving monument, which was restored in later centuries.",
+"k": "city",
+"img": "scenes/mamluk/city.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "khalji",
@@ -3113,7 +3130,36 @@ window.LR={
 "brief": "the silver coin of 'Ala al-Din Muhammad Khalji: a plain round silver coin with a raised square frame in the centre enclosing four horizontal bands of abstract raised ornament, and a narrow ring band around the square. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "review": "The title 'sikandar al-thānī' was confirmed only on one rare gold coin of southern type. Its place on the ordinary Delhi silver tanka, the title 'Yamīn al-Khilāfa', and the Arabic-script form of the legend could not be checked in Thomas, Lane-Poole or Wright from this session, so 'nat' is left blank.",
 "prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: the silver coin of 'Ala al-Din Muhammad Khalji: a plain round silver coin with a raised square frame in the centre enclosing four horizontal bands of abstract raised ornament, and a narrow ring band around the square. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"img": "later/l20-khalji.webp"
+"img": "later/l20-khalji.webp",
+"scenes": {
+"heading": "Setting · Siri and Delhi under ʿAlāʾ al-Dīn, c. 1303–1311 CE",
+"items": [
+{
+"label": "City",
+"title": "Siri and Delhi under ʿAlāʾ al-Dīn: the palace-city, the enlarged Jāmiʿ Masjid and the granaries",
+"alt": "Hypothetical reconstruction of Delhi c. 1305: a rubble fort wall with round bastions and a pointed gateway, a pillared hall, a great mosque with an unfinished minaret under bamboo scaffolding, a tank with a domed pavilion and vaulted granaries",
+"attested": "ʿAlāʾ al-Dīn entrenched his camp at Siri during the Mongol siege, then built a palace there and made it his capital; the fort of Siri was finished and became a populous place; he had the fort of Delhi repaired; three or four royal granaries in the city were always full (Baranī, in Elliot & Dowson, History of India, vol. III, pp. 160, 191, 200). Amīr Khusraw says he added a fourth court with lofty pillars to the Jāmiʿ Masjid, planned a second minar of double the circumference, with stone dug from the hills and from demolished temples, and cleaned the tank of Shamsu-d-dīn and 'erected a dome in the middle of it' (pp. 69–70). The Alai Darwaza (inscribed 1311) is a square chamber of red sandstone with marble bands, horse-shoe arches and a plain dome, and only the first stage of his great minar was raised (Page, Guide to the Qutb, pp. 1–23).",
+"prescribed": "Page offers a conjectural reconstruction of the mosque with the ʿAlāʾī additions, c. 1315. No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "The circuit and bastions of Siri's wall, the form of the Red Palace and of the Hazār-sutūn (named, not described), the layout of the town, the granary buildings (shown as vaulted brick stores), the form of the tank's dome, the scaffolding, the soldiers' dress (mail and lamellar), and the crowd. The sources also record the tower of Mongol heads at the Badaun gate; it is not shown.",
+"k": "city",
+"img": "scenes/khalji/city.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"label": "Bazaar",
+"title": "The regulated market: grain dealers, carriers and the inspector's scales",
+"alt": "Hypothetical reconstruction of a regulated Delhi market c. 1305: bullock carts unloading grain, dealers with scales, a market inspector with a staff and balance, stalls of caps, shoes and combs, and mounted officials",
+"attested": "ʿAlāʾ al-Dīn fixed grain prices by regulation; the market controller went round the markets with horse and foot, deputies and spies; the royal granaries held grain that was sold at the fixed rate when rains failed; all carriers (kārawāniyān, banjāras) were placed under the market controller and settled in villages on the Jumna; hoarding was forbidden; prices were also fixed for things sold at the stalls, 'from caps to shoes, from combs to needles'; the Sultan tested sellers by sending boys to buy bread, which was then weighed before him (Baranī, in Elliot & Dowson, History of India, vol. III, pp. 192–197). The cloth, horse and cattle regulations are replaced by asterisks in this translation.",
+"prescribed": "No scholar's account could be read. No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "The market's physical setting (an open square with rubble and lime-plaster shop fronts and cloth awnings; no source gives a site), the shape of the scales and weights, the sacks and baskets, the dress of traders and officials, the number of people and the mosque, granary and gateway in the distance. The sources also describe the sale of slaves and a punishment for short weight; neither is shown.",
+"k": "street",
+"img": "scenes/khalji/street.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "tughluq",
@@ -3137,7 +3183,24 @@ window.LR={
 },
 "review": "The sources disagree on the metal: Lane-Poole (1884) says the token coins were chiefly brass, while Baranī in Elliot & Dowson's translation calls them copper. The Commons photo comes from a private collection and its legend has not been read against the catalogue.",
 "prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a small round brass coin of Muhammad bin Tughluq's token currency, its field filled with raised bands of ornamental calligraphic strokes that form no readable letters, worn dark-bronze surface. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"img": "later/l21-tughluq.webp"
+"img": "later/l21-tughluq.webp",
+"scenes": {
+"heading": "Setting · Firozabad under Fīrūz Shāh, c. 1354–1388 CE",
+"items": [
+{
+"label": "City",
+"title": "Firozabad: the Sultan's new city beside the Jumna",
+"alt": "Hypothetical reconstruction of Firozabad c. 1370: a walled palace and mosque complex of battered rubble masonry above a river landing with cargo boats, and a tall polished sandstone pillar with a gilded cupola on a stepped base",
+"attested": "Firozabad was founded on the Jumna at the village of Gawin, five kos from Delhi; a new town took in eighteen named places; there were eight public mosques, each for 10,000 worshippers; the Delhi road swarmed with people, with carriages, mules, horses and palanquin-bearers for hire (ʿAfīf, in Elliot & Dowson, History of India, vol. III, pp. 302–303). The Kushk-i shikār had stone minarets and the Kushk-i nuzūl had domes bearing verses in gold letters (p. 316). The Ashokan pillar from Tobra came down the Jumna by boat; a building of stone and chunam was raised in stages near the Jāmiʿ Masjid to receive it, with black-and-white friezes round its capitals and a gilded copper cupola called kolas, 32 gaz long with 24 visible (pp. 351–352). The Sultan laid out 1,200 gardens near Delhi (p. 345). In his own memoir he says he had painted pictures on palace doors and walls effaced and limited gold braid on garments to four inches (Futūḥāt-i Fīrūz Shāhī, in Elliot & Dowson, History of India, vol. III, pp. 382–383).",
+"prescribed": "No scholarly account was read, and nothing is taken from the ruins at Kotla Fīrūz Shāh, whose upper storeys are not evidence for the original. No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "All building forms (the texts give names, counts and the pillar's height but no shapes): the palace blocks, the mosques and domes, the form of the pillar's base and cupola, the plaster colour, the river width, the garden layout, plain long coats and caps (following the Sultan's own dress restraint), the boats, the people and the cypresses.",
+"k": "city",
+"img": "scenes/tughluq/city.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "sayyid",
@@ -3159,7 +3222,7 @@ window.LR={
 "credit": "Classical Numismatic Group, Inc. · CC BY-SA 2.5",
 "licurl": "https://creativecommons.org/licenses/by-sa/2.5"
 },
-"review": "This is a documented gap: the Sayyid coinage has no emblem beyond its legends, and the sources disagree on whether coins were ever struck in Timur's name.",
+"review": "Documented gap: the Sayyid coinage has no emblem beyond its legends, and the sources disagree on whether coins were ever struck in Timur's name.",
 "prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a small round worn copper coin of the Sayyid sultans of Delhi, with a plain circle in the centre of one face and the field filled with ornamental calligraphic strokes that form no readable letters. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
 "img": "later/l22-sayyid.webp"
 },
@@ -3178,7 +3241,36 @@ window.LR={
 "brief": "a thick round coin of Bahlul Lodi in dark billon, about the size of a thumbnail, with the field filled with bold raised calligraphic strokes in horizontal lines that form no readable letters. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "review": "Bahlūl's coins carry legends only. The metal is debatable: 'copper' in Lane-Poole, base silver in Thomas's assays. Thomas gives the remark on pomp without naming his source.",
 "prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a thick round coin of Bahlul Lodi in dark billon, about the size of a thumbnail, with the field filled with bold raised calligraphic strokes in horizontal lines that form no readable letters. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"img": "later/l23-lodi.webp"
+"img": "later/l23-lodi.webp",
+"scenes": {
+"heading": "Setting · Agra and the markets under Sikandar Lodī, 1504 CE",
+"items": [
+{
+"label": "City",
+"title": "Agra chosen from the royal barge",
+"alt": "Hypothetical reconstruction of the site of Agra in 1504: a royal barge with a canopy on a wide river, two low mounds on the bank, village huts and surveyors with rods and ropes",
+"attested": "Sikandar left Delhi, marched to Mathura and took boat; approaching, he saw two elevated spots suited for building and asked the commander of the royal barge which was preferable; the answer 'That which is Agra, or in advance' led him to name the city and order its foundation; he ordered a fort built; on Sunday 3 Safar 911 H. (July 1505) a violent earthquake threw down lofty buildings (Niʿmat Allāh, in Elliot & Dowson, History of India, vol. V, pp. 98–100; ʿAbd Allāh, Tārīkh-i Dāʾūdī, in Elliot & Dowson, History of India, vol. IV, p. 465).",
+"prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "The bank, huts, trees and boats, the dress of the party (long tunics, sashes and small turbans), the barge's canopy and pennant, the shape of the mounds, which mound is chosen (the source says only 'Agra, or in advance'), the surveyors and the season. No city or fort is yet built, as the source gives none at this moment.",
+"k": "city",
+"img": "scenes/lodi/city.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"label": "Bazaar",
+"title": "Cheap grain, cheap cloth",
+"alt": "Hypothetical reconstruction of a north-Indian market street c. 1500: grain in sacks and baskets weighed on balances, cloth lengths hung to display, jars of ghee, a moneychanger with copper coins, bullock carts and shoppers",
+"attested": "ʿAbd Allāh says that in Sikandar's reign grain, merchandise and goods of every kind were so cheap that small means sufficed to live comfortably (Tārīkh-i Dāʾūdī, in Elliot & Dowson, History of India, vol. IV, p. 448). For Ibrāhīm's time, compared with Sikandar's, he gives ten mans of corn, five sirs of ghee and ten yards of cloth for one bahlolī (p. 476); these figures are Ibrāhīm's, not Sikandar's.",
+"prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "The entire physical setting: shop fronts, awnings, containers, weights, dress, crowd and animals, and the distant domed tomb (kept low and small). The source gives commodities, a coin and prices only. Women's dress follows the painter's idea of a draped garment and is not sourced.",
+"k": "street",
+"img": "scenes/lodi/street.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "sur",
@@ -3195,7 +3287,36 @@ window.LR={
 "brief": "a broad round silver rupee of Sher Shah Suri, with a square border framing the central field, a band of marginal script around it, and the field filled with ornamental calligraphic strokes that form no readable letters; bright silver. No flag, no flagstaff, no parasol, no tassels. No human figures.",
 "review": "Lane-Poole calls this coin the silver tanka and Thomas calls it the rupee. Square-area and circular-area types both exist: the brief follows Lane-Poole's square type, but the evidence photo shows a circular one.",
 "prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a broad round silver rupee of Sher Shah Suri, with a square border framing the central field, a band of marginal script around it, and the field filled with ornamental calligraphic strokes that form no readable letters; bright silver. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
-"img": "later/l24-sur.webp"
+"img": "later/l24-sur.webp",
+"scenes": {
+"heading": "Setting · Delhi and the royal road under Sher Shāh, c. 1540–1545 CE",
+"items": [
+{
+"label": "City",
+"title": "The new city on the river bank: Sher Shāh's Delhi",
+"alt": "Hypothetical reconstruction of Delhi c. 1542: a rubble and ashlar citadel with battered bastions and a high gateway, an unfinished outer wall with scaffolding and piles of cut stone, a stone mosque with a shallow dome, boats on the river",
+"attested": "The former capital 'was at a distance from the Jumna, and Sher Shah destroyed and rebuilt it by the bank of the Jumna' with two forts: the smaller for the governor's residence, the other, the wall round the whole city; in the governor's fort he built a Jāmiʿ mosque of stone, ornamented with much gold and lapis lazuli; the fortifications round the city were not complete when he died (ʿAbbās Sarwānī, Tārīkh-i Shēr Shāhī, in Elliot & Dowson, History of India, vol. IV, p. 419). ʿAbd Allāh places the new city on the Jumna bank in the village of Indrapat, between Firozabad and Kilu Khari, after Sher Shāh destroyed the Siri fort in 947 H. (Tārīkh-i Dāʾūdī, in Elliot & Dowson, History of India, vol. IV, pp. 476–477; the text is cut off in the reading made).",
+"prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "The plan, the number of gates, wall heights and finish, the look of the citadel, the form of the mosque (the source says only that it was of stone), the city fabric, the people, the boats and the stage of the work. The sources do not describe the river front.",
+"k": "city",
+"img": "scenes/sur/city.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+},
+{
+"label": "Road halt",
+"title": "The sarāʾī on the royal road",
+"alt": "Hypothetical reconstruction of a Sūr-period sarāʾī c. 1540: a fired-brick gateway with water pots, a courtyard with a well and a small brick mosque, merchants unloading carts, horses tethered under roadside trees and a cook at a hearth",
+"attested": "Sher Shāh made a sarāʾī on every road at a distance of two kos, 1,700 in all; each had separate lodgings for Hindus and Muslims, pots of water at the gate, Brahmans to provide hot and cold water, beds, food and grain for horses, a well and a brick mosque in the middle with an imam, a muʾazzin and watchmen, and two horses kept for news; fruit and shade trees were planted on both sides of the highway, where travellers rested and tethered their horses; corn was cheap (ʿAbbās Sarwānī, in Elliot & Dowson, History of India, vol. IV, pp. 417–418, 421, 425). Elliot notes that in his own day no trace of sarāʾī, mosque, road or tree could be found.",
+"prescribed": "No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+"conjecture": "The courtyard's plan, the number of cells, the gate form, wall height and brick bond, the dress and goods of travellers, the tree species and the season. The source puts the well and mosque in the middle but gives no plan.",
+"k": "street",
+"img": "scenes/sur/street.webp",
+"secondLabel": "Second source",
+"note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+}
+]
+}
 },
 {
 "id": "mughal",
@@ -3398,6 +3519,34 @@ null
 "travancore": [
 1729,
 1949
+],
+"mughal": [
+1556,
+1707
+],
+"sur": [
+1540,
+1555
+],
+"lodi": [
+1451,
+1526
+],
+"sayyid": [
+1414,
+1451
+],
+"tughluq": [
+1320,
+1414
+],
+"khalji": [
+1290,
+1320
+],
+"mamluk": [
+1206,
+1290
 ]
 }
 };

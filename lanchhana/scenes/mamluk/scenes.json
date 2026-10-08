@@ -1,0 +1,18 @@
+{
+ "id": "mamluk",
+ "heading": "Setting · Delhi under Iltutmish, c. 1229–1237 CE",
+ "items": [
+  {
+   "label": "City",
+   "title": "Delhi of the slave-sultans: the Qutb mosque precinct, the Jāmiʿ Masjid quarter and the royal kūshks",
+   "alt": "Hypothetical reconstruction of Delhi c. 1230: the Quwwat-ul-Islām mosque with its great arched screen and a red-sandstone minaret, a small domed tomb, a walled town and a dusty road with carts and camels",
+   "attested": "Iltutmish took the throne of Delhi in 607 H. (1210); his chief palace was the Kushk-i Fīrūzī, and a Jāmiʿ Masjid with a gate called the Muʿizzī stood in the city, with the clothes bazaar on one approach to it (Minhāj-i Sirāj, in Elliot & Dowson, History of India, vol. II, pp. 332–336). The Qutb group has Aibak's Quwwat-ul-Islām mosque with its great arched screen dated 1199 and the minar begun by Aibak and completed by Iltutmish; the mosque was built from the materials of demolished Hindu temples, with columns of different temples set one upon another; Iltutmish extended the mosque and screen, using plainer columns because the supply of carved columns had given out; a square red-sandstone tomb with a dome on squinches, banded with Qurʾānic inscription, stands in the precinct (J. A. Page, A Guide to the Qutb, ASI, 1938, pp. 1–23).",
+   "prescribed": "Page gives the only physical reconstruction read, a conjectural perspective of the mosque as it stood c. 1315, and says himself that his central bay rests on corbel and lintel fragments, not on a text. No scholarly account (e.g. Jackson, Kumar, Asher, Habib, Digby) could be read as an open text, so none is relied on here.",
+   "conjecture": "The wall circuit and gates of the town, the street plan, house forms (shown as flat-roofed rubble and lime-plaster houses), the position of the Jāmiʿ Masjid relative to the Qutb precinct, the form of the Kushk-i Fīrūzī (not shown separately), the minaret shown at four storeys, dress (Turkish nobles in coats and caps, townspeople in wrapped cloths), animals and carts. The painter's view of the minaret and screen follows the surviving monument, which was restored in later centuries.",
+   "k": "city",
+   "img": "scenes/mamluk/city.webp",
+   "secondLabel": "Second source",
+   "note": "Hypothetical reconstruction, painted with an AI image model from the texts above; not an archaeological finding. Colours, ornament and dress are illustrative."
+  }
+ ]
+}
