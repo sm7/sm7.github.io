@@ -296,6 +296,106 @@ window.LR={
 "val": [
 "Vālmīki Rāmāyaṇa, Sanskrit text with prose translation, valmikiramayan.net (Bāla Kāṇḍa trans. Desiraju Hanumanta Rao; Ayodhyā and Yuddha Kāṇḍas trans. K. M. K. Murthy, 2006). Passages used: Bāla 5, 29–31, 50, 66–67, 69–73; Ayodhyā 2, 6, 10, 15–17, 59, 71, 100; Yuddha 127–128",
 "https://www.valmikiramayan.net/"
+],
+"bmIOLC7789": [
+"British Museum, coin IOLC.7789 (Shams al-Din Iltutmish, minted at Delhi, copper alloy, 14 mm, 3.26 g), collection online record; refs. H. H. Wilson, Ariana Antiqua (1841), p. 432 no. 7, Coins pl. XIX.32; Goron & Goenka, The Coins of the Indian Sultanates (2001), p. 21, type D45",
+"https://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=3455246&page=1&partId=1&peoA=55588-3-16&people=55588"
+],
+"bmIOLC6205": [
+"British Museum, coin IOLC.6205 (copper alloy, 'imitation of Hindu Shahi horseman/bull type', issuers Bhima-Deva / Samanta Deva, c. 850–1000), collection online record; ref. Tye 1995, Jitals",
+"https://www.britishmuseum.org/collection/object/C_IOLC-6205"
+],
+"bmIOLC7508": [
+"British Museum, coin IOLC.7508 (Shams al-Din Iltutmish, minted at Delhi, 15 mm, 3.10 g: 'Horseman to right. Arabic inscription'), collection online record; ref. Goron & Goenka 2001, p. 22, type D55",
+"https://www.britishmuseum.org/collection/object/C_IOLC-7508"
+],
+"bsoasRoss": [
+"E. D. R[oss], 'Shams ud-Din Iltutmish', Bulletin of the School of Oriental Studies 6.4 (1932), pp. 1101–1102 (note quoting J. Allan, citing The Coins of the Sultans of Delhi in the British Museum, 1884, p. 15), Cambridge first-page view",
+"https://www.cambridge.org/core/services/aop-cambridge-core/content/view/50066039D8C1A816366405B419681184/S0041977X00123523a.pdf/shams-ud-din-iltutmish.pdf"
+],
+"onsAlam": [
+"S. M. Iftekhar Alam, 'Dates in Arabic Letters in the Margins of Bengal Sultanate Coins', Journal of the Oriental Numismatic Society 238 (Winter 2019), pp. 15–22, coins 10, 12–13 (pp. 17–18)",
+"https://www.orientalnumismaticsociety.org/archive/ONS_238.pdf"
+],
+"onsStevens": [
+"Paul Stevens, 'Some New Types and Varieties of Sultanate Coins', Journal of the Oriental Numismatic Society 238 (Winter 2019), pp. 12–13, type D224A",
+"https://www.orientalnumismaticsociety.org/archive/ONS_238.pdf"
+],
+"harvardKhalji": [
+"Harvard Art Museums, 'Coin of Ala Al-Din Muhammad Khalji, Sultan of Delhi', silver, 2.8 cm, 1296–1316, accession 2007.185, collection record",
+"https://harvardartmuseums.org/art/317875"
+],
+"lpTughluq": [
+"Stanley Lane-Poole, The Coins of the Sultáns of Dehlí in the British Museum (London: Trustees of the British Museum, 1884), Introduction, pp. xxi–xxii (Arabic legends checked against the page scan, p. xxii)",
+"https://archive.org/details/cu31924022932499/page/n31/mode/1up"
+],
+"lpKhizr": [
+"Lane-Poole, The Coins of the Sultáns of Dehlí in the British Museum (1884), Introduction, pp. xvi–xvii (Daulat Khān Lodī and Khiżr Khān struck in the names of Fīrūz III or Muḥammad III) and p. xxvii (posthumous silver tankas of Muḥammad III, struck chiefly by Khiżr Khān, c. AH 817)",
+"https://archive.org/details/cu31924022932499"
+],
+"lpSayyid": [
+"Lane-Poole, The Coins of the Sultáns of Dehlí in the British Museum (1884), p. 91, no. 446 (Mubārak Shāh II, copper, Delhi, AH 835), legends read from the page scan",
+"https://archive.org/details/cu31924022932499/page/n144/mode/1up"
+],
+"lpLodi": [
+"Lane-Poole, The Coins of the Sultáns of Dehlí in the British Museum (1884), p. 97, no. 473 (Buhlōl Lōdī, 'copper', Dehlí, AH 858; Pl. VIII), legends read from the page scan",
+"https://archive.org/details/cu31924022932499/page/n150/mode/1up"
+],
+"lpSher": [
+"Lane-Poole, The Coins of the Sultáns of Dehlí in the British Museum (1884), p. 105, nos. 524–525 (Shér Sháh, silver, 'A. Single Square Borders', AH 946; wt. 175 and 176 grs.), legends read from the page scan",
+"https://archive.org/details/cu31924022932499/page/n158/mode/1up"
+],
+"lpSherIntro": [
+"Lane-Poole, The Coins of the Sultáns of Dehlí in the British Museum (1884), Introduction, pp. xxvi–xxvii",
+"https://archive.org/details/cu31924022932499"
+],
+"thomasKhizr": [
+"Edward Thomas, The Chronicles of the Pathán Kings of Dehli (London: Trübner, 1871; Munshiram Manoharlal reprint, Digital Library of India scan), pp. 328–329",
+"https://archive.org/details/dli.ernet.285402"
+],
+"thomasLodi": [
+"Thomas, The Chronicles of the Pathán Kings of Dehli (1871; reprint), pp. 358–359 (Buhlōl Lōdī; assays of his coins, no. 311)",
+"https://archive.org/details/dli.ernet.285402"
+],
+"thomasSher": [
+"Thomas, The Chronicles of the Pathán Kings of Dehli (1871; reprint), pp. 404–405 (Shīr Shāh's monetary reforms; silver standard)",
+"https://archive.org/details/dli.ernet.285402"
+],
+"edBarani": [
+"Ẓiyāʾ al-Dīn Baranī, Tārīkh-i Fīrūz Shāhī, trans. in H. M. Elliot & J. Dowson, The History of India as Told by its Own Historians, vol. III (London: Trübner, 1871), p. 240",
+"https://archive.org/details/historyofindiaas03elli"
+],
+"edKhizr": [
+"Yaḥyā bin Aḥmad Sirhindī, Tārīkh-i Mubārak Shāhī, in Elliot & Dowson, The History of India as Told by its Own Historians, vol. IV (London: Trübner, 1872), p. 45 and n. (editor's note quoting the Ṭabaqāt-i Akbarī and citing Thomas, p. 328)",
+"https://archive.org/details/india.history.resource.374"
+],
+"mugAin10": [
+"Abū'l-Faẓl ʿAllāmī, Āʾīn-i Akbarī, vol. I, transl. H. Blochmann (2nd ed., rev. D. C. Phillott, Calcutta 1927), Book I, Āʾīn 10 'The coins of this glorious empire', pp. 28–36 — transcription by F. W. Pritchett, Columbia University",
+"https://franpritchett.com/00litlinks/abulfazl/ain_1_1_10.html"
+],
+"mugAin19": [
+"Abū'l-Faẓl ʿAllāmī, Āʾīn-i Akbarī, vol. I, transl. H. Blochmann (Calcutta 1927), Book I, Āʾīn 19 'The ensigns of royalty', pp. 52–54 — transcription by F. W. Pritchett",
+"https://franpritchett.com/00litlinks/abulfazl/ain_1_1_19.html"
+],
+"mugAin20": [
+"Abū'l-Faẓl ʿAllāmī, Āʾīn-i Akbarī, vol. I, transl. H. Blochmann (Calcutta 1927), Book I, Āʾīn 20 'The royal seals', pp. 54–55 — transcription by F. W. Pritchett",
+"https://franpritchett.com/00litlinks/abulfazl/ain_1_1_20.html"
+],
+"mugTuzuk": [
+"The Tūzuk-i-Jahāngīrī or Memoirs of Jahāngīr, vol. II, transl. Alexander Rogers, ed. Henry Beveridge (Royal Asiatic Society), thirteenth regnal year, pp. 6–7 — Project Gutenberg eBook 53716",
+"https://gutenberg.org/cache/epub/53716/pg53716-images.html"
+],
+"mugLaneIntro": [
+"Stanley Lane-Poole, The Coins of the Moghul Emperors of Hindustan in the British Museum, ed. R. S. Poole (London: Trustees of the British Museum, 1892), Author's Introduction, pp. xv–xvi, xx, xxvii–xxviii — scan, Rare Book Society of India",
+"https://rarebooksocietyofindia.org/book_archive/196174216674_10151194719631675.pdf"
+],
+"mugKhafi": [
+"Khāfī Khān, Muntakhab al-Lubāb, transl. in H. M. Elliot & J. Dowson, The History of India as Told by its Own Historians, vol. VII (London 1877), 'Second Year of the Reign (1659 A.D.)' (Persian text, Bibliotheca Indica vol. ii, pp. 77–79) — Persian Literature in Translation (Packard Humanities Institute) transcription",
+"https://persian.packhum.org/text/080201017/3"
+],
+"mugMetTaurus": [
+"Metropolitan Museum of Art, Coin with the sign of Taurus, gold, Agra, 1028 AH / 1619 CE, Jahāngīr, acc. no. 99.35.7402 (Bequest of Joseph H. Durkee, 1898) — collection catalogue page",
+"https://www.metmuseum.org/art/collection/search/444866"
 ]
 },
 "MOTIFS": {
@@ -2978,13 +3078,153 @@ window.LR={
 }
 ]
 }
+},
+{
+"id": "mamluk",
+"tab": "later",
+"n": "Mamluk (Slave) sultans of Delhi",
+"d": "1206–1290 CE",
+"r": "North",
+"k": "coin",
+"e": "Horseman and bull of Iltutmish",
+"nat": "",
+"nc": "",
+"t": "A small copper-alloy coin of Shams al-Dīn Iltutmish from the Delhi mint shows a horseman riding to the right on one side and a bull seated facing left on the other.{bmIOLC7789} The British Museum calls the same design on earlier copper coins naming Sāmantadeva an imitation of the Hindu Śāhi horseman-and-bull type.{bmIOLC6205} Another Delhi coin of Iltutmish keeps the horseman but puts an Arabic inscription in place of the bull.{bmIOLC7508} A note by John Allan of the British Museum cites a Nāgarī legend on one of his coins, read 'Śrī Sultā Lititimi' and dated Saṃvat 1283.{bsoasRoss} Silver tankas struck in his name in Bengal carry only Arabic legends naming him and the caliph al-Mustanṣir, and AH 628 is the earliest date on which the word tanka appears on a sultanate coin.{onsAlam}",
+"motifs": [
+"bull"
+],
+"brief": "two coin faces side by side inside the medallion, as on the small copper jital of Shams al-Din Iltutmish: on the left face a horseman riding to the right, on the right face a bull seated facing left. No flag, no flagstaff, no parasol, no tassels. No other human figures.",
+"review": "The Nāgarī legend on the horseman-and-bull coins and how long the type ran after Iltutmish could not be checked: Thomas (1871), Lane-Poole (1884) and Wright were found on archive.org but their full texts could not be opened from this session, and the British Museum records leave the inscription field empty.",
+"prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: two coin faces side by side inside the medallion, as on the small copper jital of Shams al-Din Iltutmish: on the left face a horseman riding to the right, on the right face a bull seated facing left. No flag, no flagstaff, no parasol, no tassels. No other human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"img": "later/l19-mamluk.webp"
+},
+{
+"id": "khalji",
+"tab": "later",
+"n": "Khalji sultans of Delhi",
+"d": "1290–1320 CE",
+"r": "North",
+"k": "coin",
+"e": "'Second Alexander' coin legend",
+"nat": "",
+"nc": "",
+"t": "A 3.66 g gold coin of ʿAlāʾ al-Dīn Muḥammad (AH 695–715, 1296–1316 CE) carries the legend 'ʿalāʾ al-dunyā wa al-dīn' with the title 'sikandar al-thānī' ('second Alexander').{onsStevens} Paul Stevens catalogues it as a gold pagoda and suggests it was struck in the south, either by the sultan or by a local ruler hoping to appease him.{onsStevens} The sultan's silver coins carry no figure: a Delhi-minted specimen has four registers of raised Arabic inscription framed in a square field on each side.{harvardKhalji} On the reverse that square is surrounded by a ring of Arabic inscription.{harvardKhalji}",
+"motifs": [],
+"brief": "the silver coin of 'Ala al-Din Muhammad Khalji: a plain round silver coin with a raised square frame in the centre enclosing four horizontal bands of abstract raised ornament, and a narrow ring band around the square. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"review": "The title 'sikandar al-thānī' was confirmed only on one rare gold coin of southern type. Its place on the ordinary Delhi silver tanka, the title 'Yamīn al-Khilāfa', and the Arabic-script form of the legend could not be checked in Thomas, Lane-Poole or Wright from this session, so 'nat' is left blank.",
+"prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: the silver coin of 'Ala al-Din Muhammad Khalji: a plain round silver coin with a raised square frame in the centre enclosing four horizontal bands of abstract raised ornament, and a narrow ring band around the square. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"img": "later/l20-khalji.webp"
+},
+{
+"id": "tughluq",
+"tab": "later",
+"n": "Tughluq dynasty",
+"d": "1320–1414 CE",
+"r": "North",
+"k": "coin",
+"e": "Token tanka of Muḥammad ibn Tughluq",
+"nat": "من اطاع السلطان فقد اطاع الرحمن",
+"nc": "arab",
+"t": "Lane-Poole calls Muḥammad ibn Tughluq's most remarkable monetary venture an attempt to force a currency of brass to pass at the value of the silver tanka.{lpTughluq} Some of its legends quote the Qurʾān to demand obedience, among them 'Whoso obeys the Sultan obeys the Compassionate'.{lpTughluq} Others state the value, such as 'Sealed as a tanka current in the reign of the slave hopeful [of grace] Muḥammad Tughluq'.{lpTughluq} Lane-Poole dates the trial to about AH 730–732 and says it failed because of countless forgeries, against which the Sultan had set no protective marks.{lpTughluq} Baranī calls it copper money and says that every Hindu house became a mint, until the Sultan revoked the edict and had the coins brought to the treasury to be exchanged for the old coin.{edBarani}",
+"motifs": [],
+"brief": "a small round brass coin of Muhammad bin Tughluq's token currency, its field filled with raised bands of ornamental calligraphic strokes that form no readable letters, worn dark-bronze surface. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"ev": {
+"img": "evidence/tughluq.webp",
+"caption": "Forced token currency coin of Muḥammad ibn Tughluq (collector's photograph)",
+"file": "https://commons.wikimedia.org/wiki/File:Forced_token_currency_coin_of_Muhammad_bin_Tughlak.jpg",
+"credit": "Drnsreedhar1959 · CC BY-SA 3.0",
+"licurl": "https://creativecommons.org/licenses/by-sa/3.0"
+},
+"review": "The sources disagree on the metal: Lane-Poole (1884) says the token coins were chiefly brass, while Baranī in Elliot & Dowson's translation calls them copper. The Commons photo comes from a private collection and its legend has not been read against the catalogue.",
+"prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a small round brass coin of Muhammad bin Tughluq's token currency, its field filled with raised bands of ornamental calligraphic strokes that form no readable letters, worn dark-bronze surface. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"img": "later/l21-tughluq.webp"
+},
+{
+"id": "sayyid",
+"tab": "later",
+"n": "Sayyid dynasty",
+"d": "1414–1451 CE",
+"r": "North",
+"k": "coin",
+"e": "Legend-only coin of Mubārak Shāh",
+"nat": "مبارك شاه",
+"nc": "arab",
+"t": "Lane-Poole says Khiżr Khān did not risk coins in his own name: he struck them in the names of Fīrūz III or Muḥammad III instead.{lpKhizr} The Ṭabaqāt-i Akbarī, as quoted in Elliot & Dowson, says Timur's name and later Shāh Rukh's were used on the coins, and that Khiżr Khān was styled Rāyāt-i ʿAlā, 'exalted standards', rather than king.{edKhizr} Thomas calls the claim about Timur's coins a myth, because Delhi coins bearing the names of earlier Tughluq sultans are dated within Khiżr Khān's own years.{thomasKhizr} The British Museum's copper of Mubārak Shāh II (AH 824–837) carries only words: 'nāʾib amīr al-muʾminīn' and a date on one side, and 'Mubārak Shāh' in a circle on the other.{lpSayyid} No picture or device is recorded on Sayyid coins in the catalogues read.{lpSayyid}",
+"motifs": [],
+"brief": "a small round worn copper coin of the Sayyid sultans of Delhi, with a plain circle in the centre of one face and the field filled with ornamental calligraphic strokes that form no readable letters. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"ev": {
+"img": "evidence/sayyid.webp",
+"caption": "Tanka of Mubārak Shāh, dated AH 834(?), with legends only; a different type from the copper described in the text",
+"file": "https://commons.wikimedia.org/wiki/File:Coin_of_Mubarak_Shah_of_the_Delhi_Sultanate_(Sayyid_dynasty).jpg",
+"credit": "Classical Numismatic Group, Inc. · CC BY-SA 2.5",
+"licurl": "https://creativecommons.org/licenses/by-sa/2.5"
+},
+"review": "This is a documented gap: the Sayyid coinage has no emblem beyond its legends, and the sources disagree on whether coins were ever struck in Timur's name.",
+"prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a small round worn copper coin of the Sayyid sultans of Delhi, with a plain circle in the centre of one face and the field filled with ornamental calligraphic strokes that form no readable letters. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"img": "later/l22-sayyid.webp"
+},
+{
+"id": "lodi",
+"tab": "later",
+"n": "Lodi dynasty",
+"d": "1451–1526 CE",
+"r": "North",
+"k": "coin",
+"e": "Bahlūl's tanka",
+"nat": "المتوكل على الرحمن بهلول شاه سلطان",
+"nc": "arab",
+"t": "Lane-Poole's catalogue lists coins of Bahlūl Lodī struck at Delhi from AH 858.{lpLodi} They read 'al-mutawakkil ʿalā al-raḥmān Bahlūl Shāh sulṭān bi-ḥaḍrat Dihlī' on one side and 'fī zaman amīr al-muʾminīn khuldat khilāfatuhu' with the date on the other.{lpLodi} Lane-Poole lists them under copper, but assays printed by Thomas found between none and about 15 grains of silver in coins of roughly 140 grains.{lpLodi}{thomasLodi} Thomas records that Bahlūl was no respecter of pomp or ceremony, and held that it was enough for the world to know he was king.{thomasLodi}",
+"motifs": [],
+"brief": "a thick round coin of Bahlul Lodi in dark billon, about the size of a thumbnail, with the field filled with bold raised calligraphic strokes in horizontal lines that form no readable letters. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"review": "Bahlūl's coins carry legends only. The metal is debatable: 'copper' in Lane-Poole, base silver in Thomas's assays. Thomas gives the remark on pomp without naming his source.",
+"prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a thick round coin of Bahlul Lodi in dark billon, about the size of a thumbnail, with the field filled with bold raised calligraphic strokes in horizontal lines that form no readable letters. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"img": "later/l23-lodi.webp"
+},
+{
+"id": "sur",
+"tab": "later",
+"n": "Sūr Empire",
+"d": "1540–1555 CE",
+"r": "North",
+"k": "coin",
+"e": "Silver rupee of Shēr Shāh",
+"nat": "شير شاه السلطان خلد الله ملكه",
+"nc": "arab",
+"t": "In Lane-Poole's catalogue, one class of Shēr Shāh's silver (AH 946–952) has the Kalima and 'al-Sulṭān al-ʿĀdil' in a square area on one side, with the names Abū Bakr, ʿUmar, ʿUthmān and ʿAlī in the margin.{lpSher} The other side has 'Shēr Shāh al-Sulṭān khallada Allāh mulkahu' with the date, the Nagari legend 'Śrī Ser Sāhī' below it, and his titles Farīd al-Dunyā wa'l-Dīn Abu'l-Muẓaffar in the margin.{lpSher} Lane-Poole notes that Shēr Shāh removed the Caliph's style from the coinage and put the first four caliphs in its place, and his successors kept this to the end of the dynasty.{lpSherIntro} Thomas places among Shēr Shāh's chief reforms the replacement of the old silver-and-copper alloy with coins of plain silver and plain copper.{thomasSher} From the surviving specimens, Thomas put the rupee's mint standard at about 178 grains, and Lane-Poole's specimens weigh 175–176 grains.{thomasSher}{lpSher}",
+"motifs": [],
+"brief": "a broad round silver rupee of Sher Shah Suri, with a square border framing the central field, a band of marginal script around it, and the field filled with ornamental calligraphic strokes that form no readable letters; bright silver. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"review": "Lane-Poole calls this coin the silver tanka and Thomas calls it the rupee. Square-area and circular-area types both exist: the brief follows Lane-Poole's square type, but the evidence photo shows a circular one.",
+"prompt": "Create an image. A royal emblem of a later Indian dynasty, as struck on its coins, shown as a single bold emblem in the centre of the medallion: a broad round silver rupee of Sher Shah Suri, with a square border framing the central field, a band of marginal script around it, and the field filled with ornamental calligraphic strokes that form no readable letters; bright silver. No flag, no flagstaff, no parasol, no tassels. No human figures. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no inscriptions, no modern elements.",
+"img": "later/l24-sur.webp"
+},
+{
+"id": "mughal",
+"tab": "later",
+"n": "Mughal Empire",
+"d": "1556–1707 CE",
+"r": "North",
+"k": "coin",
+"e": "Akbar's formula, Jahāngīr's zodiac coins, Aurangzīb's couplets",
+"nat": "",
+"nc": "",
+"motifs": [
+"bull",
+"sky"
+],
+"t": "Akbar (1556–1605): Akbar removed the kalima from his money and put in its place the formula Allāhu akbar, 'God is most great', with the response jalla jalāluhu.{mugLaneIntro} Abū'l-Faẓl lists this legend on the gold Ilāhī and āftābī coins and on the rupee and its fractions, and on the square laʿl-i jalālī it is split, Allāhu akbar on one face and jalla jalāluhu on the other.{mugAin10} The great gold sihansah at first carried a Qur'ānic verse with the names of the first four caliphs; later it bore quatrains by Fayżī, with Allāhu akbar jalla jalāluhu in the middle of one face.{mugAin10} Akbar's square seal was engraved with the same words.{mugAin20} The Āʾīn names no animal or human figure on these coins; the only devices it mentions are flowers, a lily and a wild rose on the pandau gold coin.{mugAin10} Jahāngīr (1605–1627): Jahāngīr writes that until his thirteenth regnal year his coins bore his name on one face and the mint, month and regnal year on the other.{mugTuzuk} He then ordered that the month's name give way to the figure of its constellation, a ram for Farwardīn and a bull for Urdībihisht, set on one face 'as if the sun were emerging from it'.{mugTuzuk} He calls this usage his own and says it had never been practised before.{mugTuzuk} A gold coin struck at Agra in 1028 AH (1619 CE), now in the Metropolitan Museum, shows Taurus on one face, with a poetic inscription, the regnal year and the Hijrī year on the other.{mugMetTaurus} Lane-Poole rejects Tavernier's story that Nūr Jahān designed and issued the zodiacal mohurs.{mugLaneIntro} Aurangzīb (1658–1707): Khāfī Khān says that in earlier reigns one side of the coins had been adorned with the creed and the names of the first four caliphs.{mugKhafi} In Aurangzīb's second regnal year (1659) this was changed, because coins 'pass into many unworthy places' and fall under the feet of unbelievers.{mugKhafi} Couplets containing the emperor's name and titles were put in its place.{mugKhafi} In the same year the solar New Year festival was abolished and the regnal year was reckoned by the lunar calendar instead of Akbar's solar Ilāhī reckoning.{mugKhafi}{mugLaneIntro}",
+"brief": "three medallions: a square gold Mughal coin of Akbar's Ilāhī type: a raised plain border enclosing a field of flowing calligraphic strokes rendered as abstract ornament, with no legible letters. No figures, no animals. No flag, no flagstaff, no parasol, no tassels. No human figures. | the Jahāngīr zodiac-coin device: a humped bull (Taurus) standing in profile on a round gold coin, with the rays of a rising sun spreading behind its back. No flag, no flagstaff, no parasol, no tassels. No human figures. | a round silver Mughal rupee of Aurangzīb's reign: both faces filled with horizontal bands of flowing calligraphic strokes rendered as abstract ornament, with no legible letters and no pictorial device. No figures, no animals. No flag, no flagstaff, no parasol, no tassels. No human figures.",
+"prompt": "Composite of three single-emblem medallions (Akbar, Jahāngīr, Aurangzīb), see mughal-akbar/jahangir/aurangzeb prompts in earlier drafts.",
+"review": "Akbar (1556–1605): The emblem is a written formula, so any picture can only suggest it; the Arabic-script form was not verified from a printed edition I could open (Lane-Poole's catalogue plates and entries were not in the scan text read), so nat is left blank. Page numbers for the Āʾīn are those of Blochmann's translation as given by the Pritchett transcription. Jahāngīr (1605–1627): Jahāngīr gives only the idea (sign in place of month, sun emerging from it); the exact drawing of the bull and rays on struck coins was not checked against a plate. No properly licensed Wikimedia Commons photograph was verified; the Met object 99.35.7402 is marked Public Domain on its page and could serve as evidence if a Commons copy is located. Aurangzīb (1658–1707): Khāfī Khān's statement that the creed was on earlier coins sits uneasily with Akbar's removal of the kalima (Lane-Poole p. xv); he wrote long after the event. The couplet itself (often quoted as 'sikka zad dar jahān chū badr-i munīr…') is not printed in the Elliot & Dowson passage read, so it is not given here. Elliot & Dowson's own page number for the passage was not visible in the transcription; the Persian-text marker is vol. ii, p. 77.",
+"img": "later/l25-mughal.webp"
 }
 ],
 "LEFTOUT": {
 "kadamba": "<b>Kadamba of Banavāsi.</b> The lion often given as their emblem is attested on the coins of the later Kadambas of Goa, not on those of Banavāsi.",
 "saindhava": "<b>Saindhava of Ghumli.</b> The fish emblem given in popular sources was not found in any scholarly edition of their grants.",
 "chaulukya": "<b>Chaulukya (Solaṅkī) of Gujarat.</b> The charging-elephant coins are attributed to Jayasiṃha Siddharāja only by dealers; no scholarly attribution of a coin type or seal was found.",
-"marwar": "<b>Rāṭhoṛ of Marwar.</b> Tod names the clan goddess as winged, but no scholarly or period source describing the Jodhpur flag or a bird on it was found."
+"marwar": "<b>Rāṭhoṛ of Marwar.</b> Tod names the clan goddess as winged, but no scholarly or period source describing the Jodhpur flag or a bird on it was found.",
+"mughal-flag": "<b>Mughal flag, crest and lion-and-sun.</b> The Āʾīn-i Akbarī (I.19) lists the imperial ensigns (throne, parasol, standards) but the text read gives no colour or device for any of them; no scholarly or period source for a fixed Mughal state flag or crest was found, so none is carded.",
+"mughal-couplet": "<b>Aurangzīb's coin couplet.</b> The couplet quoted in popular accounts is not printed in the Elliot &amp; Dowson passage read, so its wording is not given."
 },
 "SPAN": {
 "maurya": [
@@ -3163,4 +3403,4 @@ null
 };
 
 /* approximate reign or period, years CE (negative = BCE); null end = open-ended. Taken from each entry's own date line. */
-window.LR.SPAN = {"maurya": [-322, -185], "satavahana": [-100, 300], "kushan": [30, 375], "kshatrapa": [35, 415], "gupta": [320, 550], "kamarupa": [350, 650], "western-ganga": [350, 1000], "vishnukundina": [420, 624], "pallava": [275, 897], "maitraka": [475, 776], "sharabhapuriya": [475, 590], "maukhari": [550, 606], "chalukya": [543, 1189], "pushyabhuti": [500, 647], "gauda": [600, 637], "karkota": [625, 855], "panduvamshi": [501, 800], "eastern-ganga": [450, 1078], "pratihara": [730, 1036], "pala": [750, 1161], "rashtrakuta": [753, 982], "kalachuri": [675, 1212], "shahi": [822, 1026], "chola": [848, 1279], "pandya": [590, 920], "chera": [50, 1124], "paramara": [801, 1305], "hoysala": [1026, 1343], "kakatiya": [1163, 1323], "yadava": [1187, 1317], "sena": [1070, 1230], "gahadavala": [1089, 1197], "chandela": [1001, 1200], "chauhan": [601, 1192], "mewar": [750, 1949], "jaipur": [1101, 1949], "vijayanagara": [1336, 1646], "ahom": [1228, 1826], "tripura": [1464, null], "maratha": [1674, 1818], "sikh": [1799, 1849], "mysore": [1399, 1950], "travancore": [1729, 1949]};
+window.LR.SPAN = {"maurya": [-322, -185], "satavahana": [-100, 300], "kushan": [30, 375], "kshatrapa": [35, 415], "gupta": [320, 550], "kamarupa": [350, 650], "western-ganga": [350, 1000], "vishnukundina": [420, 624], "pallava": [275, 897], "maitraka": [475, 776], "sharabhapuriya": [475, 590], "maukhari": [550, 606], "chalukya": [543, 1189], "pushyabhuti": [500, 647], "gauda": [600, 637], "karkota": [625, 855], "panduvamshi": [501, 800], "eastern-ganga": [450, 1078], "pratihara": [730, 1036], "pala": [750, 1161], "rashtrakuta": [753, 982], "kalachuri": [675, 1212], "shahi": [822, 1026], "chola": [848, 1279], "pandya": [590, 920], "chera": [50, 1124], "paramara": [801, 1305], "hoysala": [1026, 1343], "kakatiya": [1163, 1323], "yadava": [1187, 1317], "sena": [1070, 1230], "gahadavala": [1089, 1197], "chandela": [1001, 1200], "chauhan": [601, 1192], "mewar": [750, 1949], "jaipur": [1101, 1949], "vijayanagara": [1336, 1646], "ahom": [1228, 1826], "tripura": [1464, null], "maratha": [1674, 1818], "sikh": [1799, 1849], "mysore": [1399, 1950], "travancore": [1729, 1949], "mughal": [1556, 1707], "sur": [1540, 1555], "lodi": [1451, 1526], "sayyid": [1414, 1451], "tughluq": [1320, 1414], "khalji": [1290, 1320], "mamluk": [1206, 1290]};
