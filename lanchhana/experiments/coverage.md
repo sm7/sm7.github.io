@@ -68,3 +68,8 @@ Cards: mamluk, khalji, tughluq, sayyid, lodi, sur, mughal (one card; Akbar, Jah�
 - Evidence photos: tughluq, sayyid only. lodi and sur photos (Commons, CC BY-SA 3.0) not yet fetched.
 - No scenes yet (bazaar, temple, city) for any of these.
 - Not carded (LEFTOUT): Mughal flag/crest/lion-and-sun; Aurangzīb's couplet wording. Possible later card: Akbar's seals (Āʾīn I.20).
+
+
+## Pramana pass (20 Oct 2026)
+
+Primary-text checks of the itihasa and early-dynasty cards against Pramana are in `pramana-audit.md`. Rāṣṭrakūṭa's documented gap is closed; Maitraka's is sharpened.

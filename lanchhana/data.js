@@ -396,6 +396,122 @@ window.LR={
 "mugMetTaurus": [
 "Metropolitan Museum of Art, Coin with the sign of Taurus, gold, Agra, 1028 AH / 1619 CE, Jahāngīr, acc. no. 99.35.7402 (Bequest of Joseph H. Durkee, 1898) — collection catalogue page",
 "https://www.metmuseum.org/art/collection/search/444866"
+],
+"pmRam290": [
+"Rāmāyaṇa 2.90.13–16, Baroda critical edition (text as held in Pramana, indike.org); the same verses stand at 2.90.13–16 in its southern recension",
+"https://indike.org/pramana/in.lit.ramayana.valmiki*crit.2.90.14"
+],
+"pmRam278": [
+"Rāmāyaṇa 2.78.1–4, Baroda critical edition (text as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.ramayana.valmiki*crit.2.78.3"
+],
+"pmVS7_105": [
+"Mahābhārata 7.105.8–30 in the vulgate (Nīlakaṇṭha's text) and the southern recension, collated line by line against critical-edition 7.80.8–27 (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.7.105"
+],
+"pm6_44_48": [
+"Mahābhārata 6.44.48, critical edition (BORI), text as held in Pramana (indike.org); vulgate 6.46.50, southern 6.46.49",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*crit.6.44.48"
+],
+"pm6_17_18v": [
+"Mahābhārata 6.17.18 in the critical edition, the vulgate and the southern recension (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.6.17.18"
+],
+"pmV7_23_84": [
+"Mahābhārata 7.23.84–85, vulgate (Nīlakaṇṭha's text); southern recension 7.23.85–86 (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.7.23.84"
+],
+"pmV7_23_83": [
+"Mahābhārata 7.23.83, vulgate (Nīlakaṇṭha's text); southern recension 7.23.84 (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.7.23.83"
+],
+"pmV7_23_86": [
+"Mahābhārata 7.23.86, vulgate (Nīlakaṇṭha's text); southern recension 7.23.87 (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.7.23.86"
+],
+"pmV7_23_87": [
+"Mahābhārata 7.23.87, vulgate (Nīlakaṇṭha's text); southern recension 7.23.88 (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.7.23.87"
+],
+"pmV7_23_89": [
+"Mahābhārata 7.23.89, vulgate (Nīlakaṇṭha's text); southern recension 7.23.90 (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.7.23.89"
+],
+"pmV7_23_90": [
+"Mahābhārata 7.23.75 and 7.23.90, vulgate (Nīlakaṇṭha's text); southern recension 7.23.76 and 7.23.91 (texts as held in Pramana, indike.org)",
+"https://indike.org/pramana/in.lit.mahabharata.vyasa*vulgate.7.23.90"
+],
+"pmMW": [
+"Monier-Williams, Sanskrit–English Dictionary, s.v. śārṅga ('a kind of bird, MBh.'), as shown by Pramana's word lookup",
+"https://indike.org/pramana/api/word?w=%C5%9B%C4%81r%E1%B9%85ga"
+],
+"pmSirur": [
+"Sirur stone inscription of Amoghavarṣa I, Śaka 788 (866 CE), Indian Antiquary 12 (1883), p. 218, locator 25 — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.deccan.rastrakuta.sirur-stone-inscription-of-amoghavarsha-i-saka-788"
+],
+"pmNilgund": [
+"Nilgund inscription of the time of Amoghavarṣa I, 866 CE, Epigraphia Indica 6, no. 11, locator 16 — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.deccan.rastrakuta.nilgund-inscription-of-the-time-of-amoghavarsha-i-a-d-866"
+],
+"pmJavakheda": [
+"Javakheda plates of Amoghavarṣa I, Śaka 742, Epigraphia Indica 32 (Sircar 1958), plate III, seal enlarged — scan listed in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.deccan.rastrakuta.javakheda-plates-of-amoghavarsha-i-saka-742"
+],
+"pmJambgaon": [
+"Jambgaon plates of Indra III, Śaka 836, Epigraphia Indica 36 (Sircar 1965), seal from a photograph — listed in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.deccan.rastrakuta.jambgaon-plates-of-indra-iii-saka-836"
+],
+"pmUndika": [
+"Untikavāṭikā grant of Abhimanyu, Epigraphia Indica 8 (Hultzsch 1906), no. 16, seal captioned as showing a lion — listed in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.deccan.rastrakuta.undikavatika-grant-of-abhimanyu"
+],
+"pmKopparam": [
+"Kopparam plates of Pulakeśin II, Epigraphia Indica 18, p. 257 — text as held in Pramana (indike.org); the same formula recurs in nine further Bādāmi Chālukya grants there, eight of them dated c. 660–713 CE",
+"https://indike.org/pramana/inp.epigraphy.deccan.badami-calukya.kopparam-plates-of-pulakesin-ii"
+],
+"pmKailasa": [
+"Lists of birudas, Kailāsanātha temple, Kāñcīpuram, South Indian Inscriptions 1, nos. 25–26 — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.south.pallava.kancipuram-kailasanatha-temple-lists-of-birudas"
+],
+"pmVijayawada": [
+"Pallava slab found at Vijayawāḍā, South Indian Inscriptions 10, p. 8 — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.south.pallava.vijayawada-on-a-mutilated-slab-dug-up-in-the-court-yard-of"
+],
+"pmNadagam": [
+"Nadagam plates of Vajrahasta, Śaka 979, Epigraphia Indica 4, no. 24 — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.east.eastern-ganga.nadagam-plates-of-vajrahasta-saka-samvat-979"
+],
+"pmMadrasMus": [
+"Madras Museum plates of Vajrahasta III, Śaka 984, Epigraphia Indica 9, no. 11 — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.east.eastern-ganga.madras-museum-plates-of-vajrahasta-iii-saka-samvat-984"
+],
+"pmTagarti": [
+"Tagarti agrahāra copper-plate grant of a Western Gaṅga king, Epigraphia Carnatica 7, Sk 52 (dated c. 358 CE in Pramana; the wording, not the date, is cited) — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.deccan.western-ganga.tagarti-agrahara-copper-plate-grant-of-western-ganga"
+],
+"pmSalem": [
+"Salem plates of Gaṅga Śrīpuruṣa, Śaka 693, Epigraphia Indica 27, no. 25, seal from a photograph — listed in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.deccan.western-ganga.salem-plates-of-ganga-sripurusha-saka-693"
+],
+"pmAllahabad": [
+"Allahabad pillar inscription of Samudragupta, Corpus Inscriptionum Indicarum 3 (Fleet 1888), line 24 (garutmad-aṅka) and Fleet's translation — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.north.gupta.allahabad-posthumous-stone-pillar-inscription-of"
+],
+"pmGwalior": [
+"Gwalior (Vaillabhaṭṭasvāmin temple) inscription, Vikrama 933 (876 CE), Epigraphia Indica 1, p. 156, verse 22, with Hultzsch's translation — as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.west.pratihara.first-inscription-of-the-vaillabhattasvamin-temple-at"
+],
+"pmSarnathEdict": [
+"Sārnāth pillar (Schism) edict of Aśoka, Sircar, Select Inscriptions 1.36 — text as held in Pramana (indike.org)",
+"https://indike.org/pramana/inp.epigraphy.north.maurya.sarnath-pillar-edict"
+],
+"pmCoinCat": [
+"Pramana coin and specimen catalogue (tables obj and mark_occ), counted by dynasty and motif on 20 October 2026; the queries are in experiments/pramana-audit.md",
+"https://indike.org/pramana/api/marks"
+],
+"pmMaitraka": [
+"Pramana, Maitraka inscriptions (147, of which 132 have text), searched on 20 October 2026 for seal, bull, vṛṣabha, ṛṣabha and nandin; the queries are in experiments/pramana-audit.md",
+"https://indike.org/pramana/inp.epigraphy.west.maitraka"
 ]
 },
 "MOTIFS": {
@@ -432,8 +548,8 @@ window.LR={
 "k": "epic",
 "img": "epic/01-ikshvaku.webp",
 "san": "eṣa vai sumahān śrīmān viṭapī samprakāśate | virājaty udgataskandhaḥ kovidāradhvajo rathe",
-"ref": "Rāmāyaṇa 2.96.18 (southern vulgate numbering)",
-"t": "Lakṣmaṇa sees an army approach and concludes that Bharata is coming against them.{ram} He points to its ensign: a very large, glorious, branching kovidāra tree with raised trunk, shining on the chariot.{ram} The verse names only the tree.{ram}",
+"ref": "Rāmāyaṇa 2.90.14 in the Baroda critical edition and in Pramana's southern recension (2.96.18 in the numbering of valmikiramayan.net); also 2.78.3",
+"t": "Lakṣmaṇa sees an army approach and concludes that Bharata is coming against them.{ram} He points to its ensign: a very large, glorious, branching kovidāra tree with raised trunk, shining on the chariot.{ram} The verse names only the tree.{ram} In the Baroda critical edition these are verses 2.90.13–16.{pmRam290} Guha, the Niṣāda king, also names Bharata's army by the 'kovidāra banner on the chariot' at 2.78.3.{pmRam278}",
 "motifs": [
 "plant"
 ],
@@ -585,7 +701,7 @@ window.LR={
 "img": "epic/04-arjuna.webp",
 "san": "siṃhalāṅgūlam ugrāsyaṃ dhvajaṃ vānaralakṣaṇam | dhanaṃjayasya saṃgrāme pratyapaśyāma bhairavam",
 "ref": "Mahābhārata 7.80.8–9; 1.216.12–13; 6.23.20",
-"t": "At Kurukṣetra Arjuna's banner bore an ape, fierce-faced and lion-tailed, and was bhairava, 'terrifying'.{s780} Adorned with pennants, it struck fear into the enemy host.{s780} The chariot was Varuṇa's gift before the burning of the Khāṇḍava forest: on its golden flagstaff a divine ape with the marks of lion and tiger sat at the top, seeming to roar.{s1216} The Gītā calls Arjuna kapidhvaja, 'ape-bannered'.{s623}",
+"t": "At Kurukṣetra Arjuna's banner bore an ape, fierce-faced and lion-tailed, and was bhairava, 'terrifying'.{s780} Adorned with pennants, it struck fear into the enemy host.{s780} The chariot was Varuṇa's gift before the burning of the Khāṇḍava forest: on its golden flagstaff a divine ape with the marks of lion and tiger sat at the top, seeming to roar.{s1216} The Gītā calls Arjuna kapidhvaja, 'ape-bannered'.{s623} The vulgate and southern recensions give the Kurukṣetra banner as the same emblem (7.105.8–9).{pmVS7_105}",
 "motifs": [
 "ape"
 ],
@@ -601,8 +717,8 @@ window.LR={
 "k": "epic",
 "img": "epic/05-bhishma.webp",
 "san": "tālena mahatā bhīṣmaḥ pañcatāreṇa ketunā | vimalādityasaṃkāśas tasthau kurucamūpatiḥ",
-"ref": "Mahābhārata 6.17.18",
-"t": "Bhīṣma, lord of the Kuru host, stood with his banner, a great palm bearing five stars, like the unclouded sun.{s617}",
+"ref": "Mahābhārata 6.17.18; 6.44.48",
+"t": "Bhīṣma, lord of the Kuru host, stood with his banner, a great palm bearing five stars, like the unclouded sun.{s617} The critical edition, the vulgate and the southern recension all read this verse alike at 6.17.18.{pm6_17_18v} The critical edition describes the banner again at 6.44.48, now as a lofty silver palm with five stars, and says Bhīṣma shone with it like the moon on Mount Meru.{pm6_44_48}",
 "motifs": [
 "sky",
 "plant"
@@ -638,7 +754,7 @@ window.LR={
 "img": "epic/07-duryodhana.webp",
 "san": "nāgo maṇimayo rājño dhvajaḥ kanakasaṃvṛtaḥ | kiṅkiṇīśatasaṃhrādo bhrājaṃś citre rathottame",
 "ref": "Mahābhārata 7.80.26; 6.17.25",
-"t": "The king's banner: an elephant made of gems, covered with gold, ringing with a hundred small bells, gleaming on his splendid chariot.{s780} At the start of the battle it is described as a great elephant of gems, leading a host of many hundreds of thousands.{s617}",
+"t": "The king's banner: an elephant made of gems, covered with gold, ringing with a hundred small bells, gleaming on his splendid chariot.{s780} At the start of the battle it is described as a great elephant of gems, leading a host of many hundreds of thousands.{s617} The vulgate and southern recensions give the same emblem (7.105.26–27).{pmVS7_105}",
 "motifs": [
 "elephant"
 ],
@@ -655,7 +771,7 @@ window.LR={
 "img": "epic/08-karna.webp",
 "san": "hastikakṣyā punar haimī babhūvādhirather dhvaje | āhave khaṃ mahārāja dadṛśe pūrayann iva",
 "ref": "Mahābhārata 7.80.12–13",
-"t": "On Karṇa's banner a golden elephant-girth seemed to fill the sky.{s780} The banner, with its pennant and golden garland, seemed to dance on the chariot in the wind.{s780}",
+"t": "On Karṇa's banner a golden elephant-girth seemed to fill the sky.{s780} The banner, with its pennant and golden garland, seemed to dance on the chariot in the wind.{s780} The vulgate and southern recensions give the same emblem (7.105.12–13).{pmVS7_105}",
 "motifs": [
 "elephant"
 ],
@@ -672,7 +788,7 @@ window.LR={
 "img": "epic/09-ashvatthaman.webp",
 "san": "tathaiva siṃhalāṅgūlaṃ droṇaputrasya bhārata | dhvajāgraṃ samapaśyāma bālasūryasamaprabham",
 "ref": "Mahābhārata 7.80.10–11",
-"t": "The banner-top of Droṇa's son was a lion's tail, radiant as the rising sun.{s780} It was golden, tossed by the wind, bright as Indra's banner, and a delight to the Kuru chiefs.{s780}",
+"t": "The banner-top of Droṇa's son was a lion's tail, radiant as the rising sun.{s780} It was golden, tossed by the wind, bright as Indra's banner, and a delight to the Kuru chiefs.{s780} The vulgate and southern recensions give the same emblem (7.105.10–11).{pmVS7_105}",
 "motifs": [],
 "prompt": "Create an image. A war standard whose device is a golden lion's tail — a long tail rising in an S-curve and ending in a full tuft — radiant as the rising sun, tossed by the wind. Only the tail, no lion. The device is a three-dimensional figure mounted on the very top of a golden flagstaff, seen against the sky — not painted on cloth, not a flag. Only the upper flagstaff, no chariot, no people. No finial, no parasol, no tassels. Early Indian mural painting in the manner of the Ajanta cave murals: flat mineral pigments (red ochre, yellow ochre, terre-verte green, lapis blue, lamp-black, white), dark brown brush outlines of varying weight, soft darker shading along the edges of forms, small white highlights, aged plaster texture with fine cracks. Circular medallion: the subject centred on a deep green field inside a ring of red and yellow lotus petals and a border of white pearls; plain background outside the medallion. Square 1:1. No text, no letters, no people, no modern elements."
 },
@@ -687,7 +803,7 @@ window.LR={
 "img": "epic/10-kripa.webp",
 "san": "govṛṣo gautamasyāsīt kṛpasya supariṣkṛtaḥ | … tripuraghnaratho yadvad govṛṣeṇa virājate",
 "ref": "Mahābhārata 7.80.14–15",
-"t": "Kṛpa Gautama, teacher of the Pāṇḍavas, had a well-adorned bull.{s780} It made his chariot shine as the chariot of Śiva, slayer of Tripura, shines with its bull.{s780}",
+"t": "Kṛpa Gautama, teacher of the Pāṇḍavas, had a well-adorned bull.{s780} It made his chariot shine as the chariot of Śiva, slayer of Tripura, shines with its bull.{s780} The vulgate and southern recensions give the same emblem (7.105.14–15).{pmVS7_105}",
 "motifs": [
 "bull"
 ],
@@ -704,7 +820,7 @@ window.LR={
 "img": "epic/11-shalya.webp",
 "san": "madrarājasya śalyasya dhvajāgre 'gniśikhām iva | sauvarṇīṃ pratipaśyāma sītām apratimāṃ śubhām",
 "ref": "Mahābhārata 7.80.18–19",
-"t": "At the top of Śalya's banner shone a golden sītā, a furrow, like a tongue of flame, peerless and auspicious.{s780} On his chariot it shone like a furrow sprung with every kind of seed, full of splendour.{s780}",
+"t": "At the top of Śalya's banner shone a golden sītā, a furrow, like a tongue of flame, peerless and auspicious.{s780} On his chariot it shone like a furrow sprung with every kind of seed, full of splendour.{s780} The vulgate and southern recensions give the same emblem (7.105.18–19).{pmVS7_105}",
 "motifs": [
 "plant"
 ],
@@ -721,7 +837,7 @@ window.LR={
 "img": "epic/12-jayadratha.webp",
 "san": "varāhaḥ sindhurājasya rājato 'bhivirājate | dhvajāgre 'lohitārkābho hemajālapariṣkṛtaḥ",
 "ref": "Mahābhārata 7.80.20; 6.17.29",
-"t": "The Sindhu king's silver boar shone at his banner-top, bright as the sun when it is not red, adorned with a net of gold.{s780} Jayadratha shone with it as Pūṣan once shone in the war of gods and demons.{s780} At the start of the battle he stood at the head of his division with the silver boar as his chief banner.{s617}",
+"t": "The Sindhu king's silver boar shone at his banner-top, bright as the sun when it is not red, adorned with a net of gold.{s780} Jayadratha shone with it as Pūṣan once shone in the war of gods and demons.{s780} At the start of the battle he stood at the head of his division with the silver boar as his chief banner.{s617} The vulgate agrees with the critical edition. The southern recension has lohitāṅgābhaḥ, 'of red-limbed splendour', where the critical edition has alohitārkābhaḥ, so it does not describe the boar's brightness in the same way (7.105.20).{pmVS7_105}",
 "motifs": [
 "boar"
 ],
@@ -738,7 +854,7 @@ window.LR={
 "img": "epic/13-bhurishravas.webp",
 "san": "saumadatteḥ punar yūpo yajñaśīlasya dhīmataḥ | dhvajaḥ sūrya ivābhāti somaś cātra pradṛśyate",
 "ref": "Mahābhārata 7.80.22–23",
-"t": "The banner of Saumadatti, wise and devoted to sacrifice, was a sacrificial post, shining like the sun, with Soma, the moon, seen upon it.{s780} The golden post shone like the post raised at the Rājasūya, best of sacrifices.{s780}",
+"t": "The banner of Saumadatti, wise and devoted to sacrifice, was a sacrificial post, shining like the sun, with Soma, the moon, seen upon it.{s780} The golden post shone like the post raised at the Rājasūya, best of sacrifices.{s780} The vulgate and southern recensions give the same emblem (7.105.22–23).{pmVS7_105}",
 "motifs": [
 "sky",
 "ritual"
@@ -756,7 +872,7 @@ window.LR={
 "img": "epic/14-vrishasena.webp",
 "san": "mayūro vṛṣasenasya kāñcano maṇiratnavān | vyāhariṣyann ivātiṣṭhat senāgram api śobhayan",
 "ref": "Mahābhārata 7.80.16–17",
-"t": "Vṛṣasena's golden peacock, set with gems and jewels, stood as if about to cry out, gracing the van of the army.{s780} His chariot shone with it as Skanda's shines with his peacock.{s780}",
+"t": "Vṛṣasena's golden peacock, set with gems and jewels, stood as if about to cry out, gracing the van of the army.{s780} His chariot shone with it as Skanda's shines with his peacock.{s780} The vulgate and southern recensions give the same emblem (7.105.16–17).{pmVS7_105}",
 "motifs": [
 "bird"
 ],
@@ -774,7 +890,7 @@ window.LR={
 "img": "epic/15-shala.webp",
 "san": "śalasya tu mahārāja rājato dvirado mahān | ketuḥ kāñcanacitrāṅgair mayūrair upaśobhitaḥ",
 "ref": "Mahābhārata 7.80.24–25",
-"t": "Śala's banner was a huge silver elephant adorned with peacocks of variegated gold.{s780} It graced the army as the great white elephant graces the host of the king of gods.{s780} Ganguli's translation gives this banner to Śalya; the Sanskrit reads Śala.{gan}",
+"t": "Śala's banner was a huge silver elephant adorned with peacocks of variegated gold.{s780} It graced the army as the great white elephant graces the host of the king of gods.{s780} Ganguli's translation gives this banner to Śalya; the Sanskrit reads Śala.{gan} The vulgate and southern recensions also read śalasya, 'of Śala' (7.105.24), so the name is not peculiar to the critical edition.{pmVS7_105}",
 "motifs": [
 "bird",
 "elephant"
@@ -789,8 +905,8 @@ window.LR={
 "e": "Chariot-wheel",
 "k": "epic",
 "san": "nānārūpeṇa varṇena nānākṛti mukhā hayāḥ / rathacakradhvajaṃ vīraṃ ghaṭotkacam udāvahan",
-"ref": "Mahābhārata 7.22.60",
-"t": "Horses of many colours, with faces of many shapes, carried the hero Ghaṭotkaca, whose banner was a chariot-wheel.{mbs7022} The verse gives no material or colour for the wheel.{mbs7022} The vulgate text that Ganguli translated puts a vulture on his standard instead.{gan7023}",
+"ref": "Mahābhārata 7.22.60 (critical edition); the vulture is vulgate 7.23.90, southern 7.23.91",
+"t": "Horses of many colours, with faces of many shapes, carried the hero Ghaṭotkaca, whose banner was a chariot-wheel.{mbs7022} The verse gives no material or colour for the wheel.{mbs7022} The vulgate and southern texts have that verse too (7.23.75; 7.23.76), and then add a second banner in a verse the critical edition does not have: a vulture on his standard (vulgate 7.23.90; southern 7.23.91).{pmV7_23_90}{gan7023}",
 "tab": "itihasa",
 "img": "epic/ghatotkaca.webp",
 "motifs": [
@@ -822,11 +938,11 @@ window.LR={
 "who": "Yudhiṣṭhira",
 "e": "Golden moon with planets",
 "k": "vulgate",
-"san": "",
-"ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
+"san": "dhvajaṃ tu kururājasya pāṇḍavasya mahaujasaḥ | dṛṣṭavānasmi sauvarṇaṃ somaṃ grahagaṇānvitam | mṛdaṅgau cātra vipulau divyau nandopanandakau | yantreṇāhanyamānau ca susvanau harṣavardhanau",
+"ref": "Vulgate 7.23.84–85 (grahagaṇānvitam as in the southern text 7.23.85; the vulgate e-text prints anvatam); southern 7.23.85–86; not in the critical edition",
 "quote": "The standard of Yudhishthira of great energy, bearing the device of a golden moon with planets around it, looked very beautiful. Two large and beautiful kettle-drums, called Nanda and Upananda, were tied to it.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex}",
-"warn": "Vulgate only, not in the critical edition",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} The vulgate Sanskrit (7.23.84–85) names a golden moon with a host of planets, and two large divine drums, Nanda and Upananda, 'being struck by a device' (yantra); Ganguli's 'tied to it' is his rendering. The southern recension has the same verses (7.23.85–86).{pmV7_23_84}",
+"warn": "Vulgate only, not in the critical edition. The painting ties the drums to the staff, as Ganguli does; the Sanskrit says they are struck by a device.",
 "tab": "itihasa",
 "img": "epic/yudhishthira.webp",
 "motifs": [
@@ -839,13 +955,13 @@ window.LR={
 "no": "19",
 "n": "Pāṇḍava",
 "who": "Bhīmasena",
-"e": "Silver lion with lapis eyes",
+"e": "Lion with vaiḍūrya-gem eyes",
 "k": "vulgate",
-"san": "",
-"ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
+"san": "dhvajaṃ tu bhīmasenasya vaiḍhūryamaṇilocanam | bhrājamānaṃ mahāsiṃhaṃ rājantaṃ dṛṣṭavānaham",
+"ref": "Vulgate 7.23.83, southern 7.23.84; not in the critical edition",
 "quote": "Bhimasena's standard, bearing the device of a gigantic lion in silver with its eyes made of lapis lazuli, looked exceedingly resplendent.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex}",
-"warn": "Vulgate only, not in the critical edition",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} The vulgate Sanskrit (7.23.83) names a great shining lion with eyes of vaiḍūrya gems. Ganguli adds 'in silver', but the Sanskrit as read in Pramana's vulgate and southern texts has rājantam, 'shining', and not rājatam, 'silver', so the silver is not confirmed here. The southern recension has the verse at 7.23.84.{pmV7_23_83}",
+"warn": "Vulgate only, not in the critical edition. 'Silver' is Ganguli's rendering; the Sanskrit reads rājantam, 'shining'. The painting follows Ganguli.",
 "tab": "itihasa",
 "img": "epic/bhima.webp",
 "motifs": [
@@ -860,10 +976,10 @@ window.LR={
 "who": "Nakula",
 "e": "Śarabha with a golden back",
 "k": "vulgate",
-"san": "",
-"ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
+"san": "śarabhaṃ pṛṣṭhasauvarṇaṃ nakulasya mahādhvajam | apaśyāma rathe'tyugraṃ bhīṣayāṇamavasthitam",
+"ref": "Vulgate 7.23.86, southern 7.23.87; not in the critical edition",
 "quote": "A tall and fierce standard of Nakula, placed on his car bearing the device of a Sarabha with its back made of gold.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} The standard names only a śarabha with a golden back. The painting follows the epic's own description of the śarabha in the Śānti Parva: a beast that kills lions, with eight legs and eyes on the top of its head.{ganSarabha}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} The standard names only a śarabha with a golden back. The painting follows the epic's own description of the śarabha in the Śānti Parva: a beast that kills lions, with eight legs and eyes on the top of its head.{ganSarabha} The vulgate Sanskrit (7.23.86) says the great standard on Nakula's chariot bore a śarabha with a golden back, 'very fierce' (atyugra); the southern recension has it at 7.23.87.{pmV7_23_86}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/nakula.webp",
@@ -879,10 +995,10 @@ window.LR={
 "who": "Sahadeva",
 "e": "Silver swan with bells",
 "k": "vulgate",
-"san": "",
-"ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
+"san": "haṃsastu rājataḥ śrīmān dhvaje ghaṇṭāpatākavān | sahadevasya durdharṣo dviṣatāṃ śokavardhanaḥ",
+"ref": "Vulgate 7.23.87, southern 7.23.88; not in the critical edition",
 "quote": "A beautiful silver swan with bells and banner terrible to look at and enhancing the grief of the foe, was seen on Sahadeva's standard.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex}",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} The vulgate Sanskrit (7.23.87) gives a silver (rājata) swan with a bell and a pennant on Sahadeva's standard; the southern recension has it at 7.23.88.{pmV7_23_87}",
 "warn": "Vulgate only, not in the critical edition",
 "tab": "itihasa",
 "img": "epic/sahadeva.webp",
@@ -896,13 +1012,13 @@ window.LR={
 "no": "22",
 "n": "Pāṇḍava",
 "who": "Abhimanyu",
-"e": "Golden peacock",
+"e": "Golden śārṅga bird (Ganguli: peacock)",
 "k": "vulgate",
-"san": "",
-"ref": "Vulgate, Droṇa Parva 23 (Ganguli); not in the critical edition",
+"san": "abhimanyoḥ kumārasya śārṅgapakṣī hiraṇmayaḥ | rathe dhvajavaro rājaṃstaptacāmīkarojjvalaḥ",
+"ref": "Vulgate 7.23.89, southern 7.23.90; not in the critical edition",
 "quote": "On the car, O king, of the youthful Abhimanyu was an excellent standard that bore a golden peacock, which was bright as heated gold.",
-"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} Ganguli renders the bird as a peacock; the vulgate Sanskrit has not been checked here.{gan7023}",
-"warn": "Vulgate only, not in the critical edition",
+"t": "Ganguli's translation, made from the vulgate text, describes this standard in Droṇa Parva section 23.{gan7023} The critical edition does not have the passage: its chapter 7.22 describes the Pāṇḍava warriors' horses and names no such emblem.{mbs7022}{mbsIndex} Ganguli renders the bird as a peacock; the vulgate Sanskrit has not been checked here.{gan7023} The Sanskrit (vulgate 7.23.89; southern 7.23.90) says śārṅga-pakṣī hiraṇmayaḥ, 'a golden śārṅga bird', bright as heated gold.{pmV7_23_89} Pramana's dictionary lookup lists śārṅga only as 'a kind of bird'.{pmMW} The same catalogue uses mayūra, 'peacock', for Vṛṣasena's banner (7.80.16), so 'peacock' is Ganguli's identification and not the text's.",
+"warn": "Vulgate only, not in the critical edition. The painting follows Ganguli's 'peacock'; the Sanskrit names a śārṅga bird, not a mayūra.",
 "tab": "itihasa",
 "img": "epic/abhimanyu.webp",
 "motifs": [
@@ -921,7 +1037,7 @@ window.LR={
 "nat": "सिंहशीर्ष",
 "nc": "deva",
 "img": "modern/m01-maurya.webp",
-"t": "The Maurya kings are represented here by the lion capital of Aśoka's pillar at Sarnath, not by a seal emblem.{asherSarnath} It has four lions seated back to back on a round abacus.{asherSarnath} The abacus carries a bull, a lion, an elephant and a galloping horse, each separated by a wheel.{asherSarnath} The painting shows three of the four lions, over a wheel and the horse.",
+"t": "The Maurya kings are represented here by the lion capital of Aśoka's pillar at Sarnath, not by a seal emblem.{asherSarnath} It has four lions seated back to back on a round abacus.{asherSarnath} The abacus carries a bull, a lion, an elephant and a galloping horse, each separated by a wheel.{asherSarnath} The painting shows three of the four lions, over a wheel and the horse. The same Sārnāth pillar carries Aśoka's Schism Edict, which orders that a monk or nun who splits the Saṅgha be made to wear white robes and to live outside the monastery.{pmSarnathEdict}",
 "motifs": [
 "lion"
 ],
@@ -980,7 +1096,7 @@ window.LR={
 "nat": "",
 "nc": "",
 "img": "modern/m02-satavahana.webp",
-"t": "The Sātavāhanas are represented by the 'Ujjain symbol', a cross with a circle at the end of each arm.{bmGautamiputra}{singhUjjain} Gautamīputra Sātakarṇi struck it on the reverse of silver coins of Nahapāna that he restruck.{bmGautamiputra} On their copper and potin coins it often pairs with an elephant.{rathAnimal} Other types include an arched hill, a horse, a lion and a ship.{rathAnimal} The symbol was not theirs alone; other dynasties also used it.{singhUjjain}",
+"t": "The Sātavāhanas are represented by the 'Ujjain symbol', a cross with a circle at the end of each arm.{bmGautamiputra}{singhUjjain} Gautamīputra Sātakarṇi struck it on the reverse of silver coins of Nahapāna that he restruck.{bmGautamiputra} On their copper and potin coins it often pairs with an elephant.{rathAnimal} Other types include an arched hill, a horse, a lion and a ship.{rathAnimal} The symbol was not theirs alone; other dynasties also used it.{singhUjjain} In Pramana's coin catalogue the commonest motif among 264 Sātavāhana coin types and specimens is the elephant (100), ahead of the Ujjain symbol (62) and the hill (37); the evidence photograph shows an elephant type.{pmCoinCat}",
 "motifs": [
 "ritual"
 ],
@@ -1139,7 +1255,7 @@ window.LR={
 "nat": "गरुड",
 "nc": "deva",
 "img": "modern/m05-gupta.webp",
-"t": "Garuḍa, Viṣṇu's bird mount, is the emblem of the Gupta seals, marking the kings as Vaiṣṇavas.{vatsSohnag} On gold coins of Samudragupta, Garuḍa tops a standard with ribbons beside the enthroned goddess.{bmSamudragupta} The revised Corpus of Gupta inscriptions lists a copper-silver seal of Kumāragupta III from Bhitarī.{cii3rev_toc} On the Nālandā clay seal of Viṣṇugupta, Garuḍa is flanked by the sun and the crescent.{cii3rev_no48}",
+"t": "Garuḍa, Viṣṇu's bird mount, is the emblem of the Gupta seals, marking the kings as Vaiṣṇavas.{vatsSohnag} On gold coins of Samudragupta, Garuḍa tops a standard with ribbons beside the enthroned goddess.{bmSamudragupta} The revised Corpus of Gupta inscriptions lists a copper-silver seal of Kumāragupta III from Bhitarī.{cii3rev_toc} On the Nālandā clay seal of Viṣṇugupta, Garuḍa is flanked by the sun and the crescent.{cii3rev_no48} The Allahabad pillar inscription lists the services by which rulers near and far attached themselves to Samudragupta, among them 'garutmad-aṅka'; Fleet translates it 'Garuḍa-tokens'.{pmAllahabad} In Pramana's coin catalogue Garuḍa appears on 77 of 591 Gupta coin types and specimens, Lakṣmī on 120.{pmCoinCat}",
 "motifs": [
 "garuda",
 "sky"
@@ -1273,7 +1389,7 @@ window.LR={
 "nat": "मदगज",
 "nc": "deva",
 "img": "modern/m08-western-ganga.webp",
-"t": "The elephant was the insignia of the Western Gaṅgas, and it appears on the seals of their grants.{dasMatanga} Their grants are mainly in Sanskrit prose, written in an early form of the Kannada script.{schlosserTandon} Gold coins attributed to them show a caparisoned elephant on the obverse.{ponniahJain}",
+"t": "The elephant was the insignia of the Western Gaṅgas, and it appears on the seals of their grants.{dasMatanga} Their grants are mainly in Sanskrit prose, written in an early form of the Kannada script.{schlosserTandon} Gold coins attributed to them show a caparisoned elephant on the obverse.{ponniahJain} A Western Gaṅga grant from Tagarti styles the king 'Gaṅga-kuḷa-mārttaṇḍa, mada-gajēndra-lāñcana', 'marked with the elephant lord in rut'.{pmTagarti} The photographed seal of the Salem plates of Śrīpuruṣa (Śaka 693) appears to show an elephant.{pmSalem}",
 "motifs": [
 "elephant"
 ],
@@ -1331,7 +1447,7 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m10-pallava.webp",
-"t": "The seal of Śivaskandavarman's Mayidavolu plates shows a humped bull lying down, facing proper right, with the king's name below.{hultzschMayidavolu}{dharmaMayidavolu} Pallava coins and the seals of their copper-plate charters both carry this bull crest.{sircarEI32} Their copper coins show a bull or a lion.{rathAnimal}",
+"t": "The seal of Śivaskandavarman's Mayidavolu plates shows a humped bull lying down, facing proper right, with the king's name below.{hultzschMayidavolu}{dharmaMayidavolu} Pallava coins and the seals of their copper-plate charters both carry this bull crest.{sircarEI32} Their copper coins show a bull or a lion.{rathAnimal} The Pallavas' own titles confirm the bull: the list of birudas engraved at the Kailāsanātha temple in Kāñcīpuram includes 'ṛṣabha-lāñchana', 'bull-marked'.{pmKailasa} A Pallava slab from Vijayawāḍā gives 'khaṭvāṅga-dhvaja', 'vṛṣabha-lāñchana' and 'lord of Kāñcīpura' as titles in a row.{pmVijayawada} In Pramana's coin catalogue 82 of 133 Pallava coin types and specimens show a bull and 27 a lion.{pmCoinCat}",
 "motifs": [
 "bull"
 ],
@@ -1394,7 +1510,7 @@ window.LR={
 "nat": "नन्दी",
 "nc": "deva",
 "img": "modern/m11-maitraka.webp",
-"t": "Maitraka grants carry the dynasty's seal, usually described with a seated bull above the legend 'Śrī-Bhaṭakkaḥ'. That description has not yet been checked against a readable edition.",
+"t": "Maitraka grants carry the dynasty's seal, usually described with a seated bull above the legend 'Śrī-Bhaṭakkaḥ'. That description has not been confirmed from any text or readable plate. The charters name the founder as 'senāpati Bhaṭakka' but none describes a seal.{pmMaitraka}",
 "motifs": [
 "bull"
 ],
@@ -1406,7 +1522,7 @@ window.LR={
 "credit": "CNG Coins · CC BY-SA 3.0",
 "licurl": "http://creativecommons.org/licenses/by-sa/3.0/"
 },
-"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check.",
+"review": "Documented gap: Pramana holds 147 Maitraka inscriptions, 132 with text. In those texts the words seal, bull, vṛṣabha, ṛṣabha and nandin never occur. Their 'lāñchana' is the idiom for the mark on the king's forehead from bowing at his father's feet, and their 'dhvaja' is the banner of dharma, not an emblem. Three seal impressions are printed in Pramana's scans (Corpus Inscriptionum Indicarum 3; Epigraphia Indica 21), but they are too worn to read here. The bull stays unconfirmed.",
 "scenes": {
 "heading": "Setting · Valabhī under the king Xuanzang met, c. 640 CE",
 "items": [
@@ -1498,7 +1614,7 @@ window.LR={
 "nat": "वराह",
 "nc": "deva",
 "img": "modern/m14-chalukya.webp",
-"t": "The boar is the emblem of the Chālukyas.{rathAnimal} On the seal of the Eastern Chālukya Mangallu grant, a running boar is flanked by the sun and the moon and two chauris.{epiTelanganica2} Below it are a lotus, an elephant goad and the legend Śrī-Tribhuvanāṅkuśa.{epiTelanganica2}",
+"t": "The boar is the emblem of the Chālukyas.{rathAnimal} On the seal of the Eastern Chālukya Mangallu grant, a running boar is flanked by the sun and the moon and two chauris.{epiTelanganica2} Below it are a lotus, an elephant goad and the legend Śrī-Tribhuvanāṅkuśa.{epiTelanganica2} The Bādāmi Chālukya grants name it in words. Pulakeśin II's Kopparam plates describe the family as having obtained, by the favour of the blessed Nārāyaṇa, the boar crest (varāha-lāñchana), at the sight of which all kings were subdued in an instant; the formula recurs in nine further grants, eight of them dated c. 660–713 CE.{pmKopparam}",
 "motifs": [
 "boar",
 "sky"
@@ -1726,7 +1842,7 @@ window.LR={
 "nat": "वृषभ",
 "nc": "deva",
 "img": "modern/m18-eastern-ganga.webp",
-"t": "The seal of an Eastern Gaṅga copper-plate grant of Anantavarman, son of Devendravarman, bears a seated bull in relief.{arie1935} A couchant bull, with a crescent and a lotus, is the usual emblem on the records of the related Gaṅgas of Śvetaka.{maitra2015}",
+"t": "The seal of an Eastern Gaṅga copper-plate grant of Anantavarman, son of Devendravarman, bears a seated bull in relief.{arie1935} A couchant bull, with a crescent and a lotus, is the usual emblem on the records of the related Gaṅgas of Śvetaka.{maitra2015} Eleventh-century charters name the bull in words: the Nadagam plates (Śaka 979) and the Madras Museum plates of Vajrahasta III (Śaka 984) list 'vara-vṛṣabha-lāñchana', the excellent bull crest, among the king's royal insignia beside the white parasol and the golden fly-whisk.{pmNadagam}{pmMadrasMus}",
 "motifs": [
 "bull"
 ],
@@ -1760,7 +1876,7 @@ window.LR={
 "nat": "आदिवराह",
 "nc": "deva",
 "img": "modern/m20-pratihara.webp",
-"t": "Mihira Bhoja took the title Ādivarāha, 'the primordial boar', the boar avatar of Viṣṇu, and put the boar on his coins.{palladino2017} The goddess Bhagavatī on Pratīhāra seals has been read as the dynasty's tutelary deity; she is not drawn here.{vatsEI27}",
+"t": "Mihira Bhoja took the title Ādivarāha, 'the primordial boar', the boar avatar of Viṣṇu, and put the boar on his coins.{palladino2017} The goddess Bhagavatī on Pratīhāra seals has been read as the dynasty's tutelary deity; she is not drawn here.{vatsEI27} The title is attested in the Gwalior inscription of the Vaillabhaṭṭasvāmin temple (Vikrama 933, 876 CE), which says the illustrious Ādivarāha, wishing to conquer the three worlds, appointed a man to guard Gopādri.{pmGwalior}",
 "motifs": [
 "boar",
 "gods"
@@ -1853,7 +1969,7 @@ window.LR={
 "nat": "गरुड",
 "nc": "deva",
 "img": "modern/m22-rashtrakuta.webp",
-"t": "Garuḍa is usually given as the Rāṣṭrakūṭa seal emblem, but no edition describing it could yet be read. The seal of the early Rāṣṭrakūṭa plates from Jamkhed carries only a short inscription, with no recognisable picture.{balogh2014}",
+"t": "Amoghavarṣa I's inscriptions of 866 CE call the Rāṣṭrakūṭa king 'born in the Raṭṭa line, Garuḍa-marked' (Raṭṭa-vaṁśōdbhavaṁ Garuḍa-lāñchanaṁ), at Sirur and again at Nilgund.{pmSirur}{pmNilgund} So Garuḍa is attested as the dynasty's mark in its own record, not only by later report. The printed seal impressions of the Javakheda plates of Amoghavarṣa I (820 CE) and the Jambgaon plates of Indra III (914 CE) show a seated figure, winged in the Javakheda impression, which fits Garuḍa; the pose cannot be read in detail from the plates.{pmJavakheda}{pmJambgaon} A grant of Abhimanyu from Untikavāṭikā, earlier than 753, has a seal captioned in Epigraphia Indica as showing a lion.{pmUndika} The seal of the early Rāṣṭrakūṭa plates from Jamkhed carries only a short inscription, with no recognisable picture.{balogh2014}",
 "motifs": [
 "garuda"
 ],
@@ -1865,7 +1981,6 @@ window.LR={
 "credit": "Unknown author · Public domain",
 "licurl": null
 },
-"review": "A readable scholarly source for this emblem has not yet been found. The emblem is shown as it is usually given, pending that check.",
 "scenes": {
 "heading": "Setting · The Balhara's kingdom in Amoghavarṣa I's time, c. 851 CE",
 "items": [

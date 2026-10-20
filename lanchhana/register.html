@@ -445,7 +445,7 @@ main{display:block}main:focus{outline:0}
   <div class="btns"><button type="button" class="ib primary" id="rp-open">Open GitHub issue</button><button type="button" class="ib" id="rp-copy">Copy report text</button><button type="button" class="ib" id="rp-cancel">Cancel</button></div>
 </div></dialog>
 
-<script src="data.js?v=83"></script>
+<script src="data.js?v=84"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
 const {SRC, MOTIFS, STYLE, cards:C} = window.LR;
@@ -633,7 +633,7 @@ function entryHtml(c){
       <p class="t">${html}</p>
       ${placeLink}
       ${c.warn?`<p class="warn">${esc(c.warn)}</p>`:""}
-      ${c.review?`<p class="warn review"><b>${/^(This is a documented gap|Documented gap)/i.test(c.review)?"Documented gap.":"Awaiting scholarly confirmation."}</b> ${esc(c.review)}</p>`:""}
+      ${c.review?`<p class="warn review"><b>${/^(This is a documented gap|Documented gap)/i.test(c.review)?"Documented gap.":"Awaiting scholarly confirmation."}</b> ${esc(c.review.replace(/^(This is a documented gap|Documented gap):?\s*/i,"").replace(/^./,m=>m.toUpperCase()))}</p>`:""}
       ${c.flag?`<div class="flagrow">${flagSvg(c.flag)}<span>${esc(c.flag.cap)}</span></div>`:""}
       ${c.motifs.length?`<h4>Motifs</h4><div class="mchips">${c.motifs.map(m=>`<a class="chip" href="#motif-${m}" data-motif="${m}">${esc(MOTIFS[m])} <small>${C.filter(x=>x.motifs.includes(m)).length}</small></a>`).join("")}</div>`:""}`;
   const srcBody=`<h4>Sources</h4><ol class="srcs">${keys.map((k,n)=>`<li id="src-${c.id}-${n+1}">${SRC[k][1]?`<a href="${esc(SRC[k][1])}" target="_blank" rel="noopener">${esc(srcTitle(k))}</a>`:esc(srcTitle(k))}</li>`).join("")}</ol>
