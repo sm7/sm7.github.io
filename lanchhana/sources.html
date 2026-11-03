@@ -96,7 +96,9 @@ main{display:block}main:focus{outline:0}
   <p class="note">Each source with the number of entries that cite it. <input id="q" type="search" placeholder="Filter sources…" aria-label="Filter sources"></p>
   <ol class="bib" id="bl"></ol>
   </main>
+  <footer style="margin-top:40px;font:12px/1.6 var(--mono);color:var(--muted)"><span id="visit-count" hidden></span></footer>
 </div>
+<script src="analytics.js"></script>
 <script src="data.js"></script>
 <script>
 const L=window.LR, esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
