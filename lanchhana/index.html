@@ -133,6 +133,7 @@ main{display:block}main:focus{outline:0}
 .themebtn{all:unset;cursor:pointer;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:7px 10px;border:1px solid var(--line);border-radius:999px}
 .themebtn:hover{color:var(--ink);border-color:var(--verdigris)}.themebtn:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
 @media (pointer:coarse){.themebtn{padding:14px 12px}}
+.motion{margin:0 0 2.5rem}.motion video{display:block;width:100%;height:auto;border-radius:6px;background:#1a1612}.motion figcaption{font-size:.85rem;margin-top:.5rem;opacity:.8}@media (prefers-reduced-motion:reduce){.motion video{display:none}.motion .still{display:block}}.motion .still{display:none;width:100%;height:auto;border-radius:6px}
 </style>
 
 <a class="skip" href="#main">Skip to content</a>
@@ -151,6 +152,12 @@ main{display:block}main:focus{outline:0}
     </div>
     <div><div class="tray" id="tray" aria-label="Seven emblems from the register"></div><p class="tray-cap">Seven of the entries. Select one to open it in the register.</p></div>
   </div>
+
+  <figure class="motion">
+    <video autoplay muted loop playsinline preload="metadata" poster="media/chola-street-poster.jpg" aria-label="AI-generated animation of a Chola street scene: an elephant, drummers and horn players pass market stalls before a temple tower"><source src="media/chola-street.mp4" type="video/mp4"></video>
+    <img class="still" src="media/chola-street-poster.jpg" alt="AI-generated Chola street scene: an elephant, drummers and horn players pass market stalls before a temple tower">
+    <figcaption>AI-generated animation inspired by the register's Chola street scene (Thanjavur, c. 1010 CE). A reconstruction, not a record: the sourced evidence is on the <a href="register.html">Chola entry</a>.</figcaption>
+  </figure>
 
   <div class="browse" id="browse">
     <p>The register is on the next page. Start anywhere:</p>
