@@ -133,7 +133,20 @@ main{display:block}main:focus{outline:0}
 .themebtn{all:unset;cursor:pointer;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:7px 10px;border:1px solid var(--line);border-radius:999px}
 .themebtn:hover{color:var(--ink);border-color:var(--verdigris)}.themebtn:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
 @media (pointer:coarse){.themebtn{padding:14px 12px}}
-.motions{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:0 0 2.5rem}@media (max-width:760px){.motions{grid-template-columns:1fr}}.motion{margin:0}.motion video{display:block;width:100%;height:auto;border-radius:6px;background:#1a1612}.motion{position:relative}.motion .snd{position:absolute;right:.75rem;top:.75rem;background:rgba(20,16,12,.75);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:.35rem .8rem;font:inherit;font-size:.85rem;cursor:pointer}.motion figcaption{font-size:.85rem;margin-top:.5rem;opacity:.8}@media (prefers-reduced-motion:reduce){.motion video{display:none}.motion .still{display:block}}.motion .still{display:none;width:100%;height:auto;border-radius:6px}
+
+.banner{position:relative;width:100vw;margin:0 0 2rem calc(50% - 50vw);background:#1a1612;color:#fff}
+.banner .track{display:flex;width:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.banner .track::-webkit-scrollbar{display:none}
+.banner .slide{flex:0 0 100%;scroll-snap-align:start;position:relative;margin:0;height:min(56.25vw,80vh);min-height:240px}
+.banner video,.banner .still{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.banner .still{display:none}
+.banner figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.5rem 1rem .9rem;font-size:.85rem;line-height:1.4;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.banner figcaption a{color:#fff;text-decoration:underline}
+.banner .snd{position:absolute;right:.75rem;top:.75rem;z-index:2;background:rgba(20,16,12,.75);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:.35rem .8rem;font:inherit;font-size:.85rem;cursor:pointer}
+.banner .dots{position:absolute;left:0;right:0;bottom:.35rem;display:flex;justify-content:center;gap:.5rem;z-index:2}
+.banner .dots button{width:.6rem;height:.6rem;padding:0;border-radius:50%;border:1px solid #fff;background:transparent;cursor:pointer}
+.banner .dots button[aria-current="true"]{background:#fff}
+@media (prefers-reduced-motion:reduce){.banner video{display:none}.banner .still{display:block}.banner .track{scroll-behavior:auto}}
 </style>
 
 <a class="skip" href="#main">Skip to content</a>
@@ -141,6 +154,23 @@ main{display:block}main:focus{outline:0}
 <div class="wrap">
   <nav class="top" aria-label="Site"><a href="index.html" aria-current="page">About</a><a class="reg-link" href="register.html">The register <span id="nav-n"></span> →</a><a href="sources.html">Sources</a><a href="register.html#timeline">Timeline</a><a href="register.html#motifs">Motif index</a><span class="grow">sm7.github.io/lanchhana</span></nav>
   <main id="main" tabindex="-1">
+
+  <div class="banner" id="banner" role="region" aria-roledescription="carousel" aria-label="AI-generated scene animations">
+    <button class="snd" id="snd" type="button" aria-pressed="false">Sound off</button>
+    <div class="track" id="track">
+      <figure class="slide" aria-label="AI-generated animation of a Chola street: an elephant, drummers and horn players pass market stalls before a temple tower">
+        <video muted playsinline preload="auto" poster="media/chola-street-poster.jpg" aria-label="AI-generated animation of a Chola street: an elephant, drummers and horn players pass market stalls before a temple tower"><source src="media/chola-street.mp4" type="video/mp4"></video>
+        <img class="still" src="media/chola-street-poster.jpg" alt="AI-generated animation of a Chola street: an elephant, drummers and horn players pass market stalls before a temple tower">
+        <figcaption>AI-generated animation inspired by the Chola street scene (Thanjavur, c. 1010 CE). A reconstruction, not a record: sources are on the <a href="register.html">Chola entry</a>.</figcaption>
+      </figure>
+      <figure class="slide" aria-label="AI-generated animation of a Vijayanagara bazaar: fruit and cloth stalls, horse traders, an elephant, dancers and a carved temple chariot">
+        <video muted playsinline preload="metadata" poster="media/vijayanagara-bazaar-poster.jpg" aria-label="AI-generated animation of a Vijayanagara bazaar: fruit and cloth stalls, horse traders, an elephant, dancers and a carved temple chariot"><source src="media/vijayanagara-bazaar.mp4" type="video/mp4"></video>
+        <img class="still" src="media/vijayanagara-bazaar-poster.jpg" alt="AI-generated animation of a Vijayanagara bazaar: fruit and cloth stalls, horse traders, an elephant, dancers and a carved temple chariot">
+        <figcaption>AI-generated animation inspired by the Vijayanagara bazaar scene (c. 1520 CE, after Domingos Paes). A reconstruction, not a record: sources are on the <a href="register.html">Vijayanagara entry</a>.</figcaption>
+      </figure>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
 
   <div class="hero">
     <div>
@@ -153,20 +183,7 @@ main{display:block}main:focus{outline:0}
     <div><div class="tray" id="tray" aria-label="Seven emblems from the register"></div><p class="tray-cap">Seven of the entries. Select one to open it in the register.</p></div>
   </div>
 
-  <div class="motions">
-  <figure class="motion">
-    <video autoplay muted loop playsinline preload="metadata" poster="media/chola-street-poster.jpg" aria-label="AI-generated animation of a Chola street scene: an elephant, drummers and horn players pass market stalls before a temple tower"><source src="media/chola-street.mp4" type="video/mp4"></video>
-    <button class="snd" type="button" aria-pressed="false">Sound off</button>
-    <img class="still" src="media/chola-street-poster.jpg" alt="AI-generated Chola street scene: an elephant, drummers and horn players pass market stalls before a temple tower">
-    <figcaption>AI-generated animation inspired by the register's Chola street scene (Thanjavur, c. 1010 CE). A reconstruction, not a record: the sourced evidence is on the <a href="register.html">Chola entry</a>.</figcaption>
-  </figure>
-  <figure class="motion">
-    <video autoplay muted loop playsinline preload="metadata" poster="media/vijayanagara-bazaar-poster.jpg" aria-label="AI-generated animation of a Vijayanagara bazaar: stalls of fruit and cloth, horse traders, an elephant, dancers and a carved temple chariot"><source src="media/vijayanagara-bazaar.mp4" type="video/mp4"></video>
-    <button class="snd" type="button" aria-pressed="false">Sound off</button>
-    <img class="still" src="media/vijayanagara-bazaar-poster.jpg" alt="AI-generated Vijayanagara bazaar with fruit and cloth stalls, horse traders, an elephant, dancers and a carved temple chariot">
-    <figcaption>AI-generated animation inspired by the register's Vijayanagara bazaar scene (c. 1520 CE, after Domingos Paes). A reconstruction, not a record: the sourced evidence is on the <a href="register.html">Vijayanagara entry</a>.</figcaption>
-  </figure>
-  </div>
+
 
   <div class="browse" id="browse">
     <p>The register is on the next page. Start anywhere:</p>
@@ -242,8 +259,17 @@ main{display:block}main:focus{outline:0}
   </footer>
 </div>
 
+<script>(function(){var tr=document.getElementById("track"),b=document.getElementById("snd"),dots=document.getElementById("dots");if(!tr)return;var sl=[].slice.call(tr.children),vs=sl.map(function(f){return f.querySelector("video")}),i=0,muted=true,rm=matchMedia("(prefers-reduced-motion: reduce)").matches,vis=true,t;
+sl.forEach(function(_,k){var d=document.createElement("button");d.type="button";d.setAttribute("aria-label","Show clip "+(k+1));d.onclick=function(){go(k)};dots.appendChild(d)});
+function mark(){[].forEach.call(dots.children,function(d,k){d.setAttribute("aria-current",k===i)})}
+function play(){vs.forEach(function(v,k){v.muted=muted;if(k===i&&!rm&&vis){var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})}
+function go(k){i=(k+sl.length)%sl.length;vs[i].currentTime=0;tr.scrollTo({left:i*tr.clientWidth,behavior:rm?"auto":"smooth"});mark();play()}
+vs.forEach(function(v,k){v.addEventListener("ended",function(){if(k===i)go(i+1)})});
+tr.addEventListener("scroll",function(){clearTimeout(t);t=setTimeout(function(){var k=Math.round(tr.scrollLeft/tr.clientWidth);if(k!==i){i=k;vs[i].currentTime=0;mark();play()}},120)});
+if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting;play()},{threshold:.25}).observe(tr);
+if(rm)b.hidden=true;else b.onclick=function(){muted=!muted;b.textContent=muted?"Sound off":"Sound on";b.setAttribute("aria-pressed",String(!muted));play()};
+mark();play();})();</script>
 <script src="analytics.js"></script>
-<script>(function(){var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;document.querySelectorAll(".motion").forEach(function(f){var v=f.querySelector("video"),b=f.querySelector(".snd");if(!v||!b)return;if(rm){b.hidden=true;return;}b.addEventListener("click",function(){v.muted=!v.muted;if(!v.muted)v.play();b.textContent=v.muted?"Sound off":"Sound on";b.setAttribute("aria-pressed",String(!v.muted));});});})();</script>
 <script src="data.js?v=9"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
 <script>
