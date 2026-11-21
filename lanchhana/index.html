@@ -134,19 +134,18 @@ main{display:block}main:focus{outline:0}
 .themebtn:hover{color:var(--ink);border-color:var(--verdigris)}.themebtn:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
 @media (pointer:coarse){.themebtn{padding:14px 12px}}
 
-.banner{position:relative;width:100vw;margin:0 0 2rem calc(50% - 50vw);background:#1a1612;color:#fff}
+.banner{position:relative;margin:0 0 2.5rem}
 .banner .track{display:flex;width:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .banner .track::-webkit-scrollbar{display:none}
-.banner .slide{flex:0 0 100%;scroll-snap-align:start;position:relative;margin:0;height:min(56.25vw,80vh);min-height:240px}
-.banner video,.banner .still{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.banner .slide{flex:0 0 100%;scroll-snap-align:start;margin:0}
+.banner video,.banner .still{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;background:#1a1612}
 .banner .still{display:none}
-.banner figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.5rem 1rem .9rem;font-size:.85rem;line-height:1.4;background:linear-gradient(transparent,rgba(0,0,0,.75))}
-.banner figcaption a{color:#fff;text-decoration:underline}
+.banner figcaption{font-size:.85rem;line-height:1.45;margin-top:.5rem;opacity:.8}
 .banner .snd{position:absolute;right:.75rem;top:.75rem;z-index:2;background:rgba(20,16,12,.75);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:.35rem .8rem;font:inherit;font-size:.85rem;cursor:pointer}
-.banner .dots{position:absolute;left:0;right:0;bottom:.35rem;display:flex;justify-content:center;gap:.5rem;z-index:2}
-.banner .dots button{width:2rem;height:.3rem;padding:0;border-radius:2px;border:0;background:rgba(255,255,255,.35);cursor:pointer;overflow:hidden;position:relative}
-.banner .dots button i{position:absolute;inset:0;width:0;background:#fff}
-.banner .arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:2.75rem;height:4rem;border:0;border-radius:4px;background:rgba(20,16,12,.55);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;opacity:0;transition:opacity .2s}
+.banner .dots{display:flex;justify-content:center;gap:.5rem;margin-top:.6rem}
+.banner .dots button{width:2rem;height:.3rem;padding:0;border-radius:2px;border:0;background:rgba(127,127,127,.4);cursor:pointer;overflow:hidden;position:relative}
+.banner .dots button i{position:absolute;inset:0;width:0;background:#c0562a}
+.banner .arr{position:absolute;top:30%;z-index:2;width:2.5rem;height:3.5rem;border:0;border-radius:4px;background:rgba(20,16,12,.55);color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;opacity:0;transition:opacity .2s}
 .banner:hover .arr,.banner .arr:focus-visible{opacity:1}
 @media (hover:none){.banner .arr{opacity:.8;width:2rem;height:3rem}}
 .banner .prev{left:.5rem}.banner .next{right:.5rem}
