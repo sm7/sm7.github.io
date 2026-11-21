@@ -144,8 +144,12 @@ main{display:block}main:focus{outline:0}
 .banner figcaption a{color:#fff;text-decoration:underline}
 .banner .snd{position:absolute;right:.75rem;top:.75rem;z-index:2;background:rgba(20,16,12,.75);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:.35rem .8rem;font:inherit;font-size:.85rem;cursor:pointer}
 .banner .dots{position:absolute;left:0;right:0;bottom:.35rem;display:flex;justify-content:center;gap:.5rem;z-index:2}
-.banner .dots button{width:.6rem;height:.6rem;padding:0;border-radius:50%;border:1px solid #fff;background:transparent;cursor:pointer}
-.banner .dots button[aria-current="true"]{background:#fff}
+.banner .dots button{width:2rem;height:.3rem;padding:0;border-radius:2px;border:0;background:rgba(255,255,255,.35);cursor:pointer;overflow:hidden;position:relative}
+.banner .dots button i{position:absolute;inset:0;width:0;background:#fff}
+.banner .arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:2.75rem;height:4rem;border:0;border-radius:4px;background:rgba(20,16,12,.55);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;opacity:0;transition:opacity .2s}
+.banner:hover .arr,.banner .arr:focus-visible{opacity:1}
+@media (hover:none){.banner .arr{opacity:.8;width:2rem;height:3rem}}
+.banner .prev{left:.5rem}.banner .next{right:.5rem}
 @media (prefers-reduced-motion:reduce){.banner video{display:none}.banner .still{display:block}.banner .track{scroll-behavior:auto}}
 </style>
 
@@ -154,6 +158,19 @@ main{display:block}main:focus{outline:0}
 <div class="wrap">
   <nav class="top" aria-label="Site"><a href="index.html" aria-current="page">About</a><a class="reg-link" href="register.html">The register <span id="nav-n"></span> →</a><a href="sources.html">Sources</a><a href="register.html#timeline">Timeline</a><a href="register.html#motifs">Motif index</a><span class="grow">sm7.github.io/lanchhana</span></nav>
   <main id="main" tabindex="-1">
+
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Royal emblems of India, with their evidence</p>
+      <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
+      <p class="thesis">Indian kingdoms marked their authority with an emblem: a boar on a seal ring, a tiger on a copper plate, a lion on a coin, an ape at the top of a war banner. This register collects those emblems and sets each one beside the evidence for it, saying plainly how strong that evidence is. Where the evidence allows, it also reconstructs how the emblem would have looked, as a painting made only from what the sources describe.</p>
+      <p class="gloss"><i>लाञ्छन</i> lāñchhana: a mark or sign; in inscriptions, the emblem a dynasty set on its seal. <i>ध्वज</i> dhvaja: the banner and the emblem that crowned it.</p>
+      <div class="cta"><a class="btn primary" href="register.html">Browse all <span id="cta-n"></span> entries →</a><a class="btn" href="#method">How entries are made</a></div>
+    </div>
+    <div><div class="tray" id="tray" aria-label="Seven emblems from the register"></div><p class="tray-cap">Seven of the entries. Select one to open it in the register.</p></div>
+  </div>
+
+
 
   <div class="banner" id="banner" role="region" aria-roledescription="carousel" aria-label="AI-generated scene animations">
     <button class="snd" id="snd" type="button" aria-pressed="false">Sound off</button>
@@ -169,21 +186,9 @@ main{display:block}main:focus{outline:0}
         <figcaption>AI-generated animation inspired by the Vijayanagara bazaar scene (c. 1520 CE, after Domingos Paes). A reconstruction, not a record: sources are on the <a href="register.html">Vijayanagara entry</a>.</figcaption>
       </figure>
     </div>
+    <button class="arr prev" id="prev" type="button" aria-label="Previous clip">&#8249;</button><button class="arr next" id="next" type="button" aria-label="Next clip">&#8250;</button>
     <div class="dots" id="dots"></div>
   </div>
-
-  <div class="hero">
-    <div>
-      <p class="eyebrow">Royal emblems of India, with their evidence</p>
-      <h1>Lāñchhana Register<span class="deva">राजलाञ्छन</span></h1>
-      <p class="thesis">Indian kingdoms marked their authority with an emblem: a boar on a seal ring, a tiger on a copper plate, a lion on a coin, an ape at the top of a war banner. This register collects those emblems and sets each one beside the evidence for it, saying plainly how strong that evidence is. Where the evidence allows, it also reconstructs how the emblem would have looked, as a painting made only from what the sources describe.</p>
-      <p class="gloss"><i>लाञ्छन</i> lāñchhana: a mark or sign; in inscriptions, the emblem a dynasty set on its seal. <i>ध्वज</i> dhvaja: the banner and the emblem that crowned it.</p>
-      <div class="cta"><a class="btn primary" href="register.html">Browse all <span id="cta-n"></span> entries →</a><a class="btn" href="#method">How entries are made</a></div>
-    </div>
-    <div><div class="tray" id="tray" aria-label="Seven emblems from the register"></div><p class="tray-cap">Seven of the entries. Select one to open it in the register.</p></div>
-  </div>
-
-
 
   <div class="browse" id="browse">
     <p>The register is on the next page. Start anywhere:</p>
@@ -260,15 +265,18 @@ main{display:block}main:focus{outline:0}
 </div>
 
 <script>(function(){var tr=document.getElementById("track"),b=document.getElementById("snd"),dots=document.getElementById("dots");if(!tr)return;var sl=[].slice.call(tr.children),vs=sl.map(function(f){return f.querySelector("video")}),i=0,muted=true,rm=matchMedia("(prefers-reduced-motion: reduce)").matches,vis=true,t;
-sl.forEach(function(_,k){var d=document.createElement("button");d.type="button";d.setAttribute("aria-label","Show clip "+(k+1));d.onclick=function(){go(k)};dots.appendChild(d)});
-function mark(){[].forEach.call(dots.children,function(d,k){d.setAttribute("aria-current",k===i)})}
+sl.forEach(function(_,k){var d=document.createElement("button");d.type="button";d.setAttribute("aria-label","Show clip "+(k+1));d.appendChild(document.createElement("i"));d.onclick=function(){go(k)};dots.appendChild(d)});
+function mark(){[].forEach.call(dots.children,function(d,k){d.setAttribute("aria-current",k===i);d.firstChild.style.width=k===i?"0":"0"})}
+var fb;function arm(){clearTimeout(fb);fb=setTimeout(function(){go(i+1)},((vs[i].duration||8)+2)*1000)}
+vs.forEach(function(v,k){v.addEventListener("timeupdate",function(){if(k===i&&v.duration)dots.children[k].firstChild.style.width=(v.currentTime/v.duration*100)+"%"})});
+document.getElementById("prev").onclick=function(){go(i-1)};document.getElementById("next").onclick=function(){go(i+1)};
 function play(){vs.forEach(function(v,k){v.muted=muted;if(k===i&&!rm&&vis){var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})}
-function go(k){i=(k+sl.length)%sl.length;vs[i].currentTime=0;tr.scrollTo({left:i*tr.clientWidth,behavior:rm?"auto":"smooth"});mark();play()}
+function go(k){i=(k+sl.length)%sl.length;vs[i].currentTime=0;tr.scrollTo({left:i*tr.clientWidth,behavior:rm?"auto":"smooth"});mark();play();arm()}
 vs.forEach(function(v,k){v.addEventListener("ended",function(){if(k===i)go(i+1)})});
-tr.addEventListener("scroll",function(){clearTimeout(t);t=setTimeout(function(){var k=Math.round(tr.scrollLeft/tr.clientWidth);if(k!==i){i=k;vs[i].currentTime=0;mark();play()}},120)});
+tr.addEventListener("scroll",function(){clearTimeout(t);t=setTimeout(function(){var k=Math.round(tr.scrollLeft/tr.clientWidth);if(k!==i){i=k;vs[i].currentTime=0;mark();play();arm()}},120)});
 if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting;play()},{threshold:.25}).observe(tr);
 if(rm)b.hidden=true;else b.onclick=function(){muted=!muted;b.textContent=muted?"Sound off":"Sound on";b.setAttribute("aria-pressed",String(!muted));play()};
-mark();play();})();</script>
+mark();play();arm();})();</script>
 <script src="analytics.js"></script>
 <script src="data.js?v=9"></script>
 <script>window.LR.SPAN = window.LR.SPAN || {};</script>
